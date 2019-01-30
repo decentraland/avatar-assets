@@ -1,0 +1,33 @@
+{
+  "name": "builder-assets",
+  "version": "0.1.0",
+  "description": "Builder Asset Pack repository",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "tsc --lib es6 bundle.ts && node bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decentraland/builder-assets.git"
+  },
+  "author": "Decentraland",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/decentraland/builder-assets/issues"
+  },
+  "homepage": "https://github.com/decentraland/builder-assets#readme",
+  "dependencies": {
+    "interface-datastore": "0.6.0",
+    "ipfs-unixfs-engine": "0.32.4",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "dcl-tslint-config-standard": "^1.1.0",
+    "eslint": "^5.12.1",
+    "prettier": "^1.16.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.2.4"
+  }
+}
