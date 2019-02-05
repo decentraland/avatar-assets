@@ -22,22 +22,17 @@ class AssetDescriptor {
   name: string
   tags: string[]
   category: string
-  thumbnail: string
-  url: string
-  variations: string[]
-  contents: { [key: string]: string }
-  path: string
+  thumbnail: string = ''
+  url: string = ''
+  variations: string[] = []
+  contents: { [key: string]: string } = {}
+  path: string = ''
 
   constructor(name: string, tags: string[], category: string) {
     this.id = uuidv4()
     this.name = name
     this.tags = tags
     this.category = category
-    this.thumbnail = ''
-    this.url = ''
-    this.variations = []
-    this.contents = {}
-    this.path = ''
   }
 
   static newFromJSON(assetData: any): AssetDescriptor {
@@ -185,9 +180,8 @@ const getFiles = (source: string) =>
 
 const getBaseDir = (source: string) => takeLast(path.dirname(source).split('/'))
 
-const getRelativeDir = (source: string) => {
-  return path.join(getBaseDir(source), path.basename(source))
-}
+const getRelativeDir = (source: string) =>
+  path.join(getBaseDir(source), path.basename(source))
 
 // Asset
 
