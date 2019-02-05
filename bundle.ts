@@ -201,7 +201,7 @@ const isAcceptedAssetFormat = (source: string): boolean => {
   return false
 }
 
-const isValidAsset = (asset: AssetDescriptor): boolean => {
+const checkValidAsset = (asset: AssetDescriptor) => {
   if (!asset.name) {
     throw new Error(`Asset must have a name`)
   }
@@ -217,8 +217,6 @@ const isValidAsset = (asset: AssetDescriptor): boolean => {
   if (asset.tags.indexOf(asset.category) === -1) {
     throw new Error(`Asset must have a category from the included tags`)
   }
-
-  return true
 }
 
 const readAsset = (dirpath: string): AssetDescriptor => {
@@ -230,9 +228,7 @@ const readAsset = (dirpath: string): AssetDescriptor => {
   const asset = AssetDescriptor.newFromJSON(assetJSON)
   asset.path = dirpath
 
-  if (!isValidAsset(asset)) {
-    throw new Error(`[asset] Invalid asset descriptor at ${filepath}`)
-  }
+  checkValidAsset(asset)
 
   return asset
 }
