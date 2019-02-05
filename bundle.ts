@@ -183,6 +183,11 @@ const getBaseDir = (source: string) => takeLast(path.dirname(source).split('/'))
 const getRelativeDir = (source: string) =>
   path.join(getBaseDir(source), path.basename(source))
 
+const getFileCID = (source: string) =>
+  CIDUtils.getIdentifiersForIndividualFile([readFile(source)])
+    .then(takeFirst)
+    .then(cidObj => cidObj.cid)
+
 // Asset
 
 const isAcceptedAssetFormat = (source: string): boolean => {
@@ -231,21 +236,15 @@ const processAsset = async (
   asset: AssetDescriptor
 ): Promise<AssetDescriptor> => {
   // thumb
-  const thumb = readFile(path.join(asset.path, THUMB_FILE_NAME))
-  const cidObj = await CIDUtils.getIdentifiersForIndividualFile([thumb]).then(
-    takeFirst
-  )
-  asset.thumbnail = url.resolve(CONTENT_SERVER_URL, 'contents/' + cidObj.cid)
+  const thumbnailPath = path.join(asset.path, THUMB_FILE_NAME)
+  const cid = await getFileCID(thumbnailPath)
+  asset.thumbnail = url.resolve(CONTENT_SERVER_URL, 'contents/' + cid)
 
   // contents
-  const contentFiles = getFiles(asset.path + '/')
-    .filter(isAcceptedAssetFormat)
-    .map(readFile)
-  for (const contentFile of contentFiles) {
-    const cidObj = await CIDUtils.getIdentifiersForIndividualFile([
-      contentFile
-    ]).then(takeFirst)
-    asset.contents[getRelativeDir(contentFile.path)] = cidObj.cid
+  const contentFilePaths = getFiles(asset.path + '/').filter(isAcceptedAssetFormat)
+  for (const contentFilePath of contentFilePaths) {
+    const cid = await getFileCID(contentFilePath)
+    asset.contents[getRelativeDir(contentFilePath)] = cid
   }
 
   // TODO: check this out
