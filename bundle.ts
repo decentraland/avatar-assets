@@ -8,12 +8,15 @@ import * as CID from 'cids'
 import { MemoryDatastore } from 'interface-datastore'
 import * as imp from 'ipfs-unixfs-engine'
 
+import * as gltfPipeline from 'gltf-pipeline'
+
 import Importer = imp.Importer
 
 // TODO: config file
 const CONTENT_SERVER_URL = 'https://content.decentraland.today'
 
-const ASSET_ACCEPTED_FORMATS = ['.glb']
+const ASSET_RESOURCE_FORMATS = ['.glb', '.gltf', '.png', '.jpg', '.bin']
+const ASSET_SCENE_FORMATS = ['.glb']
 const ASSET_FILE_NAME = 'asset.json'
 const THUMB_FILE_NAME = 'thumbnail.png'
 
@@ -188,17 +191,45 @@ const getFileCID = (source: string) =>
     .then(takeFirst)
     .then(cidObj => cidObj.cid)
 
+// Transformations
+
+const separateTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
+  const options = {
+    separateTextures: true
+  }
+  const file = readFile(srcFilePath)
+
+  return gltfPipeline.processGlb(file.content, options).then((results) => {
+    const glbFilePath = path.join(dstDir, path.basename(srcFilePath))
+    fs.writeFileSync(glbFilePath, results.glb)
+
+    const separateResources = results.separateResources
+    for (const relativePath in separateResources) {
+      if (separateResources.hasOwnProperty(relativePath)) {
+        const resource = separateResources[relativePath]
+        const resourceFilePath = path.join(dstDir, relativePath)
+        fs.writeFileSync(resourceFilePath, resource)
+      }
+    }
+  })
+}
+
 // Asset
 
-const isAcceptedAssetFormat = (source: string): boolean => {
-  const extension = path.extname(source)
-  for (const format of ASSET_ACCEPTED_FORMATS) {
-    if (extension.indexOf(format) !== -1) {
-      return true
+const isAssetFormat = (formats: string[]) => {
+  return function (source: string): boolean {
+    const extension = path.extname(source)
+    for (const format of formats) {
+      if (extension.indexOf(format) !== -1) {
+        return true
+      }
     }
+    return false
   }
-  return false
 }
+
+const isAssetResource = isAssetFormat(ASSET_RESOURCE_FORMATS)
+const isAssetScene = isAssetFormat(ASSET_SCENE_FORMATS)
 
 const checkValidAsset = (asset: AssetDescriptor) => {
   if (!asset.name) {
@@ -232,6 +263,17 @@ const readAsset = (dirpath: string): AssetDescriptor => {
   return asset
 }
 
+const processAssetTexture = async (asset: AssetDescriptor) => {
+  const contentFilePaths = getFiles(asset.path + '/').filter(isAssetScene)
+  for (const contentFilePath of contentFilePaths) {
+    try {
+      await separateTexturesFromGLB(contentFilePath, asset.path)
+    } catch (err) {
+      console.log(err.message)
+    }
+  }
+}
+
 const processAsset = async (
   asset: AssetDescriptor
 ): Promise<AssetDescriptor> => {
@@ -241,15 +283,17 @@ const processAsset = async (
   asset.thumbnail = url.resolve(CONTENT_SERVER_URL, 'contents/' + cid)
 
   // contents
-  const contentFilePaths = getFiles(asset.path + '/').filter(isAcceptedAssetFormat)
+  await processAssetTexture(asset)
+
+  const contentFilePaths = getFiles(asset.path + '/').filter(isAssetResource)
   for (const contentFilePath of contentFilePaths) {
     const cid = await getFileCID(contentFilePath)
     asset.contents[getRelativeDir(contentFilePath)] = cid
   }
 
-  // TODO: check this out
-  const anyContent = Object.keys(asset.contents)[0]
-  asset.url = anyContent
+  // entry point
+  const assetSceneFilePath = Object.keys(asset.contents).find(isAssetScene) || ''
+  asset.url = assetSceneFilePath
 
   return asset
 }
@@ -281,6 +325,7 @@ async function main() {
   // TODO: process input args
   // TODO: summary of errors found
   // TODO: use logging facility
+
   const packTitle = 'MiniTown'
   const packDir = './packs/MiniTown/'
   try {

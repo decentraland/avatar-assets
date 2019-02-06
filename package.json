@@ -18,14 +18,16 @@
   },
   "homepage": "https://github.com/decentraland/builder-assets#readme",
   "dependencies": {
+    "gltf-pipeline": "^2.1.0",
     "interface-datastore": "0.6.0",
     "ipfs-unixfs-engine": "0.32.4",
+    "tslint": "^5.12.1",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "dcl-tslint-config-standard": "^1.1.0",
-    "eslint": "^5.12.1",
+    "eslint": "^5.13.0",
     "prettier": "^1.16.1",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.2.4"
