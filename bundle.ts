@@ -1,3 +1,4 @@
+import * as crypto from 'crypto'
 import * as fs from 'fs'
 import * as path from 'path'
 import * as pull from 'pull-stream'
@@ -35,19 +36,11 @@ class AssetDescriptor {
   contents: { [key: string]: string } = {}
   path: string = ''
 
-  constructor(name: string, tags: string[], category: string) {
-    this.id = uuidv4()
+  constructor(id: string, name: string, tags: string[], category: string) {
+    this.id = id
     this.name = name
     this.tags = tags
     this.category = category
-  }
-
-  static newFromJSON(assetData: any): AssetDescriptor {
-    return new AssetDescriptor(
-      assetData.name,
-      assetData.tags,
-      assetData.category
-    )
   }
 
   toJSON() {
@@ -195,6 +188,12 @@ const getFileCID = (source: string) =>
     .then(takeFirst)
     .then(cidObj => cidObj.cid)
 
+// crypto
+
+const getSHA256 = (data: string) => {
+  return crypto.createHash('sha256').update(data).digest('hex')
+}
+
 // S3
 
 const s3 = new AWS.S3({
@@ -292,7 +291,12 @@ const readAsset = (assetDir: string): AssetDescriptor => {
   const filepath = path.join(assetDir, ASSET_FILE_NAME)
   const assetFile = readFile(filepath)
   const assetJSON = JSON.parse(assetFile.content.toString())
-  const asset = AssetDescriptor.newFromJSON(assetJSON)
+  const asset = new AssetDescriptor(
+    getSHA256(path.basename(assetDir)),
+    assetJSON.name,
+    assetJSON.tags,
+    assetJSON.category
+  )
   asset.path = assetDir
 
   checkValidAsset(asset)
