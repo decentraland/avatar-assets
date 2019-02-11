@@ -4,13 +4,17 @@ import * as pull from 'pull-stream'
 import * as uuidv4 from 'uuid/v4'
 import * as url from 'url'
 
+import { Log } from 'decentraland-commons'
+
 import * as CID from 'cids'
 import { MemoryDatastore } from 'interface-datastore'
 import * as imp from 'ipfs-unixfs-engine'
-
 import * as gltfPipeline from 'gltf-pipeline'
+import * as AWS from 'aws-sdk'
 
 import Importer = imp.Importer
+
+const log = new Log('bundler')
 
 // TODO: config file
 const CONTENT_SERVER_URL = 'https://content.decentraland.today'
@@ -191,6 +195,39 @@ const getFileCID = (source: string) =>
     .then(takeFirst)
     .then(cidObj => cidObj.cid)
 
+// S3
+
+const s3 = new AWS.S3({
+  accessKeyId: process.env.AWS_ACCESS_KEY,
+  secretAccessKey: process.env.AWS_ACCESS_SECRET
+})
+
+const s3CheckFile = (bucketName: string, key: string): Promise<boolean> => {
+  const params = {
+    Bucket: bucketName,
+    Key: key
+  }
+  return new Promise((resolve, reject) => {
+    s3.headObject(params, function (err, data) {
+      (err) ? resolve(false) : resolve(true)
+    })
+  })
+}
+
+const s3UploadFile = (bucketName: string, key: string, data: Buffer) => {
+  const params = {
+    Bucket: bucketName,
+    Key: key,
+    Body: data,
+    ACL: 'public-read'
+  }
+  return new Promise((resolve, reject) => {
+    s3.upload(params, function(err, data) {
+      (err) ? reject(err) : resolve(data)
+    })
+  })
+}
+
 // Transformations
 
 const separateTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
@@ -249,14 +286,14 @@ const checkValidAsset = (asset: AssetDescriptor) => {
   }
 }
 
-const readAsset = (dirpath: string): AssetDescriptor => {
-  console.log(`[asset] Reading : ${dirpath}...`)
+const readAsset = (assetDir: string): AssetDescriptor => {
+  log.info(`(asset) Reading : ${assetDir}...`)
 
-  const filepath = path.join(dirpath, ASSET_FILE_NAME)
+  const filepath = path.join(assetDir, ASSET_FILE_NAME)
   const assetFile = readFile(filepath)
   const assetJSON = JSON.parse(assetFile.content.toString())
   const asset = AssetDescriptor.newFromJSON(assetJSON)
-  asset.path = dirpath
+  asset.path = assetDir
 
   checkValidAsset(asset)
 
@@ -269,7 +306,7 @@ const processAssetTexture = async (asset: AssetDescriptor) => {
     try {
       await separateTexturesFromGLB(contentFilePath, asset.path)
     } catch (err) {
-      console.log(err.message)
+      log.error(err.message)
     }
   }
 }
@@ -301,38 +338,66 @@ const processAsset = async (
 // Asset Pack
 
 const bundleAssetPack = async (
-  dirpath: string,
+  assetPackDir: string,
   title: string
 ): Promise<AssetPackDescriptor> => {
-  const assetDirList = getDirectories(dirpath)
+  const assetDirList = getDirectories(assetPackDir)
 
-  console.log(`[asset-pack] Processing ${assetDirList.length} assets`)
+  log.info(`(asset-pack) Processing ${assetDirList.length} assets`)
   const assetPackItems = []
   for (const assetDir of assetDirList) {
     try {
       const asset = await processAsset(readAsset(assetDir))
       assetPackItems.push(asset)
     } catch (err) {
-      console.log(`[asset-pack] Processing : ${assetDir} ${err}`)
+      log.error(`[asset-pack] Processing : ${assetDir} ${err}`)
     }
   }
-  console.log(`[asset-pack] Found ${assetPackItems.length} valid assets`)
+  log.info(`(asset-pack) Found ${assetPackItems.length} valid assets`)
 
   return new AssetPackDescriptor(title, assetPackItems)
 }
 
+const uploadAssetPack = async (assetPack: AssetPackDescriptor, assetPackDir: string, bucketName: string) => {
+  for (const [idx, asset] of assetPack.assets.entries()) {
+    const uploads = Object.entries(asset.contents).map(async ([contentFilePath, contentCID]) => {
+      const contentFullPath = path.join(assetPackDir, contentFilePath)
+      const contentData = fs.readFileSync(contentFullPath)
+      const isFileUploaded = await s3CheckFile(bucketName, contentCID)
+      if (!isFileUploaded) {
+        return s3UploadFile(bucketName, contentCID, contentData)
+      }
+      return Promise.resolve(true)
+    })
+    await Promise.all(uploads)
+    log.info(`[uploader] (${asset.path}) uploaded ${idx + 1}/${assetPack.assets.length}`)
+  }
+}
+
+const saveAssetPack = (assetPack: AssetPackDescriptor, dstPath: string) => {
+  // HACK: this result format is to return like a server request
+  const result = {
+    ok: true,
+    data: assetPack
+  }
+  const data = JSON.stringify(result, null, 2)
+  fs.writeFileSync(dstPath, data)
+}
+
 async function main() {
   // TODO: process input args
-  // TODO: summary of errors found
-  // TODO: use logging facility
 
-  const packTitle = 'MiniTown'
-  const packDir = './packs/MiniTown/'
+  const assetPackTitle = 'MiniTown'
+  const assetPackDir = './packs/MiniTown/'
+  const assetPackOut = 'dist/packs/default-pack.json'
+  const bucketName = 'content-service.decentraland.today'
+
   try {
-    const assetPack = await bundleAssetPack(packDir, packTitle)
-    console.log(JSON.stringify(assetPack, null, 2))
+    const assetPack = await bundleAssetPack(assetPackDir, assetPackTitle)
+    saveAssetPack(assetPack, assetPackOut)
+    uploadAssetPack(assetPack, assetPackDir, bucketName)
   } catch (err) {
-    console.log(err)
+    log.error(err)
   }
 }
 

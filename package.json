@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/decentraland/builder-assets#readme",
   "dependencies": {
+    "aws-sdk": "^2.396.0",
+    "decentraland-commons": "^5.1.0",
     "gltf-pipeline": "^2.1.0",
     "interface-datastore": "0.6.0",
     "ipfs-unixfs-engine": "0.32.4",
