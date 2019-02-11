@@ -4,7 +4,7 @@
   "description": "Builder Asset Pack repository",
   "main": "bundle.js",
   "scripts": {
-    "start": "tsc --lib es6 bundle.ts && node bundle.js",
+    "bundle": "tsc --lib es2017 src/bundle.ts && node src/bundle.js bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
