@@ -4,7 +4,7 @@
   "description": "Builder Asset Pack repository",
   "main": "bundle.js",
   "scripts": {
-    "bundle": "tsc --lib es2017 src/index.ts && node src/index.js bundle",
+    "bundle": "tsc --lib es2017 --downlevelIteration src/index.ts && node src/index.js bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

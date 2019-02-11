@@ -51,8 +51,7 @@ export const bundleAssetPack = async (
 }
 
 export const uploadAssetPack = async (assetPack: AssetPackDescriptor, assetPackDir: string, bucketName: string) => {
-  let assetIdx = 1
-  for (const asset of assetPack.assets) {
+  for (const [idx, asset] of assetPack.assets.entries()) {
     const uploads = Object.entries(asset.contents).map(async ([contentFilePath, contentCID]) => {
       const contentFullPath = path.join(assetPackDir, contentFilePath)
       const contentData = fs.readFileSync(contentFullPath)
@@ -63,8 +62,7 @@ export const uploadAssetPack = async (assetPack: AssetPackDescriptor, assetPackD
       return Promise.resolve(true)
     })
     await Promise.all(uploads)
-    log.info(`(uploader) (${asset.path}) uploaded ${assetIdx}/${assetPack.assets.length}`)
-    assetIdx++
+    log.info(`(uploader) (${asset.path}) uploaded ${idx + 1}/${assetPack.assets.length}`)
   }
 }
 
