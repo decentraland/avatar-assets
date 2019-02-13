@@ -79,7 +79,7 @@ export class CIDUtils {
     return new Promise<string>((resolve, reject) => {
       pull(
           pull.values(files),
-          pull.asyncMap((file: IFile, cb) => {
+          pull.asyncMap((file: IFile, cb: any) => {
             const data = {
               path: shareRoot ? '/tmp/' + file.path : file.path,
               content: file.content
@@ -88,7 +88,7 @@ export class CIDUtils {
           }),
           importer,
           pull.onEnd(() =>
-            importer.flush((err, content) => {
+            importer.flush((err: Error, content: Buffer) => {
               if (err) {
                 reject(err)
               }

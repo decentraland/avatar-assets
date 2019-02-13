@@ -16,8 +16,14 @@
   "bugs": {
     "url": "https://github.com/decentraland/builder-assets/issues"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80
+  },
   "homepage": "https://github.com/decentraland/builder-assets#readme",
   "dependencies": {
+    "@types/uuid": "^3.4.4",
     "aws-sdk": "^2.396.0",
     "decentraland-commons": "^5.1.0",
     "decentraland-server": "^2.0.1",

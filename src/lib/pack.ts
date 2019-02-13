@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-// import * as uuidv4 from 'uuid/v4'
+import * as uuidv4 from 'uuid/v4'
 
 import { Log } from 'decentraland-commons'
 
@@ -18,10 +18,8 @@ export class AssetPackDescriptor {
   title: string
   assets: AssetDescriptor[]
 
-  constructor(title: string, assets: AssetDescriptor[]) {
-    // this.id = uuidv4()
-    // TODO: hack only for first builder asset pack
-    this.id = 'e6fa9601-3e47-4dff-9a84-e8e017add15a'
+  constructor(title: string, assets: AssetDescriptor[] = []) {
+    this.id = uuidv4()
     this.version = 1
     this.title = title
     this.assets = assets
@@ -67,7 +65,7 @@ export const uploadAssetPack = async (assetPack: AssetPackDescriptor, assetPackD
 }
 
 export const saveAssetPack = (assetPack: AssetPackDescriptor, dstPath: string) => {
-    // HACK: this result format is to return like a server request
+  // HACK: this result format is to return like a server request
   const result = {
     ok: true,
     data: assetPack

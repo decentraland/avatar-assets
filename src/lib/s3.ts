@@ -26,7 +26,7 @@ export const s3UploadFile = (bucketName: string, key: string, data: Buffer) => {
     ACL: 'public-read'
   }
   return new Promise((resolve, reject) => {
-    s3.upload(params, function(err, data) {
+    s3.upload(params, function(err: Error, data: any) {
       (err) ? reject(err) : resolve(data)
     })
   })
