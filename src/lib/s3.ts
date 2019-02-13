@@ -1,8 +1,9 @@
 import * as AWS from 'aws-sdk'
+import { env } from 'decentraland-commons'
 
 export const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_ACCESS_KEY,
-  secretAccessKey: process.env.AWS_ACCESS_SECRET
+  accessKeyId: env.get('AWS_ACCESS_KEY'),
+  secretAccessKey: env.get('AWS_ACCESS_SECRET')
 })
 
 export const s3CheckFile = (bucketName: string, key: string): Promise<boolean> => {

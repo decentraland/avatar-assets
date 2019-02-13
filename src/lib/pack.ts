@@ -36,7 +36,7 @@ export const bundleAssetPack = async (
   const assetDirList = getDirectories(assetPackDir)
 
   log.info(`(asset-pack) Processing ${assetDirList.length} assets`)
-  const assetPackItems = []
+  const assetPackItems: AssetDescriptor[] = []
   for (const assetDir of assetDirList) {
     try {
       const asset = await processAsset(readAsset(assetDir), contentServerURL)

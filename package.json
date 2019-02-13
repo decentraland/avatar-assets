@@ -4,7 +4,7 @@
   "description": "Builder Asset Pack repository",
   "main": "bundle.js",
   "scripts": {
-    "bundle": "tsc --lib es2017 --downlevelIteration src/index.ts && node src/index.js bundle",
+    "bundle": "tsc -p . && node src/index.js bundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "dependencies": {
     "aws-sdk": "^2.396.0",
     "decentraland-commons": "^5.1.0",
+    "decentraland-server": "^2.0.1",
     "gltf-pipeline": "^2.1.0",
     "interface-datastore": "0.6.0",
     "ipfs-unixfs-engine": "0.32.4",

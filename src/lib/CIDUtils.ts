@@ -4,11 +4,9 @@ import * as pull from 'pull-stream'
 
 import * as CID from 'cids'
 import { MemoryDatastore } from 'interface-datastore'
-import * as imp from 'ipfs-unixfs-engine'
+import { Importer } from 'ipfs-unixfs-engine'
 
 import { takeFirst } from './utils'
-
-import Importer = imp.Importer
 
 export type ContentIdentifier = {
   cid: string
