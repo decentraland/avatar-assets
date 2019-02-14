@@ -10,9 +10,7 @@ const log = new Log('cmd::init')
 const DEFAULT_PACK_PATH = './pack.json'
 
 export const register = (program: any) => {
-  program
-  .command('init <name>')
-    .action(asSafeAction(main, log))
+  program.command('init <name>').action(asSafeAction(main, log))
 }
 
 const main = async (name: string) => {

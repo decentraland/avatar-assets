@@ -7,11 +7,8 @@ const log = new Log('cmd::bundle')
 
 export const register = (program: any) => {
   program
-  .command('bundle')
-    .option(
-      '--title [assetPackTitle]',
-      'The title for the asset pack'
-    )
+    .command('bundle')
+    .option('--title [assetPackTitle]', 'The title for the asset pack')
     .option('--src [assetPackDir]', 'Path to the asset pack content folder')
     .option(
       '--bucket [bucketName]',

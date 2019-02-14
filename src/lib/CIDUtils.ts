@@ -34,18 +34,18 @@ export const getFileCID = (source: string) =>
     .then(takeFirst)
     .then(cidObj => cidObj.cid)
 
-  /**
-   * Utility class to handle the calculation of a IFile CID
-   */
+/**
+ * Utility class to handle the calculation of a IFile CID
+ */
 export class CIDUtils {
-    /**
-     * Retrieves a ContentIdentifier (which contains the CID) for each File
-     * The path is ignored, it only uses the file name.
-     * @param files Files to calculate the CID
-     */
+  /**
+   * Retrieves a ContentIdentifier (which contains the CID) for each File
+   * The path is ignored, it only uses the file name.
+   * @param files Files to calculate the CID
+   */
   static async getIdentifiersForIndividualFile(
-      files: IFile[]
-    ): Promise<ContentIdentifier[]> {
+    files: IFile[]
+  ): Promise<ContentIdentifier[]> {
     const result: ContentIdentifier[] = []
     for (const file of files) {
       const fileCID: string = await this.getListCID(
@@ -56,46 +56,46 @@ export class CIDUtils {
             size: file.size
           }
         ],
-          false
-        )
+        false
+      )
       result.push({ cid: fileCID, name: file.path })
     }
     return result
   }
 
-    /**
-     * Calculates the RootCID for all the files
-     * @param files Content to use to calculate the root CID
-     */
+  /**
+   * Calculates the RootCID for all the files
+   * @param files Content to use to calculate the root CID
+   */
   static getFilesComposedCID(files: IFile[]): Promise<string> {
     return this.getListCID(files, true)
   }
 
   private static async getListCID(
-      files: IFile[],
-      shareRoot: boolean
-    ): Promise<string> {
+    files: IFile[],
+    shareRoot: boolean
+  ): Promise<string> {
     const importer = new Importer(new MemoryDatastore(), { onlyHash: true })
     return new Promise<string>((resolve, reject) => {
       pull(
-          pull.values(files),
-          pull.asyncMap((file: IFile, cb: any) => {
-            const data = {
-              path: shareRoot ? '/tmp/' + file.path : file.path,
-              content: file.content
+        pull.values(files),
+        pull.asyncMap((file: IFile, cb: any) => {
+          const data = {
+            path: shareRoot ? '/tmp/' + file.path : file.path,
+            content: file.content
+          }
+          cb(null, data)
+        }),
+        importer,
+        pull.onEnd(() =>
+          importer.flush((err: Error, content: Buffer) => {
+            if (err) {
+              reject(err)
             }
-            cb(null, data)
-          }),
-          importer,
-          pull.onEnd(() =>
-            importer.flush((err: Error, content: Buffer) => {
-              if (err) {
-                reject(err)
-              }
-              resolve(new CID(content).toBaseEncodedString())
-            })
-          )
+            resolve(new CID(content).toBaseEncodedString())
+          })
         )
+      )
     })
   }
 }

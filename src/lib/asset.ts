@@ -61,9 +61,9 @@ export const checkAsset = (asset: AssetDescriptor) => {
     throw new Error(`Asset must have a category`)
   }
 
-  if (asset.tags.indexOf(asset.category) === -1) {
-    throw new Error(`Asset must have a category from the included tags`)
-  }
+  // if (asset.tags.indexOf(asset.category) === -1) {
+  //   throw new Error(`Asset must have a category from the included tags`)
+  // }
 }
 
 export const readAsset = (assetDir: string): AssetDescriptor => {
@@ -89,12 +89,12 @@ export const processAsset = async (
   asset: AssetDescriptor,
   contentServerURL: string
 ): Promise<AssetDescriptor> => {
-  // thumb
+  // Thumb
   const thumbnailPath = path.join(asset.path, THUMB_FILE_NAME)
   const cid = await getFileCID(thumbnailPath)
   asset.thumbnail = url.resolve(contentServerURL, 'contents/' + cid)
 
-  // contents
+  // Contents
   await processAssetTexture(asset)
 
   const contentFilePaths = getFiles(asset.path + '/').filter(isAssetResource)
@@ -103,8 +103,9 @@ export const processAsset = async (
     asset.contents[getRelativeDir(contentFilePath)] = cid
   }
 
-  // entry point
-  const assetSceneFilePath = Object.keys(asset.contents).find(isAssetScene) || ''
+  // Entry point
+  const assetSceneFilePath =
+    Object.keys(asset.contents).find(isAssetScene) || ''
   asset.url = assetSceneFilePath
 
   return asset
@@ -113,7 +114,7 @@ export const processAsset = async (
 // Validation
 
 const isAssetFormat = (formats: string[]) => {
-  return function (source: string): boolean {
+  return function(source: string): boolean {
     const extension = path.extname(source)
     for (const format of formats) {
       if (extension.indexOf(format) !== -1) {
@@ -124,8 +125,8 @@ const isAssetFormat = (formats: string[]) => {
   }
 }
 
-const isAssetResource = isAssetFormat(ASSET_RESOURCE_FORMATS)
-const isAssetScene = isAssetFormat(ASSET_SCENE_FORMATS)
+export const isAssetResource = isAssetFormat(ASSET_RESOURCE_FORMATS)
+export const isAssetScene = isAssetFormat(ASSET_SCENE_FORMATS)
 
 // Transformations
 
@@ -135,7 +136,7 @@ const separateTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
   }
   const data = fs.readFileSync(srcFilePath)
 
-  return gltfPipeline.processGlb(data, options).then((results) => {
+  return gltfPipeline.processGlb(data, options).then(results => {
     const glbFilePath = path.join(dstDir, path.basename(srcFilePath))
     fs.writeFileSync(glbFilePath, results.glb)
 
