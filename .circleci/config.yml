@@ -33,7 +33,7 @@ jobs:
           command: mkdir -p dist/packs && npm run bundle
       - run:
           name: Deploy to now.sh
-          command: npm install now --no-save && cd dist/packs && now alias $(now --team decentraland --name builder-pack --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
+          command: npm install now --no-save && cd dist/packs && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
 
 workflows:
   version: 2
