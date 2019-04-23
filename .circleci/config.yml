@@ -34,7 +34,7 @@ jobs:
           command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
       - run:
           name: Deploy to now.sh
-          command: cd datadist && npm install now --no-save && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) avatar-assets --team decentraland --token $NOW_TOKEN
+          command: cd deploy && npm install now && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --team decentraland --token $NOW_TOKEN
 
 workflows:
   version: 2
