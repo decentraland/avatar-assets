@@ -11,7 +11,7 @@ jobs:
             - dependencies-{{ checksum "deploy/package-lock.json" }}
       - run:
           name: Install packages
-          command: cd deploy && npm install && npm install now
+          command: cd deploy && npm install
       - save_cache:
           paths:
             - deploy/node_modules
@@ -29,6 +29,9 @@ jobs:
       - restore_cache:
           keys:
             - build-{{ .Branch }}-{{ .Revision }}
+      - run:
+          name: Install now
+          command: sudo npm install --global --unsafe-perm now
       - run:
           name: Generate manifest and upload assets
           command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
