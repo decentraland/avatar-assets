@@ -3,23 +3,23 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
-  working_directory: /tmp/app
-  steps:
-    - checkout
-    - restore_cache:
-        keys:
-          - dependencies-{{ checksum "package-lock.json" }}
-    - run:
-        name: Install packages
-        command: npm install
-    - save_cache:
-        paths:
-          - node_modules
-        key: dependencies-{{ checksum "package-lock.json" }}
-    - save_cache:
-        paths:
-          - build
-        key: build-{{ .Branch }}-{{ .Revision }}
+    working_directory: /tmp/app
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install packages
+          command: cd deploy && npm install
+      - save_cache:
+          paths:
+            - deploy/node_modules
+          key: dependencies-{{ checksum "package-lock.json" }}
+      - save_cache:
+          paths:
+            - build
+          key: build-{{ .Branch }}-{{ .Revision }}
   deploy:
     docker:
       - image: circleci/node:10
@@ -30,10 +30,10 @@ jobs:
             - build-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Generate manifest and upload assets
-          command: mkdir -p dist/packs && npm run bundle
+          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
       - run:
           name: Deploy to now.sh
-          command: npm install now --no-save && cd dist/packs && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
+          command: npm install now --no-save && cd datadist && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
 
 workflows:
   version: 2
