@@ -11,7 +11,7 @@ jobs:
             - dependencies-{{ checksum "deploy/package-lock.json" }}
       - run:
           name: Install packages
-          command: cd deploy && npm install
+          command: cd deploy && npm install && npm install now
       - save_cache:
           paths:
             - deploy/node_modules
@@ -34,7 +34,7 @@ jobs:
           command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
       - run:
           name: Deploy to now.sh
-          command: cd deploy && npm install now && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --team decentraland --token $NOW_TOKEN
+          command: cd deploy && npm install --no-save now && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --team decentraland --token $NOW_TOKEN
 
 workflows:
   version: 2
