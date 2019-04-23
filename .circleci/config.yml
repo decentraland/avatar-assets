@@ -8,14 +8,14 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependencies-{{ checksum "package-lock.json" }}
+            - dependencies-{{ checksum "deploy/package-lock.json" }}
       - run:
           name: Install packages
           command: cd deploy && npm install
       - save_cache:
           paths:
             - deploy/node_modules
-          key: dependencies-{{ checksum "package-lock.json" }}
+          key: dependencies-{{ checksum "deploy/package-lock.json" }}
       - save_cache:
           paths:
             - build
@@ -30,10 +30,10 @@ jobs:
             - build-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Generate manifest and upload assets
-          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
+          command: mkdir -p ../datadist && npm run bundle -- --src ../assets --bucket content.decentraland.zone --out ../datadist/assets.json --content-server content.decentraland.zone
       - run:
           name: Deploy to now.sh
-          command: npm install now --no-save && cd datadist && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
+          command: cd ../datadist && npm install now --no-save && now alias $(now --team decentraland --name avatar-assets --token $NOW_TOKEN) builder-pack --team decentraland --token $NOW_TOKEN
 
 workflows:
   version: 2
