@@ -1,0 +1,12 @@
+{
+  "i18n": {
+    "en": "Male Body",
+    "es": "Hombre"
+  },
+  "categories": [
+    "body_type"
+  ],
+  "main": [
+    {"type": "body_01", "model": "AvatarBase.glb"}
+  ]
+}

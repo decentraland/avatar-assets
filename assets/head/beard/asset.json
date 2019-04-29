@@ -1,0 +1,10 @@
+{
+  "i18n": {
+    "en": "Beard",
+    "es": "Barba"
+  },
+  "category": "head",
+  "main": [
+    {"type": "body_01", "model": "Head_Beard.glb"}
+  ]
+}

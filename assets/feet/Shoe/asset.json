@@ -1,0 +1,11 @@
+{
+  "i18n": {
+    "en": "Shoe",
+    "es": "Zapato"
+  },
+  "category": "feet",
+  "main": [
+    {"type": "body_01", "model": "Feet_Shoe.glb"},
+    {"type": "body_02", "model": "Feet_Shoe.glb"}
+  ]
+}
