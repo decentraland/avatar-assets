@@ -1,0 +1,12 @@
+{
+  "name": "shirt",
+  "i18n": {
+    "en": "Long-sleeved Shirt",
+    "es": "Camisa"
+  },
+  "category": "upper_body",
+  "main": [
+    {"type": "body_01", "model": "UpperBody_ShirtLong.glb"},
+    {"type": "body_02", "model": "UpperBody_ShirtLong_2.glb"}
+  ]
+}

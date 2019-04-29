@@ -1,0 +1,12 @@
+{
+  "name": "shortpants",
+  "i18n": {
+    "en": "Short Pants",
+    "es": "Pantalones cortos"
+  },
+  "category": "lower_body",
+  "main": [
+    {"type": "body_01", "model": "LowerBody_PantsShort.glb"},
+    {"type": "body_02", "model": "LowerBody_PantsShort.glb"}
+  ]
+}

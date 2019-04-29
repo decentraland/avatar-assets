@@ -1,0 +1,12 @@
+{
+  "name": "tshirt",
+  "i18n": {
+    "en": "T-Shirt",
+    "es": "Remera"
+  },
+  "category": "upper_body",
+  "main": [
+    {"type": "body_01", "model": "UpperBody_ShirtShort.glb"},
+    {"type": "body_02", "model": "UpperBody_ShirtShort.glb"}
+  ]
+}

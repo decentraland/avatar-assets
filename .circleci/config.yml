@@ -38,7 +38,6 @@ jobs:
       - run:
           name: Deploy to now.sh
           command: cd deploy && now alias $(now --scope decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
-
 workflows:
   version: 2
   build-deploy-release:

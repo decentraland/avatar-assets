@@ -1,0 +1,12 @@
+{
+  "name": "hair",
+  "i18n": {
+    "en": "Hair",
+    "es": "Peluca"
+  },
+  "category": "head",
+  "main": [
+    {"type": "body_01", "model": "Head_Hair01.glb"},
+    {"type": "body_02", "model": "Head_Hair01.glb"}
+  ]
+}

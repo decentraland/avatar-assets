@@ -1,0 +1,12 @@
+{
+  "name": "longpants",
+  "i18n": {
+    "en": "Jeans",
+    "es": "Jeans"
+  },
+  "category": "lower_body",
+  "main": [
+    {"type": "body_01", "model": "LowerBody_PantsLong.glb"},
+    {"type": "body_02", "model": "LowerBody_PantsLong.glb"}
+  ]
+}
