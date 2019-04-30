@@ -26,12 +26,14 @@ export class AssetDescriptor {
   variations: string[] = []
   contents: { [key: string]: string } = {}
   path: string = ''
+  extra: any
 
-  constructor(id: string, name: string, tags: string[], category: string) {
+  constructor(id: string, name: string, tags: string[], category: string, extra: any = {}) {
     this.id = id
     this.name = name
     this.tags = tags
     this.category = category
+    this.extra = extra
   }
 
   toJSON() {
@@ -43,7 +45,8 @@ export class AssetDescriptor {
       tags: this.tags,
       category: this.category,
       variations: this.variations,
-      contents: this.contents
+      contents: this.contents,
+      ...this.extra
     }
   }
 }
@@ -104,7 +107,8 @@ export const readAsset = (assetDir: string): AssetDescriptor => {
     getSHA256(path.basename(assetDir)),
     assetJSON.name,
     assetJSON.tags,
-    assetJSON.category
+    assetJSON.category,
+    assetJSON
   )
   asset.path = assetDir
 
