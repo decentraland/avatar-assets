@@ -1,0 +1,16 @@
+{
+  "name": "golden_earring",
+  "i18n": {
+    "en": "Golden Earring",
+    "es": "Aro Dorado"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseMale", "model": "M_Head_RGoldEarring_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "bw_cap",
+  "i18n": {
+    "en": "Black and White Cap",
+    "es": "Gorra Blanca y Negra"
+  },
+  "tags": [
+    "hat",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Head_Hat_01.glb"}
+  ]
+}

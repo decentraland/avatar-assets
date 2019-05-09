@@ -1,0 +1,16 @@
+{
+  "name": "male_body",
+  "i18n": {
+    "en": "Man",
+    "es": "Hombre"
+  },
+  "tags": [
+    "body",
+    "male",
+    "man"
+   ],
+  "category": "body_shape",
+  "main": [
+    {"type": "BaseMale", "model": "BaseMale.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "saint_halo",
+  "i18n": {
+    "en": "Saint Halo",
+    "es": "Aureola de Santo"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man"
+   ],
+  "category": "top_head",
+  "main": [
+    {"type": "BaseMale", "model": "M_Head_SaintHalo_01.glb"}
+  ]
+}

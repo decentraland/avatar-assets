@@ -1,0 +1,16 @@
+{
+  "name": "black_jacket",
+  "i18n": {
+    "en": "Black Jacket",
+    "es": "Chaqueta Negra"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_BlackJacket_01.glb"}
+  ]
+}

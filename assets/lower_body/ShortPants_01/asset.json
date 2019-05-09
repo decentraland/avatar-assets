@@ -1,0 +1,16 @@
+{
+  "name": "jean_shorts",
+  "i18n": {
+    "en": "Jean Shorts",
+    "es": "Pantalón Corto de Jean"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_ShortPants_01.glb"}
+  ]
+}

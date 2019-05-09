@@ -1,0 +1,16 @@
+{
+  "name": "kitty_helmet",
+  "i18n": {
+    "en": "Kitty Helmet",
+    "es": "Casco con Orejas de Gato"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man"
+   ],
+  "category": "helmet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Head_KittyHelmet_01.glb"}
+  ]
+}

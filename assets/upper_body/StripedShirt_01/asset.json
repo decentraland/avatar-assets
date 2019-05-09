@@ -1,0 +1,16 @@
+{
+  "name": "striped_shirt_01",
+  "i18n": {
+    "en": "Green Striped Shirt",
+    "es": "Remera Rayada Verde"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_StripedShirt_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "green_hoodie",
+  "i18n": {
+    "en": "Green Hoodie",
+    "es": "Sudadera Verde con Capucha"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_Hoodie_01.glb"}
+  ]
+}

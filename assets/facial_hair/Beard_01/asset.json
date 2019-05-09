@@ -1,0 +1,16 @@
+{
+  "name": "beard",
+  "i18n": {
+    "en": "Beard",
+    "es": "Barba"
+  },
+  "tags": [
+    "face",
+    "male",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Head_Beard_01.glb"}
+  ]
+}
