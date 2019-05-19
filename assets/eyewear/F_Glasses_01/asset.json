@@ -1,0 +1,16 @@
+{
+  "name": "f_glasses",
+  "i18n": {
+    "en": "Red Glasses",
+    "es": "Gafas Rojas"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Glasses_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "m_sweater",
+  "i18n": {
+    "en": "Blue and Red Sweater",
+    "es": "Suéter Azul y Rojo"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_Sweater_01.glb"}
+  ]
+}

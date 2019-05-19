@@ -1,0 +1,16 @@
+{
+  "name": "female_body",
+  "i18n": {
+    "en": "Woman",
+    "es": "Mujer"
+  },
+  "tags": [
+    "body",
+    "male",
+    "man"
+   ],
+  "category": "body_shape",
+  "main": [
+    {"type": "BaseFemale", "model": "BaseFemale.glb"}
+  ]
+}

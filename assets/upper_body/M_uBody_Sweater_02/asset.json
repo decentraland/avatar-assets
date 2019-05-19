@@ -1,0 +1,16 @@
+{
+  "name": "m_sweater_02",
+  "i18n": {
+    "en": "Christmas Sweater",
+    "es": "Suéter de Navidad"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_Sweater_02.glb"}
+  ]
+}

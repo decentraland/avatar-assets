@@ -1,0 +1,20 @@
+{
+  "name": "mouth_01",
+  "i18n": {
+    "en": "Mouth_01",
+    "es": "Mouth_01"
+  },
+  "tags": [
+    "mouth",
+    "face",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "mouth",
+  "main": [
+    {"type": "BaseMale", "model": "Mouth_01.png"},
+    {"type": "BaseFemale", "model": "Mouth_01.png"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "safari_shirt",
+  "i18n": {
+    "en": "Safari Shirt",
+    "es": "Camisa de Safari"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_SafaraiShirt_01.glb"}
+  ]
+}

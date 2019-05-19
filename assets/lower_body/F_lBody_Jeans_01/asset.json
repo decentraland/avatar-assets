@@ -1,0 +1,16 @@
+{
+  "name": "f_jeans",
+  "i18n": {
+    "en": "Jeans",
+    "es": "Jeans"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_Jeans_01.glb"}
+  ]
+}

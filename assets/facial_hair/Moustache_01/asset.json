@@ -5,12 +5,12 @@
     "es": "Bigote Inglés"
   },
   "tags": [
+    "facial_hair",
     "face",
-    "male",
     "man"
    ],
   "category": "facial_hair",
   "main": [
-    {"type": "BaseMale", "model": "M_Head_Moustache_01.glb"}
+    {"type": "BaseMale", "model": "Moustache_01.glb"}
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "bun_shoes",
+  "i18n": {
+    "en": "Bun shoes",
+    "es": "Zapatillas de Lona"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_BunShoes_01.glb"}
+  ]
+}

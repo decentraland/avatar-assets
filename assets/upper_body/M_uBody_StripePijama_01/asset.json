@@ -1,0 +1,16 @@
+{
+  "name": "striped_pijama",
+  "i18n": {
+    "en": "Striped Pajama Shirt",
+    "es": "Remera de Pijama Rayada"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_StripePijama_01.glb"}
+  ]
+}

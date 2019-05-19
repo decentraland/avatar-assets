@@ -7,10 +7,13 @@
   "tags": [
     "accesories",
     "male",
-    "man"
+    "man",
+    "woman",
+    "women"   
    ],
   "category": "helmet",
   "main": [
-    {"type": "BaseMale", "model": "M_Head_KittyHelmet_01.glb"}
+    {"type": "BaseMale", "model": "Helmet_KittyHelmet_01.glb"},
+    {"type": "BaseFemale", "model": "Helmet_KittyHelmet_01.glb"}
   ]
 }

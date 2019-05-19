@@ -1,0 +1,19 @@
+{
+  "name": "bear_slippers",
+  "i18n": {
+    "en": "Bear Slippers",
+    "es": "Pantuflas de Oso"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "BearSlippers_01.glb"},
+    {"type": "BaseFemale", "model": "BearSlippers_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pijama_hat",
+  "i18n": {
+    "en": "Pajama Hat",
+    "es": "Gorro de Pijama"
+  },
+  "tags": [
+    "hat",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "Hair_CapHair_01.glb"}
+  ]
+}

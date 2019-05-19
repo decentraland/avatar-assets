@@ -1,0 +1,19 @@
+{
+  "name": "sneakers",
+  "i18n": {
+    "en": "Sneakers",
+    "es": "Zapatillas"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "Sneakers_01.glb"},
+    {"type": "BaseFemale", "model": "Sneakers_01.glb"}
+  ]
+}

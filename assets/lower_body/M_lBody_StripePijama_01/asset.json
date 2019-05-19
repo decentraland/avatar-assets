@@ -1,0 +1,16 @@
+{
+  "name": "pijama_pants",
+  "i18n": {
+    "en": "Striped Pajama Pants",
+    "es": "Pantalón de Pijama Rayado"
+  },
+  "tags": [
+    "bottom",
+    "Male",
+    "Man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_StripePijama_01.glb"}
+  ]
+}

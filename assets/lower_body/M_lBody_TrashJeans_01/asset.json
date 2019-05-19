@@ -1,0 +1,16 @@
+{
+  "name": "trash_jean",
+  "i18n": {
+    "en": "Trash Jeans",
+    "es": "Jeans Usados"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_TrashJeans_01.glb"}
+  ]
+}

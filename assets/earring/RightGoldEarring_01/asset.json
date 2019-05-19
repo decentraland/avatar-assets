@@ -7,10 +7,13 @@
   "tags": [
     "accesories",
     "male",
-    "man"
+    "man",
+    "female",
+    "woman"
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseMale", "model": "M_Head_RGoldEarring_01.glb"}
+    {"type": "BaseMale", "model": "RightGoldEarring_01.glb"},
+    {"type": "BaseFemale", "model": "RightGoldEarring_01.glb"}
   ]
 }
