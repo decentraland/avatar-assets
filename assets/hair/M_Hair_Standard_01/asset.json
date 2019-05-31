@@ -1,0 +1,16 @@
+{
+  "name": "casual_hair_01",
+  "i18n": {
+    "en": "Casual Hair Style",
+    "es": "Corte Casual"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Standard_01.glb"}
+  ]
+}

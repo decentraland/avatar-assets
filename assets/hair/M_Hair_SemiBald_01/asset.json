@@ -1,0 +1,16 @@
+{
+  "name": "semi_bold",
+  "i18n": {
+    "en": "Bald On Top",
+    "es": "Semi Pelado"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_SemiBald_01.glb"}
+  ]
+}

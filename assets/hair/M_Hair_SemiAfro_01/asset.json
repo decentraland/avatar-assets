@@ -1,0 +1,16 @@
+{
+  "name": "semi_afro",
+  "i18n": {
+    "en": "Small Afro",
+    "es": "Pequeño Afro"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_SemiAfro_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sport_jacket",
+  "i18n": {
+    "en": "Sport Jacket",
+    "es": "Chaqueta Deportiva"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_SportJacket.glb"}
+  ]
+}

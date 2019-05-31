@@ -1,0 +1,16 @@
+{
+  "name": "ruby_blue_loafer",
+  "i18n": {
+    "en": "Loafer Blue Shoes",
+    "es": "Zapatos Holgados Azules"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_RubyBlueSleepers.glb"}
+  ]
+}

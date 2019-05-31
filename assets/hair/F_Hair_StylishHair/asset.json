@@ -1,0 +1,16 @@
+{
+  "name": "stylish_hair",
+  "i18n": {
+    "en": "Stylish hair",
+    "es": "Peinado Elegante"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_StylishHair.glb"}
+  ]
+}

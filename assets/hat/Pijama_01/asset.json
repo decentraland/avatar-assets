@@ -11,6 +11,6 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseMale", "model": "Hair_CapHair_01.glb"}
+    {"type": "BaseMale", "model": "Pijama_01.glb"}
   ]
 }

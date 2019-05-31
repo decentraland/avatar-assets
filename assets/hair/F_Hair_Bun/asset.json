@@ -1,0 +1,16 @@
+{
+  "name": "hair_bun",
+  "i18n": {
+    "en": "Hair Bun",
+    "es": "Rodete"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Bun.glb"}
+  ]
+}

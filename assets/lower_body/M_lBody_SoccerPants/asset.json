@@ -1,0 +1,16 @@
+{
+  "name": "soccer_pants",
+  "i18n": {
+    "en": "Soccer Pants",
+    "es": "Pantalón Corto de Fútbol"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_SoccerPants.glb"}
+  ]
+}

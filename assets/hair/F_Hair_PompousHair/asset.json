@@ -1,0 +1,16 @@
+{
+  "name": "pompous",
+  "i18n": {
+    "en": "Pompous Hair",
+    "es": "Pelo Pomposo"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_PompousHair.glb"}
+  ]
+}

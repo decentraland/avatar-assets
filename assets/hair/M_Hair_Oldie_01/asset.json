@@ -1,0 +1,16 @@
+{
+  "name": "hair_oldie",
+  "i18n": {
+    "en": "Oldie",
+    "es": "Peinado Antiguo"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Oldie_01.glb"}
+  ]
+}

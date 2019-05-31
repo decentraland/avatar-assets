@@ -1,0 +1,19 @@
+{
+  "name": "square_earring",
+  "i18n": {
+    "en": "Square Earring",
+    "es": "Aro Cuadrado"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseMale", "model": "Earring_SquareEarring.glb"},
+    {"type": "BaseFemale", "model": "Earring_SquareEarring.glb"}
+  ]
+}

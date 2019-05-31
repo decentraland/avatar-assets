@@ -1,0 +1,19 @@
+{
+  "name": "citycomfortableshoes",
+  "i18n": {
+    "en": "Comfortable Shoes",
+    "es": "Zapatos cómodos"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "CityComfortableShoes.glb"},
+    {"type": "BaseFemale", "model": "CityComfortableShoes.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "shoulder_bob_hair",
+  "i18n": {
+    "en": "Shoulder Bob Hair",
+    "es": "Corte Carré"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_ShoulderBobHair.glb"}
+  ]
+}

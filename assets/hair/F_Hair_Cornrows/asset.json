@@ -1,0 +1,16 @@
+{
+  "name": "cornrows",
+  "i18n": {
+    "en": "Cornrow",
+    "es": "Trenzas"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Cornrows.glb"}
+  ]
+}

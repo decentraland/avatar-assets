@@ -1,0 +1,16 @@
+{
+  "name": "black_sun_glasses",
+  "i18n": {
+    "en": "Black Sunglasses",
+    "es": "Anteojos Negros"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyewear_BlackSunglasses.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "heart_glasses",
+  "i18n": {
+    "en": "Heart Shaped Sunglasses",
+    "es": "Anteojos con Forma de Corazón"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyewear_Heart.glb"}
+  ]
+}

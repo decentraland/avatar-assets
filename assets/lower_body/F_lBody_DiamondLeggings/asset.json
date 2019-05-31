@@ -1,0 +1,16 @@
+{
+  "name": "f_diamond_leggings",
+  "i18n": {
+    "en": "Diamond leggings",
+    "es": "Leggings con Estampado de Diamantes"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_DiamondLeggings.glb"}
+  ]
+}

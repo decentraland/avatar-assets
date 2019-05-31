@@ -1,0 +1,16 @@
+{
+  "name": "double_bun",
+  "i18n": {
+    "en": "Double Bun",
+    "es": "Doble Rodete"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_DoubleBun.glb"}
+  ]
+}

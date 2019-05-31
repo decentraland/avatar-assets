@@ -1,0 +1,16 @@
+{
+  "name": "sport_colored_shoes",
+  "i18n": {
+    "en": "Sport Colored Shoes",
+    "es": "Zapatos Deportivos Coloreados"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_SportColorShoes.glb"}
+  ]
+}

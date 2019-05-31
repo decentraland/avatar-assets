@@ -1,0 +1,16 @@
+{
+  "name": "f_red_comfy_pants",
+  "i18n": {
+    "en": "Red Comfy Pants",
+    "es": "Pantalones Cómodos Rojos"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_RedComfortPants.glb"}
+  ]
+}

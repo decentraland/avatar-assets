@@ -1,0 +1,16 @@
+{
+  "name": "distressed_black_Jeans",
+  "i18n": {
+    "en": "Worn out black Jeans",
+    "es": "Jeans Gastados Negros"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_DistressedBlackJeans.glb"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "red_bandana",
+  "i18n": {
+    "en": "Red Bandana",
+    "es": "Bandana Roja"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "tiara",
+  "main": [
+    {"type": "BaseMale", "model": "RedBandana.glb"},
+    {"type": "BaseFemale", "model": "RedBandana.glb"}
+  ]
+}

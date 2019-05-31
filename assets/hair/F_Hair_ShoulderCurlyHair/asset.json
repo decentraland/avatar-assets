@@ -1,0 +1,16 @@
+{
+  "name": "curly_hair",
+  "i18n": {
+    "en": "Curly Hair",
+    "es": "Pelo Rizado"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_ShoulderCurlyHair.glb"}
+  ]
+}

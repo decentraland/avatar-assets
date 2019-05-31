@@ -1,0 +1,16 @@
+{
+  "name": "striped_swim_suit",
+  "i18n": {
+    "en": "Striped Swimsuit",
+    "es": "Traje de baño rayado"
+  },
+  "tags": [
+    "bottom",
+    "Male",
+    "Man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_StripeSwimSuit.glb"}
+  ]
+}

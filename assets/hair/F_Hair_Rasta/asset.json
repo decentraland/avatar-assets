@@ -1,0 +1,16 @@
+{
+  "name": "rasta_style",
+  "i18n": {
+    "en": "Rasta Style",
+    "es": "Rastas"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Rasta.glb"}
+  ]
+}

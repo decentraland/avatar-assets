@@ -1,0 +1,16 @@
+{
+  "name": "puffer_jacket",
+  "i18n": {
+    "en": "Puffer Jacket",
+    "es": "Chaqueta Mullida"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_PuffJacket_01.glb"}
+  ]
+}

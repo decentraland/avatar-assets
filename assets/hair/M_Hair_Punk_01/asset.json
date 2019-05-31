@@ -1,0 +1,16 @@
+{
+  "name": "punk",
+  "i18n": {
+    "en": "Punk Crest",
+    "es": "Cresta Punk"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Punk_01.glb"}
+  ]
+}

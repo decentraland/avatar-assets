@@ -1,0 +1,16 @@
+{
+  "name": "Moccasin",
+  "i18n": {
+    "en": "Moccasin",
+    "es": "Mocasines"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_SchoolShoes.glb"}
+  ]
+}

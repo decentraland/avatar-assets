@@ -1,0 +1,16 @@
+{
+  "name": "two_tails",
+  "i18n": {
+    "en": "Two Tails",
+    "es": "Dos Trenzas"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_TwoTails.glb"}
+  ]
+}

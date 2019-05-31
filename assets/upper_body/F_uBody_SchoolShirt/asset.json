@@ -1,0 +1,16 @@
+{
+  "name": "school_shirt",
+  "i18n": {
+    "en": "School Shirt",
+    "es": "Camisa Escolar"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_SchoolShirt.glb"}
+  ]
+}

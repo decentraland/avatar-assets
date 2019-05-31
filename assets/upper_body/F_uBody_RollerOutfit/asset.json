@@ -1,0 +1,16 @@
+{
+  "name": "roller_outfit",
+  "i18n": {
+    "en": "Roller Skate Outfit",
+    "es": "Remera de Roller Skate"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_RollerOutfit.glb"}
+  ]
+}

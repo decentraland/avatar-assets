@@ -1,0 +1,16 @@
+{
+  "name": "blue_tshirt",
+  "i18n": {
+    "en": "Blue T-Shirt",
+    "es": "Remera Azul"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_BlueTShirt.glb"}
+  ]
+}

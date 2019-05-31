@@ -1,0 +1,16 @@
+{
+  "name": "piratepatch",
+  "i18n": {
+    "en": "Pirate Patch",
+    "es": "Parche Pirata"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseMale", "model": "PiratePatch.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "elegant_sweater",
+  "i18n": {
+    "en": "Elegant Sweater",
+    "es": "Sweater Elegante"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_ElegantSweater.glb"}
+  ]
+}

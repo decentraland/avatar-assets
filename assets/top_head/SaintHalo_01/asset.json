@@ -13,7 +13,7 @@
    ],
   "category": "top_head",
   "main": [
-    {"type": "BaseMale", "model": "TopHead_SaintHalo_01.glb"},
-    {"type": "BaseFemale", "model": "TopHead_SaintHalo_01.glb"}
+    {"type": "BaseMale", "model": "Tophead_SaintHalo_01.glb"},
+    {"type": "BaseFemale", "model": "Tophead_SaintHalo_01.glb"}
   ]
 }

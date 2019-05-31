@@ -1,0 +1,16 @@
+{
+  "name": "pink_sleepers",
+  "i18n": {
+    "en": "Pink Sleepers",
+    "es": "Pantúflas Rosas"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_PinkSleepers.glb"}
+  ]
+}

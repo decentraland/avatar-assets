@@ -1,0 +1,16 @@
+{
+  "name": "soccer_shirt",
+  "i18n": {
+    "en": "Soccer T-Shirt",
+    "es": "Remera de Fútbol"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_SoccerTshirt.glb"}
+  ]
+}

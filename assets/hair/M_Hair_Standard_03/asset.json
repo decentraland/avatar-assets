@@ -1,0 +1,16 @@
+{
+  "name": "casual_hair_03",
+  "i18n": {
+    "en": "Simple Hairstyle",
+    "es": "Corte Sencillo"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Standard_03.glb"}
+  ]
+}

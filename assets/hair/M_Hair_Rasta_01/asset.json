@@ -1,0 +1,16 @@
+{
+  "name": "rasta",
+  "i18n": {
+    "en": "Dreads",
+    "es": "Rasta"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Rasta_01.glb"}
+  ]
+}

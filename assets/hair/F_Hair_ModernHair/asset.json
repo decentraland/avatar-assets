@@ -1,0 +1,16 @@
+{
+  "name": "modern_hair",
+  "i18n": {
+    "en": "Modern Style",
+    "es": "Peinado Moderno"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_ModernHair.glb"}
+  ]
+}

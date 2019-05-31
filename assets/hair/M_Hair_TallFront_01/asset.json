@@ -1,0 +1,16 @@
+{
+  "name": "tall_front_01",
+  "i18n": {
+    "en": "Pompadour hair",
+    "es": "Peinado con Jopo"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_TallFront_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "standard_hair",
+  "i18n": {
+    "en": "Classic Style",
+    "es": "Peinado Clásico"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Standard.glb"}
+  ]
+}

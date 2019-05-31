@@ -1,0 +1,16 @@
+{
+  "name": "elegant_striped_shirt",
+  "i18n": {
+    "en": "Elegant Striped Shirt",
+    "es": "Remera Elegante a Rayas"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_ElegantStripeShirt.glb"}
+  ]
+}

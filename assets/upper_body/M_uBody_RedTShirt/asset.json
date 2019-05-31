@@ -1,0 +1,16 @@
+{
+  "name": "red_tshirt",
+  "i18n": {
+    "en": "Red T-Shirt",
+    "es": "Remera Roja"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_RedTShirt.glb"}
+  ]
+}

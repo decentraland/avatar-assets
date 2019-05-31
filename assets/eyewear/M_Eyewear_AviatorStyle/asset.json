@@ -1,0 +1,16 @@
+{
+  "name": "aviatorstyle",
+  "i18n": {
+    "en": "Aviator Sunglasses",
+    "es": "Gafas de Aviador"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseMale", "model": "M_Eyewear_AviatorStyle.glb"}
+  ]
+}

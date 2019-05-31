@@ -1,0 +1,16 @@
+{
+  "name": "hip_hop_joggers",
+  "i18n": {
+    "en": "Hip Hop Joggers",
+    "es": "Pantalones de Hip Hp"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_HipHopJoggers.glb"}
+  ]
+}

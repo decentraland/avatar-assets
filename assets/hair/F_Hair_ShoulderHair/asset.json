@@ -1,0 +1,16 @@
+{
+  "name": "shoulder_hair",
+  "i18n": {
+    "en": "Shoulder Hair",
+    "es": "Pelo al hombro"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_ShoulderHair.glb"}
+  ]
+}

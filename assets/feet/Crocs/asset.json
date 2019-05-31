@@ -1,0 +1,19 @@
+{
+  "name": "crocs",
+  "i18n": {
+    "en": "Crocs",
+    "es": "Crocs"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "Crocs.glb"},
+    {"type": "BaseFemale", "model": "Crocs.glb"}
+  ]
+}

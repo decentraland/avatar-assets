@@ -1,0 +1,16 @@
+{
+  "name": "ruby_red_loafer",
+  "i18n": {
+    "en": "Loafer Red Shoes",
+    "es": "Zapatos Holgados Rojos"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_RubyRedSleepers.glb"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "f_eyes_04",
+  "i18n": {
+    "en": "f_Eyes_04",
+    "es": "f_Eyes_04"
+  },
+  "tags": [
+    "face",
+    "eyes",
+    "female",
+    "woman"
+   ],
+  "category": "eyes",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyes_04.png"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "elegant_blue_trousers",
+  "i18n": {
+    "en": "Elegant Blue Trousers",
+    "es": "Pantalones Elegantes Azules"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_ElegantBlueTrousers.glb"}
+  ]
+}

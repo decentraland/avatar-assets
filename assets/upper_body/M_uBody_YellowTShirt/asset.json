@@ -1,0 +1,16 @@
+{
+  "name": "yellow_tshirt",
+  "i18n": {
+    "en": "YellowT-Shirt",
+    "es": "Remera Amarilla"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_YellowTShirt.glb"}
+  ]
+}

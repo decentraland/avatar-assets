@@ -1,0 +1,16 @@
+{
+  "name": "moptop",
+  "i18n": {
+    "en": "Moptop",
+    "es": "Moptop"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Beatle_01.glb"}
+  ]
+}

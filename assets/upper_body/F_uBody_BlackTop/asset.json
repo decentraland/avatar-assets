@@ -1,0 +1,16 @@
+{
+  "name": "black_top",
+  "i18n": {
+    "en": "Black Top",
+    "es": "Top Negro"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_BlackTop.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "short_hair",
+  "i18n": {
+    "en": "Short Hair",
+    "es": "Pelo Corto"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_ShortHair_01.glb"}
+  ]
+}

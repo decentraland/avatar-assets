@@ -1,0 +1,17 @@
+{
+  "name": "f_mouth_04",
+  "i18n": {
+    "en": "f_Mouth_04",
+    "es": "f_Mouth_04"
+  },
+  "tags": [
+    "face",
+    "mouth",
+    "female",
+    "woman"
+   ],
+  "category": "mouth",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Mouth_04.png"}
+  ]
+}

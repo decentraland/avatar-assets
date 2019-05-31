@@ -1,0 +1,16 @@
+{
+  "name": "grey_joggers",
+  "i18n": {
+    "en": "Grey Joggers",
+    "es": "Pantalones de Chándal"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_GreyJoggers.glb"}
+  ]
+}

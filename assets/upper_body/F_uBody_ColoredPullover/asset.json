@@ -1,0 +1,16 @@
+{
+  "name": "colored_sweater",
+  "i18n": {
+    "en": "Colored Sweater",
+    "es": "Sweater de Colores"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_ColoredPullover.glb"}
+  ]
+}

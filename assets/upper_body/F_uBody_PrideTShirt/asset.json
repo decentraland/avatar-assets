@@ -1,0 +1,16 @@
+{
+  "name": "f_pride_t_shirt",
+  "i18n": {
+    "en": "Gay Pride T-Shirt",
+    "es": "Remera del Orgullo Gay"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_PrideTShirt.glb"}
+  ]
+}

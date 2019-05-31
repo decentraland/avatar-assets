@@ -1,0 +1,16 @@
+{
+  "name": "green_tshirt",
+  "i18n": {
+    "en": "Green T-Shirt",
+    "es": "Remera Verde"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_GreenTShirt.glb"}
+  ]
+}

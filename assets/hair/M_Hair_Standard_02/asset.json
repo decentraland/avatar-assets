@@ -1,0 +1,16 @@
+{
+  "name": "casual_hair_02",
+  "i18n": {
+    "en": "Elvis Wannabe",
+    "es": "Corte a lo Elvis"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Standard_02.glb"}
+  ]
+}

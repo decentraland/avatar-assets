@@ -1,0 +1,16 @@
+{
+  "name": "f_short_blue_jeans",
+  "i18n": {
+    "en": "Short Blue Jeans",
+    "es": "Pantalones Cortos de Jean"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_ShortBlueJeans.glb"}
+  ]
+}

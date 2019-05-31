@@ -1,0 +1,19 @@
+{
+  "name": "green_feather_earring",
+  "i18n": {
+    "en": "Green Feather Earring",
+    "es": "Aro de Pluma Verde"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseMale", "model": "Earring_GreenFeather.glb"},
+    {"type": "BaseFemale", "model": "Earring_GreenFeather.glb"}
+  ]
+}

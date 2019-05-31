@@ -1,0 +1,17 @@
+{
+  "name": "f_eyebrows_03",
+  "i18n": {
+    "en": "f_EyeBrows_03",
+    "es": "f_EyeBrows_03"
+  },
+  "tags": [
+    "face",
+    "eyebrows",
+    "Female",
+    "woman"
+   ],
+  "category": "eyebrows",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyebrows_03.png"}
+  ]
+}

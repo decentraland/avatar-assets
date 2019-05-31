@@ -1,0 +1,16 @@
+{
+  "name": "f_roller_leggings",
+  "i18n": {
+    "en": "Roller leggings",
+    "es": "Roller leggings"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_RollerLeggings.glb"}
+  ]
+}

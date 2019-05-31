@@ -1,0 +1,16 @@
+{
+  "name": "puffer_jacket_hoodie",
+  "i18n": {
+    "en": "Puffer Jacket Hoodie",
+    "es": "Chaqueta Mullida con Capucha"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_PuffJacketHoodie_01.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "f_school_skirt",
+  "i18n": {
+    "en": "School Skirt",
+    "es": "Falda Escolar"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_SchoolSkirt.glb"}
+  ]
+}

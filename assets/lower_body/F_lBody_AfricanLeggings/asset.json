@@ -1,0 +1,16 @@
+{
+  "name": "f_african_leggins",
+  "i18n": {
+    "en": "African Leggins",
+    "es": "Leggins Africanos"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_AfricanLeggings.glb"}
+  ]
+}

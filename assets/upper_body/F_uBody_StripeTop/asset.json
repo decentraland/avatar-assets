@@ -1,0 +1,16 @@
+{
+  "name": "striped_top",
+  "i18n": {
+    "en": "Striped Top",
+    "es": "Top a Rayas"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_StripeTop.glb"}
+  ]
+}

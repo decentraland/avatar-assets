@@ -1,0 +1,16 @@
+{
+  "name": "f_yoga_trousers",
+  "i18n": {
+    "en": "Yoga Trousers",
+    "es": "Pantalones de Yoga"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_YogaTrousers.glb"}
+  ]
+}
