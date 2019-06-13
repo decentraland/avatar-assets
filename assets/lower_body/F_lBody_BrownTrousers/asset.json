@@ -1,0 +1,16 @@
+{
+  "name": "f_brown_trousers",
+  "i18n": {
+    "en": "New Brown Trousers",
+    "es": "Pantalones Marrones Nuevos"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_BrownTrousers.glb"}
+  ]
+}

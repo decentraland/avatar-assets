@@ -1,0 +1,16 @@
+{
+  "name": "moccasin",
+  "i18n": {
+    "en": "Moccasins",
+    "es": "Mocasines"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_Moccasin.glb"}
+  ]
+}

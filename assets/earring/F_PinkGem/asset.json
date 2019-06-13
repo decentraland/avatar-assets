@@ -1,0 +1,16 @@
+{
+  "name": "pink_gem_earring",
+  "i18n": {
+    "en": "Pink Gem Earrings",
+    "es": "Pendientes de Gema Rosa"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Earrings_PInkGem.glb"}
+  ]
+}

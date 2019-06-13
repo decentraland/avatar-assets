@@ -1,0 +1,16 @@
+{
+  "name": "f_red_modern_pants",
+  "i18n": {
+    "en": "Red Modern Pants",
+    "es": "Pantalones Modernos Rojos"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_RedModernPant.glb"}
+  ]
+}

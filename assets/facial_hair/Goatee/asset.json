@@ -1,0 +1,16 @@
+{
+  "name": "goatee_beard",
+  "i18n": {
+    "en": "Goatee",
+    "es": "Goatee"
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_Goatee.glb"}
+  ]
+}

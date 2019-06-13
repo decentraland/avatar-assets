@@ -1,0 +1,16 @@
+{
+  "name": "f_stripe_long_skirt",
+  "i18n": {
+    "en": "Long Striped Skirt",
+    "es": "Falda Larga a Rayas"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_StripeLongSkirt.glb"}
+  ]
+}

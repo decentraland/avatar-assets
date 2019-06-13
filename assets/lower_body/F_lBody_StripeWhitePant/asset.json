@@ -1,0 +1,16 @@
+{
+  "name": "f_stripe_white_pants",
+  "i18n": {
+    "en": "Striped White Pants",
+    "es": "Pantalones Blancos con Rayas"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_StripeWhitePant.glb"}
+  ]
+}

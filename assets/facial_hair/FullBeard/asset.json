@@ -1,0 +1,16 @@
+{
+  "name": "full_beard",
+  "i18n": {
+    "en": "Full Beard",
+    "es": "Barba Completa"
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_FullBeard.glb"}
+  ]
+}

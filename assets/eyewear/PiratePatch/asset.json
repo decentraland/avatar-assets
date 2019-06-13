@@ -6,11 +6,14 @@
   },
   "tags": [
     "accesories",
+    "man",
+    "men",
     "woman",
     "women"
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "PiratePatch.glb"}
+    {"type": "BaseMale", "model": "PiratePatch.glb"},
+    {"type": "BaseFemale", "model": "PiratePatch.glb"}
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "balbo_beard",
+  "i18n": {
+    "en": "Balbo",
+    "es": "Balbo"
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_BalbooBeard.glb"}
+  ]
+}

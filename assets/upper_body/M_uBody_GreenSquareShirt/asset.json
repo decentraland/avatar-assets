@@ -1,0 +1,16 @@
+{
+  "name": "green_square_shirt",
+  "i18n": {
+    "en": "Green Square Shirt",
+    "es": "Camisa a Cuadros Verde"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_GreenSquareShirt.glb"}
+  ]
+}

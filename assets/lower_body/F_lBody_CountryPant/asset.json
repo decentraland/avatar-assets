@@ -1,0 +1,16 @@
+{
+  "name": "f_country_pants",
+  "i18n": {
+    "en": "Country Music Pants",
+    "es": "Pantalones de Música Country"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_CountryPant.glb"}
+  ]
+}

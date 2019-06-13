@@ -1,0 +1,16 @@
+{
+  "name": "f_white_shirt",
+  "i18n": {
+    "en": "White Shirt",
+    "es": "Camisa Blanca"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_WhiteShirt.glb"}
+  ]
+}

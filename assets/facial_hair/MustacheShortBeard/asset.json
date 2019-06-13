@@ -1,0 +1,16 @@
+{
+  "name": "beard",
+  "i18n": {
+    "en": "Anchor Beard",
+    "es": "Ancla"
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_MustacheShortBeard.glb"}
+  ]
+}

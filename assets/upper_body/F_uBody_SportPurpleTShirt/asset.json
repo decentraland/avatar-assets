@@ -1,0 +1,16 @@
+{
+  "name": "f_sport_purple_tshirt",
+  "i18n": {
+    "en": "Purple Sport T-shirt",
+    "es": "Camiseta Deportiva Violeta"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_SportPurpleTShirt.glb"}
+  ]
+}

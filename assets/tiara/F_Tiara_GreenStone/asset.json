@@ -1,0 +1,16 @@
+{
+  "name": "green_stone_tiara",
+  "i18n": {
+    "en": "Green Gemstone Tiara",
+    "es": "Tiara con Gema Verde"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "tiara",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Tiara_GreenStone.glb"}
+  ]
+}

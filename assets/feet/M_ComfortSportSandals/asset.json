@@ -1,0 +1,16 @@
+{
+  "name": "comfy_sport_sandals",
+  "i18n": {
+    "en": "Comfy Sport Sandals",
+    "es": "Sandalias Deportivas"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_ComfortSportSandals.glb"}
+  ]
+}

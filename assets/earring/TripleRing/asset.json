@@ -1,0 +1,19 @@
+{
+  "name": "triple_ring",
+  "i18n": {
+    "en": "Triple Ring",
+    "es": "Tres Pendientes"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "woman",
+    "women"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseMale", "model": "M_Earrings_TripleRing.glb"}
+    {"type": "Basefemale", "model": "M_Earrings_TripleRing.glb"}
+  ]
+}

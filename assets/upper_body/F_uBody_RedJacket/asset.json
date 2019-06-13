@@ -1,0 +1,16 @@
+{
+  "name": "Red_topcoat",
+  "i18n": {
+    "en": "Red Topcoat",
+    "es": "Top Negro"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_RedJacket.glb"}
+  ]
+}

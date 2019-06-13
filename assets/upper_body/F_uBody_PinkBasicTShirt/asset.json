@@ -1,0 +1,16 @@
+{
+  "name": "f_pink_simple_tshirt",
+  "i18n": {
+    "en": "Simple Pink T-Shirt",
+    "es": "Camiseta Rosa Simple"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_PinkBasicTShirt.glb"}
+  ]
+}

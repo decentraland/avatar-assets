@@ -1,0 +1,16 @@
+{
+  "name": "pink_blue_socks",
+  "i18n": {
+    "en": "Pink and Blue Socks",
+    "es": "Medias Rosadas y Azules"
+  },
+  "tags": [
+    "shoes",
+    "woman",
+    "women"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Feet_PinkBlueSocks.glb"}
+  ]
+}

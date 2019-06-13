@@ -1,0 +1,16 @@
+{
+  "name": "f_sport_shorts",
+  "i18n": {
+    "en": "Sport Shorts",
+    "es": "Pantalones Cortos Deportivos"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_SportShorts.glb"}
+  ]
+}

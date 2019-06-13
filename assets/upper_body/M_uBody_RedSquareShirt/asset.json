@@ -1,0 +1,16 @@
+{
+  "name": "red_square_shirt",
+  "i18n": {
+    "en": "Red Square Shirt",
+    "es": "Camisa a Cuadros roja"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_uBody_RedSquareShirt.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pearls_earring",
+  "i18n": {
+    "en": "Pearls Earrings",
+    "es": "Pendientes de Perlas"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Earrings_Pearls.glb"}
+  ]
+}

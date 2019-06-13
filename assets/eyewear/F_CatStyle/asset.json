@@ -1,0 +1,16 @@
+{
+  "name": "f_glasses_cat_style",
+  "i18n": {
+    "en": "Cat Style Glasses",
+    "es": "Gafas de Estilo Gato"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyewear_CatStyle.glb"}
+  ]
+}

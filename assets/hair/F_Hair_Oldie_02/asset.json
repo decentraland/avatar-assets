@@ -1,0 +1,16 @@
+{
+  "name": "hair_f_oldie_02",
+  "i18n": {
+    "en": "Short Hair",
+    "es": "Pelo Corto"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Oldie_02.glb"}
+  ]
+}

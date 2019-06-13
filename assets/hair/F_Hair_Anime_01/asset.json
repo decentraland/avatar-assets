@@ -1,0 +1,16 @@
+{
+  "name": "hair_anime_01",
+  "i18n": {
+    "en": "Idol",
+    "es": "Celebridad"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Anime_01.glb"}
+  ]
+}

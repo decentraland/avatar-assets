@@ -1,0 +1,16 @@
+{
+  "name": "f_short_colored_leggins",
+  "i18n": {
+    "en": "Short Colored Leggins",
+    "es": "Leggins Cortos de Colores"
+  },
+  "tags": [
+    "bottom",
+    "female",
+    "woman"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_lBody_ShortColoredLeggings.glb"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Espadrilles",
+  "i18n": {
+    "en": "Espadrilles",
+    "es": "Alpargatas"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_Espadrilles.glb"},
+    {"type": "BaseFemale", "model": "M_Feet_Espadrilles.glb"}
+  ]
+}

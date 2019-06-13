@@ -1,0 +1,16 @@
+{
+  "name": "brown_pants_02",
+  "i18n": {
+    "en": "Brown Pants",
+    "es": "Pantalones Marrones"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_BrownPants.glb"}
+  ]
+}

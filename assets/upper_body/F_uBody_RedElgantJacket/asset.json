@@ -1,0 +1,16 @@
+{
+  "name": "f_red_elegant_jacket",
+  "i18n": {
+    "en": "Red Elegant Jacket",
+    "es": "Chaqueta Elegante Roja"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_RedElgantJacket.glb"}
+  ]
+}

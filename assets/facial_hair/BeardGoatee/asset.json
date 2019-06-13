@@ -1,0 +1,16 @@
+{
+  "name": "lincoln_beard",
+  "i18n": {
+    "en": "Lincoln",
+    "es": "Barba en Collar "
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_BeardGoatee.glb"}
+  ]
+}

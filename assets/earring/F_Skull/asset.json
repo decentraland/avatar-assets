@@ -1,0 +1,16 @@
+{
+  "name": "f_skull_earring",
+  "i18n": {
+    "en": "Skull Earring",
+    "es": "Pendiente de Calavera"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Earrings_Skull.glb"}
+  ]
+}

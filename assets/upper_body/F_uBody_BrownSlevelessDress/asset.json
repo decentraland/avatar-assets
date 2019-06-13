@@ -1,0 +1,16 @@
+{
+  "name": "brown_sleveless_dress",
+  "i18n": {
+    "en": "Brown Sleeveless Dress",
+    "es": "Vestido Marrón Sin Mangas"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_BrownSlevelessDress.glb"}
+  ]
+}

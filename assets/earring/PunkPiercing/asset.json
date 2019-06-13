@@ -1,0 +1,19 @@
+{
+  "name": "punk_piercing",
+  "i18n": {
+    "en": "Punk Piercing",
+    "es": "Piercing Punk"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "BaseMale", "model": "F_Earrings_PunkPiercing.glb"},
+    {"type": "BaseFemale", "model": "F_Earrings_PunkPiercing.glb"}
+  ]
+}

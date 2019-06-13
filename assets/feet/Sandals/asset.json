@@ -1,0 +1,19 @@
+{
+  "name": "f_m_sandals",
+  "i18n": {
+    "en": "Sandals",
+    "es": "Sandalias"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_Sandals.glb"},
+    {"type": "BaseFemale", "model": "M_Feet_Sandals.glb"}
+  ]
+}

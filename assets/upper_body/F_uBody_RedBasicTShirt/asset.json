@@ -1,0 +1,16 @@
+{
+  "name": "f_red_simple_tshirt",
+  "i18n": {
+    "en": "Red Simple T-Shirt",
+    "es": "Camiseta Roja Simple"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_RedBasicTShirt.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "light_green_shirt",
+  "i18n": {
+    "en": "Light Green Shirt",
+    "es": "Camisa Verde Claro"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "BaseFemale", "model": "F_uBody_LightGreenShirt.glb"}
+  ]
+}

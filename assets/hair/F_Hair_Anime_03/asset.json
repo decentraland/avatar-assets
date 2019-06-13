@@ -1,0 +1,16 @@
+{
+  "name": "hair_undere",
+  "i18n": {
+    "en": "Undere Hair Style",
+    "es": "Estilo de pelo Undere"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Anime_03.glb"}
+  ]
+}

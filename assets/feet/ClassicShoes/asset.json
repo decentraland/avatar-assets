@@ -1,0 +1,19 @@
+{
+  "name": "classic_shoes",
+  "i18n": {
+    "en": "Classic Shoes",
+    "es": "Zapatos Clásicos"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_ClassicShoes.glb"},
+    {"type": "BaseFemale", "model": "M_Feet_ClassicShoes.glb"}
+  ]
+}

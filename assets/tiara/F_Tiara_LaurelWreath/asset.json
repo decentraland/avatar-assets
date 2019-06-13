@@ -1,0 +1,16 @@
+{
+  "name": "laurel_wreath",
+  "i18n": {
+    "en": "Laurel Wreath",
+    "es": "Corona de laureles"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "tiara",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Tiara_LaurelWreath.glb"}
+  ]
+}

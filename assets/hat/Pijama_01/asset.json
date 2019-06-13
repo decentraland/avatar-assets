@@ -7,10 +7,13 @@
   "tags": [
     "hat",
     "male",
-    "man"
+    "man",
+    "woman",
+    "women"
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseMale", "model": "Pijama_01.glb"}
+    {"type": "BaseMale", "model": "Pijama_01.glb"},
+    {"type": "Basefemale", "model": "Pijama_01.glb"}
   ]
 }

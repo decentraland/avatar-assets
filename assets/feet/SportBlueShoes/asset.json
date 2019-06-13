@@ -1,0 +1,19 @@
+{
+  "name": "sport_blue_shoes",
+  "i18n": {
+    "en": "Sport Blue Shoes",
+    "es": "Zapatillas Deportivas Azules"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "BaseMale", "model": "M_Feet_SportBlueShoes.glb"},
+    {"type": "BaseFemale", "model": "M_Feet_SportBlueShoes.glb"}
+  ]
+}

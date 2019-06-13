@@ -1,0 +1,16 @@
+{
+  "name": "hair_f_oldie",
+  "i18n": {
+    "en": "Short Grandma Style",
+    "es": "Peloc Corto de Abuela"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Oldie_01.glb"}
+  ]
+}

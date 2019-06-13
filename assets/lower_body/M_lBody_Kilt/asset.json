@@ -1,0 +1,16 @@
+{
+  "name": "kilt",
+  "i18n": {
+    "en": "Kilt",
+    "es": "Falda escocesa"
+  },
+  "tags": [
+    "bottom",
+    "male",
+    "man"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "BaseMale", "model": "M_lBody_Kilt.glb"}
+  ]
+}

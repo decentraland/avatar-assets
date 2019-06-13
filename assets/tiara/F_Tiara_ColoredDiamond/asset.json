@@ -1,0 +1,16 @@
+{
+  "name": "diamond_colored_tiara",
+  "i18n": {
+    "en": "Diamond Colored Tiara",
+    "es": "Tiara Colorida de Diamantes"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "tiara",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Tiara_ColoredDiamond.glb"}
+  ]
+}

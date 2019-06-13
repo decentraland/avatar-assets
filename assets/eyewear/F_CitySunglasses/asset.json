@@ -1,0 +1,16 @@
+{
+  "name": "f_glasses_city",
+  "i18n": {
+    "en": "City Style Glasses",
+    "es": "Gafas de Estilo Urbano"
+  },
+  "tags": [
+    "accesories",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Eyewear_CitySunglasses.glb"}
+  ]
+}

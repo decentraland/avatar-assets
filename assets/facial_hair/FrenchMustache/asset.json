@@ -1,0 +1,16 @@
+{
+  "name": "french_beard",
+  "i18n": {
+    "en": "French Mustache",
+    "es": "Bigote Francés"
+  },
+  "tags": [
+    "face",
+    "facial_hair",
+    "man"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_FacialHair_FrenchMustache.glb"}
+  ]
+}
