@@ -11,7 +11,7 @@
     "female",
     "Woman"
    ],
-  "category": "eye_wear","earring","mask","tiara",
+  "category": "eye_wear",
   "main": [
     {"type": "BaseMale", "model": "00_Empty.glb"}
     {"type": "BaseFemale", "model": "00_Empty.glb"}
