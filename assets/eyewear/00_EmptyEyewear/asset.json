@@ -1,5 +1,5 @@
 {
-  "name": "00_EmptyEyeWear",
+  "name": "00_EmptyEyewear",
   "i18n": {
     "en": "Discard",
     "es": "Descartar"
@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "00_Empty.glb"}
-    {"type": "BaseFemale", "model": "00_Empty.glb"}
+    {"type": "BaseMale", "model": "00_EmptyEyewear.glb"}
+    {"type": "BaseFemale", "model": "00_EmptyEyewear.glb"}
   ]
 }
