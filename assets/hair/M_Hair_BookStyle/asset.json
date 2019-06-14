@@ -1,8 +1,8 @@
 {
-  "name": "cool_hair",
+  "name": "curtained_hair",
   "i18n": {
-    "en": "Cool Hair",
-    "es": "Peinado con Estilo"
+    "en": "Curtained hair",
+    "es": "A Dos Aguas"
   },
   "tags": [
     "hair",
@@ -11,6 +11,6 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseMale", "model": "M_Hair_Cool_01.glb"}
+    {"type": "BaseMale", "model": "M_Hair_BookStyle.glb"}
   ]
 }

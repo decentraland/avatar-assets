@@ -1,8 +1,8 @@
 {
-  "name": "cool_hair",
+  "name": "keanu_hair",
   "i18n": {
-    "en": "Cool Hair",
-    "es": "Peinado con Estilo"
+    "en": "Keanu Hair Style",
+    "es": "Estilo Keanu"
   },
   "tags": [
     "hair",
@@ -11,6 +11,6 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseMale", "model": "M_Hair_Cool_01.glb"}
+    {"type": "BaseMale", "model": "M_Hair_Keanu.glb"}
   ]
 }
