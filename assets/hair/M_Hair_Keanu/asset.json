@@ -1,0 +1,16 @@
+{
+  "name": "cool_hair",
+  "i18n": {
+    "en": "Cool Hair",
+    "es": "Peinado con Estilo"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Cool_01.glb"}
+  ]
+}
