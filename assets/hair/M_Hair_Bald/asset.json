@@ -1,0 +1,16 @@
+{
+  "name": "00_bald",
+  "i18n": {
+    "en": "Bald",
+    "es": "Pelado"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseMale", "model": "M_Hair_Bald.glb"}
+  ]
+}
