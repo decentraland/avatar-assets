@@ -1,0 +1,16 @@
+{
+  "name": "hair_punk",
+  "i18n": {
+    "en": "Punk",
+    "es": "Punk"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_Punk.glb"}
+  ]
+}

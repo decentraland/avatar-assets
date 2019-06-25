@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "F_Eyewear_ItalianDirector.glb"}
+    {"type": "BaseMale", "model": "F_Eyewear_ItalianDirector.glb"},
     {"type": "BaseFemale", "model": "F_Eyewear_ItalianDirector.glb"}
   ]
 }

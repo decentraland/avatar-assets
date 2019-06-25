@@ -1,0 +1,16 @@
+{
+  "name": "hair_coolshortstyle",
+  "i18n": {
+    "en": "Short Modern Style",
+    "es": "Pelo Corto Moderno"
+  },
+  "tags": [
+    "hair",
+    "female",
+    "woman"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "BaseFemale", "model": "F_Hair_CoolShortStyle.glb"}
+  ]
+}

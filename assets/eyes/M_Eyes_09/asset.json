@@ -1,0 +1,17 @@
+{
+  "name": "eyes_09",
+  "i18n": {
+    "en": "Eyes_09",
+    "es": "Eyes_09"
+  },
+  "tags": [
+    "face",
+    "eyes",
+    "male",
+    "man"
+   ],
+  "category": "eyes",
+  "main": [
+    {"type": "BaseMale", "model": "M_Eyes_09.png"}
+  ]
+}
