@@ -7,13 +7,10 @@
   "tags": [
     "accesories",
     "male",
-    "man",
-    "female",
-    "Woman"
+    "man"
    ],
   "category": "eye_wear",
   "main": [
     {"type": "BaseMale", "model": "ThugLife_01.glb"},
-    {"type": "BaseFemale", "model": "ThugLife_01.glb"}
   ]
 }
