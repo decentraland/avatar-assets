@@ -6,11 +6,14 @@
   },
   "tags": [
     "shoes",
-    "woman",
-    "women"
+    "male",
+    "man",
+    "female",
+    "woman"
    ],
   "category": "feet",
   "main": [
+    {"type": "BaseMale", "model": "F_Feet_SportBlackShoes.glb"},
     {"type": "BaseFemale", "model": "F_Feet_SportBlackShoes.glb"}
   ]
 }
