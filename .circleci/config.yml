@@ -34,7 +34,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Generate manifest and upload assets
-          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content-service.decentraland.zone --out ../datadist/assets.json --content-server content-service.decentraland.zone
+          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content-service.decentraland.zone --out ../datadist/assets.json --content-server content-service.decentraland.zone && npm run bundle -- --src ../assets --bucket content-service.decentraland.org --out ../datadist/assets.json --content-server content-service.decentraland.org && npm run bundle -- --src ../assets --bucket content-service.manaland.cn --out ../datadist/assets.json --content-server content-service.manaland.cn
       - run:
           name: Deploy to now.sh
           command: cd deploy && now alias $(now --scope decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
