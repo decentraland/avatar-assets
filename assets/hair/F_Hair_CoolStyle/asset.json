@@ -11,6 +11,7 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseFemale", "model": "F_Hair_CoolShortStyle.glb"}
+    {"type": "BaseFemale", "model": "F_Hair_CoolShortStyle.glb"},
+    {"type": "BaseMale", "model": "F_Hair_CoolShortStyle.glb"}
   ]
 }
