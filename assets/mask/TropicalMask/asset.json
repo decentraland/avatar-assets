@@ -1,0 +1,19 @@
+{
+  "name": "tropical_mask",
+  "i18n": {
+    "en": "Tropical Mask",
+    "es": "Máscara Tropical"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "mask",
+  "main": [
+    {"type": "BaseMale", "model": "TropicalMask.glb"},
+    {"type": "BaseFemale", "model": "TropicalMask.glb"}
+  ]
+}
