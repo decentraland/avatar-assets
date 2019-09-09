@@ -34,15 +34,27 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Generate manifest and upload assets
-          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content-service.decentraland.zone --out ../datadist/assets.json --content-server content-service.decentraland.zone
+          command: mkdir -p datadist && cd deploy && npm run bundle -- --src ../assets --bucket content-service.decentraland.${ENV_TARGET} --out ../datadist/assets.json --content-server content.decentraland.${ENV_TARGET}/contents
       - run:
           name: Deploy to production
-          command: mkdir -p datadist && cd deploy && export AWS_ACCESS_KEY=${AWS_PROD_ACCESS_KEY} && export AWS_ACCESS_SECRET=${AWS_PROD_ACCESS_SECRET} && npm run bundle -- --src ../assets --bucket content-service.decentraland.org --out ../datadist/assets.json --content-server content-service.decentraland.org
+          command: mkdir -p datadist && cd deploy && export AWS_ACCESS_KEY=${AWS_PROD_ACCESS_KEY} && export AWS_ACCESS_SECRET=${AWS_PROD_ACCESS_SECRET} && npm run bundle -- --src ../assets --bucket content-service.decentraland.${ENV_TARGET} --out ../datadist/assets.json --content-server content-service.decentraland.${ENV}
       - run:
           name: Deploy to now.sh
-          command: cd deploy && now alias $(now --scope decentraland --name avatar-assets --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
+          command: cd deploy && now alias $(now --scope decentraland --name ${NOW_TARGET} --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
+  build-deploy-staging:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: staging
+      - deploy:
+          environment:
+            - ENV_TARGET=zone
+            - NOW_TARGET=avatar-assets-stg
+          requires:
+            - build
   build-deploy-release:
     jobs:
       - build:
@@ -50,5 +62,8 @@ workflows:
             branches:
               only: release
       - deploy:
+          environment:
+            - ENV_TARGET=org
+            - NOW_TARGET=avatar-assets
           requires:
             - build

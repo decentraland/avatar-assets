@@ -8,7 +8,7 @@ import { AssetDescriptor, readAsset, processAsset } from './asset'
 import { getDirectories } from './files'
 import * as s3 from './s3'
 
-const DEFAULT_CONTENT_SERVER_URL = 'https://s3.amazonaws.com/content.decentraland.zone'
+const DEFAULT_CONTENT_SERVER_URL = 'https://content.decentraland.org/contents'
 
 const log = new Log('pack')
 
