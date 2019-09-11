@@ -1,9 +1,9 @@
 import * as AWS from 'aws-sdk'
-import { env, utils } from 'decentraland-commons'
+import { promisify } from 'util'
 import { future, IFuture } from 'fp-future'
 
-const accessKeyId = env.get('AWS_ACCESS_KEY', '')
-const secretAccessKey = env.get('AWS_ACCESS_SECRET', '')
+const accessKeyId = process.env['AWS_ACCESS_KEY']
+const secretAccessKey = process.env['AWS_ACCESS_SECRET']
 
 if (!accessKeyId || !secretAccessKey) {
   throw new Error(
@@ -39,5 +39,5 @@ export const uploadFile = (
     Body: data,
     ACL: 'public-read'
   }
-  return utils.promisify<AWS.S3.ManagedUpload>(s3.upload.bind(s3))(params)
+  return promisify<AWS.S3.ManagedUpload>(s3.upload.bind(s3))(params)
 }

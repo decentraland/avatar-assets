@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
+    "@types/mocha": "^5.2.7",
     "@types/uuid": "^3.4.5",
     "aws-sdk": "^2.526.0",
     "fp-future": "^1.0.1",
@@ -29,9 +30,12 @@
   },
   "devDependencies": {
     "@types/node": "^12.7.4",
+    "chai": "^4.2.0",
     "dcl-tslint-config-standard": "^2.0.0",
     "eslint": "^6.3.0",
+    "mocha": "^6.2.0",
     "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.6.3"
   }
