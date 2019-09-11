@@ -11,13 +11,8 @@ describe('sample asset: earrings', () => {
     const outputFolder = tmp.dirSync()
 
     await processAsset(assetFolder, outputFolder.name)
-    expect(fs.statSync(path.join(outputFolder.name, 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb')))
-    expect(
-      fs
-        .readFileSync(path.join(outputFolder.name, 'F_Earrings_BlueStar.glb'))
-        .toString()
-        .indexOf('QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb.png')
-    ).to.be.eq(-1)
+    expect(fs.statSync(path.join(outputFolder.name, 
+        'AvatarWearables_TX.png')))
 
     outputFolder.removeCallback()
   })

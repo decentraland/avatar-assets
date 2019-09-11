@@ -1,7 +1,6 @@
 import * as path from 'path'
 import * as fs from 'fs'
 import * as gltfPipeline from 'gltf-pipeline'
-import { getFileCID } from '../cid/getFileCID'
 
 export const outputTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
   const options = {

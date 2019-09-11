@@ -31,12 +31,12 @@ describe('creates a JSON with the asset description', () => {
       category: 'earring',
       contents: [
         {
-          hash: 'QmWV7zeSREDpfKr61vbR9gh1KkNmAZvX74ENa1ppnNbxwh',
-          name: 'F_Earrings_BlueStar.glb'
+            "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
+            "name": "AvatarWearables_TX.png"
         },
         {
-          hash: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb',
-          name: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb'
+            "hash": "QmRH8R6EcnmpkwZkuDp92nspsVZy4SHmAhnktYMr9yiW1s",
+            "name": "F_Earrings_BlueStar.glb"
         }
       ],
       i18n: [{ code: 'en', text: 'Blue Star Earring' }, { code: 'es', text: 'Aro Azul con Forma de Estrella' }],

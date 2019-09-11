@@ -4,24 +4,24 @@
     "name": "female_body",
     "contents": [
       {
-        "name": "BaseFemale.glb",
-        "hash": "QmNYPPA1gQuwb7WheC8ZHPQSCMH2hQRsj5nu8EhyTcdAiK"
-      },
-      {
-        "name": "QmSpExz2AUR3Dd9kAJL6iUbkefxEGXg8GPPdRxc33az6AU",
-        "hash": "QmSpExz2AUR3Dd9kAJL6iUbkefxEGXg8GPPdRxc33az6AU"
-      },
-      {
-        "name": "QmUisLcARDLsqizgg1ryUEd4JWhxez8ieh7JVjUo7BT8Em",
-        "hash": "QmUisLcARDLsqizgg1ryUEd4JWhxez8ieh7JVjUo7BT8Em"
-      },
-      {
-        "name": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ"
       },
       {
-        "name": "QmcGyxo3ctfJ8Y8QBjoP7UvfDYFEyGgSdQ5kPhHwo3Tzkt",
+        "name": "BaseFemale.glb",
+        "hash": "QmbUTiTiq2yFob8ekoqZ1VyhHnAVnj6v4EaL7RZCgPeD4V"
+      },
+      {
+        "name": "Brows_00.png",
+        "hash": "QmUisLcARDLsqizgg1ryUEd4JWhxez8ieh7JVjUo7BT8Em"
+      },
+      {
+        "name": "Eyes_00.png",
         "hash": "QmcGyxo3ctfJ8Y8QBjoP7UvfDYFEyGgSdQ5kPhHwo3Tzkt"
+      },
+      {
+        "name": "Mouth_00.png",
+        "hash": "QmSpExz2AUR3Dd9kAJL6iUbkefxEGXg8GPPdRxc33az6AU"
       }
     ],
     "main": [
@@ -54,24 +54,24 @@
     "name": "male_body",
     "contents": [
       {
-        "name": "BaseMale.glb",
-        "hash": "QmYL1J837TL1Hb5KqtpLK4qKjv1s4MSjVAhy1v485sXD6i"
+        "name": "Avatar_MaleSkinBase.png",
+        "hash": "QmdyPfi4sRYU3eMFWxeXArnCeQ78sZw7oSGxFrntAPqHhy"
       },
       {
-        "name": "QmP4823KZpn5d5iAEwXJyGTZy19HriJsJYkCJ22ERmpFMa",
+        "name": "BaseMale.glb",
+        "hash": "QmRhw6iFmT1r8KTbComWMKFLPxf7pFZqFwKrEY1Az2whZ8"
+      },
+      {
+        "name": "EyeBrows_00.png",
         "hash": "QmP4823KZpn5d5iAEwXJyGTZy19HriJsJYkCJ22ERmpFMa"
       },
       {
-        "name": "QmTZXe8CyZWCfV9KvjKx6LpYwDXAzCeRCozoZRuRUth7qP",
-        "hash": "QmTZXe8CyZWCfV9KvjKx6LpYwDXAzCeRCozoZRuRUth7qP"
-      },
-      {
-        "name": "QmUYEYptrfbtvAr53C4X3ReAtYYuQsuN41dB5D5cfuLxkh",
+        "name": "Eyes_00.png",
         "hash": "QmUYEYptrfbtvAr53C4X3ReAtYYuQsuN41dB5D5cfuLxkh"
       },
       {
-        "name": "QmdyPfi4sRYU3eMFWxeXArnCeQ78sZw7oSGxFrntAPqHhy",
-        "hash": "QmdyPfi4sRYU3eMFWxeXArnCeQ78sZw7oSGxFrntAPqHhy"
+        "name": "Mouth_00.png",
+        "hash": "QmTZXe8CyZWCfV9KvjKx6LpYwDXAzCeRCozoZRuRUth7qP"
       }
     ],
     "main": [
@@ -144,12 +144,12 @@
     "name": "blue_star_earring",
     "contents": [
       {
-        "name": "F_Earrings_BlueStar.glb",
-        "hash": "QmWV7zeSREDpfKr61vbR9gh1KkNmAZvX74ENa1ppnNbxwh"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Earrings_BlueStar.glb",
+        "hash": "QmRH8R6EcnmpkwZkuDp92nspsVZy4SHmAhnktYMr9yiW1s"
       }
     ],
     "main": [
@@ -182,12 +182,12 @@
     "name": "green_feather_earring",
     "contents": [
       {
-        "name": "Earring_GreenFeather.glb",
-        "hash": "QmXnZpMxKkunj3qTCH9pG6E8MxjVhgP6mS4Z7FwVnumjjc"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "Earring_GreenFeather.glb",
+        "hash": "QmT2nsJ2Ru4QiJ7ZgWmdMxuCD8hFFDCb9aj6Cp4aWR552y"
       }
     ],
     "main": [
@@ -438,12 +438,12 @@
     "name": "black_sun_glasses",
     "contents": [
       {
-        "name": "F_Eyewear_BlackSunglasses.glb",
-        "hash": "QmVseq9SKhQsbU1feAKZrvqVLG62kK1eApwXfaEp8ZZtYy"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "F_Eyewear_BlackSunglasses.glb",
+        "hash": "QmXLrokLeJkmyFD64xGicQyD3R3M4AWcPFLXJMNQx9U7eK"
       }
     ],
     "main": [
@@ -482,12 +482,12 @@
     "name": "cyclope",
     "contents": [
       {
-        "name": "F_Eyewear_Cyclope.glb",
-        "hash": "Qmd7jDGA3ZB5CcMPGy7dXFEW1NJFcGyd5qYfipeBDjE3gx"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Eyewear_Cyclope.glb",
+        "hash": "QmXQA2ai3r6QBUub9YQqDufoU3c537V25oNjyVwjcc3g1v"
       }
     ],
     "main": [
@@ -526,12 +526,12 @@
     "name": "f_glasses_cat_style",
     "contents": [
       {
-        "name": "F_Eyewear_CatStyle.glb",
-        "hash": "QmbMDBTPrssYyLsfKZ4bWR1YwUnp2KzmpyT5AgPGsU4xJR"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Eyewear_CatStyle.glb",
+        "hash": "QmXVGQTKqfvXuX8hTWzbviAVHievAGEFFaWFcPhQXRUEdr"
       }
     ],
     "main": [
@@ -598,12 +598,12 @@
     "name": "balbo_beard",
     "contents": [
       {
-        "name": "M_FacialHair_BalbooBeard.glb",
-        "hash": "QmbhMxQPdzGCDsV5Dd382bQhBDXQZJiBSvnkXDYXs4yYe9"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "M_FacialHair_BalbooBeard.glb",
+        "hash": "QmVPP2Y6mqkb7WYw1kLffYq2nGMwx3Y1LmVJJmfafpuZys"
       }
     ],
     "main": [
@@ -636,12 +636,12 @@
     "name": "lincoln_beard",
     "contents": [
       {
-        "name": "M_FacialHair_BeardGoatee.glb",
-        "hash": "QmWpwREHqEp929CKGpTG6B7MsPwYNWMNDgksDmDXJVdYCo"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "M_FacialHair_BeardGoatee.glb",
+        "hash": "Qmdk3A8gyqHiGsfNRLRDdQuLsq8DGqYddVsBFgsEjVSUJY"
       }
     ],
     "main": [
@@ -674,16 +674,16 @@
     "name": "bear_slippers",
     "contents": [
       {
-        "name": "BearSlippers_01.glb",
-        "hash": "Qmd3VNFqcedRb2nxd4hcruhPTjWrVBxe9XhGuNsceqFRhb"
-      },
-      {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmU3omTrtqYBtdHcC2FZjYvyLmVVmBKaaKa52CmBF2bn9U",
+        "name": "Avatar_MaleSkin.png",
         "hash": "QmU3omTrtqYBtdHcC2FZjYvyLmVVmBKaaKa52CmBF2bn9U"
+      },
+      {
+        "name": "BearSlippers_01.glb",
+        "hash": "QmZFQB5jwnK4ePqqokqHDrag9FEXwbTNa4kiNuaysyAS9Q"
       }
     ],
     "main": [
@@ -722,16 +722,16 @@
     "name": "citycomfortableshoes",
     "contents": [
       {
-        "name": "CityComfortableShoes.glb",
-        "hash": "QmXg4N2v9E81bfaTXZB7HR7p4bEdRXCV4jRfNyYnrVwzha"
-      },
-      {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmdyPfi4sRYU3eMFWxeXArnCeQ78sZw7oSGxFrntAPqHhy",
+        "name": "Avatar_MaleSkinBase.png",
         "hash": "QmdyPfi4sRYU3eMFWxeXArnCeQ78sZw7oSGxFrntAPqHhy"
+      },
+      {
+        "name": "CityComfortableShoes.glb",
+        "hash": "QmXunF4VyY28yRAYxHtQoAkw6pLLEP8hu8oL2adXhKHB1v"
       }
     ],
     "main": [
@@ -770,16 +770,16 @@
     "name": "classic_shoes",
     "contents": [
       {
-        "name": "M_Feet_ClassicShoes.glb",
-        "hash": "QmPaLWmAPZJz9sQwrsPr19eXnp71q9hXR1pKKQcSPZpumH"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmRxKVwraeAq8NwgJ1TM9VnrG4AaQ7HbATxg7BGAVcUhvH",
+        "name": "Avatar_MaleSkinBase.png",
         "hash": "QmRxKVwraeAq8NwgJ1TM9VnrG4AaQ7HbATxg7BGAVcUhvH"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "M_Feet_ClassicShoes.glb",
+        "hash": "QmQXQGrtZ3RLxukdQukXBCo11Q8LPH2c3285soh4UC7vYw"
       }
     ],
     "main": [
@@ -818,12 +818,12 @@
     "name": "hair_anime_01",
     "contents": [
       {
-        "name": "F_Hair_Anime_01.glb",
-        "hash": "QmQeKNH9cA2ssyDhka6wPa6YN3wYJh4MF8YMRxHz7CAC1a"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Hair_Anime_01.glb",
+        "hash": "QmTyiSdzK4S8L4TSS5E31eXXQW9Dw8cuzHxC8CunbUoSBw"
       }
     ],
     "main": [
@@ -856,12 +856,12 @@
     "name": "hair_undere",
     "contents": [
       {
-        "name": "F_Hair_Anime_03.glb",
-        "hash": "QmSCtpy1D1Snr7Gxep6LuVjEVKRffNMBMNbAjC3VJwwgNF"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Hair_Anime_03.glb",
+        "hash": "QmRWdYxSnFmosSX6meCEM9XJ8Gd1xDf2Tz13ch1XhT4wbn"
       }
     ],
     "main": [
@@ -894,12 +894,12 @@
     "name": "hair_bun",
     "contents": [
       {
-        "name": "F_Hair_Bun.glb",
-        "hash": "QmQScR7q8KRDWydEiqn9DHgc48KcMuCaSgvAS5KbJbx6ep"
+        "name": "AvatarWearables_TX.png.001.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "F_Hair_Bun.glb",
+        "hash": "QmezjxyDBHMRfwGnwurTjR8RSrqHRzn2YfQQGDjNQqt15X"
       }
     ],
     "main": [
@@ -932,12 +932,12 @@
     "name": "f_african_leggins",
     "contents": [
       {
-        "name": "F_lBody_AfricanLeggings.glb",
-        "hash": "QmSUzPcoawpySYeTmXDgxgURb2tYGXR3yjyoNKd7i8SHNX"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "F_lBody_AfricanLeggings.glb",
+        "hash": "QmWJiYDnp1aeqWRCHydFKZcyT966WWtzA2hgS1E7dkHmpE"
       }
     ],
     "main": [
@@ -970,16 +970,16 @@
     "name": "f_capris",
     "contents": [
       {
-        "name": "F_lBody_BrownKneesTrousers.glb",
-        "hash": "QmPr97Ei5GNamef24MepJQv93id6ExSvu3NVBRREh7iZ8z"
-      },
-      {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT"
+      },
+      {
+        "name": "F_lBody_BrownKneesTrousers.glb",
+        "hash": "QmZvyZs22HHNe2uTLz1uyJCqy4H3zLFQ9MDoiQChbNiLbS"
       }
     ],
     "main": [
@@ -1012,16 +1012,16 @@
     "name": "f_brown_skirt",
     "contents": [
       {
-        "name": "F_lBody_BrownSkirtDress.glb",
-        "hash": "Qma23hCpiMVTh6z54svaLADDaYDBHU14JFYLUgnbvPHu2z"
-      },
-      {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT"
+      },
+      {
+        "name": "F_lBody_BrownSkirtDress.glb",
+        "hash": "QmNhJEozFAz6qihW3fb66UXi5CRmaUTt4cHZ4UXaY4N1xm"
       }
     ],
     "main": [
@@ -1054,12 +1054,12 @@
     "name": "bird_mask",
     "contents": [
       {
-        "name": "BirdTheater.glb",
-        "hash": "QmcQBDoWd9mP6EasAnH44i1LkHhsoSrfH8oWHDFQKhw4zP"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "BirdTheater.glb",
+        "hash": "QmcF1VdPk6ee88GMpZdbgBSzjKw6ikfxznLVjgX1JnHzR2"
       }
     ],
     "main": [
@@ -1098,12 +1098,12 @@
     "name": "classic_mask",
     "contents": [
       {
-        "name": "Classic.glb",
-        "hash": "QmQd6FnEeBLUoBpFkx25hhC327PCW2afK4w8bUrwLpCqnE"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "Classic.glb",
+        "hash": "QmXtvgLxt18i6LYXhoHGuB1W1mKqjNuPgoGhtKjxfs92xs"
       }
     ],
     "main": [
@@ -1142,12 +1142,12 @@
     "name": "clown_nose",
     "contents": [
       {
-        "name": "ClownNose.glb",
-        "hash": "QmV79AQvrhzd4DUd1tUhMeCScA1MEbHYP8t7fTyaBocLqn"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "ClownNose.glb",
+        "hash": "QmPfzA4vjDmJEbYexArbofMrwnAGyp3ddJpwr8ViLrweyx"
       }
     ],
     "main": [
@@ -1291,12 +1291,12 @@
     "name": "blue_bandana",
     "contents": [
       {
-        "name": "BlueBandana.glb",
-        "hash": "QmVCzTzAKebqwJo9xpfFUeBKgFtWKUMUT1jynsq5uUXzrN"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
-        "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+        "name": "BlueBandana.glb",
+        "hash": "Qma4gTPkjhTdXk5yBFah8rYUHsG1yCBaadPtfLs32DCXr7"
       }
     ],
     "main": [
@@ -1335,12 +1335,12 @@
     "name": "diamond_colored_tiara",
     "contents": [
       {
-        "name": "F_Tiara_ColoredDiamond.glb",
-        "hash": "QmZJ75AtH4HzLaXj39jcbsQKMEs1L8dhjatzg9KWUm1K15"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Tiara_ColoredDiamond.glb",
+        "hash": "QmYq2MH5THhhCWSErEmLADt3qxCMM6bYLv3zTPDvcjrvUb"
       }
     ],
     "main": [
@@ -1373,12 +1373,12 @@
     "name": "green_stone_tiara",
     "contents": [
       {
-        "name": "F_Tiara_GreenStone.glb",
-        "hash": "QmdYh1T41soQJ9GBVPE6hMwZPBtBBtrkak6PWuNmNf11EF"
+        "name": "AvatarWearables_TX.png",
+        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
-        "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
+        "name": "F_Tiara_GreenStone.glb",
+        "hash": "QmNUgXHirqnLWXKgd2LpeL6aoZTk7uKdKWE8FvNjRKopZB"
       }
     ],
     "main": [
@@ -1411,16 +1411,16 @@
     "name": "bee_t_shirt",
     "contents": [
       {
-        "name": "F_uBody_BeeTShirt.glb",
-        "hash": "QmU8ZaRWggFLKmbp4jmduqgF2B8ytv3jqByAGoGKuDCWQQ"
-      },
-      {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ"
+      },
+      {
+        "name": "F_uBody_BeeTShirt.glb",
+        "hash": "QmTA6EHFiqBPuT8ESafQGyp2VnKXrnYV8faBWpvmbeM6v5"
       }
     ],
     "main": [
@@ -1453,16 +1453,16 @@
     "name": "black_top",
     "contents": [
       {
-        "name": "F_uBody_BlackTop.glb",
-        "hash": "QmPPnCRR3uZMGDM4znshfDZJrzuFTyaA7Jbz82WGPZ1iw8"
-      },
-      {
-        "name": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
       },
       {
-        "name": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmVGmsPD6KkjuFiz3C1UES7MQVWdVUeVDzGuUupZLVGgHJ"
+      },
+      {
+        "name": "F_uBody_BlackTop.glb",
+        "hash": "QmRCHh9iaSZy2GsbBHfywRENN6YkqKGArm85EXyvvvkpz2"
       }
     ],
     "main": [
@@ -1495,16 +1495,16 @@
     "name": "simple_blue_tshirt",
     "contents": [
       {
-        "name": "F_uBody_BlueBasicTShirt.glb",
-        "hash": "QmQJEHxFWca8ms3DYL8pbxViRKJJj2q4WwT2vKdKnoQv87"
-      },
-      {
-        "name": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb",
+        "name": "AvatarWearables_TX.png",
         "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
       },
       {
-        "name": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT",
+        "name": "Avatar_FemaleSkinBase.png",
         "hash": "QmXBeMAkB4sUFCMy42tGQ9DQZ1HC8VLZ3r4e7p2GdMRudT"
+      },
+      {
+        "name": "F_uBody_BlueBasicTShirt.glb",
+        "hash": "QmYBJCzbMGHNQJoE6DA1XZgMKGEFggHFgHsF6LJY9JVDN4"
       }
     ],
     "main": [
