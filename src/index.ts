@@ -1,12 +1,14 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { processAssetAndBuildAssetDescription } from './processAssetAndBuildAssetDescription'
-import * as tmp from 'tmp'
-import { getAssetFolderAbsPath } from '../assets/getAssetFolderAbsPath'
+import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
+import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 
-if (module.__main__) {
+if (!module.parent) {
+  runMain().catch(error => console.log(error, error.stack))
+}
+
+export async function runMain() {
   console.log(`Building catalog from folder ${'assets'}...`)
-  const workingFolder = tmp.dirSync()
 
   const categoryFolderAbsPath = getAssetFolderAbsPath(__dirname, 1)
 
@@ -32,9 +34,9 @@ if (module.__main__) {
   )
 
   const jsonResult = JSON.stringify(response, null, 2)
-  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'expected.json'), jsonResult))
+  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'expected.json')), jsonResult)
 
   console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
 
-  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'index.html'), jsonResult))
+  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'index.html')), jsonResult)
 }
