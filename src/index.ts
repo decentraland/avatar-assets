@@ -34,7 +34,10 @@ export async function runMain() {
         assetFolderAbsPath,
         path.resolve(path.join(__dirname, '..', 'dist')),
         'https://dcl-basic-wearables.now.sh'
-      )
+      ).catch(error => {
+		console.log(`Error! Could not process asset ${path.basename(assetFolderAbsPath)} of category ${path.basename(path.dirname(assetFolderAbsPath))}: ${error.message}${ process.env['VERBOSE_ASSET_ERRORS'] ? ('\n' + error.stack) : ''}`)
+	return null
+      })
     )
   )
 

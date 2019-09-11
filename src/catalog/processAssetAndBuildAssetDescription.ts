@@ -22,7 +22,11 @@ export async function processAssetAndBuildAssetDescription(
     // Silenced error -- category folder might already exist
   }
   const targetFolderNameAbsPath = path.join(workingFolderAbsPath, categoryFolderName, assetFolderName)
-  fs.mkdirSync(targetFolderNameAbsPath)
+  try {
+    fs.mkdirSync(targetFolderNameAbsPath)
+  } catch (e) {
+    // Silenced error -- asset folder might already exist
+  }
   const files = fs.readdirSync(sourceFolderAbsPath)
   for (var file of files) {
     fs.writeFileSync(path.join(targetFolderNameAbsPath, file), fs.readFileSync(path.join(sourceFolderAbsPath, file)))
