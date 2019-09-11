@@ -23,7 +23,7 @@ describe('creates a JSON with the asset description', () => {
     const assetDescription = await createAssetDescriptionFromFolder(assetFolder, { contentBaseUrl })
 
     const expectedJSON = {
-      id: 'dcl://base-avatars/f_bluestar_earring',
+      id: 'dcl://base-avatars/blue_star_earring',
       thumbnail: 'QmeGtEgb9XkachCtGJ1PP2XhxFdh946Lfdfcz3XttYWy5n',
       contentBaseUrl: 'https://dcl-basic-wearables.now.sh',
       name: 'blue_star_earring',

@@ -6,6 +6,10 @@ old
 /deploy/dist
 **/node_modules/**
 
+*.json
+tsconfig.tsbuildinfo
+yarn.lock
+
 # dependencies
 /node_modules
 /.pnp
