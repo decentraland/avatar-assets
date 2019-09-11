@@ -3,13 +3,9 @@ import * as path from 'path'
 import { processAssetAndBuildAssetDescription } from './processAssetAndBuildAssetDescription'
 import * as tmp from 'tmp'
 import { AssetDescription } from '../description/createAssetDescription'
+import { getAssetFolderAbsPath } from '../assets/getAssetFolderAbsPath'
 
 const { expect } = require('chai')
-
-const getAssetFolderAbsPath = (postFix: string, currentHeight: number) =>
-  currentHeight === 0
-    ? path.resolve(path.join(postFix, 'assets'))
-    : getAssetFolderAbsPath(path.join(postFix, '..'), currentHeight - 1)
 
 describe('Build the catalog', () => {
   it('creates a description for all the files', async () => {

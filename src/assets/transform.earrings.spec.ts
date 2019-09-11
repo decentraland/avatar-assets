@@ -11,8 +11,7 @@ describe('sample asset: earrings', () => {
     const outputFolder = tmp.dirSync()
 
     await processAsset(assetFolder, outputFolder.name)
-    expect(fs.statSync(path.join(outputFolder.name, 
-        'AvatarWearables_TX.png')))
+    expect(fs.statSync(path.join(outputFolder.name, 'AvatarWearables_TX.png')))
 
     outputFolder.removeCallback()
   })
