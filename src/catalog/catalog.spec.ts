@@ -36,6 +36,6 @@ describe('Build the catalog', () => {
         )
       }
     }
-    expect(response).to.deep.eq(JSON.parse(fs.readFileSync(path.join(__dirname, 'expected.json')).toString())) 
+    expect(response).to.deep.eq(JSON.parse(fs.readFileSync(path.join(__dirname, 'expected.json')).toString()))
   })
 })

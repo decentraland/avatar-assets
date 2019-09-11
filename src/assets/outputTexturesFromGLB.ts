@@ -5,19 +5,19 @@ import { getFileCID } from '../cid/getFileCID'
 
 export const outputTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
   const options = {
-    skipExtensionInRelativePath: true,
+    // skipExtensionInRelativePath: true,
     separateTextures: true,
-    resourceDirectory: path.dirname(srcFilePath),
-    customStages: [
-      async function(gltf) {
-        await Promise.all(
-          gltf.images.map(async (image: any) => {
-            image.name = await getFileCID(image.extras._pipeline.source)
-          })
-        )
-        return gltf
-      }
-    ]
+    resourceDirectory: path.dirname(srcFilePath)
+    // customStages: [
+    //   async function(gltf) {
+    //     await Promise.all(
+    //       gltf.images.map(async (image: any) => {
+    //         image.name = await getFileCID(image.extras._pipeline.source)
+    //       })
+    //     )
+    //     return gltf
+    //   }
+    //]
   }
   const data = fs.readFileSync(srcFilePath)
 
