@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
+    "async-iterator-all": "^1.0.0",
     "aws-sdk": "^2.526.0",
     "fp-future": "^1.0.1",
     "gltf-pipeline": "^2.1.3",
