@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    environment:
+      - ENV_TARGET=org
+      - NOW_TARGET=avatar-assets
     docker:
       - image: circleci/node:10
     working_directory: /tmp/app
@@ -21,6 +24,23 @@ jobs:
             - deploy
             - assets
           key: build-{{ .Branch }}-{{ .Revision }}
+  deploy-staging:
+    docker:
+      - image: circleci/node:10
+    working_directory: /tmp/app
+    steps:
+      - restore_cache:
+          keys:
+            - build-{{ .Branch }}-{{ .Revision }}
+      - run:
+          name: Install now
+          command: sudo npm install --global --unsafe-perm now
+      - run:
+          name: Generate manifest
+          command: make manifest
+      - run:
+          name: Deploy to now.sh
+          command: cd deploy && now alias $(now --scope decentraland --name dcl-basic-wearables.now.sh --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
   deploy:
     docker:
       - image: circleci/node:10
@@ -50,9 +70,6 @@ workflows:
             branches:
               only: staging
       - deploy:
-          environment:
-            - ENV_TARGET=zone
-            - NOW_TARGET=avatar-assets-stg
           requires:
             - build
   build-deploy-release:
@@ -62,8 +79,5 @@ workflows:
             branches:
               only: release
       - deploy:
-          environment:
-            - ENV_TARGET=org
-            - NOW_TARGET=avatar-assets
           requires:
             - build

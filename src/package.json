@@ -1,27 +1,22 @@
 {
-  "name": "builder-assets",
-  "version": "0.1.0",
-  "description": "Builder Asset Pack repository",
-  "main": "bundle.js",
-  "scripts": {
-    "bundle": "tsc -p . && node src/index.js bundle",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "@dcl/basic-assets",
+  "version": "0.2.0",
+  "description": "Decentraland basic set of avatar assets",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decentraland/builder-assets.git"
+    "url": "git+https://github.com/decentraland/avatar-assets.git"
   },
   "author": "Decentraland",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/decentraland/builder-assets/issues"
+    "url": "https://github.com/decentraland/avatar-assets/issues"
   },
   "prettier": {
     "semi": false,
     "singleQuote": true,
     "printWidth": 80
   },
-  "homepage": "https://github.com/decentraland/builder-assets#readme",
+  "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
     "@types/uuid": "^3.4.4",
     "aws-sdk": "^2.396.0",

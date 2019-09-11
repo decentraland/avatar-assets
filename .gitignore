@@ -2,6 +2,7 @@
 #
 /deploy/node_modules
 /deploy/dist
+**/node_modules/**
 
 # dependencies
 /node_modules
