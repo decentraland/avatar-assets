@@ -1,14 +1,23 @@
+import * as importer from 'ipfs-unixfs-importer'
+import * as IPLD from 'ipld'
+import * as inMemory from 'ipld-in-memory'
 
-const unix = require('ipfs-unixfs')
-const { DAGNode } = require('ipld-dag-pb')
-const promise = f => (...args) => new Promise((a,b)=>f(...args, (err, res) => err ? b(err) : a(res)));
+const first = require('async-iterator-first')
 
-const createDag = promise(DAGNode.create)
-
-export const getFileDAG = buffer => createDag(
-    new unix('file', buffer).marshal()
-).then((dagNode: any) => dagNode.toJSON())
-
-export const getFileCID = buffer => promise(DAGNode.create)(
-    new unix('file', buffer).marshal()
-).then((dagNode: any) => dagNode.toJSON().multihash)
+const inMemoryIPLD = inMemory(IPLD)
+export const getFileCID = async (buffer: Buffer, filename = '') => {
+  const ipld = await inMemoryIPLD
+  const file = await first(
+    importer(
+      [
+        {
+          path: filename,
+          content: buffer
+        }
+      ],
+      ipld,
+      { strategy: 'flat' }
+    )
+  )
+  return file.cid.toBaseEncodedString()
+}
