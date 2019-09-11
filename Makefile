@@ -9,8 +9,8 @@ MOCHA=$(NODE) ./node_modules/.bin/mocha
 compile: ## Transpile from typescript to javascript
 	$(TSC)
 
-build: ## Generate a `dist` folder with the catalog
-	$(NODE)
+catalog: ## Generate a `dist` folder with the catalog
+	$(NODE) ./build/index.js
 
 gentest: ## Builds a "expected.json" catalog for testing
 	WRITE_TEST_CATALOG_RESULT=1 $(MOCHA)

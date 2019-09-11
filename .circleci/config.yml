@@ -23,10 +23,10 @@ jobs:
           key: dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Build catalog
-          command: make && make test && make build
+          command: make compile && make test && make catalog
       - save_cache:
           paths:
-            - deploy
+            - dist
           key: build-{{ .Branch }}-{{ .Revision }}
   deploy-staging:
     docker:
@@ -41,7 +41,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Deploy to now.sh
-          command: cd deploy && now alias $(now --scope decentraland --name dcl-basic-wearables.now.sh --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
+          command: cd dist && now alias $(now --scope decentraland --name dcl-basic-wearables.now.sh --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
   deploy:
     docker:
       - image: circleci/node:10
