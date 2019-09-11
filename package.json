@@ -12,9 +12,10 @@
     "url": "https://github.com/decentraland/avatar-assets/issues"
   },
   "prettier": {
+    "tabWidth": 2,
     "semi": false,
     "singleQuote": true,
-    "printWidth": 80
+    "printWidth": 120
   },
   "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
@@ -24,11 +25,13 @@
     "fp-future": "^1.0.1",
     "gltf-pipeline": "^2.1.3",
     "interface-datastore": "0.7.0",
-    "ipfs-unixfs-engine": "0.35.4",
+    "ipfs-unixfs": "*",
+    "ipld-dag-pb": "*",
     "tslint": "^5.20.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.2",
     "@types/node": "^12.7.4",
     "chai": "^4.2.0",
     "dcl-tslint-config-standard": "^2.0.0",

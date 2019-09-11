@@ -13,8 +13,12 @@
     "noUnusedLocals": true,
     "plugins": [{ "name": "tslint-language-service" }],
     "pretty": true,
-    "baseUrl": "."
+    "baseUrl": "src",
+    "paths": {
+      "~": ["./src"],
+      "~/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "node_modules", "**/*.spec.ts"]
+  "exclude": ["dist", "old", "node_modules", "**/*.spec.ts"]
 }
