@@ -80,15 +80,9 @@ export function tagsValidationError(tags) {
   }
 }
 export function contentBaseUrlValidationError(content) {
-  // if (!content) {
-  //     return 'missing "contentBaseUrl" key'
-  // }
   if (content && typeof content !== 'string') {
     return `the optional value "contentBaseUrl" should be a string if present`
   }
-  // if (!content.startsWith('https://')) {
-  //     return `"contentBaseUrl" should start with "https://"`
-  // }
 }
 export function i18nValidationError(i18n: { code: string; text: string }[]) {
   if (!i18n || !i18n.length) {
