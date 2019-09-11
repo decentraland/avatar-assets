@@ -6,17 +6,12 @@ const accessKeyId = process.env['AWS_ACCESS_KEY']
 const secretAccessKey = process.env['AWS_ACCESS_SECRET']
 
 if (!accessKeyId || !secretAccessKey) {
-  throw new Error(
-    'You need to add an AWS key and secret to your env file. Check the .env.example file'
-  )
+  throw new Error('You need to add an AWS key and secret to your env file. Check the .env.example file')
 }
 
 export const s3 = new AWS.S3({ accessKeyId, secretAccessKey })
 
-export const checkFile = async (
-  bucketName: string,
-  key: string
-): Promise<boolean> => {
+export const checkFile = async (bucketName: string, key: string): Promise<boolean> => {
   const params = {
     Bucket: bucketName,
     Key: key
@@ -28,11 +23,7 @@ export const checkFile = async (
   return ret
 }
 
-export const uploadFile = (
-  bucketName: string,
-  key: string,
-  data: Buffer
-): Promise<AWS.S3.ManagedUpload> => {
+export const uploadFile = (bucketName: string, key: string, data: Buffer): Promise<AWS.S3.ManagedUpload> => {
   const params = {
     Bucket: bucketName,
     Key: key,

@@ -13,13 +13,16 @@ describe('computing CIDs', () => {
     expect(cid).to.eq('QmbiPLfzT76XqNU2fB4NfqkYSTMQkLShCQu9pt2NFoGM6k')
   })
   it('generates the CID of a folder', async () => {
-    const cid = await getFolderCID([{
-      filename: 'README.md',
-      buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'README.md'))
-    }, {
-      filename: 'LICENSE.md',
-      buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'LICENSE'))
-    }])
+    const cid = await getFolderCID([
+      {
+        filename: 'README.md',
+        buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'README.md'))
+      },
+      {
+        filename: 'LICENSE.md',
+        buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'LICENSE'))
+      }
+    ])
     expect(cid).to.eq('QmULpXkrDsTcYgeJNKkvPjScbdTD7dhN6E6DCdB6kHUfHs')
   })
 })

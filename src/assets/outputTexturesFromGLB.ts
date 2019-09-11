@@ -8,12 +8,16 @@ export const outputTexturesFromGLB = (srcFilePath: string, dstDir: string = '.')
     skipExtensionInRelativePath: true,
     separateTextures: true,
     resourceDirectory: path.dirname(srcFilePath),
-    customStages: [async function(gltf) {
-      await Promise.all(gltf.images.map(async (image: any) => {
-        image.name = await getFileCID(image.extras._pipeline.source)
-      }))
-      return gltf
-    }]
+    customStages: [
+      async function(gltf) {
+        await Promise.all(
+          gltf.images.map(async (image: any) => {
+            image.name = await getFileCID(image.extras._pipeline.source)
+          })
+        )
+        return gltf
+      }
+    ]
   }
   const data = fs.readFileSync(srcFilePath)
 
