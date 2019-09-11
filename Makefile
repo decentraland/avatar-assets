@@ -6,13 +6,13 @@ COMPILED_ASSETS=$(wildcard assets/**/*.json)
 
 MOCHA=$(NODE) ./node_modules/.bin/mocha
 
-build:
+compile:
 	$(TSC)
 
-manifest:
-	$(NODE) src/compileAllDescriptions.js
+build:
+	$(NODE)
 
 test:
-	$(MOCHA) test/
+	$(MOCHA)
 
 .PHONY: manifest test

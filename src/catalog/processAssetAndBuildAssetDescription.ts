@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { processAsset } from 'assets/processAsset'
-import { createAssetDescriptionFromFolder } from 'description/fromFolder'
+import { processAsset } from '../assets/processAsset'
+import { createAssetDescriptionFromFolder } from '../description/fromFolder'
 
 export async function processAssetAndBuildAssetDescription(
   sourceFolder: string,

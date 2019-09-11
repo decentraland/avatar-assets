@@ -3,7 +3,6 @@
     "module": "commonjs",
     "target": "es2017",
     "lib": ["es2017", "dom", "dom.iterable"],
-    "diagnostics": true,
     "downlevelIteration": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -11,14 +10,11 @@
     "moduleResolution": "node",
     "noEmit": false,
     "noUnusedLocals": true,
-    "plugins": [{ "name": "tslint-language-service" }],
     "pretty": true,
-    "baseUrl": "src",
-    "paths": {
-      "~": ["./src"],
-      "~/*": ["./src/*"]
-    }
+    "incremental": true,
+    "outDir": "build",
+    "baseUrl": "src"
   },
   "include": ["src/**/*"],
-  "exclude": ["dist", "old", "node_modules", "**/*.spec.ts"]
+  "exclude": ["dist", "build", "old", "node_modules"]
 }
