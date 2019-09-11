@@ -10,19 +10,23 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          name: Restore dependencies cache
           keys:
-            - dependencies-{{ checksum "deploy/package-lock.json" }}
+            - dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Install packages
-          command: cd deploy && npm install
+          command: npm install
       - save_cache:
+          name: Save dependencies cache
           paths:
-            - deploy/node_modules
-          key: dependencies-{{ checksum "deploy/package-lock.json" }}
+            - node_modules
+          key: dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Build catalog
+          command: make && make test && make build
       - save_cache:
           paths:
             - deploy
-            - assets
           key: build-{{ .Branch }}-{{ .Revision }}
   deploy-staging:
     docker:
@@ -35,9 +39,6 @@ jobs:
       - run:
           name: Install now
           command: sudo npm install --global --unsafe-perm now
-      - run:
-          name: Generate manifest
-          command: make manifest
       - run:
           name: Deploy to now.sh
           command: cd deploy && now alias $(now --scope decentraland --name dcl-basic-wearables.now.sh --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
