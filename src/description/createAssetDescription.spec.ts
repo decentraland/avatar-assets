@@ -48,7 +48,7 @@ describe('creates a JSON with the asset description', () => {
       ]
     }
 
-    expect(expectedJSON).to.deep.eq(assetDescription)
+    expect(expectedJSON).to.deep.equal(assetDescription)
     outputFolder.removeCallback()
   })
 })
