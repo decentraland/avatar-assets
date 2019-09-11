@@ -4,23 +4,29 @@ import { processAsset } from '../assets/processAsset'
 import { createAssetDescriptionFromFolder } from '../description/fromFolder'
 
 export async function processAssetAndBuildAssetDescription(
-  sourceFolder: string,
-  workingFolder: string,
+  sourceFolderAbsPath: string,
+  workingFolderAbsPath: string,
   contentBaseUrl?: string
 ): Promise<any> {
-  const assetFolderName = path.basename(sourceFolder)
-  const categoryFolderName = path.basename(path.dirname(sourceFolder))
+  if (!sourceFolderAbsPath.startsWith('/')) {
+    throw new Error('Expected source folder to be an absolute path')
+  }
+  if (!workingFolderAbsPath.startsWith('/')) {
+    throw new Error('Expected source folder to be an absolute path')
+  }
+  const assetFolderName = path.basename(sourceFolderAbsPath)
+  const categoryFolderName = path.basename(path.dirname(sourceFolderAbsPath))
   try {
-    fs.mkdirSync(path.join(workingFolder, categoryFolderName))
+    fs.mkdirSync(path.resolve(workingFolderAbsPath, categoryFolderName))
   } catch (e) {
     // Silenced error -- category folder might already exist
   }
-  const targetFolderName = path.join(workingFolder, categoryFolderName, assetFolderName)
-  fs.mkdirSync(targetFolderName)
-  const files = fs.readdirSync(sourceFolder)
+  const targetFolderNameAbsPath = path.join(workingFolderAbsPath, categoryFolderName, assetFolderName)
+  fs.mkdirSync(targetFolderNameAbsPath)
+  const files = fs.readdirSync(sourceFolderAbsPath)
   for (var file of files) {
-    fs.writeFileSync(path.join(targetFolderName, file), fs.readFileSync(path.join(sourceFolder, file)))
+    fs.writeFileSync(path.join(targetFolderNameAbsPath, file), fs.readFileSync(path.join(sourceFolderAbsPath, file)))
   }
-  await processAsset(sourceFolder, targetFolderName)
-  return await createAssetDescriptionFromFolder(targetFolderName, { contentBaseUrl: contentBaseUrl })
+  await processAsset(sourceFolderAbsPath, targetFolderNameAbsPath)
+  return await createAssetDescriptionFromFolder(targetFolderNameAbsPath, { contentBaseUrl: contentBaseUrl })
 }
