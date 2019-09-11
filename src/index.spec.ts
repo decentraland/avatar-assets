@@ -1,7 +1,8 @@
 import * as chai from 'chai'
 import * as fs from 'fs'
 import * as path from 'path'
-import { getFileCID, getFolderCID } from './cid/getFileCID'
+import { getFileCID } from './cid/getFileCID'
+import { getFolderCID } from './cid/getFolderCID'
 import { getCategories } from './assets/getCategories'
 
 const expect = chai.expect
