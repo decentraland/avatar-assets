@@ -60,7 +60,7 @@ export async function runMain() {
 
   console.log('Generating content addressable files...')
   await Promise.all(
-    assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath, distAbsPath))
+    assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
   )
 
   console.log('Cleaning up temporary files...')
