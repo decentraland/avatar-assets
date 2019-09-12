@@ -36,5 +36,6 @@ describe('Build the catalog', () => {
       fs.writeFileSync(path.join(__dirname, 'expected.json'), JSON.stringify(response, null, 2))
     }
     expect(response).to.deep.equal(JSON.parse(fs.readFileSync(path.join(__dirname, 'expected.json')).toString()))
+    workingFolder.removeCallback()
   })
 })

@@ -1,5 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
+import * as tmp from 'tmp'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 
@@ -28,27 +29,55 @@ export async function runMain() {
     // skip
   }
 
+  const workingFolder = tmp.dirSync()
   const response = await Promise.all(
     assetFolders.map(assetFolderAbsPath =>
       processAssetAndBuildAssetDescription(
         assetFolderAbsPath,
-        path.resolve(path.join(__dirname, '..', 'dist')),
-        'https://dcl-basic-wearables.now.sh'
+        workingFolder.name,
+        'https://dcl-base-avatars.now.sh'
       ).catch(error => {
-		console.log(`Error! Could not process asset ${path.basename(assetFolderAbsPath)} of category ${path.basename(path.dirname(assetFolderAbsPath))}: ${error.message}${ process.env['VERBOSE_ASSET_ERRORS'] ? ('\n' + error.stack) : ''}`)
-	return null
+        console.log(
+          `Error! Could not process asset ${path.basename(assetFolderAbsPath)} of category ${path.basename(
+            path.dirname(assetFolderAbsPath)
+          )}: ${error.message}${process.env['VERBOSE_ASSET_ERRORS'] ? '\n' + error.stack : ''}`
+        )
+        return null
       })
     )
   )
 
   const jsonResult = JSON.stringify(response, null, 2)
-  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'expected.json')), jsonResult)
+  const distAbsPath = path.resolve(path.join(__dirname, '..', 'dist'))
+
+  fs.writeFileSync(path.join(distAbsPath, 'expected.json'), jsonResult)
 
   console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
 
-  fs.writeFileSync(path.resolve(path.join(__dirname, '..', 'dist', 'index.html')), jsonResult)
+  fs.writeFileSync(path.join(distAbsPath, 'index.html'), jsonResult)
+
+  console.log('Generating content addressable files...')
+  const copiedFiles = await Promise.all(
+    assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath, distAbsPath))
+  )
+
+  console.log('Cleaning up temporary files...')
+  workingFolder.removeCallback()
+}
+
+const readDir = promisify(fs.readdir)
+
+async function scanFilesAndCopyWithHashName(assetFolder, targetFolder) {
+  const allFiles = await readDir(assetFolder)
+  return Promise.all(
+    allFiles.map(file => {
+      const sourceFile = path.join(assetFolder, file)
+      const cid = await getFileCID(sourceFile)
+      return writeFile(path.join(targetFolder, cid), readFile(sourceFile))
+    })
+  )
 }
 
 function addFolderEntriesToArray(array, rootFolder) {
-  fs.readdirSync(rootFolder).forEach(entry => array.push(path.join(rootFolder, entry)))
+  return fs.readdirSync(rootFolder).map(entry => array.push(path.join(rootFolder, entry)))
 }
