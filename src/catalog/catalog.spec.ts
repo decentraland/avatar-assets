@@ -9,7 +9,7 @@ const { expect } = require('chai')
 
 describe('Build the catalog', () => {
   it('creates a description for all the files', async () => {
-    const contentBaseUrl = 'https://dcl-basic-wearables.now.sh'
+    const contentBaseUrl = 'https://dcl-base-avatars.now.sh'
 
     const workingFolder = tmp.dirSync()
 

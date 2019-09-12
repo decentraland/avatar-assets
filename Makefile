@@ -1,8 +1,8 @@
+MAKE=make
+
 NODE=node
 
 TSC=./node_modules/.bin/tsc
-
-COMPILED_ASSETS=$(wildcard assets/**/*.json)
 
 MOCHA=$(NODE) ./node_modules/.bin/mocha
 
@@ -15,10 +15,13 @@ catalog: ## Generate a `dist` folder with the catalog
 gentest: ## Builds a "expected.json" catalog for testing
 	WRITE_TEST_CATALOG_RESULT=1 $(MOCHA)
 
+checkassets: ## Fails on any warning when building
+	DEBUG_ASSET_PROCESSING=1 $(MAKE) catalog
+
 test: ## Run all the tests!
 	$(MOCHA)
 
 .PHONY: compile build gentest test help
 .DEFAULT_GOAL := help
 help:
-	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-8s\033[0m %s\n", $$1, $$2}'
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-12s\033[0m %s\n", $$1, $$2}'
