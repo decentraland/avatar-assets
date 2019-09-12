@@ -1,6 +1,6 @@
-import * as fs from 'fs'
-import * as path from 'path'
-import * as tmp from 'tmp'
+import { readdirSync, mkdirSync, writeFileSync, readFileSync } from 'fs'
+import { join, resolve } from 'path'
+import { dirSync } from 'tmp'
 import { processAsset } from '../assets/processAsset'
 import { createAssetDescriptionFromFolder } from './fromFolder'
 
@@ -8,14 +8,14 @@ const { expect } = require('chai')
 
 describe('creates a JSON with the asset description', () => {
   it('works', async () => {
-    const sourceFolder = path.resolve(__dirname, '..', '..', 'assets', 'earring', 'F_BlueStar')
-    const outputFolder = tmp.dirSync()
-    fs.mkdirSync(path.join(outputFolder.name, 'earring'))
-    fs.mkdirSync(path.join(outputFolder.name, 'earring', 'F_BlueStar'))
-    const assetFolder = path.join(outputFolder.name, 'earring', 'F_BlueStar')
-    const files = fs.readdirSync(sourceFolder)
+    const sourceFolder = resolve(__dirname, '..', '..', 'assets', 'earring', 'F_BlueStar')
+    const outputFolder = dirSync()
+    mkdirSync(join(outputFolder.name, 'earring'))
+    mkdirSync(join(outputFolder.name, 'earring', 'F_BlueStar'))
+    const assetFolder = join(outputFolder.name, 'earring', 'F_BlueStar')
+    const files = readdirSync(sourceFolder)
     for (var file of files) {
-      fs.writeFileSync(path.join(assetFolder, file), fs.readFileSync(path.join(sourceFolder, file)))
+      writeFileSync(join(assetFolder, file), readFileSync(join(sourceFolder, file)))
     }
     await processAsset(sourceFolder, assetFolder)
 

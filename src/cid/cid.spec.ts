@@ -1,14 +1,12 @@
-import * as chai from 'chai'
-import * as fs from 'fs'
-import * as path from 'path'
+import { readFileSync } from 'fs'
+import { resolve } from 'path'
 import { getFileCID } from './getFileCID'
 import { getFolderCID } from './getFolderCID'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 describe('computing CIDs', () => {
   it('generates the CID value of a file', async () => {
-    const content = fs.readFileSync(path.resolve(__dirname, '..', '..', 'README.md'))
+    const content = readFileSync(resolve(__dirname, '..', '..', 'README.md'))
     const cid = await getFileCID(content)
     expect(cid).to.eq('QmbiPLfzT76XqNU2fB4NfqkYSTMQkLShCQu9pt2NFoGM6k')
   })
@@ -16,11 +14,11 @@ describe('computing CIDs', () => {
     const cid = await getFolderCID([
       {
         filename: 'README.md',
-        buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'README.md'))
+        buffer: readFileSync(resolve(__dirname, '..', '..', 'README.md'))
       },
       {
         filename: 'LICENSE.md',
-        buffer: fs.readFileSync(path.resolve(__dirname, '..', '..', 'LICENSE'))
+        buffer: readFileSync(resolve(__dirname, '..', '..', 'LICENSE'))
       }
     ])
     expect(cid).to.eq('QmULpXkrDsTcYgeJNKkvPjScbdTD7dhN6E6DCdB6kHUfHs')

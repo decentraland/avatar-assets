@@ -30,7 +30,7 @@ export function nameValidationError(name: string) {
     return 'missing value for "name"'
   }
 }
-export function contentValidationError(content) {
+export function contentValidationError(content: any) {
   if (!content) {
     return 'missing "contents" key'
   }
@@ -63,7 +63,7 @@ export function mainValidationError(opts: AssetDescription) {
       return `entrypoint ${entry.entryPoint} was not present in the contents of ${opts.id}`
   }
 }
-export function categoryValidationError(category) {
+export function categoryValidationError(category: string) {
   if (!category) {
     return 'missing "category" key'
   }
@@ -71,7 +71,7 @@ export function categoryValidationError(category) {
     return `supplied category ${category} is not in the set of valid categories: ${JSON.stringify(validCategories)}`
   }
 }
-export function tagsValidationError(tags) {
+export function tagsValidationError(tags: string[]) {
   if (!tags || !tags.length) {
     return 'missing or empty "tags" key'
   }
@@ -79,8 +79,8 @@ export function tagsValidationError(tags) {
     return '"tags" should be an array'
   }
 }
-export function contentBaseUrlValidationError(content) {
-  if (content && typeof content !== 'string') {
+export function contentBaseUrlValidationError(contentBaseUrl?: string) {
+  if (contentBaseUrl && typeof contentBaseUrl !== 'string') {
     return `the optional value "contentBaseUrl" should be a string if present`
   }
 }
@@ -108,7 +108,7 @@ export function i18nValidationError(i18n: { code: string; text: string }[]) {
     }
   }
 }
-export function thumbnailValidationError(content) {
+export function thumbnailValidationError(content: string) {
   if (!content) {
     return 'missing "thumbnail" key'
   }

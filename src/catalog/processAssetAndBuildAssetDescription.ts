@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import { readdirSync, readFileSync, mkdirSync, writeFileSync } from 'fs'
+import { join, resolve, basename, dirname } from 'path'
 import { processAsset } from '../assets/processAsset'
 import { createAssetDescriptionFromFolder } from '../description/fromFolder'
 
@@ -14,22 +14,22 @@ export async function processAssetAndBuildAssetDescription(
   if (!workingFolderAbsPath.startsWith('/')) {
     throw new Error('Expected source folder to be an absolute path')
   }
-  const assetFolderName = path.basename(sourceFolderAbsPath)
-  const categoryFolderName = path.basename(path.dirname(sourceFolderAbsPath))
+  const assetFolderName = basename(sourceFolderAbsPath)
+  const categoryFolderName = basename(dirname(sourceFolderAbsPath))
   try {
-    fs.mkdirSync(path.resolve(workingFolderAbsPath, categoryFolderName))
+    mkdirSync(resolve(workingFolderAbsPath, categoryFolderName))
   } catch (e) {
     // Silenced error -- category folder might already exist
   }
-  const targetFolderNameAbsPath = path.join(workingFolderAbsPath, categoryFolderName, assetFolderName)
+  const targetFolderNameAbsPath = join(workingFolderAbsPath, categoryFolderName, assetFolderName)
   try {
-    fs.mkdirSync(targetFolderNameAbsPath)
+    mkdirSync(targetFolderNameAbsPath)
   } catch (e) {
     // Silenced error -- asset folder might already exist
   }
-  const files = fs.readdirSync(sourceFolderAbsPath)
+  const files = readdirSync(sourceFolderAbsPath)
   for (var file of files) {
-    fs.writeFileSync(path.join(targetFolderNameAbsPath, file), fs.readFileSync(path.join(sourceFolderAbsPath, file)))
+    writeFileSync(join(targetFolderNameAbsPath, file), readFileSync(join(sourceFolderAbsPath, file)))
   }
   await processAsset(sourceFolderAbsPath, targetFolderNameAbsPath)
   return await createAssetDescriptionFromFolder(targetFolderNameAbsPath, { contentBaseUrl: contentBaseUrl })

@@ -1,12 +1,12 @@
-import * as path from 'path'
-import * as fs from 'fs'
-import * as gltfPipeline from 'gltf-pipeline'
+import { join, basename, dirname } from 'path'
+import { readFileSync, writeFileSync } from 'fs'
+const processGlb: any = require('gltf-pipeline').processGlb
 
 export const outputTexturesFromGLB = (srcFilePath: string, dstDir: string = '.') => {
   const options = {
     // skipExtensionInRelativePath: true,
     separateTextures: true,
-    resourceDirectory: path.dirname(srcFilePath)
+    resourceDirectory: dirname(srcFilePath)
     // customStages: [
     //   async function(gltf) {
     //     await Promise.all(
@@ -18,18 +18,18 @@ export const outputTexturesFromGLB = (srcFilePath: string, dstDir: string = '.')
     //   }
     //]
   }
-  const data = fs.readFileSync(srcFilePath)
+  const data = readFileSync(srcFilePath)
 
-  return gltfPipeline.processGlb(data, options).then(results => {
-    const glbFilePath = path.join(dstDir, path.basename(srcFilePath))
-    fs.writeFileSync(glbFilePath, results.glb)
+  return processGlb(data, options).then((results: any) => {
+    const glbFilePath = join(dstDir, basename(srcFilePath))
+    writeFileSync(glbFilePath, results.glb)
 
     const separateResources = results.separateResources
     for (const relativePath in separateResources) {
       if (separateResources.hasOwnProperty(relativePath)) {
         const resource = separateResources[relativePath]
-        const resourceFilePath = path.join(dstDir, relativePath)
-        fs.writeFileSync(resourceFilePath, resource)
+        const resourceFilePath = join(dstDir, relativePath)
+        writeFileSync(resourceFilePath, resource)
       }
     }
   })

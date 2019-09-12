@@ -7,7 +7,10 @@ TSC=./node_modules/.bin/tsc
 MOCHA=$(NODE) ./node_modules/.bin/mocha
 
 compile: ## Transpile from typescript to javascript
-	$(TSC)
+	$(TSC) -p tsconfig.json
+
+watch: ## Compile and keep watching
+	$(TSC) -p tsconfig.json --watch
 
 catalog: ## Generate a `dist` folder with the catalog
 	$(NODE) ./build/index.js

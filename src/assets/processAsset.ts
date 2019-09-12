@@ -1,5 +1,5 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import { readdirSync } from 'fs'
+import { resolve, join } from 'path'
 import { outputTexturesFromGLB } from './outputTexturesFromGLB'
 
 const hasExtension = (extension: string[] | string) => (file: string) =>
@@ -10,10 +10,10 @@ const GLB_ASSET = ['.glb']
 const isGlbAsset = hasExtension(GLB_ASSET)
 
 export async function processAsset(sourceFolder: string, destinationFolder: string) {
-  const allFilesInAssetFolder = fs.readdirSync(sourceFolder)
+  const allFilesInAssetFolder = readdirSync(sourceFolder)
   const glbFileNames = allFilesInAssetFolder.filter(isGlbAsset)
   for (const glbFilename of glbFileNames) {
-    const fullGlbFilepath = path.resolve(path.join(sourceFolder, glbFilename))
+    const fullGlbFilepath = resolve(join(sourceFolder, glbFilename))
     try {
       await outputTexturesFromGLB(fullGlbFilepath, destinationFolder)
     } catch (err) {

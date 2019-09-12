@@ -1,6 +1,7 @@
-import * as path from 'path'
+import { resolve, join } from 'path'
 
-export const getAssetFolderAbsPath = (postFix: string = __dirname, currentHeight: number = 2) =>
-  currentHeight === 0
-    ? path.resolve(path.join(postFix, 'assets'))
-    : getAssetFolderAbsPath(path.join(postFix, '..'), currentHeight - 1)
+export function getAssetFolderAbsPath(postFix: string = __dirname, currentHeight: number = 2): string {
+  return currentHeight === 0
+    ? resolve(join(postFix, 'assets'))
+    : getAssetFolderAbsPath(join(postFix, '..'), currentHeight - 1)
+}

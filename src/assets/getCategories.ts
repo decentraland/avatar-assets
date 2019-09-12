@@ -1,8 +1,8 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import { readdirSync } from 'fs'
+import { join } from 'path'
 
-const dir = path.join(__dirname, '..', '..', 'assets')
+const dir = join(__dirname, '..', '..', 'assets')
 
 export function getCategories() {
-  return fs.readdirSync(dir)
+  return readdirSync(dir)
 }

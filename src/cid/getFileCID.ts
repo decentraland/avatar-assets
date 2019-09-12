@@ -1,6 +1,6 @@
-import * as importer from 'ipfs-unixfs-importer'
-import * as IPLD from 'ipld'
-import * as inMemory from 'ipld-in-memory'
+const importer = require('ipfs-unixfs-importer')
+const IPLD = require('ipld')
+const inMemory = require('ipld-in-memory')
 
 const first = require('async-iterator-first')
 

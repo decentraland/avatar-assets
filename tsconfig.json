@@ -3,13 +3,11 @@
     "module": "commonjs",
     "target": "es2017",
     "lib": ["es2017"],
-    "downlevelIteration": false,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
-    "extendedDiagnostics": true,
+    "noImplicitAny": true,
+    "diagnostics": false,
     "moduleResolution": "node",
-    "noEmit": false,
+    "noEmit": true,
     "noUnusedLocals": true,
     "pretty": true,
     "incremental": true,
@@ -24,5 +22,5 @@
     "src/description/*.ts",
     "src/upload/*.ts"
   ],
-  "exclude": ["**/assets/**/*", "**/dist/**/*", "**/build/**/*", "**/node_modules/**/*"]
+  "exclude": ["**/assets/**/*", "*.swp", "**/dist/**/*", "**/build/**/*", "**/node_modules/**/*"]
 }

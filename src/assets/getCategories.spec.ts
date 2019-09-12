@@ -1,7 +1,5 @@
-import * as chai from 'chai'
 import { getCategories } from './getCategories'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 describe('process files', () => {
   it('utility scanner returns a list of all the categories', () => {

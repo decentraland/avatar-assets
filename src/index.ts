@@ -1,6 +1,13 @@
-import * as fs from 'fs'
-import * as path from 'path'
-import * as tmp from 'tmp'
+import {
+  readdir as readdirOrig,
+  writeFile as writeFileOrig,
+  readFile as readFileOrig,
+  readdirSync,
+  writeFileSync,
+  mkdirSync
+} from 'fs'
+import { join, resolve, dirname, basename } from 'path'
+import { dirSync } from 'tmp'
 import { promisify } from 'util'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
@@ -15,23 +22,23 @@ export async function runMain() {
 
   const categoryFolderAbsPath = getAssetFolderAbsPath()
 
-  const categoryFolders = fs.readdirSync(categoryFolderAbsPath)
+  const categoryFolders = readdirSync(categoryFolderAbsPath)
   const assetFolders: any[] = []
 
   categoryFolders.forEach(category => {
-    addFolderEntriesToArray(assetFolders, path.join(categoryFolderAbsPath, category))
+    addFolderEntriesToArray(assetFolders, join(categoryFolderAbsPath, category))
   })
 
   console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
 
   console.log(`Output folder is set to ${'dist'}. Copying files...`)
   try {
-    fs.mkdirSync(path.join(__dirname, '..', 'dist'))
+    mkdirSync(join(__dirname, '..', 'dist'))
   } catch (e) {
     // skip
   }
 
-  const workingFolder = tmp.dirSync()
+  const workingFolder = dirSync()
   const buildAssetsConfig = {
     assetFoldersAbsPath: assetFolders,
     workingDirAbsPath: workingFolder.name,
@@ -43,13 +50,13 @@ export async function runMain() {
     : await parallelCallAndBuild(buildAssetsConfig)
 
   const jsonResult = JSON.stringify(response, null, 2)
-  const distAbsPath = path.resolve(path.join(__dirname, '..', 'dist'))
+  const distAbsPath = resolve(join(__dirname, '..', 'dist'))
 
-  fs.writeFileSync(path.join(distAbsPath, 'expected.json'), jsonResult)
+  writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
 
   console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
 
-  fs.writeFileSync(path.join(distAbsPath, 'index.html'), jsonResult)
+  writeFileSync(join(distAbsPath, 'index.html'), jsonResult)
 
   console.log('Generating content addressable files...')
   await Promise.all(
@@ -60,24 +67,24 @@ export async function runMain() {
   workingFolder.removeCallback()
 }
 
-const readDir = promisify(fs.readdir)
-const readFile = promisify(fs.readFile)
-const writeFile = promisify(fs.writeFile)
+const readDir = promisify(readdirOrig)
+const readFile = promisify(readFileOrig)
+const writeFile = promisify(writeFileOrig)
 
-async function scanFilesAndCopyWithHashName(assetFolder, targetFolder) {
+async function scanFilesAndCopyWithHashName(assetFolder: string, targetFolder: string) {
   const allFiles = await readDir(assetFolder)
   return Promise.all(
-    allFiles.map(async (file) => {
-      const sourceFile = path.join(assetFolder, file)
+    allFiles.map(async file => {
+      const sourceFile = join(assetFolder, file)
       const content = await readFile(sourceFile)
       const cid = await getFileCID(content)
-      return writeFile(path.join(targetFolder, cid), content)
+      return writeFile(join(targetFolder, cid), content)
     })
   )
 }
 
-function addFolderEntriesToArray(array, rootFolder) {
-  return fs.readdirSync(rootFolder).map(entry => array.push(path.join(rootFolder, entry)))
+function addFolderEntriesToArray(array: string[], rootFolder: string) {
+  return readdirSync(rootFolder).map(entry => array.push(join(rootFolder, entry)))
 }
 
 type MultipleProcessAndBuildConfiguration = {
@@ -89,8 +96,8 @@ type MultipleProcessAndBuildConfiguration = {
 async function serializeCallBuild(config: MultipleProcessAndBuildConfiguration) {
   const result: any[] = []
   for (let folder of config.assetFoldersAbsPath) {
-    const asset = path.basename(folder)
-    const category = path.dirname(path.basename(folder))
+    const asset = basename(folder)
+    const category = dirname(basename(folder))
     console.log(`Building ${category}:${asset}`)
     result.push(await callOrLogProcessAndBuild(folder, config.workingDirAbsPath, config.contentBaseUrl))
   }
@@ -99,33 +106,19 @@ async function serializeCallBuild(config: MultipleProcessAndBuildConfiguration) 
 
 async function parallelCallAndBuild(config: MultipleProcessAndBuildConfiguration) {
   return await Promise.all(
-    config.assetFoldersAbsPath.map(assetFolder => callOrLogProcessAndBuild(
-      assetFolder,
-      config.workingDirAbsPath,
-      config.contentBaseUrl
-    ))
+    config.assetFoldersAbsPath.map(assetFolder =>
+      callOrLogProcessAndBuild(assetFolder, config.workingDirAbsPath, config.contentBaseUrl)
+    )
   )
 }
 
-async function callOrLogProcessAndBuild(
-  assetFolderAbsPath: string,
-  workingDirAbsPath: string,
-  contentBaseUrl: string
-) {
-  return processAssetAndBuildAssetDescription(
-    assetFolderAbsPath,
-    workingDirAbsPath,
-    contentBaseUrl
-  ).catch(error => {
+async function callOrLogProcessAndBuild(assetFolderAbsPath: string, workingDirAbsPath: string, contentBaseUrl: string) {
+  return processAssetAndBuildAssetDescription(assetFolderAbsPath, workingDirAbsPath, contentBaseUrl).catch(error => {
     console.log(
-      `Error! Could not process asset ${
-        path.basename(assetFolderAbsPath)
-      } of category ${
-        path.basename(path.dirname(assetFolderAbsPath))
-      }: ${error.message}`
-      + (process.env['VERBOSE_ASSET_ERRORS'] ? '\n' + error.stack : '')
+      `Error! Could not process asset ${basename(assetFolderAbsPath)} of category ${basename(
+        dirname(assetFolderAbsPath)
+      )}: ${error.message}` + (process.env['VERBOSE_ASSET_ERRORS'] ? '\n' + error.stack : '')
     )
     return null
   })
 }
-
