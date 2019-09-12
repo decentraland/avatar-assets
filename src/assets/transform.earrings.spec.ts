@@ -1,6 +1,5 @@
 import { resolve, join } from 'path'
-import { statSync } from 'fs'
-import { dirSync } from 'tmp'
+import { mkdirSync, statSync } from 'fs'
 import { processAsset } from './processAsset'
 
 const { expect } = require('chai')
@@ -8,11 +7,12 @@ const { expect } = require('chai')
 describe('sample asset: earrings', () => {
   it('creates an output folder with the expected values', async () => {
     const assetFolder = resolve(__dirname, '..', '..', 'assets', 'earring', 'F_BlueStar')
-    const outputFolder = dirSync()
+    const outputFolder = resolve(__dirname, '..', '..', 'tmp')
+    try {
+      mkdirSync(outputFolder)
+    } catch (e) {}
 
-    await processAsset(assetFolder, outputFolder.name)
-    expect(statSync(join(outputFolder.name, 'AvatarWearables_TX.png')))
-
-    outputFolder.removeCallback()
+    await processAsset(assetFolder, outputFolder)
+    expect(statSync(join(outputFolder, 'AvatarWearables_TX.png')))
   })
 })
