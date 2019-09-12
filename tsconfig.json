@@ -2,11 +2,12 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2017",
-    "lib": ["es2017", "dom", "dom.iterable"],
-    "downlevelIteration": true,
+    "lib": ["es2017"],
+    "downlevelIteration": false,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
+    "extendedDiagnostics": true,
     "moduleResolution": "node",
     "noEmit": false,
     "noUnusedLocals": true,
@@ -15,6 +16,13 @@
     "outDir": "build",
     "baseUrl": "src"
   },
-  "include": ["src/**/*"],
-  "exclude": ["dist", "build", "old", "node_modules"]
+  "include": [
+    "src/index.ts",
+    "src/assets/*.ts",
+    "src/catalog/*.ts",
+    "src/cid/*.ts",
+    "src/description/*.ts",
+    "src/upload/*.ts"
+  ],
+  "exclude": ["**/assets/**/*", "**/dist/**/*", "**/build/**/*", "**/node_modules/**/*"]
 }
