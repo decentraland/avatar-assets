@@ -15,7 +15,8 @@
     "baseUrl": "src"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.spec.ts"
   ],
   "exclude": ["./assets/**/*", "*.swp", "./dist/**/*", "./build/**/*", "/node_modules/**/*"]
 }
