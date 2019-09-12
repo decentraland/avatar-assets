@@ -1,8 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import * as tmp from 'tmp'
+import { promisify } from 'util'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
+import { getFileCID } from './cid/getFileCID'
 
 if (!module.parent) {
   runMain().catch(error => console.log(error, error.stack))
@@ -57,7 +59,7 @@ export async function runMain() {
   fs.writeFileSync(path.join(distAbsPath, 'index.html'), jsonResult)
 
   console.log('Generating content addressable files...')
-  const copiedFiles = await Promise.all(
+  await Promise.all(
     assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath, distAbsPath))
   )
 
@@ -66,14 +68,17 @@ export async function runMain() {
 }
 
 const readDir = promisify(fs.readdir)
+const readFile = promisify(fs.readFile)
+const writeFile = promisify(fs.writeFile)
 
 async function scanFilesAndCopyWithHashName(assetFolder, targetFolder) {
   const allFiles = await readDir(assetFolder)
   return Promise.all(
-    allFiles.map(file => {
+    allFiles.map(async (file) => {
       const sourceFile = path.join(assetFolder, file)
-      const cid = await getFileCID(sourceFile)
-      return writeFile(path.join(targetFolder, cid), readFile(sourceFile))
+      const content = await readFile(sourceFile)
+      const cid = await getFileCID(content)
+      return writeFile(path.join(targetFolder, cid), content)
     })
   )
 }
