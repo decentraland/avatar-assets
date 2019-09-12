@@ -1,6 +1,6 @@
 import { resolve, join } from 'path'
 import { statSync } from 'fs'
-import { dirSyc } from 'tmp'
+import { dirSync } from 'tmp'
 import { processAsset } from './processAsset'
 
 const { expect } = require('chai')

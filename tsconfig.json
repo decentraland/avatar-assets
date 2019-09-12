@@ -15,12 +15,7 @@
     "baseUrl": "src"
   },
   "include": [
-    "src/index.ts",
-    "src/assets/*.ts",
-    "src/catalog/*.ts",
-    "src/cid/*.ts",
-    "src/description/*.ts",
-    "src/upload/*.ts"
+    "src/**/*.ts"
   ],
-  "exclude": ["**/assets/**/*", "*.swp", "**/dist/**/*", "**/build/**/*", "**/node_modules/**/*"]
+  "exclude": ["./assets/**/*", "*.swp", "./dist/**/*", "./build/**/*", "/node_modules/**/*"]
 }
