@@ -7,15 +7,14 @@
     "noImplicitAny": true,
     "diagnostics": false,
     "moduleResolution": "node",
-    "noEmit": true,
     "noUnusedLocals": true,
     "pretty": true,
     "incremental": true,
-    "outDir": "build",
+    "outDir": "./build",
     "baseUrl": "src"
   },
   "include": [
     "src/**/*.ts"
   ],
-  "exclude": ["./assets/**/*", "*.swp", "./dist/**/*", "./build/**/*", "/node_modules/**/*"]
+  "exclude": ["*.swp", "./dist/**/*", "/node_modules/**/*"]
 }
