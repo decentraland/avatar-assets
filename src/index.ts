@@ -42,7 +42,7 @@ export async function runMain() {
   const buildAssetsConfig = {
     assetFoldersAbsPath: assetFolders,
     workingDirAbsPath: workingFolder.name,
-    contentBaseUrl: 'https://dcl-base-avatars.now.sh'
+    contentBaseUrl: 'https://dcl-exclusive-stg.now.sh'
   }
 
   const response = process.env['DEBUG_ASSET_PROCESSING']
