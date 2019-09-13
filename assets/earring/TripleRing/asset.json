@@ -13,7 +13,7 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseMale", "model": "M_Earrings_TripleRing.glb"},
+    {"type": "BaseMale", "model": "M_Earrings_TripleRing.glb"}
     {"type": "Basefemale", "model": "M_Earrings_TripleRing.glb"}
   ]
 }

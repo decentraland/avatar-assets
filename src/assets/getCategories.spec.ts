@@ -14,7 +14,6 @@ describe('process files', () => {
       'feet',
       'hair',
       'lower_body',
-      'mask',
       'mouth',
       'tiara',
       'upper_body'

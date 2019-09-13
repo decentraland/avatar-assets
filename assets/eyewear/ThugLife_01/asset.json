@@ -11,6 +11,6 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "ThugLife_01.glb"}
+    {"type": "BaseMale", "model": "ThugLife_01.glb"},
   ]
 }
