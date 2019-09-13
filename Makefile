@@ -23,6 +23,7 @@ checkassets: ## Fails on any warning when building
 
 test: ## Run all the tests!
 	$(MOCHA)
+	@rm -rf ./tmp
 
 .PHONY: compile build gentest test help
 .DEFAULT_GOAL := help
