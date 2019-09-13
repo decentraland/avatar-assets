@@ -23,7 +23,7 @@ jobs:
           key: dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Build catalog
-          command: make compile && make test && make catalog
+          command: make compile && make catalog
       - save_cache:
           paths:
             - dist
