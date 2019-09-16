@@ -1,5 +1,5 @@
+import { Wearable } from 'types'
 import { createAssetDescriptionFromFolder } from '../description/fromFolder'
-import { AssetDescription } from '../description/createAssetDescription'
 
 export async function buildCatalog(
   folders: string[],
@@ -8,7 +8,7 @@ export async function buildCatalog(
     workingFolder: string
   }
 ) {
-  const catalog: AssetDescription[] = []
+  const catalog: Wearable[] = []
   for (let folder of folders) {
     catalog.push(await createAssetDescriptionFromFolder(folder, { contentBaseUrl: options.contentBaseUrl }))
   }

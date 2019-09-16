@@ -2,8 +2,8 @@ import { readdirSync, writeFileSync, readFileSync } from 'fs'
 import { resolve, join } from 'path'
 import { processAssetAndBuildAssetDescription } from './processAssetAndBuildAssetDescription'
 import { dirSync } from 'tmp'
-import { AssetDescription } from '../description/createAssetDescription'
 import { getAssetFolderAbsPath } from '../assets/getAssetFolderAbsPath'
+import { Wearable } from 'types'
 
 const { expect } = require('chai')
 
@@ -13,7 +13,7 @@ describe('Build the catalog', () => {
 
     const workingFolder = dirSync()
 
-    const response: AssetDescription[] = []
+    const response: Wearable[] = []
 
     const categoryFolderAbsPath = getAssetFolderAbsPath(__dirname, 2)
 

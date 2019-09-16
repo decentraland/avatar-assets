@@ -41,7 +41,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Deploy to now.sh
-          command: cd dist && now alias $(now --scope decentraland --name dcl-base-avatars --token $NOW_TOKEN .) dcl-base-avatars.now.sh --scope decentraland --token $NOW_TOKEN
+          command: cd dist && now alias $(now --scope decentraland --name dcl-base-wearables --token $NOW_TOKEN .) dcl-base-wearables.now.sh --scope decentraland --token $NOW_TOKEN
   deploy:
     docker:
       - image: circleci/node:10

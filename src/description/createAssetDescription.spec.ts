@@ -1,4 +1,4 @@
-import { readdirSync, mkdirSync, writeFileSync, readFileSync } from 'fs'
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join, resolve } from 'path'
 import { dirSync } from 'tmp'
 import { processAsset } from '../assets/processAsset'
@@ -23,29 +23,29 @@ describe('creates a JSON with the asset description', () => {
     const assetDescription = await createAssetDescriptionFromFolder(assetFolder, { contentBaseUrl })
 
     const expectedJSON = {
-      id: 'dcl://base-wearables/blue_star_earring',
+      id: 'dcl://base-wearables/F_BlueStar',
+      type: 'wearable',
       thumbnail: 'QmeGtEgb9XkachCtGJ1PP2XhxFdh946Lfdfcz3XttYWy5n',
-      contentBaseUrl: 'https://dcl-base-avatars.now.sh',
-      name: 'blue_star_earring',
+      baseUrl: 'https://dcl-base-wearables.now.sh',
       tags: ['accesories', 'female', 'woman'],
       category: 'earring',
-      contents: [
+      representations: [
         {
-          hash: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb',
-          name: 'AvatarWearables_TX.png'
-        },
-        {
-          hash: 'QmRH8R6EcnmpkwZkuDp92nspsVZy4SHmAhnktYMr9yiW1s',
-          name: 'F_Earrings_BlueStar.glb'
+          bodyShapes: ['BaseFemale'],
+          contents: [
+            {
+              hash: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb',
+              file: 'AvatarWearables_TX.png'
+            },
+            {
+              hash: 'QmRH8R6EcnmpkwZkuDp92nspsVZy4SHmAhnktYMr9yiW1s',
+              file: 'F_Earrings_BlueStar.glb'
+            }
+          ],
+          mainFile: 'F_Earrings_BlueStar.glb'
         }
       ],
       i18n: [{ code: 'en', text: 'Blue Star Earring' }, { code: 'es', text: 'Aro Azul con Forma de Estrella' }],
-      main: [
-        {
-          bodyType: 'BaseFemale',
-          entryPoint: 'F_Earrings_BlueStar.glb'
-        }
-      ]
     }
 
     expect(expectedJSON).to.deep.equal(assetDescription)

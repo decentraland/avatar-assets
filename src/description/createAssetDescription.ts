@@ -1,23 +1,6 @@
-import { validCategories } from '../assets/validCategories'
 import { Wearable } from 'types'
+import { validCategories } from '../assets/validCategories'
 
-export type AssetDescription = {
-  id: string
-  name: string
-  contents: {
-    name: string
-    hash: string
-  }[]
-  main: {
-    bodyType: string
-    entryPoint: string
-  }
-  category: string
-  tags: string[]
-  contentBaseUrl: string | undefined
-  i18n: { code: string; text: string }[]
-  thumbnail: string
-}
 export function idValidationError(id: string) {
   if (!id) {
     return 'missing value for "id"'
@@ -114,6 +97,6 @@ export function createAssetDescription(opts: Wearable) {
   if (validationError) {
     throw new Error(`Asset ${opts.id} has the following error: ${validationError}`)
   }
-  const { id, representations, category, tags, baseUrl, i18n, thumbnail } = opts
-  return { id, representations, category, tags, baseUrl, i18n, thumbnail }
+  const { id, representations, type, category, tags, baseUrl, i18n, thumbnail } = opts
+  return { id, representations, type, category, tags, baseUrl, i18n, thumbnail }
 }

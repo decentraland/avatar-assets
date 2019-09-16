@@ -1,9 +1,9 @@
-import { readdirSync, readFileSync, readFile as readFileOrig } from 'fs'
-import { basename, join, dirname } from 'path'
-import { AssetDescription, createAssetDescription } from './createAssetDescription'
-import { getFileCID } from '../cid/getFileCID'
-import { promisify } from 'util'
+import { readdirSync, readFile as readFileOrig, readFileSync } from 'fs'
+import { basename, dirname, join } from 'path'
 import { Wearable } from 'types'
+import { promisify } from 'util'
+import { getFileCID } from '../cid/getFileCID'
+import { createAssetDescription } from './createAssetDescription'
 
 const readFile = promisify(readFileOrig)
 const readAssetJsonFromFolder = (folder: string) => JSON.parse(readFileSync(join(folder, 'asset.json')).toString())
@@ -19,7 +19,7 @@ export async function createAssetDescriptionFromFolder(
   opts: {
     contentBaseUrl?: string
   }
-) {
+): Promise<Wearable> {
   if (!folderFullPath || !folderFullPath.startsWith('/')) {
     throw new Error('Expected the folder\'s full path to start with "/"')
   }
@@ -34,6 +34,8 @@ export async function createAssetDescriptionFromFolder(
     ...originalJson,
     id: 'dcl://base-wearables/' + name,
     category,
+    type: 'wearable',
+    baseUrl: opts.contentBaseUrl || 'https://dcl-base-wearables.now.sh',
     thumbnail: await getFileCID(await readFile(thumbnail)),
     representations: await Promise.all(originalJson.representations.map(
       async (original) => ({
