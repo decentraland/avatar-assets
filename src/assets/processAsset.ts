@@ -1,6 +1,32 @@
-import { readdirSync } from 'fs'
+import { readdirSync, readFileSync, writeFileSync } from 'fs'
 import { resolve, join } from 'path'
 import { outputTexturesFromGLB } from './outputTexturesFromGLB'
+import { SourceJson, Wearable } from '../types'
+
+function transformJson(json: SourceJson): Wearable {
+  return {
+    id: '',
+    type: 'wearable',
+    category: json.category,
+    i18n: Object.keys(json.i18n).reduce(
+      (cumm, code) => {
+        const text = json.i18n[code]
+        cumm.push({ code, text })
+        return cumm
+      }, [] as { code: string, text: string }[]
+    ),
+    thumbnail: '',
+    baseUrl: '',
+    tags: json.tags,
+    representations: json.main.map(
+      (original) => ({
+        bodyShapes: [original.type],
+        mainFile: original.model,
+        contents: []
+      })
+    )
+  }
+}
 
 const hasExtension = (extension: string[] | string) => (file: string) =>
   typeof extension === 'string'
@@ -20,5 +46,8 @@ export async function processAsset(sourceFolder: string, destinationFolder: stri
       console.error(err.message)
     }
   }
-  return null
+  const json = JSON.parse(readFileSync(join(sourceFolder, 'asset.json')).toString()) as SourceJson
+  const result: Wearable = transformJson(json)
+  writeFileSync(join(destinationFolder, 'asset.json'), JSON.stringify(result, null, 2))
+  return result
 }

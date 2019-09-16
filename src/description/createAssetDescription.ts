@@ -1,4 +1,5 @@
 import { validCategories } from '../assets/validCategories'
+import { Wearable } from 'types'
 
 export type AssetDescription = {
   id: string
@@ -43,24 +44,6 @@ export function contentValidationError(content: any) {
     if (!content[i].name) return `element ${i} of "contents" doesn't have a "name" value with the name of the file`
     if (!content[i].hash.startsWith('Qm'))
       return `element ${i} of "contents" should be a valid CIDv0 hash (received ${content[i].hash})`
-  }
-}
-export function mainValidationError(opts: AssetDescription) {
-  if (!opts.main) {
-    return 'missing "main" key'
-  }
-  if (!Array.isArray(opts.main)) {
-    return `"main" should be an array (received ${JSON.stringify(opts.main)}`
-  }
-  const mainLength = opts.main.length
-  for (let i = 0; i < mainLength; i++) {
-    const entry = opts.main[i]
-    if (!entry || !(typeof entry === 'object')) return `all elements of "main" should be objects`
-    if (!entry.entryPoint)
-      return `all elements of "main" should have an "entryPoint" (received ${JSON.stringify(entry)})`
-    if (!entry.bodyType) return `all elements of "main" should have a "bodyType" (received ${JSON.stringify(entry)})`
-    if (!opts.contents.filter(_ => _.name === entry.entryPoint).length)
-      return `entrypoint ${entry.entryPoint} was not present in the contents of ${opts.id}`
   }
 }
 export function categoryValidationError(category: string) {
@@ -116,24 +99,21 @@ export function thumbnailValidationError(content: string) {
     return `the ${content} value should be a valid CIDv0 string`
   }
 }
-export function validate(opts: AssetDescription) {
+export function validate(opts: Wearable) {
   return (
     idValidationError(opts.id) ||
-    nameValidationError(opts.name) ||
-    contentValidationError(opts.contents) ||
-    mainValidationError(opts) ||
     categoryValidationError(opts.category) ||
     tagsValidationError(opts.tags) ||
-    contentBaseUrlValidationError(opts.contentBaseUrl) ||
+    contentBaseUrlValidationError(opts.baseUrl) ||
     i18nValidationError(opts.i18n) ||
     thumbnailValidationError(opts.thumbnail)
   )
 }
-export function createAssetDescription(opts: AssetDescription) {
+export function createAssetDescription(opts: Wearable) {
   const validationError = validate(opts)
   if (validationError) {
     throw new Error(`Asset ${opts.id} has the following error: ${validationError}`)
   }
-  const { id, name, contents, main, category, tags, contentBaseUrl, i18n, thumbnail } = opts
-  return { id, name, contents, main, category, tags, contentBaseUrl, i18n, thumbnail }
+  const { id, representations, category, tags, baseUrl, i18n, thumbnail } = opts
+  return { id, representations, category, tags, baseUrl, i18n, thumbnail }
 }
