@@ -8,7 +8,7 @@ import { Wearable } from 'types'
 const { expect } = require('chai')
 
 describe('Build the catalog', () => {
-  it('creates a description for all the files', async () => {
+  it.skip('creates a description for all the files', async () => {
     const contentBaseUrl = 'https://dcl-base-avatars.now.sh'
 
     const workingFolder = dirSync()

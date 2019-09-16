@@ -28,7 +28,7 @@ jobs:
           paths:
             - dist
           key: build-{{ .Branch }}-{{ .Revision }}
-  deploy-staging:
+  deploy-exclusive:
     docker:
       - image: circleci/node:10
     working_directory: /tmp/app
@@ -41,7 +41,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Deploy to now.sh
-          command: cd dist && now alias $(now --scope decentraland --name dcl-base-wearables --token $NOW_TOKEN .) dcl-base-wearables.now.sh --scope decentraland --token $NOW_TOKEN
+          command: cd dist && now alias $(now --scope decentraland --name dcl-base-exclusive --token $NOW_TOKEN .) dcl-base-exclusive.now.sh --scope decentraland --token $NOW_TOKEN
   deploy:
     docker:
       - image: circleci/node:10
@@ -64,13 +64,13 @@ jobs:
           command: cd deploy && now alias $(now --scope decentraland --name ${NOW_TARGET} --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
-  build-deploy-staging:
+  build-deploy-exclusive:
     jobs:
       - build:
           filters:
             branches:
-              only: staging
-      - deploy-staging:
+              only: exclusive
+      - deploy-exclusive:
           requires:
             - build
   build-deploy-release:
