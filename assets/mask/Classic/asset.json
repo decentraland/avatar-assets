@@ -1,0 +1,19 @@
+{
+  "name": "classic_mask",
+  "i18n": {
+    "en": "Classic Mask",
+    "es": "Máscara Clásica"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "mask",
+  "main": [
+    {"type": "BaseMale", "model": "Classic.glb"},
+    {"type": "BaseFemale", "model": "Classic.glb"}
+  ]
+}
