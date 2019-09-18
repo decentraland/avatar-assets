@@ -1,6 +1,6 @@
 [
   {
-    "id": "dcl://base-wearables/BaseFemale",
+    "id": "dcl://base-avatars/BaseFemale",
     "representations": [
       {
         "bodyShapes": [
@@ -52,7 +52,7 @@
     "thumbnail": "QmQo9oNMzYTDdcGTixkioFdb4ArrB42ZgrHVGNua36gXpn"
   },
   {
-    "id": "dcl://base-wearables/BaseMale",
+    "id": "dcl://base-avatars/BaseMale",
     "representations": [
       {
         "bodyShapes": [
@@ -104,7 +104,7 @@
     "thumbnail": "QmbEoKs839SoKDSHF9tkgc3S6ge777ywU9X85W8K42WePu"
   },
   {
-    "id": "dcl://base-wearables/00_EmptyEarring",
+    "id": "dcl://base-avatars/00_EmptyEarring",
     "representations": [
       {
         "bodyShapes": [
@@ -154,7 +154,7 @@
     "thumbnail": "QmUA7fineYQ5ES3sXu9GjBaiDcCTYS3oXPBUhgZe1EG4oH"
   },
   {
-    "id": "dcl://base-wearables/F_BlueStar",
+    "id": "dcl://base-avatars/blue_star_earring",
     "representations": [
       {
         "bodyShapes": [
@@ -194,7 +194,7 @@
     "thumbnail": "QmeGtEgb9XkachCtGJ1PP2XhxFdh946Lfdfcz3XttYWy5n"
   },
   {
-    "id": "dcl://base-wearables/F_Earring_GreenFeather",
+    "id": "dcl://base-avatars/green_feather_earring",
     "representations": [
       {
         "bodyShapes": [
@@ -234,7 +234,7 @@
     "thumbnail": "Qmen8Ag1sybXsF7G6s9cbWgQPQJ6dGbjZxGftdXpxdXuWg"
   },
   {
-    "id": "dcl://base-wearables/F_Eyebrows_00",
+    "id": "dcl://base-avatars/f_eyebrows_00",
     "representations": [
       {
         "bodyShapes": [
@@ -271,7 +271,7 @@
     "thumbnail": "QmWf7zZJhJoDhN45uJZVXw2bExuarbXnskrepxWdTtDBwW"
   },
   {
-    "id": "dcl://base-wearables/F_Eyebrows_01",
+    "id": "dcl://base-avatars/f_eyebrows_01",
     "representations": [
       {
         "bodyShapes": [
@@ -308,7 +308,7 @@
     "thumbnail": "QmV2fzgVkpWuMo8W4UWRbBume6u3BoNMdZJRUXYfWfj2pt"
   },
   {
-    "id": "dcl://base-wearables/F_Eyebrows_02",
+    "id": "dcl://base-avatars/f_eyebrows_02",
     "representations": [
       {
         "bodyShapes": [
@@ -345,7 +345,7 @@
     "thumbnail": "QmQZ8Xb6TTPyo9m9JVDd7NE1P31kWrX5kM2PvR3HiqL2Fd"
   },
   {
-    "id": "dcl://base-wearables/F_Eyes_00",
+    "id": "dcl://base-avatars/f_eyes_00",
     "representations": [
       {
         "bodyShapes": [
@@ -382,7 +382,7 @@
     "thumbnail": "Qme5gw36VyXLvEQxJmEAY8vp4cQ3z1hoaqzwh8wQV8pBKF"
   },
   {
-    "id": "dcl://base-wearables/F_Eyes_01",
+    "id": "dcl://base-avatars/f_eyes_01",
     "representations": [
       {
         "bodyShapes": [
@@ -423,7 +423,7 @@
     "thumbnail": "QmPGPaujnDyCMESAp1XxxKgKbQgpgXcDvY77hP3hqZJEcu"
   },
   {
-    "id": "dcl://base-wearables/F_Eyes_02",
+    "id": "dcl://base-avatars/f_eyes_02",
     "representations": [
       {
         "bodyShapes": [
@@ -464,7 +464,7 @@
     "thumbnail": "QmdJBnz8YGu3Gh8vejXao1xSCvBnpRBLwTFxVENR1s84mo"
   },
   {
-    "id": "dcl://base-wearables/BlackSunglasses",
+    "id": "dcl://base-avatars/black_sun_glasses",
     "representations": [
       {
         "bodyShapes": [
@@ -522,7 +522,7 @@
     "thumbnail": "QmdZ1vLFPWnVF7xMFMskA6LSpKfCVxA9JRi4jsYtrCnrya"
   },
   {
-    "id": "dcl://base-wearables/Cyclope",
+    "id": "dcl://base-avatars/cyclope",
     "representations": [
       {
         "bodyShapes": [
@@ -580,7 +580,7 @@
     "thumbnail": "QmStaoSsdCyV4g9B6ynUVJZEpBr7sdyV68qwsPgzdUS2AR"
   },
   {
-    "id": "dcl://base-wearables/F_CatStyle",
+    "id": "dcl://base-avatars/f_glasses_cat_style",
     "representations": [
       {
         "bodyShapes": [
@@ -620,7 +620,7 @@
     "thumbnail": "QmTz5FqD8PberQpKyFMyR8A47S5NT243s26TBGzmCoUaC9"
   },
   {
-    "id": "dcl://base-wearables/00_EmptyFacialHair",
+    "id": "dcl://base-avatars/00_EmptyFacialHair",
     "representations": [
       {
         "bodyShapes": [
@@ -656,7 +656,7 @@
     "thumbnail": "Qma95DcT2Bkd22gL6DYpYFvFKpzNMMExqUphZEiqcPhDM7"
   },
   {
-    "id": "dcl://base-wearables/BalbooBeard",
+    "id": "dcl://base-avatars/balbo_beard",
     "representations": [
       {
         "bodyShapes": [
@@ -696,7 +696,7 @@
     "thumbnail": "QmTcMounmnAnWrSXY2za4f8ZxeStP3WKEm5LNvunC1xnS6"
   },
   {
-    "id": "dcl://base-wearables/BeardGoatee",
+    "id": "dcl://base-avatars/lincoln_beard",
     "representations": [
       {
         "bodyShapes": [
@@ -736,7 +736,7 @@
     "thumbnail": "QmQYqgiiasA4BpprThx4r8NCExuxEyf16woHAhp7U1tBGM"
   },
   {
-    "id": "dcl://base-wearables/BearSlippers_01",
+    "id": "dcl://base-avatars/bear_slippers",
     "representations": [
       {
         "bodyShapes": [
@@ -802,7 +802,7 @@
     "thumbnail": "QmW1RfnBXBL7vMxeZRPJ8DZp88W3CgRUFYpiDU7mDRMEPk"
   },
   {
-    "id": "dcl://base-wearables/CityComfortableShoes",
+    "id": "dcl://base-avatars/citycomfortableshoes",
     "representations": [
       {
         "bodyShapes": [
@@ -868,7 +868,7 @@
     "thumbnail": "QmNXhvGjCeyeSasfEKJRkunTuw4G6SBebBSSSa863UheQh"
   },
   {
-    "id": "dcl://base-wearables/ClassicShoes",
+    "id": "dcl://base-avatars/classic_shoes",
     "representations": [
       {
         "bodyShapes": [
@@ -934,7 +934,7 @@
     "thumbnail": "QmVbc4ZcMzzELVeBnsZGbvrFVtpNNXoFxD7jPx8rDgg94u"
   },
   {
-    "id": "dcl://base-wearables/F_Hair_Anime_01",
+    "id": "dcl://base-avatars/hair_anime_01",
     "representations": [
       {
         "bodyShapes": [
@@ -974,7 +974,7 @@
     "thumbnail": "QmPksZ9BzNPuSjvyQmMzZrhyEyDKBrtm6TXippVCiCc2Dn"
   },
   {
-    "id": "dcl://base-wearables/F_Hair_Anime_03",
+    "id": "dcl://base-avatars/hair_undere",
     "representations": [
       {
         "bodyShapes": [
@@ -1014,7 +1014,7 @@
     "thumbnail": "QmYBTESZQguKaPDwj2RpKYEiDczTUSqCsiZAB7FCDXpc1P"
   },
   {
-    "id": "dcl://base-wearables/F_Hair_Bun",
+    "id": "dcl://base-avatars/hair_bun",
     "representations": [
       {
         "bodyShapes": [
@@ -1054,7 +1054,7 @@
     "thumbnail": "QmTxX6AEcCDq9QFeKdGygforKLTXNBpVU8M7U2fSborACa"
   },
   {
-    "id": "dcl://base-wearables/F_lBody_AfricanLeggings",
+    "id": "dcl://base-avatars/f_african_leggins",
     "representations": [
       {
         "bodyShapes": [
@@ -1094,7 +1094,7 @@
     "thumbnail": "Qmc4W2ENVei6GML7tbJfHodS929prrSrfYPrZtcSvao2aU"
   },
   {
-    "id": "dcl://base-wearables/F_lBody_BrownKneesTrousers",
+    "id": "dcl://base-avatars/f_capris",
     "representations": [
       {
         "bodyShapes": [
@@ -1138,7 +1138,7 @@
     "thumbnail": "QmRtoZzupmMmaMqcZTHY2dFEaB3duvUymyF5RQyHut6fFU"
   },
   {
-    "id": "dcl://base-wearables/F_lBody_BrownSkirtDress",
+    "id": "dcl://base-avatars/f_brown_skirt",
     "representations": [
       {
         "bodyShapes": [
@@ -1182,7 +1182,7 @@
     "thumbnail": "QmbaV3Za1qoaZfvpBWvJbpadysmCW6Wrx3eLdyvJW1KGfG"
   },
   {
-    "id": "dcl://base-wearables/F_Mouth_00",
+    "id": "dcl://base-avatars/f_mouth_00",
     "representations": [
       {
         "bodyShapes": [
@@ -1219,7 +1219,7 @@
     "thumbnail": "QmbEvia7NzapnaWWPkyYzz35aNvb7TKBsJcZfWnTcoZMRE"
   },
   {
-    "id": "dcl://base-wearables/F_Mouth_01",
+    "id": "dcl://base-avatars/f_mouth_01",
     "representations": [
       {
         "bodyShapes": [
@@ -1256,7 +1256,7 @@
     "thumbnail": "Qmcd9AxqxRcXGU7S9kASh5x7jXqoAnKoK8D1FGHdUPprcx"
   },
   {
-    "id": "dcl://base-wearables/F_Mouth_02",
+    "id": "dcl://base-avatars/f_mouth_02",
     "representations": [
       {
         "bodyShapes": [
@@ -1293,7 +1293,7 @@
     "thumbnail": "QmU1rXTtAhjPZz4xQKwnp8AHGCHAg8ajtHjCRsfXDoomgi"
   },
   {
-    "id": "dcl://base-wearables/BlueBandana",
+    "id": "dcl://base-avatars/blue_bandana",
     "representations": [
       {
         "bodyShapes": [
@@ -1351,7 +1351,7 @@
     "thumbnail": "QmahWKqgJud9386Vxw53KeViHzELhxsNMjko8ERskR5x1y"
   },
   {
-    "id": "dcl://base-wearables/F_Tiara_ColoredDiamond",
+    "id": "dcl://base-avatars/diamond_colored_tiara",
     "representations": [
       {
         "bodyShapes": [
@@ -1391,7 +1391,7 @@
     "thumbnail": "QmWy9NM3UsCSYDjrbDEY79LaAVkdQpzyrET2HwzL2grBRu"
   },
   {
-    "id": "dcl://base-wearables/F_Tiara_GreenStone",
+    "id": "dcl://base-avatars/green_stone_tiara",
     "representations": [
       {
         "bodyShapes": [
@@ -1431,7 +1431,7 @@
     "thumbnail": "QmQmxYiXQeWs4hGepMeuU6rdHhx7QEtBWsPkwNb3MHaPvL"
   },
   {
-    "id": "dcl://base-wearables/F_uBody_BeeTShirt",
+    "id": "dcl://base-avatars/bee_t_shirt",
     "representations": [
       {
         "bodyShapes": [
@@ -1475,7 +1475,7 @@
     "thumbnail": "QmZJFQrujoxYX7kbFwJ6xQDJMSwD8tmQXTm6tZy1uFpJfp"
   },
   {
-    "id": "dcl://base-wearables/F_uBody_BlackTop",
+    "id": "dcl://base-avatars/black_top",
     "representations": [
       {
         "bodyShapes": [
@@ -1519,7 +1519,7 @@
     "thumbnail": "QmfLjjfVvfNnPpEeJS5bwKDLZEwtbuDXajZWpHzciSBU8D"
   },
   {
-    "id": "dcl://base-wearables/F_uBody_BlueBasicTShirt",
+    "id": "dcl://base-avatars/simple_blue_tshirt",
     "representations": [
       {
         "bodyShapes": [

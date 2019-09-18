@@ -25,17 +25,16 @@ export async function createAssetDescriptionFromFolder(
   }
   const originalJson = readAssetJsonFromFolder(folderFullPath) as Wearable
   const category = extractCategoryFromPath(folderFullPath)
-  const name = basename(folderFullPath)
 
   const dirEntries = readdirSync(folderFullPath)
   const thumbnail = join(folderFullPath, 'thumbnail.png')
 
   const value: Wearable = {
     ...originalJson,
-    id: 'dcl://base-wearables/' + name,
+    id: 'dcl://base-avatars/' + originalJson.id,
     category,
     type: 'wearable',
-    baseUrl: opts.contentBaseUrl || 'https://dcl-base-wearables.now.sh',
+    baseUrl: opts.contentBaseUrl || 'https://dcl-base-avatars.now.sh',
     thumbnail: await getFileCID(await readFile(thumbnail)),
     representations: await Promise.all(originalJson.representations.map(
       async (original) => ({
