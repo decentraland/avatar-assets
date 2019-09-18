@@ -34,7 +34,7 @@ export async function createAssetDescriptionFromFolder(
     id: 'dcl://base-avatars/' + originalJson.id,
     category,
     type: 'wearable',
-    baseUrl: opts.contentBaseUrl || 'https://dcl-base-avatars.now.sh',
+    baseUrl: opts.contentBaseUrl || 'https://dcl-base-avatars.now.sh/',
     thumbnail: await getFileCID(await readFile(thumbnail)),
     representations: await Promise.all(originalJson.representations.map(
       async (original) => ({
