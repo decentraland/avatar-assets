@@ -11,6 +11,6 @@
    ],
   "category": "lower_body",
   "main": [
-    {"type": "BaseFemale", "model": "F_lBody_Jeans_01.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_Jeans_01.glb"}
   ]
 }

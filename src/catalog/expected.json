@@ -4,7 +4,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "BaseFemale.glb",
         "contents": [
@@ -56,7 +56,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "BaseMale.glb",
         "contents": [
@@ -108,7 +108,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "00_EmptyEarring.glb",
         "contents": [
@@ -120,7 +120,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "00_EmptyEarring.glb",
         "contents": [
@@ -158,7 +158,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Earrings_BlueStar.glb",
         "contents": [
@@ -198,7 +198,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "Earring_GreenFeather.glb",
         "contents": [
@@ -238,7 +238,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyebrows_00.png",
         "contents": [
@@ -275,7 +275,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyebrows_01.png",
         "contents": [
@@ -312,7 +312,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyebrows_02.png",
         "contents": [
@@ -349,7 +349,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyes_00.png",
         "contents": [
@@ -386,7 +386,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyes_01.png",
         "contents": [
@@ -427,7 +427,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyes_02.png",
         "contents": [
@@ -468,7 +468,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "F_Eyewear_BlackSunglasses.glb",
         "contents": [
@@ -484,7 +484,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyewear_BlackSunglasses.glb",
         "contents": [
@@ -526,7 +526,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "F_Eyewear_Cyclope.glb",
         "contents": [
@@ -542,7 +542,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyewear_Cyclope.glb",
         "contents": [
@@ -584,7 +584,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Eyewear_CatStyle.glb",
         "contents": [
@@ -624,7 +624,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "00_EmptyFacialHair.glb",
         "contents": [
@@ -660,7 +660,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "M_FacialHair_BalbooBeard.glb",
         "contents": [
@@ -700,7 +700,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "M_FacialHair_BeardGoatee.glb",
         "contents": [
@@ -740,7 +740,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "BearSlippers_01.glb",
         "contents": [
@@ -760,7 +760,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "BearSlippers_01.glb",
         "contents": [
@@ -806,7 +806,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "CityComfortableShoes.glb",
         "contents": [
@@ -826,7 +826,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "CityComfortableShoes.glb",
         "contents": [
@@ -872,7 +872,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "M_Feet_ClassicShoes.glb",
         "contents": [
@@ -892,7 +892,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "M_Feet_ClassicShoes.glb",
         "contents": [
@@ -938,7 +938,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Hair_Anime_01.glb",
         "contents": [
@@ -978,7 +978,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Hair_Anime_03.glb",
         "contents": [
@@ -1018,7 +1018,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Hair_Bun.glb",
         "contents": [
@@ -1058,7 +1058,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_lBody_AfricanLeggings.glb",
         "contents": [
@@ -1098,7 +1098,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_lBody_BrownKneesTrousers.glb",
         "contents": [
@@ -1142,7 +1142,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_lBody_BrownSkirtDress.glb",
         "contents": [
@@ -1186,7 +1186,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Mouth_00.png",
         "contents": [
@@ -1223,7 +1223,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Mouth_01.png",
         "contents": [
@@ -1260,7 +1260,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Mouth_02.png",
         "contents": [
@@ -1297,7 +1297,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseMale"
+          "dcl://base-avatars/BaseMale"
         ],
         "mainFile": "BlueBandana.glb",
         "contents": [
@@ -1313,7 +1313,7 @@
       },
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "BlueBandana.glb",
         "contents": [
@@ -1355,7 +1355,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Tiara_ColoredDiamond.glb",
         "contents": [
@@ -1395,7 +1395,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_Tiara_GreenStone.glb",
         "contents": [
@@ -1435,7 +1435,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_uBody_BeeTShirt.glb",
         "contents": [
@@ -1479,7 +1479,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_uBody_BlackTop.glb",
         "contents": [
@@ -1523,7 +1523,7 @@
     "representations": [
       {
         "bodyShapes": [
-          "BaseFemale"
+          "dcl://base-avatars/BaseFemale"
         ],
         "mainFile": "F_uBody_BlueBasicTShirt.glb",
         "contents": [

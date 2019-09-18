@@ -11,6 +11,6 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "BaseFemale", "model": "F_BunShoes_01.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_BunShoes_01.glb"}
   ]
 }

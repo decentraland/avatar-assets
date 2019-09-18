@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "M_Eyewear_MatrixSunGlasses.glb"},
-    {"type": "BaseFemale", "model": "M_Eyewear_MatrixSunGlasses.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyewear_MatrixSunGlasses.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Eyewear_MatrixSunGlasses.glb"}
   ]
 }

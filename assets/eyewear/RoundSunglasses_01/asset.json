@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "RoundSunglasses_01.glb"},
-    {"type": "BaseFemale", "model": "RoundSunglasses_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "RoundSunglasses_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "RoundSunglasses_01.glb"}
   ]
 }

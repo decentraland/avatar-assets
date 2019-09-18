@@ -11,6 +11,6 @@
    ],
   "category": "tiara",
   "main": [
-    {"type": "BaseFemale", "model": "F_Tiara_ColoredDiamond.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Tiara_ColoredDiamond.glb"}
   ]
 }

@@ -11,6 +11,6 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseMale", "model": "M_Hair_SemiBald_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_SemiBald_01.glb"}
   ]
 }

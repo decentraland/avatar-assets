@@ -13,7 +13,7 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseMale", "model": "RightGoldEarring_01.glb"},
-    {"type": "BaseFemale", "model": "RightGoldEarring_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "RightGoldEarring_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "RightGoldEarring_01.glb"}
   ]
 }

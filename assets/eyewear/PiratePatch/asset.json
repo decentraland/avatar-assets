@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "PiratePatch.glb"},
-    {"type": "BaseFemale", "model": "PiratePatch.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "PiratePatch.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "PiratePatch.glb"}
   ]
 }

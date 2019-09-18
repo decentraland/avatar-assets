@@ -12,6 +12,6 @@
    ],
   "category": "eyes",
   "main": [
-    {"type": "BaseMale", "model": "M_Eyes_10.png"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyes_10.png"}
   ]
 }

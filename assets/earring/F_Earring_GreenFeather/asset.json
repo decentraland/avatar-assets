@@ -11,6 +11,6 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseFemale", "model": "Earring_GreenFeather.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Earring_GreenFeather.glb"}
   ]
 }

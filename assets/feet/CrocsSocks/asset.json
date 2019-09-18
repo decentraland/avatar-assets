@@ -13,7 +13,7 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "BaseMale", "model": "CrocsSocks.glb"},
-    {"type": "BaseFemale", "model": "CrocsSocks.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "CrocsSocks.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "CrocsSocks.glb"}
   ]
 }

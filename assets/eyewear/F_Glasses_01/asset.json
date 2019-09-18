@@ -11,6 +11,6 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseFemale", "model": "F_Glasses_01.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Glasses_01.glb"}
   ]
 }

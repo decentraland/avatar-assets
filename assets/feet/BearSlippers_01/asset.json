@@ -13,7 +13,7 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "BaseMale", "model": "BearSlippers_01.glb"},
-    {"type": "BaseFemale", "model": "BearSlippers_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "BearSlippers_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "BearSlippers_01.glb"}
   ]
 }

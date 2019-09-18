@@ -12,6 +12,6 @@
    ],
   "category": "eyebrows",
   "main": [
-    {"type": "BaseMale", "model": "M_EyeBrows_06.png"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_EyeBrows_06.png"}
   ]
 }

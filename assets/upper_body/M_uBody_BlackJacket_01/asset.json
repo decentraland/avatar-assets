@@ -11,6 +11,6 @@
    ],
   "category": "upper_body",
   "main": [
-    {"type": "BaseMale", "model": "M_uBody_BlackJacket_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_BlackJacket_01.glb"}
   ]
 }

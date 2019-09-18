@@ -11,6 +11,6 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "BaseFemale", "model": "F_Hair_Anime_03.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Anime_03.glb"}
   ]
 }

@@ -31,7 +31,7 @@ describe('creates a JSON with the asset description', () => {
       category: 'earring',
       representations: [
         {
-          bodyShapes: ['BaseFemale'],
+          bodyShapes: ['dcl://base-avatars/BaseFemale'],
           contents: [
             {
               hash: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb',

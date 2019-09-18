@@ -13,7 +13,7 @@
    ],
   "category": "tiara",
   "main": [
-    {"type": "BaseMale", "model": "RedBandana.glb"},
-    {"type": "BaseFemale", "model": "RedBandana.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "RedBandana.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "RedBandana.glb"}
   ]
 }

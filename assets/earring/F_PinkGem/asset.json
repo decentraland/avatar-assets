@@ -11,6 +11,6 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseFemale", "model": "F_Earrings_PInkGem.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_PInkGem.glb"}
   ]
 }

@@ -13,7 +13,7 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "BaseMale", "model": "F_Eyewear_BlackSunglasses.glb"},
-    {"type": "BaseFemale", "model": "F_Eyewear_BlackSunglasses.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_BlackSunglasses.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_BlackSunglasses.glb"}
   ]
 }

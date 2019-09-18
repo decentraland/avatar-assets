@@ -11,6 +11,6 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "BaseMale", "model": "M_Feet_Moccasin.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_Moccasin.glb"}
   ]
 }

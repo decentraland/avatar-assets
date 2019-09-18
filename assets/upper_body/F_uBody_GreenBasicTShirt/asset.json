@@ -11,6 +11,6 @@
    ],
   "category": "upper_body",
   "main": [
-    {"type": "BaseFemale", "model": "F_uBody_GreenBasicTShirt.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_GreenBasicTShirt.glb"}
   ]
 }

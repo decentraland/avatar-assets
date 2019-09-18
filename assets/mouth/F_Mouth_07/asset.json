@@ -12,6 +12,6 @@
    ],
   "category": "mouth",
   "main": [
-    {"type": "BaseFemale", "model": "F_Mouth_07.png"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Mouth_07.png"}
   ]
 }

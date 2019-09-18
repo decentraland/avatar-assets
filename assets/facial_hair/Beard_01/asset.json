@@ -11,6 +11,6 @@
    ],
   "category": "facial_hair",
   "main": [
-    {"type": "BaseMale", "model": "Beard_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "Beard_01.glb"}
   ]
 }

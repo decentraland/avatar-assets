@@ -13,7 +13,7 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseMale", "model": "TorusPiercing.glb"},
-    {"type": "BaseFemale", "model": "TorusPiercing.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "TorusPiercing.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "TorusPiercing.glb"}
   ]
 }

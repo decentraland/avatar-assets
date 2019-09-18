@@ -13,7 +13,7 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "BaseMale", "model": "F_Earrings_PunkPiercing.glb"},
-    {"type": "BaseFemale", "model": "F_Earrings_PunkPiercing.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_PunkPiercing.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_PunkPiercing.glb"}
   ]
 }

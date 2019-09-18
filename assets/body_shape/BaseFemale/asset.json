@@ -11,6 +11,6 @@
    ],
   "category": "body_shape",
   "main": [
-    {"type": "BaseFemale", "model": "BaseFemale.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "BaseFemale.glb"}
   ]
 }
