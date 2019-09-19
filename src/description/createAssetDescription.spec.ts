@@ -27,7 +27,7 @@ describe('creates a JSON with the asset description', () => {
       type: 'wearable',
       thumbnail: 'QmeGtEgb9XkachCtGJ1PP2XhxFdh946Lfdfcz3XttYWy5n',
       baseUrl: 'https://dcl-base-avatars.now.sh',
-      tags: ['accesories', 'female', 'woman'],
+      tags: ['accesories', 'female', 'woman', 'base-wearable'],
       category: 'earring',
       representations: [
         {
