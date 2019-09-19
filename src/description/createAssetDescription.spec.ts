@@ -19,19 +19,19 @@ describe('creates a JSON with the asset description', () => {
     }
     await processAsset(sourceFolder, assetFolder)
 
-    const contentBaseUrl = 'https://dcl-base-wearables.now.sh'
+    const contentBaseUrl = 'https://dcl-base-avatars.now.sh'
     const assetDescription = await createAssetDescriptionFromFolder(assetFolder, { contentBaseUrl })
 
     const expectedJSON = {
-      id: 'dcl://base-wearables/F_BlueStar',
+      id: 'dcl://base-avatars/blue_star_earring',
       type: 'wearable',
       thumbnail: 'QmeGtEgb9XkachCtGJ1PP2XhxFdh946Lfdfcz3XttYWy5n',
-      baseUrl: 'https://dcl-base-wearables.now.sh',
-      tags: ['accesories', 'female', 'woman'],
+      baseUrl: 'https://dcl-base-avatars.now.sh',
+      tags: ['accesories', 'female', 'woman', 'base-wearable'],
       category: 'earring',
       representations: [
         {
-          bodyShapes: ['BaseFemale'],
+          bodyShapes: ['dcl://base-avatars/BaseFemale'],
           contents: [
             {
               hash: 'QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb',

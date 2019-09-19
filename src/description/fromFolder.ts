@@ -25,7 +25,6 @@ export async function createAssetDescriptionFromFolder(
   }
   const originalJson = readAssetJsonFromFolder(folderFullPath) as Wearable
   const category = extractCategoryFromPath(folderFullPath)
-  const name = basename(folderFullPath)
 
   const dirEntries = readdirSync(folderFullPath)
   const thumbnail = join(folderFullPath, 'thumbnail.png')

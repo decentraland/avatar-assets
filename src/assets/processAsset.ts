@@ -5,7 +5,7 @@ import { SourceJson, Wearable } from '../types'
 
 function transformJson(json: SourceJson): Wearable {
   return {
-    id: 'dummy',
+    id: json.name,
     type: 'wearable',
     category: json.category,
     i18n: Object.keys(json.i18n).reduce(
@@ -17,7 +17,7 @@ function transformJson(json: SourceJson): Wearable {
     ),
     thumbnail: '',
     baseUrl: '',
-    tags: json.tags,
+    tags: [...json.tags, 'base-wearable'],
     representations: json.main.map(
       (original) => ({
         bodyShapes: [original.type],

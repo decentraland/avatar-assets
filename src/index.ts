@@ -42,7 +42,7 @@ export async function runMain() {
   const buildAssetsConfig = {
     assetFoldersAbsPath: assetFolders,
     workingDirAbsPath: workingFolder.name,
-    contentBaseUrl: 'https://dcl-base-exclusive.now.sh'
+    contentBaseUrl: 'https://dcl-base-exclusive.now.sh/'
   }
 
   const response = process.env['DEBUG_ASSET_PROCESSING']
@@ -53,6 +53,7 @@ export async function runMain() {
   const distAbsPath = resolve(join(__dirname, '..', 'dist'))
 
   writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
+  writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
 
   console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
 
