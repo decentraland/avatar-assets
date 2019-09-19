@@ -17,7 +17,7 @@ function transformJson(json: SourceJson): Wearable {
     ),
     thumbnail: '',
     baseUrl: '',
-    tags: [...json.tags, 'base-wearable'],
+    tags: json.tags,
     representations: json.main.map(
       (original) => ({
         bodyShapes: [original.type],
