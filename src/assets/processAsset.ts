@@ -17,10 +17,10 @@ function transformJson(json: SourceJson): Wearable {
     ),
     thumbnail: '',
     baseUrl: '',
-    tags: json.tags,
+    tags: [...json.tags, 'exclusive'],
     representations: json.main.map(
       (original) => ({
-        bodyShapes: [original.type],
+        bodyShapes: [original.type.startsWith('dcl://') ? original.type : 'dcl://base-avatars/' + original.type],
         mainFile: original.model,
         contents: []
       })
