@@ -1,7 +1,23 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs'
-import { resolve, join } from 'path'
-import { outputTexturesFromGLB } from './outputTexturesFromGLB'
+import { join, resolve } from 'path'
 import { SourceJson, Wearable } from '../types'
+import { outputTexturesFromGLB } from './outputTexturesFromGLB'
+
+const defaultReplacementMatrix: { [key: string]: string[] } = {
+  mask: ['eyewear', 'tiara', 'hat', 'helmet'],
+  eyewear: ['mask', 'helmet'],
+  tiara: ['mask', 'hat', 'helmet'],
+  hat: ['mask', 'tiara', 'helmet', 'top_head'],
+  top_head: ['hat', 'helmet'],
+  helmet: ['mask', 'tiara', 'hat', 'top_head', 'eyewear'],
+  hair: ['hat', 'helmet']
+}
+
+const defaultHidingMatrix: { [key: string]: string[] } = {
+  mask: ['earring', 'facial_hair'],
+  hat: ['hair'],
+  helmet: ['eyewear', 'earrings', 'hair', 'facial_hair', 'head']
+}
 
 function transformJson(json: SourceJson): Wearable {
   return {
@@ -13,18 +29,21 @@ function transformJson(json: SourceJson): Wearable {
         const text = json.i18n[code]
         cumm.push({ code, text })
         return cumm
-      }, [] as { code: string, text: string }[]
+      },
+      [] as { code: string; text: string }[]
     ),
     thumbnail: '',
     baseUrl: '',
     tags: [...json.tags, 'exclusive'],
-    representations: json.main.map(
-      (original) => ({
-        bodyShapes: [original.type.startsWith('dcl://') ? original.type : 'dcl://base-avatars/' + original.type],
-        mainFile: original.model,
-        contents: []
-      })
-    )
+    replaces: json.replaces || defaultReplacementMatrix[json.category],
+    hides: json.hides || defaultHidingMatrix[json.category],
+    representations: json.main.map(original => ({
+      bodyShapes: [original.type.startsWith('dcl://') ? original.type : 'dcl://base-avatars/' + original.type],
+      mainFile: original.model,
+      overrideReplaces: original.overrideReplaces || [],
+      overrideHides: original.overrideHides || [],
+      contents: []
+    }))
   }
 }
 

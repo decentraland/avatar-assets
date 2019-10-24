@@ -1,0 +1,31 @@
+{
+  "name": "creepy_nurse_upper_body",
+  "i18n": {
+    "en": "Creepy Nurse Shirt",
+    "es": "Camisa de Enfermera Siniestra"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "upper_body",
+    "halloween",
+    "nurse"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_uBody_CreepyNurse.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      }
+        ]
+      }

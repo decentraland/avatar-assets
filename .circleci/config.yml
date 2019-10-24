@@ -23,12 +23,12 @@ jobs:
           key: dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Build catalog
-          command: make compile && make catalog
+          command: make compile && make test && make catalog
       - save_cache:
           paths:
             - dist
           key: build-{{ .Branch }}-{{ .Revision }}
-  deploy-exclusive:
+  deploy-staging:
     docker:
       - image: circleci/node:10
     working_directory: /tmp/app
@@ -64,13 +64,13 @@ jobs:
           command: cd deploy && now alias $(now --scope decentraland --name ${NOW_TARGET} --token $NOW_TOKEN ../datadist) avatar-assets --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
-  build-deploy-exclusive:
+  build-deploy-staging:
     jobs:
       - build:
           filters:
             branches:
-              only: exclusive
-      - deploy-exclusive:
+              only: staging
+      - deploy-staging:
           requires:
             - build
   build-deploy-release:

@@ -17,7 +17,8 @@ const extractCategoryFromPath = (folder: string) => basename(dirname(folder))
 export async function createAssetDescriptionFromFolder(
   folderFullPath: string,
   opts: {
-    contentBaseUrl?: string
+    contentBaseUrl?: string,
+    collectionName?: string
   }
 ): Promise<Wearable> {
   if (!folderFullPath || !folderFullPath.startsWith('/')) {
@@ -31,11 +32,13 @@ export async function createAssetDescriptionFromFolder(
 
   const value: Wearable = {
     ...originalJson,
-    id: 'dcl://base-exclusive/' + (originalJson as any).id,
+    id: `dcl://${opts.collectionName || 'base-exclusive'}/` + (originalJson as any).id,
     category,
     type: 'wearable',
     baseUrl: opts.contentBaseUrl || 'https://dcl-base-exclusive.now.sh',
     thumbnail: await getFileCID(await readFile(thumbnail)),
+    replaces: originalJson.replaces,
+    hides: originalJson.hides,
     representations: await Promise.all(originalJson.representations.map(
       async (original) => ({
         ...original,

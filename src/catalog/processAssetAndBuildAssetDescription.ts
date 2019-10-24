@@ -6,7 +6,8 @@ import { createAssetDescriptionFromFolder } from '../description/fromFolder'
 export async function processAssetAndBuildAssetDescription(
   sourceFolderAbsPath: string,
   workingFolderAbsPath: string,
-  contentBaseUrl?: string
+  contentBaseUrl?: string,
+  collectionName?: string
 ): Promise<any> {
   if (!sourceFolderAbsPath.startsWith('/')) {
     throw new Error('Expected source folder to be an absolute path')
@@ -32,5 +33,5 @@ export async function processAssetAndBuildAssetDescription(
     writeFileSync(join(targetFolderNameAbsPath, file), readFileSync(join(sourceFolderAbsPath, file)))
   }
   await processAsset(sourceFolderAbsPath, targetFolderNameAbsPath)
-  return await createAssetDescriptionFromFolder(targetFolderNameAbsPath, { contentBaseUrl: contentBaseUrl })
+  return await createAssetDescriptionFromFolder(targetFolderNameAbsPath, { contentBaseUrl: contentBaseUrl, collectionName })
 }

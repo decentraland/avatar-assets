@@ -7,9 +7,12 @@ export const validCategories = [
   'facial_hair',
   'feet',
   'hair',
+  'hat',
+  'helmet',
   'lower_body',
   'mask',
   'mouth',
+  'top_head',
   'tiara',
   'upper_body'
 ]

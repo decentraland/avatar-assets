@@ -14,42 +14,51 @@ import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 
 if (!module.parent) {
-  runMain().catch(error => console.log(error, error.stack))
+  runMain(['base-exclusive', 'halloween_2019'])
+  .catch(error => console.log(error, error.stack))
 }
 
-export async function runMain() {
-  console.log(`Building catalog from folder ${'assets'}...`)
-
-  const categoryFolderAbsPath = getAssetFolderAbsPath()
-
-  const categoryFolders = readdirSync(categoryFolderAbsPath)
-  const assetFolders: any[] = []
-
-  categoryFolders.forEach(category => {
-    addFolderEntriesToArray(assetFolders, join(categoryFolderAbsPath, category))
-  })
-
-  console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
-
-  console.log(`Output folder is set to ${'dist'}. Copying files...`)
-  try {
-    mkdirSync(join(__dirname, '..', 'dist'))
-  } catch (e) {
-    // skip
-  }
+export async function runMain(collectionFolders: string[]) {
+  console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
   const workingFolder = dirSync()
-  const buildAssetsConfig = {
-    assetFoldersAbsPath: assetFolders,
-    workingDirAbsPath: workingFolder.name,
-    contentBaseUrl: 'https://dcl-base-exclusive.now.sh/'
+  let allResponses: any[] = []
+  const mapCategoryFolders: { [key: string]: string[] } = {}
+
+  for (let collectionFolder of collectionFolders) {
+    const categoryFolderAbsPath = getAssetFolderAbsPath(collectionFolder)
+
+    const categoryFolders = readdirSync(categoryFolderAbsPath)
+    const assetFolders: string[] = []
+    mapCategoryFolders[collectionFolder] = assetFolders
+
+    categoryFolders.forEach(category => {
+      addFolderEntriesToArray(assetFolders, join(categoryFolderAbsPath, category))
+    })
+
+    console.log(`Found ${categoryFolders.length} categories with ${assetFolders.length} assets in total...`)
+
+    console.log(`Output folder is set to ${'dist'}. Copying files...`)
+    try {
+      mkdirSync(join(__dirname, '..', 'dist'))
+    } catch (e) {
+      // skip
+    }
+
+    const buildAssetsConfig = {
+      assetFoldersAbsPath: assetFolders,
+      workingDirAbsPath: workingFolder.name,
+      contentBaseUrl: `https://dcl-exclusive-halloween-stg.now.sh/`,
+      collectionName: collectionFolder
+    }
+
+    const response = process.env['DEBUG_ASSET_PROCESSING']
+      ? await serializeCallBuild(buildAssetsConfig)
+      : await parallelCallAndBuild(buildAssetsConfig)
+    allResponses = [ ...allResponses, ...response ]
   }
 
-  const response = process.env['DEBUG_ASSET_PROCESSING']
-    ? await serializeCallBuild(buildAssetsConfig)
-    : await parallelCallAndBuild(buildAssetsConfig)
-
-  const jsonResult = JSON.stringify(response, null, 2)
+  const jsonResult = JSON.stringify(allResponses, null, 2)
   const distAbsPath = resolve(join(__dirname, '..', 'dist'))
 
   writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
@@ -59,10 +68,16 @@ export async function runMain() {
 
   writeFileSync(join(distAbsPath, 'index.html'), jsonResult)
 
-  console.log('Generating content addressable files...')
-  await Promise.all(
-    assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
-  )
+  for (let collectionFolder of collectionFolders) {
+    const categoryFolderAbsPath = getAssetFolderAbsPath(collectionFolder)
+    console.log('Generating content addressable files...')
+    const assetFolders = mapCategoryFolders[collectionFolder]
+    await Promise.all(
+      assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
+    )
+  }
+  console.log(JSON.stringify(allResponses.map(_ => _.id).map(_ => _.split('/')[3]).map(_ => ({ wearableId: _, maxIssuance: 0})), null, 2))
+  // console.log(JSON.stringify(allResponses.map(_ => _.id)))
 
   console.log('Cleaning up temporary files...')
   workingFolder.removeCallback()
@@ -92,6 +107,7 @@ type MultipleProcessAndBuildConfiguration = {
   assetFoldersAbsPath: string[]
   workingDirAbsPath: string
   contentBaseUrl: string
+  collectionName: string
 }
 
 async function serializeCallBuild(config: MultipleProcessAndBuildConfiguration) {
@@ -100,7 +116,7 @@ async function serializeCallBuild(config: MultipleProcessAndBuildConfiguration) 
     const asset = basename(folder)
     const category = dirname(basename(folder))
     console.log(`Building ${category}:${asset}`)
-    result.push(await callOrLogProcessAndBuild(folder, config.workingDirAbsPath, config.contentBaseUrl))
+    result.push(await callOrLogProcessAndBuild(folder, config.workingDirAbsPath, config.contentBaseUrl, config.collectionName))
   }
   return result
 }
@@ -108,13 +124,13 @@ async function serializeCallBuild(config: MultipleProcessAndBuildConfiguration) 
 async function parallelCallAndBuild(config: MultipleProcessAndBuildConfiguration) {
   return await Promise.all(
     config.assetFoldersAbsPath.map(assetFolder =>
-      callOrLogProcessAndBuild(assetFolder, config.workingDirAbsPath, config.contentBaseUrl)
+      callOrLogProcessAndBuild(assetFolder, config.workingDirAbsPath, config.contentBaseUrl, config.collectionName)
     )
   )
 }
 
-async function callOrLogProcessAndBuild(assetFolderAbsPath: string, workingDirAbsPath: string, contentBaseUrl: string) {
-  return processAssetAndBuildAssetDescription(assetFolderAbsPath, workingDirAbsPath, contentBaseUrl).catch(error => {
+async function callOrLogProcessAndBuild(assetFolderAbsPath: string, workingDirAbsPath: string, contentBaseUrl: string, collectionName: string) {
+  return processAssetAndBuildAssetDescription(assetFolderAbsPath, workingDirAbsPath, contentBaseUrl, collectionName).catch(error => {
     console.log(
       `Error! Could not process asset ${basename(assetFolderAbsPath)} of category ${basename(
         dirname(assetFolderAbsPath)

@@ -4,8 +4,12 @@ export type SourceJson = {
     [key: string]: string;
   };
   tags: string[];
+  replaces?: string[];
+  hides?: string[];
   category: string;
   main: {
+    overrideReplaces?: string[];
+    overrideHides?: string[];
     type: string;
     model: string;
   }[];
@@ -17,6 +21,8 @@ export type Wearable = {
   thumbnail: string
   category: string
   baseUrl: string
+  replaces: string[]
+  hides: string[]
   i18n: {
     code: string
     text: string
@@ -29,6 +35,8 @@ export type WearableId = string
 export type BodyShapeRespresentation = {
   bodyShapes: string[]
   mainFile: string
+  overrideReplaces: string[]
+  overrideHides: string[]
   contents: FileAndHash[]
 }
 

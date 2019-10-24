@@ -1,0 +1,30 @@
+{
+  "name": "bee_suit_feet",
+  "i18n": {
+    "en": "Bee Suit Shoes",
+    "es": "Zapatos de Abeja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_Feet_BeeSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

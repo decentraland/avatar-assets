@@ -1,0 +1,33 @@
+{
+  "name": "jester_earring",
+  "i18n": {
+    "en": "Jingle Bells Earrings",
+    "es": "Pendientes de Cascabel"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "halloween",
+    "jingle",
+    "jester",
+    "bells"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earring_Jester.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      }
+        ]
+      }
