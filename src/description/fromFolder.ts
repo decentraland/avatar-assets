@@ -36,6 +36,8 @@ export async function createAssetDescriptionFromFolder(
     type: 'wearable',
     baseUrl: opts.contentBaseUrl || 'https://dcl-base-avatars.now.sh/',
     thumbnail: await getFileCID(await readFile(thumbnail)),
+    replaces: originalJson.replaces,
+    hides: originalJson.hides,
     representations: await Promise.all(originalJson.representations.map(
       async (original) => ({
         ...original,
