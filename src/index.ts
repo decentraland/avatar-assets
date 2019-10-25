@@ -48,7 +48,7 @@ export async function runMain(collectionFolders: string[]) {
     const buildAssetsConfig = {
       assetFoldersAbsPath: assetFolders,
       workingDirAbsPath: workingFolder.name,
-      contentBaseUrl: `https://dcl-exclusive-halloween-stg.now.sh/`,
+      contentBaseUrl: `https://dcl-base-exclusive.now.sh/`,
       collectionName: collectionFolder
     }
 
