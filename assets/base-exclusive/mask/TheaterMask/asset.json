@@ -12,6 +12,7 @@
     "woman"
    ],
   "category": "mask",
+  "hides": [],
   "main": [
     {"type": "BaseMale", "model": "TheaterMask.glb"},
     {"type": "BaseFemale", "model": "TheaterMask.glb"}

@@ -12,6 +12,7 @@
     "woman"
    ],
   "category": "mask",
+  "hides": ["facial_hair"],
   "main": [
     {"type": "BaseMale", "model": "FoxAsian.glb"},
     {"type": "BaseFemale", "model": "FoxAsian.glb"}
