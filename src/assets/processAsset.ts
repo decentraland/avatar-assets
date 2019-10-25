@@ -10,7 +10,7 @@ const defaultReplacementMatrix: { [key: string]: string[] } = {
   hat: ['mask', 'tiara', 'helmet', 'top_head'],
   top_head: ['hat', 'helmet'],
   helmet: ['mask', 'tiara', 'hat', 'top_head', 'eyewear'],
-  hair: ['hat', 'helmet']
+  hair: []
 }
 
 const defaultHidingMatrix: { [key: string]: string[] } = {
