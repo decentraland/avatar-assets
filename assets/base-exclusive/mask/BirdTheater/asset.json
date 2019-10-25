@@ -12,6 +12,7 @@
     "woman"
    ],
   "category": "mask",
+  "hides": [],
   "main": [
     {"type": "BaseMale", "model": "BirdTheater.glb"},
     {"type": "BaseFemale", "model": "BirdTheater.glb"}

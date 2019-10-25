@@ -35,8 +35,8 @@ function transformJson(json: SourceJson): Wearable {
     thumbnail: '',
     baseUrl: '',
     tags: [...json.tags, 'exclusive'],
-    replaces: json.replaces || defaultReplacementMatrix[json.category],
-    hides: json.hides || defaultHidingMatrix[json.category],
+    replaces: json.replaces === undefined ? defaultReplacementMatrix[json.category] : json.replaces,
+    hides: json.hides === undefined ? defaultHidingMatrix[json.category] : json.hides,
     representations: json.main.map(original => ({
       bodyShapes: [original.type.startsWith('dcl://') ? original.type : 'dcl://base-avatars/' + original.type],
       mainFile: original.model,
