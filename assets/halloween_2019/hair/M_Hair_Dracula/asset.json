@@ -1,0 +1,32 @@
+{
+  "name": "dracula_hair",
+  "i18n": {
+    "en": "Drácula Hair",
+    "es": "Peinado de Drácula"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "hair",
+    "dracula",
+    "halloween"
+   ],
+  "category": "hair",
+  "replaces": [
+    "hat",
+    "helmet"
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hair_Dracula.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

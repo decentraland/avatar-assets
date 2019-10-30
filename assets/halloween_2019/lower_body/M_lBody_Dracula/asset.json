@@ -1,0 +1,30 @@
+{
+  "name": "dracula_lower_body",
+  "i18n": {
+    "en": "Drácula Pants",
+    "es": "Pantalones de Drácula "
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "dracula",
+    "pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_lBody_Dracula.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

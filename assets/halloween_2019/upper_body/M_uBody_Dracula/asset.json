@@ -1,0 +1,30 @@
+{
+  "name": "dracula_upper_body",
+  "i18n": {
+    "en": "Drácula Suit",
+    "es": "Traje de Drácula "
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "dracula",
+    "suit"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Dracula.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

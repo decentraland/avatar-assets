@@ -1,0 +1,34 @@
+{
+  "name": "witch_hat",
+  "i18n": {
+    "en": "Witch Hat",
+    "es": "Sombrero de Bruja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_Hat_Witch.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

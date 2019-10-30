@@ -1,0 +1,30 @@
+{
+  "name": "dracula_feet",
+  "i18n": {
+    "en": "Drácula Shoes",
+    "es": "Zapatos de Drácula"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_Dracula.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ]
+}

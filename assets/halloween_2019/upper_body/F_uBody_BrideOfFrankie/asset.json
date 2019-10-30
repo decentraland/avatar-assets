@@ -1,0 +1,31 @@
+{
+  "name": "bride_of_frankie_upper_body",
+  "i18n": {
+    "en": "Bride of Frankie Suit",
+    "es": "Traje de la novia de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "upper_body",
+    "halloween",
+    "frankie"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_uBody_BrideOfFrankie.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      }
+        ]
+      }
