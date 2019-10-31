@@ -1,14 +1,14 @@
 {
-  "name": "dracula_hair",
+  "name": "vampire_hair",
   "i18n": {
-    "en": "Drácula Hair",
-    "es": "Peinado de Drácula"
+    "en": "Vampire Hair",
+    "es": "Peinado de Vampiro"
   },
   "tags": [
     "accesories",
     "exclusive",
     "hair",
-    "dracula",
+    "vampiro",
     "halloween"
    ],
   "category": "hair",
@@ -22,7 +22,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Hair_Dracula.glb", 
+"model": "M_Hair_Vampire.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [

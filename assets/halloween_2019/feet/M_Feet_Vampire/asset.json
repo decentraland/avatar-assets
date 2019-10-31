@@ -1,17 +1,17 @@
 {
-  "name": "dracula_upper_body",
+  "name": "vampire_feet",
   "i18n": {
-    "en": "Drácula Suit",
-    "es": "Traje de Drácula "
+    "en": "Vampire Shoes",
+    "es": "Zapatos de Vampiro"
   },
   "tags": [
     "accesories",
     "exclusive",
-    "halloween",
-    "dracula",
-    "suit"
+    "shoes",
+    "feet",
+    "halloween"
    ],
-  "category": "upper_body",
+  "category": "feet",
   "replaces": [
    ],
    "hides": [
@@ -20,7 +20,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_uBody_Dracula.glb", 
+"model": "M_Feet_Vampire.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [

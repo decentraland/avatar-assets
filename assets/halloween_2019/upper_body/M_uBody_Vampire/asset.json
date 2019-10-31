@@ -1,17 +1,17 @@
 {
-  "name": "dracula_lower_body",
+  "name": "vampire_upper_body",
   "i18n": {
-    "en": "Drácula Pants",
-    "es": "Pantalones de Drácula "
+    "en": "Vampire Suit",
+    "es": "Traje de Vampiro"
   },
   "tags": [
     "accesories",
     "exclusive",
     "halloween",
-    "dracula",
-    "pants"
+    "vampiro",
+    "suit"
    ],
-  "category": "lower_body",
+  "category": "upper_body",
   "replaces": [
    ],
    "hides": [
@@ -20,7 +20,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_lBody_Dracula.glb", 
+"model": "M_uBody_Vampire.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
