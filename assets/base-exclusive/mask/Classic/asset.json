@@ -12,7 +12,6 @@
     "woman"
    ],
   "category": "mask",
-  "hides": ["facial_hair"],
   "main": [
     {"type": "BaseMale", "model": "Classic.glb"},
     {"type": "BaseFemale", "model": "Classic.glb"}

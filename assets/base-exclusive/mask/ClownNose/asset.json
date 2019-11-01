@@ -12,7 +12,6 @@
     "woman"
    ],
   "category": "mask",
-  "hides": [],
   "main": [
     {"type": "BaseMale", "model": "ClownNose.glb"},
     {"type": "BaseFemale", "model": "ClownNose.glb"}
