@@ -19,13 +19,15 @@
   },
   "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
+    "@types/mime-types": "^2.1.0",
     "async-iterator-all": "^1.0.0",
-    "aws-sdk": "^2.526.0",
+    "aws-sdk": "^2.563.0",
     "fp-future": "^1.0.1",
     "gltf-pipeline": "decentraland/gltf-pipeline#skipExtension",
     "ipfs-unixfs-importer": "^0.40.0",
     "ipld": "^0.25.0",
     "ipld-in-memory": "^3.0.1",
+    "mime-types": "^2.1.24",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
