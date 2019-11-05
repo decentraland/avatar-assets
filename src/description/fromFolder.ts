@@ -39,7 +39,7 @@ export async function createAssetDescriptionFromFolder(
 
   const value: Wearable = {
     ...originalJson,
-    id: `dcl://${opts.collectionName || 'base-exclusive'}/` + (originalJson as any).id,
+    id: `dcl://${opts.collectionName || 'base-exclusive'}/` + originalJson.id,
     category,
     type: 'wearable',
     baseUrl: opts.contentBaseUrl || 'https://dcl-base-exclusive.now.sh',

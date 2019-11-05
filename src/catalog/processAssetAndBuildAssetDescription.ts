@@ -9,7 +9,7 @@ export async function processAssetAndBuildAssetDescription(
   workingFolderAbsPath: string,
   contentBaseUrl?: string,
   collectionName?: string
-): Promise<any> {
+) {
   if (!sourceFolderAbsPath.startsWith('/')) {
     throw new Error('Expected source folder to be an absolute path')
   }
