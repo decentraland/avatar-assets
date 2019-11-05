@@ -13,10 +13,17 @@ describe('process files', () => {
       'facial_hair',
       'feet',
       'hair',
+      'hat',
+      'head',
+      'helmet',
+      'item',
       'lower_body',
+      'mask',
       'mouth',
+      'suit',
       'tiara',
-      'upper_body'
+      'top_head',
+      'upper_body',
     ])
   })
 })

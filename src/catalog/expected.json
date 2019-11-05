@@ -831,15 +831,15 @@
         "contents": [
           {
             "file": "AvatarWearables_TX.png",
-            "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+            "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
           },
           {
-            "file": "Avatar_MaleSkin.png",
-            "hash": "QmU3omTrtqYBtdHcC2FZjYvyLmVVmBKaaKa52CmBF2bn9U"
+            "file": "Avatar_MaleSkinBase.png",
+            "hash": "QmRxKVwraeAq8NwgJ1TM9VnrG4AaQ7HbATxg7BGAVcUhvH"
           },
           {
             "file": "BearSlippers_01.glb",
-            "hash": "QmZFQB5jwnK4ePqqokqHDrag9FEXwbTNa4kiNuaysyAS9Q"
+            "hash": "QmcgK5FTq2FpxK7YdwMqsSKvc6WikweDaSZozKpwk18Ktp"
           }
         ]
       },
@@ -853,15 +853,15 @@
         "contents": [
           {
             "file": "AvatarWearables_TX.png",
-            "hash": "QmRaHnacT5G7oLYTYGsRWZtLXzXuTNEq7gWAcvXRSxfwEU"
+            "hash": "QmWLrKJFzDCMGXVCef78SDkMHWB94eHP1ZeXfyci3kphTb"
           },
           {
-            "file": "Avatar_MaleSkin.png",
-            "hash": "QmU3omTrtqYBtdHcC2FZjYvyLmVVmBKaaKa52CmBF2bn9U"
+            "file": "Avatar_MaleSkinBase.png",
+            "hash": "QmRxKVwraeAq8NwgJ1TM9VnrG4AaQ7HbATxg7BGAVcUhvH"
           },
           {
             "file": "BearSlippers_01.glb",
-            "hash": "QmZFQB5jwnK4ePqqokqHDrag9FEXwbTNa4kiNuaysyAS9Q"
+            "hash": "QmcgK5FTq2FpxK7YdwMqsSKvc6WikweDaSZozKpwk18Ktp"
           }
         ]
       }
