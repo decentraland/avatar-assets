@@ -12,7 +12,11 @@ export async function uploadAssetFiles(folderFullPath: string) {
   for (const content of contents) {
     if (!hashCache.includes(content.hash)) {
       console.log(`Uploading ${content.fileName} with hash ${content.hash} to S3`)
-      uploadPromises.push(uploadFile(content.hash, content.fileContent, ACL.publicRead))
+
+      const promise = uploadFile(content.hash, content.fileContent, ACL.publicRead).catch(error =>
+        console.error(`An error occurred trying to upload ${content.hash} to S3. Skipping`)
+      )
+      uploadPromises.push(promise)
       hashCache.push(content.hash)
     }
 
