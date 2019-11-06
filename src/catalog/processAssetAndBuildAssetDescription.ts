@@ -2,14 +2,14 @@ import { readdirSync, readFileSync, mkdirSync, writeFileSync } from 'fs'
 import { join, resolve, basename, dirname } from 'path'
 import { processAsset } from '../assets/processAsset'
 import { createAssetDescriptionFromFolder } from '../description/fromFolder'
-import { uploadContents } from '../s3/uploadContents'
+import { uploadAssetFiles } from '../s3/uploadAssetFiles'
 
 export async function processAssetAndBuildAssetDescription(
   sourceFolderAbsPath: string,
   workingFolderAbsPath: string,
   contentBaseUrl?: string,
   collectionName?: string
-): Promise<any> {
+) {
   if (!sourceFolderAbsPath.startsWith('/')) {
     throw new Error('Expected source folder to be an absolute path')
   }
@@ -40,7 +40,7 @@ export async function processAssetAndBuildAssetDescription(
     collectionName
   })
 
-  await uploadContents(targetFolderNameAbsPath)
+  await uploadAssetFiles(targetFolderNameAbsPath)
 
   return assetDescriptor
 }

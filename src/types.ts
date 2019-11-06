@@ -19,6 +19,7 @@ export type Wearable = {
   id: WearableId
   type: 'wearable'
   thumbnail: string
+  image: string | undefined
   category: string
   baseUrl: string
   replaces: string[]

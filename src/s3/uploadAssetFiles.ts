@@ -1,11 +1,11 @@
-import { getFullContents } from '../assets/getContents'
+import { getAssetFiles } from '../assets/getAssetFiles'
 import { uploadFile, ACL } from './s3'
 
 const hashCache: string[] = []
 const batchSize = 20
 
-export async function uploadContents(folderFullPath: string) {
-  const contents = await getFullContents(folderFullPath)
+export async function uploadAssetFiles(folderFullPath: string) {
+  const contents = await getAssetFiles(folderFullPath)
 
   let uploadPromises = []
 

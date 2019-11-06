@@ -1,7 +1,7 @@
 import { Wearable } from 'types'
 import { validCategories } from '../assets/validCategories'
 
-export function idValidationError(id: string) {
+export function idValidation(id: string) {
   if (!id) {
     return 'missing value for "id"'
   }
@@ -9,12 +9,12 @@ export function idValidationError(id: string) {
     return 'id should start with dcl://'
   }
 }
-export function nameValidationError(name: string) {
+export function nameValidation(name: string) {
   if (!name) {
     return 'missing value for "name"'
   }
 }
-export function contentValidationError(content: any) {
+export function contentValidation(content: any) {
   if (!content) {
     return 'missing "contents" key'
   }
@@ -29,7 +29,7 @@ export function contentValidationError(content: any) {
       return `element ${i} of "contents" should be a valid CIDv0 hash (received ${content[i].hash})`
   }
 }
-export function categoryValidationError(category: string) {
+export function categoryValidation(category: string) {
   if (!category) {
     return 'missing "category" key'
   }
@@ -37,7 +37,7 @@ export function categoryValidationError(category: string) {
     return `supplied category ${category} is not in the set of valid categories: ${JSON.stringify(validCategories)}`
   }
 }
-export function tagsValidationError(tags: string[]) {
+export function tagsValidation(tags: string[]) {
   if (!tags || !tags.length) {
     return 'missing or empty "tags" key'
   }
@@ -45,12 +45,12 @@ export function tagsValidationError(tags: string[]) {
     return '"tags" should be an array'
   }
 }
-export function contentBaseUrlValidationError(contentBaseUrl?: string) {
+export function contentBaseUrlValidation(contentBaseUrl?: string) {
   if (contentBaseUrl && typeof contentBaseUrl !== 'string') {
     return `the optional value "contentBaseUrl" should be a string if present`
   }
 }
-export function i18nValidationError(i18n: { code: string; text: string }[]) {
+export function i18nValidation(i18n: { code: string; text: string }[]) {
   if (!i18n || !i18n.length) {
     return 'missing translations! an empty value for "i18n" was supplied'
   }
@@ -74,9 +74,9 @@ export function i18nValidationError(i18n: { code: string; text: string }[]) {
     }
   }
 }
-export function thumbnailValidationError(content: string) {
+export function cidValidaton(content: string | undefined) {
   if (!content) {
-    return 'missing "thumbnail" key'
+    return 'missing CID key'
   }
   if (typeof content !== 'string' || !content.startsWith('Qm')) {
     return `the ${content} value should be a valid CIDv0 string`
@@ -84,12 +84,13 @@ export function thumbnailValidationError(content: string) {
 }
 export function validate(opts: Wearable) {
   return (
-    idValidationError(opts.id) ||
-    categoryValidationError(opts.category) ||
-    tagsValidationError(opts.tags) ||
-    contentBaseUrlValidationError(opts.baseUrl) ||
-    i18nValidationError(opts.i18n) ||
-    thumbnailValidationError(opts.thumbnail)
+    idValidation(opts.id) ||
+    categoryValidation(opts.category) ||
+    tagsValidation(opts.tags) ||
+    contentBaseUrlValidation(opts.baseUrl) ||
+    i18nValidation(opts.i18n) ||
+    cidValidaton(opts.thumbnail) ||
+    cidValidaton(opts.image)
   )
 }
 export function createAssetDescription(opts: Wearable) {
@@ -97,6 +98,6 @@ export function createAssetDescription(opts: Wearable) {
   if (validationError) {
     throw new Error(`Asset ${opts.id} has the following error: ${validationError}`)
   }
-  const { id, representations, type, category, tags, baseUrl, i18n, thumbnail, replaces, hides } = opts
-  return { id, representations, type, category, tags, baseUrl, i18n, thumbnail, replaces, hides }
+  const { id, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides } = opts
+  return { id, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides }
 }
