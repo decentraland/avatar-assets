@@ -1,18 +1,18 @@
 export type SourceJson = {
-  name: string;
+  name: string
   i18n: {
-    [key: string]: string;
-  };
-  tags: string[];
-  replaces?: string[];
-  hides?: string[];
-  category: string;
+    [key: string]: string
+  }
+  tags: string[]
+  replaces?: string[]
+  hides?: string[]
+  category: string
   main: {
-    overrideReplaces?: string[];
-    overrideHides?: string[];
-    type: string;
-    model: string;
-  }[];
+    overrideReplaces?: string[]
+    overrideHides?: string[]
+    type: string
+    model: string
+  }[]
 }
 
 export type Wearable = {
@@ -37,10 +37,10 @@ export type BodyShapeRespresentation = {
   mainFile: string
   overrideReplaces: string[]
   overrideHides: string[]
-  contents: FileAndHash[]
+  contents: Content[]
 }
 
-export type FileAndHash = {
+export type Content = {
   file: string
   hash: string
 }

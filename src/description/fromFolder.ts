@@ -1,8 +1,9 @@
-import { readdirSync, readFile as readFileOrig, readFileSync } from 'fs'
+import { readFile as readFileOrig, readFileSync } from 'fs'
 import { basename, dirname, join } from 'path'
 import { Wearable } from 'types'
 import { promisify } from 'util'
 import { getFileCID } from '../cid/getFileCID'
+import { getContents } from '../assets/getContents'
 import { createAssetDescription } from './createAssetDescription'
 
 const readFile = promisify(readFileOrig)
@@ -17,7 +18,7 @@ const extractCategoryFromPath = (folder: string) => basename(dirname(folder))
 export async function createAssetDescriptionFromFolder(
   folderFullPath: string,
   opts: {
-    contentBaseUrl?: string,
+    contentBaseUrl?: string
     collectionName?: string
   }
 ): Promise<Wearable> {
@@ -27,7 +28,6 @@ export async function createAssetDescriptionFromFolder(
   const originalJson = readAssetJsonFromFolder(folderFullPath) as Wearable
   const category = extractCategoryFromPath(folderFullPath)
 
-  const dirEntries = readdirSync(folderFullPath)
   const thumbnail = join(folderFullPath, 'thumbnail.png')
 
   const value: Wearable = {
@@ -39,20 +39,17 @@ export async function createAssetDescriptionFromFolder(
     thumbnail: await getFileCID(await readFile(thumbnail)),
     replaces: originalJson.replaces,
     hides: originalJson.hides,
-    representations: await Promise.all(originalJson.representations.map(
-      async (original) => ({
-        ...original,
-        contents: await Promise.all(dirEntries
-          .filter(_ => _ !== 'asset.json' && _ !== 'thumbnail.png')
-          .map(async _ => {
-            return {
-              file: _,
-              hash: await getFileCID(await readFile(join(folderFullPath, _)))
-            }
-          })
-        )
-      }))
-    )
+    representations: await getRepresentations(folderFullPath)
   }
   return createAssetDescription(value)
+}
+
+async function getRepresentations(folderFullPath: string) {
+  const originalJson = readAssetJsonFromFolder(folderFullPath) as Wearable
+  const contents = await getContents(folderFullPath)
+
+  return originalJson.representations.map(original => ({
+    ...original,
+    contents
+  }))
 }
