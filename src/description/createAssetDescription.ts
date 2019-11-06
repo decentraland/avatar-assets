@@ -74,7 +74,7 @@ export function i18nValidation(i18n: { code: string; text: string }[]) {
     }
   }
 }
-export function cidValidaton(content: string | undefined) {
+export function cidValidaton(content: string) {
   if (!content) {
     return 'missing CID key'
   }
@@ -89,8 +89,7 @@ export function validate(opts: Wearable) {
     tagsValidation(opts.tags) ||
     contentBaseUrlValidation(opts.baseUrl) ||
     i18nValidation(opts.i18n) ||
-    cidValidaton(opts.thumbnail) ||
-    cidValidaton(opts.image)
+    cidValidaton(opts.thumbnail)
   )
 }
 export function createAssetDescription(opts: Wearable) {
