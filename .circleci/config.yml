@@ -52,5 +52,6 @@ workflows:
             branches:
               only: release
       - deploy:
+          context: avatar-assets-prd
           requires:
             - build
