@@ -1,0 +1,16 @@
+{
+  "name": "blue_star_earring",
+  "i18n": {
+    "en": "Blue Star Earring",
+    "es": "Aro Azul con Forma de Estrella"
+  },
+  "tags": [
+    "accesories",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_BlueStar.glb"}
+  ]
+}

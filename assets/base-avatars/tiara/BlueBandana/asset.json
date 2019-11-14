@@ -1,0 +1,19 @@
+{
+  "name": "blue_bandana",
+  "i18n": {
+    "en": "Blue Bandana",
+    "es": "Bandana Azul"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "tiara",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "BlueBandana.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "BlueBandana.glb"}
+  ]
+}

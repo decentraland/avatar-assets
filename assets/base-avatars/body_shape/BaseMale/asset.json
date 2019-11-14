@@ -1,0 +1,16 @@
+{
+  "name": "BaseMale",
+  "i18n": {
+    "en": "Man",
+    "es": "Hombre"
+  },
+  "tags": [
+    "body",
+    "male",
+    "man"
+   ],
+  "category": "body_shape",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "BaseMale.glb"}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "pride_tshirt",
+  "i18n": {
+    "en": "Gay Pride T-Shirts",
+    "es": "Remera del Orgullo Gay"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_PrideTshirt_01.glb"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "rounded_sun_glasses",
+  "i18n": {
+    "en": "Rounded Sun Glasses",
+    "es": "Gafas de Sol Circulares"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "RoundSunglasses_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "RoundSunglasses_01.glb"}
+  ]
+}

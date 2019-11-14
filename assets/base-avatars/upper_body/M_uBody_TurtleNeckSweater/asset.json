@@ -1,0 +1,16 @@
+{
+  "name": "turtle_neck_sweater",
+  "i18n": {
+    "en": "Turtle Neck Sweater",
+    "es": "Sweater con Cuello de Tortuga"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_TurtleNeckSweater.glb"}
+  ]
+}

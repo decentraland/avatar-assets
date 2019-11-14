@@ -1,0 +1,16 @@
+{
+  "name": "keanu_hair",
+  "i18n": {
+    "en": "Keanu Hair Style",
+    "es": "Estilo Keanu"
+  },
+  "tags": [
+    "hair",
+    "male",
+    "man"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Keanu.glb"}
+  ]
+}

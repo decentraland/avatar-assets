@@ -1,0 +1,16 @@
+{
+  "name": "m_mountainshoes.glb",
+  "i18n": {
+    "en": "Mountain Boots",
+    "es": "Botas de Montaña"
+  },
+  "tags": [
+    "shoes",
+    "man",
+    "men"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_MountainShoes.glb"}
+  ]
+}

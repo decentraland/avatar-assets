@@ -1,0 +1,16 @@
+{
+  "name": "sleeveless_punk_shirt",
+  "i18n": {
+    "en": "Sleeveless Punk shirt",
+    "es": "Musculosa Punk"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_SleevelessPunkShirt_01.glb"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "eyes_00",
+  "i18n": {
+    "en": "Eyes_00",
+    "es": "Eyes_00"
+  },
+  "tags": [
+    "face",
+    "eyes",
+    "male",
+    "man"
+   ],
+  "category": "eyes",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyes_00.png"}
+  ]
+}

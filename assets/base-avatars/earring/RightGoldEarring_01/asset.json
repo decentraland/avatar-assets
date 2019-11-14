@@ -1,0 +1,19 @@
+{
+  "name": "golden_earring",
+  "i18n": {
+    "en": "Golden Earring",
+    "es": "Aro Dorado"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "RightGoldEarring_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "RightGoldEarring_01.glb"}
+  ]
+}

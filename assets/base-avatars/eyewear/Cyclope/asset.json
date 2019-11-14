@@ -1,0 +1,19 @@
+{
+  "name": "cyclope",
+  "i18n": {
+    "en": "Cyclope Glasses",
+    "es": "Gafa de Cíclope"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "Woman"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_Cyclope.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_Cyclope.glb"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "italian_director",
+  "i18n": {
+    "en": "Italian Director Sunglasses",
+    "es": "Gafas de Director de Cine Italiano"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "Woman"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_ItalianDirector.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_ItalianDirector.glb"}
+  ]
+}
