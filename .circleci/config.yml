@@ -41,7 +41,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Deploy to now.sh
-          command: cd dist && now alias $(now --scope decentraland --name dcl-base-exclusive --token $NOW_TOKEN .) dcl-base-exclusive.now.sh --scope decentraland --token $NOW_TOKEN
+          command: cd dist && now alias $(now --scope decentraland --name dcl-wearables --token $NOW_TOKEN .) dcl-wearables.now.sh --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
   build-deploy-release:

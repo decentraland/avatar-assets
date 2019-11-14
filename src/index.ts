@@ -14,7 +14,7 @@ import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 
 if (!module.parent) {
-  runMain(['base-exclusive', 'halloween_2019'])
+  runMain(['base-avatars', 'base-exclusive', 'halloween_2019'])
   .catch(error => console.log(error, error.stack))
 }
 
@@ -48,7 +48,7 @@ export async function runMain(collectionFolders: string[]) {
     const buildAssetsConfig = {
       assetFoldersAbsPath: assetFolders,
       workingDirAbsPath: workingFolder.name,
-      contentBaseUrl: `https://dcl-base-exclusive.now.sh/`,
+      contentBaseUrl: `https://content.decentraland.org/contents/`,
       collectionName: collectionFolder
     }
 

@@ -35,7 +35,7 @@ function transformJson(json: SourceJson): Wearable {
     thumbnail: '',
     image: '',
     baseUrl: '',
-    tags: [...json.tags, 'exclusive'],
+    tags: json.tags,
     replaces: json.replaces === undefined ? defaultReplacementMatrix[json.category] : json.replaces,
     hides: json.hides === undefined ? defaultHidingMatrix[json.category] : json.hides,
     representations: json.main.map(original => ({
