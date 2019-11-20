@@ -47,24 +47,15 @@ jobs:
           command: cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
-  build-deploy-development:
+  build-deploy:
     jobs:
       - build:
           context: avatar-assets-prd
           filters:
             branches:
-              only: master
-      - deploy-dev:
-          context: avatar-assets-prd
-          requires:
-            - build
-  build-deploy-release:
-    jobs:
-      - build:
-          context: avatar-assets-prd
-          filters:
-            branches:
-              only: release
+              only:
+                - master
+                - release
       - deploy:
           context: avatar-assets-prd
           requires:
