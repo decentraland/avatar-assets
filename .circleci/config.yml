@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  build:
+  build-deploy:
     environment:
       - ENV_TARGET=org
     docker:
@@ -39,14 +39,10 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build:
+      - build-deploy:
           context: avatar-assets-prd
           filters:
             branches:
               only:
                 - master
                 - release
-      - deploy:
-          context: avatar-assets-prd
-          requires:
-            - build
