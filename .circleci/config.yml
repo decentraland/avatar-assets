@@ -1,9 +1,9 @@
 version: 2
+
 jobs:
   build:
     environment:
       - ENV_TARGET=org
-      - NOW_TARGET=avatar-assets
     docker:
       - image: circleci/node:10
     working_directory: /tmp/app
@@ -40,10 +40,24 @@ jobs:
           name: Install now
           command: sudo npm install --global --unsafe-perm now
       - run:
+          name: Selecting target now.sh site
+          command: export NOW_SITE=`{{ .Branch }} == "release" && 'dcl-wearables' || 'dcl-wearables-dev'`
+      - run:
           name: Deploy to now.sh
-          command: cd dist && now alias $(now --scope decentraland --name dcl-wearables --token $NOW_TOKEN .) dcl-wearables.now.sh --scope decentraland --token $NOW_TOKEN
+          command: cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
+  build-deploy-development:
+    jobs:
+      - build:
+          context: avatar-assets-prd
+          filters:
+            branches:
+              only: master
+      - deploy-dev:
+          context: avatar-assets-prd
+          requires:
+            - build
   build-deploy-release:
     jobs:
       - build:
