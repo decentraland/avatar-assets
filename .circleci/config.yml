@@ -24,27 +24,17 @@ jobs:
       - run:
           name: Build catalog
           command: make compile && make test && make catalog
-      - save_cache:
-          paths:
-            - dist
-          key: build-{{ .Branch }}-{{ .Revision }}
-  deploy:
-    docker:
-      - image: circleci/node:10
-    working_directory: /tmp/app
-    steps:
-      - restore_cache:
-          keys:
-            - build-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Install now
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Selecting target now.sh site
-          command: export NOW_SITE=`[ ${CIRCLE_BRANCH} = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
+          command: export 
       - run:
           name: Deploy to now.sh
-          command: cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
+          command: |
+              export NOW_SITE=`[ $CIRCLE_BRANCH = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
+              cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
 workflows:
   version: 2
   build-deploy:
