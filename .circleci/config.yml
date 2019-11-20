@@ -28,9 +28,6 @@ jobs:
           name: Install now
           command: sudo npm install --global --unsafe-perm now
       - run:
-          name: Selecting target now.sh site
-          command: export 
-      - run:
           name: Deploy to now.sh
           command: |
               export NOW_SITE=`[ $CIRCLE_BRANCH = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
