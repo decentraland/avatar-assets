@@ -41,7 +41,7 @@ jobs:
           command: sudo npm install --global --unsafe-perm now
       - run:
           name: Selecting target now.sh site
-          command: export NOW_SITE=`[ {{ .Branch }} = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
+          command: export NOW_SITE=`[ ${CIRCLE_BRANCH} = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
       - run:
           name: Deploy to now.sh
           command: cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
