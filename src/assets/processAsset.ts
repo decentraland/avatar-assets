@@ -19,7 +19,8 @@ const defaultHidingMatrix: { [key: string]: string[] } = {
   helmet: ['eyewear', 'earrings', 'hair', 'facial_hair', 'head']
 }
 
-function transformJson(json: SourceJson): Wearable {
+function transformJson(json: SourceJson, extraTags: string[]): Wearable {
+  const tags = [...json.tags, ...extraTags]
   return {
     id: json.name,
     type: 'wearable',
@@ -35,7 +36,7 @@ function transformJson(json: SourceJson): Wearable {
     thumbnail: '',
     image: '',
     baseUrl: '',
-    tags: json.tags,
+    tags: tags,
     replaces: json.replaces === undefined ? defaultReplacementMatrix[json.category] : json.replaces,
     hides: json.hides === undefined ? defaultHidingMatrix[json.category] : json.hides,
     representations: json.main.map(original => ({
@@ -66,8 +67,14 @@ export async function processAsset(sourceFolder: string, destinationFolder: stri
       console.error(err.message)
     }
   }
+  const extraTags = []
+  if (sourceFolder.includes('base-avatars')) {
+    extraTags.push('base-wearable')
+  } else {
+    extraTags.push('exclusive')
+  }
   const json = JSON.parse(readFileSync(join(sourceFolder, 'asset.json')).toString()) as SourceJson
-  const result: Wearable = transformJson(json)
+  const result: Wearable = transformJson(json, extraTags)
   writeFileSync(join(destinationFolder, 'asset.json'), JSON.stringify(result, null, 2))
   return result
 }
