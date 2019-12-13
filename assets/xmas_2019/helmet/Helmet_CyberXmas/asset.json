@@ -1,0 +1,41 @@
+{
+  "name": "cyber_xmas_helmet",
+  "i18n": {
+    "en": "Cyber Xmas Helmet",
+    "es": "Casco Cyber Navideño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "cyber",
+    "xmas",
+    "christmas",
+    "helmet"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring",
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "cyber_xmas_helmet.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "cyber_xmas_helmet.glb"}
+  ]
+}
