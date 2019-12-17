@@ -7,6 +7,8 @@ export type SourceJson = {
   replaces?: string[]
   hides?: string[]
   category: string
+  rarity?: string
+  description?: string
   main: {
     overrideReplaces?: string[]
     overrideHides?: string[]
