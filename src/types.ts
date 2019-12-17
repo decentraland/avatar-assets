@@ -30,6 +30,8 @@ export type Wearable = {
   }[]
   tags: string[]
   representations: BodyShapeRespresentation[]
+  rarity: string
+  description: string
 }
 export type WearableId = string
 
