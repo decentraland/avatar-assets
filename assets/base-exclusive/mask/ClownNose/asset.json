@@ -11,10 +11,18 @@
     "man",
     "female",
     "woman"
-   ],
+  ],
   "category": "mask",
   "main": [
-    {"type": "BaseMale", "model": "ClownNose.glb"},
-    {"type": "BaseFemale", "model": "ClownNose.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "ClownNose.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "ClownNose.glb"
+    }
+  ],
+  "rarity": "legenday",
+  "description": ""
 }

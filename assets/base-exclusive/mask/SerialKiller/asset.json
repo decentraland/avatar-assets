@@ -11,10 +11,18 @@
     "man",
     "female",
     "woman"
-   ],
+  ],
   "category": "mask",
   "main": [
-    {"type": "BaseMale", "model": "SerialKiller.glb"},
-    {"type": "BaseFemale", "model": "SerialKiller.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "SerialKiller.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "SerialKiller.glb"
+    }
+  ],
+  "rarity": "legenday",
+  "description": ""
 }
