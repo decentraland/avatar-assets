@@ -11,10 +11,18 @@
     "man",
     "female",
     "woman"
-   ],
+  ],
   "category": "mask",
   "main": [
-    {"type": "BaseMale", "model": "TropicalMask.glb"},
-    {"type": "BaseFemale", "model": "TropicalMask.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "TropicalMask.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "TropicalMask.glb"
+    }
+  ],
+  "rarity": "legenday",
+  "description": ""
 }

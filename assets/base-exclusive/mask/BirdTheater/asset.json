@@ -11,10 +11,18 @@
     "man",
     "female",
     "woman"
-   ],
+  ],
   "category": "mask",
   "main": [
-    {"type": "BaseMale", "model": "BirdTheater.glb"},
-    {"type": "BaseFemale", "model": "BirdTheater.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "BirdTheater.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "BirdTheater.glb"
+    }
+  ],
+  "rarity": "legenday",
+  "description": ""
 }
