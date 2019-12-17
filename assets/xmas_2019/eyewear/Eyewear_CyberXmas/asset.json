@@ -1,0 +1,34 @@
+{
+  "name": "cyber_xmas_eyewear",
+  "i18n": {
+    "en": "Christmas Neon Eyewear",
+    "es": "Anteojos de Navidadeños de Neon"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "christmas",
+    "cyber"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_CyberXmas.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_CyberXmas.glb"}
+        ]
+      }
