@@ -1,5 +1,5 @@
 {
-  "name": "led_suit_lower_body",
+  "name": "f_led_suit_lower_body",
   "i18n": {
     "en": "Led Pants",
     "es": "Pantalones de Leds"
@@ -20,8 +20,8 @@
 
   "main": [
 {
-"type": "BaseMale", 
-"model": "led_suit_lower_body.glb", 
+"type": "BaseFemale", 
+"model": "F_lBody_LedSuit.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [

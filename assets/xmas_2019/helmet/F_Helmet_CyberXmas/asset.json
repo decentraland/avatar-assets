@@ -1,5 +1,5 @@
 {
-  "name": "m_cyber_xmas_helmet",
+  "name": "f_cyber_xmas_helmet",
   "i18n": {
     "en": "Cyber Xmas Helmet",
     "es": "Casco Cyber Navideño"
@@ -31,7 +31,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Helmet_LedSuit.glb", 
+"model": "F_Helmet_LedSuit.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [

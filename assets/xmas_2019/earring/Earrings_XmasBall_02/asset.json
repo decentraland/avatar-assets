@@ -26,6 +26,7 @@
          ],
          "overrideHides": [
          ]
-      }
+      },
+      {"type": "BaseMale", "model": "M_Earrings_XmasBall_02.glb"}
         ]
       }

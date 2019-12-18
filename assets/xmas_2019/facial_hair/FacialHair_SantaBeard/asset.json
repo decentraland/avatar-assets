@@ -1,0 +1,32 @@
+{
+  "name": "santa_facial_hair",
+  "i18n": {
+    "en": "Santa Beard",
+    "es": "Barba de Santa"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "christmas",
+    "cyber"
+   ],
+  "category": "facial_hair",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "FacialHair_SantaBeard.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "FacialHair_SantaBeard.glb"}
+  ]
+}

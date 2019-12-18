@@ -1,8 +1,8 @@
 {
-  "name": "led_suit_lower_body",
+  "name": "m_cyber_suit_lower_body",
   "i18n": {
-    "en": "Led Pants",
-    "es": "Pantalones de Leds"
+    "en": "Cyber Pants",
+    "es": "Pantalones Cibernéticos"
   },
   "tags": [
     "accesories",
@@ -21,7 +21,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "led_suit_lower_body.glb", 
+"model": "M_lBody_CyberSuit.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
