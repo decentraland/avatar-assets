@@ -30,7 +30,7 @@
 
   "main": [
 {
-"type": "BaseMale", 
+"type": "BaseFemale", 
 "model": "F_Helmet_LedSuit.glb", 
 "overrideReplaces": [
    ],
