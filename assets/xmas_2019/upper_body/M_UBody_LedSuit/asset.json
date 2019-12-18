@@ -1,5 +1,5 @@
 {
-  "name": "led_suit_upper_body",
+  "name": "m_led_suit_upper_body",
   "i18n": {
     "en": "Led Suit",
     "es": "Traje de Led"
@@ -20,7 +20,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "led_suit_upper_body.glb", 
+"model": "M_uBody_LedSuit.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
