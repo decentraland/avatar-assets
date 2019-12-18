@@ -21,7 +21,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "led_suit_lower_body.glb", 
+"model": "M_lBody_LedSuit.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
