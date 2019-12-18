@@ -30,5 +30,7 @@
          ]
       },
       {"type": "BaseMale", "model": "Eyewear_XmasTree.glb"}
-        ]
+        ],
+        "rarity": "mythic",
+        "description": "See Xmas in a whole new light."
       }

@@ -30,5 +30,7 @@
          ]
       },
       {"type": "BaseMale", "model": "Eyewear_CyberSkiGlasses.glb"}
-        ]
+        ],
+        "rarity": "mythic",
+        "description": "Is it snowing in Decentraland?"
       }
