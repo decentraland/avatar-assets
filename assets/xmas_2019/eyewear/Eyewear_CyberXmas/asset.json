@@ -30,5 +30,7 @@
          ]
       },
       {"type": "BaseMale", "model": "Eyewear_CyberXmas.glb"}
-        ]
+        ],
+        "rarity": "mythic",
+        "description": "Hack the herald angels sing!"
       }
