@@ -10,21 +10,18 @@
     "shoes",
     "feet",
     "halloween"
-   ],
+  ],
   "category": "feet",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_Feet_SkeletonSuit.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_SkeletonSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Connected to the shin bones..."
 }

@@ -9,26 +9,24 @@
     "exclusive",
     "halloween",
     "hat"
-   ],
+  ],
   "category": "hat",
   "replaces": [
     "helmet",
     "tiara",
     "top_head"
-
-   ],
-   "hides": [
+  ],
+  "hides": [
     "hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Hat_Witch.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_Witch.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Witch hat? This one"
 }

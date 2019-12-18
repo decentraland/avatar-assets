@@ -10,21 +10,18 @@
     "shoes",
     "feet",
     "halloween"
-   ],
+  ],
   "category": "feet",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Feet_BeeSuit.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Do bees have feet? They do now!"
 }

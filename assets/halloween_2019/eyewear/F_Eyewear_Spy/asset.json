@@ -10,24 +10,21 @@
     "earrings",
     "halloween",
     "spy"
-   ],
+  ],
   "category": "eyewear",
   "replaces": [
     "mask",
     "helmet"
-   ],
-   "hides": [
-  
-   ],
-
+  ],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_Eyewear_Spy.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_Eyewear_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "So stylish it's a shame you're undercover"
+}

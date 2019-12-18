@@ -10,22 +10,18 @@
     "upper_body",
     "halloween",
     "jester"
-   ],
+  ],
   "category": "upper_body",
-  "replaces": [
-   ],
-   "hides": [
-  
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_uBody_Jester.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_uBody_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Makes an excellent platform for jester heads"
+}

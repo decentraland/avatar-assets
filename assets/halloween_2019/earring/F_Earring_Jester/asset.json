@@ -12,22 +12,18 @@
     "jingle",
     "jester",
     "bells"
-   ],
+  ],
   "category": "earring",
-  "replaces": [
-   ],
-   "hides": [
-  
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_Earring_Jester.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_Earring_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Shiny lobe danglers to distract from that last terrible gag"
+}

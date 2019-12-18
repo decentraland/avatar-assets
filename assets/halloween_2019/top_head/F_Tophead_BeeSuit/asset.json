@@ -10,24 +10,21 @@
     "top_head",
     "halloween",
     "bee"
-   ],
+  ],
   "category": "top_head",
   "replaces": [
     "helmet",
     "hat"
-   ],
-   "hides": [
-  
-   ],
-
+  ],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_Tophead_BeeSuit.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_Tophead_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "The cutest way to top off your bee suit. Sadly with no actual antennae functionality"
+}

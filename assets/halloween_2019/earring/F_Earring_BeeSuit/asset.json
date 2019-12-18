@@ -10,22 +10,18 @@
     "earrings",
     "halloween",
     "bee"
-   ],
+  ],
   "category": "earring",
-  "replaces": [
-   ],
-   "hides": [
-  
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_Earring_BeeSuit.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_Earring_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Do bees even have ears? They do now!"
+}

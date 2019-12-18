@@ -11,25 +11,25 @@
     "halloween",
     "knife",
     "machete"
-   ],
+  ],
   "category": "top_head",
   "replaces": [
     "helmet",
     "hat"
-   ],
-   "hides": [
-  
-   ],
-
+  ],
+  "hides": [],
   "main": [
     {
-      "type": "BaseMale", 
-      "model": "TopHead_Machete.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      },
-      {"type": "BaseFemale", "model": "TopHead_Machete.glb"}
-        ]
-      }
+      "type": "BaseMale",
+      "model": "TopHead_Machete.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "TopHead_Machete.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

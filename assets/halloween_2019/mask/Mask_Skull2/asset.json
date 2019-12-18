@@ -8,27 +8,29 @@
     "accesories",
     "exclusive",
     "mask"
-   ],
+  ],
   "category": "mask",
   "replaces": [
     "helmet",
     "tiara",
     "hat",
     "eyewear"
-   ],
-   "hides": [
+  ],
+  "hides": [
     "facial_hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseMale", 
-"model": "Mask_Skull2.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "Mask_Skull2.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "Mask_Skull2.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_Skull2.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": "No virtual monkeys were harmed in the making of this mask"
 }

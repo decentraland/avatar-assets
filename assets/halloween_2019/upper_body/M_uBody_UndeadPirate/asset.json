@@ -10,21 +10,18 @@
     "halloween",
     "pirate",
     "undead"
-   ],
+  ],
   "category": "upper_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_uBody_UndeadPirate.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_UndeadPirate.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Almost a body, but you get the drift"
 }
