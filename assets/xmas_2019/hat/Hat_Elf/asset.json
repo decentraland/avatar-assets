@@ -1,0 +1,36 @@
+{
+  "name": "xmas_elf_hat",
+  "i18n": {
+    "en": "Christmas Elf Hat",
+    "es": "Sombrero de Elfo Navideño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "christmas",
+    "cyber",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Elf.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Elf.glb"}
+  ]
+}
