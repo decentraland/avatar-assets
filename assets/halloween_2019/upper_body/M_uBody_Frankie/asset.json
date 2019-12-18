@@ -10,21 +10,18 @@
     "halloween",
     "upper_body",
     "suit"
-   ],
+  ],
   "category": "upper_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_uBody_Frankie.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_Frankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "When we say suit, we mean suit. Look your zombie best!"
 }

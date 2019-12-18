@@ -10,21 +10,18 @@
     "halloween",
     "skirt",
     "pants"
-   ],
+  ],
   "category": "lower_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_lBody_BrideOfFrankie.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Doubles as a handy waitress outfit"
 }

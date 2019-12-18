@@ -10,21 +10,18 @@
     "shoes",
     "feet",
     "halloween"
-   ],
+  ],
   "category": "feet",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Feet_BrideOfFrankie.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Lurch around slowly in comfort"
 }

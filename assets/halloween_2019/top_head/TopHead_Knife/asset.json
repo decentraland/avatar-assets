@@ -10,25 +10,25 @@
     "top_head",
     "halloween",
     "knife"
-   ],
+  ],
   "category": "top_head",
   "replaces": [
     "helmet",
     "hat"
-   ],
-   "hides": [
-  
-   ],
-
+  ],
+  "hides": [],
   "main": [
     {
-      "type": "BaseMale", 
-      "model": "TopHead_Knife.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      },
-      {"type": "BaseFemale", "model": "TopHead_Knife.glb"}
-        ]
-      }
+      "type": "BaseMale",
+      "model": "TopHead_Knife.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "TopHead_Knife.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": ""
+}

@@ -8,27 +8,29 @@
     "accesories",
     "exclusive",
     "mask"
-   ],
+  ],
   "category": "mask",
   "replaces": [
     "helmet",
     "tiara",
     "hat",
     "eyewear"
-   ],
-   "hides": [
+  ],
+  "hides": [
     "facial_hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseMale", 
-"model": "Mask_ddm04V4.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "Mask_ddm04V4.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm04V4.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm04V4.glb"
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Ornate Day of the Dead mask with cross"
 }

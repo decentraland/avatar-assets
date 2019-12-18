@@ -11,23 +11,21 @@
     "ponytail",
     "spy",
     "halloween"
-   ],
+  ],
   "category": "hair",
   "replaces": [
     "hat",
     "helmet"
-   ],
-   "hides": [
-   ],
-
+  ],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Hair_Spy.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Hair_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Tightly cropped for extra sleekness"
 }

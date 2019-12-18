@@ -10,22 +10,18 @@
     "earrings",
     "halloween",
     "spider"
-   ],
+  ],
   "category": "earring",
-  "replaces": [
-   ],
-   "hides": [
-  
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_Earrings_Spider.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_Earrings_Spider.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "It may be someone else's head but that doesn't mean you can't look good"
+}

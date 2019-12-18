@@ -10,22 +10,18 @@
     "upper_body",
     "halloween",
     "frankie"
-   ],
+  ],
   "category": "upper_body",
-  "replaces": [
-   ],
-   "hides": [
-  
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
     {
-      "type": "BaseFemale", 
-      "model": "F_uBody_Witch.glb", 
-      "overrideReplaces": [
-         ],
-         "overrideHides": [
-         ]
-      }
-        ]
-      }
+      "type": "BaseFemale",
+      "model": "F_uBody_Witch.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Designed to withstand burnings, drownings and ritual stonings"
+}

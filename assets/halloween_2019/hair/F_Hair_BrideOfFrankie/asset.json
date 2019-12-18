@@ -10,23 +10,21 @@
     "hair",
     "jester",
     "halloween"
-   ],
+  ],
   "category": "hair",
   "replaces": [
     "hat",
     "helmet"
-   ],
-   "hides": [
-   ],
-
+  ],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Hair_BrideOfFrankie.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Hair_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Engineered for style"
 }

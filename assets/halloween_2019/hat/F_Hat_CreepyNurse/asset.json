@@ -9,26 +9,24 @@
     "exclusive",
     "mexican",
     "hat"
-   ],
+  ],
   "category": "hat",
   "replaces": [
     "helmet",
     "tiara",
     "top_head"
-
-   ],
-   "hides": [
+  ],
+  "hides": [
     "hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_Hat_CreepyNurse.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_CreepyNurse.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Even if you're a murderous psycho nurse you need to stay smart"
 }

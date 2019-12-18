@@ -9,27 +9,28 @@
     "exclusive",
     "mexican",
     "hat"
-   ],
+  ],
   "category": "hat",
   "replaces": [
     "helmet",
     "tiara",
     "top_head"
-
-   ],
-   "hides": [
+  ],
+  "hides": [
     "hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_Hat_Mexican_01.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "F_Hat_Mexican_01.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_Hat_Mexican_01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_Mexican_01.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": "Óraleeee"
 }

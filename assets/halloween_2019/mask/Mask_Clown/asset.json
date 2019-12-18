@@ -8,26 +8,25 @@
     "accesories",
     "exclusive",
     "mask"
-   ],
+  ],
   "category": "mask",
   "replaces": [
     "helmet",
     "tiara",
     "hat",
     "eyewear"
-   ],
-   "hides": [
+  ],
+  "hides": [
     "facial_hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseMale", 
-"model": "Mask_Clown.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "Mask_Clown.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Sad, but let’s be honest—still kinda freaky"
 }

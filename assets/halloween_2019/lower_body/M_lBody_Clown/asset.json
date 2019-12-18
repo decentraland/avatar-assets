@@ -10,21 +10,18 @@
     "halloween",
     "leggings",
     "pants"
-   ],
+  ],
   "category": "lower_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_lBody_Clown.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_Clown.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Little known fact: blue, red and gold are the saddest colours"
 }

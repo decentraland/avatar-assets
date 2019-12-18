@@ -10,21 +10,18 @@
     "shoes",
     "feet",
     "halloween"
-   ],
+  ],
   "category": "feet",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_Feet_Zombie.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_Zombie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Used (and a little bit rancid) but good to go!"
 }

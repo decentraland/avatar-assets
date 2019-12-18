@@ -9,21 +9,18 @@
     "exclusive",
     "halloween",
     "pants"
-   ],
+  ],
   "category": "lower_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseFemale", 
-"model": "F_lBody_BeeSuit.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "You'll be the talk of the hive in these striking black and gold bee leggings"
 }

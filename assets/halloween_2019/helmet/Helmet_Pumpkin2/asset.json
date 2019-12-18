@@ -9,7 +9,7 @@
     "exclusive",
     "halloween",
     "helmet"
-   ],
+  ],
   "category": "helmet",
   "replaces": [
     "tiara",
@@ -17,23 +17,24 @@
     "top_head",
     "mask",
     "eyewear"
-
-   ],
-   "hides": [
+  ],
+  "hides": [
     "hair",
     "earring",
     "facial_hair"
-   ],
-
+  ],
   "main": [
-{
-"type": "BaseMale", 
-"model": "Helmet_Pumpkin2.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "Helmet_Pumpkin2.glb"}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "Helmet_Pumpkin2.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Helmet_Pumpkin2.glb"
+    }
+  ],
+  "rarity": "swanky",
+  "description": "Flesh and seeds removed free of charge!"
 }

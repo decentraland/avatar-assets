@@ -10,21 +10,18 @@
     "halloween",
     "leggings",
     "pants"
-   ],
+  ],
   "category": "lower_body",
-  "replaces": [
-   ],
-   "hides": [
-   ],
-
+  "replaces": [],
+  "hides": [],
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_lBody_SkeletonSuit.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-}
-  ]
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_SkeletonSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Anatomically correct in a light-wearing, form-fitting design"
 }
