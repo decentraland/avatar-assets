@@ -1,0 +1,38 @@
+{
+  "name": "xmas_yellow_hat",
+  "i18n": {
+    "en": "Christmas Yellow Hat",
+    "es": "Sombrero Navideño Azul"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "christmas",
+    "cyber",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_YellowXmasHat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_YellowXmasHat.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Colour yourself Xmas."
+}

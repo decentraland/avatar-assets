@@ -1,0 +1,32 @@
+{
+  "name": "m_cyber_suit_upper_body",
+  "i18n": {
+    "en": "Cyber Suit",
+    "es": "Traje Cibernético"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "cyber",
+    "christmas"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_CyberSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": "Tron's a Xmas movie right?"
+}

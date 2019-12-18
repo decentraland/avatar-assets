@@ -1,0 +1,33 @@
+{
+  "name": "8bit_sweater_upper_body",
+  "i18n": {
+    "en": "8 Bit Christmas Sweater",
+    "es": "Sweater Navideño 8 Bit"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "cyber",
+    "christmas"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_XmasSweater_02.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_XmasSweater_02.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Even in virtual worlds there's no escape from the Xmas jumper."
+}

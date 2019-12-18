@@ -1,0 +1,34 @@
+{
+  "name": "xmas_sockets_feet",
+  "i18n": {
+    "en": "Christmas Sockets",
+    "es": "Medias Navideñas"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "christmas",
+    "cyber"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_XmasSockets.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_XmasSockets.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Embrace the spirit of Xmas—from top to toe."
+}

@@ -1,0 +1,34 @@
+{
+  "name": "sledge_sockets_feet",
+  "i18n": {
+    "en": "Sledge Shoes",
+    "es": "Zapatos de Trineo Navideño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "christmas",
+    "cyber"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_SledgeSockets.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_SledgeSockets.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "We don't recommend them for ice skating."
+}
