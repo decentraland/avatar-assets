@@ -33,6 +33,6 @@
       },
       {"type": "BaseMale", "model": "Eyewear_CyberPunkXmas.glb"}
         ],
-        "rarity": "mythic",
+        "rarity": "epic",
         "description": "Even cyberpunks celebrate Xmas."
       }
