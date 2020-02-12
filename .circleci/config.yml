@@ -31,15 +31,9 @@ jobs:
           name: Deploy to now.sh
           command: |
               export NOW_SITE=`[ $CIRCLE_BRANCH = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
-              cd dist && echo '/*\n!index.json' > .nowignore
-              cd dist && now alias $(now --scope decentraland $NOW_SITE --token $NOW_TOKEN .) $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
-      - run:
-          name: Ensure content on `content.decentraland.org`
-          command: |
-              curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-              unzip awscliv2.zip
-              sudo ./aws/install
-              aws sync dist/ s3://content.decentraland.org --include 'Qm*'
+              cd dist && echo '/*\n!index.json\n!expected.json\n!index.html' > .nowignore
+              now alias $(now --scope decentraland $NOW_SITE --token $NOW_TOKEN .) $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
+
 workflows:
   version: 2
   build-deploy:
