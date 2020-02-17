@@ -17,7 +17,14 @@
   "replaces": [
    ],
    "hides": [
-     "lower_body"
+     "lower_body",
+     "hair",
+     "hat",
+     "facial_hair",
+     "earring",
+     "eyewear",
+     "top_head",
+     "tiara"
    ],
 
   "main": [

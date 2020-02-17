@@ -23,13 +23,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_uBody_GreenGarment.glb", 
+"model": "M_uBody_OrangeGarment.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "M_uBody_OrangeGarment.glb"}
+{"type": "BaseFemale", "model": "F_uBody_OrangeGarment.glb"}
   ],
   "rarity": "legendary",
   "description": ""
