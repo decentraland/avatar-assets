@@ -1,0 +1,36 @@
+{
+  "name": "mch_huangzhong_upper_body",
+  "i18n": {
+    "en": "Huang Zhong T-Shirt",
+    "es": "Remera de Huang Zhong"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Huang Zhong",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_HuangZhong.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_HuangZhong.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}
