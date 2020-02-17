@@ -32,7 +32,7 @@
        "overrideHides": [
        ]
     },
-    {"type": "BaseFemale", "model": "Hat_Icecream.glb"}
+    {"type": "BaseFemale", "model": "Top_Head_Icecream.glb"}
       ],
       "rarity": "mythic",
       "description": ""
