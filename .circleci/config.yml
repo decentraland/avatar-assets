@@ -31,7 +31,9 @@ jobs:
           name: Deploy to now.sh
           command: |
               export NOW_SITE=`[ $CIRCLE_BRANCH = "release" ] && echo 'dcl-wearables' || echo 'dcl-wearables-dev'`
-              cd dist && now alias $(now --scope decentraland --name $NOW_SITE --token $NOW_TOKEN .)  $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
+              mv dist $NOW_SITE && cd $NOW_SITE && echo '/*\n!index.json\n!expected.json\n!index.html' > .nowignore
+              now alias $(now --confirm --scope decentraland --token $NOW_TOKEN .) $NOW_SITE.now.sh --scope decentraland --token $NOW_TOKEN
+
 workflows:
   version: 2
   build-deploy:
