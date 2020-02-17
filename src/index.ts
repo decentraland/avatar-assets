@@ -14,7 +14,7 @@ import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 
 if (!module.parent) {
-  runMain(['base-avatars', 'base-exclusive', 'halloween_2019', 'xmas_2019'])
+  runMain(['base-avatars', 'base-exclusive', 'halloween_2019', 'xmas_2019', 'dcg-collection', 'mch-collection'])
   .catch(error => console.log(error, error.stack))
 }
 
