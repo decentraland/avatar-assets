@@ -1,0 +1,43 @@
+{
+  "name": "f_cw_astronaut_helmet_helmet",
+  "i18n": {
+    "en": "Decentraland Astronaut Helmet",
+    "es": "Casco de Astronauta de Decentraland"
+  },
+
+  "tags": [
+    "exclusive",
+    "helmet",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring"
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_Helmet_DCLAstronaut.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

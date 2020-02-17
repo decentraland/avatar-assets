@@ -1,0 +1,36 @@
+{
+  "name": "m_cw_trendy_sport_shoes_feet",
+  "i18n": {
+    "en": "Trendy Sport Sandals",
+    "es": "Sandalias Trendy de Deporte"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_Sporty_Socks_In_Sandals.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_Feet_Sporty_Socks_In_Sandals.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

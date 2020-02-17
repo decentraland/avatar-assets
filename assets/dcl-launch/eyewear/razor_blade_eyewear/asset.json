@@ -1,0 +1,39 @@
+{
+  "name": "razor_blade_eyewear",
+  "i18n": {
+    "en": "Razor Blade Eyewear",
+    "es": "Anteojos de Razor Blade"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Eyewear_razorblade_goggles.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Eyewear_razorblade_goggles.glb"}
+        ],
+        "rarity": "mythic",
+        "description": ""
+      }

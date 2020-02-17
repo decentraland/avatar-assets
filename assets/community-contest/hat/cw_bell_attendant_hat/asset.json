@@ -1,0 +1,40 @@
+{
+  "name": "cw_bell_attendant_hat",
+  "i18n": {
+    "en": "Bell Attendant Hat",
+    "es": "Sombrero de Botones"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_BellAttendant.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_BellAttendant.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

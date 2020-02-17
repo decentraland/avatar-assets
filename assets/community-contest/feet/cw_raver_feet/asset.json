@@ -1,0 +1,36 @@
+{
+  "name": "cw_raver_feet",
+  "i18n": {
+    "en": "Raver Boots",
+    "es": "Botas de Raver"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_RaverShoes.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_RaverShoes.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cw_hot_dog_top_head",
+  "i18n": {
+    "en": "Sombrero de Hot Dog",
+    "es": "Sombrero de Pancho"
+  },
+  "tags": [
+    "accesories",
+    "top_head",
+    "hot",
+    "dog",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "top_head",
+  "replaces": [
+    "helmet",
+    "hat"
+   ],
+   "hides": [
+  
+   ],
+
+   "main": [
+    {
+    "type": "BaseMale", 
+    "model": "Top_Head_HotDog.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    },
+    {"type": "BaseFemale", "model": "Top_Head_HotDog.glb"}
+      ],
+      "rarity": "legendary",
+      "description": ""
+    }
+    
+    

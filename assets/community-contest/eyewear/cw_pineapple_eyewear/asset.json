@@ -1,0 +1,40 @@
+{
+  "name": "cw_pineapple_eyewear",
+  "i18n": {
+    "en": "Pineapple Eyewear",
+    "es": "Anteojos de Piña"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_PineappleGlasses.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_PineappleGlasses.glb"}
+        ],
+        "rarity": "epic",
+        "description": ""
+      }

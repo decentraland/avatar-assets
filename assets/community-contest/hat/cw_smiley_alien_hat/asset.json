@@ -1,0 +1,40 @@
+{
+  "name": "cw_smiley_alien_hat",
+  "i18n": {
+    "en": "Smiley Alien Hat",
+    "es": "Sombrero de Alien Sonriente"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_AlienOneEye.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_AlienOneEye.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

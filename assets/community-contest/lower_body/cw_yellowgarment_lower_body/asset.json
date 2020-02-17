@@ -1,0 +1,42 @@
+{
+  "name": "cw_yellowgarment_lower_body",
+  "i18n": {
+    "en": "Yellow Garment of Gratitude Trousers",
+    "es": "Pantalones de Prendas de Gratitud Amarillos"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+
+   ],
+
+  "main": [{
+    "type": "BaseMale", 
+    "model": "M_lBody_YellowGarment.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    },
+{
+"type": "BaseFemale", 
+"model": "F_lBody_YellowGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

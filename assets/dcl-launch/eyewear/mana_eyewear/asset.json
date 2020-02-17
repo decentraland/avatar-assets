@@ -1,0 +1,39 @@
+{
+  "name": "mana_eyewear",
+  "i18n": {
+    "en": "MANA Eyewear",
+    "es": "Anteojos de MANA"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_MANA.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_MANA.glb"}
+        ],
+        "rarity": "legendary",
+        "description": ""
+      }

@@ -1,0 +1,34 @@
+{
+  "name": "m_barbarian_lower_body",
+  "i18n": {
+    "en": "Barbarian Trousers",
+    "es": "Pantalones de Bárbaro"
+  },
+  "tags": [
+    "exclusive",
+    "20.02.20",
+    "pants",
+    "trousers",
+    "launch"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+
+{
+  "type": "BaseMale", 
+  "model": "M_lBody_Barbarian.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

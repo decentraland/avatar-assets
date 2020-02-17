@@ -1,0 +1,39 @@
+{
+  "name": "cw_hat_of_wonder_hat",
+  "i18n": {
+    "en": "Hat of Wonder",
+    "es": "Sombrero de Maravilla"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Hat_Of_Wonder.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

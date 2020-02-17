@@ -1,0 +1,36 @@
+{
+  "name": "cw_aviator_coat_upper_body",
+  "i18n": {
+    "en": "Aviator Coat",
+    "es": "Campera de Aviador"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Aviator.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Aviator.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

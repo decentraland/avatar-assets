@@ -1,0 +1,40 @@
+{
+  "name": "cw_western_hat",
+  "i18n": {
+    "en": "Western Hat",
+    "es": "Sombrero Western"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_WesternHat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_WesternHat.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

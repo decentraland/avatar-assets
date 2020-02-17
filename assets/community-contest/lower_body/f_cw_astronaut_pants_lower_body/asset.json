@@ -1,0 +1,35 @@
+{
+  "name": "f_cw_astronaut_pants_lower_body",
+  "i18n": {
+    "en": "Decentraland Astronaut Pants",
+    "es": "Pantalones de Astronauta de Decentraland"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+
+   ],
+
+  "main": [{
+    "type": "BaseFemale", 
+    "model": "F_lBody_DCLAstronaut.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    }
+
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

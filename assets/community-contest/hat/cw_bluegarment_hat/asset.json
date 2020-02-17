@@ -1,0 +1,40 @@
+{
+  "name": "cw_bluegarment_hat",
+  "i18n": {
+    "en": "Blue Garment of Gratitude Hat",
+    "es": "Sombrero Azul de Prendas de Gratitud"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_BlueGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_BlueGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

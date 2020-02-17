@@ -1,0 +1,40 @@
+{
+  "name": "cw_greengarment_hat",
+  "i18n": {
+    "en": "Green Garment of Gratitude Hat",
+    "es": "Sombrero Verde de Prendas de Gratitud"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_GreenGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_GreenGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}
