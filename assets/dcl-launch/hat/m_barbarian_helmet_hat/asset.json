@@ -27,7 +27,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Helmet_Barbarian.glbM_Hat_DCL_Logo.glb", 
+"model": "M_Helmet_Barbarian.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
