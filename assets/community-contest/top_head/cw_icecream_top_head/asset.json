@@ -1,7 +1,7 @@
 {
   "name": "cw_icecream_top_head",
   "i18n": {
-    "en": "Sombrero de Helado",
+    "en": "Icecream Hat",
     "es": "Sombrero de Helado"
   },
   "tags": [
@@ -26,7 +26,7 @@
    "main": [
     {
     "type": "BaseMale", 
-    "model": "Hat_Icecream.glb", 
+    "model": "Top_Head_Icecream.glb", 
     "overrideReplaces": [
        ],
        "overrideHides": [
