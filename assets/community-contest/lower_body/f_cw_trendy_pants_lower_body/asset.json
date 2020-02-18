@@ -1,5 +1,5 @@
 {
-  "name": "m_cw_trendy_sport_pants_lower_body",
+  "name": "f_cw_trendy_pants_lower_body",
   "i18n": {
     "en": "Trandy Sport Pants",
     "es": "Pantalones Trendy Deportivos"
@@ -21,8 +21,8 @@
    ],
 
   "main": [{
-    "type": "BaseMale", 
-    "model": "M_lBody_Sporty_Pants_Male.glb", 
+    "type": "BaseFemale", 
+    "model": "F_lBody_SportyPants.glb", 
     "overrideReplaces": [
        ],
        "overrideHides": [
