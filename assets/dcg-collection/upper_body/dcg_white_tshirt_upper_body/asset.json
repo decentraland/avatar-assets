@@ -1,17 +1,17 @@
 {
-  "name": "mch_wrightbrother_upper_body",
+  "name": "dcg_white_tshirt_upper_body",
   "i18n": {
-    "en": "Wright Brothers T-Shirt",
-    "es": "Remera de Wright Brothers"
+    "en": "DCG White T Shirt",
+    "es": "Remera de DCG Blanca"
   },
   "tags": [
-    "my",
-    "crypto",
+    "DCG",
     "exclusive",
-    "heros",
-    "MCH",
+    "tshirt",
+    "digital",
+    "currency",
+    "group",
     "decentraland",
-    "Wright Brothers",
     "wearables"
    ],
   "category": "upper_body",
@@ -23,13 +23,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_uBody_MCH_WrightBrother.glb", 
+"model": "M_uBody_DCG_WhiteTshirt.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "F_uBody_MCH_WrightBrother.glb"}
+{"type": "BaseFemale", "model": "F_uBody_DCG_WhiteTShirt.glb"}
   ],
   "rarity": "legendary",
   "description": ""
