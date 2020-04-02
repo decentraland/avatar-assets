@@ -14,10 +14,7 @@
    ],
   "category": "mask",
   "replaces": [
-    "helmet",
-    "tiara",
-    "hat",
-    "eyewear"
+    "helmet"
    ],
    "hides": [
     "facial_hair"

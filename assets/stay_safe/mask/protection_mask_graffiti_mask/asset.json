@@ -1,8 +1,8 @@
 {
-  "name": "protection_mask_wild_mask",
+  "name": "protection_mask_graffiti_mask",
   "i18n": {
-    "en": "Wild Protection Mask",
-    "es": "Barbijo con Estampa de Jungla Pop"
+    "en": "Graffiti Protection Mask",
+    "es": "Barbijo con Estampa de Grafitti"
   },
   "tags": [
     "accesories",
@@ -14,10 +14,7 @@
    ],
   "category": "mask",
   "replaces": [
-    "helmet",
-    "tiara",
-    "hat",
-    "eyewear"
+    "helmet"
    ],
    "hides": [
     "facial_hair"
@@ -26,12 +23,12 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "protection_mask_wild_mask.glb", 
+"model": "protection_mask_graffiti_mask.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "protection_mask_wild_mask.glb"}
+{"type": "BaseFemale", "model": "protection_mask_graffiti_mask.glb"}
   ]
 }

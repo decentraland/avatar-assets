@@ -1,8 +1,8 @@
 {
-  "name": "protection_mask_creepy_mask",
+  "name": "protection_mask_skull_mask",
   "i18n": {
-    "en": "Creepy Protection Mask",
-    "es": "Barbijo con Estampa Creepy"
+    "en": "Skull Protection Mask",
+    "es": "Barbijo con Estampa de Calavera"
   },
   "tags": [
     "accesories",
@@ -14,10 +14,7 @@
    ],
   "category": "mask",
   "replaces": [
-    "helmet",
-    "tiara",
-    "hat",
-    "eyewear"
+    "helmet"
    ],
    "hides": [
     "facial_hair"
@@ -26,12 +23,12 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "protection_mask_creepy_mask.glb", 
+"model": "protection_mask_skull_mask.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "protection_mask_creepy_mask.glb"}
+{"type": "BaseFemale", "model": "protection_mask_skull_mask.glb"}
   ]
 }
