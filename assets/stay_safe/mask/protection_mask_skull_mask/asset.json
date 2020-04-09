@@ -30,5 +30,7 @@
    ]
 },
 {"type": "BaseFemale", "model": "protection_mask_skull_mask.glb"}
-  ]
+  ],
+  "rarity": "epic",
+  "description": ""
 }
