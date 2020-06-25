@@ -1,0 +1,34 @@
+{
+  "name": "dg_tracksuit_bottom_lower_body",
+  "i18n": {
+    "en": "Tracksuit bottom",
+    "es": "Chandal inferior"
+  },
+  "tags": [
+    "tracksuit",
+    "bottom",
+    "decentral games",
+    "coat"
+   ],
+  "category": "lower_body",
+  "replaces": [
+  
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"tracksuit_bottom_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "tracksuit_bottom_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "The bottom of the decadent and elegant Decentral Games tracksuit fit. #drip"
+}

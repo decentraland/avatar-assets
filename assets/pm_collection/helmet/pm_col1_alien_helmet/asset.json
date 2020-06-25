@@ -1,0 +1,31 @@
+{
+  "name": "pm_col1_alien_helmet",
+  "i18n": {
+    "en": "Alien Helmet",
+    "es": "Casco Alien"
+  },
+  "tags": [
+    "helmet", "alien", "ufo", "et", "extraterrestrial"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "mask", "tiara", "hat", "helmet", "top_head" 
+   ],
+   "hides": [
+    "earring", "hair", "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_helmet_Alien_01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_helmet_Alien_01.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "An out of this world hat for the believers"
+}

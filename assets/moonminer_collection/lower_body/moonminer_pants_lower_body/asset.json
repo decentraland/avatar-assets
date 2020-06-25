@@ -1,0 +1,30 @@
+{
+  "name": "moonminer_pants_lower_body",
+  "i18n": {
+    "en": "Dappcraft - Moonminer cool Pants"
+  },
+  "tags": [
+    "test",
+    "feet"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_moonminer_pants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_pants.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "test decription"
+}

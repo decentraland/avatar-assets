@@ -1,0 +1,41 @@
+{
+  "name": "meteorite_dustmask_mask",
+  "i18n": {
+    "en": "Meteorite dustmask",
+    "es": "Máscare de polvo de meteorito"
+  },
+
+  "tags": [
+    "WonderZone",
+    "exclusive", 
+    "decentraland",
+    "mana",
+    "meteorchaser",
+    "mask",
+    "dustmask",
+    "community",
+    "licensed",
+    "meteor"
+   ],
+  "category": "mask",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "facial_hair"
+   ],
+
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_Mask_meteorite_dustmask.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseFemale", "model": "F_Mask_meteorite_dustmask.glb"}
+        ],
+        "rarity": "legendary",
+        "description": "Crafting reward from WonderZone. Gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
+      }

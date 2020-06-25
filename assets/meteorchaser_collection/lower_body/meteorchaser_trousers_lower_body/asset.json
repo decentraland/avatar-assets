@@ -1,0 +1,40 @@
+{
+  "name": "meteorchaser_trousers_lower_body",
+  "i18n": {
+    "en": "Trousers of the meteorchaser",
+    "es": "Pantalones del meteorchaser"
+  },
+
+  "tags": [
+    "WonderZone",
+    "exclusive", 
+    "decentraland",
+    "mana",
+    "pants",
+    "trousers",
+    "meteorchaser",
+    "licensed",
+    "community"
+   ],
+  "category": "lower_body",
+  "replaces": [
+
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_Lower_body_trousers_of_the_meteorchaser.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseFemale", "model": "F_Lower_body_trousers_of_the_meteorchaser.glb"}
+        ],
+        "rarity": "legendary",
+        "description": "Crafting reward from WonderZone. Gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
+      }

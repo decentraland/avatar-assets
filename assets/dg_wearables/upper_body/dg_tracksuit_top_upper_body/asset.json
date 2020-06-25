@@ -1,0 +1,34 @@
+{
+  "name": "dg_tracksuit_top_upper_body",
+  "i18n": {
+    "en": "Tracksuit top",
+    "es": "Chandal superior"
+  },
+  "tags": [
+    "tracksuit",
+    "top",
+    "decentral games",
+    "coat"
+   ],
+  "category": "upper_body",
+  "replaces": [
+    "upper_body"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"tracksuit_top_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "tracksuit_top_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "The top of the decadent and elegant Decentral Games tracksuit fit. #drip"
+}
