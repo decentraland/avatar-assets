@@ -2,13 +2,13 @@ import * as AWS from 'aws-sdk'
 import * as mimeTypes from 'mime-types'
 import { promisify } from 'util'
 
-const ACCESS_KEY = process.env['AWS_ACCESS_KEY'] || ''
-const ACCESS_SECRET = process.env['AWS_ACCESS_SECRET'] || ''
+const ACCESS_KEY = process.env['UPLOAD_ACCESS_KEY'] || ''
+const ACCESS_SECRET = process.env['UPLOAD_ACCESS_SECRET'] || ''
 if (!ACCESS_KEY || !ACCESS_SECRET) {
-  throw new Error('You need to add an AWS key and secret to the env. Vars: AWS_ACCESS_KEY and AWS_ACCESS_SECRET')
+  throw new Error('You need to add an AWS key and secret to the env. Vars: UPLOAD_ACCESS_KEY and UPLOAD_ACCESS_SECRET')
 }
 
-const BUCKET_NAME = process.env['AWS_BUCKET_NAME'] || ''
+const BUCKET_NAME = process.env['UPLOAD_BUCKET_NAME'] || ''
 if (!BUCKET_NAME) {
   throw new Error('You need to add an AWS bucket name to the env. Var: AWS_BUCKET_NAME')
 }
