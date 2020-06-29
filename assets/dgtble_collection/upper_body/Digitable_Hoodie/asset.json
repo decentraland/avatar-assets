@@ -1,0 +1,34 @@
+{
+  "name": "dgtble_hoodi_linetang_upper_body",
+  "i18n": {
+    "en": "The Headspace Linetangles Hoodie",
+    "es": "The Headspace Capucha con Linetangles"  },
+  "tags": [
+    "headspace",
+   "sacred",
+   "geometry",
+   "danielprust",
+   "festival",
+   "digitible"
+   ],
+  "category": "jackets",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    "upper_body"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Hood_C01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "Linetangles is a licensed artwork from Daniel Prust whose aysyemetric patterns and abstract designs  deliver an experimental style that transforms outlandish dreams into pleasing aesthetics. " 
+}
