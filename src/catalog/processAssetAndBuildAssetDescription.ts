@@ -2,7 +2,6 @@ import { readdirSync, readFileSync, mkdirSync, writeFileSync } from 'fs'
 import { join, resolve, basename, dirname } from 'path'
 import { processAsset } from '../assets/processAsset'
 import { createAssetDescriptionFromFolder } from '../description/fromFolder'
-import { uploadAssetFiles } from '../s3/uploadAssetFiles'
 
 export async function processAssetAndBuildAssetDescription(
   sourceFolderAbsPath: string,
@@ -40,7 +39,7 @@ export async function processAssetAndBuildAssetDescription(
     collectionName
   })
 
-  await uploadAssetFiles(targetFolderNameAbsPath)
+  // await uploadAssetFiles(targetFolderNameAbsPath)
 
   return assetDescriptor
 }

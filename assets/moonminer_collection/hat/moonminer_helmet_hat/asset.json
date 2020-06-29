@@ -1,31 +1,22 @@
 {
+  "id": "moonminer_helmet",
   "name": "moonminer_helmet",
   "i18n": {
     "en": "Dappcraft - Moonminer Helmet"
   },
-  "tags": [
-    "test",
-    "helmet"
-   ],
+  "tags": ["test", "helmet"],
   "category": "feet",
-  "replaces": [
-   "mask", "tiara", "hat", "helmet", "top_head"
-   ],
-   "hides": [
-   "earring", "hair"
-   ],
+  "replaces": ["mask", "tiara", "hat", "helmet", "top_head"],
+  "hides": ["earring", "hair"],
 
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_moonminer_helmet.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", 
-"model": "F_moonminer_helmet.glb"}
+    {
+      "type": "BaseMale",
+      "model": "M_moonminer_helmet.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_moonminer_helmet.glb" }
   ],
   "rarity": "legendary",
   "description": "test decription"

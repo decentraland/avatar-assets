@@ -1,32 +1,23 @@
 {
+  "id": "moonminer_glasses_eyewear",
   "name": "moonminer_glasses_eyewear",
   "i18n": {
     "en": "Dappcraft - Moonminer boots"
   },
-  "tags": [
-    "test",
-    "eyewear"
-   ],
+  "tags": ["test", "eyewear"],
   "category": "eyewear",
-  
-  "replaces": [
-   "mask", 
-   "eyewear"
-   ],
-   "hides": [
-   ],
+
+  "replaces": ["mask", "eyewear"],
+  "hides": [],
 
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_moonminer_glasses.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", 
-"model": "F_moonminer_glasses.glb"}
+    {
+      "type": "BaseMale",
+      "model": "M_moonminer_glasses.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_moonminer_glasses.glb" }
   ],
   "rarity": "legendary",
   "description": "test decription"

@@ -1,29 +1,22 @@
 {
+  "id": "moonminer_boots_feet",
   "name": "moonminer_boots_feet",
   "i18n": {
-    "en": "Dappcraft - Moonminer boots",
+    "en": "Dappcraft - Moonminer boots"
   },
-  "tags": [
-    "test",
-    "feet"
-   ],
+  "tags": ["test", "feet"],
   "category": "feet",
-  "replaces": [
-   ],
-   "hides": [
-   ],
+  "replaces": [],
+  "hides": [],
 
   "main": [
-{
-"type": "BaseMale", 
-"model": "M_moonminer_boots.glb", 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", 
-"model": "F_moonminer_boots.glb"}
+    {
+      "type": "BaseMale",
+      "model": "M_moonminer_boots.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_moonminer_boots.glb" }
   ],
   "rarity": "legendary",
   "description": "test decription"

@@ -69,15 +69,39 @@ export async function runMain(collectionFolders: string[]) {
   writeFileSync(join(distAbsPath, 'index.html'), jsonResult)
 
   for (let collectionFolder of collectionFolders) {
-    const categoryFolderAbsPath = getAssetFolderAbsPath(collectionFolder)
-    console.log('Generating content addressable files...')
-    const assetFolders = mapCategoryFolders[collectionFolder]
-    await Promise.all(
-      assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
-    )
+    try {
+      const categoryFolderAbsPath = getAssetFolderAbsPath(collectionFolder)
+      console.log('Generating content addressable files...')
+      const assetFolders = mapCategoryFolders[collectionFolder]
+      await Promise.all(
+        assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
+      )
+    } catch (e) {
+      console.error(`Error in ${collectionFolder}: ${e.stack}`)
+    }
   }
-  console.log(JSON.stringify(allResponses.map(_ => _.id).map(_ => _.split('/')[3]).map(_ => ({ wearableId: _, maxIssuance: 0})), null, 2))
-  // console.log(JSON.stringify(allResponses.map(_ => _.id)))
+  console.log(JSON.stringify(
+    allResponses
+      .map((_, index) => {
+        if (_ === null) {
+          console.log(`Warning! Element ${index} of "allResponses" is null`)
+        }
+        return _
+      })
+      .filter(_ => !!_)
+      .map(_ => {
+        try {
+          return _.id
+        } catch (e) {
+          console.error(`Can't get element "id" of object ${JSON.stringify(_)}`)
+          throw e
+        }
+      })
+      .map(_ => _.split('/')[3])
+      .map(_ => ({ wearableId: _, maxIssuance: 0})),
+    null,
+    2
+  ))
 
   console.log('Cleaning up temporary files...')
   workingFolder.removeCallback()

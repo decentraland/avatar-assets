@@ -66,7 +66,7 @@ export async function processAsset(sourceFolder: string, destinationFolder: stri
     try {
       await outputTexturesFromGLB(fullGlbFilepath, destinationFolder)
     } catch (err) {
-      console.error(err.message)
+      console.error(err.stack)
     }
   }
   const extraTags = []
