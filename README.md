@@ -18,4 +18,4 @@ make test && make catalog
 
 ### AWS
 
-Use `UPLOAD_BUCKET_NAME` for the name of the bucket.
+Use `UPLOAD_BUCKET_NAME` for the name of the bucket. Using `content-asset.decentraland.org` for production.
