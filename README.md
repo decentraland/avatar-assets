@@ -15,3 +15,7 @@ make test && make catalog
 ## Pipeline
 
 `make catalog` generates a new version of all the asset packs under the `assets` folder. All the files are stored in the `dist` folder, separated by asset pack.
+
+### AWS
+
+Use `UPLOAD_BUCKET_NAME` for the name of the bucket.
