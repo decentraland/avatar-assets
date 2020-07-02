@@ -1,14 +1,14 @@
 {
   "name": "ms_metafactory_upper_body",
   "i18n": {
-    "en": "Metafactory Soccer T-Shirt",
-    "es": "Remera de fútbol de Metafactory"
+    "en": "MetaFactory Soccer T-Shirt",
+    "es": "Remera de fútbol de MetaFactory"
   },
   "tags": [
     "tshirt",
     "moonshot",
     "soccer",
-    "Metafactory",
+    "metafactory",
     "upper",
     "body",
     "mana"
@@ -31,5 +31,5 @@
 {"type": "BaseFemale", "model": "F_uBody_MetaFactory.glb"}
   ],
   "rarity": "legendary",
-  "description": "Metafactory Soccer T-Shirt - Moonshot Tournament 2020"
+  "description": "MetaFactory Soccer T-Shirt - Moonshot Tournament 2020"
 }

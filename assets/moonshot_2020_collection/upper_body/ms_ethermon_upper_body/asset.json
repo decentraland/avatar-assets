@@ -1,14 +1,14 @@
 {
-  "name": "ms_crucible_upper_body",
+  "name": "ms_ethermon_upper_body",
   "i18n": {
-    "en": "Crucible Soccer T-Shirt",
-    "es": "Remera de fútbol de Crucible"
+    "en": "Ethermon Soccer T-Shirt",
+    "es": "Remera de fútbol de Ethermon"
   },
   "tags": [
     "tshirt",
     "moonshot",
     "soccer",
-    "Crucible",
+    "ethermon",
     "upper",
     "body",
     "mana"
@@ -22,14 +22,14 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_uBody_Crucible.glb", 
+"model": "M_uBody_Ethermon.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "F_uBody_Crucible.glb"}
+{"type": "BaseFemale", "model": "F_uBody_Ethermon.glb"}
   ],
   "rarity": "legendary",
-  "description": "Crucible Soccer T-Shirt - Moonshot Tournament 2020"
+  "description": "Ethermon Soccer T-Shirt - Moonshot Tournament 2020"
 }

@@ -1,14 +1,14 @@
 {
   "name": "ms_sorare_upper_body",
   "i18n": {
-    "en": "SoRare Soccer T-Shirt",
-    "es": "Remera de fútbol de SoRare"
+    "en": "Sorare Soccer T-Shirt",
+    "es": "Remera de fútbol de Sorare"
   },
   "tags": [
     "tshirt",
     "moonshot",
     "soccer",
-    "SoRare",
+    "sorare",
     "upper",
     "body",
     "mana"
@@ -19,15 +19,15 @@
   "main": [
     {
       "type": "BaseMale",
-      "model": "M_uBody_SoRare.glb",
+      "model": "M_uBody_Sorare.glb",
       "overrideReplaces": [],
       "overrideHides": []
     },
     {
       "type": "BaseFemale",
-      "model": "F_uBody_SoRare.glb"
+      "model": "F_uBody_Sorare.glb"
     }
   ],
   "rarity": "legendary",
-  "description": "SoRare Soccer T-Shirt - Moonshot Tournament 2020"
+  "description": "Sorare Soccer T-Shirt - Moonshot Tournament 2020"
 }

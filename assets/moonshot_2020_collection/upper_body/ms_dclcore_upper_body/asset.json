@@ -1,14 +1,14 @@
 {
   "name": "ms_dclcore_upper_body",
   "i18n": {
-    "en": "DCLCore Soccer T-Shirt",
-    "es": "Remera de fútbol de DCLCore"
+    "en": "DCL Core Soccer T-Shirt",
+    "es": "Remera de fútbol de DCL Core"
   },
   "tags": [
     "tshirt",
     "moonshot",
     "soccer",
-    "DCLCore",
+    "dcl core",
     "upper",
     "body",
     "mana"
@@ -31,5 +31,5 @@
 {"type": "BaseFemale", "model": "F_uBody_DCLCore.glb"}
   ],
   "rarity": "legendary",
-  "description": "DCLCore Soccer T-Shirt - Moonshot Tournament 2020"
+  "description": "DCL Core Soccer T-Shirt - Moonshot Tournament 2020"
 }
