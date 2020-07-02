@@ -1,0 +1,33 @@
+{
+  "name": "ms_mintbase_upper_body",
+  "i18n": {
+    "en": "Mintbase Soccer T-Shirt",
+    "es": "Remera de fútbol de Mintbase"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "Mintbase",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_MintBase.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_MintBase.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Mintbase Soccer T-Shirt - Moonshot Tournament 2020"
+}

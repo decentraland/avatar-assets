@@ -1,0 +1,33 @@
+{
+  "name": "ms_nonfungible_upper_body",
+  "i18n": {
+    "en": "Non Fungible Soccer T-Shirt",
+    "es": "Remera de fútbol de Non Fungible"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "Non Fungible",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_NonFungible.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_NonFungible.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Non Fungible Soccer T-Shirt - Moonshot Tournament 2020"
+}

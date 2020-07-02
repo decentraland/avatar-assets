@@ -1,0 +1,35 @@
+{
+  "name": "ms_dclgames_upper_body",
+  "i18n": {
+    "en": "Decentraland Games Soccer T-Shirt",
+    "es": "Remera de fútbol de Decentraland Games"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "Decentraland Games",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_DecentralandGames.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_DecentralandGames.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Decentraland Games Soccer T-Shirt - Moonshot Tournament 2020"
+}

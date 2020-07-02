@@ -1,0 +1,35 @@
+{
+  "name": "ms_gamecredits_upper_body",
+  "i18n": {
+    "en": "Game Credits Soccer T-Shirt",
+    "es": "Remera de fútbol de Game Credits"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "Game Credits",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_GameCredits.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_GameCredits.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Game Credits Soccer T-Shirt - Moonshot Tournament 2020"
+}

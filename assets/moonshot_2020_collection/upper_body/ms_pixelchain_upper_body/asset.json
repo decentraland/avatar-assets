@@ -1,0 +1,33 @@
+{
+  "name": "ms_pixelchain_upper_body",
+  "i18n": {
+    "en": "PixelChain Soccer T-Shirt",
+    "es": "Remera de fútbol de PixelChain"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "PixelChain",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_PixelChain.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_PixelChain.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "PixelChain Soccer T-Shirt - Moonshot Tournament 2020"
+}
