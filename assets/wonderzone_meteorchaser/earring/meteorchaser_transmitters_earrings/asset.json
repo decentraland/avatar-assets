@@ -1,7 +1,7 @@
 {
-  "name": "meteorite_transmitters_earrings",
+  "name": "meteorchaser_transmitters_earrings",
   "i18n": {
-    "en": "Meteorite transmitters",
+    "en": "Meteorchaser transmitters",
     "es": "Transmisores de meteoritos"
   },
 
@@ -29,13 +29,13 @@
   "main": [
     {
       "type": "BaseMale", 
-      "model": "M_Earrings_Meteorite_transmitters.glb", 
+      "model": "M_Earrings_Meteorchaser_transmitters.glb", 
       "overrideReplaces": [
          ],
          "overrideHides": [
          ]
       },
-      {"type": "BaseFemale", "model": "F_Earrings_meteorite_transmitters.glb"}
+      {"type": "BaseFemale", "model": "F_Earrings_Meteorchaser_transmitters.glb"}
         ],
         "rarity": "legendary",
         "description": "Crafting reward from WonderZone. Gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
