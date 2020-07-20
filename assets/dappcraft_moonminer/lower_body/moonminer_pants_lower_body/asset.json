@@ -2,22 +2,26 @@
   "id": "moonminer_pants_lower_body",
   "name": "moonminer_pants_lower_body",
   "i18n": {
-    "en": "Dappcraft - Moonminer cool Pants"
-  },
-  "tags": ["test", "feet"],
+    "en": "DappCraft Moon Miner Trousers"},
+  "tags": ["moon","lower_body", "electro", "space"],
   "category": "lower_body",
-  "replaces": [],
-  "hides": [],
+  "replaces": [
+   ],
+   "hides": [
+   ],
 
   "main": [
-    {
-      "type": "BaseMale",
-      "model": "M_moonminer_pants.glb",
-      "overrideReplaces": [],
-      "overrideHides": []
-    },
-    { "type": "BaseFemale", "model": "F_moonminer_pants.glb" }
+{
+"type": "BaseMale", 
+"model": "M_moonminer_pants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_pants.glb"}
   ],
   "rarity": "legendary",
-  "description": "test decription"
+  "description": "Keep them away from sunlight. Colors might change."
 }

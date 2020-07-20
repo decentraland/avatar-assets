@@ -2,9 +2,9 @@
   "id": "moonminer_helmet",
   "name": "moonminer_helmet",
   "i18n": {
-    "en": "Dappcraft - Moonminer Helmet"
+    "en": "DappCraft Moon Miner Helmet"
   },
-  "tags": ["test", "helmet"],
+  "tags": ["dappcraft", "helmet", "moon", "miner", "space"],
   "category": "feet",
   "replaces": ["mask", "tiara", "hat", "helmet", "top_head"],
   "hides": ["earring", "hair"],
@@ -19,5 +19,5 @@
     { "type": "BaseFemale", "model": "F_moonminer_helmet.glb" }
   ],
   "rarity": "legendary",
-  "description": "test decription"
+  "description": "New level of crypto mining. Your brain is now connected to the neuro mining pool. Instant payouts. "
 }

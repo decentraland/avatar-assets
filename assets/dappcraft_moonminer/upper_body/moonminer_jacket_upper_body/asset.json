@@ -2,22 +2,28 @@
   "id": "moonminer_jacket_upper_body",
   "name": "moonminer_jacket_upper_body",
   "i18n": {
-    "en": "Dappcraft - Moonminer cool Jacket"
+    "en": "DappCraft Moon Miner Jacket",
   },
-  "tags": ["test", "feet"],
+  "tags": [
+    "style","electric", "dappcraft",'neon'],
   "category": "upper_body",
-  "replaces": [],
-  "hides": [],
+  "replaces": [
+   ],
+   "hides": [
+   ],
 
   "main": [
-    {
-      "type": "BaseMale",
-      "model": "M_moonminer_jacket.glb",
-      "overrideReplaces": [],
-      "overrideHides": []
-    },
-    { "type": "BaseFemale", "model": "F_moonminer_jacket.glb" }
+{
+"type": "BaseMale", 
+"model": "M_moonminer_jacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_jacket.glb"}
   ],
   "rarity": "legendary",
-  "description": "test decription"
+  "description": "Moonlight will recharge these  trousers to keep neon effect going"
 }
