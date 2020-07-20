@@ -1,5 +1,5 @@
 {
-  "name": "meteorchaser_transmitters_earrings",
+  "name": "meteorchaser_transmitter_earring",
   "i18n": {
     "en": "Meteorchaser transmitters",
     "es": "Transmisores de meteoritos"
@@ -18,7 +18,7 @@
     "meteor",
     "transmitter"
    ],
-  "category": "earrings",
+  "category": "earring",
   "replaces": [
 
    ],
