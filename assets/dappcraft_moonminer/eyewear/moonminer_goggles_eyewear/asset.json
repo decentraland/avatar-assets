@@ -1,6 +1,6 @@
 {
-  "id": "moonminer_glasses_eyewear",
-  "name": "moonminer_glasses_eyewear",
+  "id": "moonminer_goggles_eyewear",
+  "name": "moonminer_goggles_eyewear",
   "i18n": {
     "en": "Dappcraft - Moonminer boots"
   },
@@ -13,11 +13,11 @@
   "main": [
     {
       "type": "BaseMale",
-      "model": "M_moonminer_glasses.glb",
+      "model": "M_moonminer_goggles.glb",
       "overrideReplaces": [],
       "overrideHides": []
     },
-    { "type": "BaseFemale", "model": "F_moonminer_glasses.glb" }
+    { "type": "BaseFemale", "model": "F_moonminer_goggles.glb" }
   ],
   "rarity": "legendary",
   "description": "test decription"

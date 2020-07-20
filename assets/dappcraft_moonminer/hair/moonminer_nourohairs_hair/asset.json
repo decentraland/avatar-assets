@@ -1,11 +1,11 @@
 {
-  "id": "moonminer_hairs",
-  "name": "moonminer_hairs",
+  "id": "moonminer_neurohairs_hair",
+  "name": "moonminer_neurohairs_hair",
   "i18n": {
     "en": "Dappcraft - Moonminer neuro-hairs"
   },
   "tags": ["test", "hairs"],
-  "category": "hairs",
+  "category": "hair",
   "replaces": [],
   "hides": [],
 
