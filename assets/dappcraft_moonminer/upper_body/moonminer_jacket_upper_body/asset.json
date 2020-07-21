@@ -2,10 +2,10 @@
   "id": "moonminer_jacket_upper_body",
   "name": "moonminer_jacket_upper_body",
   "i18n": {
-    "en": "DappCraft Moon Miner Jacket",
+    "en": "DappCraft Moon Miner Jacket"
   },
   "tags": [
-    "style","electric", "dappcraft",'neon'],
+    "style","electric", "dappcraft","neon"],
   "category": "upper_body",
   "replaces": [
    ],
