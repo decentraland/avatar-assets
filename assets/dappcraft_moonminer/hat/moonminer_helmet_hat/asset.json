@@ -5,7 +5,7 @@
     "en": "DappCraft Moon Miner Helmet"
   },
   "tags": ["dappcraft", "helmet", "moon", "miner", "space"],
-  "category": "feet",
+  "category": "helmet",
   "replaces": ["mask", "tiara", "hat", "helmet", "top_head"],
   "hides": ["earring", "hair"],
 
