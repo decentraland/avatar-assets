@@ -1,0 +1,35 @@
+{
+  "name": "binance_us_hat",
+  "i18n": {
+    "en": "Binance US Hat",
+    "es": "Gorra de Binance US"
+  },
+  "tags": [
+    "binance",
+    "us",
+    "hat",
+    "decentraland"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_BinanceUS_Hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_BinanceUS_Hat.glb"}
+  ],
+  "rarity": "uncommon",
+  "description": "Binance US Hat"
+}
