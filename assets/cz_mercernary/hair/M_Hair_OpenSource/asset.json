@@ -1,0 +1,35 @@
+
+{
+  "name": "M_Hair_OpenSource",
+  "i18n": {
+    "en": "Open-Source Brain",
+    "es": "Cerebro de fuente abierta"
+  },
+  "tags": [
+    "hair",
+    "brain",
+    "opensource",
+    "corona zombies"
+   ],
+  "category": "hair",
+  "replaces": [
+    "hat"
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hair_OpenSource.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseMale", "model": "M_Hair_OpenSource.glb"}
+  ],
+  "rarity": "legendary",
+"description": "tbd"
+}
