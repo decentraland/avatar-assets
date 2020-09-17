@@ -1,6 +1,6 @@
 
 {
-  "name": "M_Hair_OpenSource",
+  "name": "open_source_brain_hair",
   "i18n": {
     "en": "Open-Source Brain",
     "es": "Cerebro de fuente abierta"
@@ -16,7 +16,6 @@
     "hat"
    ],
    "hides": [
-    "hair"
    ],
 
   "main": [
