@@ -1,0 +1,39 @@
+{
+  "name": "open_source_brain_hat",
+  "i18n": {
+    "en": "open_source_brain",
+    "es": "open_source_brain"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hair_OpenSource.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_Hair_OpenSource.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}
