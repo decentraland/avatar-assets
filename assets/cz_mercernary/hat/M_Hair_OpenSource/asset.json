@@ -1,6 +1,6 @@
 
 {
-  "name": "open_source_brain_hair",
+  "name": "open_source_brain_hat",
   "i18n": {
     "en": "Open-Source Brain",
     "es": "Cerebro de fuente abierta"
@@ -11,11 +11,11 @@
     "opensource",
     "corona zombies"
    ],
-  "category": "hair",
+  "category": "hat",
   "replaces": [
-    "hat"
    ],
    "hides": [
+     "hair"
    ],
 
   "main": [
