@@ -1,26 +1,24 @@
 {
-  "name": "open_source_brain_hat",
+  "name": "open_source_brain_helmet",
   "i18n": {
-    "en": "open_source_brain",
-    "es": "open_source_brain"
+    "en": "Open-Source_Brain",
+    "es": "Cerebro de Fuente Abierta"
   },
   "tags": [
-    "hat",
-    "exclusive",
-    "launch",
-    "20.02.20",
-    "decentraland",
-    "mana"
-   ],
-  "category": "hat",
-  "replaces": [
     "helmet",
-    "tiara",
+    "brain",
+    "opensource",
+    "corona",
+    "zombies"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "hat",
     "top_head"
 
    ],
    "hides": [
-    
+    "hair"
    ],
 
   "main": [
@@ -34,6 +32,6 @@
 },
 {"type": "BaseFemale", "model": "M_Hair_OpenSource.glb"}
   ],
-  "rarity": "epic",
+  "rarity": "legendary",
   "description": ""
 }
