@@ -1,0 +1,34 @@
+{
+    "name": "yumi_eyes",
+    "i18n": {
+      "en": "Yumi Eyes",
+      "es": "Ojos de Yumi"
+    },
+    "tags": [
+      "eyes",
+      "yumi",
+      "sugarclub",
+      "decentraland"
+     ],
+    "category": "eyes",
+    "replaces": [
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "Yumi_Eyes.png", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Yumi_Eyes.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "**"
+  }
