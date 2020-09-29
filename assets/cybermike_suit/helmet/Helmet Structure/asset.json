@@ -1,0 +1,39 @@
+{
+  "name": "Cyber Helmet",
+  "i18n": {
+    "en": "Cyber Helmet - Winter Soldier Collection - Mark III - Battle Worn"
+    
+  },
+  "tags": [
+    "cyber helmet",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "helmet",
+  "replaces": [
+    "hat",
+    "top_head",
+    "tiara"
+   ],
+   "hides": [
+    "hair",
+    "earrings",
+    "eyewear"
+       
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "BL_Helmet_A04.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "BL_Helmet_A04.glb"}
+  ],
+  "rarity": "Mythic",
+  "description": "Live Free or Die Hard"
+}
