@@ -1,5 +1,5 @@
 {
-  "name": "Cyber Helmet",
+  "name": "cybermike_helmet",
   "i18n": {
     "en": "Cyber Helmet - Winter Soldier Collection - Mark III - Battle Worn"
     
@@ -34,6 +34,6 @@
 },
 {"type": "BaseFemale", "model": "BL_Helmet_A04.glb"}
   ],
-  "rarity": "Mythic",
+  "rarity": "mythic",
   "description": "Live Free or Die Hard"
 }
