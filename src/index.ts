@@ -14,7 +14,7 @@ import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 
 if (!module.parent) {
-  runMain(['base-avatars','base-exclusive','halloween_2019','xmas_2019','dcg_collection','mch_collection','dcl_launch','community_contest','stay_safe','dg_summer_2020','wonderzone_meteorchaser','dappcraft_moonminer','pm_outtathisworld','dgtble_headspace','moonshot_2020','ethermon_trainer','binance_us_collection', 'cz_mercernary','sugarclub_yumi'])
+  runMain(['base-avatars','base-exclusive','halloween_2019','xmas_2019','dcg_collection','mch_collection','dcl_launch','community_contest','stay_safe','dg_summer_2020','wonderzone_meteorchaser','dappcraft_moonminer','pm_outtathisworld','dgtble_headspace','moonshot_2020','ethermon_trainer','binance_us_collection', 'cz_mercernary','sugarclub_yumi','manafever_sammichgamer'])
   .catch(error => console.log(error, error.stack))
 }
 

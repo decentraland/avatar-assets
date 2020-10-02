@@ -1,0 +1,33 @@
+{
+    "id": "mf_animehair",
+    "name": "mf_animehair",
+    "i18n": {
+      "en": "Mana-Fever anime hair of a warrior"
+    },
+    "rarity": "legendary",
+    "description": "Hair inspired by anime for best fans",
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game",
+        "anime",
+        "manga",
+        "color",
+        "warrior"
+     ],
+    "category": "hair",
+    "replaces": [],
+    "hides": [],  
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "U_Anime_Hair.glb"
+                },
+                {   
+                    "type": "BaseFemale", 
+                    "model": "U_Anime_Hair.glb"
+                }
+        ]
+}
+  

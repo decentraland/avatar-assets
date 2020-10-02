@@ -1,0 +1,33 @@
+{
+    "id": "mf_frogfins",
+    "name": "mf_frogfins",
+    "i18n": {
+      "en": "Mana-Fever fins of sammich gamer costume"
+    },
+    "rarity": "legendary",
+    "description": "Walk and swim like a frog",
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game",
+        "frogger",
+        "frog",
+        "green",
+        "funny",
+        "multiplayer",
+        "swimming"
+    ],
+    "category": "feet",
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "M_Feet_Frogger_Fins.glb"
+                },
+                {   
+                    "type": "BaseFemale", 
+                    "model": "F_Feet_Frogger_Fins.glb"
+                }
+        ]
+}
+  

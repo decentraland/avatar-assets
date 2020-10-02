@@ -1,0 +1,27 @@
+{
+    "id": "mf_unicornpants",
+    "name": "mf_unicornpants",
+    "i18n": {
+      "en": "Mana-Fever unicorn pants of sammich gamer costume"
+    },
+    "rarity": "legendary",
+    "description": "Pants with an awesome coloful unicorn tail",  
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game"
+    ],
+    "category": "lower_body",
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Unicorn_Pants.glb" 
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Unicorn_Pants.glb"
+        }
+    ]
+  }
+  

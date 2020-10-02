@@ -1,0 +1,27 @@
+{
+    "id": "mf_sammichpants",
+    "name": "mf_sammichpants",
+    "i18n": {
+      "en": "Mana-Fever upperbody of sammich gamer costume"
+    },
+    "rarity": "legendary",
+    "description": "A sammich t-shirt, frogger backback and gloves. Minted with grandma love ❤️.",  
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game"
+    ],
+    "category": "upper_body",
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Sammich_Upperbody.glb" 
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Sammich_Upperbody.glb"
+        }
+    ]
+  }
+  
