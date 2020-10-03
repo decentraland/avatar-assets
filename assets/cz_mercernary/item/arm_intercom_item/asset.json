@@ -1,0 +1,35 @@
+{
+    "name": "arm_intercom_item",
+    "i18n": {
+      "en": "Arm Intercom",
+      "es": "Intercom Brazo"
+    },
+    "tags": [
+      "arm",
+      "intercom",
+      "corona",
+      "zombies"
+     ],
+    "category": "item",
+    "replaces": [
+      
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_Hair_**.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_Hair_**.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "**"
+  }

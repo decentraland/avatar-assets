@@ -1,0 +1,35 @@
+{
+    "name": "arm_weapons_item",
+    "i18n": {
+      "en": "Arm Weapons",
+      "es": "Armas de Brazo"
+    },
+    "tags": [
+      "arm",
+      "weapon",
+      "corona",
+      "zombies"
+     ],
+    "category": "item",
+    "replaces": [
+      
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_weapons_item.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_weapons_item.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "**"
+  }
