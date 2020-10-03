@@ -22,13 +22,13 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "M_weapons_item.glb", 
+  "model": "M_weapons_top_head.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "F_weapons_item.glb"}
+  {"type": "BaseFemale", "model": "F_weapons_top_head.glb"}
     ],
     "rarity": "legendary",
     "description": "**"
