@@ -1,11 +1,12 @@
+
 {
-  "name": "open_source_brain_helmet",
+  "name": "opensource_brain_helmet",
   "i18n": {
-    "en": "Open-Source_Brain",
+    "en": "OpenSource_Brain",
     "es": "Cerebro de Fuente Abierta"
   },
   "tags": [
-    "helmet",
+    "hat",
     "brain",
     "opensource",
     "corona",
@@ -13,8 +14,7 @@
    ],
   "category": "helmet",
   "replaces": [
-    "hat",
-    "top_head"
+    "hat"
 
    ],
    "hides": [
@@ -24,13 +24,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Hair_OpenSource.glb", 
+"model": "opensource_brain_helmet.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "M_Hair_OpenSource.glb"}
+{"type": "BaseFemale", "model": "F_opensource_brain_helmet.glb"}
   ],
   "rarity": "legendary",
   "description": ""

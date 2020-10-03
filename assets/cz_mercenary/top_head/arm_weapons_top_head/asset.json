@@ -1,5 +1,5 @@
 {
-    "name": "arm_weapons_item",
+    "name": "arm_weapons_top_head",
     "i18n": {
       "en": "Arm Weapons",
       "es": "Armas de Brazo"
@@ -10,7 +10,7 @@
       "corona",
       "zombies"
      ],
-    "category": "item",
+    "category": "top_head",
     "replaces": [
       
   
