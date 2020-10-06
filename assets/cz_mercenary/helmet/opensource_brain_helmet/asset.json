@@ -2,7 +2,7 @@
 {
   "name": "opensource_brain_helmet",
   "i18n": {
-    "en": "OpenSource_Brain",
+    "en": "Open-Source Brain",
     "es": "Cerebro de Fuente Abierta"
   },
   "tags": [
@@ -24,7 +24,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "opensource_brain_helmet.glb", 
+"model": "M_opensource_brain_helmet.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
