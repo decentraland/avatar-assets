@@ -1,11 +1,12 @@
 {
-    "name": "yumi_eyes",
+    "name": "yumi_glitter_eyes",
     "i18n": {
-      "en": "Yumi Eyes",
+      "en": "Yumi Glitter Eyes",
       "es": "Ojos de Yumi"
     },
     "tags": [
       "eyes",
+      "exclusive",
       "yumi",
       "sugarclub",
       "decentraland"
@@ -21,14 +22,14 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "Yumi_Eyes.png", 
+  "model": "yumi_glitter_eyes", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "Yumi_Eyes.glb"}
+  {"type": "BaseFemale", "model": "yumi_glitter_eyes"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "Awesome anime eyes for Sugar parties"
   }
