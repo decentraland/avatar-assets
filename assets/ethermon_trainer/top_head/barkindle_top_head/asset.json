@@ -1,34 +1,36 @@
 {
-    "name": "barkindle_mask",
+    "name": "barkindle_top_head",
     "i18n": {
-      "en": "Barkindle Mask",
-      "es": "Máscara Barkindle"
+      "en": "Barkindle",
+      "es": "Barkindle"
     },
     "tags": [
       "mask",
       "barkindle",
       "ethermon",
-      "trainer"
+      "trainer",
+      "hat"
      ],
-    "category": "mask",
+    "category": "top_head",
     "replaces": [
-      "helmet"
+      "helmet",
+      "mask"
   
      ],
      "hides": [
-    "facial_hair"
+    
      ],
   
     "main": [
   {
   "type": "BaseMale", 
-  "model": "M_Hair_**.glb", 
+  "model": "M_barkindle_top_head.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "F_Hair_**.glb"}
+  {"type": "BaseFemale", "model": "F_barkindle_top_head.glb"}
     ],
     "rarity": "legendary",
     "description": "**"

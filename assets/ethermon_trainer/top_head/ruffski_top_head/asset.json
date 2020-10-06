@@ -1,34 +1,36 @@
 {
-    "name": "ruffski_mask",
+    "name": "ruffski_top_head",
     "i18n": {
-      "en": "Ruffski Mask",
-      "es": "Máscara Ruffski"
+      "en": "Ruffski",
+      "es": "Ruffski"
     },
     "tags": [
       "mask",
       "ruffski",
       "ethermon",
-      "trainer"
+      "trainer",
+      "hat"
      ],
-    "category": "mask",
+    "category": "top_head",
     "replaces": [
-      "helmet"
+      "helmet",
+      "hat"
   
      ],
      "hides": [
-    "facial_hair"
+    
      ],
   
     "main": [
   {
   "type": "BaseMale", 
-  "model": "M_Hair_**.glb", 
+  "model": "M_ruffski_top_head.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "F_Hair_**.glb"}
+  {"type": "BaseFemale", "model": "F_ruffski_top_head.glb"}
     ],
     "rarity": "legendary",
     "description": "**"
