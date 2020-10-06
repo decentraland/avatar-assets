@@ -22,13 +22,13 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "yumi_glitter_eyes", 
+  "model": "yumi_glitter_eyes.png", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "yumi_glitter_eyes"}
+  {"type": "BaseFemale", "model": "yumi_glitter_eyes.png"}
     ],
     "rarity": "legendary",
     "description": "Awesome anime eyes for Sugar parties"
