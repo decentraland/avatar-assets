@@ -1,0 +1,32 @@
+{
+  "name": "cyber_suit_torso_upper_body",
+  "i18n": {
+    "en": "Cyber Suit - Winter Soldier Collection - Mark III - Battle Worn"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [   
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Torso_A05.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": ""}
+  ],
+  "rarity": "mythic",
+  "description": "Live Free or Die Hard"
+}

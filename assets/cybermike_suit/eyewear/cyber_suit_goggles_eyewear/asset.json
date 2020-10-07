@@ -1,0 +1,32 @@
+{
+  "name": "cyber_suit_goggles_eyewear",
+  "i18n": {
+    "en": "Cyber Suit Night Vision Goggles - Winter Soldier Collection - Mark III - Battle Worn"
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask"
+   ],
+   "hides": [   
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "NVG_A01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "NVG_A01.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Live Free or Die Hard"
+}
