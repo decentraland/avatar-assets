@@ -1,0 +1,32 @@
+{
+  "name": "cyber_suit_leggins_lower_body",
+  "i18n": {
+    "en": "Cyber Suit Leggings - Winter Soldier Collection - Mark III - Battle Worn"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "LegsA01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": ""}
+  ],
+  "rarity": "mythic",
+  "description": "Live Free or Die Hard"
+}
