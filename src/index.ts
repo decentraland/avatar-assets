@@ -33,8 +33,7 @@ if (!module.parent) {
   'binance_us_collection', 
   'cz_mercenary',
   'sugarclub_yumi',
-  'manafever_sammichgamer',
-  'cybermike_suit'
+  'manafever_sammichgamer'
 ])
   .catch(error => console.log(error, error.stack))
 }
