@@ -1,0 +1,36 @@
+{
+  "name": "sweater_moebius_collection_Polygonal_Mind",
+  "i18n": {
+    "en": "Sweater Moebius collection",
+    "es": "Sudadera de la Coleccion Moebius"
+  },
+  "tags": [
+    "sweater",
+	"upper_body",
+	"mind",
+	"wearable",
+	"moebius",
+	"polygonal"
+   ],
+  "category": "upper_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Sweater_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Sweater_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "expanding the Polygonal Mind Collection adding now the moebius set"
+}
