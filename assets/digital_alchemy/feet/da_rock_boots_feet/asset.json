@@ -1,0 +1,36 @@
+{
+  "name": "da_rock_boots_feet",
+  "i18n": {
+    "en": "Digital Alchemy Rock Boots",
+    "es": "Botas de Roca Alquimia Digial"
+  },
+  "tags": [
+    "accesories",
+    "feet",
+    "exclusive",
+    "alchemy",
+    "digital",
+    "decentraland",
+    "community",
+    "wearables",
+	"boot"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_RockBoots.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Rock Boots"
+}

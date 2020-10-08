@@ -1,0 +1,36 @@
+{
+  "name": "da_atomic_earring",
+  "i18n": {
+    "en": "Digital Alchemy Atomic Earring",
+    "es": "Aros Atómicos Alquimia Digial"
+  },
+  "tags": [
+    "accesories",
+    "earring",
+    "exclusive",
+    "alchemy",
+    "digital",
+    "decentraland",
+    "community",
+    "wearables",
+	"atomic"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_earring_daAtomicEarring.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Atomic Earring"
+}
