@@ -1,11 +1,10 @@
 {
-    "id": "mf_animehair",
     "name": "mf_animehair",
     "i18n": {
-      "en": "Mana-Fever anime hair of a warrior"
+      "en": "Anime warrior hair"
     },
     "rarity": "legendary",
-    "description": "Hair inspired by anime for best fans",
+    "description": "Hair inspired by anime for best fans. By Mana-fever 2020 ©",
     "tags": [
         "manafever",
         "sammichgame",
@@ -22,11 +21,13 @@
     "main": [
                 {
                     "type": "BaseMale", 
-                    "model": "U_Anime_Hair.glb"
+                    "model": "M_Hair.glb",
+                    "overrideReplaces": [],
+                    "overrideHides": []
                 },
                 {   
                     "type": "BaseFemale", 
-                    "model": "U_Anime_Hair.glb"
+                    "model": "F_Hair.glb"
                 }
         ]
 }
