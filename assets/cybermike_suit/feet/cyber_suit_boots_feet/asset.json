@@ -1,0 +1,32 @@
+{
+  "name": "cyber_suit_boots_feet",
+  "i18n": {
+    "en": "Cyber Suit Boots - Winter Soldier Collection - Mark III - Battle Worn"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [     
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Boots_B01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Boots_B01.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Live Free or Die Hard"
+}

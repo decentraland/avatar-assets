@@ -1,0 +1,40 @@
+{
+  "name": "cap_moebius_collection_Polygonal_Mind",
+  "i18n": {
+    "en": "Cap Moebius collection",
+    "es": "Gorra de la Coleccion Moebius"
+  },
+  "tags": [
+    "hat",
+	"cap",
+	"top",
+	"mind",
+	"wearable",
+	"moebius",
+	"polygonal"
+   ],
+  "category": "hat",
+  "replaces": [
+    "mask",
+	"tiara",
+	"hat",
+	"helmet"
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Hat_Cap_MoebiusCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Hat_Cap_MoebiusCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "expanding the Polygonal Mind Collection adding now the moebius set"
+}
