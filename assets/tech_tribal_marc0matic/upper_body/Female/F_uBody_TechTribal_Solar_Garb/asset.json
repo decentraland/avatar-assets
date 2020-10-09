@@ -1,0 +1,50 @@
+{
+  "name": "tech_tribal_solar_garb_female",
+  "i18n": {
+    "en": "Tech Tribal Female Solar Garb",
+    "es": "Atuendo de Solar Powario Tribal Tecnológico"
+  },
+  "tags": [
+    "accessories",
+    "woman",
+    "female",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "animals"
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+    "suit",
+   "jacket",
+   "armour",
+   "exclusive",
+   "illustration",
+   "solar",
+
+   ],
+
+"category": "upper_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  
+  ],
+
+
+"main": [
+    {"type": "BaseFemale", "model": "F_TechTribal_Solar_Garb.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Shaman Garb. Worn by Mystics fluent in 'Machine Speak.' "
+}
+

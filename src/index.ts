@@ -35,7 +35,8 @@ if (!module.parent) {
   'sugarclub_yumi',
   'manafever_sammichgamer',
   'navigator_collection',
-  'pm_moebiuscollection'
+  'pm_moebiuscollection',
+  'tech_tribal_marc0matic'
   
 ])
   .catch(error => console.log(error, error.stack))

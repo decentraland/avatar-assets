@@ -1,0 +1,51 @@
+{
+  "name": "tech_tribal_blue_trousers_female",
+  "i18n": {
+    "en": "Tech Tribal Female Blue Trousers",
+    "es": "Pantalón Tech Femalia Tribal Azul"
+  },
+  "tags": [
+    "accessories",
+    "woman",
+    "female",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "animals"
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "pants",
+   "trousers",
+   "solar",
+   "punk",
+   "legendary",
+   "exclusive",
+   "blue",
+
+   ],
+
+"category": "lower_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  
+  ],
+
+
+"main": [
+    {"type": "BaseFemale", "model": "F_TechTribal_Pants_Blue.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Trousers with Ornate Leg Braces."
+}
+

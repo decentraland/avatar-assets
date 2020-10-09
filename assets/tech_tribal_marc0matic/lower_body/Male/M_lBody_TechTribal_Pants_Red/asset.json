@@ -1,0 +1,48 @@
+{
+  "name": "tech_tribal_red_trousers_male",
+  "i18n": {
+    "en": "Tech Tribal Male Red Trousers",
+    "es": "Pantalón Tech Tribal Riggio Hombre"
+  },
+  "tags": [
+    "accessories",
+    "man",
+    "male",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "animals"
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "pants",
+   "trousers",
+   "solar",
+   "punk",
+
+   ],
+
+"category": "lower_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "M_lBody_TechTribal_Pants_Red.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Trousers with Ornate Leg Braces."
+}
+

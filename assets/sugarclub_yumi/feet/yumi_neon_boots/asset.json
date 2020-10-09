@@ -1,0 +1,35 @@
+{
+  "name": "yumi_neon_boots_feet",
+  "i18n": {
+    "en": "Yumi Neon Boots",
+    "es": "Botas de neón Yumi"
+  },
+  "tags": [
+      "boots",
+      "exclusive",
+      "yumi",
+      "sugarclub",
+      "decentraland"
+   ],
+  "category": "feet",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "yumi_neon_boots_male.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "yumi_neon_boots.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Those sugarclub boots will make you dance all night"
+}
