@@ -1,0 +1,29 @@
+{
+  "name": "china_flying_clothes_upper_body",
+  "i18n": {
+    "en": "China flying",
+    "es": "Vestimenta Voladora y Colorida China"
+  },
+  "tags": [
+    "china"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "shirt.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "shirt.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Support the second fashion show and the first Chinese clothing into the blockchain virtual world"
+}

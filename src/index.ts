@@ -34,8 +34,12 @@ if (!module.parent) {
   'cz_mercenary',
   'sugarclub_yumi',
   'manafever_sammichgamer',
+  'navigator_collection',
   'pm_moebiuscollection',
-  'cybermike_suit'
+  'tech_tribal_marc0matic',
+  'wz_wonderbot',
+  'navigator_collection'
+  
 ])
   .catch(error => console.log(error, error.stack))
 }

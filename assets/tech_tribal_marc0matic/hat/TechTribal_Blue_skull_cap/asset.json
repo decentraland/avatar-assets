@@ -1,0 +1,46 @@
+{
+  "id": "tech_tribal_blue_skull_cap",
+  "name": "tech_tribal_blue_skull_cap",
+  "i18n": {
+    "en": "Tech Tribal Blue Skull Cap",
+    "es": "Gorra Tech Tribal Blue Skull"
+  },
+  "tags": [
+    "accessories",
+    "female",
+    "woman",
+    "man",
+    "Male",
+    "fantasy",
+   "exotic",
+   "magic",
+   "sci fi",
+   "ancient",
+   "mystical",
+   "hat",
+   "tech",
+   "tribal",
+   "marc0matic",
+   "solar",
+   "punk",
+   "hat",
+   "helmet"
+   ],
+  "category": "hat",
+
+ "replaces": [
+   "helmet"
+  ],
+  "hides": [
+   "hair"
+  ],
+
+  "main": [
+    {"type": "BaseFemale", "model": "TechTribal_Skull_Cap_Blue.glb"},
+    {"type": "BaseMale", "model": "TechTribal_Skull_Cap_Blue.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Blue Skull Cap."
+
+}

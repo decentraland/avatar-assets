@@ -1,0 +1,32 @@
+{
+  "name": "da_iridescent_hair",
+  "i18n": {
+    "en": "Digital Alchemy Iridescent Hair",
+    "es": "Cabello Iridiscente Alquista Digial"
+  },
+  "tags": [
+    "hair",
+    "exclusive",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hair",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_hair_daHair.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Iridescent Hair"
+}
