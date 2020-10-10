@@ -2,7 +2,7 @@
 {
     "name": "holographic_eyewear",
     "i18n": {
-      "en": "Holographic Vision",
+      "en": "Holo Display",
       "es": "Visión Holográfica"
     },
     "tags": [
@@ -36,5 +36,5 @@
   {"type": "BaseFemale", "model": "F_holographic_eyewear.glb"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "Gives vision of infected"
   }

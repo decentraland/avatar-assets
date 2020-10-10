@@ -1,8 +1,8 @@
 {
     "name": "intercom_top_head",
     "i18n": {
-      "en": "Intercom",
-      "es": "Intercom"
+      "en": "Regen Aura",
+      "es": "Aura Regeneradora"
     },
     "tags": [
       "arm",
@@ -31,5 +31,5 @@
   {"type": "BaseFemale", "model": "F_intercom_top_head.glb"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "Heal your allies in battle"
   }

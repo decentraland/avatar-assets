@@ -1,7 +1,7 @@
 {
     "name": "exoskeleton_upper_body",
     "i18n": {
-      "en": "Exoskeleton Suit",
+      "en": "Exo-Suit",
       "es": "Exoesqueleto"
     },
     "tags": [
@@ -31,5 +31,5 @@
   {"type": "BaseFemale", "model": "F_exoskeleton_upper_body.glb"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "Avatar anatomy enhancement designed for a select class of warrior."
   }
