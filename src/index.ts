@@ -36,7 +36,9 @@ if (!module.parent) {
   'manafever_sammichgamer',
   'navigator_collection',
   'pm_moebiuscollection',
-  'tech_tribal_marc0matic'
+  'tech_tribal_marc0matic',
+  'wz_wonderbot',
+  'cybermike_suit'
   
 ])
   .catch(error => console.log(error, error.stack))

@@ -1,0 +1,35 @@
+{
+  "name": "cyber_gas_mask",
+  "i18n": {
+    "en": "Cyber Gas Mask - Winter Soldier Collection - Mark III - Battle Worn"
+    
+  },
+  "tags": [
+     "gas mask",
+      "cyber helmet",
+   "cyber armour",
+   "winter collection"
+   
+   ],
+  "category": "mask",
+  "replaces": [
+   ],
+   "hides": [
+    "helmet",
+    "eyewear"  
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Gas_Mask_A01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Gas_Mask_A01.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}
