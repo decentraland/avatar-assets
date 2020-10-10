@@ -1,16 +1,14 @@
 {
-  "id": "tech_tribal_shoes",
-  "name": "tech_tribal_shoes",
+  "id": "tech_tribal_red_trousers",
+  "name": "tech_tribal_red_trousers",
   "i18n": {
-    "en": "Tech Tribal Shoes",
-    "es": "Tech Tribal Shoesinos",
+    "en": "Tech Tribal Red Trousers",
+    "es": "Pantalón Tech Tribal Reddio Hombre"
   },
   "tags": [
     "accessories",
     "male",
     "man",
-    "woman",
-    "female",
    "marc0matic",
    "tech" , 
    "tribal",
@@ -27,6 +25,7 @@
    "trousers",
    "solar",
    "punk",
+   "exclusive",
 
    ],
 
@@ -42,11 +41,11 @@
 
 
 "main": [
-    {"type": "BaseMale", "model": "TechTribal_Shoes.glb"},
-    {"type": "BaseFemale", "model": "TechTribal_Shoes.glb"}
+    {"type": "BaseMale", "model": "M_TechTribal_Pants_Red.glb"},
+    {"type": "BaseFemale", "model": "F_TechTribal_Pants_Red.glb"}
   ],
 
 "rarity": "legendary",
-"description": "Tech Tribal Leather Band Shoes."
+"description": "Tech Tribal Trousers with Ornate Leg Braces."
 }
 
