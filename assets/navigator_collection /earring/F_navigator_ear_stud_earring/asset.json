@@ -1,0 +1,28 @@
+{
+  "name": "china_flying_ear_stud",
+  "i18n": {
+    "en": "China flying",
+    "es": "Vestimenta Voladora y Colorida China"
+  },
+    "tags": [
+        "china",
+        "exclusive",
+        "ear_stud",
+        "earring",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+  "category": "earring",
+    "replaces": [
+    ],
+   "hides": [
+   ],
+
+  "main": [
+{"type": "BaseFemale", "model": "ear_stud.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Support the second fashion show and the first Chinese clothing into the blockchain virtual world"
+}

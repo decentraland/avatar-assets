@@ -1,0 +1,28 @@
+{
+  "name": "china_flying_clothes",
+  "i18n": {
+    "en": "China flying",
+    "es": "Vestimenta Voladora y Colorida China"
+  },
+    "tags": [
+        "china",
+        "upper_body",
+        "exclusive",
+        "clothes",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{"type": "BaseFemale", "model": "clothes.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Support the second fashion show and the first Chinese clothing into the blockchain virtual world"
+}

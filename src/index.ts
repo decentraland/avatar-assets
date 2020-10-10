@@ -37,7 +37,8 @@ if (!module.parent) {
   'navigator_collection',
   'pm_moebiuscollection',
   'tech_tribal_marc0matic',
-  'wz_wonderbot'
+  'wz_wonderbot',
+  'navigator_collection'
   
 ])
   .catch(error => console.log(error, error.stack))
