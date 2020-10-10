@@ -1,5 +1,5 @@
 {
-  "id": "tech_tribal_blue_skull_cap"
+  "id": "tech_tribal_blue_skull_cap",
   "name": "tech_tribal_blue_skull_cap",
   "i18n": {
     "en": "Tech Tribal Blue Skull Cap",
@@ -24,7 +24,7 @@
    "solar",
    "punk",
    "hat",
-   "helmet",
+   "helmet"
    ],
   "category": "hat",
 
@@ -36,7 +36,7 @@
   ],
 
   "main": [
-    {"type": "BaseFemale", "model": "TechTribal_Skull_Cap_Blue.glb"}
+    {"type": "BaseFemale", "model": "TechTribal_Skull_Cap_Blue.glb"},
     {"type": "BaseMale", "model": "TechTribal_Skull_Cap_Blue.glb"}
   ],
 

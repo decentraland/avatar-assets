@@ -3,7 +3,7 @@
   "name": "tech_tribal_solar_garb",
   "i18n": {
     "en": "Tech Tribal Solar Garb",
-    "es": "Atuendo de Solaris Macho Tribal Tecnológico"
+    "es": "Atuendo de Solaris Macho Tribal Tecnolï¿½gico"
   },
   "tags": [
     "accesories",
@@ -15,7 +15,7 @@
    "tech" , 
    "tribal",
    "mask",
-   "animals"
+   "animals",
    "beast",
    "nature",
    "punk",
@@ -27,7 +27,7 @@
    "jacket",
    "armour",
     "wearables",
-   "exclusives",
+   "exclusives"
 
    ],
 
@@ -48,6 +48,6 @@
   ],
 
 "rarity": "legendary",
-"description": "Tech Tribal Solar Garb. Worn by Mystics fluent in 'Machine Speak.' "
+"description": "Tech Tribal Solar Garb. Worn by Mystics fluent in 'Machine Speak."
 }
 

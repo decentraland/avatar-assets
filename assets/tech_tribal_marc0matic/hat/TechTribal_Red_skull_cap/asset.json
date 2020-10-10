@@ -23,7 +23,7 @@
    "marc0matic",
    "solar",
    "punk",
-   "hat",
+   "hat"
    ],
   "category": "hat",
 
@@ -35,7 +35,7 @@
   ],
 
   "main": [
-    {"type": "BaseFemale", "model": "TechTribal_Skull_Cap_Red.glb"}
+    {"type": "BaseFemale", "model": "TechTribal_Skull_Cap_Red.glb"},
     {"type": "BaseMale", "model": "TechTribal_Skull_Cap_Red.glb"}
   ],
 
