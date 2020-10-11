@@ -1,8 +1,8 @@
 {
     "name": "holographic_mask",
     "i18n": {
-      "en": "Holographic Mask",
-      "es": "Mascarilla Holográfica"
+      "en": "Aero Guard",
+      "es": "Guardia Aero"
     },
     "tags": [
       "mask",
@@ -33,5 +33,5 @@
   {"type": "BaseFemale", "model": "F_holographic_mask.glb"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "Complete Virus Protection. No social distancing required"
   }

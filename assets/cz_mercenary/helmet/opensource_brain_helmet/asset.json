@@ -2,8 +2,8 @@
 {
   "name": "opensource_brain_helmet",
   "i18n": {
-    "en": "Open-Source Brain",
-    "es": "Cerebro de Fuente Abierta"
+    "en": "Open Source",
+    "es": "Fuente Abierta"
   },
   "tags": [
     "hat",
@@ -33,5 +33,5 @@
 {"type": "BaseFemale", "model": "F_opensource_brain_helmet.glb"}
   ],
   "rarity": "legendary",
-  "description": ""
+  "description": "Big brain energy"
 }

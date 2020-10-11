@@ -1,8 +1,8 @@
 {
     "name": "arm_weapons_top_head",
     "i18n": {
-      "en": "Arm Weapons",
-      "es": "Armas de Brazo"
+      "en": "Exo-blades",
+      "es": "Exo-espadas"
     },
     "tags": [
       "arm",
@@ -31,5 +31,5 @@
   {"type": "BaseFemale", "model": "F_weapons_top_head.glb"}
     ],
     "rarity": "legendary",
-    "description": "**"
+    "description": "HOOOOOOOOOOOOOOHHHHHHHHOHHHHHHHHHHOOOOOOOOOOOOOOOOOOOOHHOOOOOOOOOOOOOOOHOOOOOHOHOOOOOOOOOOOOOOOOOHOOOOOOOOOOOOOOOOOOOOOOOOO OH"
   }
