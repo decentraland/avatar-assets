@@ -2,7 +2,7 @@
   "name": "da_atomic_earring",
   "i18n": {
     "en": "Digital Alchemy Atomic Earring",
-    "es": "Aros Atómicos Alquimia Digial"
+    "es": "Aros Atómicos Alquimia Digital"
   },
   "tags": [
     "accesories",
@@ -24,13 +24,15 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_earring_daAtomicEarring.glb", 
+"model": "U_earring_daAtomicEarring.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", 
+"model": "U_earring_daAtomicEarring.glb"}
   ],
   "rarity": "legendary",
-  "description": "Digital Alchemy Atomic Earring"
+  "description": "Digital Alchemy Collection -  Caution! Atomic energy carried by these earrings."
 }

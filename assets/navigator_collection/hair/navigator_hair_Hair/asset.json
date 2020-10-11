@@ -1,0 +1,30 @@
+{
+  "name": "china_flying_hair",
+    "i18n": {
+        "en": "China flying hair",
+        "es": "Vestimenta Voladora y Colorida China"
+    },
+    "tags": [
+        "china",
+        "hair",
+        "exclusive",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+  "category": "hair",
+    "replaces": [
+        "hat",
+        "helmet",
+        "hair"
+    ],
+    "hides": [
+    ],
+
+  "main": [
+{"type": "BaseFemale", "model": "hair.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Support the second fashion show and the first Chinese clothing into the blockchain virtual world"
+}

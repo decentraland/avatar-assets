@@ -1,0 +1,23 @@
+{
+  "id": "meta_01001101_helmet",
+  "name": "meta_01001101_helmet",
+  "i18n": {
+    "en": "DC META 01001101"
+  },
+  "tags": ["dappcraft", "hairs", "secret","neon", "weird", "cyberpunk"],
+  "category": "helmet",
+  "replaces": ["helmet"],
+  "hides": ["head"],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_meta_01001101.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_meta_01001101.glb" }
+  ],
+  "rarity": "mythic",
+  "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01101101 01101001 01101110 01100100"
+}

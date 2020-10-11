@@ -1,8 +1,8 @@
 {
-  "name": "da_Mcoat_upper_body",
+  "name": "da_coat_upper_body",
   "i18n": {
     "en": "Digital Alchemy Disruptive Coat",
-    "es": "Campera Alquimia Digial"
+    "es": "Capa Disruptiva Alquimia Digital"
   },
   "tags": [
     "accesories",
@@ -12,7 +12,10 @@
     "digital",
     "decentraland",
     "community",
-    "wearables"
+    "wearables",
+	"Sweatshirt",
+	"Backpack",
+	"Gloves"
    ],
   "category": "upper_body",
   "replaces": [
@@ -28,8 +31,10 @@
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", 
+"model": "F_uBody_daCoat.glb"}
   ],
   "rarity": "legendary",
-  "description": "Disruptive Coat, Elixir Sweatshirt, Digital Transmuter Backpack, Gloves"
+  "description": "Digital Alchemy Collection -  The disruptive coat pack partially protects your Elixir gem, which is connected through the heart to a transmuting backpack. *Includes matching gloves."
 }

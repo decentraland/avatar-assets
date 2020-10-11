@@ -1,0 +1,35 @@
+{
+    "name": "jing_lower_body",
+    "i18n": {
+      "en": "Peking Opera Jing Pants",
+      "es": "Pantalones Jing de la ópera de Pekín"
+    },
+    "tags": [
+      "pants",
+      "chinese",
+      "jing",
+      "Peking Opera"
+     ],
+    "category": "lower_body",
+    "replaces": [
+      "lower_body"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_jing_pants.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_jing_pants.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Peking Opera Character-Jing"
+  }

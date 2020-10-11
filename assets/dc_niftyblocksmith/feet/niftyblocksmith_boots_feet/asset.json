@@ -1,0 +1,28 @@
+{
+  "id": "niftyblocksmith_boots_feet",
+  "name": "niftyblocksmith_boots_feet",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Boots"
+  },
+  "tags": ["moon","feet","mining","dappcraft"],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_niftyblocksmith_boots.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "M_niftyblocksmith_boots.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "These boots will leave  digital footprints wherever you go"
+}

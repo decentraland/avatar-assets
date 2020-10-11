@@ -2,7 +2,7 @@
   "name": "da_rock_boots_feet",
   "i18n": {
     "en": "Digital Alchemy Rock Boots",
-    "es": "Botas de Roca Alquimia Digial"
+    "es": "Botas de Roca Alquimia Digital"
   },
   "tags": [
     "accesories",
@@ -24,13 +24,15 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "Feet_RockBoots.glb", 
+"model": "M_Feet_RockBoots.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", 
+"model": "F_Feet_RockBoots.glb"}
   ],
   "rarity": "legendary",
-  "description": "Digital Alchemy Rock Boots"
+  "description": "Digital Alchemy Collection - Do you want to rock this world? Do it with caution, these boots might cause some metaquakes."
 }

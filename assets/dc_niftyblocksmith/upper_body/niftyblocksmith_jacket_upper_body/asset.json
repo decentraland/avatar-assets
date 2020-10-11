@@ -1,0 +1,29 @@
+{
+  "id": "niftyblocksmith_jacket_upper_body",
+  "name": "niftyblocksmith_jacket_upper_body",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Jacket"
+  },
+  "tags": [
+    "style","electric", "dappcraft","neon"],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_niftyblocksmith_jacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_niftyblocksmith_jacket.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Tailor made one sleeve style."
+}

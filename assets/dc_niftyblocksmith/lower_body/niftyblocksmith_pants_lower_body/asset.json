@@ -1,0 +1,27 @@
+{
+  "id": "niftyblocksmith_pants_lower_body",
+  "name": "niftyblocksmith_pants_lower_body",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Trousers"},
+  "tags": ["moon","lower_body", "electro", "space"],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_niftyblocksmith_pants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_niftyblocksmith_pants.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Need some repair."
+}

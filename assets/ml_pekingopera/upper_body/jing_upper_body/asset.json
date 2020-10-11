@@ -1,0 +1,36 @@
+{
+    "name": "jing_upper_body",
+    "i18n": {
+      "en": "Peking Opera Jing Coat",
+      "es": "Abrigo Jing de la Ópera de Pekín"
+    },
+    "tags": [
+      "Peking Opera",
+      "Jing",
+      "Coat",
+      "Top",
+      "Chinese"
+     ],
+    "category": "upper_body",
+    "replaces": [
+      "upper_body"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_jing_coat.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_jing_coat.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Peking Opera Character-Jing"
+  }

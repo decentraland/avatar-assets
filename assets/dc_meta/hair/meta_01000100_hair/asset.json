@@ -1,0 +1,33 @@
+{
+  "id": "meta_01000100_hair",
+  "name": "meta_01000100_hair",
+  "i18n": {
+    "en": "DC META 01000100"
+  },
+  "tags": [
+    "reality",
+    "secrets",
+    "hair"
+   ],
+  "category": "hair",
+  "replaces": [
+   "hair"
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_meta_01000100.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_meta_01000100.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01100110 01100101 01100101 01110100"
+}

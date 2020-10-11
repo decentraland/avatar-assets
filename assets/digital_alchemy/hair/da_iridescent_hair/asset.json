@@ -2,7 +2,7 @@
   "name": "da_iridescent_hair",
   "i18n": {
     "en": "Digital Alchemy Iridescent Hair",
-    "es": "Cabello Iridiscente Alquista Digial"
+    "es": "Cabello Iridiscente Alquimia Digial"
   },
   "tags": [
     "hair",
@@ -25,8 +25,10 @@
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", 
+"model": "F_hair_daHair.glb"}
   ],
   "rarity": "legendary",
-  "description": "Digital Alchemy Iridescent Hair"
+  "description": "Digital Alchemy Collection -  Iridescent hair with crystals that shimmer when seen from different perspectives."
 }

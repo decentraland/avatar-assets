@@ -2,7 +2,7 @@
   "name": "da_baggy_pants_lower_body",
   "i18n": {
     "en": "Digital Alchemy Baggy Pants",
-    "es": "Pantalón Alquimia Digial"
+    "es": "Pantalón Baggy Alquimia Digital"
   },
   "tags": [
     "accesories",
@@ -29,8 +29,10 @@
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", 
+"model": "F_lBody_daBPants.glb"}
   ],
   "rarity": "legendary",
-  "description": "Digital Alchemy Baggy Pants"
+  "description": "Digital Alchemy Collection - Baggy pants, ready to wear and explore."
 }

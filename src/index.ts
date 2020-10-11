@@ -38,7 +38,12 @@ if (!module.parent) {
   'pm_moebiuscollection',
   'tech_tribal_marc0matic',
   'wz_wonderbot',
-  'navigator_collection'
+  'navigator_collection',
+  'ml_pekingopera',
+  'dc_niftyblocksmith',
+  'dc_meta'
+
+
   
 ])
   .catch(error => console.log(error, error.stack))

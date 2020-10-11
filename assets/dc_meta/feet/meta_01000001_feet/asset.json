@@ -1,0 +1,28 @@
+{
+  "id": "meta_01000001_feet",
+  "name": "meta_01000001_feet",
+  "i18n": {
+    "en": "DC META 01000001"
+  },
+  "tags": ["moon","feet","mining","dappcraft"],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_meta_01000001.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_meta_01000001.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01100110 01100101 01100101 01110100"
+}

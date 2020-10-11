@@ -1,0 +1,27 @@
+{
+  "id": "meta_01010100_lower_body",
+  "name": "meta_01010100_lower_body",
+  "i18n": {
+    "en": "DC META 01010100"},
+  "tags": ["moon","lower_body", "electro", "space"],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_meta_01010100.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_meta_01010100.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01101101 01101001 01101110 01100100"
+}
