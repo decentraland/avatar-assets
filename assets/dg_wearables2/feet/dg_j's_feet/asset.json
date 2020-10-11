@@ -1,0 +1,35 @@
+{
+  "name": "dg_j's_feet",
+  "i18n": {
+    "en": "Shoes",
+    "es": "Zapatillas Jordan"
+  },
+  "tags": [
+    "shoes",
+    "jordan’s",
+    "decentral games",
+    "nike"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"jordans_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "jordans_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "DG J’s on yo feet! ."
+}
+

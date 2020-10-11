@@ -41,7 +41,8 @@ if (!module.parent) {
   'navigator_collection',
   'ml_pekingopera',
   'dc_niftyblocksmith',
-  'dc_meta'
+  'dc_meta',
+  'dg_wearables2'
 
 
   
