@@ -33,16 +33,16 @@ if (!module.parent) {
   'binance_us_collection', 
   'cz_mercenary',
   'sugarclub_yumi',
-  'manafever_sammichgamer',
+  'mf_sammichgamer',
   'navigator_collection',
-  'pm_moebius',
+  'pm_dreamverse_eminence',
   'tech_tribal_marc0matic',
   'wz_wonderbot',
   'navigator_collection',
   'ml_pekingopera',
   'dc_niftyblocksmith',
   'dc_meta',
-  'dg_wearables2'
+  'dg_fall_2020'
 
 
   
