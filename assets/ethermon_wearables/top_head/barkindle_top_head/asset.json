@@ -1,0 +1,37 @@
+{
+    "name": "barkindle_top_head",
+    "i18n": {
+      "en": "Barkindle Wearable",
+      "es": "Prenda Barkindle"
+    },
+    "tags": [
+      "mask",
+      "barkindle",
+      "ethermon",
+      "trainer",
+      "hat"
+     ],
+    "category": "top_head",
+    "replaces": [
+      "helmet",
+      "hat"
+  
+     ],
+     "hides": [
+    "hair"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_barkindle_top_head.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_barkindle_top_head.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Each piece of the Ethermon Legendary Set provides its own unique buff when battling & capturing Mons. Wearing 4 pieces at once will grant the owner special access."
+  }

@@ -1,0 +1,37 @@
+
+{
+  "name": "open_source_helmet",
+  "i18n": {
+    "en": "Open Source",
+    "es": "Fuente Abierta"
+  },
+  "tags": [
+    "hat",
+    "brain",
+    "opensource",
+    "corona",
+    "zombies"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "hat"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_opensource_brain_helmet.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_opensource_brain_helmet.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Big brain energy"
+}
