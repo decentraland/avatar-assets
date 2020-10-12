@@ -21,13 +21,13 @@
   "main": [
 {
 "type":"BaseMale" , 
-"model":"robe_m" , 
+"model":"robe_m.glb" , 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "robe_f"}
+{"type": "BaseFemale", "model": "robe_f.glb"}
   ],
   "rarity": "legendary",
   "description": "a silky smooth robe that lets everyone know who’s the real baus"
