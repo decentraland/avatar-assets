@@ -1,23 +1,18 @@
 {
-  "id": "tech_tribal_shoes",
-  "name": "tech_tribal_shoes",
+  "name": "techtribal_shoes",
   "i18n": {
     "en": "Tech Tribal Shoes",
     "es": "Tech Tribal Shoesinos"
   },
   "tags": [
     "accessories",
-    "male",
     "man",
     "woman",
-    "female",
    "marc0matic",
    "tech" , 
    "tribal",
    "mask",
-   "animals",
    "beast",
-   "nature",
    "punk",
    "fantasy",
    "shaman",
@@ -26,7 +21,7 @@
    "pants",
    "trousers",
    "solar",
-   "punk",
+   "punk"
 
    ],
 

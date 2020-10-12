@@ -1,6 +1,5 @@
 {
-  "id": "tech_tribal_bird_mask",
-  "name": "tech_tribal_bird_mask",
+  "name": "techtribal_bird_mask",
   "i18n": {
     "en": "Tech Tribal Bird Mask",
     "es": "Technica Tribal Tweet Tweet Mask"
@@ -15,14 +14,13 @@
    "tech" , 
    "tribal",
    "mask",
-   "animals",
    "beast",
    "nature",
    "punk",
    "fantasy",
    "animal",
    "VR",
-    "bird",
+    "bird"
 
    ],
 
