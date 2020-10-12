@@ -35,7 +35,7 @@ if (!module.parent) {
   'sugarclub_yumi',
   'manafever_sammichgamer',
   'navigator_collection',
-  'pm_moebiuscollection',
+  'pm_moebius',
   'tech_tribal_marc0matic',
   'wz_wonderbot',
   'navigator_collection',
