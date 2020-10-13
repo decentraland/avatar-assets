@@ -45,6 +45,7 @@ if (!module.parent) {
   'dg_fall_2020',
   'cybermike_cybersoldier_set',
   'wonderzone_steampunk',
+  'digital_alchemy',
   'halloween_2020'
   
 ])
