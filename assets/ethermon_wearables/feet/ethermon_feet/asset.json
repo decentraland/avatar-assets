@@ -1,0 +1,35 @@
+{
+    "name": "ethermon_feet",
+    "i18n": {
+      "en": "Ethermon Shoes",
+      "es": "Zapatillas Ethermon"
+    },
+    "tags": [
+      "shoes",
+      "trainer",
+      "ethermon",
+      "trainer"
+     ],
+    "category": "feet",
+    "replaces": [
+      "feet"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_ethermon_feet.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_ethermon_feet.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Each piece of the Ethermon Legendary Set provides its own unique buff when battling & capturing Mons. Wearing 4 pieces at once will grant the owner special access."
+  }

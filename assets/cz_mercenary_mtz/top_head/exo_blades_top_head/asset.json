@@ -1,0 +1,35 @@
+{
+    "name": "exo_blades_top_head",
+    "i18n": {
+      "en": "Exo-blades",
+      "es": "Exo-espadas"
+    },
+    "tags": [
+      "arm",
+      "weapon",
+      "corona",
+      "zombies"
+     ],
+    "category": "top_head",
+    "replaces": [
+      
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_weapons_top_head.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_weapons_top_head.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "HOOOOOOOOOOOOOOHHHHHHHHOHHHHHHHHHHOOOOOOOOOOOOOOOOOOOOHHOOOOOOOOOOOOOOOHOOOOOHOHOOOOOOOOOOOOOOOOOHOOOOOOOOOOOOOOOOOOOOOOOOO OH"
+  }

@@ -1,0 +1,40 @@
+
+{
+    "name": "holo_display_eyewear",
+    "i18n": {
+      "en": "Holo Display",
+      "es": "Visión Holográfica"
+    },
+    "tags": [
+      "eyewear",
+      "hologram",
+      "holographic",
+      "corona",
+      "zombies",
+      "display",
+      "vision"
+     ],
+    "category": "eyewear",
+    "replaces": [
+      
+      
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_holographic_eyewear.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_holographic_eyewear.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Gives vision of infected"
+  }
