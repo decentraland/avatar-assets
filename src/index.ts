@@ -42,7 +42,8 @@ if (!module.parent) {
   'ml_pekingopera',
   'dc_niftyblocksmith',
   'dc_meta',
-  'dg_fall_2020'
+  'dg_fall_2020',
+  'cybermike_cybersoldier_set'
 
 
   

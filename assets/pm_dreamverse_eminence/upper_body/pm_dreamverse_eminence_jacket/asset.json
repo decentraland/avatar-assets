@@ -1,0 +1,37 @@
+{
+  "name": "pm_dreamverse_eminence_jacket",
+  "i18n": {
+    "en": "Jacket Dreamverse Eminence collection",
+    "es": "Chaqueta de la Coleccion Dreamverse Eminence"
+  },
+  "tags": [
+    "jacket",
+	"upper_body",
+	"mind",
+	"wearable",
+	"dreamverse",
+	"eminence",
+	"polygonal"
+   ],
+  "category": "upper_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Jacket_DreamverseEminenceCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Jacket_DreamverseEminenceCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}
