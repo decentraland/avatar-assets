@@ -44,7 +44,8 @@ if (!module.parent) {
   'dc_meta',
   'dg_fall_2020',
   'cybermike_cybersoldier_set',
-  'wonderzone_steampunk'
+  'wonderzone_steampunk',
+  'halloween_2020'
   
 ])
   .catch(error => console.log(error, error.stack))
