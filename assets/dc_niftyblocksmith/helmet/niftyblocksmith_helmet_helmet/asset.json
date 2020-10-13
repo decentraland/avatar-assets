@@ -1,13 +1,13 @@
 {
-  "id": "niftyblocksmith_helmet_helmet",
-  "name": "niftyblocksmith_helmet_helmet",
+  "id": "blocksmith_helmet",
+  "name": "blocksmith_helmet",
   "i18n": {
     "en": "DC Nifty Blocksmith Helmet"
   },
   "tags": ["dappcraft", "hairs", "secret","neon", "weird", "cyberpunk"],
   "category": "helmet",
   "replaces": ["earring","helmet", "tiara","mask"],
-  "hides": ["hat","hair","facial_hair"],
+  "hides": ["hair"],
 
   "main": [
     {
