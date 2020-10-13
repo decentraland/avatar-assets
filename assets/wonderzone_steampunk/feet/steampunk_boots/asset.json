@@ -1,0 +1,35 @@
+{
+  "name": "steampunk_boots",
+  "i18n": {
+    "en": "Steampunk Boots",
+    "es": "Zapatos del Steampunk"
+  },
+  "tags": [
+    "WonderZone",
+    "exclusive",
+    "decentraland",
+    "mana",
+    "licensed",
+    "steampunk",
+    "shoes",
+    "boots"
+  ],
+  "category": "feet",
+  "replaces": [
+  ],
+  "hides": [
+  ],
+  "main": [{
+      "type": "BaseMale",
+      "model": "steampunk_boots_male.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "steampunk_boots_female.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Leather Steampunk Boots. Gives a bonus in the WonderMine game. Created by Maricela."
+}

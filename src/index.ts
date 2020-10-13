@@ -37,15 +37,14 @@ if (!module.parent) {
   'navigator_collection',
   'pm_dreamverse_eminence',
   'tech_tribal_marc0matic',
-  'wz_wonderbot',
+  'wonderzone_wonderbot',
   'navigator_collection',
   'ml_pekingopera',
   'dc_niftyblocksmith',
   'dc_meta',
   'dg_fall_2020',
-  'cybermike_cybersoldier_set'
-
-
+  'cybermike_cybersoldier_set',
+  'wonderzone_steampunk'
   
 ])
   .catch(error => console.log(error, error.stack))
