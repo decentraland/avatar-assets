@@ -1,16 +1,16 @@
 {
-    "name": "hwn_2020_ddlm_mouth",
+    "name": "hwn_2020_ddlm_03_eyes",
     "i18n": {
-      "en": "Dia de los Muertos Mouth - Halloween 2020",
-      "es": "Boca de Dia de los Muertos - Halloween 2020"
+      "en": "Dia de los Muertos Flower Eyes - Halloween 2020",
+      "es": "Ojos de Flores de Dia de los Muertos - Halloween 2020"
     },
     "tags": [
-      "mouth",
+      "eyes",
       "halloween",
       "2020",
       "decentraland"
      ],
-    "category": "mouth",
+    "category": "eyes",
     "replaces": [
   
      ],
@@ -21,13 +21,13 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "m_ddlm_mouth.png", 
+  "model": "flower_ddlm_eyes.png", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "f_ddlm_mouth.png"}
+  {"type": "BaseFemale", "model": "flower_ddlm_eyes.png"}
     ],
     "rarity": "legendary",
     "description": "**"
