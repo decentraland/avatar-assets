@@ -1,5 +1,5 @@
 {
-  "name": "dg_j's_b_feet",
+  "name": "dg_kicks_feet",
   "i18n": {
     "en": "Shoes",
     "es": "Zapatillas Jordan"
@@ -21,15 +21,15 @@
   "main": [
 {
 "type":"BaseMale" , 
-"model":"jordansB_m.glb" , 
+"model":"kicks_m.glb" , 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "jordansB_f.glb"}
+{"type": "BaseFemale", "model": "kicks_f.glb"}
   ],
   "rarity": "mythic",
-  "description": "DG J�s on yo feet! ."
+  "description": "J�s on yo feet! ."
 }
 

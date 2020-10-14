@@ -4,7 +4,7 @@
   "i18n": {
     "en": "DC META 01001101"
   },
-  "tags": ["dappcraft", "01001101", "moon", "miner", "space"],
+  "tags": ["dappcraft", "01001101", "digital", "dcstudio", "binary"],
   "category": "tiara",
   "replaces": ["tiara"],
   "hides": [],
@@ -16,7 +16,7 @@
       "overrideReplaces": [],
       "overrideHides": []
     },
-    { "type": "BaseFemale", "model": "F_meta_01001101.glb" }
+    { "type": "BaseFemale", "model": "M_meta_01001101.glb" }
   ],
   "rarity": "mythic",
   "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01110011 01101111 01110101 01101100"
