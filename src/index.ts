@@ -36,7 +36,7 @@ if (!module.parent) {
   'mf_sammichgamer',
   'pm_dreamverse_eminence',
   'tech_tribal_marc0matic',
-  'wonderzone_wonderbot',
+  'wz_wonderbot',
   'ml_pekingopera',
   'dc_niftyblocksmith',
   'dc_meta',
