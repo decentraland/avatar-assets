@@ -1,0 +1,35 @@
+{
+    "name": "regen_aura_top_head",
+    "i18n": {
+      "en": "Regen Aura",
+      "es": "Aura Regeneradora"
+    },
+    "tags": [
+      "arm",
+      "intercom",
+      "corona",
+      "zombies"
+     ],
+    "category": "top_head",
+    "replaces": [
+      
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_intercom_top_head.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_intercom_top_head.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Heal your allies in battle"
+  }
