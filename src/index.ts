@@ -34,11 +34,9 @@ if (!module.parent) {
   'cz_mercenary_mtz',
   'sugarclub_yumi',
   'mf_sammichgamer',
-  'navigator_collection',
   'pm_dreamverse_eminence',
   'tech_tribal_marc0matic',
   'wonderzone_wonderbot',
-  'navigator_collection',
   'ml_pekingopera',
   'dc_niftyblocksmith',
   'dc_meta',
@@ -46,7 +44,9 @@ if (!module.parent) {
   'cybermike_cybersoldier_set',
   'wonderzone_steampunk',
   'digital_alchemy',
+  'china_flying',
   'halloween_2020'
+
   
 ])
   .catch(error => console.log(error, error.stack))
