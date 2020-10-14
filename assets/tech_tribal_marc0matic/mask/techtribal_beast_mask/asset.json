@@ -1,0 +1,51 @@
+{
+  "name": "techtribal_beast_mask",
+  "i18n": {
+    "en": "Tech Tribal Beast Mask",
+    "es": "Máscara de Bestia Tribal de Tecnologías"
+  },
+  "tags": [
+    "accessories",
+    "man" ,
+    "woman" ,
+   "marc0matic" ,
+   "tech" , 
+   "tribal" ,
+   "mask" ,
+   "animals" ,
+   "beast" ,
+   "punk" ,
+   "fantasy" ,
+   "animal" ,
+   "VR" ,
+   "deer"
+
+   ],
+
+"category": "mask",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+   "facial_hair" , "eyewear"
+  ],
+
+
+ "main": [
+{
+"type": "BaseMale", 
+"model": "Techtribal_Beast_Mask.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Techtribal_Beast_Mask.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "VR Infused Beast Mask created by Marc0Matic"
+}
+

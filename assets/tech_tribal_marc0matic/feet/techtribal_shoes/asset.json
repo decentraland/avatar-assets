@@ -1,0 +1,47 @@
+{
+  "name": "techtribal_shoes",
+  "i18n": {
+    "en": "Tech Tribal Shoes",
+    "es": "Tech Tribal Shoesinos"
+  },
+  "tags": [
+    "accessories",
+    "man",
+    "woman",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "beast",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "pants",
+   "trousers",
+   "solar",
+   "punk"
+
+   ],
+
+"category": "lower_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "TechTribal_Shoes.glb"},
+    {"type": "BaseFemale", "model": "TechTribal_Shoes.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Leather Band Shoes."
+}
+

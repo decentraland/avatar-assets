@@ -1,0 +1,48 @@
+{
+  "name": "tech_tribal_trousers",
+  "i18n": {
+    "en": "Tech Tribal Trousers",
+    "es": "Pantalón Tech Tribal Hombre"
+  },
+  "tags": [
+    "accessories",
+    "male",
+    "man",
+   "tech" , 
+   "tribal",
+   "mask",
+   "animal",
+   "beast",
+   "nature",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "pants",
+   "trousers",
+   "solar",
+   "punk",
+   "exclusive"
+
+   ],
+
+"category": "lower_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "M_TechTribal_Trousers.glb"},
+    {"type": "BaseFemale", "model": "F_TechTribal_Trousers.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Trousers with armored Leg Braces."
+}
+

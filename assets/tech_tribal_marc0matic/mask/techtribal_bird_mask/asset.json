@@ -1,0 +1,45 @@
+{
+  "name": "techtribal_bird_mask",
+  "i18n": {
+    "en": "Tech Tribal Bird Mask",
+    "es": "Technica Tribal Tweet Tweet Mask"
+  },
+  "tags": [
+    "accessories",
+    "male" ,
+    "man" ,
+    "female" ,
+    "woman" ,
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "animal",
+   "VR",
+    "bird"
+
+   ],
+
+"category": "mask",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+   "facial_hair" , "eyewear"
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "TechTribal_Bird_Mask.glb"},
+    {"type": "BaseFemale", "model": "TechTribal_Bird_Mask.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "VR Infused Bird Mask created by Marc0Matic"
+}
