@@ -29,7 +29,7 @@
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "M_jing_coat.glb"}
+  {"type": "BaseFemale", "model": "F_jing_coat.glb"}
     ],
     "rarity": "legendary",
     "description": "Peking Opera Character-Jing"
