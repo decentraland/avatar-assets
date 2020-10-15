@@ -23,7 +23,7 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "M_HWN_2020_lBody_Cult_Servant_Suit.glb", 
+  "model": "M_HWN_2020_UBody_Cult_Servant_Suit.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
