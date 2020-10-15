@@ -1,0 +1,36 @@
+{
+    "name": "hwn_2020_ghostblaster_lower_body",
+    "i18n": {
+      "en": "GhostBlaster Pants - Halloween 2020",
+      "es": "Pantalones de GhostBlaster - Halloween 2020"
+    },
+    "tags": [
+      "ghostblaster",
+      "halloween",
+      "2020",
+      "decentraland",
+      "pants"
+
+     ],
+    "category": "lower_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_lBody_GhostBlaster.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": ""}
+    ],
+    "rarity": "legendary",
+    "description": "Halloween 2020"
+  }

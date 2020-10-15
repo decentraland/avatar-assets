@@ -1,0 +1,36 @@
+{
+    "name": "hwn_2020_ghostblaster_upper_body",
+    "i18n": {
+      "en": "GhostBlaster Suit - Halloween 2020",
+      "es": "Traje de GhostBlaster - Halloween 2020"
+    },
+    "tags": [
+      "ghostblaster",
+      "halloween",
+      "2020",
+      "decentraland",
+      "suit"
+
+     ],
+    "category": "upper_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_uBody_GhostBlaster.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": ""}
+    ],
+    "rarity": "legendary",
+    "description": "Halloween 2020"
+  }

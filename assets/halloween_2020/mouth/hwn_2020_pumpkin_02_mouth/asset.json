@@ -21,13 +21,13 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "pumpkin_02_mouth.png", 
+  "model": "pumpkin_02_mouth", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "pumpkin_02_mouth.png"}
+  {"type": "BaseFemale", "model": "pumpkin_02_mouth"}
     ],
     "rarity": "legendary",
     "description": "**"
