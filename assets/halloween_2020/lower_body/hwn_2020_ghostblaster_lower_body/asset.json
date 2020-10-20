@@ -30,7 +30,7 @@
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "F_HWN_2020_uBody_GhostBlaster.glb"}
+  {"type": "BaseFemale", "model": "F_HWN_2020_lBody_GhostBlaster.glb"}
     ],
     "rarity": "legendary",
     "description": "Halloween 2020"
