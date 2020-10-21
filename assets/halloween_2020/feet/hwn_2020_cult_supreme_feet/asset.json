@@ -22,13 +22,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "HWN_2020_Feet_Cult_Servant.glb", 
+"model": "HWN_2020_Feet_Cult_Supreme.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "HWN_2020_Feet_Cult_Servant.glb"}
+{"type": "BaseFemale", "model": "HWN_2020_Feet_Cult_Supreme.glb"}
   ],
   "rarity": "mythic",
   "description": ""
