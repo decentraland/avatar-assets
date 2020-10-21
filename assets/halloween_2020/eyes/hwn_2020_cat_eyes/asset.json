@@ -29,6 +29,6 @@
   },
   {"type": "BaseFemale", "model": "cat_eyes.glb"}
     ],
-    "rarity": "legendary",
+    "rarity": "uncommon",
     "description": "**"
   }
