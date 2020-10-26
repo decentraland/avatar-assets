@@ -13,9 +13,9 @@
     "decentraland",
     "community",
     "wearables",
-	"Sweatshirt",
-	"Backpack",
-	"Gloves"
+	  "Sweatshirt",
+	  "Backpack",
+	  "Gloves"
    ],
   "category": "upper_body",
   "replaces": [
@@ -36,5 +36,5 @@
 "model": "F_uBody_daCoat.glb"}
   ],
   "rarity": "legendary",
-  "description": "Digital Alchemy Collection -  The disruptive coat pack partially protects your Elixir gem, which is connected through the heart to a transmuting backpack. *Includes matching gloves."
+  "description": "Digital Alchemy Collection | Disruptive coat | Fits a disruptive and mysterious character, with an endless source of energy."
 }
