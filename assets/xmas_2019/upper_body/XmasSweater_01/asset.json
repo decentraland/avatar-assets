@@ -1,0 +1,33 @@
+{
+  "name": "pixel_sweater_upper_body",
+  "i18n": {
+    "en": "Pixel Christmas Sweater",
+    "es": "Sweater Navideño Pixel"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "cyber",
+    "christmas"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_XmasSweater_01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_XmasSweater_01.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Even in virtual worlds there's no escape from the Xmas jumper."
+}

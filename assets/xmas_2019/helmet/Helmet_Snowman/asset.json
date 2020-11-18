@@ -1,0 +1,44 @@
+{
+  "name": "xmas_snowman_helmet",
+  "i18n": {
+    "en": "Snowman Head",
+    "es": "Cabeza de Hombre de Nieve"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "cyber",
+    "xmas",
+    "christmas",
+    "snowman"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring",
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Helmet_Snowman.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Helmet_Snowman.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Don't stand too close to the fire."
+}

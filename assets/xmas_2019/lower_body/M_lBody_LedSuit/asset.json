@@ -1,0 +1,34 @@
+{
+  "name": "m_led_suit_lower_body",
+  "i18n": {
+    "en": "Led Pants",
+    "es": "Pantalones de Leds"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "cyber",
+    "xmas",
+    "pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+     "feet"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_lBody_LedSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": "Why just put up Xmas lights when you can wear them?"
+
+}

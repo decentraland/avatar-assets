@@ -1,0 +1,34 @@
+{
+  "name": "xmas_ball_earring",
+  "i18n": {
+    "en": "Christmas Ball Earring",
+    "es": "Pendientes de Bola Navideña"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "christmas",
+    "cyber"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_XmasBall_02.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_XmasBall_02.glb"}
+        ],
+        "rarity": "epic",
+        "description": "Ding dong merrily on ears!"
+      }
