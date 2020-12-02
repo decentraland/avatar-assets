@@ -45,7 +45,8 @@ if (!module.parent) {
   'wonderzone_steampunk',
   'digital_alchemy',
   'china_flying',
-  'halloween_2020'
+  'halloween_2020',
+  'xmas_2020'
 
   
 ])
