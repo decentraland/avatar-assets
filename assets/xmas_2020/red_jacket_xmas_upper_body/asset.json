@@ -1,0 +1,34 @@
+{
+  "name": "red_jacket_xmas_upper_body",
+  "i18n": {
+    "en": "Red Winter Jacket",
+    "es": "Chaqueta Roja de Invierno"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "red",
+    "jacket"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "red_jacket_xmas_upper_body.glb.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "epic",
+  "description": ""
+}
