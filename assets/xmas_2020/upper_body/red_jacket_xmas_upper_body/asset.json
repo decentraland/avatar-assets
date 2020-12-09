@@ -22,7 +22,7 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "red_jacket_xmas_upper_body.glb.glb", 
+"model": "red_jacket_xmas_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
