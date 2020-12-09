@@ -1,0 +1,33 @@
+{
+  "name": "eth_xmas_sweater_upper_body",
+  "i18n": {
+    "en": "Ethereum Xmas Sweater",
+    "es": "Sweater de Navidad de Ethereum"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "Ethereum"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "eth_xmas_sweater_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

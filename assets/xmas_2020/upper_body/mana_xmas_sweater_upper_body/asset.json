@@ -1,0 +1,33 @@
+{
+  "name": "mana_xmas_sweater_upper_body",
+  "i18n": {
+    "en": "MANA Xmas Sweater",
+    "es": "Sweater de Navidad de MANA"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "MANA"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "mana_xmas_sweater_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

@@ -1,0 +1,33 @@
+{
+  "name": "doge_xmas_tshirt_upper_body",
+  "i18n": {
+    "en": "Dogecoin T Shirt",
+    "es": "Remera de Dogecoin"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "dogecoin"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "doge_xmas_tshirt_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "epic",
+  "description": ""
+}
