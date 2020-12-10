@@ -21,12 +21,22 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "btc_xmas_sweater_upper_body.glb", 
+"model": "m_btc_xmas_sweater_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_btc_xmas_sweater_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+
+
   ],
   "rarity": "epic",
   "description": ""
