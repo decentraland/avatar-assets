@@ -21,12 +21,20 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "mana_xmas_sweater_upper_body.glb", 
+"model": "m_mana_xmas_sweater_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_mana_xmas_sweater_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
   ],
   "rarity": "epic",
   "description": ""
