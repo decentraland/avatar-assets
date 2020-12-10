@@ -25,7 +25,15 @@
    ],
    "overrideHides": [
    ]
-}
+},
+{
+  "type": "BaseFemale", 
+  "model": "santa2020_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
   ],
   "rarity": "epic",
   "description": ""
