@@ -22,12 +22,20 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "yellow_jacket_xmas_upper_body.glb", 
+"model": "m_yellow_jacket_xmas_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_yellow_jacket_xmas_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
   ],
   "rarity": "epic",
   "description": ""
