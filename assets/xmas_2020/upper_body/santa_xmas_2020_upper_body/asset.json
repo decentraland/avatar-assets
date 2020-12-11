@@ -15,7 +15,8 @@
   "replaces": [
    ],
    "hides": [
-    "lower_body"
+    "lower_body",
+    "feet"
    ],
 
   "main": [
