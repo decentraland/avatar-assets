@@ -21,13 +21,21 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "doge_xmas_tshirt_upper_body.glb", 
+"model": "m_doge_xmas_tshirt_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_doge_xmas_tshirt_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
   ],
-  "rarity": "epic",
+  "rarity": "legendary",
   "description": ""
 }

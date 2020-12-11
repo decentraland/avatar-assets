@@ -1,7 +1,7 @@
 {
   "name": "btc_xmas_sweater_upper_body",
   "i18n": {
-    "en": "Bitcoin Xmas Sweater",
+    "en": "Bitcoin Christmas Sweater",
     "es": "Sweater de Navidad de Bitcoin"
   },
   "tags": [
@@ -38,6 +38,6 @@
 
 
   ],
-  "rarity": "epic",
+  "rarity": "legendary",
   "description": ""
 }

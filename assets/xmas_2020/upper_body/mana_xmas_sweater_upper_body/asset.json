@@ -1,7 +1,7 @@
 {
   "name": "mana_xmas_sweater_upper_body",
   "i18n": {
-    "en": "MANA Xmas Sweater",
+    "en": "MANA Christmas Sweater",
     "es": "Sweater de Navidad de MANA"
   },
   "tags": [
@@ -36,6 +36,6 @@
      ]
   }
   ],
-  "rarity": "epic",
+  "rarity": "legendary",
   "description": ""
 }

@@ -1,7 +1,7 @@
 {
   "name": "eth_xmas_sweater_upper_body",
   "i18n": {
-    "en": "Ethereum Xmas Sweater",
+    "en": "Ethereum Christmas Sweater",
     "es": "Sweater de Navidad de Ethereum"
   },
   "tags": [
@@ -36,6 +36,6 @@
      ]
   }
   ],
-  "rarity": "epic",
+  "rarity": "legendary",
   "description": ""
 }
