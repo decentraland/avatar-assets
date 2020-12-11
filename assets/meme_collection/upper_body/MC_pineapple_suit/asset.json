@@ -1,0 +1,37 @@
+{
+  "name": "meme_suit_pineapple",
+  "i18n": {
+    "en": "Pineapple shirt and jacket, suit",
+    "es": "Camisa y chaqueta de piña, traje"
+  },
+  "tags": [
+    "meme",
+	"pineapple",
+	"suit",
+	"wearable",
+	"shirt",
+	"jacket",
+	"upper_body"
+   ],
+  "category": "upper_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "uBody_PineappleSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "uBody_PineappleSuit.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

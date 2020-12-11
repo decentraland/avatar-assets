@@ -46,7 +46,10 @@ if (!module.parent) {
   'digital_alchemy',
   'china_flying',
   'halloween_2020',
-  'xmas_2020'
+  'xmas_2020',
+  'meme_collection'
+
+ 
 
   
 ])

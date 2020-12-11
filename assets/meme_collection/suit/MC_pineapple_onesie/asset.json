@@ -1,0 +1,44 @@
+{
+  "name": "meme_suit_pineappleOnesie",
+  "i18n": {
+    "en": "Pineapple Onesie",
+    "es": "Mono de Piña"
+  },
+  "tags": [
+    "meme",
+	"pineapple",
+	"suit",
+	"wearable",
+	"onesie",
+	"vibrant"
+   ],
+  "category": "suit",
+  "replaces": [
+    "upper_body",
+    "lower_body",
+    "feet",
+	"tiara",
+	"hat",
+	"helmet"
+	
+   ],
+   "hides": [
+    "hair",
+	"earring",
+	"facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Suit_PineappleOnesie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Suit_PineappleOnesie.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}
