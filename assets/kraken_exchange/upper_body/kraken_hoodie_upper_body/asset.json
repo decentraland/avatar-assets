@@ -1,0 +1,33 @@
+{
+  "name": "Kraken_hoodie_upper_body",
+  "i18n": {
+    "en": "Kraken Hoodie",
+    "es": "Hoodie de Kraken"
+  },
+  "tags": [
+    "hoodie",
+    "kraken",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Kraken_Hoodie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Kraken_Hoodie.glb"}
+  ],
+  "rarity": "common",
+  "description": "Kraken Hoodie"
+}

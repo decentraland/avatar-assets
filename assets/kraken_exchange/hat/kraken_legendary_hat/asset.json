@@ -1,0 +1,38 @@
+{
+  "name": "kraken_legendary_hat",
+  "i18n": {
+    "en": "Superior Kraken hat",
+    "es": "Sombrero Kraken superior"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "helmet",
+    "octopus",
+    "kraken",
+    "cex",
+    "exchange",
+    "legendary"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "eyewear","hair","mask"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_kraken_hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "f_kraken_hat.glb"}
+  ],
+  "rarity": "legendary",
+"description": ""
+}

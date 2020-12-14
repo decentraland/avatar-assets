@@ -1,0 +1,35 @@
+{
+  "name": "Kraken_tshirt_upper_body",
+  "i18n": {
+    "en": "Kraken T-Shirt",
+    "es": "Camiseta de Kraken"
+  },
+  "tags": [
+    "T-Shirt",
+    "kraken",
+    "tshirt",
+    "shirt",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Kraken_TShirt.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Kraken_TShirt.glb"}
+  ],
+  "rarity": "common",
+  "description": "Kraken T-Shirt"
+}

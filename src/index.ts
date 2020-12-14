@@ -47,7 +47,8 @@ if (!module.parent) {
   'china_flying',
   'halloween_2020',
   'xmas_2020',
-  'meme_collection'
+  'meme_collection',
+  'kraken_exchange'
 
  
 
