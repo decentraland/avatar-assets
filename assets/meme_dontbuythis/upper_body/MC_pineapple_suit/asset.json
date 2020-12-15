@@ -1,8 +1,8 @@
 {
   "name": "meme_suit_pineapple",
   "i18n": {
-    "en": "Pineapple shirt and jacket, suit",
-    "es": "Camisa y chaqueta de piña, traje"
+    "en": "Cool Pineapple Suit",
+    "es": "Campera de Piña Cool"
   },
   "tags": [
     "meme",
@@ -33,5 +33,5 @@
 {"type": "BaseFemale", "model": "uBody_PineappleSuit.glb"}
   ],
   "rarity": "epic",
-  "description": ""
+  "description": "Cool Pineapple Suit from the $Meme collection - Don't wear this"
 }

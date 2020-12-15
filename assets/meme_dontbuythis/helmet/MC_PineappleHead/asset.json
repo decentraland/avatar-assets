@@ -1,8 +1,8 @@
 {
   "name": "meme_helmet_pineapple",
   "i18n": {
-    "en": "Pineapple Head",
-    "es": "Cabeza de Piña"
+    "en": "Tasty Pineapple Head",
+    "es": "Sabrosa Cabeza de Piña"
   },
   "tags": [
     "hat",
@@ -13,16 +13,15 @@
    ],
   "category": "helmet",
   "replaces": [
-    "mask",
+  "mask",
 	"tiara",
 	"hat",
 	"helmet"
    ],
    "hides": [
-    "hair",
+  "hair",
 	"earring",
-	"facial_hair",
-	"head"
+	"facial_hair"
    ],
 
   "main": [
@@ -37,5 +36,5 @@
 {"type": "BaseFemale", "model": "Helmet_PineappleHead.glb"}
   ],
   "rarity": "epic",
-  "description": ""
+  "description": "Tasty Pineapple Head from the $Meme Collection - Don't wear this"
 }

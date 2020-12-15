@@ -1,8 +1,8 @@
 {
-  "name": "kraken_epic_hat",
+  "name": "kraken_legendary_hat",
   "i18n": {
-    "en": "Baby Kraken hat",
-    "es": "Sombrero kraken bebé"
+    "en": "Kraken Gold-Eye Crown",
+    "es": "Corona de Ojos de Oro de Kraken"
   },
   "tags": [
     "hat",
@@ -12,7 +12,7 @@
     "kraken",
     "cex",
     "exchange",
-    "epic"
+    "legendary"
    ],
   "category": "hat",
   "replaces": [
@@ -33,6 +33,6 @@
 },
 {"type": "BaseFemale", "model": "f_kraken_hat.glb"}
   ],
-  "rarity": "epic",
-"description": ""
+  "rarity": "legendary",
+"description": "The Kraken is released upon Decentraland"
 }
