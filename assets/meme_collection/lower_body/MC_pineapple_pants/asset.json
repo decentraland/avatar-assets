@@ -1,5 +1,5 @@
 {
-  "name": "meme_pants_pineapple",
+  "name": "$Meme Pinapple Pants",
   "i18n": {
     "en": "Pineapple Pants, suit",
     "es": "pantalones de piñas, traje"
@@ -31,5 +31,5 @@
 {"type": "BaseFemale", "model": "lBody_PineappleSuit.glb"}
   ],
   "rarity": "epic",
-  "description": ""
+  "description": "Fresh Pineapple Pants from the $Meme collection - Don't wear this"
 }
