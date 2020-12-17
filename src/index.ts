@@ -48,7 +48,8 @@ if (!module.parent) {
   'halloween_2020',
   'xmas_2020',
   'meme_dontbuythis',
-  'release_the_kraken'
+  'release_the_kraken',
+  '3lau_basics'
 
  
 
