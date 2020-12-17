@@ -1,0 +1,40 @@
+{
+  "name": "xmash_up_googles_eyewear",
+  "i18n": {
+    "en": "Bryfocals - Guest Artists Collection"
+  },
+  "tags": [
+    "accesories",
+    "eyewer",
+    "Brinkman",
+    "Collection",
+    "Artists",
+    "decentraland",
+    "community",
+    "wearables",
+    "vrglitch",
+  	"Bryfocals",
+    "Guest"
+   
+   ],
+  "category": "eyewear",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "U_eyewear_gacGoogles.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "U_eyewear_gacGoogles.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Bryfocals | Art by Bryan Blinkman - 3D Design by vrglit.ch | Guest Artists Collection"
+}

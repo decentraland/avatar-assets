@@ -1,0 +1,38 @@
+{
+  "name": "xmash_up_coat_upper_body",
+  "i18n": {
+    "en": "Infinity Cow Coat - Guest Artists Collection"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "Infinity",
+    "cow",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"coat",
+  	"guest",
+  	"artists"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_gacCoat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_uBody_gacCoat.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Infinity Cow Coat. | Art by Jonathan Wolfe - 3D Design by vrglit.ch | Guest Artists Collection"
+}

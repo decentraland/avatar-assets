@@ -1,0 +1,39 @@
+{
+  "name": "xmash_up_boots_feet",
+  "i18n": {
+    "en": "FEWO CLOUD SHOES - Guest Artists Collection"
+  },
+  "tags": [
+    "boots",
+    "fewocious",
+    "Collection",
+    "Artists",
+    "decentraland",
+    "community",
+    "wearables",
+    "vrglitch",
+  	"cloud",
+    "shoes"
+   
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_gacBoots.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_Feet_gacBoots.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "FEWO CLOUD SHOES. It’s like Walking on Air... | Art by fewocious - 3D Design by vrglit.ch | Guest Artists Collection"
+}

@@ -49,7 +49,9 @@ if (!module.parent) {
   'xmas_2020',
   'meme_dontbuythis',
   'release_the_kraken',
-  '3lau_basics'
+  '3lau_basics',
+  'xmash_up_2020'
+  
 
  
 
