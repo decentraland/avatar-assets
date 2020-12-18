@@ -1,8 +1,8 @@
 {
   "name": "kraken_tshirt_upper_body",
   "i18n": {
-    "en": "Kraken Logo T- Shirt",
-    "es": "Camiseta de Logo de Kraken"
+    "en": "Kraken T-Shirt",
+    "es": "Camiseta de Kraken"
   },
   "tags": [
     "T-Shirt",
@@ -30,6 +30,6 @@
 },
 {"type": "BaseFemale", "model": "F_Kraken_TShirt.glb"}
   ],
-  "rarity": "common",
+  "rarity": "uncommon",
   "description": "The Kraken is released upon Decentraland"
 }

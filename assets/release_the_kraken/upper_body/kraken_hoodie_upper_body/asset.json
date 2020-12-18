@@ -1,8 +1,8 @@
 {
   "name": "kraken_hoodie_upper_body",
   "i18n": {
-    "en": "Kraken Logo Hoodie",
-    "es": "Hoodie de Logo de Kraken"
+    "en": "Kraken Hoodie",
+    "es": "Hoodie de Kraken"
   },
   "tags": [
     "hoodie",
@@ -28,6 +28,6 @@
 },
 {"type": "BaseFemale", "model": "F_Kraken_Hoodie.glb"}
   ],
-  "rarity": "common",
+  "rarity": "uncommon",
   "description": "The Kraken is released upon Decentraland"
 }
