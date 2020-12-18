@@ -1,8 +1,8 @@
 {
-  "name": "3LAU_tshirtB_upper_body",
+  "name": "3lau_tshirt_w_upper_body",
   "i18n": {
-    "en": "3LAU Blue Triangle Tee",
-    "es": "Camiseta con Triangulo Azul de 3LAU"
+    "en": "3LAU White Triangle Tee",
+    "es": "Camiseta con Triangulo Blanco de 3LAU"
   },
   "tags": [
     "T-Shirt",
@@ -24,14 +24,14 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_3LAU_Tshirt_Blue.glb", 
+"model": "M_3LAU_Tshirt_White.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "F_3LAU_Tshirt_Blue.glb"}
+{"type": "BaseFemale", "model": "F_3LAU_Tshirt_White.glb"}
   ],
-  "rarity": "legendary",
-  "description": "3LAU's signature triangle on a black and blue tee."
+  "rarity": "epic",
+  "description": "3LAU's signature triangle on a black and white tee."
 }
