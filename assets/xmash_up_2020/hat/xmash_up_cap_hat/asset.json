@@ -24,14 +24,14 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_hair_daHair.glb", 
+"model": "U_cap_gapHat.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
 {"type": "BaseFemale", 
-"model": "F_hair_daHair.glb"}
+"model": "U_cap_gapHat.glb"}
   ],
   "rarity": "mythic",
   "description": "The Delbo Comic Cap. Because every great artist needs their hat... | Art by José Delbo - 3D Design by vrglit.ch | Guest Artists Collection"
