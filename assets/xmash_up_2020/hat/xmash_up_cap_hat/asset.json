@@ -15,10 +15,14 @@
   	"Delbo",
     "Comic"
    ],
-  "category": "hair",
+  "category": "hat",
   "replaces": [
+    "helmet",
+    "top_head"
+
    ],
    "hides": [
+     "hair"
    ],
 
   "main": [
