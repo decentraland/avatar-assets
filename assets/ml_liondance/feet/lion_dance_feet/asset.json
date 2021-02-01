@@ -1,0 +1,36 @@
+{
+    "name": "lion_dance_feet",
+    "i18n": {
+      "en": "Lion Dance Shoes",
+      "es": "Zapatos de danza del león"
+    },
+    "tags": [
+      "shoes",
+      "lion dance",
+      "Spring Festival",
+      "Dragon City",
+      "chinese"
+     ],
+    "category": "feet",
+    "replaces": [
+      "feet"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_lion_dance_feet.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_lion_dance_feet.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Dragon City 2021 Spring Festival Souvenirs"
+  }

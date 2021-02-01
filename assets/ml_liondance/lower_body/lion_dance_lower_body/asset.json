@@ -1,0 +1,36 @@
+{
+    "name": "lion_dance_lower_body",
+    "i18n": {
+      "en": "Lion Dance Pants",
+      "es": "Pantalones de danza del león"
+    },
+    "tags": [
+      "pants",
+      "chinese",
+      "Spring Festival",
+      "Dragon City",
+      "lion dance"
+     ],
+    "category": "lower_body",
+    "replaces": [
+      "lower_body"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_lion_dance_pants.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_lion_dance_pants.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Dragon City 2021 Spring Festival Souvenirs"
+  }

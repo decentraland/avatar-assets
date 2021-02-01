@@ -1,0 +1,38 @@
+{
+    "name": "lion_dance_hat",
+    "i18n": {
+      "en": "Lion Dance Hat",
+      "es": "Sombrero de danza del león"
+    },
+    "tags": [
+      "hat",
+      "chinese",
+      "Spring Festival",
+      "Dragon City",
+      "lion dance"
+     ],
+    "category": "hat",
+    "replaces": [
+      "hair",
+      "helmet",
+      "hat"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_lion_dance_hat.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_lion_dance_hat.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Dragon City 2021 Spring Festival Souvenirs"
+  }
