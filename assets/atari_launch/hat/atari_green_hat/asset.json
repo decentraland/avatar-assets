@@ -1,0 +1,38 @@
+{
+  "name": "atari_green_hat",
+  "i18n": {
+    "en": "Green Atari Cap",
+    "es": "Gorra Atari Verde"
+  },
+  "tags": [
+    "atari",
+    "cap",
+    "gamer",
+    "hat",
+    "decentraland",
+    "retro",
+    "green"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Atari_Green.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Atari_Green.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a green cap."
+}

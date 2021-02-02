@@ -51,7 +51,8 @@ if (!module.parent) {
   'release_the_kraken',
   '3lau_basics',
   'xmash_up_2020',
-  'ml_liondance'
+  'ml_liondance',
+  'atari_launch'
   
 
  

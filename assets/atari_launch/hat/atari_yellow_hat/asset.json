@@ -1,0 +1,38 @@
+{
+  "name": "atari_yellow_hat",
+  "i18n": {
+    "en": "Yellow Atari Cap",
+    "es": "Gorra Atari Amarilla"
+  },
+  "tags": [
+    "atari",
+    "cap",
+    "gamer",
+    "hat",
+    "decentraland",
+    "retro",
+    "yellow"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Atari_Yellow.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Atari_Yellow.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a yellow cap."
+}
