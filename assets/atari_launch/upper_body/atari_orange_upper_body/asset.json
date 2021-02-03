@@ -1,8 +1,8 @@
 {
-  "name": "atari_yellow_upper_body",
+  "name": "atari_orange_upper_body",
   "i18n": {
-    "en": "Yellow Atari Tee",
-    "es": "Camiseta Atari Amarilla"
+    "en": "Orange Atari Tee",
+    "es": "Camiseta Atari Naranja"
   },
   "tags": [
     "T-Shirt",
@@ -14,7 +14,7 @@
     "decentraland",
     "upper",
     "gamer",
-    "yellow"
+    "orange"
    ],
   "category": "upper_body",
   "replaces": [
@@ -25,14 +25,14 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Tee_Atari_Yellow.glb", 
+"model": "M_Tee_Atari_Orange.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "F_Tee_Atari_Yellow.glb"}
+{"type": "BaseFemale", "model": "F_Tee_Atari_Orange.glb"}
   ],
   "rarity": "epic",
-  "description": "Atari's signature logo on a yellow tee."
+  "description": "Atari's signature logo on an orange tee."
 }

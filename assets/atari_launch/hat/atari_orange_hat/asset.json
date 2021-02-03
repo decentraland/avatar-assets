@@ -1,8 +1,8 @@
 {
-  "name": "atari_yellow_hat",
+  "name": "atari_orange_hat",
   "i18n": {
-    "en": "Yellow Atari Cap",
-    "es": "Gorra Atari Amarilla"
+    "en": "Orange Atari Cap",
+    "es": "Gorra Atari Naranja"
   },
   "tags": [
     "atari",
@@ -11,7 +11,7 @@
     "hat",
     "decentraland",
     "retro",
-    "yellow"
+    "orange"
    ],
   "category": "hat",
   "replaces": [
@@ -25,14 +25,14 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "M_Hat_Atari_Yellow.glb", 
+"model": "M_Hat_Atari_Orange.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "F_Hat_Atari_Yellow.glb"}
+{"type": "BaseFemale", "model": "F_Hat_Atari_Orange.glb"}
   ],
   "rarity": "epic",
-  "description": "Atari's signature logo on a yellow cap."
+  "description": "Atari's signature logo on an orange cap."
 }
