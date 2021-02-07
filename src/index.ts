@@ -52,7 +52,8 @@ if (!module.parent) {
   '3lau_basics',
   'xmash_up_2020',
   'ml_liondance',
-  'atari_launch'
+  'atari_launch',
+  'index'
   
 
  

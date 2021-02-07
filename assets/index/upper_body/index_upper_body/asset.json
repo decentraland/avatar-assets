@@ -1,0 +1,34 @@
+{
+    "name": "index_upper_body",
+    "i18n": {
+      "en": "Index",
+      "es": "Índice"
+    },
+    "tags": [
+      
+     ],
+    "category": "upper_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+      "lower_body",
+      "feet",
+      "head"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "Index_V1.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Index_V1.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Index."
+  }
