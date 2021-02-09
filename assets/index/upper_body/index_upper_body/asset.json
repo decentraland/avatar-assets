@@ -15,7 +15,9 @@
      "hides": [
       "lower_body",
       "feet",
-      "head"
+      "head",
+      "hair",
+      "hat"
      ],
   
     "main": [
