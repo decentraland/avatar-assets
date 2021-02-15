@@ -1,0 +1,42 @@
+{
+  "name": "ga_delbo_upper_body",
+  "i18n": {
+    "en": "Delbo Death Jacket - Guest Artists Collection"
+  },
+  "tags": [
+    "jacket",
+    "upper_body",
+    "leather",
+    "skull",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"coat",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "death",
+    "biker"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Delbo_Leather_Jacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_**.glb"}
+  ],
+  "rarity": "**",
+  "description": "**"
+}
