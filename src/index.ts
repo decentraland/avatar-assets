@@ -53,7 +53,6 @@ if (!module.parent) {
   'xmash_up_2020',
   'ml_liondance',
   'atari_launch',
-  'index',
   'guest_artists_2021'
   
 
