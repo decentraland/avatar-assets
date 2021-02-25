@@ -35,6 +35,9 @@
 "overrideReplaces": [
    ],
    "overrideHides": [
+     "head",
+     "hair",
+     "facial_hair"
    ]
 },
 {"type": "BaseFemale", 

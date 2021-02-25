@@ -32,6 +32,7 @@
 "overrideReplaces": [
    ],
    "overrideHides": [
+     "feet"
    ]
 },
 {"type": "BaseFemale", 
