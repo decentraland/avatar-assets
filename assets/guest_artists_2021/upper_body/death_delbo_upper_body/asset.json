@@ -1,0 +1,44 @@
+{
+  "name": "death_delbo_upper_body",
+  "i18n": {
+    "en": "Death Character - Jose Delbo"
+  },
+  "tags": [
+    "death",
+    "upper_body",
+    "character",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"trench_coat",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "skeleton",
+    "coat",
+    "long"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+     "lower_body",
+     "feet"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Death_Body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "Death_Body.glb"}
+  ],
+  "rarity": "**",
+  "description": "**"
+}
