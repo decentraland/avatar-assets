@@ -25,7 +25,8 @@
    "hides": [
      "hair",
      "facial_hair",
-     "earring"
+     "earring",
+     "head"
    ],
 
   "main": [
@@ -35,9 +36,6 @@
 "overrideReplaces": [
    ],
    "overrideHides": [
-     "head",
-     "hair",
-     "facial_hair"
    ]
 },
 {"type": "BaseFemale", 
