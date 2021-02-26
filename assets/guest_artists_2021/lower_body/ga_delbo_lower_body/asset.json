@@ -23,6 +23,7 @@
   "replaces": [
    ],
    "hides": [
+     "feet"
    ],
 
   "main": [
@@ -32,7 +33,6 @@
 "overrideReplaces": [
    ],
    "overrideHides": [
-     "feet"
    ]
 },
 {"type": "BaseFemale", 
