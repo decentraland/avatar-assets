@@ -54,7 +54,8 @@ if (!module.parent) {
   'ml_liondance',
   'atari_launch',
   'guest_artists_2021',
-  'rac_basics'
+  'rac_basics',
+  'e1337'
   
 
  

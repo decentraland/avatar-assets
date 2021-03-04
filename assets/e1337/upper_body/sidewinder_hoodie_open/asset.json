@@ -1,0 +1,26 @@
+{
+  "name": "e1337_sidewinder_hoodie_open_linetang_upper_body",
+  "i18n": {
+    "en": "Sidewinder Hoodie Open"
+  },
+  "tags": ["sidewinder", "hoodie"],
+  "category": "upper_body",
+  "replaces": [""],
+  "hides": ["hair", "hat", "helmet"],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "sidewinder_hoodie_open_m.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "sidewinder_hoodie_open_f.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "E1337 Sidewinder Hoddie"
+}

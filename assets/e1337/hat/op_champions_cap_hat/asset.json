@@ -1,0 +1,26 @@
+{
+  "name": "e1337_op_champions_cap_hat",
+  "i18n": {
+    "en": "OP Champions Cap"
+  },
+  "tags": ["OP", "Champions"],
+  "category": "hat",
+  "replaces": ["helmet"],
+  "hides": ["hair"],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "op_champions_cap.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "op_champions_cap.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "uncommon",
+  "description": "E1337 OP Champions Cap"
+}
