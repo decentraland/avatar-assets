@@ -55,7 +55,8 @@ if (!module.parent) {
   'atari_launch',
   'guest_artists_2021',
   'rac_basics',
-  'e1337'
+  'e1337',
+  'winklevoss_capital'
   
 
  
