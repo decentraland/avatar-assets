@@ -18,7 +18,15 @@
       "head",
       "hair",
       "hat",
-      "facial_hair"
+      "facial_hair",
+      "eyewear",
+      "earring",
+      "tiara",
+      "mask",
+      "hat",
+      "helmet",
+      "top_head"
+
      ],
   
     "main": [
@@ -32,6 +40,6 @@
   },
   {"type": "BaseFemale", "model": "Library.glb"}
     ],
-    "rarity": "legendary",
+    "rarity": "mythic",
     "description": "Index."
   }
