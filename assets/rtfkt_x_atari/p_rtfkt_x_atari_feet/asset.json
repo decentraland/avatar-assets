@@ -1,0 +1,42 @@
+{
+  "name": "p_rtfkt_x_atari_feet",
+  "i18n": {
+    "en": "Purple RTFKT X Atari Sneakers",
+    "es": "Zapatillas moradas RTFKT X Atari"
+  },
+  "tags": [
+    "sneakers",
+    "purple",
+    "atari",
+    "rtfkt",
+    "pong",
+    "trainers",
+    "unique",
+    "retro",
+    "collab",
+    "hologram",
+    "blue",
+    "pink"
+   ],
+  "category": "feet",
+  "replaces": [
+  
+
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "RTFKT_Atari2_01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "RTFKT_Atari2_01.glb"}
+  ],
+  "rarity": "epic",
+  "description": "RTFKT x Atari sneakers with holographic print."
+}
