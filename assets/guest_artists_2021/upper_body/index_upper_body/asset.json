@@ -15,10 +15,10 @@
      "hides": [
       "lower_body",
       "feet",
-      "head",
-      "hair",
       "hat",
-      "facial_hair"
+      "earring",
+      "tiara",
+      "helmet"
      ],
   
     "main": [
@@ -32,6 +32,6 @@
   },
   {"type": "BaseFemale", "model": "Index_V1.glb"}
     ],
-    "rarity": "legendary",
+    "rarity": "mythic",
     "description": "Index."
   }
