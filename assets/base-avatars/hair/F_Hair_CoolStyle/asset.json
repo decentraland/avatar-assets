@@ -5,12 +5,11 @@
     "es": "Pelo Corto Moderno"
   },
   "tags": [
-    "hair",
-    "female",
-    "woman"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_CoolShortStyle.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_CoolShortStyle.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_CoolShortStyle.glb"}
   ]
 }

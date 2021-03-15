@@ -5,12 +5,11 @@
     "es": "Corte Sencillo"
   },
   "tags": [
-    "hair",
-    "male",
-    "man"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_03.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_03.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Hair_Standard_03.glb"}
   ]
 }

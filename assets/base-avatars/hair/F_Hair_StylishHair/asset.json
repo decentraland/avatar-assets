@@ -5,12 +5,11 @@
     "es": "Peinado Corto Elegante"
   },
   "tags": [
-    "hair",
-    "female",
-    "woman"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_StylishHair.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_StylishHair.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_StylishHair.glb"}
   ]
 }

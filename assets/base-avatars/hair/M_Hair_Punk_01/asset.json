@@ -5,12 +5,11 @@
     "es": "Cresta Punk"
   },
   "tags": [
-    "hair",
-    "male",
-    "man"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Punk_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Punk_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Hair_Punk_01.glb"}
   ]
 }

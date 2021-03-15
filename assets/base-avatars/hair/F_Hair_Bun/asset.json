@@ -5,12 +5,11 @@
     "es": "Rodete"
   },
   "tags": [
-    "hair",
-    "female",
-    "woman"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Bun.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Bun.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_Bun.glb"}
   ]
 }

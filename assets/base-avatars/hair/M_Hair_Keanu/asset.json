@@ -5,12 +5,11 @@
     "es": "Estilo Keanu"
   },
   "tags": [
-    "hair",
-    "male",
-    "man"
+    "hair"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Keanu.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Keanu.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Hair_Keanu.glb"}
   ]
 }
