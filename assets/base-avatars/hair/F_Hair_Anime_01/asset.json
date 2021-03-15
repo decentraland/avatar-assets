@@ -6,11 +6,14 @@
   },
   "tags": [
     "hair",
-    "female",
-    "woman"
+    "anime",
+    "idol"
+
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Anime_01.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Anime_01.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_Anime_01.glb"}
+  
   ]
 }
