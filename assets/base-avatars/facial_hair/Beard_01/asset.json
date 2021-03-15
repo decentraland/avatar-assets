@@ -6,11 +6,12 @@
   },
   "tags": [
     "face",
-    "facial_hair",
-    "man"
+    "facial_hair"
    ],
   "category": "facial_hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "Beard_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "Beard_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Beard_01.glb"}
+
   ]
 }
