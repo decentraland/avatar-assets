@@ -1,7 +1,7 @@
 {
   "name": "lpmw_top_head",
   "i18n": {
-    "en": "3D Glasses | Joelle | Guest Artists Collection"
+    "en": "3D Glasses | Joelle"
   },
   "tags": [
     "lowpolymodels",
@@ -43,5 +43,5 @@
 "model": "LowPolyModelsWorld_Top_Head.glb"}
   ],
   "rarity": "epic",
-  "description": "Low Poly Models World Headgear | Joelle | Guest Artist Wearables"
+  "description": "Low Poly Models World Headgear | Joelle | Guest Artists Collection."
 }

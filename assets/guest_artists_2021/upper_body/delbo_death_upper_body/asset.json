@@ -1,7 +1,7 @@
 {
-  "name": "death_delbo_upper_body",
+  "name": "delbo_death_upper_body",
   "i18n": {
-    "en": "Death Character - Jose Delbo"
+    "en": "Death Tunic | Delbo"
   },
   "tags": [
     "death",
@@ -39,6 +39,6 @@
 {"type": "BaseFemale", 
 "model": "Death_Body.glb"}
   ],
-  "rarity": "**",
-  "description": "**"
+  "rarity": "mythic",
+  "description": "The skeleton and tunic of José Delbo's Death Character | José Delbo | Guest Artists Collection."
 }

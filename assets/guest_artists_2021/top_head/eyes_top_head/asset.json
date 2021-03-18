@@ -1,7 +1,7 @@
 {
-  "name": "joelle_top_head",
+  "name": "eyes_top_head",
   "i18n": {
-    "en": "Joelle Eyes - Guest Artists Collection"
+    "en": "Alien Eyes | Joelle"
   },
   "tags": [
     "eyes",
@@ -37,6 +37,6 @@
 {"type": "BaseFemale", 
 "model": "L2Eyes.glb"}
   ],
-  "rarity": "epic",
-  "description": "**"
+  "rarity": "legendary",
+  "description": "Rainbow Alien Eyes | Joelle | Guest Artists Collection."
 }

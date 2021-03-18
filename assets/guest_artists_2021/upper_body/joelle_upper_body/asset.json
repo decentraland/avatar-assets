@@ -1,7 +1,7 @@
 {
   "name": "joelle_upper_body",
   "i18n": {
-    "en": "Brain Tee - Joelle"
+    "en": "Brain Tee | Joelle"
   },
   "tags": [
     "brain",
@@ -38,5 +38,5 @@
 "model": "F**.glb"}
   ],
   "rarity": "legendary",
-  "description": "Brain Tee with arm tattoos | Joelle | Guest Artist Wearables"
+  "description": "Brain Tee with arm tattoos | Joelle | Guest Artists Collection."
 }

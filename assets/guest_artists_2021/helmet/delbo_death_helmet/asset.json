@@ -1,7 +1,7 @@
 {
-  "name": "ga_delbo_death_hat",
+  "name": "delbo_death_helmet",
   "i18n": {
-    "en": "Delbo Death Skull - Guest Artists Collection"
+    "en": "Death Skull | Delbo"
   },
   "tags": [
     "hat",
@@ -19,14 +19,16 @@
     "death",
     "character"
    ],
-  "category": "hat",
+  "category": "helmet",
   "replaces": [
    ],
    "hides": [
      "hair",
      "facial_hair",
-     "earring",
-     "head"
+     "head",
+     "tiara",
+     "mask",
+     "top_head"
    ],
 
   "main": [
@@ -41,6 +43,6 @@
 {"type": "BaseFemale", 
 "model": "Death_Hat.glb"}
   ],
-  "rarity": "**",
-  "description": "**"
+  "rarity": "mythic",
+  "description": "The skull and hat of José Delbo's Death Character | José Delbo | Guest Artists Collection."
 }

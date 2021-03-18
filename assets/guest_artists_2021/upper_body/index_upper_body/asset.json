@@ -21,7 +21,9 @@
       "helmet",
       "head",
       "hair",
-      "facial_hair"
+      "facial_hair",
+      "top_head",
+      "mask"
      ],
   
     "main": [
@@ -36,5 +38,5 @@
   {"type": "BaseFemale", "model": "Index_V1.glb"}
     ],
     "rarity": "mythic",
-    "description": "Index."
+    "description": "Index | Joelle | Guest Artists Collection."
   }

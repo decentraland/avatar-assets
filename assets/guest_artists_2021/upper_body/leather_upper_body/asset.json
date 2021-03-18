@@ -1,7 +1,7 @@
 {
-  "name": "delbo_upper_body",
+  "name": "leather_upper_body",
   "i18n": {
-    "en": "Delbo Death Jacket - Guest Artists Collection"
+    "en": "Leather Death Jacket | Delbo"
   },
   "tags": [
     "jacket",
@@ -37,6 +37,6 @@
 {"type": "BaseFemale", 
 "model": "F_Delbo_Leather_Jacket.glb"}
   ],
-  "rarity": "**",
-  "description": "**"
+  "rarity": "legendary",
+  "description": "Black leather jacket with a José Delbo sketch on the back | José Delbo | Guest Artists Collection."
 }
