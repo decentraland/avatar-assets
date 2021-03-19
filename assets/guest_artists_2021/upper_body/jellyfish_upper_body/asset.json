@@ -1,8 +1,8 @@
 {
-    "name": "index_upper_body",
+    "name": "jellyfish_upper_body",
     "i18n": {
-      "en": "Index",
-      "es": "Índice"
+      "en": "Jellyfish | Joelle",
+      "es": "Medusa | Joelle"
     },
     "tags": [
       
@@ -29,14 +29,14 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "Index_V1.glb", 
+  "model": "Jellyfish.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "Index_V1.glb"}
+  {"type": "BaseFemale", "model": "Jellyfish.glb"}
     ],
     "rarity": "mythic",
-    "description": "Index | Joelle | Guest Artists Collection."
+    "description": "Deep sea jellyfish, water not included | Joelle | Guest Artists Collection."
   }

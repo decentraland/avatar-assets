@@ -1,8 +1,8 @@
 {
-    "name": "library_upper_body",
+    "name": "octopus_upper_body",
     "i18n": {
-      "en": "Index",
-      "es": "Índice"
+      "en": "Octopus Alien | Joelle",
+      "es": "Pulpo Alienígena | Joelle"
     },
     "tags": [
       
@@ -32,14 +32,14 @@
     "main": [
   {
   "type": "BaseMale", 
-  "model": "Library.glb", 
+  "model": "Octopus.glb", 
   "overrideReplaces": [
      ],
      "overrideHides": [
      ]
   },
-  {"type": "BaseFemale", "model": "Library.glb"}
+  {"type": "BaseFemale", "model": "Octopus.glb"}
     ],
     "rarity": "mythic",
-    "description": "Index. | Joelle | Guest Artists Collection."
+    "description": "Golden eyed alien octopus, native to DCL | Joelle | Guest Artists Collection."
   }
