@@ -1,0 +1,42 @@
+{
+  "name": "eyes_top_head",
+  "i18n": {
+    "en": "Alien Eyes | Joelle"
+  },
+  "tags": [
+    "eyes",
+    "top_head",
+    "alien",
+    "rainbow",
+    "extra",
+    "vision",
+    "double",
+  	"decentraland",
+  	"guest",
+  	"artists",
+    "joelle",
+    "kjwalker",
+    "decentraland",
+    "wearables"
+   ],
+  "category": "top_head",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "L2Eyes.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "L2Eyes.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Rainbow Alien Eyes | Joelle | Guest Artists Collection."
+}

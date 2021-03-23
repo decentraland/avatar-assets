@@ -1,0 +1,48 @@
+{
+  "name": "delbo_death_helmet",
+  "i18n": {
+    "en": "Death Skull | Delbo"
+  },
+  "tags": [
+    "hat",
+    "head",
+    "cartoon",
+    "skull",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"trench_coat",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "death",
+    "character"
+   ],
+  "category": "helmet",
+  "replaces": [
+   ],
+   "hides": [
+     "hair",
+     "facial_hair",
+     "head",
+     "tiara",
+     "mask",
+     "top_head"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Death_Hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "Death_Hat.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "The skull and hat of José Delbo's Death Character | José Delbo | Guest Artists Collection."
+}

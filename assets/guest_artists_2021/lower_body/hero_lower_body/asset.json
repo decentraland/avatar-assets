@@ -1,0 +1,43 @@
+{
+  "name": "hero_lower_body",
+  "i18n": {
+    "en": "Decentraman and Decentrawoman Lower Half"
+  },
+  "tags": [
+    "trousers",
+    "lower_body",
+    "pants",
+    "superhero",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"decentraman",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "decentrawoman",
+    "super"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+     "feet"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Delbo_Decentraman_Lower.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_Delbo_Decentrawoman_Lower.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Decentraman and Decentrawoman's trousers and boots | José Delbo | Guest Artists Collection."
+}
