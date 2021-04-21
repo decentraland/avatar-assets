@@ -1,0 +1,30 @@
+{
+  "name": "holiday_knits_stripes_upper_body",
+  "i18n": {
+    "en": "Holiday Knits - Stripes Pattern - Dillon Francis",
+    "es": "Holiday Knits - Stripes Pattern - Dillon Francis"
+  },
+  "tags": [
+    ""
+   
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "dillon_stripes_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "dillon_stripes_upper_body.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}
