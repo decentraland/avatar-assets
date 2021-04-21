@@ -17,13 +17,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "dillon_stripes_upper_body.glb", 
+"model": "holiday_knits_stripes_upper_body.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "dillon_stripes_upper_body.glb"}
+{"type": "BaseFemale", "model": "holiday_knits_stripes_upper_body.glb"}
   ],
   "rarity": "epic",
   "description": ""
