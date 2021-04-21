@@ -57,7 +57,7 @@ if (!module.parent) {
   'rac_basics',
   'winklevoss_capital',
   'rtfkt_x_atari',
-  'dillon_francis_holiday_knits'
+  'dg_atari_dillon_francis'
   
 
  
