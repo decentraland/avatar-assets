@@ -5,11 +5,12 @@
     "es": "Doble Rodete"
   },
   "tags": [
-    "hair"
+    "hair",
+    "female",
+    "woman"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_DoubleBun.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_DoubleBun.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_DoubleBun.glb"}
   ]
 }

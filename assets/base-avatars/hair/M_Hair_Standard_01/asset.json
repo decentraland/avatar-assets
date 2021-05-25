@@ -5,11 +5,12 @@
     "es": "Corte Casual"
   },
   "tags": [
-    "hair"
+    "hair",
+    "male",
+    "man"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Hair_Standard_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_01.glb"}
   ]
 }

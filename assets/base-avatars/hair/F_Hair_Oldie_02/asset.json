@@ -5,11 +5,12 @@
     "es": "Pelo Corto"
   },
   "tags": [
-    "hair"
+    "hair",
+    "female",
+    "woman"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Oldie_02.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_Oldie_02.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Oldie_02.glb"}
   ]
 }

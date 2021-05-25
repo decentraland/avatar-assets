@@ -5,11 +5,12 @@
     "es": "Dos Trenzas"
   },
   "tags": [
-    "hair"
+    "hair",
+    "female",
+    "woman"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_TwoTails.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Hair_TwoTails.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_TwoTails.glb"}
   ]
 }

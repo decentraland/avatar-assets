@@ -5,11 +5,12 @@
     "es": "Peinado con Jopo"
   },
   "tags": [
-    "hair"
+    "hair",
+    "male",
+    "man"
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_TallFront_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Hair_TallFront_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_TallFront_01.glb"}
   ]
 }
