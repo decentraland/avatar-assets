@@ -1,0 +1,15 @@
+{
+  "name": "curly_hair",
+  "i18n": {
+    "en": "Curly Hair",
+    "es": "Pelo Rizado"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_ShoulderCurlyHair.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_ShoulderCurlyHair.glb"}
+  ]
+}

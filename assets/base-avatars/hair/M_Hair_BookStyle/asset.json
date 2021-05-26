@@ -1,0 +1,15 @@
+{
+  "name": "curtained_hair",
+  "i18n": {
+    "en": "Curtained hair",
+    "es": "A Dos Aguas"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_BookStyle.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_BookStyle.glb"}
+  ]
+}

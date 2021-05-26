@@ -1,0 +1,15 @@
+{
+  "name": "hair_f_oldie",
+  "i18n": {
+    "en": "Short Grandma Style",
+    "es": "Pelo Corto de Abuela"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Oldie_01.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Oldie_01.glb"}
+  ]
+}

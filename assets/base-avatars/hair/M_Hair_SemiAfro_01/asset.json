@@ -1,0 +1,15 @@
+{
+  "name": "semi_afro",
+  "i18n": {
+    "en": "Small Afro",
+    "es": "Pequeño Afro"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_SemiAfro_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_SemiAfro_01.glb"}
+  ]
+}

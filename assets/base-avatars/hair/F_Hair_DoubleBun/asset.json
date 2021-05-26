@@ -1,0 +1,15 @@
+{
+  "name": "double_bun",
+  "i18n": {
+    "en": "Double Bun",
+    "es": "Doble Rodete"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_DoubleBun.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_DoubleBun.glb"}
+  ]
+}

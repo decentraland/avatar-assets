@@ -1,0 +1,15 @@
+{
+  "name": "hair_f_oldie_02",
+  "i18n": {
+    "en": "Short Hair",
+    "es": "Pelo Corto"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Oldie_02.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Oldie_02.glb"}
+  ]
+}

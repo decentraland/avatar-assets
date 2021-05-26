@@ -1,0 +1,15 @@
+{
+  "name": "standard_hair",
+  "i18n": {
+    "en": "Classic Style",
+    "es": "Peinado Clásico"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Standard.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard.glb"}
+  ]
+}

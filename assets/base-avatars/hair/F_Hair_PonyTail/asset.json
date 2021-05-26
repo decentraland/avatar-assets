@@ -1,0 +1,15 @@
+{
+  "name": "pony_tail",
+  "i18n": {
+    "en": "Ponytail",
+    "es": "Cola de caballo"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_PonyTail.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_PonyTail.glb"}
+  ]
+}

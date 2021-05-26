@@ -1,0 +1,15 @@
+{
+  "name": "short_hair",
+  "i18n": {
+    "en": "Short Hair",
+    "es": "Pelo Corto"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_ShortHair_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_ShortHair_01.glb"}
+  ]
+}

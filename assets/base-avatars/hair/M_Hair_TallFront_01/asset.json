@@ -1,0 +1,15 @@
+{
+  "name": "tall_front_01",
+  "i18n": {
+    "en": "Pompadour hair",
+    "es": "Peinado con Jopo"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_TallFront.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_TallFront.glb"}
+  ]
+}

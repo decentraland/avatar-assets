@@ -1,0 +1,15 @@
+{
+  "name": "hair_coolshortstyle",
+  "i18n": {
+    "en": "Short Modern Style",
+    "es": "Pelo Corto Moderno"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_CoolShortStyle.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_CoolShortStyle.glb"}
+  ]
+}

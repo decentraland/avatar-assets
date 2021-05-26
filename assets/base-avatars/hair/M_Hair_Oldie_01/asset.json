@@ -1,0 +1,16 @@
+{
+  "name": "hair_oldie",
+  "i18n": {
+    "en": "Oldie",
+    "es": "Peinado Antiguo"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Oldie_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Oldie_01.glb"}
+
+  ]
+}

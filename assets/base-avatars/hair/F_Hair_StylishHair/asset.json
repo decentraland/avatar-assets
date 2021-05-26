@@ -1,0 +1,15 @@
+{
+  "name": "hair_stylish_hair",
+  "i18n": {
+    "en": "Short Stylish Hair",
+    "es": "Peinado Corto Elegante"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_StylishHair.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_StylishHair.glb"}
+  ]
+}
