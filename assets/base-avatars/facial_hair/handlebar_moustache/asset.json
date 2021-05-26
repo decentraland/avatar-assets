@@ -1,0 +1,16 @@
+{
+  "name": "handlebar",
+  "i18n": {
+    "en": "Handlebar",
+    "es": "Bigote Inglés"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Moustache.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Moustache.glb"}
+  ]
+}

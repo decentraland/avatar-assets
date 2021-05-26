@@ -1,0 +1,16 @@
+{
+  "name": "short_boxed_beard",
+  "i18n": {
+    "en": "Short Boxed",
+    "es": "Barba Corta con Bigote"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_MoustacheSmallBeard.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_FacialHair_MoustacheSmallBeard.glb"}
+  ]
+}

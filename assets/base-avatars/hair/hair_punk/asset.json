@@ -1,0 +1,15 @@
+{
+  "name": "hair_punk",
+  "i18n": {
+    "en": "Punk",
+    "es": "Punk"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Punk.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Punk.glb"}
+  ]
+}
