@@ -6,12 +6,11 @@
   },
   "tags": [
     "face",
-    "eyebrows",
-    "male",
-    "man"
+    "eyebrows"
    ],
   "category": "eyebrows",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_EyeBrows_03.png"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_EyeBrows_03.png"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_EyeBrows_03.png"}
   ]
 }

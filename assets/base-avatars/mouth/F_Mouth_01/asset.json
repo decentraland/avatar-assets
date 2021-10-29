@@ -6,12 +6,11 @@
   },
   "tags": [
     "face",
-    "mouth",
-    "female",
-    "woman"
+    "mouth"
    ],
   "category": "mouth",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Mouth_01.png"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Mouth_01.png"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Mouth_01.png"}
   ]
 }

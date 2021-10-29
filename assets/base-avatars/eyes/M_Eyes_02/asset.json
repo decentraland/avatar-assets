@@ -6,12 +6,11 @@
   },
   "tags": [
     "face",
-    "eyes",
-    "male",
-    "man"
+    "eyes"
    ],
   "category": "eyes",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyes_02.png"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyes_02.png"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Eyes_02.png"}
   ]
 }

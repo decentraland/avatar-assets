@@ -6,12 +6,11 @@
   },
   "tags": [
     "face",
-    "mouth",
-    "male",
-    "man"
+    "mouth"
    ],
   "category": "mouth",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Mouth_01.png"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Mouth_01.png"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Mouth_01.png"}
   ]
 }

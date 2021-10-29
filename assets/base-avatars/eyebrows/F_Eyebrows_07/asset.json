@@ -6,12 +6,11 @@
   },
   "tags": [
     "face",
-    "eyebrows",
-    "Female",
-    "woman"
+    "eyebrows"
    ],
   "category": "eyebrows",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyebrows_07.png"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyebrows_07.png"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyebrows_07.png"}
   ]
 }

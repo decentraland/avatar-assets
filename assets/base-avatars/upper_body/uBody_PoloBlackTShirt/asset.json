@@ -1,0 +1,16 @@
+{
+  "name": "PoloBlackTShirt",
+  "i18n": {
+    "en": "Black Polo T Shirt",
+    "es": "Remera de Polo Negra"
+  },
+  "tags": [
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_PoloBlackTShirt.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_PoloBlackTShirt.glb"}
+  ]
+}

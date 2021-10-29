@@ -1,0 +1,16 @@
+{
+  "name": "DenimDungareesBlue",
+  "i18n": {
+    "en": "Denim Blue Dungarees",
+    "es": "Jardinero de Jean Azul"
+  },
+  "tags": [
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_DenimDungareesBlue.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_DenimDungareesBlue.glb"}
+  ]
+}
