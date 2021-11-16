@@ -24,7 +24,7 @@
   "dependencies": {
     "@types/mime-types": "^2.1.0",
     "async-iterator-all": "^1.0.0",
-    "aws-sdk": "^2.706.0",
+    "aws-sdk": "^2.814.0",
     "fp-future": "^1.0.1",
     "gltf-pipeline": "decentraland/gltf-pipeline#skipExtension",
     "ipfs-unixfs-importer": "^0.40.0",
