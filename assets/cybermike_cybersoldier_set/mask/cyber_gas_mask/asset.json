@@ -24,13 +24,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "Gas_Mask_A01.glb", 
+"model": "Gas_Mask_B01.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "Gas_Mask_A01.glb"}
+{"type": "BaseFemale", "model": "Gas_Mask_B01.glb"}
   ],
   "rarity": "mythic",
   "description": "By Cybermike - Live Free or Die Hard"

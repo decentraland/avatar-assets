@@ -23,13 +23,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "NVG_B03.glb", 
+"model": "NVG_B05.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "NVG_B03.glb"}
+{"type": "BaseFemale", "model": "NVG_B05.glb"}
   ],
   "rarity": "mythic",
   "description": "By Cybermike - Live Free or Die Hard"

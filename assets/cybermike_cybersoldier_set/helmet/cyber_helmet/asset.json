@@ -25,13 +25,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "BL_Helmet_B09.glb", 
+"model": "BL_Helmet_C11.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
 },
-{"type": "BaseFemale", "model": "BL_Helmet_B09.glb"}
+{"type": "BaseFemale", "model": "BL_Helmet_C11.glb"}
   ],
   "rarity": "mythic",
   "description": "By Cybermike - Live Free or Die Hard"

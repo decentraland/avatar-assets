@@ -22,12 +22,13 @@
   "main": [
 {
 "type": "BaseMale", 
-"model": "LegsA02.glb", 
+"model": "LegsB04.glb", 
 "overrideReplaces": [
    ],
    "overrideHides": [
    ]
-}
+},
+{"type": "BaseFemale", "model": "LegsB04.glb"}
   ],
   "rarity": "mythic",
   "description": "By Cybermike - Live Free or Die Hard"
