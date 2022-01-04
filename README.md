@@ -2,6 +2,7 @@
 
 This repository contains the supporting assets for avatars in the Decentraland world. Please check https://github.com/decentraland/wearables-migration to publish this changes into the Content Servers.
 
+
 ## Getting Started
 
 First, install and run the tests to verify that your system is ready to work with assets:
