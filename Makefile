@@ -1,6 +1,5 @@
 MAKE=make
 
-
 NODE=node
 
 TSC=./node_modules/.bin/tsc
