@@ -1,6 +1,7 @@
 # Decentraland Avatar Assets
 
-This repository contains the supporting assets for avatars in the Decentraland world.
+This repository contains the supporting assets for avatars in the Decentraland world. Please check https://github.com/decentraland/wearables-migration to publish this changes into the Content Servers.
+
 
 ## Getting Started
 
