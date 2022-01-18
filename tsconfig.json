@@ -1,17 +1,24 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2017",
-    "lib": ["es2017"],
-    "strict": true,
-    "noImplicitAny": true,
+    "baseUrl": "src",
     "diagnostics": false,
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "pretty": true,
+    "lib": [
+      "es2017",
+      "dom",
+    ],
+    "esModuleInterop": true,
     "incremental": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": true,
     "outDir": "./build",
-    "baseUrl": "src"
+    "pretty": true,
+    "strict": true,
+    "strictNullChecks":false,
+    "target": "es2017",
+    "useUnknownInCatchVariables": false
   },
   "include": [
     "src/**/*.ts"
