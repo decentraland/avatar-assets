@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import { parseUrn } from '@dcl/urn-resolver';
 import { ArgumentParser } from 'argparse';
 import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
@@ -30,9 +31,9 @@ async function main(): Promise<void> {
   const fetcher = new Fetcher()
   const identity: Identity = await parseIdentityFile(args.identityFilePath)
 
-  // Fetch all wearables from legacy API
-  console.log(`Starting the migration. Will check the legacy API`)
-  const allWearables: V2Wearable[] = await (await fetchLegacyWearables(fetcher)).filter(w => !!w)
+  // Get all wearables
+  console.log(`Starting the migration. Get all wearables`)
+  const allWearables: V2Wearable[] = getAllWearables().filter(w => !!w)
   let wearablesToDeploy: V2Wearable[]
 
   if (args.id) {
@@ -232,8 +233,8 @@ function fixInvalidId(legacyId: string): string {
   }
 }
 
-async function fetchLegacyWearables(fetcher: Fetcher): Promise<V2Wearable[]> {
-  return await fetcher.fetchJson(`https://dcl-wearables-dev.vercel.app/?forCache=${Date.now()}`, { attempts: 10, waitTime: '2s' }) as V2Wearable[]
+function getAllWearables(): V2Wearable[] {
+  return JSON.parse(fs.readFileSync(resolve(__dirname, '..', '..', 'dist', 'index.json')).toString())
 }
 
 main()
