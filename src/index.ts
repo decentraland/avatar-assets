@@ -70,7 +70,7 @@ if (!module.parent) {
 export async function runMain(collectionFolders: string[]) {
   console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
-  const workingFolder = dirSync()
+  const workingFolder = dirSync({ unsafeCleanup: true })
   let allResponses: any[] = []
   const mapCategoryFolders: { [key: string]: string[] } = {}
 
