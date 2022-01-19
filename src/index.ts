@@ -12,6 +12,7 @@ import { promisify } from 'util'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
+import { migrate } from './migration/migration'
 
 if (!module.parent) {
   runMain(['base-avatars',
@@ -151,6 +152,14 @@ export async function runMain(collectionFolders: string[]) {
     null,
     2
   ))
+
+  try {
+    console.log('Initializing migration...')
+    await migrate()
+    console.log(`\n\nDone!`)
+  } catch (error) {
+    console.error('\n\nSomething went wrong', error)
+  }
 
   console.log('Cleaning up temporary files...')
   workingFolder.removeCallback()
