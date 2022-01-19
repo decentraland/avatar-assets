@@ -25,21 +25,21 @@ export async function parseIdentityFile(filePath: string): Promise<Identity> {
 }
 
 export function getContentFileMap(wearable: V2Wearable): { key: string, hash: ContentFileHash}[] {
-  const filesToDownload: { key: string, hash: ContentFileHash}[] = [];
+  const contentFileMap: { key: string, hash: ContentFileHash}[] = [];
   if (wearable.thumbnail) {
-    filesToDownload.push({ key: 'thumbnail.png', hash: wearable.thumbnail });
+    contentFileMap.push({ key: 'thumbnail.png', hash: wearable.thumbnail });
   }
   if (wearable.image) {
-    filesToDownload.push({ key: 'image.png', hash: wearable.image });
+    contentFileMap.push({ key: 'image.png', hash: wearable.image });
   }
   wearable.representations.forEach(representation =>
     representation.contents.forEach(({ file, hash }) => {
       if (file === 'thumbnail.png' || file === 'image.png') {
         throw new Error(`Found a wearable with a content called either thumbnail or image ${wearable.id}`)
       }
-      filesToDownload.push({ key: file, hash })
+      contentFileMap.push({ key: file, hash })
     }))
-  return filesToDownload
+  return contentFileMap
 }
 
 export function sign(entityId: string, identity: Identity) {

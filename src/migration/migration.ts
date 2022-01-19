@@ -2,13 +2,12 @@ import { resolve } from 'path'
 import { parseUrn } from '@dcl/urn-resolver';
 import { ArgumentParser } from 'argparse';
 import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
-import { EntityType, Fetcher, Pointer } from 'dcl-catalyst-commons';
+import { EntityType, Pointer } from 'dcl-catalyst-commons';
 import { Authenticator } from 'dcl-crypto';
 import fs from 'fs';
 import { I18N, Identity, V2Representation, V2Wearable, V3Wearable } from './types';
 import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, sign } from './utils';
 
-const LEGACY_CONTENT_URL: string = 'http://content-assets.decentraland.org.s3.amazonaws.com'
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
@@ -28,7 +27,6 @@ async function main(): Promise<void> {
   // Prepare all I'll need
   const contentServerUrl = args.target ? `${args.target}/content` : args.targetContent
   const contentClient = new ContentClient({contentUrl: contentServerUrl })
-  const fetcher = new Fetcher()
   const identity: Identity = await parseIdentityFile(args.identityFilePath)
 
   // Get all wearables
@@ -49,7 +47,7 @@ async function main(): Promise<void> {
 
   // Transform v2 wearables into v3
   const v3Wearables: (DeploymentPreparationData & { pointers: string[]})[] = await executeWithProgressBar(`Download files and preparing entities`, wearablesToDeploy,
-    wearable => toDeploymentPreparationData(wearable, fetcher, contentClient))
+    wearable => toDeploymentPreparationData(wearable, contentClient))
 
   // Print wearables that will be deployed
   console.log(`Will be deploying ${v3Wearables.length} wearables, check log.txt`)
@@ -90,20 +88,20 @@ function matchesAnyId(id: string, idsMatchers: string[]) {
   })
 }
 
-async function toDeploymentPreparationData(wearable: V2Wearable, fetcher: Fetcher, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
+async function toDeploymentPreparationData(wearable: V2Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
   // Prepare metadata and pointer
   const { metadata, pointers } = await migrateMetadata(wearable)
 
-  // Download files
-  const filesToDownload = getContentFileMap(wearable)
-  const filesPromises = filesToDownload.map<Promise<[string, Buffer]>>(async ({ key, hash }) => [key, await getContentFromLegacyServer(fetcher, hash)])
-  const downloadedFiles = new Map(await Promise.all(filesPromises))
+  // Read files
+  const contentFileMap = getContentFileMap(wearable)
+  const filesPromises = contentFileMap.map<Promise<[string, Buffer]>>(async ({ key, hash }) => [key, readWearableSync(hash)])
+  const files = new Map(await Promise.all(filesPromises))
 
   // Build Entity
   const deploymentPreparationData: DeploymentPreparationData = await contentClient.buildEntity({
       type: EntityType.WEARABLE,
       pointers,
-      files: downloadedFiles,
+      files: files,
       metadata,
       timestamp: Date.now()
     })
@@ -113,8 +111,8 @@ async function toDeploymentPreparationData(wearable: V2Wearable, fetcher: Fetche
   }
 }
 
-async function getContentFromLegacyServer(fetcher: Fetcher, hash: string): Promise<Buffer> {
-  return await fetcher.fetchBuffer(`${LEGACY_CONTENT_URL}/${hash}`, { timeout: '30s', attempts: 3 });
+function readWearableSync(hash: string): Buffer {
+  return fs.readFileSync(resolve(__dirname, '..', '..', 'dist', hash))
 }
 
 /** We are migrating from the old wearables definition into a new one */
