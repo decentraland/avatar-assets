@@ -34,6 +34,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+log.txt
+error.txt
+
 .vscode
 
 *.js
