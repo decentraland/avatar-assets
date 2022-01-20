@@ -15,16 +15,12 @@ export async function migrate(): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
-  parser.add_argument('--target', { help: 'The address of the catalyst server where the wearables will be deployed' });
-  parser.add_argument('--targetContent', { help: 'The address of the content server where the wearables will be deployed' });
+  parser.add_argument('--target', { required: true, help: 'The address of the catalyst server where the wearables will be deployed' });
   parser.add_argument('--id', { required: true, help: 'Specify the id of the wearable to migrate. Can be repeated multiple times. Supports wildcards (example --id "dcl://base-avatars/*")', action: 'append' })
-   const args = parser.parse_args()
-  if ((!args.target && !args.targetContent) || (args.target && args.targetContent)) {
-    throw new Error('You must specify a target or target content, and only one of them')
-  }
+  const args = parser.parse_args()
 
   // Prepare all I'll need
-  const contentServerUrl = args.target ? `${args.target}/content` : args.targetContent
+  const contentServerUrl = args.target.includes('localhost') ? args.target : `${args.target}/content`
   const contentClient = new ContentClient({contentUrl: contentServerUrl })
   const identity: Identity = await parseIdentityFile(args.identityFilePath)
 
