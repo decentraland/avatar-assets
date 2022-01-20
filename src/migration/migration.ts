@@ -17,7 +17,6 @@ export async function migrate(): Promise<void> {
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
   parser.add_argument('--target', { help: 'The address of the catalyst server where the wearables will be deployed' });
   parser.add_argument('--targetContent', { help: 'The address of the content server where the wearables will be deployed' });
-  parser.add_argument('--onlyBaseAvatars', { action: 'store_true', default: false, help: 'Determine if only base avatars should be migrated or not' })
   parser.add_argument('--id', { help: 'Specify the id of the wearable to migrate. Can be repeated multiple times. Supports wildcards (example --id "dcl://base-avatars/*")', action: 'append' })
    const args = parser.parse_args()
   if ((!args.target && !args.targetContent) || (args.target && args.targetContent)) {
@@ -37,9 +36,6 @@ export async function migrate(): Promise<void> {
   if (args.id) {
     wearablesToDeploy = allWearables.filter(({ id }) => matchesAnyId(id, args.id))
     console.log(`Will deploy only those that matched with provided ids. There are ${wearablesToDeploy.length} of them`)
-  } else if (args.onlyBaseAvatars) {
-    wearablesToDeploy = allWearables.filter(({ id }) => id.includes('base-avatar'))
-    console.log(`Will deploy only base avatars. There are ${wearablesToDeploy.length} of them`)
   } else {
     wearablesToDeploy = allWearables
     console.log(`Fetched all ${wearablesToDeploy.length} wearables. Will start migration`)
