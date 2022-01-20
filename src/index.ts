@@ -4,7 +4,8 @@ import {
   readFile as readFileOrig,
   readdirSync,
   writeFileSync,
-  mkdirSync
+  mkdirSync,
+  PathLike
 } from 'fs'
 import { join, resolve, dirname, basename } from 'path'
 import { dirSync } from 'tmp'
@@ -15,60 +16,18 @@ import { getFileCID } from './cid/getFileCID'
 import { migrate } from './migration/migration'
 
 if (!module.parent) {
-  runMain(['base-avatars',
-  'base-exclusive',
-  'halloween_2019',
-  'xmas_2019',
-  'dcg_collection',
-  'mch_collection',
-  'dcl_launch',
-  'community_contest',
-  'stay_safe',
-  'dg_summer_2020',
-  'wonderzone_meteorchaser',
-  'dappcraft_moonminer',
-  'pm_outtathisworld',
-  'dgtble_headspace',
-  'moonshot_2020',
-  'ethermon_wearables',
-  'binance_us_collection', 
-  'cz_mercenary_mtz',
-  'sugarclub_yumi',
-  'mf_sammichgamer',
-  'pm_dreamverse_eminence',
-  'tech_tribal_marc0matic',
-  'wz_wonderbot',
-  'ml_pekingopera',
-  'dc_niftyblocksmith',
-  'dc_meta',
-  'dg_fall_2020',
-  'cybermike_cybersoldier_set',
-  'wonderzone_steampunk',
-  'digital_alchemy',
-  'china_flying',
-  'halloween_2020',
-  'xmas_2020',
-  'meme_dontbuythis',
-  'release_the_kraken',
-  '3lau_basics',
-  'xmash_up_2020',
-  'ml_liondance',
-  'atari_launch',
-  'guest_artists_2021',
-  'rac_basics',
-  'winklevoss_capital',
-  'rtfkt_x_atari',
-  'dg_atari_dillon_francis'
-  
-
- 
-
-  
-])
-  .catch(error => console.log(error, error.stack))
+  runMain()
+    .catch(error => console.log(error, error.stack))
 }
 
-export async function runMain(collectionFolders: string[]) {
+export async function runMain() {
+  const getDirectories = (source: PathLike) =>
+    readdirSync(source, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name)
+
+  const collectionFolders = getDirectories(resolve(join(__dirname, '..', 'assets')))
+
   console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
   const workingFolder = dirSync({ unsafeCleanup: true })
