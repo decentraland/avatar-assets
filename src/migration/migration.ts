@@ -14,7 +14,7 @@ const failedPointers: string[][] = []
 export async function migrate(): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
-  parser.add_argument('identityFilePath', { help: 'The path to the json file where the address and private key are, to use for deployment' });
+  parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
   parser.add_argument('--target', { help: 'The address of the catalyst server where the wearables will be deployed' });
   parser.add_argument('--targetContent', { help: 'The address of the content server where the wearables will be deployed' });
   parser.add_argument('--onlyBaseAvatars', { action: 'store_true', default: false, help: 'Determine if only base avatars should be migrated or not' })
