@@ -112,12 +112,14 @@ export async function runMain() {
     2
   ))
 
-  try {
-    console.log('Initializing migration...')
-    await migrate()
-    console.log(`\n\nDone!`)
-  } catch (error) {
-    console.error('\n\nSomething went wrong', error)
+  if (process.env.DEPLOY === 'true') {
+    try {
+      console.log('Initializing migration...')
+      await migrate()
+      console.log(`\n\nDone!`)
+    } catch (error) {
+      console.error('\n\nSomething went wrong', error)
+    }
   }
 
   console.log('Cleaning up temporary files...')
