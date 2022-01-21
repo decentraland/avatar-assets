@@ -43,6 +43,12 @@ It needs the following arguments to be passed:
 npm run deploy -- --identityFilePath "/path/to/admin/key/file" --target "https://peer.decentraland.zone" --id "dcl://base-avatars/BaseMale"
 ```
 
+#### Deploy Multiple Assets to a Content Server
+
+```
+npm run deploy -- --identityFilePath "/path/to/admin/key/file" --target "https://peer.decentraland.zone" --id "dcl://base-avatars/BaseFemale" --id "dcl://base-avatars/BaseMale"
+```
+
 #### Deploy all Base Avatars to a Content Server
 
 ```
