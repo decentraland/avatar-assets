@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 5
+  allow:
+    - dependency-name: "@dcl/*"
+    - dependency-name: "@catalyst/*"
+    - dependency-name: "@well-known-components/*"
+    - dependency-name: "dcl-*"
+  versioning-strategy: auto
