@@ -13,8 +13,6 @@
 # subdirectories.
 /assets/ shibu@decentraland.org
 
-@decentraland/platform
-
 # @decentraland/platform owns any files in the src
 # directory at the root of the repository and any of its
 # subdirectories.
