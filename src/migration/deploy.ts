@@ -30,8 +30,7 @@ export async function deployWearables(allWearables: V2Wearable[]): Promise<void>
   console.log(`Will deploy only those that matched with provided ids. There are ${wearablesToDeploy.length} of them`)
 
   // Transform v2 wearables into v3
-  const v3Wearables: (DeploymentPreparationData & { pointers: string[]})[] = await executeWithProgressBar(`Download files and preparing entities`, wearablesToDeploy,
-    wearable => toDeploymentPreparationData(wearable, contentClient))
+  const v3Wearables = await Promise.all(wearablesToDeploy.map(wearable => toDeploymentPreparationData(wearable, contentClient)))
 
   // Print wearables that will be deployed
   console.log(`Will be deploying ${v3Wearables.length} wearables, check log.txt`)
