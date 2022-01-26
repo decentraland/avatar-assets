@@ -11,12 +11,12 @@ import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, 
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
-export async function migrate(v2Wearables: V2Wearable[]): Promise<void> {
+export async function deployWearables(v2Wearables: V2Wearable[]): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
   parser.add_argument('--target', { required: true, help: 'The address of the catalyst server where the wearables will be deployed' });
-  parser.add_argument('--id', { required: true, help: 'Specify the id of the wearable to migrate. Can be repeated multiple times. Supports wildcards (example --id "dcl://base-avatars/*")', action: 'append' })
+  parser.add_argument('--id', { required: true, help: 'Specify the id of the wearable to deploy. Can be repeated multiple times. Supports wildcards (example --id "dcl://base-avatars/*")', action: 'append' })
   const args = parser.parse_args()
 
   // Prepare all I'll need

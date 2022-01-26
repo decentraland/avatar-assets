@@ -13,7 +13,7 @@ import { promisify } from 'util'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
-import { migrate } from './migration/migration'
+import { deployWearables } from './migration/deploy'
 import { V2Wearable } from 'migration/types'
 
 const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
@@ -111,7 +111,7 @@ export async function runMain() {
   if (process.env.DEPLOY === 'true') {
     try {
       console.log('Initializing migration...')
-      await migrate(wearables)
+      await deployWearables(wearables)
       console.log(`\n\nDone!`)
     } catch (error) {
       console.error('\n\nSomething went wrong', error)
