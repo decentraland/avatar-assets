@@ -70,7 +70,6 @@ export async function runMain() {
   const jsonResult = JSON.stringify(allResponses, null, 2)
   const distAbsPath = resolve(join(__dirname, '..', 'dist'))
 
-  writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
   writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
 
   console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
