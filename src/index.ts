@@ -72,10 +72,6 @@ export async function runMain() {
 
   writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
 
-  console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
-
-  writeFileSync(join(distAbsPath, 'index.html'), jsonResult)
-
   for (let collectionFolder of collectionFolders) {
     try {
       const categoryFolderAbsPath = getAssetFolderAbsPath(collectionFolder)
