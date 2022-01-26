@@ -1,10 +1,5 @@
 export type FileHash = string
 
-export type V2Collection = {
-  id: string,
-  wearables: V2Wearable[]
-}
-
 export type V2Wearable = {
   id: string,
   representations: V2Representation[],
