@@ -5,7 +5,7 @@ import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
 import { EntityType, Pointer } from 'dcl-catalyst-commons';
 import { Authenticator } from 'dcl-crypto';
 import fs from 'fs';
-import { I18N, Identity, V3Wearable } from './types';
+import { I18N, Identity, WearableMetadata } from './types';
 import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, sign } from './utils';
 import { BodyShapeRespresentation, Wearable } from '../types';
 
@@ -101,7 +101,7 @@ function readWearableSync(hash: string): Buffer {
 }
 
 /** We are migrating from the old wearables definition into a new one */
-async function buildMetadata(wearable: Wearable): Promise<V3Wearable> {
+async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
   const now = Date.now()
   const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, ...other } = wearable
 
@@ -127,7 +127,7 @@ async function buildMetadata(wearable: Wearable): Promise<V3Wearable> {
   }
 
   // Build metadata
-  const metadata: V3Wearable = {
+  const metadata: WearableMetadata = {
     id: urn,
     description: other.description,
     image: image ? 'image.png' : undefined,

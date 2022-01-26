@@ -1,4 +1,4 @@
-export type V3Wearable = {
+export type WearableMetadata = {
   id: string
   description: string
   thumbnail?: string
