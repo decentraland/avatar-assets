@@ -67,7 +67,8 @@ export async function runMain() {
     const response = process.env['DEBUG_ASSET_PROCESSING']
       ? await serializeCallBuild(buildAssetsConfig)
       : await parallelCallAndBuild(buildAssetsConfig)
-    wearables = [ ...wearables, ...response ]
+    const filteredResponse = response.filter(w => !!w)
+    wearables = [ ...wearables, ...filteredResponse ]
   }
 
   const jsonResult = JSON.stringify(wearables, null, 2)

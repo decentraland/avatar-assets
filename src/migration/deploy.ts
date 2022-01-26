@@ -11,7 +11,7 @@ import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, 
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
-export async function deployWearables(v2Wearables: V2Wearable[]): Promise<void> {
+export async function deployWearables(allWearables: V2Wearable[]): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
@@ -24,12 +24,9 @@ export async function deployWearables(v2Wearables: V2Wearable[]): Promise<void> 
   const contentClient = new ContentClient({contentUrl: contentServerUrl })
   const identity: Identity = await parseIdentityFile(args.identityFilePath)
 
-  // Get all wearables
-  console.log(`Starting the migration. Get all wearables`)
-  const allWearables: V2Wearable[] = v2Wearables.filter(w => !!w)
-  let wearablesToDeploy: V2Wearable[]
-
-  wearablesToDeploy = allWearables.filter(({ id }) => matchesAnyId(id, args.id))
+  // Filter the wearables to deploy
+  console.log(`Starting the deployment`)
+  const wearablesToDeploy = allWearables.filter(({ id }) => matchesAnyId(id, args.id))
   console.log(`Will deploy only those that matched with provided ids. There are ${wearablesToDeploy.length} of them`)
 
   // Transform v2 wearables into v3
