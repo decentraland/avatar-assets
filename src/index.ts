@@ -14,6 +14,7 @@ import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndB
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 import { migrate } from './migration/migration'
+import { V2Wearable } from 'migration/types'
 
 if (!module.parent) {
   runMain()
@@ -31,7 +32,7 @@ export async function runMain() {
   console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
   const workingFolder = dirSync({ unsafeCleanup: true })
-  let allResponses: any[] = []
+  let wearables: V2Wearable[] = []
   const mapCategoryFolders: { [key: string]: string[] } = {}
 
   for (let collectionFolder of collectionFolders) {
@@ -64,10 +65,10 @@ export async function runMain() {
     const response = process.env['DEBUG_ASSET_PROCESSING']
       ? await serializeCallBuild(buildAssetsConfig)
       : await parallelCallAndBuild(buildAssetsConfig)
-    allResponses = [ ...allResponses, ...response ]
+    wearables = [ ...wearables, ...response ]
   }
 
-  const jsonResult = JSON.stringify(allResponses, null, 2)
+  const jsonResult = JSON.stringify(wearables, null, 2)
   const distAbsPath = resolve(join(__dirname, '..', 'dist'))
 
   writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
@@ -85,10 +86,10 @@ export async function runMain() {
     }
   }
   console.log(JSON.stringify(
-    allResponses
+    wearables
       .map((_, index) => {
         if (_ === null) {
-          console.log(`Warning! Element ${index} of "allResponses" is null`)
+          console.log(`Warning! Element ${index} of "wearables" is null`)
         }
         return _
       })
