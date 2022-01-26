@@ -29,15 +29,15 @@ export async function deployWearables(allWearables: V2Wearable[]): Promise<void>
   const wearablesToDeploy = allWearables.filter(({ id }) => matchesAnyId(id, args.id))
   console.log(`Will deploy only those that matched with provided ids. There are ${wearablesToDeploy.length} of them`)
 
-  // Transform v2 wearables into v3
-  const v3Wearables = await Promise.all(wearablesToDeploy.map(wearable => toDeploymentPreparationData(wearable, contentClient)))
+  // Transform wearables into the entities to deploy
+  const entitiesToDeploy = await Promise.all(wearablesToDeploy.map(wearable => toDeploymentPreparationData(wearable, contentClient)))
 
   // Print wearables that will be deployed
-  console.log(`Will be deploying ${v3Wearables.length} wearables, check log.txt`)
-  fs.writeFileSync('log.txt', Buffer.from('Will be deploying these wearables:\n' + v3Wearables.map(w => w.pointers).join('\n')))
+  console.log(`Will be deploying ${entitiesToDeploy.length} wearables, check log.txt`)
+  fs.writeFileSync('log.txt', Buffer.from('Will be deploying these wearables:\n' + entitiesToDeploy.map(w => w.pointers).join('\n')))
 
   // Deploy them
-  await executeWithProgressBar(`Deploying new wearables`, v3Wearables, wearable => deploy(wearable, identity, contentClient))
+  await executeWithProgressBar(`Deploying new wearables`, entitiesToDeploy, entityToDeploy => deploy(entityToDeploy, identity, contentClient))
 
   // Log Result
   console.log(`\n\nDeployed ${totalDeployed} wearables.`)
@@ -73,7 +73,8 @@ function matchesAnyId(id: string, idsMatchers: string[]) {
 
 async function toDeploymentPreparationData(wearable: V2Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
   // Prepare metadata and pointer
-  const { metadata, pointers } = await migrateMetadata(wearable)
+  const metadata = await buildMetadata(wearable)
+  const pointers = await buildPointers(wearable.id)
 
   // Read files
   const contentFileMap = getContentFileMap(wearable)
@@ -99,7 +100,7 @@ function readWearableSync(hash: string): Buffer {
 }
 
 /** We are migrating from the old wearables definition into a new one */
-async function migrateMetadata(wearable: V2Wearable): Promise<{ metadata: V3Wearable, pointers: Pointer[] }> {
+async function buildMetadata(wearable: V2Wearable): Promise<V3Wearable> {
   const now = Date.now()
   const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, ...other } = wearable
 
@@ -108,7 +109,7 @@ async function migrateMetadata(wearable: V2Wearable): Promise<{ metadata: V3Wear
   const i18n = fixI18N(legacyId, other.i18n)
 
   // Calculate new data from wearable
-  const { urn, collectionAddress, collectionName } = await getInfoFromLegacyId(legacyId)
+  const { urn, collectionAddress } = await getInfoFromLegacyId(legacyId)
   const bodyShapesMap: Map<string, string> = await mapBodyShapesToUrn(representations);
 
   // Prepare new data property
@@ -138,12 +139,21 @@ async function migrateMetadata(wearable: V2Wearable): Promise<{ metadata: V3Wear
     updatedAt: now
   }
 
+  return metadata
+}
+
+async function buildPointers(wearableId: string): Promise<Pointer[]> {
+  // Fix invalid metadata
+  const legacyId = fixInvalidId(wearableId)
+
+  const { urn, collectionAddress, collectionName } = await getInfoFromLegacyId(legacyId)
+
   // Build pointers
   const pointers = collectionAddress && collectionName ?
     [urn, urn.replace(collectionName, collectionAddress)] :
     [urn]
-
-  return { metadata, pointers }
+  
+  return pointers
 }
 
 async function mapBodyShapesToUrn(representations: V2Representation[]): Promise<Map<string, string>> {
