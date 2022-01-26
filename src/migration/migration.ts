@@ -11,7 +11,7 @@ import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, 
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
-export async function migrate(): Promise<void> {
+export async function migrate(v2Wearables: V2Wearable[]): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
@@ -26,7 +26,7 @@ export async function migrate(): Promise<void> {
 
   // Get all wearables
   console.log(`Starting the migration. Get all wearables`)
-  const allWearables: V2Wearable[] = getAllWearables().filter(w => !!w)
+  const allWearables: V2Wearable[] = v2Wearables.filter(w => !!w)
   let wearablesToDeploy: V2Wearable[]
 
   wearablesToDeploy = allWearables.filter(({ id }) => matchesAnyId(id, args.id))
@@ -216,8 +216,4 @@ function fixInvalidId(legacyId: string): string {
     default:
       return legacyId
   }
-}
-
-function getAllWearables(): V2Wearable[] {
-  return JSON.parse(fs.readFileSync(resolve(__dirname, '..', '..', 'dist', 'index.json')).toString())
 }

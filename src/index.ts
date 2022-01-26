@@ -3,9 +3,9 @@ import {
   writeFile as writeFileOrig,
   readFile as readFileOrig,
   readdirSync,
-  writeFileSync,
   mkdirSync,
-  PathLike
+  PathLike,
+  writeFileSync
 } from 'fs'
 import { join, resolve, dirname, basename } from 'path'
 import { dirSync } from 'tmp'
@@ -15,6 +15,8 @@ import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 import { migrate } from './migration/migration'
 import { V2Wearable } from 'migration/types'
+
+const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 
 if (!module.parent) {
   runMain()
@@ -69,9 +71,7 @@ export async function runMain() {
   }
 
   const jsonResult = JSON.stringify(wearables, null, 2)
-  const distAbsPath = resolve(join(__dirname, '..', 'dist'))
-
-  writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
+  writeFileSync(join(DIST_ABS_PATH, 'index.json'), jsonResult)
 
   for (let collectionFolder of collectionFolders) {
     try {
@@ -79,7 +79,7 @@ export async function runMain() {
       console.log('Generating content addressable files...')
       const assetFolders = mapCategoryFolders[collectionFolder]
       await Promise.all(
-        assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
+        assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), DIST_ABS_PATH))
       )
     } catch (e) {
       console.error(`Error in ${collectionFolder}: ${e.stack}`)
@@ -111,7 +111,7 @@ export async function runMain() {
   if (process.env.DEPLOY === 'true') {
     try {
       console.log('Initializing migration...')
-      await migrate()
+      await migrate(wearables)
       console.log(`\n\nDone!`)
     } catch (error) {
       console.error('\n\nSomething went wrong', error)
