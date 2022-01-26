@@ -4,8 +4,9 @@ import asyncPool from "tiny-async-pool"
 import * as EthCrypto from "eth-crypto"
 import { Authenticator } from 'dcl-crypto'
 import { ContentFileHash } from 'dcl-catalyst-commons';
-import { V2Wearable, Identity } from './types';
+import { Identity } from './types';
 import { CONCURRENCY } from './config';
+import { Wearable } from '../types';
 
 export async function executeWithProgressBar<T, K>(detail: string, array: Array<T>, iterator: (T) => Promise<K>): Promise<K[]> {
   const bar = new cliProgress.SingleBar({format: `${detail}: [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}`});
@@ -24,7 +25,7 @@ export async function parseIdentityFile(filePath: string): Promise<Identity> {
   return JSON.parse(buffer.toString())
 }
 
-export function getContentFileMap(wearable: V2Wearable): { key: string, hash: ContentFileHash}[] {
+export function getContentFileMap(wearable: Wearable): { key: string, hash: ContentFileHash}[] {
   const contentFileMap: { key: string, hash: ContentFileHash}[] = [];
   if (wearable.thumbnail) {
     contentFileMap.push({ key: 'thumbnail.png', hash: wearable.thumbnail });

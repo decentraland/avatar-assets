@@ -1,29 +1,3 @@
-export type FileHash = string
-
-export type V2Wearable = {
-  id: string,
-  representations: V2Representation[],
-  type: string,
-  category: string,
-  tags: string[]
-  baseUrl: string
-  i18n: I18N[]
-  thumbnail: FileHash,
-  image: FileHash,
-  replaces: string[],
-  hides: string[],
-  description: string,
-  rarity: string
-}
-
-export type V2Representation = {
-  bodyShapes: string[]
-  mainFile: string,
-  overrideReplaces: string[],
-  overrideHides: string[],
-  contents: { file: string, hash: FileHash }[]
-}
-
 export type V3Wearable = {
   id: string
   description: string

@@ -14,7 +14,7 @@ import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndB
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
 import { deployWearables } from './migration/deploy'
-import { V2Wearable } from 'migration/types'
+import { Wearable } from './types'
 
 const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 
@@ -34,7 +34,7 @@ export async function runMain() {
   console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
   const workingFolder = dirSync({ unsafeCleanup: true })
-  let wearables: V2Wearable[] = []
+  let wearables: Wearable[] = []
   const mapCategoryFolders: { [key: string]: string[] } = {}
 
   for (let collectionFolder of collectionFolders) {

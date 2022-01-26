@@ -5,13 +5,14 @@ import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
 import { EntityType, Pointer } from 'dcl-catalyst-commons';
 import { Authenticator } from 'dcl-crypto';
 import fs from 'fs';
-import { I18N, Identity, V2Representation, V2Wearable, V3Wearable } from './types';
+import { I18N, Identity, V3Wearable } from './types';
 import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, sign } from './utils';
+import { BodyShapeRespresentation, Wearable } from '../types';
 
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
-export async function deployWearables(allWearables: V2Wearable[]): Promise<void> {
+export async function deployWearables(allWearables: Wearable[]): Promise<void> {
   // Parse arguments
   const parser = new ArgumentParser({ add_help: true });
   parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
@@ -71,7 +72,7 @@ function matchesAnyId(id: string, idsMatchers: string[]) {
   })
 }
 
-async function toDeploymentPreparationData(wearable: V2Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
+async function toDeploymentPreparationData(wearable: Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
   // Prepare metadata and pointer
   const metadata = await buildMetadata(wearable)
   const pointers = await buildPointers(wearable.id)
@@ -100,7 +101,7 @@ function readWearableSync(hash: string): Buffer {
 }
 
 /** We are migrating from the old wearables definition into a new one */
-async function buildMetadata(wearable: V2Wearable): Promise<V3Wearable> {
+async function buildMetadata(wearable: Wearable): Promise<V3Wearable> {
   const now = Date.now()
   const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, ...other } = wearable
 
@@ -156,7 +157,7 @@ async function buildPointers(wearableId: string): Promise<Pointer[]> {
   return pointers
 }
 
-async function mapBodyShapesToUrn(representations: V2Representation[]): Promise<Map<string, string>> {
+async function mapBodyShapesToUrn(representations: BodyShapeRespresentation[]): Promise<Map<string, string>> {
   const bodyShapes = flatten(representations.map(representation => representation.bodyShapes))
   const bodyShapesEntries = await Promise.all(bodyShapes.map<Promise<[string, string]>>(async (bodyShape) => [bodyShape, await mapLegacyIdToUrn(bodyShape)]));
   return new Map(bodyShapesEntries)
