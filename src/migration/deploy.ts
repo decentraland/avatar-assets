@@ -100,7 +100,7 @@ function readWearableSync(hash: string): Buffer {
   return fs.readFileSync(resolve(__dirname, '..', '..', 'dist', hash))
 }
 
-/** We are migrating from the old wearables definition into a new one */
+/** Build the wearable metadata in the format the content server needs */
 async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
   const now = Date.now()
   const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, ...other } = wearable
