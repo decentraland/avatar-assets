@@ -1,18 +1,6 @@
 # This is a comment.
 # Each line is a file pattern followed by one or more owners.
 
-# These owners will be the default owners for everything in
-# the repo. Unless a later match takes precedence,
-# @decentraland/platform will be requested for
-# review when someone opens a pull request.
-
-@decentraland/platform
-
-# @shibu owns any files in the assets
-# directory at the root of the repository and any of its
-# subdirectories.
-/assets/ shibu@decentraland.org
-
 # @decentraland/platform owns any files in the src
 # directory at the root of the repository and any of its
 # subdirectories.
