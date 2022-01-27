@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "description": "Decentraland basic set of avatar assets",
   "scripts": {
-    "catalog": "npx ts-node -T src/index.ts",
     "deploy": "DEPLOY=true npx ts-node -T src/index.ts"
   },
   "repository": {
