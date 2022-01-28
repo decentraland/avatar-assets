@@ -3,8 +3,9 @@ import {
   writeFile as writeFileOrig,
   readFile as readFileOrig,
   readdirSync,
-  writeFileSync,
-  mkdirSync
+  mkdirSync,
+  PathLike,
+  writeFileSync
 } from 'fs'
 import { join, resolve, dirname, basename } from 'path'
 import { dirSync } from 'tmp'
@@ -12,66 +13,28 @@ import { promisify } from 'util'
 import { processAssetAndBuildAssetDescription } from './catalog/processAssetAndBuildAssetDescription'
 import { getAssetFolderAbsPath } from './assets/getAssetFolderAbsPath'
 import { getFileCID } from './cid/getFileCID'
+import { deployWearables } from './migration/deploy'
+import { Wearable } from './types'
+
+const DIST_ABS_PATH = resolve(join(__dirname, '..', 'dist'))
 
 if (!module.parent) {
-  runMain(['base-avatars',
-  'base-exclusive',
-  'halloween_2019',
-  'xmas_2019',
-  'dcg_collection',
-  'mch_collection',
-  'dcl_launch',
-  'community_contest',
-  'stay_safe',
-  'dg_summer_2020',
-  'wonderzone_meteorchaser',
-  'dappcraft_moonminer',
-  'pm_outtathisworld',
-  'dgtble_headspace',
-  'moonshot_2020',
-  'ethermon_wearables',
-  'binance_us_collection', 
-  'cz_mercenary_mtz',
-  'sugarclub_yumi',
-  'mf_sammichgamer',
-  'pm_dreamverse_eminence',
-  'tech_tribal_marc0matic',
-  'wz_wonderbot',
-  'ml_pekingopera',
-  'dc_niftyblocksmith',
-  'dc_meta',
-  'dg_fall_2020',
-  'cybermike_cybersoldier_set',
-  'wonderzone_steampunk',
-  'digital_alchemy',
-  'china_flying',
-  'halloween_2020',
-  'xmas_2020',
-  'meme_dontbuythis',
-  'release_the_kraken',
-  '3lau_basics',
-  'xmash_up_2020',
-  'ml_liondance',
-  'atari_launch',
-  'guest_artists_2021',
-  'rac_basics',
-  'winklevoss_capital',
-  'rtfkt_x_atari',
-  'dg_atari_dillon_francis'
-  
-
- 
-
-  
-])
-  .catch(error => console.log(error, error.stack))
+  runMain()
+    .catch(error => console.log(error, error.stack))
 }
 
-export async function runMain(collectionFolders: string[]) {
+export async function runMain() {
+  const getDirectories = (source: PathLike) =>
+    readdirSync(source, { withFileTypes: true })
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => dirent.name)
+
+  const collectionFolders = getDirectories(resolve(join(__dirname, '..', 'assets')))
+
   console.log(`Building catalog from folders '${collectionFolders.join(', ')}'...`)
 
-  const workingFolder = dirSync()
-  let allResponses: any[] = []
+  const workingFolder = dirSync({ unsafeCleanup: true })
+  let wearables: Wearable[] = []
   const mapCategoryFolders: { [key: string]: string[] } = {}
 
   for (let collectionFolder of collectionFolders) {
@@ -104,18 +67,12 @@ export async function runMain(collectionFolders: string[]) {
     const response = process.env['DEBUG_ASSET_PROCESSING']
       ? await serializeCallBuild(buildAssetsConfig)
       : await parallelCallAndBuild(buildAssetsConfig)
-    allResponses = [ ...allResponses, ...response ]
+    const filteredResponse = response.filter(w => !!w)
+    wearables = [ ...wearables, ...filteredResponse ]
   }
 
-  const jsonResult = JSON.stringify(allResponses, null, 2)
-  const distAbsPath = resolve(join(__dirname, '..', 'dist'))
-
-  writeFileSync(join(distAbsPath, 'expected.json'), jsonResult)
-  writeFileSync(join(distAbsPath, 'index.json'), jsonResult)
-
-  console.log(`Generating a fake index.html with the JSON contents of the whole catalog...`)
-
-  writeFileSync(join(distAbsPath, 'index.html'), jsonResult)
+  const jsonResult = JSON.stringify(wearables, null, 2)
+  writeFileSync(join(DIST_ABS_PATH, 'index.json'), jsonResult)
 
   for (let collectionFolder of collectionFolders) {
     try {
@@ -123,34 +80,20 @@ export async function runMain(collectionFolders: string[]) {
       console.log('Generating content addressable files...')
       const assetFolders = mapCategoryFolders[collectionFolder]
       await Promise.all(
-        assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), distAbsPath))
+        assetFolders.map(assetFolderAbsPath => scanFilesAndCopyWithHashName(assetFolderAbsPath.replace(categoryFolderAbsPath, workingFolder.name), DIST_ABS_PATH))
       )
     } catch (e) {
       console.error(`Error in ${collectionFolder}: ${e.stack}`)
     }
   }
-  console.log(JSON.stringify(
-    allResponses
-      .map((_, index) => {
-        if (_ === null) {
-          console.log(`Warning! Element ${index} of "allResponses" is null`)
-        }
-        return _
-      })
-      .filter(_ => !!_)
-      .map(_ => {
-        try {
-          return _.id
-        } catch (e) {
-          console.error(`Can't get element "id" of object ${JSON.stringify(_)}`)
-          throw e
-        }
-      })
-      .map(_ => _.split('/')[3])
-      .map(_ => ({ wearableId: _, maxIssuance: 0})),
-    null,
-    2
-  ))
+
+  try {
+    console.log('Initializing migration...')
+    await deployWearables(wearables)
+    console.log(`\n\nDone!`)
+  } catch (error) {
+    console.error('\n\nSomething went wrong', error)
+  }
 
   console.log('Cleaning up temporary files...')
   workingFolder.removeCallback()
