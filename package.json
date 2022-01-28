@@ -50,7 +50,7 @@
     "@types/tmp": "^0.2.0",
     "@types/uuid": "^3.4.5",
     "chai": "^4.2.0",
-    "dcl-tslint-config-standard": "^2.0.0",
+    "dcl-tslint-config-standard": "^3.0.0",
     "eslint": "^7.3.1",
     "prettier": "^2.0.5",
     "tmp": "^0.2.1",
