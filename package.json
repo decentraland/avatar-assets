@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/decentraland/avatar-assets#readme",
   "dependencies": {
-    "@dcl/urn-resolver": "1.0.1",
+    "@dcl/urn-resolver": "1.3.0",
     "argparse": "^2.0.1",
     "async-iterator-all": "^1.0.0",
     "cli-progress": "3.8.2",
