@@ -62,7 +62,3 @@ npm run deploy -- --identityFilePath "/path/to/admin/key/file" --target "https:/
 ```
 npm run deploy -- --identityFilePath "/path/to/admin/key/file" --target "http://localhost:6969" --id "*"
 ```
-
-## Generate Catalog
-
-`npm run catalog` generates a new version of all the asset packs under the `assets` folder. All the files are stored in the `dist` folder, separated by asset pack.
