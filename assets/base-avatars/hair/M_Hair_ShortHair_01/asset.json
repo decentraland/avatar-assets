@@ -9,7 +9,7 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_ShortHair_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_ShortHair_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_ShortHair_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShortHair_01.glb"}
   ]
 }

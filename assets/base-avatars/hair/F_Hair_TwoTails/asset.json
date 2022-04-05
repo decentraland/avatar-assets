@@ -9,7 +9,7 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_TwoTails.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_TwoTails.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_TwoTails.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_TwoTails.glb"}
   ]
 }

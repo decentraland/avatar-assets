@@ -9,7 +9,7 @@
    ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Lamas.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Lamas.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Lamas.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Lamas.glb"}
   ]
 }
