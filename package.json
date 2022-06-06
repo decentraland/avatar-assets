@@ -26,7 +26,7 @@
     "argparse": "^2.0.1",
     "async-iterator-all": "^1.0.0",
     "cli-progress": "3.8.2",
-    "dcl-catalyst-client": "^11.3.2",
+    "dcl-catalyst-client": "^12.0.1",
     "dcl-catalyst-commons": "^8.2.1",
     "decentraland-crypto": "0.0.2",
     "eth-crypto": "^1.8.0",
