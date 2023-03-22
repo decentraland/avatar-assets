@@ -1,10 +1,11 @@
 export type WearableMetadata = {
   id: string
+  name: string
   description: string
   thumbnail?: string
   image?: string
   collectionAddress?: string
-  rarity: Rarity
+  rarity?: Rarity
   i18n: I18N[]
   data: WearableData
   metrics?: Metrics

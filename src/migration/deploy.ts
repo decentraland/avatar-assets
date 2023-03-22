@@ -3,10 +3,9 @@ import { parseUrn } from '@dcl/urn-resolver';
 import { ArgumentParser } from 'argparse';
 import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
 import { EntityType, Pointer } from 'dcl-catalyst-commons';
-import { Authenticator } from 'dcl-crypto';
 import fs from 'fs';
 import { I18N, Identity, WearableMetadata } from './types';
-import { executeWithProgressBar, flatten, getContentFileMap, parseIdentityFile, sign } from './utils';
+import { executeWithProgressBar, flatten, generateAuthChain, getContentFileMap, parseIdentityFile } from './utils';
 import { BodyShapeRespresentation, Wearable } from '../types';
 
 let totalDeployed: number = 0
@@ -48,10 +47,10 @@ export async function deployWearables(allWearables: Wearable[]): Promise<void> {
 
 async function deploy(entityToDeploy: DeploymentPreparationData & {pointers: string[]}, identity: Identity, contentClient: ContentClient) {
 
-  const authChain = Authenticator.createSimpleAuthChain(entityToDeploy.entityId, identity.ethAddress, sign(entityToDeploy.entityId, identity))
-
+  const authChain = generateAuthChain(entityToDeploy.entityId, identity)
+  
   try {
-    const deploymentTimestamp: number = await contentClient.deployEntity({ entityId: entityToDeploy.entityId, files: entityToDeploy.files, authChain: authChain })
+    const deploymentTimestamp: number = await contentClient.deployEntity({ entityId: entityToDeploy.entityId, files: entityToDeploy.files, authChain })
     if (!!deploymentTimestamp && deploymentTimestamp != 0) {
       totalDeployed++
     } else {
@@ -129,6 +128,7 @@ async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
   // Build metadata
   const metadata: WearableMetadata = {
     id: urn,
+    name: other.name,
     description: other.description,
     image: image ? 'image.png' : undefined,
     thumbnail: thumbnail ? 'thumbnail.png' : undefined,

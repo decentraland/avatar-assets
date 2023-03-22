@@ -23,6 +23,7 @@ function transformJson(json: SourceJson, extraTags: string[]): Wearable {
   const tags = [...json.tags, ...extraTags]
   return {
     id: json.name,
+    name: json.name,
     type: 'wearable',
     category: json.category,
     i18n: Object.keys(json.i18n).reduce(
@@ -37,7 +38,7 @@ function transformJson(json: SourceJson, extraTags: string[]): Wearable {
     image: '',
     baseUrl: '',
     description: json.description === undefined ? '' : json.description,
-    rarity: json.rarity === undefined ? '' : json.rarity,
+    rarity: json.rarity,
     tags: tags,
     replaces: json.replaces === undefined ? defaultReplacementMatrix[json.category] : json.replaces,
     hides: json.hides === undefined ? defaultHidingMatrix[json.category] : json.hides,

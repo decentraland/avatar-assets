@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as cliProgress  from 'cli-progress';
 import asyncPool from "tiny-async-pool"
 import * as EthCrypto from "eth-crypto"
-import { Authenticator } from 'dcl-crypto'
+import { Authenticator } from '@dcl/crypto'
 import { ContentFileHash } from 'dcl-catalyst-commons';
 import { Identity } from './types';
 import { CONCURRENCY } from './config';
@@ -43,9 +43,10 @@ export function getContentFileMap(wearable: Wearable): { key: string, hash: Cont
   return contentFileMap
 }
 
-export function sign(entityId: string, identity: Identity) {
+export function generateAuthChain(entityId: string, identity: Identity) {
   const messageHash = Authenticator.createEthereumMessageHash(entityId)
-  return EthCrypto.sign(identity.privateKey, messageHash)
+  const signature = EthCrypto.sign(identity.privateKey!, Buffer.from(messageHash).toString("hex"))
+  return Authenticator.createSimpleAuthChain(entityId, identity.ethAddress, signature)
 }
 
 export function flatten<T>(array: T[][]): T[] {

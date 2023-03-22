@@ -19,6 +19,7 @@ export type SourceJson = {
 
 export type Wearable = {
   id: WearableId
+  name: string
   type: 'wearable'
   thumbnail: string
   image: string | undefined
@@ -32,7 +33,7 @@ export type Wearable = {
   }[]
   tags: string[]
   representations: BodyShapeRespresentation[]
-  rarity: string
+  rarity?: string
   description: string
 }
 export type WearableId = string

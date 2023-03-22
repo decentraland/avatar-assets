@@ -97,6 +97,6 @@ export function createAssetDescription(opts: Wearable) {
   if (validationError) {
     throw new Error(`Asset ${opts.id} has the following error: ${validationError}`)
   }
-  const { id, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides, description, rarity } = opts
-  return { id, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides, description, rarity }
+  const { id, name, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides, description, rarity } = opts
+  return { id, name, representations, type, category, tags, baseUrl, i18n, thumbnail, image, replaces, hides, description, rarity }
 }
