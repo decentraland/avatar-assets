@@ -5,12 +5,17 @@
     "es": "Remera del Orgullo Gay"
   },
   "tags": [
-    "top",
-    "female",
-    "woman"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_PrideTShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_PrideTShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_PrideTShirt.glb"
+    }
   ]
 }

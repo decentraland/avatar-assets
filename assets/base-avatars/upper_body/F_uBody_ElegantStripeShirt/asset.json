@@ -5,12 +5,17 @@
     "es": "Remera Elegante a Rayas"
   },
   "tags": [
-    "top",
-    "female",
-    "woman"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_ElegantStripeShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_ElegantStripeShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_ElegantStripeShirt.glb"
+    }
   ]
 }

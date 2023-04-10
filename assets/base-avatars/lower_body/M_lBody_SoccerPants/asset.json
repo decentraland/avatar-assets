@@ -2,15 +2,20 @@
   "name": "soccer_pants",
   "i18n": {
     "en": "Soccer Pants",
-    "es": "Pantalón Corto de Fútbol"
+    "es": "Pantal\u00c3\u00b3n Corto de F\u00c3\u00batbol"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "bottom"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_SoccerPants.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_lBody_SoccerPants.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_lBody_SoccerPants.glb"
+    }
   ]
 }

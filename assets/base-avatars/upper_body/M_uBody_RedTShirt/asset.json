@@ -5,12 +5,17 @@
     "es": "Remera Roja"
   },
   "tags": [
-    "top",
-    "male",
-    "man"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_RedTShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_RedTShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_RedTShirt.glb"
+    }
   ]
 }

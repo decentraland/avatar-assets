@@ -2,15 +2,20 @@
   "name": "f_sweater",
   "i18n": {
     "en": "Yellow Sweater",
-    "es": "Suéter Amarillo"
+    "es": "Su\u00c3\u00a9ter Amarillo"
   },
   "tags": [
-    "top",
-    "female",
-    "woman"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_Sweater_01.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Sweater_01.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_Sweater_01.glb"
+    }
   ]
 }

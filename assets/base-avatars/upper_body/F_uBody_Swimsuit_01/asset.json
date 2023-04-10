@@ -2,15 +2,20 @@
   "name": "f_body_swimsuit",
   "i18n": {
     "en": "Swimsuit",
-    "es": "Traje de Baño"
+    "es": "Traje de Ba\u00c3\u00b1o"
   },
   "tags": [
-    "top",
-    "female",
-    "woman"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_Swimsuit_01.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Swimsuit_01.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_Swimsuit_01.glb"
+    }
   ]
 }

@@ -2,15 +2,20 @@
   "name": "m_sweater",
   "i18n": {
     "en": "Blue and Red Sweater",
-    "es": "Suéter Azul y Rojo"
+    "es": "Su\u00c3\u00a9ter Azul y Rojo"
   },
   "tags": [
-    "top",
-    "male",
-    "man"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_Sweater_01.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_Sweater_01.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Sweater_01.glb"
+    }
   ]
 }

@@ -2,15 +2,20 @@
   "name": "soccer_shirt",
   "i18n": {
     "en": "Soccer T-Shirt",
-    "es": "Remera de Fútbol"
+    "es": "Remera de F\u00c3\u00batbol"
   },
   "tags": [
-    "top",
-    "male",
-    "man"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_SoccerTshirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_SoccerTshirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_SoccerTshirt.glb"
+    }
   ]
 }

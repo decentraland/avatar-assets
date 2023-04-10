@@ -2,15 +2,20 @@
   "name": "grey_joggers",
   "i18n": {
     "en": "Grey Joggers",
-    "es": "Pantalones de Chándal"
+    "es": "Pantalones de Ch\u00c3\u00a1ndal"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "bottom"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_GreyJoggers.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_lBody_GreyJoggers.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_lBody_GreyJoggers.glb"
+    }
   ]
 }

@@ -2,15 +2,20 @@
   "name": "f_red_comfy_pants",
   "i18n": {
     "en": "Red Comfy Pants",
-    "es": "Pantalones Cómodos Rojos"
+    "es": "Pantalones C\u00c3\u00b3modos Rojos"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "bottom"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_RedComfortPants.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_lBody_RedComfortPants.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_lBody_RedComfortPants.glb"
+    }
   ]
 }

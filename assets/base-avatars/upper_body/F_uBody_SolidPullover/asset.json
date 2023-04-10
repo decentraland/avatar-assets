@@ -2,15 +2,20 @@
   "name": "baggy_pullover",
   "i18n": {
     "en": "Baggy Pullover",
-    "es": "Suéter de Lana Holgado"
+    "es": "Su\u00c3\u00a9ter de Lana Holgado"
   },
   "tags": [
-    "top",
-    "female",
-    "woman"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_SolidPullover.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_SolidPullover.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_SolidPullover.glb"
+    }
   ]
 }

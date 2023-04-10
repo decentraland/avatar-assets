@@ -2,15 +2,20 @@
   "name": "f_brown_skirt",
   "i18n": {
     "en": "Brown Skirt",
-    "es": "Falda Marrón"
+    "es": "Falda Marr\u00c3\u00b3n"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "bottom"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_BrownSkirtDress.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_lBody_BrownSkirtDress.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_lBody_BrownSkirtDress.glb"
+    }
   ]
 }

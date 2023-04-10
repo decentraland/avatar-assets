@@ -2,15 +2,20 @@
   "name": "m_sweater_02",
   "i18n": {
     "en": "Christmas Sweater",
-    "es": "Suéter de Navidad"
+    "es": "Su\u00c3\u00a9ter de Navidad"
   },
   "tags": [
-    "top",
-    "male",
-    "man"
-   ],
+    "top"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_Sweater_02.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_Sweater_02.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Sweater_02.glb"
+    }
   ]
 }

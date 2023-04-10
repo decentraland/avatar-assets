@@ -5,12 +5,17 @@
     "es": "Pantalones Blancos con Rayas"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "bottom"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_StripeWhitePant.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_lBody_StripeWhitePant.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_lBody_StripeWhitePant.glb"
+    }
   ]
 }
