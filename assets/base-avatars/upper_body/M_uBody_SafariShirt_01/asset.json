@@ -11,11 +11,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_SafaraiShirt_01.glb"
+      "model": "M_uBody_safari_shirt.glb"
     },
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_SafaraiShirt_01.glb"
+      "model": "F_uBody_safari_shirt.glb"
     }
   ]
 }
