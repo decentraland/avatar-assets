@@ -12,19 +12,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_SkaterColoredLongSleeve.glb"
+      "model": "F_uBody_skatercoloredlongsleeve.glb"
     },
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_SkaterColoredLongSleeve.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_SkaterColoredLongSleeve.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_SkaterColoredLongSleeve.glb"
+      "model": "M_uBody_skatercoloredlongsleeve.glb"
     }
   ]
 }

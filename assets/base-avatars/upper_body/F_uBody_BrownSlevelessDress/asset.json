@@ -11,11 +11,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_BrownSlevelessDress.glb"
+      "model": "F_uBody_brown_sleveless_dress.glb"
     },
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_BrownSlevelessDress.glb"
+      "model": "M_uBody_brown_sleveless_dress.glb"
     }
   ]
 }

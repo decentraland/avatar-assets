@@ -11,11 +11,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_StripePijama_01.glb"
+      "model": "M_uBody_striped_pijama.glb"
     },
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_StripePijama_01.glb"
+      "model": "F_uBody_striped_pijama.glb"
     }
   ]
 }
