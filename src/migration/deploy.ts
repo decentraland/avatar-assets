@@ -114,8 +114,8 @@ async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
 
   // Prepare new data property
   const data = {
-    replaces,
-    hides,
+    replaces: replaces || [],
+    hides: hides || [],
     tags,
     category,
     representations: representations.map((representation) => ({

@@ -19,11 +19,39 @@ npm install
 }
 ```
 
+## Prepare Deployment to Content Server
+
+> ℹ️ This script generates a deployment command for base wearables that have been updated in a specific commit.
+
+> **Pending:** Extend support for deploying any updated wearable (not limited to base-wearables) across multiple commits.
+
+### How to Use
+
+Run `npm run prepare-deploy <COMMIT_HASH>` to generate the command needed to deploy the base wearables updated in that specific commit.
+
+The generated deploy command will contain all the wearables to be deployed:
+
+
+`npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> --id <first-wearable-to-deploy> --id <N-wearable-to-deploy>`
+
+- `--identityFilePath`: Replace with the file path of the identity key (e.g: ~/keys/address).
+- `--target`: Replace with the target node where the wearables will be deployed (e.g: https://peer-testing-2.decentraland.org).
+
+### Examples
+
+#### Deploy Base Wearables Updated in a Specific Commit
+
+```
+npm run prepare-deploy 679911429fb0415fb77dfdbc91d011c187444faa
+```
+
+This command will generate: `npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> --id "dcl://base-avatars/relaxed_hair"`, as the commit only updated the `relaxed_hair` wearable.
+
 ## Deploy to Content Server
 
-ℹ️ This script will generate a new entity every time the script is run
+> ℹ️ This script will generate a new entity every time the script is run
 
-⚠️ If you are deploying new base wearables please be sure that its urn is in https://github.com/decentraland/catalyst/blob/master/lambdas/src/apis/collections/off-chain/base-avatars.ts
+> ⚠️ If you are deploying new base wearables please be sure that its urn is in https://github.com/decentraland/catalyst/blob/master/lambdas/src/apis/collections/off-chain/base-avatars.ts
 
 ### How to Use
 
