@@ -12,11 +12,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_skaterquadlongsleeve.glb"
+      "model": "F_uBody_SkaterQuadLongSleeve.glb"
     },
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_skaterquadlongsleeve.glb"
+      "model": "M_uBody_SkaterQuadLongSleeve.glb"
     }
   ]
 }
