@@ -47,7 +47,7 @@ function prepareDeploymentCommand(args: string[]) {
   const wearablesNamesToDeploy = updatedDirectories.map((updatedDirectory) => getAssetName(path.join(updatedDirectory, 'asset.json')))
   console.log(`Preparing deployment for ${wearablesNamesToDeploy.length} base wearables`)
 
-  const wearablesAsArguments = wearablesNamesToDeploy.map((wearableName) => `--id "dcl://base-avatars/${wearableName}"`)
+  const wearablesAsArguments = wearablesNamesToDeploy.map((wearableName) => `--id dcl://base-avatars/${wearableName}`)
 
   console.log('Command to deploy wearables:\n' + `npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> ${wearablesAsArguments.join(' ')}`)
 }

@@ -45,7 +45,9 @@ The generated deploy command will contain all the wearables to be deployed:
 npm run prepare-deploy 679911429fb0415fb77dfdbc91d011c187444faa
 ```
 
-This command will generate: `npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> --id "dcl://base-avatars/relaxed_hair"`, as the commit only updated the `relaxed_hair` wearable.
+This command will generate: `npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> --id dcl://base-avatars/relaxed_hair`, as the commit only updated the `relaxed_hair` wearable.
+
+**Please note that the parameters should not be enclosed within double quotes (").**
 
 ## Deploy to Content Server
 
