@@ -17,22 +17,19 @@ function getUpdatedDirectories(commitHash: string): string[] {
   return Array.from(directories)
 }
 
-// Check if a directory path includes '/base-avatars/'
-function isBaseAvatar(directoryPath: string): boolean {
-  return directoryPath.includes('/base-avatars/')
-}
-
 // Check if a directory contains an 'asset.json' file
 function containsAssetFile(directoryPath: string): boolean {
   const assetJsonPath = path.join(directoryPath, 'asset.json')
   return fs.existsSync(assetJsonPath)
 }
 
-// Get asset name from a file path
-function getAssetName(filepath: string) {
+function getParsedWearable(filepath: string) {
+  const regex = /^.*\/assets\/([^\/]*)\/.*/;
+  const match = regex.exec(filepath);
   const data = fs.readFileSync(filepath)
   const asset = JSON.parse(data as any)
-  return asset.name
+
+  return { assetName: asset.name, collectionName: match[1] }
 }
 
 // Prepare the deployment command
@@ -42,12 +39,13 @@ function prepareDeploymentCommand(args: string[]) {
 
   const updatedDirectories = getUpdatedDirectories(commitHash)
     .map((updatedDirectory) => path.join(rootDirectory, updatedDirectory))
-    .filter((fullUpdatedDirectory) => containsAssetFile(fullUpdatedDirectory) && isBaseAvatar(fullUpdatedDirectory))
+    .filter((fullUpdatedDirectory) => containsAssetFile(fullUpdatedDirectory))
 
-  const wearablesNamesToDeploy = updatedDirectories.map((updatedDirectory) => getAssetName(path.join(updatedDirectory, 'asset.json')))
-  console.log(`Preparing deployment for ${wearablesNamesToDeploy.length} base wearables`)
 
-  const wearablesAsArguments = wearablesNamesToDeploy.map((wearableName) => `--id dcl://base-avatars/${wearableName}`)
+  const wearablesToDeploy = updatedDirectories.map((updatedDirectory) => getParsedWearable(path.join(updatedDirectory, 'asset.json')))
+  console.log(`Preparing deployment for ${wearablesToDeploy.length} base wearables`)
+  
+  const wearablesAsArguments = wearablesToDeploy.map((wearableData) => `--id dcl://${wearableData.collectionName}/${wearableData.assetName}`)
 
   console.log('Command to deploy wearables:\n' + `npm run deploy -- --identityFilePath <identity-file> --target <node-to-deploy> ${wearablesAsArguments.join(' ')}`)
 }

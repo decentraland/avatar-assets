@@ -170,7 +170,7 @@ async function getInfoFromLegacyId(legacyId: string): Promise<{ urn: string, col
   }
   let collectionAddress: string | undefined
   let collectionName: string | undefined
-  if (asset.type === 'blockchain-collection-v1') {
+  if (asset.type === 'blockchain-collection-v1-asset') {
     collectionAddress = asset.contractAddress ?? undefined
     collectionName = asset.collectionName ?? undefined
   } else if (asset.type !== 'off-chain') {
