@@ -1,0 +1,17 @@
+{
+  "name": "emerald_ring",
+  "i18n": {
+    "en": "Emerald Ring",
+    "es": "Anillo de Esmeralda"
+  },
+  "tags": [
+    "anillo",
+    "hands",
+    "esmeralda"
+   ],
+  "category": "hands_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "EmeraldRing.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "EmeraldRing.glb"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "black_glove",
+  "i18n": {
+    "en": "Black Street Glove",
+    "es": "Guante de Calle Negro"
+  },
+  "tags": [
+    "gloves",
+    "hands",
+    "black"
+   ],
+  "category": "hands_wear",
+  "hides": [
+    "hands"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "BlackGlove.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "BlackGlove.glb"}
+  ]
+}

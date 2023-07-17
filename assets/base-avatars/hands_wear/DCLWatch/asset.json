@@ -1,0 +1,17 @@
+{
+  "name": "dcl_watch",
+  "i18n": {
+    "en": "Decentraland Classic Watch",
+    "es": "Reloj Clásico de Decentraland"
+  },
+  "tags": [
+    "decentraland",
+    "hands",
+    "watch"
+   ],
+  "category": "hands_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "DCLWatch.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "DCLWatch.glb"}
+  ]
+}
