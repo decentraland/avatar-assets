@@ -4,7 +4,8 @@
   "description": "Decentraland basic set of avatar assets",
   "scripts": {
     "deploy": "npx ts-node -T src/index.ts",
-    "prepare-deploy": "npx ts-node -T src/scripts/prepare-deployment.ts"
+    "prepare-deploy": "npx ts-node -T src/scripts/prepare-deployment.ts commit",
+    "prepare-deploy-branch": "npx ts-node -T src/scripts/prepare-deployment.ts branch"
   },
   "repository": {
     "type": "git",
