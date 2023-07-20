@@ -8,9 +8,15 @@
     "top",
     "male",
     "man"
-   ],
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_RedTShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_RedTShirt.glb"
+    }
   ]
 }

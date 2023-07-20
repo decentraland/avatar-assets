@@ -8,9 +8,15 @@
     "top",
     "female",
     "woman"
-   ],
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
   "category": "upper_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_GreenBasicTShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_GreenBasicTShirt.glb"
+    }
   ]
 }
