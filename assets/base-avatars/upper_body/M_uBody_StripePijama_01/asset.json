@@ -5,17 +5,12 @@
     "es": "Remera de Pijama Rayada"
   },
   "tags": [
-    "top"
-  ],
+    "top",
+    "male",
+    "man"
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_striped_pijama.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_striped_pijama.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_StripePijama_01.glb"}
   ]
 }

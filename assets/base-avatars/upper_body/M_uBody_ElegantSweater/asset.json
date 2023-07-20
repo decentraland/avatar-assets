@@ -5,17 +5,12 @@
     "es": "Sweater Elegante"
   },
   "tags": [
-    "top"
-  ],
+    "top",
+    "male",
+    "man"
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_ElegantSweater.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_ElegantSweater.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_ElegantSweater.glb"}
   ]
 }

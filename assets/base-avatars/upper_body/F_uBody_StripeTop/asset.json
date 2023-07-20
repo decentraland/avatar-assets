@@ -5,17 +5,12 @@
     "es": "Top a Rayas"
   },
   "tags": [
-    "top"
-  ],
+    "top",
+    "female",
+    "woman"
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_StripeTop.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_StripeTop.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_StripeTop.glb"}
   ]
 }

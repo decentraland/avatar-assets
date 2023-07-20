@@ -5,17 +5,12 @@
     "es": "Sweater con Cuello de Tortuga"
   },
   "tags": [
-    "top"
-  ],
+    "top",
+    "male",
+    "man"
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_TurtleNeckSweater.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_TurtleNeckSweater.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_TurtleNeckSweater.glb"}
   ]
 }

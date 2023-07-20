@@ -7,24 +7,10 @@
   "tags": [
     "upper",
     "body"
-  ],
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_PoloColoredTShirt.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_PoloColoredTShirt.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_PoloColoredTShirt.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_PoloColoredTShirt.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_PoloColoredTShirt.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_PoloColoredTShirt.glb"}
   ]
 }
