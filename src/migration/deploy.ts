@@ -1,27 +1,27 @@
 import { resolve } from 'path'
-import { parseUrn } from '@dcl/urn-resolver';
-import { ArgumentParser } from 'argparse';
-import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client';
-import { EntityType, Pointer } from 'dcl-catalyst-commons';
-import fs from 'fs';
-import { I18N, Identity, WearableMetadata } from './types';
-import { executeWithProgressBar, flatten, generateAuthChain, getContentFileMap, parseIdentityFile } from './utils';
-import { BodyShapeRespresentation, Wearable } from '../types';
+import { parseUrn } from '@dcl/urn-resolver'
+import { ArgumentParser } from 'argparse'
+import { ContentClient, DeploymentPreparationData } from 'dcl-catalyst-client'
+import { EntityType, Pointer } from 'dcl-catalyst-commons'
+import fs from 'fs'
+import { I18N, Identity, WearableMetadata } from './types'
+import { executeWithProgressBar, flatten, generateAuthChain, getContentFileMap, parseIdentityFile } from './utils'
+import { BodyShapeRespresentation, Wearable } from '../types'
 
 let totalDeployed: number = 0
 const failedPointers: string[][] = []
 
 export async function deployWearables(allWearables: Wearable[]): Promise<void> {
   // Parse arguments
-  const parser = new ArgumentParser({ add_help: true });
-  parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' });
-  parser.add_argument('--target', { required: true, help: 'The address of the catalyst server where the wearables will be deployed' });
+  const parser = new ArgumentParser({ add_help: true })
+  parser.add_argument('--identityFilePath', { required: true, help: 'The path to the json file where the address and private key are, to use for deployment' })
+  parser.add_argument('--target', { required: true, help: 'The address of the catalyst server where the wearables will be deployed' })
   parser.add_argument('--id', { required: true, help: 'Specify the id of the wearable to deploy. Can be repeated multiple times. Supports wildcards (example --id "dcl://base-avatars/*")', action: 'append' })
   const args = parser.parse_args()
 
   // Prepare all I'll need
   const contentServerUrl = args.target.includes('localhost') ? args.target : `${args.target}/content`
-  const contentClient = new ContentClient({contentUrl: contentServerUrl })
+  const contentClient = new ContentClient({ contentUrl: contentServerUrl })
   const identity: Identity = await parseIdentityFile(args.identityFilePath)
 
   // Filter the wearables to deploy
@@ -45,10 +45,10 @@ export async function deployWearables(allWearables: Wearable[]): Promise<void> {
   fs.writeFileSync('error.txt', Buffer.from('Failed to deploy the following wearables:\n' + failedPointers.map(p => p.join(',')).join('\n')))
 }
 
-async function deploy(entityToDeploy: DeploymentPreparationData & {pointers: string[]}, identity: Identity, contentClient: ContentClient) {
+async function deploy(entityToDeploy: DeploymentPreparationData & { pointers: string[] }, identity: Identity, contentClient: ContentClient) {
 
   const authChain = generateAuthChain(entityToDeploy.entityId, identity)
-  
+  const errors: { pointers: string[], error: string }[] = []
   try {
     const deploymentTimestamp: number = await contentClient.deployEntity({ entityId: entityToDeploy.entityId, files: entityToDeploy.files, authChain })
     if (!!deploymentTimestamp && deploymentTimestamp != 0) {
@@ -57,8 +57,13 @@ async function deploy(entityToDeploy: DeploymentPreparationData & {pointers: str
       failedPointers.push(entityToDeploy.pointers)
     }
   } catch (error) {
+    errors.push({ pointers: entityToDeploy.pointers, error })
     failedPointers.push(entityToDeploy.pointers)
   }
+  if (errors.length > 0) {
+    console.log(errors)
+  }
+
 }
 
 function matchesAnyId(id: string, idsMatchers: string[]) {
@@ -71,7 +76,7 @@ function matchesAnyId(id: string, idsMatchers: string[]) {
   })
 }
 
-async function toDeploymentPreparationData(wearable: Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & {pointers: string[]}> {
+async function toDeploymentPreparationData(wearable: Wearable, contentClient: ContentClient): Promise<DeploymentPreparationData & { pointers: string[] }> {
   // Prepare metadata and pointer
   const metadata = await buildMetadata(wearable)
   const pointers = await buildPointers(wearable.id)
@@ -83,12 +88,12 @@ async function toDeploymentPreparationData(wearable: Wearable, contentClient: Co
 
   // Build Entity
   const deploymentPreparationData: DeploymentPreparationData = await contentClient.buildEntity({
-      type: EntityType.WEARABLE,
-      pointers,
-      files: files,
-      metadata,
-      timestamp: Date.now()
-    })
+    type: EntityType.WEARABLE,
+    pointers,
+    files: files,
+    metadata,
+    timestamp: Date.now()
+  })
   return {
     ...deploymentPreparationData,
     pointers: pointers
@@ -102,7 +107,7 @@ function readWearableSync(hash: string): Buffer {
 /** Build the wearable metadata in the format the content server needs */
 async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
   const now = Date.now()
-  const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, ...other } = wearable
+  const { type, baseUrl, thumbnail, image, id, representations, category, tags, replaces, hides, removesDefaultHiding, ...other } = wearable
 
   // Fix invalid metadata
   const legacyId = fixInvalidId(id)
@@ -110,12 +115,13 @@ async function buildMetadata(wearable: Wearable): Promise<WearableMetadata> {
 
   // Calculate new data from wearable
   const { urn, collectionAddress } = await getInfoFromLegacyId(legacyId)
-  const bodyShapesMap: Map<string, string> = await mapBodyShapesToUrn(representations);
+  const bodyShapesMap: Map<string, string> = await mapBodyShapesToUrn(representations)
 
   // Prepare new data property
   const data = {
     replaces: replaces || [],
     hides: hides || [],
+    removesDefaultHiding,
     tags,
     category,
     representations: representations.map((representation) => ({
@@ -153,13 +159,13 @@ async function buildPointers(wearableId: string): Promise<Pointer[]> {
   const pointers = collectionAddress && collectionName ?
     [urn, urn.replace(collectionName, collectionAddress)] :
     [urn]
-  
+
   return pointers
 }
 
 async function mapBodyShapesToUrn(representations: BodyShapeRespresentation[]): Promise<Map<string, string>> {
   const bodyShapes = flatten(representations.map(representation => representation.bodyShapes))
-  const bodyShapesEntries = await Promise.all(bodyShapes.map<Promise<[string, string]>>(async (bodyShape) => [bodyShape, await mapLegacyIdToUrn(bodyShape)]));
+  const bodyShapesEntries = await Promise.all(bodyShapes.map<Promise<[string, string]>>(async (bodyShape) => [bodyShape, await mapLegacyIdToUrn(bodyShape)]))
   return new Map(bodyShapesEntries)
 }
 

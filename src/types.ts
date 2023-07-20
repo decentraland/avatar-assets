@@ -6,6 +6,7 @@ export type SourceJson = {
   tags: string[]
   replaces?: string[]
   hides?: string[]
+  removesDefaultHiding?: string[]
   category: string
   rarity?: string
   description?: string
@@ -27,6 +28,7 @@ export type Wearable = {
   baseUrl: string
   replaces: string[]
   hides: string[]
+  removesDefaultHiding?: string[]
   i18n: {
     code: string
     text: string
