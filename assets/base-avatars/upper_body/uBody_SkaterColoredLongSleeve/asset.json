@@ -1,0 +1,25 @@
+{
+  "name": "skatercoloredlongsleeve",
+  "i18n": {
+    "en": "Colored Skater Long Sleeve",
+    "es": "Remera larga Colorida de Skater"
+  },
+  "tags": [
+    "upper",
+    "body"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_SkaterColoredLongSleeve.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_SkaterColoredLongSleeve.glb"
+    }
+  ]
+}

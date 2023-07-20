@@ -1,0 +1,25 @@
+{
+  "name": "skatertriangleslongsleeve",
+  "i18n": {
+    "en": "Skater Long Sleeve with Triangle Pattern",
+    "es": "Remera larga de Skater con Diseño de Triangulos"
+  },
+  "tags": [
+    "upper",
+    "body"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_SkaterTrianglesLongSleeve.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_SkaterTrianglesLongSleeve.glb"
+    }
+  ]
+}
