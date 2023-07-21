@@ -14,5 +14,6 @@ export const validCategories = [
   'mouth',
   'top_head',
   'tiara',
-  'upper_body'
+  'upper_body',
+  'hands_wear'
 ]

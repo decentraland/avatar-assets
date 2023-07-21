@@ -1,0 +1,17 @@
+{
+  "name": "cord_bracelet",
+  "i18n": {
+    "en": "Cord Wiggly Bracelet",
+    "es": "Bracelete de Cuerda Espiralado"
+  },
+  "tags": [
+    "bracelet",
+    "hands",
+    "cord"
+   ],
+  "category": "hands_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "CordBracelet.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "CordBracelet.glb"}
+  ]
+}
