@@ -47,6 +47,7 @@ export async function createAssetDescriptionFromFolder(
     image: imageCID,
     replaces: originalJson.replaces,
     hides: originalJson.hides,
+    removesDefaultHiding: originalJson.removesDefaultHiding,
     representations: await getRepresentations(folderFullPath)
   }
   return createAssetDescription(value)

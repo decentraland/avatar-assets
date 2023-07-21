@@ -5,17 +5,18 @@
     "es": "Camisa Verde Claro"
   },
   "tags": [
-    "top"
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
   ],
   "category": "upper_body",
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_LightGreenShirt.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_LightGreenShirt.glb"
     }
   ]
 }

@@ -2,20 +2,21 @@
   "name": "brown_sleveless_dress",
   "i18n": {
     "en": "Brown Sleeveless Dress",
-    "es": "Vestido Marr\u00c3\u00b3n Sin Mangas"
+    "es": "Vestido Marrón Sin Mangas"
   },
   "tags": [
-    "top"
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
   ],
   "category": "upper_body",
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_brown_sleveless_dress.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_brown_sleveless_dress.glb"
+      "model": "F_uBody_BrownSlevelessDress.glb"
     }
   ]
 }

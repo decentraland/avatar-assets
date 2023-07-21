@@ -5,17 +5,18 @@
     "es": "Chaqueta Negra"
   },
   "tags": [
-    "top"
+    "top",
+    "male",
+    "man"
+  ],
+  "removesDefaultHiding": [
+    "hands"
   ],
   "category": "upper_body",
   "main": [
     {
       "type": "dcl://base-avatars/BaseMale",
       "model": "M_uBody_BlackJacket_01.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_BlackJacket_01.glb"
     }
   ]
 }
