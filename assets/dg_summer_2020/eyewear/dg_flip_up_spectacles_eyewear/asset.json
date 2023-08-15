@@ -1,0 +1,37 @@
+{
+  "name": "dg_flip_up_spectacles_eyewear",
+  "i18n": {
+    "en": "DG Flip Up Spectacles",
+    "es": "Gafas Abatibles DG"
+  },
+  "tags": [
+    "glasses",
+    "flip up",
+    "accessories",
+    "decentral games",
+    "shades"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "eyewear",
+    "helmet",
+    "mask"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"flip_up_spectacles_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "flip_up_spectacles_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Swaggy flip up spectacles for any occasion, inside or outside, featuring a chain to keep them secure #ice"
+}

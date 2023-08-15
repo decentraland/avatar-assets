@@ -1,0 +1,36 @@
+{
+  "name": "dg_suit_bottom_lower_body",
+  "i18n": {
+    "en": "Suit bottom",
+    "es": "Traje inferior"
+  },
+  "tags": [
+    "suit",
+    "bottom",
+"lower body",
+    "decentral games",
+    "gucci",
+    "pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+    "lower_body"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"suit_bottom_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "suit_bottom_f.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "A decadent & elegant pair of DG suit pants #dgsuit"
+}

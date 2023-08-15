@@ -1,0 +1,35 @@
+{
+  "name": "dg_kicks_feet",
+  "i18n": {
+    "en": "Shoes",
+    "es": "Zapatillas Jordan"
+  },
+  "tags": [
+    "shoes",
+    "jordan�s",
+    "decentral games",
+    "nike"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"kicks_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "kicks_f.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Comfortable mid top kicks with decadent DG cashmere socks #dgkicks"
+}
+

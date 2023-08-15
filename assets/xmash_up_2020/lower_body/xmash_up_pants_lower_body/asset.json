@@ -1,0 +1,36 @@
+{
+  "name": "xmash_up_pants_lower_body",
+  "i18n": {
+    "en": "Joelle Pants"
+  },
+  "tags": [
+    "pants",
+    "lower_body",
+    "exclusive",
+    "free",
+    "money",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_lBody_gacPants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_lBody_gacPants.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Wash separately, colours may bleed. | Art by KJ Walker - 3D Design by vrglit.ch | Guest Artists Collection"
+}

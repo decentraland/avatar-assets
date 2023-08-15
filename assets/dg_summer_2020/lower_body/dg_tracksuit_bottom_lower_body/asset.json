@@ -1,0 +1,34 @@
+{
+  "name": "dg_tracksuit_bottom_lower_body",
+  "i18n": {
+    "en": "DG Tracksuit Bottom",
+    "es": "Chandal Inferior DG"
+  },
+  "tags": [
+    "tracksuit",
+    "bottom",
+    "decentral games",
+    "coat"
+   ],
+  "category": "lower_body",
+  "replaces": [
+  
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"tracksuit_bottom_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "tracksuit_bottom_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "The pants of the decadent and elegant DG tracksuit #drip"
+}

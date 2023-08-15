@@ -1,0 +1,33 @@
+{
+  "name": "dg_deezys_feet",
+  "i18n": {
+    "en": "DG Deezys",
+    "es": "ZDG Deezys"
+  },
+  "tags": [
+    "shoes",
+    "yeezy",
+    "decentral games"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"deezys_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "deezys_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Comfy and elegant sneakers #deezys"
+}
