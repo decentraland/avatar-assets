@@ -5,7 +5,8 @@
   "scripts": {
     "deploy": "npx ts-node -T src/index.ts",
     "prepare-deploy": "npx ts-node -T src/scripts/prepare-deployment.ts commit",
-    "prepare-deploy-branch": "npx ts-node -T src/scripts/prepare-deployment.ts branch"
+    "prepare-deploy-branch": "npx ts-node -T src/scripts/prepare-deployment.ts branch",
+    "group-deploy": "npx ts-node -T src/scripts/group-deployment.ts"
   },
   "repository": {
     "type": "git",
