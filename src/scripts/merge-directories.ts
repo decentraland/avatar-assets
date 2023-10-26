@@ -93,9 +93,12 @@ if (directoryPath) {
             relativePath: relativePath,
             directoryFound: directoryFound
         };
-    });
+    })
 
-    console.log(structuredOutputs);
+    console.log({
+        notFound: structuredOutputs.filter((output) => !output.directoryFound),
+        replacedAmount: structuredOutputs.length
+    });
 } else {
     console.error('Please provide a directory path');
     process.exit(1);
