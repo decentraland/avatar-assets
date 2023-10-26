@@ -2,20 +2,15 @@
   "name": "jean_shorts",
   "i18n": {
     "en": "Jean Shorts",
-    "es": "Pantal\u00c3\u00b3n Corto de Jean"
+    "es": "Pantalón Corto de Jean"
   },
   "tags": [
-    "bottom"
-  ],
+    "bottom",
+    "male",
+    "man"
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_ShortPants_01.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_ShortPants_01.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_ShortPants_01.glb"}
   ]
 }

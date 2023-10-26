@@ -8,15 +8,9 @@
     "top",
     "female",
     "woman"
-  ],
-  "removesDefaultHiding": [
-    "hands"
-  ],
+   ],
   "category": "upper_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_RollerOutfit.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_RollerOutfit.glb"}
   ]
 }

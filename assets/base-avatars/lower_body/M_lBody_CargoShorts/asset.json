@@ -5,17 +5,12 @@
     "es": "Pantalones Estilo Cargo"
   },
   "tags": [
-    "bottom"
-  ],
+    "bottom",
+    "male",
+    "man"
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_CargoShorts.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_CargoShorts.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_CargoShorts.glb"}
   ]
 }

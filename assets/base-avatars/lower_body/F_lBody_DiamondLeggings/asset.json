@@ -5,17 +5,12 @@
     "es": "Leggings con Estampado de Diamantes"
   },
   "tags": [
-    "bottom"
-  ],
+    "bottom",
+    "female",
+    "woman"
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_DiamondLeggings.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_DiamondLeggings.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_DiamondLeggings.glb"}
   ]
 }

@@ -2,22 +2,15 @@
   "name": "swim_short",
   "i18n": {
     "en": "Swim Short",
-    "es": "Traje de ba\u00c3\u00b1o Corto"
+    "es": "Traje de baño Corto"
   },
   "tags": [
     "bottom",
     "Male",
     "Man"
-  ],
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_SwimShort.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_SwimShort.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_SwimShort.glb"}
   ]
 }

@@ -2,20 +2,15 @@
   "name": "safari_pants",
   "i18n": {
     "en": "Safari Pants",
-    "es": "Pantal\u00c3\u00b3n de Safari"
+    "es": "Pantalón de Safari"
   },
   "tags": [
-    "bottom"
-  ],
+    "bottom",
+    "male",
+    "man"
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_SafariPants_01.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_SafariPants_01.glb"
-    }
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_SafariPants_01.glb"}
   ]
 }
