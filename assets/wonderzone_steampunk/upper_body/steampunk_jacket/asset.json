@@ -19,7 +19,7 @@
   ],
   "category": "upper_body",
   "replaces": [],
-  "hides": [],
+  "hides": ["hands"],
   "main": [{
       "type": "BaseMale",
       "model": "steampunk_jacket_male.glb",

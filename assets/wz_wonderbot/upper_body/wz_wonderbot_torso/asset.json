@@ -16,7 +16,7 @@
     ],
     "category": "upper_body",
     "replaces":[],
-    "hides":[],
+    "hides":["hands"],
     "main": [
         {
             "type": "BaseMale",  
