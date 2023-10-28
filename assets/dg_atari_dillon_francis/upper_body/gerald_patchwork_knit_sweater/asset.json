@@ -8,6 +8,7 @@
     "dillon francis", "gerald", "barney cools", "sweater", "dg"
    ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [
    ],
    "hides": [

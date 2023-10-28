@@ -6,6 +6,7 @@
   },
   "tags": ["tshirt", "exclusive", "launch", "decentraland", "20.02.20", "upper", "body"],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [],
   "hides": [],
   "main": [
