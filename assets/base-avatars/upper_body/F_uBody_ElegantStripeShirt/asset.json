@@ -10,6 +10,7 @@
     "woman"
    ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_ElegantStripeShirt.glb"}
   ]
