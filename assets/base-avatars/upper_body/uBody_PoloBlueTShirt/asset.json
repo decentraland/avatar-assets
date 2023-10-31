@@ -7,11 +7,19 @@
   "tags": [
     "upper",
     "body"
-   ],
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
   "category": "upper_body",
-  "removesDefaultHiding": ["hands"],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_uBody_PoloBlueTShirt.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_uBody_PoloBlueTShirt.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_PoloBlueTShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_PoloBlueTShirt.glb"
+    }
   ]
 }

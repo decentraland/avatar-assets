@@ -7,16 +7,22 @@
   "tags": [
     "upper",
     "body"
-   ],
-  "category": "upper_body",
-  "removesDefaultHiding": ["hands"],
-  "replaces": [
   ],
+  "category": "upper_body",
   "hides": [
     "lower_body"
   ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_DenimDungareesRed.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_DenimDungareesRed.glb"}
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_DenimDungareesRed.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_DenimDungareesRed.glb"
+    }
   ]
 }
