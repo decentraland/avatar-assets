@@ -7,7 +7,6 @@
   "tags": [
     "style","electric", "dappcraft","neon"],
   "category": "upper_body",
-  "removesDefaultHiding": ["hands"],
   "replaces": [
    ],
    "hides": [
