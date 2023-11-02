@@ -20,13 +20,13 @@
   "main": [
     {
       "type": "BaseMale",
-      "model": "M_uBody_Sorare.glb",
+      "model": "M_uBody_SoRare.glb",
       "overrideReplaces": [],
       "overrideHides": []
     },
     {
       "type": "BaseFemale",
-      "model": "F_uBody_Sorare.glb"
+      "model": "F_uBody_SoRare.glb"
     }
   ],
   "rarity": "legendary",
