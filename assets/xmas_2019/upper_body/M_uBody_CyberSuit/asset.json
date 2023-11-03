@@ -12,6 +12,7 @@
     "christmas"
    ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [
    ],
    "hides": [

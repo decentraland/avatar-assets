@@ -7,24 +7,10 @@
   "tags": [
     "lower",
     "body"
-  ],
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_CorduroyPurplePants.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_CorduroyPurplePants.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_CorduroyPurplePants.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_CorduroyPurplePants.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_CorduroyPurplePants.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_CorduroyPurplePants.glb"}
   ]
 }

@@ -19,6 +19,7 @@
     "polygonal_mind"
   ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [],
   "hides": [],
 

@@ -2,20 +2,15 @@
   "name": "f_country_pants",
   "i18n": {
     "en": "Country Music Pants",
-    "es": "Pantalones de M\u00c3\u00basica Country"
+    "es": "Pantalones de Música Country"
   },
   "tags": [
-    "bottom"
-  ],
+    "bottom",
+    "female",
+    "woman"
+   ],
   "category": "lower_body",
   "main": [
-    {
-      "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_lBody_CountryPant.glb"
-    },
-    {
-      "type": "dcl://base-avatars/BaseMale",
-      "model": "M_lBody_CountryPant.glb"
-    }
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_CountryPant.glb"}
   ]
 }

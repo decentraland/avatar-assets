@@ -14,18 +14,19 @@
     "mana"
   ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [],
   "hides": [],
   "main": [
     {
       "type": "BaseMale",
-      "model": "M_uBody_Pixelchain.glb",
+      "model": "M_uBody_PixelChain.glb",
       "overrideReplaces": [],
       "overrideHides": []
     },
     {
       "type": "BaseFemale",
-      "model": "F_uBody_Pixelchain.glb"
+      "model": "F_uBody_PixelChain.glb"
     }
   ],
   "rarity": "legendary",

@@ -24,7 +24,8 @@
    ],
    "hides": [
      "lower_body",
-     "feet"
+     "feet",
+     "hands"
    ],
 
   "main": [
