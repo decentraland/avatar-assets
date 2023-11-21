@@ -1,27 +1,26 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "diagnostics": false,
-    "lib": [
-      "es2017",
-      "dom",
-    ],
-    "esModuleInterop": true,
-    "incremental": true,
+    "strict": true,
+    "outDir": "dist",
+    "target": "ES2020",
     "module": "commonjs",
     "moduleResolution": "node",
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noUnusedLocals": true,
-    "outDir": "./build",
+    "sourceMap": true,
+    "experimentalDecorators": true,
     "pretty": true,
-    "strict": true,
-    "strictNullChecks":false,
-    "target": "es2017",
-    "useUnknownInCatchVariables": false
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true
   },
   "include": [
-    "src/**/*.ts"
+    "src"
   ],
-  "exclude": ["*.swp", "./dist/**/*", "/node_modules/**/*"]
+  "exclude": [
+    "node_modules"
+  ]
 }

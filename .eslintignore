@@ -1,0 +1,6 @@
+test/
+dist/
+*.js
+*.d.ts
+*.json
+.vscode/
