@@ -4,30 +4,19 @@
     "en": "Robe",
     "es": "Bata"
   },
-  "tags": [
-    "robe",
-    "body",
-    "decentral games",
-    "versace"
-   ],
+  "tags": ["robe", "body", "decentral games", "versace"],
   "category": "upper_body",
-  "replaces": [
-    "upper_body"
-   ],
-   "hides": [
-    
-   ],
-
+  "removesDefaultHiding": ["hands"],
+  "replaces": ["upper_body"],
+  "hides": [],
   "main": [
-{
-"type":"BaseMale" , 
-"model":"robe_m.glb" , 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "robe_f.glb"}
+    {
+      "type": "BaseMale",
+      "model": "robe_m.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "robe_f.glb" }
   ],
   "rarity": "mythic",
   "description": "A silky smooth robe that lets everyone know who's the real baus #cozybaus"
