@@ -31,9 +31,13 @@ export function getAllAssetsDirectories(): {
     collectionCategoriesDirectories.forEach((collectionCateogryDirectory) => {
       readdirSync(join(absoluteCollectionDirectoryPath, collectionCateogryDirectory)).forEach(
         (collectionCategoryFile) =>
-          collectionFilesMap[collectionName].push(
-            join(absoluteCollectionDirectoryPath, collectionCateogryDirectory, collectionCategoryFile)
-          )
+          {
+            if (!collectionCategoryFile.endsWith('.DS_Store')) {
+              collectionFilesMap[collectionName].push(
+                join(absoluteCollectionDirectoryPath, collectionCateogryDirectory, collectionCategoryFile)
+              )
+            }
+          }
       )
     })
   }
