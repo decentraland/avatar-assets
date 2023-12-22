@@ -1,4 +1,4 @@
-export type SourceJson = {
+export type AssetJSON = {
   name: string
   i18n: {
     [key: string]: string
@@ -18,37 +18,22 @@ export type SourceJson = {
   }[]
 }
 
-export type Wearable = {
-  id: WearableId
-  name: string
-  type: 'wearable'
-  thumbnail: string
-  image: string | undefined
+export type Asset = {
+  json: AssetJSON
+  collection: string
   category: string
-  baseUrl: string
-  replaces: string[]
-  hides: string[]
-  removesDefaultHiding?: string[]
-  i18n: {
-    code: string
-    text: string
-  }[]
-  tags: string[]
-  representations: BodyShapeRespresentation[]
-  rarity?: string
-  description: string
-}
-export type WearableId = string
-
-export type BodyShapeRespresentation = {
-  bodyShapes: string[]
-  mainFile: string
-  overrideReplaces: string[]
-  overrideHides: string[]
-  contents: Content[]
+  name: string
+  glbFilesPaths: string[]
+  directoryPath: string
 }
 
-export type Content = {
-  file: string
-  hash: string
+export type Arguments = {
+  target: string
+  identityFilePath: string
+  id: string[]
+}
+
+export type Identity = {
+  privateKey: string
+  ethAddress: string
 }
