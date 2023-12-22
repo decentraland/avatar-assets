@@ -33,19 +33,15 @@ async function main() {
     const entityFiles: Map<string, Uint8Array> = new Map<string, Uint8Array>()
 
     const extractedTextures = await extractAssetTextures(asset)
-    const uniqueExtractedTextures = extractedTextures.filter(
-      (extractedTexture, index) =>
-        extractedTextures.findIndex((texture) => texture.fileName === extractedTexture.fileName) === index
-    )
 
-    uniqueExtractedTextures.forEach((extractedTexture) => {
+    extractedTextures.forEach((extractedTexture) => {
       entityFiles.set(extractedTexture.fileName, new Uint8Array(extractedTexture.buffer))
     })
 
     entityFiles.set('thumbnail.png', new Uint8Array(fs.readFileSync(path.join(asset.directoryPath, 'thumbnail.png'))))
 
     const metadata = await buildMetadata(asset)
-    metadata.data.representations = getRepresentations(asset, uniqueExtractedTextures)
+    metadata.data.representations = getRepresentations(asset, extractedTextures)
 
     logger.info(`Asset prepared: `, { metadata })
     const deploymentPreparationData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({

@@ -4,7 +4,7 @@ import { basename, dirname } from 'path'
 import { readFileSync } from 'fs'
 import { Asset } from '../types'
 
-function extractGLBTextures(originalGLBFilePath: string): { fileName: string; buffer: Buffer }[] {
+async function extractGLBTextures(originalGLBFilePath: string): Promise<{ fileName: string; buffer: Buffer }[]> {
   const options = {
     separateTextures: true,
     resourceDirectory: dirname(originalGLBFilePath)
