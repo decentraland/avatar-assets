@@ -1,0 +1,36 @@
+{
+  "name": "ms_matic_upper_body",
+  "i18n": {
+    "en": "Matic Soccer T-Shirt",
+    "es": "Remera de fútbol de Matic"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "matic",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Matic.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Matic.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Matic Soccer T-Shirt - Moonshot Tournament 2020"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sport_jacket",
+  "i18n": {
+    "en": "Sport Jacket",
+    "es": "Chaqueta Deportiva"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_SportJacket.glb"
+    }
+  ]
+}

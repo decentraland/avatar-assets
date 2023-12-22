@@ -1,0 +1,30 @@
+{
+  "name": "gerald_striped_knit_sweater",
+  "i18n": {
+    "en": "Gerald Striped Knit Sweater",
+    "es": "Gerald Sweater Tejido a Rayas"
+  },
+  "tags": [
+    "dillon", "francis", "gerald", "barney cools", "sweater", "dg"
+
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_dillon_stripes_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "f_dillon_stripes_upper_body.glb"}
+  ],
+  "rarity": "epic",
+  "description": "A cozy Barney Cools Gerald Striped Knit Sweater."
+}

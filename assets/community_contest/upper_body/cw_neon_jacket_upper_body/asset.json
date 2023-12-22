@@ -1,0 +1,37 @@
+{
+  "name": "cw_neon_jacket_upper_body",
+  "i18n": {
+    "en": "Neon Cool Jacket",
+    "es": "Campera de Neon"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_NeonJacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_NeonJacket.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

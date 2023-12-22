@@ -1,0 +1,33 @@
+{
+  "name": "f_cyber_suit_lower_body",
+  "i18n": {
+    "en": "Cyber Pants",
+    "es": "Pantalones Cibernéticos"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "cyber",
+    "xmas",
+    "pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+     "feet"
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_lBody_CyberSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": "Tron's a Xmas movie right?"
+}

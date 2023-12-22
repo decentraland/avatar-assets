@@ -1,0 +1,28 @@
+{
+  "name": "killer_mask",
+  "i18n": {
+    "en": "Killer Mask",
+    "es": "Máscara de Asesino"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "male",
+    "man",
+    "female",
+    "woman"
+  ],
+  "category": "mask",
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Killer.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Killer.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

@@ -1,0 +1,37 @@
+{
+  "name": "cw_yellowgarment_upper_body",
+  "i18n": {
+    "en": "Yellow Pullover of Garment of Gratitude",
+    "es": "Pullover Amarillo de Prendas de Gratitud"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_YellowGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_uBody_YellowGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

@@ -1,0 +1,41 @@
+{
+  "name": "cw_bitcoinglasses_eyewear",
+  "i18n": {
+    "en": "Bitcoin Eyewear",
+    "es": "Anteojos de Bitcoin"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables",
+    "bitcoin"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_BitcoinGlasses.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_BitcoinGlasses.glb"}
+        ],
+        "rarity": "legendary",
+        "description": ""
+      }

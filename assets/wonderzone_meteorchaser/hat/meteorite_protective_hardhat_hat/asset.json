@@ -1,0 +1,40 @@
+{
+  "name": "meteorite_protective_hardhat_hat",
+  "i18n": {
+    "en": "Meteorite protective hardhat",
+    "es": "Casco protector de meteoritos"
+  },
+
+  "tags": [
+    "WonderZone",
+    "exclusive", 
+    "decentraland",
+    "mana",
+    "hat",
+    "helmet",
+    "meteorchaser",
+    "meteorite",
+    "licensed"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+      "hair"
+   ],
+
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_hat_meteorite_protective_hardhat.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseFemale", "model": "F_hat_meteorite_protective_hardhat.glb"}
+        ],
+        "rarity": "legendary",
+        "description": "Crafting reward from WonderZone. Will save your life from meteorites falling on your head. Also gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
+      }

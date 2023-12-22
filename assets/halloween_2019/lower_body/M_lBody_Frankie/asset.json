@@ -1,0 +1,27 @@
+{
+  "name": "frankie_lower_body",
+  "i18n": {
+    "en": "Frankie Pants",
+    "es": "Pantalones de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "leggings",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_Frankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Engineered for maximum chills"
+}

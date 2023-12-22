@@ -1,0 +1,43 @@
+{
+  "name": "hero_upper_body",
+  "i18n": {
+    "en": "Decentraman and Decentrawoman Upper Half"
+  },
+  "tags": [
+    "superhero",
+    "upper_body",
+    "decentraman",
+    "decentrawoman",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"torso",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "superhero",
+    "super"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+    "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Delbo_Decentraman_Upper.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_Delbo_Decentrawoman_Upper.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Decentraman and Decentrawoman's top and gloves | José Delbo | Guest Artists Collection."
+}

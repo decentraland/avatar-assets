@@ -1,0 +1,35 @@
+{
+  "name": "machete_headband_top_head",
+  "i18n": {
+    "en": "Machete Headband",
+    "es": "Bincha de Machete"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "top_head",
+    "halloween",
+    "knife",
+    "machete"
+  ],
+  "category": "top_head",
+  "replaces": [
+    "helmet",
+    "hat"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "TopHead_Machete.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "TopHead_Machete.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "If the knife headband wasn't enough to freak out your friends..."
+}

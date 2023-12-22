@@ -1,0 +1,39 @@
+{
+  "name": "atari_purple_upper_body",
+  "i18n": {
+    "en": "Purple Atari Tee",
+    "es": "Camiseta Atari Morada"
+  },
+  "tags": [
+    "T-Shirt",
+    "atari",
+    "tshirt",
+    "shirt",
+    "tee",
+    "retro",
+    "decentraland",
+    "upper",
+    "gamer",
+    "purple"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Tee_Atari_Purple.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Tee_Atari_Purple.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a purple tee."
+}

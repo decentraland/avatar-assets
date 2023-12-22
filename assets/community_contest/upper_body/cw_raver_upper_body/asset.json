@@ -1,0 +1,37 @@
+{
+  "name": "cw_raver_upper_body",
+  "i18n": {
+    "en": "Raver Top",
+    "es": "Camiseta de Raver"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_RaverTankTop.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_RaverTop.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

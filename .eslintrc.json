@@ -1,0 +1,18 @@
+{
+  "extends": "@dcl/eslint-config/sdk",
+  "parserOptions": {
+    "project": ["tsconfig.json", "test/tsconfig.json"]
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "tabWidth": 2
+      }
+    ]
+  }
+}

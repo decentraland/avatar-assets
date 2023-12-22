@@ -1,0 +1,27 @@
+{
+  "name": "jester_feet",
+  "i18n": {
+    "en": "Jester Shoes",
+    "es": "Zapatos de Bufona"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Run from dissatisfied royalty in style"
+}

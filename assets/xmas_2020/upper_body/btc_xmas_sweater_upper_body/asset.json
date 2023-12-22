@@ -1,0 +1,44 @@
+{
+  "name": "btc_xmas_sweater_upper_body",
+  "i18n": {
+    "en": "Bitcoin Christmas Sweater",
+    "es": "Sweater de Navidad de Bitcoin"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "bitcoin"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_btc_xmas_sweater_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_btc_xmas_sweater_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+
+
+  ],
+  "rarity": "legendary",
+  "description": "A festive gift from Save Xmas 2020"
+}

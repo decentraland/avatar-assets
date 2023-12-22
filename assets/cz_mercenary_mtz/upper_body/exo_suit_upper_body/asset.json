@@ -1,0 +1,36 @@
+{
+    "name": "exo_suit_upper_body",
+    "i18n": {
+      "en": "Exo-Suit",
+      "es": "Exoesqueleto"
+    },
+    "tags": [
+      "exoskeleton",
+      "corona",
+      "zombies"
+     ],
+    "category": "upper_body",
+    "removesDefaultHiding": ["hands"],
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+      "lower_body",
+      "feet"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_exoskeleton_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_exoskeleton_upper_body.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Avatar anatomy enhancement designed for a select class of warrior."
+  }

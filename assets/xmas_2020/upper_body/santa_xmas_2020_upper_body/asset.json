@@ -1,0 +1,43 @@
+{
+  "name": "santa_xmas_2020_upper_body",
+  "i18n": {
+    "en": "Santa Christmas Suit",
+    "es": "Traje de Santa Navideño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+    "lower_body",
+    "feet"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "santa2020_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseFemale", 
+  "model": "santa2020_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "epic",
+  "description": "A festive gift from Save Xmas 2020"
+}

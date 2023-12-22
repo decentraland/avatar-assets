@@ -1,0 +1,34 @@
+{
+    "name": "mf_animehair",
+    "i18n": {
+      "en": "Anime warrior hair"
+    },
+    "rarity": "legendary",
+    "description": "Hair inspired by anime for best fans. By Mana-fever 2020 ©",
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game",
+        "anime",
+        "manga",
+        "color",
+        "warrior"
+     ],
+    "category": "hair",
+    "replaces": [],
+    "hides": [],  
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "M_Hair.glb",
+                    "overrideReplaces": [],
+                    "overrideHides": []
+                },
+                {   
+                    "type": "BaseFemale", 
+                    "model": "F_Hair.glb"
+                }
+        ]
+}
+  

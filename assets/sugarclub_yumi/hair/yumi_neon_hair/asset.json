@@ -1,0 +1,35 @@
+{
+  "name": "yumi_neon_hair",
+  "i18n": {
+    "en": "Yumi Neon Hair",
+    "es": "Pelo de neón Yumi"
+  },
+  "tags": [
+      "hair",
+      "exclusive",
+      "yumi",
+      "sugarclub",
+      "decentraland"
+   ],
+  "category": "hair",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "yumi_neon_hair_male.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "yumi_neon_hair.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Impress the crowd with this sugar anime hair style"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "lovely_yellow_shirt",
+  "i18n": {
+    "en": "Lovely Yellow Shirt",
+    "es": "Adorable Camisa Amarilla"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_YellowLovelyTShirt.glb"
+    }
+  ]
+}

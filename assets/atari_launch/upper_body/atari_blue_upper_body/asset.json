@@ -1,0 +1,39 @@
+{
+  "name": "atari_blue_upper_body",
+  "i18n": {
+    "en": "Blue Atari Tee",
+    "es": "Camiseta Atari Azul"
+  },
+  "tags": [
+    "T-Shirt",
+    "atari",
+    "tshirt",
+    "shirt",
+    "tee",
+    "retro",
+    "decentraland",
+    "upper",
+    "gamer",
+    "blue"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Tee_Atari_Blue.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Tee_Atari_Blue.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a blue tee."
+}

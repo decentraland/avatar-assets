@@ -1,0 +1,36 @@
+{
+  "name": "lirio_skull_mask",
+  "i18n": {
+    "en": "Lirio Skull",
+    "es": "Calavera de Lirio"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm02.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm02.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Classic Day of the Dead lily design."
+}

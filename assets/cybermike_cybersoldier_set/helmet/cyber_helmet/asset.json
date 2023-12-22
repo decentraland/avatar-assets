@@ -1,0 +1,38 @@
+{
+  "name": "cybersoldier_helmet",
+  "i18n": {
+    "en": "CYBERSOLDIER HELMET - Winter Soldier Collection - Mark III - FROM CYBERMIKE"
+    
+  },
+  "tags": [
+    "cyber helmet",
+   "cyber armour",
+   "winter collection",
+      "cybermike",
+      "cybersoldier"
+   
+   ],
+  "category": "helmet",
+  "replaces": [
+   ],
+   "hides": [
+    "top_head",
+    "hat",
+    "tiara",
+    "hair"   
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "BL_Helmet_C11.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "BL_Helmet_C11.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

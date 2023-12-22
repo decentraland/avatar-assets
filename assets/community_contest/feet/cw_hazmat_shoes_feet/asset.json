@@ -1,0 +1,36 @@
+{
+  "name": "cw_hazmat_shoes_feet",
+  "i18n": {
+    "en": "Hazmat Shoes",
+    "es": "Zapatos de Hazmat"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_HazmatSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_HazmatSuit.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

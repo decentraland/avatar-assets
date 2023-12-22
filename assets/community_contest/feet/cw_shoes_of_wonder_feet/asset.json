@@ -1,0 +1,36 @@
+{
+  "name": "cw_shoes_of_wonder_feet",
+  "i18n": {
+    "en": "Shoes of Wonder",
+    "es": "Zapatos de Maravilla"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_Shoes_of_Wonder.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_Feet_Shoes_of_Wonder.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Thunder_earring",
+  "i18n": {
+    "en": "Thunder Right Earring",
+    "es": "Aro con Forma de Rayo"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "earring",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_ThunderRight.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_ThunderRight.glb"}
+  ]
+}

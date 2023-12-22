@@ -1,0 +1,34 @@
+{
+    "name": "hwn_2020_dracula_mouth",
+    "i18n": {
+      "en": "Dracula Mouth - Halloween 2020",
+      "es": "Boca de Dracula - Halloween 2020"
+    },
+    "tags": [
+      "mouth",
+      "halloween",
+      "2020",
+      "decentraland"
+     ],
+    "category": "mouth",
+    "replaces": [
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "dracula_mouth.png", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "dracula_mouth.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

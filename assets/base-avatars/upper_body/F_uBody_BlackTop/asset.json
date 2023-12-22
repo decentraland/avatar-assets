@@ -1,0 +1,22 @@
+{
+  "name": "black_top",
+  "i18n": {
+    "en": "Black Top",
+    "es": "Top Negro"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_BlackTop.glb"
+    }
+  ]
+}

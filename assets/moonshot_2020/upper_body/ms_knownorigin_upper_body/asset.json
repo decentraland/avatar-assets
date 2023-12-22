@@ -1,0 +1,36 @@
+{
+  "name": "ms_knownorigin_upper_body",
+  "i18n": {
+    "en": "Known Origin Soccer T-Shirt",
+    "es": "Remera de fútbol de Known Origin"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "known origin",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_KnownOrigin.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_KnownOrigin.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Known Origin Soccer T-Shirt - Moonshot Tournament 2020"
+}

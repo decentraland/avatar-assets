@@ -1,0 +1,36 @@
+{
+  "name": "f_cw_trendy_sport_shoes_feet",
+  "i18n": {
+    "en": "Trendy Sport Shoes",
+    "es": "Zapatillas Trendy de Deporte"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "F_Feet_SportyShoes.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Feet_SportyShoes.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

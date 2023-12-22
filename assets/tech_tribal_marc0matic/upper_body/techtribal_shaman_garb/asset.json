@@ -1,0 +1,53 @@
+{
+  "name": "techtribal_shaman_garb",
+  "i18n": {
+    "en": "Tech Tribal Shaman Garb",
+    "es": "Tech Tribal Shaman Garb"
+  },
+  "tags": [
+    "accessories",
+    "male",
+    "man",
+    "female",
+    "woman",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "animals",
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "jacket",
+   "coat",
+   "cape",
+   "solar",
+   "punk",
+   "exclusive"
+
+   ],
+
+"category": "lower_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  "hands"
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "M_TechTribal_Shaman_Garb.glb"},
+    {"type": "BaseFemale", "model": "F_TechTribal_Shaman_Garb.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Shaman Garb. Worn by those familiar with 'Machine Speak.'"
+}
+

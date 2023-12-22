@@ -1,0 +1,40 @@
+{
+  "name": "cw_aviator_googles_eyewear",
+  "i18n": {
+    "en": "Aviator Goggles",
+    "es": "Antiparras de Aviador"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_Aviator.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_Aviator.glb"}
+        ],
+        "rarity": "mythic",
+        "description": ""
+      }

@@ -1,0 +1,40 @@
+{
+  "name": "colorful_hat_hat",
+  "i18n": {
+    "en": "Colorful Hat",
+    "es": "Gorra Colorida"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "colorful",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_ColorHat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_ColorHat.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

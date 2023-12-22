@@ -1,0 +1,43 @@
+{
+    "name": "jellyfish_upper_body",
+    "i18n": {
+      "en": "Jellyfish | Joelle",
+      "es": "Medusa | Joelle"
+    },
+    "tags": [
+      
+     ],
+    "category": "upper_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+      "lower_body",
+      "feet",
+      "hat",
+      "earring",
+      "tiara",
+      "helmet",
+      "head",
+      "hair",
+      "facial_hair",
+      "top_head",
+      "mask",
+      "hands"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "Jellyfish.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Jellyfish.glb"}
+    ],
+    "rarity": "mythic",
+    "description": "Deep sea jellyfish, water not included | Joelle | Guest Artists Collection."
+  }

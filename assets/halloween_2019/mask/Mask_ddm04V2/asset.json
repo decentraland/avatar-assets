@@ -1,0 +1,36 @@
+{
+  "name": "rose_skull_mask",
+  "i18n": {
+    "en": "Rose Skull",
+    "es": "Calavera de Rosas"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm04V2.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm04V2.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Ornate Day of the Dead mask with rose"
+}

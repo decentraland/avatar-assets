@@ -1,0 +1,33 @@
+{
+  "name": "jester_mask",
+  "i18n": {
+    "en": "Jester Mask",
+    "es": "Máscara de Bufona"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask",
+    "jester"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Mask_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Disguise your identity when the jokes fall flat"
+}

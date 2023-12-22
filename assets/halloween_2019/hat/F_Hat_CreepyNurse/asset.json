@@ -1,0 +1,32 @@
+{
+  "name": "creepy_nurse_hat",
+  "i18n": {
+    "en": "Creepy Nurse Hat",
+    "es": "Sombrero de Enfermera Siniestra"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mexican",
+    "hat"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_CreepyNurse.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Even if you're a murderous psycho nurse you need to stay smart"
+}

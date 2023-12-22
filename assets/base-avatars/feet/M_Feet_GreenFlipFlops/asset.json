@@ -1,0 +1,16 @@
+{
+  "name": "m_greenflipflops",
+  "i18n": {
+    "en": "Green Flip Flops",
+    "es": "Chancletas Verdes"
+  },
+  "tags": [
+    "shoes",
+    "man",
+    "men"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_GreenFlipFlops.glb"}
+  ]
+}

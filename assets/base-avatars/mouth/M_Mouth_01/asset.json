@@ -1,0 +1,16 @@
+{
+  "name": "mouth_01",
+  "i18n": {
+    "en": "Mouth_01",
+    "es": "Mouth_01"
+  },
+  "tags": [
+    "face",
+    "mouth"
+   ],
+  "category": "mouth",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Mouth_01.png"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Mouth_01.png"}
+  ]
+}

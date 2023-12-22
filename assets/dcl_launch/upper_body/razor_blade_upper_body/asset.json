@@ -1,0 +1,38 @@
+{
+  "name": "razor_blade_upper_body",
+  "i18n": {
+    "en": "Razor Blade Jacket",
+    "es": "Campera de Razor Blade"
+  },
+  "tags": [
+    "razorblade",
+    "exclusive",
+    "launch",
+    "decentraland",
+    "20.02.20",
+    "upper",
+    "body",
+    "mana",
+    "jacket"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_RazorbladeJacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_RazorbladeJacket.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

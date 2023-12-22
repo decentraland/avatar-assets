@@ -1,0 +1,36 @@
+{
+  "name": "mexican_hat",
+  "i18n": {
+    "en": "Mexican Hat",
+    "es": "Sombrero Mexicano"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mexican",
+    "hat"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Hat_Mexican_01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_Mexican_01.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": "Óraleeee"
+}

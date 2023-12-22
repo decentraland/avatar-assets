@@ -1,0 +1,36 @@
+{
+  "name": "cybersoldier_torso_upper_body",
+  "i18n": {
+    "en": "CYBERSOLDIER TORSO - Winter Soldier Collection - Mark III - FROM CYBERMIKE"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection",
+      "cybermike",
+      "torso",
+      "cybersoldier"
+   
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+    "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Torso_E21.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Torso_E21.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

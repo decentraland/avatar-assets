@@ -1,0 +1,31 @@
+{
+  "name": "frankie_hat",
+  "i18n": {
+    "en": "Frankie Hat",
+    "es": "Sombrero de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "hat"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Hat_Frankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "With that legendary high hair"
+}

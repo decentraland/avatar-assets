@@ -1,0 +1,44 @@
+{
+  "name": "meme_suit_pineapple_onesie",
+  "i18n": {
+    "en": "Sweet Pineapple Onesie",
+    "es": "Dulce Mono de Piña"
+  },
+  "tags": [
+    "meme",
+	"pineapple",
+	"suit",
+	"wearable",
+	"onesie",
+	"vibrant"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+	
+   ],
+   "hides": [
+  "hair",
+	"earring",
+  "facial_hair",
+  "lower_body",
+  "feet",
+	"tiara",
+	"hat",
+	"helmet"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Suit_PineappleOnesie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Suit_PineappleOnesie.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Sweet Pineapple Onesie from the $Meme collection - Don't wear this"
+}

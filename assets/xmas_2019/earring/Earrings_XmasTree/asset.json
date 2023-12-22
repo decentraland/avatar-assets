@@ -1,0 +1,34 @@
+{
+  "name": "xmas_light_tree_earring",
+  "i18n": {
+    "en": "Christmas Light Tree Earring",
+    "es": "Pendientes de Árbol Lumínico Navideña"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "christmas",
+    "cyber"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_XmasTree.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_XmasTree.glb"}
+        ],
+        "rarity": "epic",
+        "description": "Batteries not included."
+      }

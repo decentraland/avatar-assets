@@ -1,0 +1,33 @@
+{
+  "name": "xmas_cyberpunk_upper_body",
+  "i18n": {
+    "en": "Cyberpunk Jacket",
+    "es": "Campera Cyberpunk"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "cyber",
+    "christmas"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_CyberPunkJacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": "Coolest. Xmas. Jumper. Ever!"
+}

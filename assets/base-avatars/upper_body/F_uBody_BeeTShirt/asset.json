@@ -1,0 +1,22 @@
+{
+  "name": "bee_t_shirt",
+  "i18n": {
+    "en": "Bee T-Shirt",
+    "es": "Remera con Estampado de Abeja"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_BeeTShirt.glb"
+    }
+  ]
+}

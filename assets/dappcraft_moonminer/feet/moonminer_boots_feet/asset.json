@@ -1,0 +1,28 @@
+{
+  "id": "moonminer_boots_feet",
+  "name": "moonminer_boots_feet",
+  "i18n": {
+    "en": "DappCraft Moon Miner Boots"
+  },
+  "tags": ["moon","feet","mining","dappcraft"],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_moonminer_boots.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_boots.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "No more moon dust. Anti dust materials. 100% guarantee."
+}

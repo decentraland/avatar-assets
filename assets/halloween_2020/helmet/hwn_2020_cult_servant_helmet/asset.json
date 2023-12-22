@@ -1,0 +1,42 @@
+{
+  "name": "hwn_2020_cult_servant_helmet",
+  "i18n": {
+    "en": "Helmet of Servant of Evil Cult",
+    "es": "Casco de Sirviente de Culto Demoníaco"
+  },
+
+  "tags": [
+    "servant",
+      "halloween",
+      "2020",
+      "decentraland",
+      "cult"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring"
+   ],
+
+  "main": [
+{
+  "type": "BaseMale", 
+  "model": "Cultist_Skull_Helmet.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Cultist_Skull_Helmet.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+}

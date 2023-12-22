@@ -1,0 +1,30 @@
+{
+  "name": "undead_pirate_lower_body",
+  "i18n": {
+    "en": "Undead Pirate Pants",
+    "es": "Pantalones de Esqueleto Pirata "
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "undead",
+    "pants",
+    "pirate"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [
+    "feet"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_UndeadPirate.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Featuring low rise trousers for maximum comfort"
+}

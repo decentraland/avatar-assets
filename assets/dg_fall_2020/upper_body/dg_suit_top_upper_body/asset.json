@@ -1,0 +1,24 @@
+{
+  "name": "dg_suit_top_upper_body",
+  "i18n": {
+    "en": "Suit Top",
+    "es": "Traje superior"
+  },
+  "tags": ["suit", "coat", "top", "decentral games", "gucci", "upper body"],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": ["upper_body"],
+  "hides": [],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "suit_top_m.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "suit_top_f.glb" }
+  ],
+  "rarity": "mythic",
+  "description": "A decadent & elegant DG suit jacket with golden accents #dgsuit"
+}

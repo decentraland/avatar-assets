@@ -1,0 +1,34 @@
+{
+    "name": "hwn_2020_ddlm_03_eyes",
+    "i18n": {
+      "en": "Dia de los Muertos Flower Eyes - Halloween 2020",
+      "es": "Ojos de Flores de Dia de los Muertos - Halloween 2020"
+    },
+    "tags": [
+      "eyes",
+      "halloween",
+      "2020",
+      "decentraland"
+     ],
+    "category": "eyes",
+    "replaces": [
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "flower_ddlm_eyes.png", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "flower_ddlm_eyes.png"}
+    ],
+    "rarity": "legendary",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

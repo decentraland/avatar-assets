@@ -1,0 +1,15 @@
+{
+  "name": "relaxed_hair",
+  "i18n": {
+    "en": "Relaxed Hair Style",
+    "es": "Corte Relajado"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_relaxed_hair.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_relaxed_hair.glb"}
+  ]
+}

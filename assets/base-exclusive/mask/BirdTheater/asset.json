@@ -1,0 +1,28 @@
+{
+  "name": "bird_mask",
+  "i18n": {
+    "en": "Bird Mask",
+    "es": "Máscara de Cuervo"
+  },
+  "tags": [
+    "exclusive",
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+  ],
+  "category": "mask",
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "BirdTheater.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "BirdTheater.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

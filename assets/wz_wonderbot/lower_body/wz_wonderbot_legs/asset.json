@@ -1,0 +1,31 @@
+{
+    "name": "wz_wonderbot_legs",
+    "i18n": {
+      "en": "Wonderbot Legs"
+    },
+    "rarity": "mythic",
+    "description": "Robotic legs, allowing you to outrun Usain Bolt. Wonderzone Collection 2020. Created by Chestnutbruze",  
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "pants",
+        "fashion",
+        "robot",
+        "cyber"
+    ],
+    "category": "lower_body",
+    "replaces":[],
+    "hides":[],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Pants.glb" 
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Pants.glb"
+        }
+    ]
+  }
+  

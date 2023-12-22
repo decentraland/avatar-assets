@@ -1,0 +1,38 @@
+{
+  "name": "mch_gennnaihiraga_upper_body",
+  "i18n": {
+    "en": "Hiraga Gennai T-Shirt",
+    "es": "Remera de Hiraga Gennai"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "hiraga",
+    "gennai",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_GennnaiHiraga.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_GennaiHiraga.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

@@ -1,0 +1,31 @@
+{
+  "name": "pm_col1_dino_helmet",
+  "i18n": {
+    "en": "Dino Helmet",
+    "es": "Casco de Dino"
+  },
+  "tags": [
+    "helmet", "dino", "dinosaur", "trex", "t-rex", "cartoon"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "mask", "tiara", "hat", "helmet", "top_head" 
+   ],
+   "hides": [
+    "earring", "hair", "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_helmet_Dino_01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "M_helmet_Dino_01.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "A cartoon pre-human predator helmet"
+}

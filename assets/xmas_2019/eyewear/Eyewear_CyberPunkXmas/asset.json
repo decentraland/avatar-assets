@@ -1,0 +1,38 @@
+{
+  "name": "xmas_cyberpunk_eyewear",
+  "i18n": {
+    "en": "Christmas CyberPunk Eyewear",
+    "es": "Anteojos de Navidad CyberPunk"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "christmas",
+    "cyber",
+    "cyberpunk"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_CyberPunkXmas.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_CyberPunkXmas.glb"}
+        ],
+        "rarity": "epic",
+        "description": "Even cyberpunks celebrate Xmas."
+      }

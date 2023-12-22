@@ -1,0 +1,39 @@
+{
+  "name": "dcl_hat_hat",
+  "i18n": {
+    "en": "Decentraland Hat",
+    "es": "Gorra de Decentraland"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_DCL_Logo.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_DCL_Logo.glb"}
+  ],
+  "rarity": "rare",
+  "description": ""
+}

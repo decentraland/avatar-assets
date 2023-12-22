@@ -1,0 +1,36 @@
+{
+  "name": "cw_rollers_feet",
+  "i18n": {
+    "en": "Rollers",
+    "es": "Rollers"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_Rollers.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_Rollers.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

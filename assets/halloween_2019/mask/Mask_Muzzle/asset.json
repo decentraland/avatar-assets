@@ -1,0 +1,36 @@
+{
+  "name": "muzzle_mask",
+  "i18n": {
+    "en": "Muzzle Mask",
+    "es": "Bozal"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_Muzzle.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_Muzzle.glb"
+    }
+  ],
+  "rarity": "mythic",
+  "description": "For that special serial killer in your life"
+}

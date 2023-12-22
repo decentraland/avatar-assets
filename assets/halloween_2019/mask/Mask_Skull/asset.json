@@ -1,0 +1,36 @@
+{
+  "name": "funny_skull_mask",
+  "i18n": {
+    "en": "Funny Skull",
+    "es": "Calavera Cómica"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_Skull.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_Skull.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": "The funny bit is scaring people out of their wits"
+}

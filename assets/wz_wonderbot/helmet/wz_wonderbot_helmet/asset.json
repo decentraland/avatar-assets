@@ -1,0 +1,30 @@
+{
+    "name": "wz_wonderbot_head",
+    "i18n": {
+      "en": "Wonderbot Head"
+    },
+    "rarity": "mythic",
+    "description": "Robotic head, allowing you to split your mind in two. Wonderzone Collection 2020. Created by Chestnutbruze",
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "helmet",
+        "fashion",
+        "robot",
+        "cyber"
+     ],
+    "category": "helmet",
+    "replaces": [],
+    "hides":["head", "facial_hair"],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Helmet.glb"
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Helmet.glb"
+        }
+    ]
+}  

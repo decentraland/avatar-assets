@@ -1,0 +1,22 @@
+{
+  "name": "f_blue_elegant_shirt",
+  "i18n": {
+    "en": "Blue Elegant Shirt",
+    "es": "Camisa Azul Elegante"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_BlueElegantShirt.glb"
+    }
+  ]
+}

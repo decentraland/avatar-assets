@@ -1,0 +1,34 @@
+{
+  "name": "ms_superare_upper_body",
+  "i18n": {
+    "en": "SuperRare Soccer T-Shirt",
+    "es": "Remera de fútbol de SuperRare"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "superrare",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_SuperRare.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_SuperRare.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "SuperRare Soccer T-Shirt - Moonshot Tournament 2020"
+}

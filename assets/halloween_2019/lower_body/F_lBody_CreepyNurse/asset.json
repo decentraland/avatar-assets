@@ -1,0 +1,26 @@
+{
+  "name": "creepy_nurse_lower_body",
+  "i18n": {
+    "en": "Creepy Nurse Skirt",
+    "es": "Pollera de Enfermera Siniestra"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "skirt"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_CreepyNurse.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "With real virtual blood splatters!"
+}

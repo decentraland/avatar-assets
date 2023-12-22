@@ -1,0 +1,42 @@
+{
+  "name": "cw_aviator_helmet_hat",
+  "i18n": {
+    "en": "Aviator Helmet",
+    "es": "Casco de Aviador"
+  },
+
+  "tags": [
+    "exclusive",
+    "helmet",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+   "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair",
+    "earring"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Helmet_Aviator.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Helmet_Aviator.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

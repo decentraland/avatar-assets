@@ -1,0 +1,37 @@
+{
+  "name": "ms_axiegg_upper_body",
+  "i18n": {
+    "en": "AxieGG Soccer T-Shirt",
+    "es": "Remera de fútbol de Axie GG"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "axiegg",
+    "futbol",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_AxieGG.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_AxieGG.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "AxieGG Soccer T-Shirt - Moonshot Tournament 2020"
+}

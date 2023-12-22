@@ -1,0 +1,15 @@
+{
+  "name": "casual_hair_01",
+  "i18n": {
+    "en": "Casual Hair Style",
+    "es": "Corte Casual"
+  },
+  "tags": [
+    "hair"
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Standard_01.glb"}
+  ]
+}

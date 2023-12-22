@@ -1,0 +1,36 @@
+{
+  "name": "diamond_skull_mask",
+  "i18n": {
+    "en": "Diamond Skull",
+    "es": "Calavera de Diamante"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm04V1.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm04V1.glb"
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Ornate Day of the Dead mask with diamond"
+}

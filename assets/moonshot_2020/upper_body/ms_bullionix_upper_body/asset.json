@@ -1,0 +1,38 @@
+{
+  "name": "ms_bullionix_upper_body",
+
+  "i18n": {
+    "en": "Bullionix Soccer T-Shirt",
+    "es": "Remera de fútbol de Bullionix"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "bullionix",
+    "futbol",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Bullionix.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Bullionix.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Bullionix Soccer T-Shirt - Moonshot Tournament 2020"
+}

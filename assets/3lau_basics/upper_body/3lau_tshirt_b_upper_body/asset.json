@@ -1,0 +1,38 @@
+{
+  "name": "3lau_tshirt_b_upper_body",
+  "i18n": {
+    "en": "3LAU Blue Triangle Tee",
+    "es": "Camiseta con Triangulo Azul de 3LAU"
+  },
+  "tags": [
+    "T-Shirt",
+    "3LAU",
+    "tshirt",
+    "shirt",
+    "tee",
+    "triangle",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_3LAU_Tshirt_Blue.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_3LAU_Tshirt_Blue.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "3LAU's signature triangle on a black and blue tee."
+}

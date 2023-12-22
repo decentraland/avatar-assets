@@ -1,0 +1,31 @@
+{
+  "name": "spy_suit_hair",
+  "i18n": {
+    "en": "Pony Tail Hair",
+    "es": "Peinado de Cola de Pony"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "hair",
+    "ponytail",
+    "spy",
+    "halloween"
+  ],
+  "category": "hair",
+  "replaces": [
+    "hat",
+    "helmet"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Hair_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Tightly cropped for extra sleekness"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "wz_wonderbot_torso",
+    "i18n": {
+      "en": "Wonderbot Chestpiece"
+    },
+    "rarity": "mythic",
+    "description": "Robotic torso, giving you the strength of 10 Avatars. Wonderzone Collection 2020. Created by Chestnutbruze",  
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "torso",
+        "fashion",
+        "robot",
+        "cyber"
+    ],
+    "category": "upper_body",
+    "replaces":[],
+    "hides":["hands"],
+    "main": [
+        {
+            "type": "BaseMale",  
+            "model": "M_Torso.glb",
+            "overrideReplaces": [
+            ],
+            "overrideHides": [
+            ]
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Torso.glb"
+        }
+    ]
+  }
+  

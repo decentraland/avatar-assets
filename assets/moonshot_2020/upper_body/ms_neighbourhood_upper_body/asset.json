@@ -1,0 +1,36 @@
+{
+  "name": "ms_neighbourhood_upper_body",
+  "i18n": {
+    "en": "Neighbourhood Project Soccer T-Shirt",
+    "es": "Remera de fútbol de Neighbourhood Project"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "neighbourhood project",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Neighbourhood.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Neighbourhood.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Neighbourhood Project Soccer T-Shirt - Moonshot Tournament 2020"
+}

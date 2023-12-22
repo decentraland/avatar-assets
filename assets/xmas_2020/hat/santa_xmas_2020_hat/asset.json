@@ -1,0 +1,38 @@
+{
+  "name": "santa_xmas_2020_hat",
+  "i18n": {
+    "en": "Christmas Santa Hat",
+    "es": "Sombrero Navideño de Santa"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "christmas",
+    "xmas",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "santa2020_hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "santa2020_hat.glb"}
+  ],
+  "rarity": "epic",
+  "description": "A festive gift from Save Xmas 2020"
+}

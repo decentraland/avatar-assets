@@ -1,0 +1,29 @@
+{
+  "name": "gerald_patchwork_knit_sweater",
+  "i18n": {
+    "en": "Gerald Patchwork Knit Sweater",
+    "es": "Gerald Sweater Tejido en Parches"
+  },
+  "tags": [
+    "dillon francis", "gerald", "barney cools", "sweater", "dg"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_dillon_square_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "f_dillon_square_upper_body.glb"}
+  ],
+  "rarity": "epic",
+  "description": "A cozy Barney Cools Gerald Patchwork Knit Sweater."
+}

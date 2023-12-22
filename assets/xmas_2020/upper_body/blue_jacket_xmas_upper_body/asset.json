@@ -1,0 +1,43 @@
+{
+  "name": "blue_jacket_xmas_upper_body",
+  "i18n": {
+    "en": "Blue Winter Jacket",
+    "es": "Chaqueta Azul de Invierno"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "blue",
+    "jacket"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_blue_jacket_xmas_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_blue_jacket_xmas_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "epic",
+  "description": "A festive gift from Save Xmas 2020"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mch_napoleon_upper_body",
+  "i18n": {
+    "en": "Napoleon T-Shirt",
+    "es": "Remera de Napoleon"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Napoleon",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_Napoleon.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_Napoleon.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

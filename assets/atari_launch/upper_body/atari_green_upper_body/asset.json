@@ -1,0 +1,39 @@
+{
+  "name": "atari_green_upper_body",
+  "i18n": {
+    "en": "Green Atari Tee",
+    "es": "Camiseta Atari Verde"
+  },
+  "tags": [
+    "T-Shirt",
+    "atari",
+    "tshirt",
+    "shirt",
+    "tee",
+    "retro",
+    "decentraland",
+    "upper",
+    "gamer",
+    "green"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Tee_Atari_Green.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Tee_Atari_Green.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a green tee."
+}

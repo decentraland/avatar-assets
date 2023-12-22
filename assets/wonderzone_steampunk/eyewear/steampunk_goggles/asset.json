@@ -1,0 +1,36 @@
+{
+  "name": "steampunk_goggles",
+  "i18n": {
+    "en": "Steampunk Goggles",
+    "es": "Antiparras de Steampunk"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "steampunk",
+    "goggles",
+    "decentraland",
+    "community",
+    "wearables"
+  ],
+  "category": "eyewear",
+  "replaces": [
+    "mask"
+  ],
+  "hides": [
+  ],
+  "main": [{
+      "type": "BaseFemale",
+      "model": "steampunk_goggles.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseMale",
+      "model": "steampunk_goggles.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Steampunk sight-enhancing goggles. Gives a bonus in the WonderMine game. Created by Maricela."
+}

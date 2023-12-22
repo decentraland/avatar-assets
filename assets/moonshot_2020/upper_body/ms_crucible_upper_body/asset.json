@@ -1,0 +1,36 @@
+{
+  "name": "ms_crucible_upper_body",
+  "i18n": {
+    "en": "Crucible Soccer T-Shirt",
+    "es": "Remera de fútbol de Crucible"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "crucible",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Crucible.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Crucible.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Crucible Soccer T-Shirt - Moonshot Tournament 2020"
+}

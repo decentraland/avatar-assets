@@ -1,0 +1,27 @@
+{
+  "name": "frankie_feet",
+  "i18n": {
+    "en": "Frankie Shoes",
+    "es": "Zapatos de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_Frankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Lurch around slowly in comfort"
+}

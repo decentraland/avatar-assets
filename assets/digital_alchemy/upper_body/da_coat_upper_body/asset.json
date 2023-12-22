@@ -1,0 +1,41 @@
+{
+  "name": "da_coat_upper_body",
+  "i18n": {
+    "en": "Digital Alchemy Disruptive Coat",
+    "es": "Capa Disruptiva Alquimia Digital"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "alchemy",
+    "digital",
+    "decentraland",
+    "community",
+    "wearables",
+	  "Sweatshirt",
+	  "Backpack",
+	  "Gloves"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+    "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_daCoat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_uBody_daCoat.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Collection | Disruptive coat | Fits a disruptive and mysterious character, with an endless source of energy."
+}

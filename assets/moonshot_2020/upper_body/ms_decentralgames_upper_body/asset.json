@@ -1,0 +1,36 @@
+{
+  "name": "ms_decentralgames_upper_body",
+  "i18n": {
+    "en": "Decentral Games Soccer T-Shirt",
+    "es": "Remera de fútbol de Decentral Games"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "decentral games",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_DecentralGames.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_DecentralGames.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Decentral Games Soccer T-Shirt - Moonshot Tournament 2020"
+}

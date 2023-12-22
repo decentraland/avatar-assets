@@ -1,0 +1,36 @@
+{
+  "name": "dcl_hoodie_upper_body",
+  "i18n": {
+    "en": "Decentraland Hoodie",
+    "es": "Hoodie de Decentraland"
+  },
+  "tags": [
+    "hoodie",
+    "exclusive",
+    "launch",
+    "decentraland",
+    "20.02.20",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_DCL_Logo_Hoddie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_DCL_Logo_Hoddie.glb"}
+  ],
+  "rarity": "rare",
+  "description": ""
+}

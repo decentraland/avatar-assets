@@ -1,0 +1,37 @@
+{
+    "name": "mf_wingsneakers",
+    "i18n": {
+      "en": "Wing sneakers"
+    },
+    "rarity": "legendary",
+    "description": "No run, no swim, just fly. These have a handwritten signature from creators Chestnutbruz and Pablo Estornut. By Mana-fever 2020 ©",
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game",
+        "sneakers",
+        "fashion",
+        "sport",
+        "wing",
+        "fly",
+        "handwritten",
+        "signature"
+     ],
+     "replaces": [],
+     "hides": [],
+    "category": "feet",
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "M_Sneakers.glb",
+                    "overrideReplaces": [],
+                    "overrideHides": []
+                },
+                {   
+                    "type": "BaseFemale", 
+                    "model": "F_Sneakers.glb"
+                }
+        ]
+}
+  

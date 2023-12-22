@@ -1,0 +1,36 @@
+{
+  "name": "dcl_mana_earring",
+  "i18n": {
+    "en": "MANA Earrings",
+    "es": "Pendientes de MANA"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_DCL_MANA.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_DCL_MANA.glb"}
+        ],
+        "rarity": "epic",
+        "description": ""
+      }

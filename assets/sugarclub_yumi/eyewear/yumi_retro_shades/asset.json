@@ -1,0 +1,36 @@
+{
+  "name": "yumi_retro_shades_eyewear",
+  "i18n": {
+    "en": "Yumi Retro Shades",
+    "es": "Retro Sombras de Yumi"
+  },
+  "tags": [
+    "accessories",
+    "exclusive",
+    "yumi",
+    "sugarclub",
+    "decentraland"
+   ],
+  "category": "eyewear",
+  "replaces": [
+  	"mask"
+
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "yumi_retro_shades.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "yumi_retro_shades.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Retro shades Sugar party look"
+}

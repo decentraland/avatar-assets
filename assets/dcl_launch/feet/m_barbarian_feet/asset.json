@@ -1,0 +1,33 @@
+{
+  "name": "m_barbarian_feet",
+  "i18n": {
+    "en": "Barbarian Shoes",
+    "es": "Zapatos de Bárbaro"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_Barbarian.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

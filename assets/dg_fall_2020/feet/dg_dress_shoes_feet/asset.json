@@ -1,0 +1,36 @@
+{
+  "name": "dg_dress_shoes_feet",
+  "i18n": {
+    "en": "Dress Shoes",
+    "es": "Zapatos de vestir"
+  },
+  "tags": [
+    "suit",
+    "top",
+    "upper body",
+    "decentral games",
+    "shoes"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"dress_shoes_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "dress_shoes_f.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Dress shoes essential with the DG suit #dgsuit"
+}
+

@@ -1,0 +1,37 @@
+{
+    "name": "hwn_2020_cult_servant_upper_body",
+    "i18n": {
+      "en": "Servant of Evil Cult Suit- Halloween 2020",
+      "es": "Traje de Sirviente de Secta Demoníaca - Halloween 2020"
+    },
+    "tags": [
+      "servant",
+      "halloween",
+      "2020",
+      "decentraland",
+      "cult"
+
+     ],
+    "category": "upper_body",
+    "removesDefaultHiding": ["hands"],
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_UBody_Cult_Servant_Suit.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_HWN_2020_uBody_Cult_Servant_Suit.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

@@ -1,0 +1,35 @@
+{
+  "name": "dg_money_shades_eyewear",
+  "i18n": {
+    "en": "Money Shades glasses",
+    "es": "Gafas de lujo"
+  },
+  "tags": [
+    "sunglasses",
+    "gold",
+    "accessories",
+    "decentral games",
+    "shades"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "eyewear"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"money_shades_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "money_shades_f.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Shades worn while making money #moneyshades"
+}

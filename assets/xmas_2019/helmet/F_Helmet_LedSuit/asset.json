@@ -1,0 +1,43 @@
+{
+  "name": "f_cyber_xmas_helmet",
+  "i18n": {
+    "en": "Cyber Xmas Helmet",
+    "es": "Casco Cyber Navideño"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "cyber",
+    "xmas",
+    "christmas",
+    "helmet"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring",
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_Helmet_LedSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": "Hack the herald angels sing!"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "classic_top_hat",
+  "i18n": {
+    "en": "Classic Top Hat",
+    "es": "Sombrero de Copa Clásico"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mexican",
+    "hat"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Hat_TopHat01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_TopHat01.glb"
+    }
+  ],
+  "rarity": "epic",
+  "description": "Rabbit not included"
+}

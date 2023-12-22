@@ -1,0 +1,36 @@
+{
+  "name": "rac_hat",
+  "i18n": {
+    "en": "RAC Cap"
+  },
+  "tags": [
+    "hat",
+    "cap",
+    "baseball",
+    "rac",
+    "decentraland",
+    "pink",
+    "unique"
+   ],
+  "category": "hat",
+  "replaces": [
+   ],
+   "hides": [
+     "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "RAC_Hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "RAC_Hat.glb"}
+  ],
+  "rarity": "unique",
+  "description": "RAC's signature pink baseball cap."
+}

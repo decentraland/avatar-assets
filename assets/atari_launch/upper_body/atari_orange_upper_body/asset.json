@@ -1,0 +1,39 @@
+{
+  "name": "atari_orange_upper_body",
+  "i18n": {
+    "en": "Orange Atari Tee",
+    "es": "Camiseta Atari Naranja"
+  },
+  "tags": [
+    "T-Shirt",
+    "atari",
+    "tshirt",
+    "shirt",
+    "tee",
+    "retro",
+    "decentraland",
+    "upper",
+    "gamer",
+    "orange"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Tee_Atari_Orange.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Tee_Atari_Orange.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on an orange tee."
+}

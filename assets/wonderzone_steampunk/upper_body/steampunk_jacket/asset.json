@@ -1,0 +1,37 @@
+{
+  "name": "steampunk_jacket",
+  "i18n": {
+    "en": "Steampunk Jacket",
+    "es": "Saco formal del Steampunk"
+  },
+  "tags": [
+    "WonderZone",
+    "exclusive",
+    "decentraland",
+    "mana",
+    "upper_body",
+    "coat",
+    "jacket",
+    "corset",
+    "community",
+    "licensed",
+    "steampunk"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "steampunk_jacket_male.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "steampunk_corset_female.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Elegant Steampunk jacket. Gives a bonus in the WonderMine game. Created by Maricela"
+}

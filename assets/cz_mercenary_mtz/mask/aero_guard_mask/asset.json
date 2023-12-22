@@ -1,0 +1,37 @@
+{
+    "name": "aero_guard_mask",
+    "i18n": {
+      "en": "Aero Guard",
+      "es": "Guardia Aero"
+    },
+    "tags": [
+      "mask",
+      "hologram",
+      "holographic",
+      "corona",
+      "zombies",
+      "covid"
+     ],
+    "category": "mask",
+    "replaces": [
+      
+  
+     ],
+     "hides": [
+    "facial_hair"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_holographic_mask.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_holographic_mask.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Complete Virus Protection. No social distancing required"
+  }

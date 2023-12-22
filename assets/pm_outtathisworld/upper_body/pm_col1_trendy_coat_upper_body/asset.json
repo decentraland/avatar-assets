@@ -1,0 +1,37 @@
+{
+  "id": "pm_col1_trendy_coat_upper_body",
+  "name": "pm_col1_trendy_coat_upper_body",
+  "i18n": {
+    "en": "Polygonal Mind - Trendy Coat",
+    "es": "Polygonal Mind - Chaquetón Moderno"
+  },
+  "tags": [
+    "pants",
+    "upper",
+    "top",
+    "jacket",
+    "coat",
+    "trendy",
+    "triangle",
+    "pattern",
+    "polygonal",
+    "mind",
+    "polygonal_mind"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_Jacket_01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_uBody_Jacket_01.glb", "overrideReplaces": [], "overrideHides": [] }
+  ],
+  "rarity": "legendary",
+  "description": "A trendy triangle-patterned coat for you to show off and stay warm in winter"
+}

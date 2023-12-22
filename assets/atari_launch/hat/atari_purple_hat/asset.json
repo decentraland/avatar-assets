@@ -1,0 +1,38 @@
+{
+  "name": "atari_purple_hat",
+  "i18n": {
+    "en": "Purple Atari Cap",
+    "es": "Gorra Atari Morada"
+  },
+  "tags": [
+    "atari",
+    "cap",
+    "gamer",
+    "hat",
+    "decentraland",
+    "retro",
+    "purple"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Atari_Purple.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Atari_Purple.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a purple cap."
+}

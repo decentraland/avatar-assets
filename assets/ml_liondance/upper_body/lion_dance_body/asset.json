@@ -1,0 +1,37 @@
+{
+    "name": "lion_dance_upper_body",
+    "i18n": {
+      "en": "Lion Dance Coat",
+      "es": "Abrigo de danza del león"
+    },
+    "tags": [
+      "Coat",
+      "Chinese",
+      "Spring Festival",
+      "Dragon City",
+      "lion dance"
+     ],
+    "category": "upper_body",
+    "removesDefaultHiding": ["hands"],
+    "replaces": [
+      "upper_body"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_lion_dance_coat.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_lion_dance_coat.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Dragon City 2021 Spring Festival Souvenirs"
+  }

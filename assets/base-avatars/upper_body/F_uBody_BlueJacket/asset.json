@@ -1,0 +1,22 @@
+{
+  "name": "f_blue_jacket",
+  "i18n": {
+    "en": "Blue Jacket",
+    "es": "Chaqueta Azul"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_BlueJacket.glb"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "witch_feet",
+  "i18n": {
+    "en": "Witch Shoes",
+    "es": "Zapatos de Bruja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_Witch.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "An excellent covering for your cloven demon' hooves"
+}

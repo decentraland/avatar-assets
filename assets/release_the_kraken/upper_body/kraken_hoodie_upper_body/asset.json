@@ -1,0 +1,34 @@
+{
+  "name": "kraken_hoodie_upper_body",
+  "i18n": {
+    "en": "Kraken Hoodie",
+    "es": "Hoodie de Kraken"
+  },
+  "tags": [
+    "hoodie",
+    "kraken",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Kraken_Hoodie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Kraken_Hoodie.glb"}
+  ],
+  "rarity": "uncommon",
+  "description": "The Kraken is released upon Decentraland"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "crocsocks",
+  "i18n": {
+    "en": "Croc Socks",
+    "es": "Medias Croc"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "CrocsSocks.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "CrocsSocks.glb"}
+  ]
+}

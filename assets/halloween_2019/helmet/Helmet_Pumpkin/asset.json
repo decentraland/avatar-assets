@@ -1,0 +1,40 @@
+{
+  "name": "creepy_pumpkin_helmet",
+  "i18n": {
+    "en": "Creepy Pumpkin",
+    "es": "Pumpkin Siniestro"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "helmet"
+  ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+  ],
+  "hides": [
+    "hair",
+    "earring",
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Helmet_Pumpkin.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Helmet_Pumpkin.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Just in case wearing a pumpkin as a helmet wasn't creepy enough for you"
+}

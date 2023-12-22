@@ -1,0 +1,34 @@
+{
+  "name": "ms_nonfungible_upper_body",
+  "i18n": {
+    "en": "NonFungible Soccer T-Shirt",
+    "es": "Remera de fútbol de NonFungible"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "nonfungible",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_NonFungible.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_NonFungible.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "NonFungible Soccer T-Shirt - Moonshot Tournament 2020"
+}

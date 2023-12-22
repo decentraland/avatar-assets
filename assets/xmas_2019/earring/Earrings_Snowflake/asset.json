@@ -1,0 +1,36 @@
+{
+  "name": "snowflake_earring",
+  "i18n": {
+    "en": "Snowflake Earrings",
+    "es": "Pendientes de Copo de Nieve"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "christmas",
+    "cyber"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_Snowflake.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_Snowflake.glb"}
+        ],
+        "rarity": "epic",
+        "description": "Get 'em before they melt!"
+      }
+
+

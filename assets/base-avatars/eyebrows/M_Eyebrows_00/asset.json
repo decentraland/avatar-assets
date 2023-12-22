@@ -1,0 +1,16 @@
+{
+  "name": "eyebrows_00",
+  "i18n": {
+    "en": "EyeBrows_00",
+    "es": "EyeBrows_00"
+  },
+  "tags": [
+    "face",
+    "eyebrows"
+   ],
+  "category": "eyebrows",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_EyeBrows_00.png"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_EyeBrows_00.png"}
+  ]
+}

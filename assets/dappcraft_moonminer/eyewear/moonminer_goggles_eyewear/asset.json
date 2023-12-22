@@ -1,0 +1,33 @@
+{
+  "id": "moonminer_goggles_eyewear",
+  "name": "moonminer_goggles_eyewear",
+  "i18n": {
+    "en": "DappCraft Moon Miner Goggles"
+  },
+  "tags": [
+    "reality",
+    "secrets",
+    "eyewear"
+   ],
+  "category": "eyewear",
+  "replaces": [
+   "mask", "eyewear"
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_moonminer_goggles.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_goggles.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "You can see reality as it is."
+}

@@ -1,0 +1,34 @@
+{
+    "name": "hwn_2020_creepy_mouth",
+    "i18n": {
+      "en": "Creepy Mouth - Halloween 2020",
+      "es": "Boca Siniestra - Halloween 2020"
+    },
+    "tags": [
+      "mouth",
+      "halloween",
+      "2020",
+      "decentraland"
+     ],
+    "category": "mouth",
+    "replaces": [
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "creepy_mouth.png", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "creepy_mouth.glb"}
+    ],
+    "rarity": "uncommon",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

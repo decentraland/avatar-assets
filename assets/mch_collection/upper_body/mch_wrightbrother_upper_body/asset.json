@@ -1,0 +1,37 @@
+{
+  "name": "mch_wrightbrother_upper_body",
+  "i18n": {
+    "en": "Wright Brothers T-Shirt",
+    "es": "Remera de Wright Brothers"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Wright Brothers",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_WrightBrother.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_WrightBrother.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

@@ -1,0 +1,36 @@
+{
+  "name": "ms_cent_upper_body",
+  "i18n": {
+    "en": "Cent Soccer T-Shirt",
+    "es": "Remera de fútbol de Cent"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "cent",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Cent.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Cent.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Cent Soccer T-Shirt - Moonshot Tournament 2020"
+}

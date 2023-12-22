@@ -1,0 +1,28 @@
+{
+    "name": "mf_unicornhelmet",
+    "i18n": {
+      "en": "Unicorn skate helmet"
+    },
+    "rarity": "legendary",
+    "description": "A colorful unicorn skate helmet for sammich gamer costume. By Mana-fever 2020 ©",
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game",
+        "unicorn"
+     ],
+    "category": "helmet",
+    "replaces": [],
+    "hides":["hair"],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "F_Helmet.glb"
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "M_Helmet.glb"
+        }
+    ]
+}  

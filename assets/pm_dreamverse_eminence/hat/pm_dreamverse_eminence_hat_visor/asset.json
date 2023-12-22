@@ -1,0 +1,42 @@
+{
+  "name": "pm_dreamverse_eminence_hat_visor",
+  "i18n": {
+    "en": "Lucid Visionary Crown",
+    "es": "Corona de Visionario Lúcido"
+  },
+  "tags": [
+    "hat",
+	"visor",
+	"top",
+	"mind",
+	"wearable",
+  "dreamverse",
+  "eminence",
+	"polygonal"
+   ],
+  "category": "hat",
+  "replaces": [
+    "mask",
+	"tiara",
+	"hat",
+	"helmet",
+	"eyewear"
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Hat_Visor_DreamverseEminenceCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Hat_Visor_DreamverseEminenceCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}

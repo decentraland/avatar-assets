@@ -1,0 +1,39 @@
+{
+  "name": "da_dichroic_eyewear",
+  "i18n": {
+    "en": "Digital Alchemy Dichroic Monocle",
+    "es": "Monóculo Dicroico Alquimia Digital"
+  },
+  "tags": [
+    "accesories",
+    "eyewer",
+    "exclusive",
+    "alchemy",
+    "digital",
+    "decentraland",
+    "community",
+    "wearables",
+	"dichroic",
+	"monocle"
+   ],
+  "category": "eyewear",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "U_eyewear_daDichroic.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "U_eyewear_daDichroic.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Collection | Dichroic Monocle | allows seeing the whole spectrum without polarization, so you can explore beyond physical perception wherever you go"
+}

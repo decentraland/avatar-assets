@@ -1,0 +1,35 @@
+{
+  "name": "3lau_hoodie_b_upper_body",
+  "i18n": {
+    "en": "3LAU Blue Triangle Hoodie",
+    "es": "Hoodie con Triangulo Azul de 3LAU"
+  },
+  "tags": [
+    "hoodie",
+    "3LAU",
+    "triangle",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_3LAU_Hoodie_Blue.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_3LAU_Hoodie_Blue.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "3LAU's signature triangle on a black and blue hoodie."
+}

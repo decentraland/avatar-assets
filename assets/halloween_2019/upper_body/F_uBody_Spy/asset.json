@@ -1,0 +1,27 @@
+{
+  "name": "spy_suit_upper_body",
+  "i18n": {
+    "en": "Spy Suit",
+    "es": "Traje de Espía"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "upper_body",
+    "halloween",
+    "spy"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": ["hands"],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Form fitting and friction-free material"
+}

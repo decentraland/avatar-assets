@@ -1,0 +1,23 @@
+{
+  "id": "blocksmith_top_head",
+  "name": "blocksmith_top_head",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Drone"
+  },
+  "tags": ["dappcraft", "drone", "moon", "miner", "space"],
+  "category": "helmet",
+  "replaces": ["top_head"],
+  "hides": [],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_niftyblocksmith_drone.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "M_niftyblocksmith_drone.glb" }
+  ],
+  "rarity": "legendary",
+  "description": "BlockSmith’s pet. "
+}

@@ -1,0 +1,30 @@
+{
+    "name": "wz_wonderbot_goggles",
+    "i18n": {
+      "en": "Wonderbot goggles"
+    },
+    "rarity": "mythic",
+    "description": "Robotic goggles, letting the wearer spot bulls and bears from far away. Wonderzone Collection 2020. Created by Chestnutbruze",
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "eyewear",
+        "fashion",
+        "robot",
+        "cyber"
+     ],
+    "category": "eyewear",
+    "replaces": [],
+    "hides":[],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Goggles.glb"
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Goggles.glb"
+        }
+    ]
+}  

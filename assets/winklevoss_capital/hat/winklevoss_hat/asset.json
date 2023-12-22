@@ -1,0 +1,39 @@
+{
+  "name": "winklevoss_hat",
+  "i18n": {
+    "en": "Winklevoss Cap",
+    "es": "Gorra Winklevoss"
+  },
+  "tags": [
+    "hat",
+    "winklevoss",
+    "capital",
+    "pink",
+    "fuschia",
+    "cap"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Winklevoss.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Winklevoss.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Winklevoss Capital branded cap in signature pink."
+}

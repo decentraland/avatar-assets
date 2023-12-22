@@ -1,0 +1,40 @@
+{
+  "name": "meme_helmet_pineapple",
+  "i18n": {
+    "en": "Tasty Pineapple Head",
+    "es": "Sabrosa Cabeza de Piña"
+  },
+  "tags": [
+    "hat",
+	"helmet",
+	"top",
+	"pineapple",
+	"meme"
+   ],
+  "category": "helmet",
+  "replaces": [
+  "mask",
+	"tiara",
+	"hat",
+	"helmet"
+   ],
+   "hides": [
+  "hair",
+	"earring",
+	"facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Helmet_PineappleHead.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Helmet_PineappleHead.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Tasty Pineapple Head from the $Meme Collection - Don't wear this"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "kraken_mythic_hat",
+  "i18n": {
+    "en": "Kraken Cyborg Crown",
+    "es": "Corona Cyborg de Kraken"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "helmet",
+    "octopus",
+    "kraken",
+    "cex",
+    "exchange",
+    "mythic"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet","eyewear"
+   ],
+   "hides": [
+    "eyewear","hair","mask"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_kraken_hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "f_kraken_hat.glb"}
+  ],
+  "rarity": "mythic",
+"description": "The Kraken is released upon Decentraland"
+}

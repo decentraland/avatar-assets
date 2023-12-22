@@ -1,0 +1,41 @@
+{
+  "name": "pm_dreamverse_eminence_cap",
+  "i18n": {
+    "en": "Ethereal Sage Hat",
+    "es": "Gorra de Sabio Etéreo"
+  },
+  "tags": [
+    "hat",
+	"cap",
+	"top",
+	"mind",
+	"wearable",
+  "dreamverse",
+  "eminence",
+	"polygonal"
+   ],
+  "category": "hat",
+  "replaces": [
+    "mask",
+	"tiara",
+	"hat",
+	"helmet"
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Hat_Cap_DreamverseEminenceCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Hat_Cap_DreamverseEminenceCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}

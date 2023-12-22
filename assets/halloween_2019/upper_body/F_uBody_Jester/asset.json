@@ -1,0 +1,28 @@
+{
+  "name": "jester_upper_body",
+  "i18n": {
+    "en": "Jester Suit",
+    "es": "Traje de Bufona"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "upper_body",
+    "halloween",
+    "jester"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Makes an excellent platform for jester heads"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "light_green_shirt",
+  "i18n": {
+    "en": "Light Green Shirt",
+    "es": "Camisa Verde Claro"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_LightGreenShirt.glb"
+    }
+  ]
+}

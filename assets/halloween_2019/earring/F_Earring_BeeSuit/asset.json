@@ -1,0 +1,27 @@
+{
+  "name": "bee_suit_earring",
+  "i18n": {
+    "en": "Bee Earrings",
+    "es": "Pendientes de Abeja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "halloween",
+    "bee"
+  ],
+  "category": "earring",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Earring_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Do bees even have ears? They do now!"
+}

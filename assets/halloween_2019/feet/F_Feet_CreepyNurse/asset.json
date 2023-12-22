@@ -1,0 +1,27 @@
+{
+  "name": "creepy_nurse_feet",
+  "i18n": {
+    "en": "Creepy Nurse Shoes",
+    "es": "Zapatos de Enfermera Siniestra"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_CreepyNurse.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Blood-splattered but also comfortable and hard-wearing for those long shifts on the ward"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "undead_pirate_helmet",
+  "i18n": {
+    "en": "Undead Pirate Head",
+    "es": "Cabeza de Esqueleto Pirata"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "helmet",
+    "undead",
+    "pirate"
+  ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+  ],
+  "hides": [
+    "hair",
+    "earring",
+    "facial_hair",
+    "head"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Helmet_UndeadPirate.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Even undead pirates need to look their best"
+}

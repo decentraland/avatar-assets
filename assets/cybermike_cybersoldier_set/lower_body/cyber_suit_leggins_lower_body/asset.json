@@ -1,0 +1,35 @@
+{
+  "name": "cybersoldier_leggings_lower_body",
+  "i18n": {
+    "en": "CYBERSOLDIER LEGGINGS - Winter Soldier Collection - Mark III - FROM CYBERMIKE"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection",
+      "cybermike",
+      "leggings",
+      "cybersoldier"
+   
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "LegsB04.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "LegsB04.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

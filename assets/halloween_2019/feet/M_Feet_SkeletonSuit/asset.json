@@ -1,0 +1,27 @@
+{
+  "name": "skeleton_suit_feet",
+  "i18n": {
+    "en": "Skeleton Suit Feet",
+    "es": "Pies de Esqueleto"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_SkeletonSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Connected to the shin bones..."
+}

@@ -1,0 +1,42 @@
+{
+  "name": "xmash_up_cap_hat",
+  "i18n": {
+    "en": "The Delbo Comic Cap - Guest Artists Collection"
+  },
+  "tags": [
+    "cap",
+    "hat",
+    "decentraland",
+    "community",
+    "wearables",
+    "Collection",
+    "Artists",
+    "vrglitch",
+  	"Delbo",
+    "Comic"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "top_head"
+
+   ],
+   "hides": [
+     "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "U_cap_gapHat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "U_cap_gapHat.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "The Delbo Comic Cap. Because every great artist needs their hat... | Art by José Delbo - 3D Design by vrglit.ch | Guest Artists Collection"
+}

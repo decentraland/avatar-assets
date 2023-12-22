@@ -1,0 +1,29 @@
+{
+  "id": "moonminer_jacket_upper_body",
+  "name": "moonminer_jacket_upper_body",
+  "i18n": {
+    "en": "DappCraft Moon Miner Jacket"
+  },
+  "tags": [
+    "style","electric", "dappcraft","neon"],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_moonminer_jacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_jacket.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Keep it away from sunlight. Colors might change."
+}

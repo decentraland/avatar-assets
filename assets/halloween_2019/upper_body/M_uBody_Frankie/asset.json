@@ -1,0 +1,28 @@
+{
+  "name": "frankie_upper_body",
+  "i18n": {
+    "en": "Frankie Suit",
+    "es": "Traje de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "upper_body",
+    "suit"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_Frankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "When we say suit, we mean suit. Look your zombie best!"
+}

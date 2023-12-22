@@ -1,0 +1,34 @@
+{
+    "name": "hwn_2020_cat_eyes",
+    "i18n": {
+      "en": "Cat Eyes - Halloween 2020",
+      "es": "Ojos de Gato - Halloween 2020"
+    },
+    "tags": [
+      "eyes",
+      "halloween",
+      "2020",
+      "decentraland"
+     ],
+    "category": "eyes",
+    "replaces": [
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "cat_eyes.png", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "cat_eyes.glb"}
+    ],
+    "rarity": "uncommon",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

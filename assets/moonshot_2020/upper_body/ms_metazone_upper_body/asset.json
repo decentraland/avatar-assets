@@ -1,0 +1,36 @@
+{
+  "name": "ms_metazone_upper_body",
+  "i18n": {
+    "en": "MetaZone Soccer T-Shirt",
+    "es": "Remera de fútbol de MetaZone"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "metazone",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MetaZone.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MetaZone.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "MetaZone Soccer T-Shirt - Moonshot Tournament 2020"
+}

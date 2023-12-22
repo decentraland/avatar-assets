@@ -1,0 +1,37 @@
+{
+  "name": "mch_kingarthur_upper_body",
+  "i18n": {
+    "en": "King Arthur T-Shirt",
+    "es": "Remera de King Arthur"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "King Arthur",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_KingArthur.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_KingArthur.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

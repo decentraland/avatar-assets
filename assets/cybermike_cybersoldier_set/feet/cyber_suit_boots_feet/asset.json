@@ -1,0 +1,35 @@
+{
+  "name": "cybersoldier_boots_feet",
+  "i18n": {
+    "en": "CYBERSOLDIER HASTE BOOTS - Winter Soldier Collection - Mark III - FROM CYBERMIKE"
+    
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection",
+      "cybermike",
+      "cybersoldier",
+      "boots"
+   
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [     
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Boots_C03.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Boots_C03.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

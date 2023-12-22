@@ -1,0 +1,27 @@
+{
+  "name": "dgtble_dress_folife_upper_body",
+  "i18n": {
+    "en": "The Headspace Flower of Life Dress",
+    "es": "The Headspace Vestir con Flor de la Vida"
+  },
+  "tags": [
+    "headspace",
+   "sacred",
+   "geometry",
+   "real",
+   "festival",
+   "digitible"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+
+{"type": "BaseFemale", "model": "Dress_A02.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "In your mind�s eye witness The Flower of Life in this space, floating before you in golden light. Take a moment to absorb the divine wisdom contained in this sacred figure."
+}

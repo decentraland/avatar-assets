@@ -1,0 +1,36 @@
+{
+  "name": "xmas_tree_eyewear",
+  "i18n": {
+    "en": "Christmas Tree Eyewear",
+    "es": "Anteojos de de Árbol Navidadeño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "christmas",
+    "cyber"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_XmasTree.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_XmasTree.glb"}
+        ],
+        "rarity": "mythic",
+        "description": "See Xmas in a whole new light."
+      }

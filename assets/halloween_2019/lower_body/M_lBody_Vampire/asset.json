@@ -1,0 +1,27 @@
+{
+  "name": "vampire_lower_body",
+  "i18n": {
+    "en": "Vampire Pants",
+    "es": "Pantalones de Vampiro"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "Vampire",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_Vampire.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Tailored trousers with quick-morph bat fabric"
+}

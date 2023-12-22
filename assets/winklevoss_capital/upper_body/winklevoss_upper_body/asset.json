@@ -1,0 +1,37 @@
+{
+  "name": "winklevoss_upper_body",
+  "i18n": {
+    "en": "Winklevoss T-Shirt",
+    "es": "Camiseta Winklevoss"
+  },
+  "tags": [
+    "tshirt",
+    "winklevoss",
+    "capital",
+    "decentraland",
+    "pink",
+    "upper",
+    "body",
+    "fuschia"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Winklevoss.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Winklevoss.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Winklevoss Capital branded T-shirt in signature pink"
+}

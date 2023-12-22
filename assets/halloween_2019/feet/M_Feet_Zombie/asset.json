@@ -1,0 +1,27 @@
+{
+  "name": "zombie_suit_feet",
+  "i18n": {
+    "en": "Zombie Boots",
+    "es": "Botas de Zombie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_Zombie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Used (and a little bit rancid) but good to go!"
+}

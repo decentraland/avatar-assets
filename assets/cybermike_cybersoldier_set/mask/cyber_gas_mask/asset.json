@@ -1,0 +1,37 @@
+{
+  "name": "cybersoldier_gas_mask",
+  "i18n": {
+    "en": "CYBERSOLDIER GAS MASK - Winter Soldier Collection - FROM CYBERMIKE"
+    
+  },
+  "tags": [
+     "gas mask",
+      "cyber helmet",
+   "cyber armour",
+   "winter collection",
+      "cybermike",
+      "cybersoldier"
+   
+   ],
+  "category": "mask",
+  "replaces": [
+   ],
+   "hides": [
+    "helmet",
+    "eyewear"  
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Gas_Mask_B01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Gas_Mask_B01.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

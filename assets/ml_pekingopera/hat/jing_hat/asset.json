@@ -1,0 +1,37 @@
+{
+    "name": "jing_hat",
+    "i18n": {
+      "en": "Peking Opera Jing Hat",
+      "es": "Sombrero Jing de la Ópera de Pekín"
+    },
+    "tags": [
+      "hat",
+      "jing",
+      "chinese",
+      "Peking Opera"
+     ],
+    "category": "hat",
+    "replaces": [
+      "hair",
+      "helmet",
+      "hat"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_jing_hat.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_jing_hat.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Peking Opera Character-Jing"
+  }

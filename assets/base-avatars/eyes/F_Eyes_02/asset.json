@@ -1,0 +1,16 @@
+{
+  "name": "f_eyes_02",
+  "i18n": {
+    "en": "f_Eyes_02",
+    "es": "f_Eyes_02"
+  },
+  "tags": [
+    "face",
+    "eyes"
+   ],
+  "category": "eyes",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyes_02.png"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyes_02.png"}
+  ]
+}

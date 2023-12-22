@@ -1,0 +1,27 @@
+{
+  "name": "sad_clown_feet",
+  "i18n": {
+    "en": "Sad Clown Shoes",
+    "es": "Zapatos de Payaso Triste"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Feet_Clown.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "To go with your sad clown body"
+}

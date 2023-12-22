@@ -1,0 +1,35 @@
+{
+  "name": "razor_blade_feet",
+  "i18n": {
+    "en": "Razor Blade Shoes",
+    "es": "Zapatos de Razor Blade"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "earrings",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Feet_RazorbladeSneakers.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Feet_RazorbladeSneakers.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

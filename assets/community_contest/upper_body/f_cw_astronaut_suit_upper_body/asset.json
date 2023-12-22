@@ -1,0 +1,36 @@
+{
+  "name": "f_cw_astronaut_suit_upper_body",
+  "i18n": {
+    "en": "Decentraland Astronaut Suit",
+    "es": "Traje de Astronauta de Decentraland"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+    "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_uBody_DCLAstronaut.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

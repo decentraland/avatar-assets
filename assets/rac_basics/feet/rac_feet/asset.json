@@ -1,0 +1,37 @@
+{
+  "name": "rac_feet",
+  "i18n": {
+    "en": "RAC footwear"
+  },
+  "tags": [
+    "shoes",
+    "sneakers",
+    "socks",
+    "trainers",
+    "converse",
+    "pink",
+    "RAC",
+  	"unique"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+     
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "RAC_Shoes.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "RAC_Shoes.glb"}
+  ],
+  "rarity": "unique",
+  "description": "RAC's signature pink footwear."
+}

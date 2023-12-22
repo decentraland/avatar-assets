@@ -1,0 +1,33 @@
+{
+  "name": "skeleton_suit_hat",
+  "i18n": {
+    "en": "Skull Mexican Hat",
+    "es": "Sombrero de Calaveras Mexicanas"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mexican",
+    "hat",
+    "halloween"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Hat_SkeletonSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Now that's one hell of a stylish Day of the Dead hat!"
+}

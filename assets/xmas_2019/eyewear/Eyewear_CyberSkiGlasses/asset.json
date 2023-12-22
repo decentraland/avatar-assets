@@ -1,0 +1,36 @@
+{
+  "name": "xmas_ski_eyewear",
+  "i18n": {
+    "en": "Christmas Ski Eyewear",
+    "es": "Anteojos de Navideños de Ski"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "christmas",
+    "cyber"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_CyberSkiGlasses.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_CyberSkiGlasses.glb"}
+        ],
+        "rarity": "mythic",
+        "description": "Is it snowing in Decentraland?"
+      }

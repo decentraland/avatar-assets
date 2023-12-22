@@ -1,0 +1,19 @@
+{
+  "name": "sport_black_shoes",
+  "i18n": {
+    "en": "Sport Black Shoes",
+    "es": "Zapatos Deportivos Negros"
+  },
+  "tags": [
+    "shoes",
+    "male",
+    "man",
+    "female",
+    "woman"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_SportBlackShoes.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_SportBlackShoes.glb"}
+  ]
+}

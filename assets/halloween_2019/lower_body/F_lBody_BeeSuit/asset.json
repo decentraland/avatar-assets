@@ -1,0 +1,26 @@
+{
+  "name": "bee_suit_lower_body",
+  "i18n": {
+    "en": "Bee Suit Leggings",
+    "es": "Calzas de Traje de Abeja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "You'll be the talk of the hive in these striking black and gold bee leggings"
+}

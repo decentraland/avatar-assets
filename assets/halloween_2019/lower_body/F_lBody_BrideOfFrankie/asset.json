@@ -1,0 +1,27 @@
+{
+  "name": "bride_of_frankie_lower_body",
+  "i18n": {
+    "en": "Bride of Frankie Skirt",
+    "es": "Pollera de la novia de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "skirt",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Doubles as a handy waitress outfit"
+}

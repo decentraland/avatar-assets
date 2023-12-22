@@ -1,0 +1,42 @@
+{
+  "name": "hwn_2020_cult_supreme_helmet",
+  "i18n": {
+    "en": "Helmet of Supreme of Evil Cult",
+    "es": "Casco de Supremo de Culto Demoníaco"
+  },
+
+  "tags": [
+    "supreme",
+    "halloween",
+    "2020",
+    "decentraland",
+    "cult"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head",
+    "mask",
+    "eyewear"
+
+   ],
+   "hides": [
+    "hair",
+    "earring"
+   ],
+
+  "main": [
+{
+  "type": "BaseMale", 
+  "model": "Cultist_Cow_Helmet.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Cultist_Cow_Helmet.glb"}
+    ],
+    "rarity": "mythic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+}

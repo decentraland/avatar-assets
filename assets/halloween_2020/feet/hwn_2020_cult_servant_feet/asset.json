@@ -1,0 +1,35 @@
+{
+  "name": "hwn_2020_cult_servant_feet",
+  "i18n": {
+    "en": "Evil Cult Servant Boots - Halloween 2020",
+    "es": "Botas de Sirviente de Secta Demoníaca - Halloween 2020"
+  },
+  "tags": [
+    "feet",
+    "cult",
+    "halloween",
+    "servant",
+    "boots",
+    "decentraland",
+    "2020"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "HWN_2020_Feet_Cult_Servant.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "HWN_2020_Feet_Cult_Servant.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+}

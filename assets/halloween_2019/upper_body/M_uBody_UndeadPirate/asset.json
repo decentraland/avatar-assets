@@ -1,0 +1,27 @@
+{
+  "name": "undead_pirate_upper_body",
+  "i18n": {
+    "en": "Undead Pirate Torso",
+    "es": "Torso de Esqueleto Pirata"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "pirate",
+    "undead"
+  ],
+  "category": "upper_body",
+  "replaces": [],
+  "hides": ["hands"],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_UndeadPirate.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Almost a body, but you get the drift"
+}

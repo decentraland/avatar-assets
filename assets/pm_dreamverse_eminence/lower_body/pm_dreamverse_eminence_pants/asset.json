@@ -1,0 +1,37 @@
+{
+  "name": "pm_dreamverse_eminence_pants",
+  "i18n": {
+    "en": "Dream Bourgeois Breeches",
+    "es": "Pantalones de la Burguesía de Ensueño"
+  },
+  "tags": [
+    "pants",
+	"lower_body",
+	"mind",
+	"wearable",
+  "dreamverse",
+  "eminence",
+	"polygonal"
+   ],
+  "category": "lower_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_lBody_Pants_DreamverseEminenceCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_lBody_Pants_DreamverseEminenceCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}

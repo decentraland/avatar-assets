@@ -1,0 +1,24 @@
+{
+  "id": "pm_col1_cargo_pants_lower_body",
+  "name": "pm_col1_cargo_pants_lower_body",
+  "i18n": {
+    "en": "Polygonal Mind - Cargo Pants",
+    "es": "Polygonal Mind - Pantalones Cargo"
+  },
+  "tags": ["pants", "bottom", "lower", "cargo", "trendy", "triangle", "pattern", "polygonal", "mind", "polygonal_mind"],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_CargoPants_01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_lBody_CargoPants_01.glb", "overrideReplaces": [], "overrideHides": [] }
+  ],
+  "rarity": "legendary",
+  "description": "Some trendy triangle-patterned pants for you to show off"
+}

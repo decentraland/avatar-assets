@@ -1,0 +1,25 @@
+{
+  "name": "polocoloredtshirt",
+  "i18n": {
+    "en": "Colored Polo T Shirt",
+    "es": "Remera de Polo de Colores"
+  },
+  "tags": [
+    "upper",
+    "body"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_PoloColoredTShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_PoloColoredTShirt.glb"
+    }
+  ]
+}

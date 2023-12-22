@@ -1,0 +1,39 @@
+{
+  "name": "atari_red_upper_body",
+  "i18n": {
+    "en": "Red Atari Tee",
+    "es": "Camiseta Atari Roja"
+  },
+  "tags": [
+    "T-Shirt",
+    "atari",
+    "tshirt",
+    "shirt",
+    "tee",
+    "retro",
+    "decentraland",
+    "upper",
+    "gamer",
+    "red"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Tee_Atari_Red.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Tee_Atari_Red.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a red tee."
+}

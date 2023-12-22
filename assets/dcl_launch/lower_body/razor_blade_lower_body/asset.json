@@ -1,0 +1,43 @@
+{
+  "name": "razor_blade_lower_body",
+  "i18n": {
+    "en": "Razor Blade Trousers",
+    "es": "Pantalones de Razor Blade"
+  },
+  "tags": [
+    "blade",
+    "exclusive",
+    "razor",
+    "20.02.20",
+    "pants",
+    "trousers",
+    "launch"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_lBody_Razorblade_Trousers.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseMale", 
+  "model": "M_lBody_Razorblade_Trousers.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mch_fukuzawa_upper_body",
+  "i18n": {
+    "en": "Fukuzawa T-Shirt",
+    "es": "Remera de Fukuzawa"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "fukuzawa",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_Fukuzawa.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_Fukuzawa.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

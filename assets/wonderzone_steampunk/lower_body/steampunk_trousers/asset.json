@@ -1,0 +1,30 @@
+{
+  "name": "steampunk_trousers",
+  "i18n": {
+    "en": "Steampunks jodhpur trousers",
+    "es": "Pantalones del Steampunk"
+  },
+  "tags": [
+    "WonderZone",
+    "exclusive",
+    "decentraland",
+    "mana",
+    "pants",
+    "trousers",
+    "steampunk",
+    "licensed",
+    "community"
+  ],
+  "category": "lower_body",
+  "main": [{
+      "type": "BaseMale",
+      "model": "steampunk_trousers_male.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "steampunk_trousers_female.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Steampunk jodhpur trousers or leggings. Gives a bonus in the WonderMine game. Created by Maricela."
+}

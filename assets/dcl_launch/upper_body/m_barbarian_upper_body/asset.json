@@ -1,0 +1,34 @@
+{
+  "name": "m_barbarian_upper_body",
+  "i18n": {
+    "en": "Barbarian Chest Piece",
+    "es": "Pieza de Traje de Bárbaro"
+  },
+  "tags": [
+    "exclusive",
+    "launch",
+    "decentraland",
+    "20.02.20",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Barbarian.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+  }
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

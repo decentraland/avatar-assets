@@ -1,0 +1,45 @@
+{
+  "name": "delbo_death_upper_body",
+  "i18n": {
+    "en": "Death Tunic | Delbo"
+  },
+  "tags": [
+    "death",
+    "upper_body",
+    "character",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"trench_coat",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "skeleton",
+    "coat",
+    "long"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+     "lower_body",
+     "feet",
+     "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Death_Body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "Death_Body.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "The skeleton and tunic of José Delbo's Death Character | José Delbo | Guest Artists Collection."
+}

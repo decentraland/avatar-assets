@@ -1,0 +1,36 @@
+{
+  "name": "mariachi_hat",
+  "i18n": {
+    "en": "Mariachi Hat",
+    "es": "Sombrero Mariachi"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mexican",
+    "hat"
+  ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+  ],
+  "hides": [
+    "hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_Hat_Mexican_02.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_Hat_Mexican_02.glb"
+    }
+  ],
+  "rarity": "swanky",
+  "description": "Guitar not included"
+}

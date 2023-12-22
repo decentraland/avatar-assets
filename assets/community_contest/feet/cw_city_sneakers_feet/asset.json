@@ -1,0 +1,36 @@
+{
+  "name": "cw_city_sneakers_feet",
+  "i18n": {
+    "en": "City Decentraland Sneakers",
+    "es": "Zapatillas de Ciudad de Decentraland"
+  },
+  "tags": [
+    "feet",
+    "exclusive",
+    "shoes",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_CitySneakers.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_CitySneakers.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

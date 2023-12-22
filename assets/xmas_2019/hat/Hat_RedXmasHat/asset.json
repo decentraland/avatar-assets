@@ -1,0 +1,38 @@
+{
+  "name": "xmas_red_hat",
+  "i18n": {
+    "en": "Christmas Red Hat",
+    "es": "Sombrero Navideño Rojo"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "christmas",
+    "cyber",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_RedXmasHat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_RedXmasHat.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Colour yourself Xmas."
+}

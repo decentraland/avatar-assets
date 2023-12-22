@@ -1,0 +1,35 @@
+{
+  "name": "m_cw_pants_of_wonder_lower_body",
+  "i18n": {
+    "en": "Trousers of Wonder",
+    "es": "Pantalones de Maravilla"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+
+   ],
+
+  "main": [{
+    "type": "BaseMale", 
+    "model": "M_lBody_pants_of_wonder.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    }
+
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

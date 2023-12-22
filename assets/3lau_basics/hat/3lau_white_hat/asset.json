@@ -1,0 +1,36 @@
+{
+  "name": "3lau_white_hat",
+  "i18n": {
+    "en": "3LAU White Triangle Cap",
+    "es": "Gorra con Triangulo Blanco de 3LAU"
+  },
+  "tags": [
+    "3LAU",
+    "cap",
+    "triangle",
+    "hat",
+    "decentraland"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_3LAU_Hat_White.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_3LAU_Hat_White.glb"}
+  ],
+  "rarity": "epic",
+  "description": "3LAU's signature triangle on a black and white cap."
+}

@@ -1,0 +1,28 @@
+{
+  "name": "serial_killer_mask",
+  "i18n": {
+    "en": "Serial Killer Mask",
+    "es": "Máscara de Asesino Serial"
+  },
+  "tags": [
+    "exclusive",
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "woman"
+  ],
+  "category": "mask",
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "SerialKiller.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "SerialKiller.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

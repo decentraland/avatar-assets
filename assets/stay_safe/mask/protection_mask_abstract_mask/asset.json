@@ -1,0 +1,36 @@
+{
+  "name": "protection_mask_abstract_mask",
+  "i18n": {
+    "en": "Abstract Protection Mask",
+    "es": "Barbijo Abstracto"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask",
+    "covid 19",
+    "stay",
+    "safe"
+   ],
+  "category": "mask",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "protection_mask_abstract_mask.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "protection_mask_abstract_mask.glb"}
+  ],
+  "rarity": "epic",
+"description": "Supporting the #CryptoAgainstCOVID initiative"
+}

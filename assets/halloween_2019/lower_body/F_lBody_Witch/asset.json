@@ -1,0 +1,27 @@
+{
+  "name": "witch_lower_body",
+  "i18n": {
+    "en": "Witch Skirt",
+    "es": "Pollera de Bruja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "skirt",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_Witch.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Designed to withstand burnings, drownings and ritual stonings"
+}

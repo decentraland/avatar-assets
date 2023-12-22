@@ -1,0 +1,38 @@
+{
+  "name": "meme_suit_pineapple",
+  "i18n": {
+    "en": "Cool Pineapple Suit",
+    "es": "Campera de Piña Cool"
+  },
+  "tags": [
+    "meme",
+	"pineapple",
+	"suit",
+	"wearable",
+	"shirt",
+	"jacket",
+	"upper_body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "uBody_PineappleSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "uBody_PineappleSuit.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Cool Pineapple Suit from the $Meme collection - Don't wear this"
+}

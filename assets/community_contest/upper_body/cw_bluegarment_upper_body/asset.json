@@ -1,0 +1,37 @@
+{
+  "name": "cw_bluegarment_upper_body",
+  "i18n": {
+    "en": "Blue Pullover of Garment of Gratitude",
+    "es": "Pullover Azul de Prendas de Gratitud"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_BlueGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_BlueGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

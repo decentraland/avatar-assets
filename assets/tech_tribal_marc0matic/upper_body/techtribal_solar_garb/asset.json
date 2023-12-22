@@ -1,0 +1,49 @@
+{
+  "name": "techtribal_solar_garb",
+  "i18n": {
+    "en": "Tech Tribal Solar Garb",
+    "es": "Atuendo de Solaris Macho Tribal Tecnológico"
+  },
+  "tags": [
+    "accesories",
+    "man" ,
+    "woman",
+   "marc0matic",
+   "tech" , 
+   "tribal",
+   "mask",
+   "beast",
+   "nature",
+   "punk",
+   "fantasy",
+   "shaman",
+   "magic",
+   "machine",
+   "suit",
+   "jacket",
+   "armour",
+    "wearables",
+   "exclusives"
+
+   ],
+
+"category": "upper_body",
+
+"replaces": [
+  
+  ],
+
+"hides": [
+  "hands"
+  ],
+
+
+"main": [
+    {"type": "BaseMale", "model": "M_TechTribal_Solar_Garb.glb"},
+    {"type": "BaseFemale", "model": "F_TechTribal_Solar_Garb.glb"}
+  ],
+
+"rarity": "legendary",
+"description": "Tech Tribal Solar Garb with Solar Shoulder Pads. Worn by Mystics fluent in 'Machine Speak."
+}
+

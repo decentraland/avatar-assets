@@ -1,0 +1,26 @@
+{
+  "name": "zombie_suit_lower_body",
+  "i18n": {
+    "en": "Zombie Suit Pants",
+    "es": "Pantalones de Zombie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_Zombie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "When we say suit, we mean suit. Look your zombie best!"
+}

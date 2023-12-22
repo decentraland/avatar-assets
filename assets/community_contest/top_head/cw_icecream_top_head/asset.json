@@ -1,0 +1,41 @@
+{
+  "name": "cw_icecream_top_head",
+  "i18n": {
+    "en": "Icecream Hat",
+    "es": "Sombrero de Helado"
+  },
+  "tags": [
+    "accesories",
+    "top_head",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "top_head",
+  "replaces": [
+    "helmet",
+    "hat"
+   ],
+   "hides": [
+  
+   ],
+
+   "main": [
+    {
+    "type": "BaseMale", 
+    "model": "Top_Head_Icecream.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    },
+    {"type": "BaseFemale", "model": "Top_Head_Icecream.glb"}
+      ],
+      "rarity": "mythic",
+      "description": ""
+    }
+    
+    

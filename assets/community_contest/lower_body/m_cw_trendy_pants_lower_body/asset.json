@@ -1,0 +1,35 @@
+{
+  "name": "m_cw_trendy_pants_lower_body",
+  "i18n": {
+    "en": "Trendy Sport Pants",
+    "es": "Pantalones Trendy Deportivos"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+
+   ],
+
+  "main": [{
+    "type": "BaseMale", 
+    "model": "M_lBody_Sporty_Pants_Male.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    }
+
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

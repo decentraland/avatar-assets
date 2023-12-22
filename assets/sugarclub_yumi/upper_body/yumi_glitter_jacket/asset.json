@@ -1,0 +1,34 @@
+{
+  "name": "yumi_glitter_jacket_upper_body",
+  "i18n": {
+    "en": "Yumi Glitter Jacket",
+    "es": "Chaqueta de Brillo de Yumi"
+  },
+  "tags": [
+    "jacket",
+    "exclusive",
+    "yumi",
+    "sugarclub",
+    "decentraland"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "yumi_glitter_jacket_male.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "yumi_glitter_jacket.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Synthwave glitter & Sugar Sweet jacket"
+}

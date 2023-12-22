@@ -1,0 +1,34 @@
+{
+  "name": "ms_pm_upper_body",
+  "i18n": {
+    "en": "Polygonal Mind Soccer T-Shirt",
+    "es": "Remera de fútbol de Polygonal Mind"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "polygonal mind",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_PolygonalMind.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_PolygonalMind.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Polygonal Mind Soccer T-Shirt - Moonshot Tournament 2020"
+}

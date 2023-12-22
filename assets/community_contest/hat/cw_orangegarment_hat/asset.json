@@ -1,0 +1,40 @@
+{
+  "name": "cw_orangegarment_hat",
+  "i18n": {
+    "en": "Orange Garment of Gratitude Hat",
+    "es": "Sombrero Naranja de Prendas de Gratitud"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_OrangeGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_OrangeGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

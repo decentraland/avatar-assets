@@ -1,0 +1,42 @@
+{
+  "name": "cw_aviator_trousers_lower_body",
+  "i18n": {
+    "en": "Aviator Trousers",
+    "es": "Pantalones de Aviador"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+     "feet"
+   ],
+
+  "main": [{
+    "type": "BaseMale", 
+    "model": "M_lBody_Aviator.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    },
+{
+"type": "BaseFemale", 
+"model": "F_lBody_Aviator.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

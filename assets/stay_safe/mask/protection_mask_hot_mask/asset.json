@@ -1,0 +1,36 @@
+{
+  "name": "protection_mask_hot_mask",
+  "i18n": {
+    "en": "Hot Protection Mask",
+    "es": "Barbijo con Estampa Hot"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask",
+    "covid 19",
+    "stay",
+    "safe"
+   ],
+  "category": "mask",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "protection_mask_hot_mask.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "protection_mask_hot_mask.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Supporting the #CryptoAgainstCOVID initiative"
+}

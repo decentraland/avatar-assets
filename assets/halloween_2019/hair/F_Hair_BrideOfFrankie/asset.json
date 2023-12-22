@@ -1,0 +1,30 @@
+{
+  "name": "bride_of_frankie_hair",
+  "i18n": {
+    "en": "Bride of Frankie Hair",
+    "es": "Peinado de la novia de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "hair",
+    "jester",
+    "halloween"
+  ],
+  "category": "hair",
+  "replaces": [
+    "hat",
+    "helmet"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Hair_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Engineered for style"
+}

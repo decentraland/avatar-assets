@@ -1,0 +1,33 @@
+{
+    "name": "wz_wonderbot_feet",
+    "i18n": {
+      "en": "Wonderbot Feet"
+    },
+    "rarity": "mythic",
+    "description": "Robotic feet, giving you an extra spring in your step. Wonderzone Collection 2020. Created by Chestnutbruze",
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "feet",
+        "fashion",
+        "robot",
+        "cyber"
+     ],
+     "replaces": [],
+     "hides": [],
+    "category": "feet",
+    "main": [
+                {
+                    "type": "BaseMale", 
+                    "model": "M_Feet.glb",
+                    "overrideReplaces": [],
+                    "overrideHides": []
+                },
+                {   
+                    "type": "BaseFemale", 
+                    "model": "F_Feet.glb"
+                }
+        ]
+}
+  

@@ -1,0 +1,37 @@
+{
+  "name": "mch_caocao_upper_body",
+  "i18n": {
+    "en": "Caocao T-Shirt",
+    "es": "Remera de Caocao"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "caocao",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_Cacao.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_Caocao.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

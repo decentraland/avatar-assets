@@ -1,0 +1,27 @@
+{
+  "name": "jester_lower_body",
+  "i18n": {
+    "en": "Jester Leggings",
+    "es": "Calzas de Bufona"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "leggings",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_lBody_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Fits neatly into jester_upper_body"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "rac_upper_body",
+  "i18n": {
+    "en": "RAC Outfit"
+  },
+  "tags": [
+    "RAC",
+    "upper_body",
+    "jacket",
+    "decentraland",
+    "long",
+    "coat",
+  	"pink",
+  	"trousers",
+  	"bata",
+    "outfit",
+    "combo"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+     "lower_body"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "RAC_Body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "RAC_Body.glb"}
+  ],
+  "rarity": "unique",
+  "description": "RAC's signature pink outfit with matching trousers and long coat."
+}

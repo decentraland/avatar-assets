@@ -1,0 +1,46 @@
+{
+    "name": "octopus_upper_body",
+    "i18n": {
+      "en": "Octopus Alien | Joelle",
+      "es": "Pulpo Alienígena | Joelle"
+    },
+    "tags": [
+      
+     ],
+    "category": "upper_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+      "lower_body",
+      "feet",
+      "head",
+      "hair",
+      "hat",
+      "facial_hair",
+      "eyewear",
+      "earring",
+      "tiara",
+      "mask",
+      "hat",
+      "helmet",
+      "top_head",
+      "hands"
+
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "Octopus.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "Octopus.glb"}
+    ],
+    "rarity": "mythic",
+    "description": "Golden eyed alien octopus, native to DCL | Joelle | Guest Artists Collection."
+  }

@@ -1,0 +1,34 @@
+{
+  "name": "da_iridescent_hair",
+  "i18n": {
+    "en": "Digital Alchemy Iridescent Hair",
+    "es": "Cabello Iridiscente Alquimia Digial"
+  },
+  "tags": [
+    "hair",
+    "exclusive",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hair",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_hair_daHair.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_hair_daHair.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Collection | Iridescent hair | with crystals that shimmer when seen from different perspectives, emitting signals to other communities by UV waves to achieve supreme communication."
+}

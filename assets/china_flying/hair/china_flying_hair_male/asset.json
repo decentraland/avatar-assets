@@ -1,0 +1,35 @@
+{
+    "name": "china_flying_hair_male",
+    "i18n": {
+        "en": "China flying boyHair",
+        "es": "Vestimenta Voladora y Colorida China"
+    },
+    "tags": [
+        "china",
+        "exclusive",
+        "hair",
+        "boyHair",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+    "category": "hair",
+    "replaces": [
+        "hair"
+    ],
+    "hides": [
+    ],
+    "main": [
+        {
+            "type": "BaseMale",
+            "model": "M_hair.glb",
+            "overrideReplaces": [
+            ],
+            "overrideHides": [
+            ]
+        }
+    ],
+    "rarity": "legendary",
+    "description": "Chinese Flying clothing is the expression of yearning for the sky and space, which is the most talented creation of Chinese artists."
+}

@@ -1,0 +1,37 @@
+{
+  "name": "santa_xmas_mask",
+  "i18n": {
+    "en": "santa Christmas Mask",
+    "es": "Máscara de Navidad de Santa"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask",
+    "santa",
+    "xmas",
+    "2020"
+   ],
+  "category": "mask",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "facial_hair",
+    "eyewear"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "santa_xmas_mask.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "santa_xmas_mask.glb"}
+  ],
+  "rarity": "mythic",
+"description": "A festive gift from Save Xmas 2020"
+}

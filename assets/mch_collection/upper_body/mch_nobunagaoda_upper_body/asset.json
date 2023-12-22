@@ -1,0 +1,37 @@
+{
+  "name": "mch_nobunagaoda_upper_body",
+  "i18n": {
+    "en": "Nobunaga Oda T-Shirt",
+    "es": "Remera de Nobunaga Oda"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Nobunaga Oda",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_NobunagaOda.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_NobunagaOda.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

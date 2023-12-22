@@ -1,0 +1,42 @@
+{
+  "name": "leather_upper_body",
+  "i18n": {
+    "en": "Leather Death Jacket | Delbo"
+  },
+  "tags": [
+    "jacket",
+    "upper_body",
+    "leather",
+    "skull",
+    "decentraland",
+    "collection",
+    "wearables",
+  	"coat",
+  	"guest",
+  	"artists",
+    "jose_delbo",
+    "delbo",
+    "death",
+    "biker"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Delbo_Leather_Jacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_Delbo_Leather_Jacket.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Black leather jacket with a José Delbo sketch on the back | José Delbo | Guest Artists Collection."
+}

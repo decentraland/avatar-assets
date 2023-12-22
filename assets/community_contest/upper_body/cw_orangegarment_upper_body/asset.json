@@ -1,0 +1,37 @@
+{
+  "name": "cw_orangegarment_upper_body",
+  "i18n": {
+    "en": "Orange Pullover of Garment of Gratitude",
+    "es": "Pullover Naranja de Prendas de Gratitud"
+  },
+  "tags": [
+    
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_OrangeGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_OrangeGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

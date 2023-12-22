@@ -1,0 +1,40 @@
+{
+  "name": "meteorchaser_shoes_feet",
+  "i18n": {
+    "en": "Shoes of the meteorchaser",
+    "es": "Zapatos del meteorchaser"
+  },
+
+  "tags": [
+    "WonderZone",
+    "exclusive", 
+    "decentraland",
+    "mana",
+    "licensed",
+    "meteorchaser",
+    "meteorite",
+    "shoes",
+    "meteor"
+   ],
+  "category": "feet",
+  "replaces": [
+
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_Feet_Shoes_of_the_meteorchaser.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseFemale", "model": "F_Feet_Shoes_of_the_meteorchaser.glb"}
+        ],
+        "rarity": "legendary",
+        "description": "Crafting reward from WonderZone. Gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
+      }

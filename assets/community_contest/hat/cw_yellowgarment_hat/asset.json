@@ -1,0 +1,40 @@
+{
+  "name": "cw_yellowgarment_hat",
+  "i18n": {
+    "en": "Yellow Garment of Gratitude Hat",
+    "es": "Sombrero Amarillo de Prendas de Gratitud"
+  },
+  "tags": [
+    "hat",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_YellowGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_YellowGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

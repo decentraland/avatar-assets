@@ -1,0 +1,16 @@
+{
+  "name": "m_feet_soccershoes",
+  "i18n": {
+    "en": "Soccer Cleats",
+    "es": "Botines"
+  },
+  "tags": [
+    "shoes",
+    "man",
+    "men"
+   ],
+  "category": "feet",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_SoccerShoes.glb"}
+  ]
+}

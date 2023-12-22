@@ -1,0 +1,36 @@
+{
+  "name": "ms_dclcore_upper_body",
+  "i18n": {
+    "en": "DCL Core Soccer T-Shirt",
+    "es": "Remera de fútbol de DCL Core"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "dcl core",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_DCLCore.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_DCLCore.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "DCL Core Soccer T-Shirt - Moonshot Tournament 2020"
+}

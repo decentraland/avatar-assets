@@ -1,0 +1,35 @@
+{
+  "name": "f_cw_trendy_pants_lower_body",
+  "i18n": {
+    "en": "Trendy Sport Pants",
+    "es": "Pantalones Trendy Deportivos"
+  },
+  "tags": [
+    "exclusive",
+    "pants",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+
+   ],
+
+  "main": [{
+    "type": "BaseFemale", 
+    "model": "F_lBody_SportyPants.glb", 
+    "overrideReplaces": [
+       ],
+       "overrideHides": [
+       ]
+    }
+
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

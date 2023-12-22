@@ -1,0 +1,34 @@
+{
+  "name": "dgtble_rainbow_grid_shoes_feet",
+  "i18n": {
+    "en": "The Headspace Rainbow Grid Shoes",
+    "es": "The Headspace Zapatos con Rainbow Grid"},
+  "tags": [
+    "headspace",
+   "sacred",
+   "geometry",
+   "danielprust",
+   "festival",
+   "digitible"
+   ],
+  "category": "feet",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Shoes_E02.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Shoes_E02.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Rainbow Grid is a licensed artwork collab between The Headspace and Daniel Prust whose aysyemetric patterns and abstract designs deliver an experimental style that transforms outlandish dreams into pleasing aesthetics." 
+}

@@ -1,0 +1,39 @@
+{
+  "name": "m_barbarian_helmet_hat",
+  "i18n": {
+    "en": "Barbarian Helmet",
+    "es": "Casco de Bárbaro"
+  },
+  "tags": [
+    "hat",
+    "helmet",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "mana"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Helmet_Barbarian.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

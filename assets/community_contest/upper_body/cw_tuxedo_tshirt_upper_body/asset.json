@@ -1,0 +1,37 @@
+{
+  "name": "cw_tuxedo_tshirt_upper_body",
+  "i18n": {
+    "en": "Tuxedo T Shirt",
+    "es": "Remera de Smoking"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_TuxedoTShirt.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_TuxedoTShirt.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

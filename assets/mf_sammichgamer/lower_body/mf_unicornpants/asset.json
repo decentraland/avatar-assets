@@ -1,0 +1,28 @@
+{
+    "name": "mf_unicornpants",
+    "i18n": {
+      "en": "Unicorn pants"
+    },
+    "rarity": "legendary",
+    "description": "Unicorn pants of sammich gamer costume. By Mana-fever 2020.",  
+    "tags": [
+        "manafever",
+        "sammichgame",
+        "sammich",
+        "game"
+    ],
+    "category": "lower_body",
+    "replaces":[],
+    "hides":[],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Pants.glb" 
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Pants.glb"
+        }
+    ]
+  }
+  

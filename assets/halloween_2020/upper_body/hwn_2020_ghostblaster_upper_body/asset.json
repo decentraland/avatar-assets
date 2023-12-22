@@ -1,0 +1,37 @@
+{
+    "name": "hwn_2020_ghostblaster_upper_body",
+    "i18n": {
+      "en": "GhostBlaster Suit - Halloween 2020",
+      "es": "Traje de GhostBlaster - Halloween 2020"
+    },
+    "tags": [
+      "ghostblaster",
+      "halloween",
+      "2020",
+      "decentraland",
+      "suit"
+
+     ],
+    "category": "upper_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+      "hands"
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_uBody_GhostBlaster.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_HWN_2020_uBody_GhostBlaster.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

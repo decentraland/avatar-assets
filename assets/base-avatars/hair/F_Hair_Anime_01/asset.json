@@ -1,0 +1,19 @@
+{
+  "name": "hair_anime_01",
+  "i18n": {
+    "en": "Idol",
+    "es": "Celebridad"
+  },
+  "tags": [
+    "hair",
+    "anime",
+    "idol"
+
+   ],
+  "category": "hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Anime_Fringe.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Anime_Fringe.glb"}
+  
+  ]
+}

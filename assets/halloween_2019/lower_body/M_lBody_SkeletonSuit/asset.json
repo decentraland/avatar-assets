@@ -1,0 +1,27 @@
+{
+  "name": "skeleton_suit_lower_body",
+  "i18n": {
+    "en": "Skeleton Suit Pants",
+    "es": "Pantalones de Esqueleto"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "leggings",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_SkeletonSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Anatomically correct in a light-wearing, form-fitting design"
+}

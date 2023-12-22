@@ -1,0 +1,42 @@
+{
+  "name": "eth_xmas_sweater_upper_body",
+  "i18n": {
+    "en": "Ethereum Christmas Sweater",
+    "es": "Sweater de Navidad de Ethereum"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "Ethereum"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_eth_xmas_sweater_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_eth_xmas_sweater_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "legendary",
+  "description": "A festive gift from Save Xmas 2020"
+}

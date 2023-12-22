@@ -1,0 +1,38 @@
+{
+  "name": "xmas_reindeer_hat",
+  "i18n": {
+    "en": "Christmas Reindeer Hat",
+    "es": "Sombrero Navideño de Reno"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "christmas",
+    "cyber",
+    "hat"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Reeindeer.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Reeindeer.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "The Xmas party classic comes to Decentraland."
+}

@@ -1,0 +1,37 @@
+{
+  "name": "cw_peacock_feather_earring",
+  "i18n": {
+    "en": "Peacock Feather Earrings",
+    "es": "Pendientes Pluma de Pavo Real"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_Peacock.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_Peacock.glb"}
+        ],
+        "rarity": "epic",
+        "description": ""
+      }

@@ -1,0 +1,32 @@
+{
+    "name": "china_flying_skirt",
+    "i18n": {
+        "en": "China flying skirt",
+        "es": "Vestimenta Voladora y Colorida China"
+    },
+    "tags": [
+        "china",
+        "lower_body",
+        "exclusive",
+        "skirt",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+    "category": "lower_body",
+    "replaces": [
+        "lower_body"
+    ],
+    "hides": ["feet"
+    ],
+
+    "main": [
+        {
+            "type": "BaseFemale",
+            "model": "F_skirt.glb"
+        }
+    ],
+    "rarity": "legendary",
+    "description": "Chinese Flying clothing is the expression of yearning for the sky and space, which is the most talented creation of Chinese artists."
+}

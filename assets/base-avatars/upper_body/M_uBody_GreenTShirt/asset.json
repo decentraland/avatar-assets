@@ -1,0 +1,22 @@
+{
+  "name": "green_tshirt",
+  "i18n": {
+    "en": "Green T-Shirt",
+    "es": "Remera Verde"
+  },
+  "tags": [
+    "top",
+    "male",
+    "man"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_GreenTShirt.glb"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "bee_suit_top_head",
+  "i18n": {
+    "en": "Bee Headband",
+    "es": "Bincha de Abeja"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "top_head",
+    "halloween",
+    "bee"
+  ],
+  "category": "top_head",
+  "replaces": [
+    "helmet",
+    "hat"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Tophead_BeeSuit.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "The cutest way to top off your bee suit. Sadly with no actual antennae functionality"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mch_leodavinci_upper_body",
+  "i18n": {
+    "en": "Leonardo Da Vinci T-Shirt",
+    "es": "Remera de Leonardo Da Vinci"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Leonardo Da Vinci",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_LeonardoDaVinci.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_LeonardoDaVinci.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

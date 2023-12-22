@@ -1,0 +1,34 @@
+{
+  "name": "pm_dreamverse_eminence_sweater",
+  "i18n": {
+    "en": "Lucid Meditation Tunic",
+    "es": "Túnica de Meditación Lúcida"
+  },
+  "tags": [
+    "sweater",
+	  "upper_body",
+	  "mind",
+	  "wearable",
+    "dreamverse",
+    "eminence",
+	  "polygonal"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_uBody_Sweater_DreamverseEminenceCollection_PM.glb", 
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale", 
+      "model": "F_uBody_Sweater_DreamverseEminenceCollection_PM.glb"
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}

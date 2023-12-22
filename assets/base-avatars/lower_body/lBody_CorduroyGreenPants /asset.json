@@ -1,0 +1,16 @@
+{
+  "name": "corduroygreenpants",
+  "i18n": {
+    "en": "Corduroy Green Pants",
+    "es": "Pantalones de Corderoy Verde"
+  },
+  "tags": [
+    "lower",
+    "body"
+   ],
+  "category": "lower_body",
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_CorduroyGreenPants.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_CorduroyGreenPants.glb"}
+  ]
+}

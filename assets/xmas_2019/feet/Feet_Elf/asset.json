@@ -1,0 +1,34 @@
+{
+  "name": "xmas_elf_feet",
+  "i18n": {
+    "en": "Christmas Elf Shoes",
+    "es": "Zapatos de Elfo Navideño"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "christmas",
+    "cyber"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_Elf.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_Elf.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Rest of elf not included."
+}

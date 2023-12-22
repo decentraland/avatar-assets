@@ -1,0 +1,34 @@
+{
+  "name": "ms_vegascity_upper_body",
+  "i18n": {
+    "en": "Vegas City Soccer T-Shirt",
+    "es": "Remera de fútbol de Vegas City"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "vegas city",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_VegasCity.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_VegasCity.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Vegas City Soccer T-Shirt - Moonshot Tournament 2020"
+}

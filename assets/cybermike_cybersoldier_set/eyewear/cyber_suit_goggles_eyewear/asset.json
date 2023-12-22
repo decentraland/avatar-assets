@@ -1,0 +1,36 @@
+{
+  "name": "cybersoldier_nightvision_eyewear",
+  "i18n": {
+    "en": "CYBERSOLDIER NIGHT VISION GOGGLES - Winter Soldier Collection - FROM CYBERMIKE"
+  },
+  "tags": [
+    "cyber Suit",
+   "cyber armour",
+   "winter collection",
+      "nightvision",
+      "cybermike",
+      "cybersoldier",
+      "goggles"
+   
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask"
+   ],
+   "hides": [   
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "NVG_B05.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "NVG_B05.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "By Cybermike - Live Free or Die Hard"
+}

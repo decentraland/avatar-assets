@@ -1,0 +1,27 @@
+{
+  "id": "moonminer_pants_lower_body",
+  "name": "moonminer_pants_lower_body",
+  "i18n": {
+    "en": "DappCraft Moon Miner Trousers"},
+  "tags": ["moon","lower_body", "electro", "space"],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_moonminer_pants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_moonminer_pants.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Moonlight will recharge these trousers to keep neon effect going."
+}

@@ -1,0 +1,34 @@
+{
+  "name": "dg_slides_feet",
+  "i18n": {
+    "en": "DG Slides",
+    "es": "Sandalias DG"
+  },
+  "tags": [
+    "sandals",
+    "slides",
+    "decentral games",
+    "shoes"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type":"BaseMale" , 
+"model":"slides_m.glb" , 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "slides_f.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Lazy day designer slides complete with socks to keep your toes warm #cozyslides"
+}

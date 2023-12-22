@@ -1,0 +1,36 @@
+{
+  "name": "protection_mask_skull_mask",
+  "i18n": {
+    "en": "Skull Protection Mask",
+    "es": "Barbijo con Estampa de Calavera"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask",
+    "covid 19",
+    "stay",
+    "safe"
+   ],
+  "category": "mask",
+  "replaces": [
+    "helmet"
+   ],
+   "hides": [
+    "facial_hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "protection_mask_skull_mask.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "protection_mask_skull_mask.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Supporting the #CryptoAgainstCOVID initiative"
+}

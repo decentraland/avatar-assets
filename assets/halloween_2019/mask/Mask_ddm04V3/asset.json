@@ -1,0 +1,36 @@
+{
+  "name": "star_skull_mask",
+  "i18n": {
+    "en": "Star Skull",
+    "es": "Calavera de Estrella"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm04V3.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm04V3.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Ornate Day of the Dead mask with star"
+}

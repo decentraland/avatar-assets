@@ -1,0 +1,38 @@
+{
+  "name": "mch_georgewashington_upper_body",
+  "i18n": {
+    "en": "George Washington T-Shirt",
+    "es": "Remera de George Washington"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "george",
+    "washington",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_GeorgeWashington.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_GeorgeWashington.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

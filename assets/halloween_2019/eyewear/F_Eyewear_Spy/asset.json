@@ -1,0 +1,30 @@
+{
+  "name": "spy_suit_eyewear",
+  "i18n": {
+    "en": "Spy Suit Eyewear",
+    "es": "Anteojos de Espía"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "halloween",
+    "spy"
+  ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Eyewear_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "So stylish it's a shame you're undercover"
+}

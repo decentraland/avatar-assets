@@ -1,0 +1,16 @@
+{
+  "name": "balbo_beard",
+  "i18n": {
+    "en": "Balbo",
+    "es": "Balbo"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_BalboBeard.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_FacialHair_BalboBeard.glb"}
+  ]
+}

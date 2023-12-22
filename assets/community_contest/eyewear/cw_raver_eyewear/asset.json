@@ -1,0 +1,40 @@
+{
+  "name": "cw_raver_eyewear",
+  "i18n": {
+    "en": "Raver Googles",
+    "es": "Antiparras de Raver"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyewear_Raver.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyewear_Raver.glb"}
+        ],
+        "rarity": "legendary",
+        "description": ""
+      }

@@ -1,0 +1,35 @@
+{
+    "name": "jing_feet",
+    "i18n": {
+      "en": "Peking Opera Jing Shoes",
+      "es": "Zapatos Jing de la Ópera de Pekín"
+    },
+    "tags": [
+      "shoes",
+      "peking opera",
+      "jing",
+      "chinese"
+     ],
+    "category": "feet",
+    "replaces": [
+      "feet"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_jing_feet.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_jing_feet.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Peking Opera Character-Jing"
+  }

@@ -1,0 +1,27 @@
+{
+  "name": "sad_clown_lower_body",
+  "i18n": {
+    "en": "Sad Clown Pants",
+    "es": "Pantalones de Payaso Triste"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "leggings",
+    "pants"
+  ],
+  "category": "lower_body",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_lBody_Clown.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Little known fact: blue, red and gold are the saddest colours"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "kraken_hat",
+  "i18n": {
+    "en": "Kraken Hat",
+    "es": "Gorra de Kraken"
+  },
+  "tags": [
+    "kraken",
+    "hat",
+    "decentraland"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Kraken_Hat.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Kraken_Hat.glb"}
+  ],
+  "rarity": "uncommon",
+  "description": "The Kraken is released upon Decentraland"
+}

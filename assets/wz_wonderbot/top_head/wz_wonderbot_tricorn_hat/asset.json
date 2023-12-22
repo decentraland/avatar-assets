@@ -1,0 +1,30 @@
+{
+    "name": "wz_wonderbot_hat",
+    "i18n": {
+      "en": "Wonderbot Tricorn Hat"
+    },
+    "rarity": "mythic",
+    "description": "Robotic tricorn hat. Wonderzone Collection 2020. Created by Chestnutbruze",
+    "tags": [
+        "Wonderzone",
+        "Wonderbot",
+        "game",
+        "hat",
+        "fashion",
+        "robot",
+        "cyber"
+     ],
+    "category": "top_head",
+    "replaces": ["hat"],
+    "hides":["hat", "hair"],
+    "main": [
+        {
+            "type": "BaseMale", 
+            "model": "M_Hat.glb"
+        },
+        {
+            "type": "BaseFemale", 
+            "model": "F_Hat.glb"
+        }
+    ]
+}  

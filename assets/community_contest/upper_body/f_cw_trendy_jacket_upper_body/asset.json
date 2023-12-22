@@ -1,0 +1,36 @@
+{
+  "name": "f_cw_trendy_jacket_upper_body",
+  "i18n": {
+    "en": "Trendy Sportwear Jacket",
+    "es": "Campera Trendy Deportiva"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseFemale", 
+"model": "F_uBody_SportyJacket.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

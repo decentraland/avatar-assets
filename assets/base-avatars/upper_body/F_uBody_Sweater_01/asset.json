@@ -1,0 +1,22 @@
+{
+  "name": "f_sweater",
+  "i18n": {
+    "en": "Yellow Sweater",
+    "es": "Suéter Amarillo"
+  },
+  "tags": [
+    "top",
+    "female",
+    "woman"
+  ],
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "category": "upper_body",
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Sweater_01.glb"
+    }
+  ]
+}

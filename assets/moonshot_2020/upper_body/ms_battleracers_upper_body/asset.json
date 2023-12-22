@@ -1,0 +1,38 @@
+{
+  "name": "ms_battleracers_upper_body",
+  "i18n": {
+    "en": "Battle Racers Soccer T-Shirt",
+    "es": "Remera de fútbol de Battle Racers"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "battle racers",
+    "futbol",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_BattleRacers.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_BattleRacers.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Battle Racers Soccer T-Shirt - Moonshot Tournament 2020"
+
+}

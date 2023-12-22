@@ -1,0 +1,30 @@
+{
+  "name": "jester_hair",
+  "i18n": {
+    "en": "Jester Hair",
+    "es": "Peinado de Bufona"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "hair",
+    "jester",
+    "halloween"
+  ],
+  "category": "hair",
+  "replaces": [
+    "hat",
+    "helmet"
+  ],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Hair_Jester.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Made from the hair of actual jesters!"
+}

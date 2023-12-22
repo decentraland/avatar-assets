@@ -1,0 +1,33 @@
+{
+  "id": "blocksmith_eyewear",
+  "name": "blocksmith_eyewear",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Diamantex"
+  },
+  "tags": [
+    "reality",
+    "secrets",
+    "eyewear"
+   ],
+  "category": "eyewear",
+  "replaces": [
+   "eyewear"
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_niftyblocksmith_diamantex.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "M_niftyblocksmith_diamantex.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Diamantex TM"
+}

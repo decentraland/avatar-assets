@@ -1,0 +1,39 @@
+{
+  "name": "r_rtfkt_x_atari_feet",
+  "i18n": {
+    "en": "Red RTFKT X Atari Sneakers",
+    "es": "Zapatillas rojas RTFKT X Atari"
+  },
+  "tags": [
+    "sneakers",
+    "red",
+    "atari",
+    "rtfkt",
+    "pong",
+    "trainers",
+    "unique",
+    "retro",
+    "collab"
+   ],
+  "category": "feet",
+  "replaces": [
+  
+
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "RTFKT_Atari1_01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "RTFKT_Atari1_01.glb"}
+  ],
+  "rarity": "unique",
+  "description": "Unique RTFKT x Atari sneakers in red."
+}

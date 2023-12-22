@@ -1,0 +1,35 @@
+{
+  "name": "yumi_glitter_leggings_lower_body",
+  "i18n": {
+    "en": "Yumi Glitter Leggings",
+    "es": "Leggings Brillantes Yumi"
+  },
+  "tags": [
+      "Leggings",
+      "exclusive",
+      "yumi",
+      "sugarclub",
+      "decentraland"
+   ],
+  "category": "lower_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "yumi_glitter_leggings_male.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "yumi_glitter_leggings.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Very Kawaii and Sugar sweet bottoms"
+}

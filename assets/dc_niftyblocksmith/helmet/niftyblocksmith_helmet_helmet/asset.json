@@ -1,0 +1,23 @@
+{
+  "id": "blocksmith_helmet",
+  "name": "blocksmith_helmet",
+  "i18n": {
+    "en": "DC Nifty Blocksmith Helmet"
+  },
+  "tags": ["dappcraft", "hairs", "secret","neon", "weird", "cyberpunk"],
+  "category": "helmet",
+  "replaces": ["earring","helmet", "tiara","mask"],
+  "hides": ["hair"],
+
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_niftyblocksmith_helmet.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "M_niftyblocksmith_helmet.glb" }
+  ],
+  "rarity": "legendary",
+  "description": "This unique helmet will keep your thoughts positively focused. Zero toxicity."
+}

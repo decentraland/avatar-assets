@@ -1,0 +1,37 @@
+{
+  "name": "mch_cleopatra_upper_body",
+  "i18n": {
+    "en": "Cleopatra T-Shirt",
+    "es": "Remera de Cleopatra"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "cleopatra",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_Cleopatra.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_Cleopatra.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

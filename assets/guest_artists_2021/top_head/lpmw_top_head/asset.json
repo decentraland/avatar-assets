@@ -1,0 +1,47 @@
+{
+  "name": "lpmw_top_head",
+  "i18n": {
+    "en": "3D Glasses | Joelle"
+  },
+  "tags": [
+    "lowpolymodels",
+    "low_poly_models_world",
+    "joelle",
+    "3d",
+    "glasses",
+    "lpm",
+    "lpmw",
+  	"decentraland",
+  	"guest",
+  	"artists",
+    "joelle",
+    "kjwalker",
+    "decentraland",
+    "wearables"
+   ],
+  "category": "top_head",
+  "replaces": [
+   ],
+   "hides": [
+     "eyewear",
+     "helmet", 
+     "tiara",
+     "hat",
+     "mask"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "LowPolyModelsWorld_Top_Head.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "LowPolyModelsWorld_Top_Head.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Low Poly Models World Headgear | Joelle | Guest Artists Collection."
+}

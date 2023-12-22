@@ -1,0 +1,30 @@
+{
+  "id": "meta_upper_body",
+  "name": "meta_upper_body",
+  "i18n": {
+    "en": "DC META 01000101"
+  },
+  "tags": [
+    "style","electric", "dappcraft","neon","dcstudio","digital","cool","strange"],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+    "hands"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_meta_01000101.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "M_meta_01000101.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "01000100 01000011 00100000 01001101 01000101 01010100 01000001 00100000 01100010 01101111 01100100 01111001"
+}

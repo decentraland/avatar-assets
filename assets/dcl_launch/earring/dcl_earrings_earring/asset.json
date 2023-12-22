@@ -1,0 +1,35 @@
+{
+  "name": "dcl_earrings_earring",
+  "i18n": {
+    "en": "Decentraland Logo Earrings",
+    "es": "Pendientes de Logo de Decentraland"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "earrings",
+    "launch",
+    "20.02.20",
+    "decentraland"
+   ],
+  "category": "earring",
+  "replaces": [
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "F_Earrings_DCL_Logo.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "M_Earrings_DCL_Logo.glb"}
+        ],
+        "rarity": "rare",
+        "description": ""
+      }

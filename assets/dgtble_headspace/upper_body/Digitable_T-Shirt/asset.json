@@ -1,0 +1,33 @@
+{
+  "name": "dgtble_tshirt_message_upper_body",
+  "i18n": {
+    "en": "The Headspace The Messanger T-Shirt",
+    "es": "The Headspace Camiseta con The Messenger. "
+  },
+  "tags": [
+    "headspace",
+   "sacred",
+   "geometry",
+   "grokko",
+   "festival",
+   "digitible"
+   ],
+  "category": "upper_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "T-Shirt_B01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "The Messenger is a licensed artwork from Grokko whose hand-drawn works are laid with the intention of stirring memories within our subconscious, to return us to the origins of humanity and discover our purpose going forward. It is through the connection to our timeless selves that our dreams can materialize." 
+}

@@ -1,0 +1,40 @@
+{
+  "name": "cw_cyborg_monocle_eyewearraver",
+  "i18n": {
+    "en": "Cyborg Monocle (It's over 9000!!!)",
+    "es": "Monóculo Cyborg (¡Es más de 9000!)"
+  },
+
+  "tags": [
+    "accesories",
+    "exclusive",
+    "eyewear",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "eyewear",
+  "replaces": [
+    "mask",
+    "helmet"
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseFemale", 
+      "model": "Eyerwear_Over9000.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseMale", "model": "Eyerwear_Over9000.glb"}
+        ],
+        "rarity": "mythic",
+        "description": "It's over 9000!!!"
+      }

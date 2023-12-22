@@ -1,0 +1,33 @@
+{
+  "name": "dgtble_shorts_folife_lower_body",
+  "i18n": {
+    "en": "The Headspace Flower of Life Shorts",
+    "es": "The Headspace Pantalones Cortos con Flor de la Vida"
+  },
+  "tags": [
+    "headspace",
+   "sacred",
+   "geometry",
+   "real",
+   "festival",
+   "digitible"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Shorts_B01.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+}
+  ],
+  "rarity": "legendary",
+  "description": "We are the divine, and together we make a web of divine life on this planet and beyond that is infinite and unbreakable."
+}

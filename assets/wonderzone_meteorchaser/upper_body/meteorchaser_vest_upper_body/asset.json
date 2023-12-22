@@ -1,0 +1,45 @@
+{
+  "name": "meteorchaser_vest_upper_body",
+  "i18n": {
+    "en": "Vest of the Meteorchaser",
+    "es": "Chaleco del Meteorchaser"
+  },
+
+  "tags": [
+    "WonderZone",
+    "exclusive", 
+    "decentraland",
+    "mana",
+    "upper_body",
+    "coat",
+    "jacket",
+    "vest",
+    "community",
+    "licensed",
+    "meteorchaser",
+    "meteorite",
+    "meteorchaser"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+
+   ],
+   "hides": [
+  
+   ],
+
+  "main": [
+    {
+      "type": "BaseMale", 
+      "model": "M_Upper_body_vest_of_the_meteorchaser.glb", 
+      "overrideReplaces": [
+         ],
+         "overrideHides": [
+         ]
+      },
+      {"type": "BaseFemale", "model": "F_Upper_body_vest_of_the_meteorchaser.glb"}
+        ],
+        "rarity": "legendary",
+        "description": "Crafting reward from WonderZone. Gives the wearer a bonus while mining meteorites. Created by Chestnutbruze"
+      }

@@ -1,0 +1,37 @@
+{
+  "name": "mana_hoodie_upper_body",
+  "i18n": {
+    "en": "MANA Hoodie",
+    "es": "Hoodie de MANA"
+  },
+  "tags": [
+    "hoodie",
+    "exclusive",
+    "launch",
+    "decentraland",
+    "20.02.20",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MANA_Hoddie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MANA_Hoddie.glb"}
+  ],
+  "rarity": "rare",
+  "description": ""
+}

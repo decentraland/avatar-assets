@@ -1,0 +1,35 @@
+{
+  "name": "hwn_2020_cult_supreme_feet",
+  "i18n": {
+    "en": "Evil Cult Supreme Boots - Halloween 2020",
+    "es": "Botas de Supremo de Secta Demoníaca - Halloween 2020"
+  },
+  "tags": [
+    "feet",
+    "cult",
+    "halloween",
+    "supreme",
+    "boots",
+    "decentraland",
+    "2020"
+   ],
+  "category": "feet",
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "HWN_2020_Feet_Cult_Supreme.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "HWN_2020_Feet_Cult_Supreme.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+}

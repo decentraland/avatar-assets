@@ -1,0 +1,35 @@
+{
+  "name": "binance_us_upper_body",
+  "i18n": {
+    "en": "Binance US Hoodie",
+    "es": "Hoodie de Binance US"
+  },
+  "tags": [
+    "hoodie",
+    "binance",
+    "US",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_BinanceUS_Hoodie.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_BinanceUS_Hoodie.glb"}
+  ],
+  "rarity": "uncommon",
+  "description": "Binance US Hoodie"
+}

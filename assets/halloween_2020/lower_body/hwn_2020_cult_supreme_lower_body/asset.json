@@ -1,0 +1,36 @@
+{
+    "name": "hwn_2020_cult_supreme_lower_body",
+    "i18n": {
+      "en": "Pants of Supreme of Evil Cult - Halloween 2020",
+      "es": "Pantalones de Supremo de Secta Demoníaca - Halloween 2020"
+    },
+    "tags": [
+      "supreme",
+      "halloween",
+      "2020",
+      "decentraland",
+      "cult"
+
+     ],
+    "category": "lower_body",
+    "replaces": [
+    
+  
+     ],
+     "hides": [
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_lBody_Cult_Supreme_Suit.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_HWN_2020_lBody_Cult_Supreme_Suit.glb"}
+    ],
+    "rarity": "mythic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+  }

@@ -1,0 +1,40 @@
+{
+  "name": "cw_native_american_tiara",
+  "i18n": {
+    "en": "Native American Hat",
+    "es": "Sombrero Mexicano de Espuma"
+  },
+  "tags": [
+    "tiara",
+    "accesories",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "tiara",
+  "replaces": [
+    "helmet",
+    "hat",
+    "top_head"
+   ],
+   "hides": [
+    
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Tiara_NativeAmericanHeadddress.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Tiara_NativeAmericanHeadddress.glb"}
+  ],
+  "rarity": "mythic",
+  "description": ""
+}

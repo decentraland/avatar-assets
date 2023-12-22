@@ -1,0 +1,27 @@
+{
+  "name": "bride_of_frankie_feet",
+  "i18n": {
+    "en": "Bride of Frankie Shoes",
+    "es": "Zapatos de la  Novia de Frankie"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_BrideOfFrankie.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Lurch around slowly in comfort"
+}

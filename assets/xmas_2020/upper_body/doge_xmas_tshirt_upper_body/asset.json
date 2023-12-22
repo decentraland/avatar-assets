@@ -1,0 +1,42 @@
+{
+  "name": "doge_xmas_tshirt_upper_body",
+  "i18n": {
+    "en": "Dogecoin T Shirt",
+    "es": "Remera de Dogecoin"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "xmas",
+    "2020",
+    "christmas",
+    "dogecoin"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "m_doge_xmas_tshirt_upper_body.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{
+  "type": "BaseFemale", 
+  "model": "f_doge_xmas_tshirt_upper_body.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  }
+  ],
+  "rarity": "legendary",
+  "description": "A festive gift from Save Xmas 2020"
+}

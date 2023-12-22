@@ -1,0 +1,36 @@
+{
+  "name": "cat_mask",
+  "i18n": {
+    "en": "Cat Mask",
+    "es": "Máscara de Gato"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_Cat.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_Cat.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Do cats have eyebrows? They do now!"
+}

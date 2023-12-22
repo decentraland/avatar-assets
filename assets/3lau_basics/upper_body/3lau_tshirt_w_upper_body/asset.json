@@ -1,0 +1,38 @@
+{
+  "name": "3lau_tshirt_w_upper_body",
+  "i18n": {
+    "en": "3LAU White Triangle Tee",
+    "es": "Camiseta con Triangulo Blanco de 3LAU"
+  },
+  "tags": [
+    "T-Shirt",
+    "3LAU",
+    "tshirt",
+    "shirt",
+    "tee",
+    "triangle",
+    "decentraland",
+    "upper",
+    "body"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_3LAU_Tshirt_White.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_3LAU_Tshirt_White.glb"}
+  ],
+  "rarity": "epic",
+  "description": "3LAU's signature triangle on a black and white tee."
+}

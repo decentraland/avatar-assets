@@ -1,0 +1,19 @@
+{
+  "name": "matrix_sunglasses",
+  "i18n": {
+    "en": "Matrix Sunglasses",
+    "es": "Gafas de Matrix"
+  },
+  "tags": [
+    "accesories",
+    "men",
+    "man",
+    "woman",
+    "women"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyewear_MatrixSunGlasses.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Eyewear_MatrixSunGlasses.glb"}
+  ]
+}

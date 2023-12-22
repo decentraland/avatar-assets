@@ -1,0 +1,28 @@
+{
+  "name": "sad_clown_upper_body",
+  "i18n": {
+    "en": "Sad Clown Suit",
+    "es": "Traje de Payaso Triste"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "halloween",
+    "upper_body",
+    "suit"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_Clown.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "epic",
+  "description": "Little known fact: blue, red and gold are the saddest colours"
+}

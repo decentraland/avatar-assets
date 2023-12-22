@@ -1,0 +1,23 @@
+{
+  "name": "dcl_tshirt_upper_body",
+  "i18n": {
+    "en": "Decentraland T-Shirt",
+    "es": "Remera de Decentraland"
+  },
+  "tags": ["tshirt", "exclusive", "launch", "decentraland", "20.02.20", "upper", "body"],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_DCL_Logo_TShirt.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "F_uBody_DCL_Logo_TShirt.glb", "overrideReplaces": [], "overrideHides": [] }
+  ],
+  "rarity": "uncommon",
+  "description": ""
+}

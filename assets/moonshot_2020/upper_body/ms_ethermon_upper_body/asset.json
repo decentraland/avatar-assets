@@ -1,0 +1,36 @@
+{
+  "name": "ms_ethermon_upper_body",
+  "i18n": {
+    "en": "Ethermon Soccer T-Shirt",
+    "es": "Remera de fútbol de Ethermon"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "ethermon",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_Ethermon.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_Ethermon.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Ethermon Soccer T-Shirt - Moonshot Tournament 2020"
+}

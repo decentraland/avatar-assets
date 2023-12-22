@@ -1,0 +1,28 @@
+{
+  "name": "theater_mask",
+  "i18n": {
+    "en": "Theater",
+    "es": "Máscara de Teatro"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "male",
+    "man",
+    "female",
+    "woman"
+  ],
+  "category": "mask",
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "TheaterMask.glb"
+    },
+    {
+      "type": "BaseFemale",
+      "model": "TheaterMask.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

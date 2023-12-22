@@ -1,0 +1,27 @@
+{
+  "name": "spy_suit_feet",
+  "i18n": {
+    "en": "Spy Suit Shoes",
+    "es": "Zapatos de Espía"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "shoes",
+    "feet",
+    "halloween"
+  ],
+  "category": "feet",
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseFemale",
+      "model": "F_Feet_Spy.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Extra quiet, extra light and extra grip"
+}

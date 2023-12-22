@@ -1,0 +1,32 @@
+{
+  "name": "avatar-assets",
+  "version": "2.0.0",
+  "description": "Decentraland basic set of avatar assets",
+  "main": "index.js",
+  "repository": "https://github.com/decentraland/avatar-assets",
+  "author": "Decentraland",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "deploy": "npx ts-node -T src/index.ts",
+    "test": "jest --forceExit --detectOpenHandles --verbose"
+  },
+  "devDependencies": {
+    "@dcl/eslint-config": "^1.1.13",
+    "@types/argparse": "^2.0.14",
+    "@types/node": "^20.10.4",
+    "@well-known-components/test-helpers": "^1.5.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@dcl/crypto": "^3.4.5",
+    "@dcl/schemas": "^9.9.0",
+    "@dcl/urn-resolver": "^3.1.0",
+    "@well-known-components/fetch-component": "^2.0.2",
+    "@well-known-components/logger": "^3.1.3",
+    "argparse": "^2.0.1",
+    "dcl-catalyst-client": "^21.5.5",
+    "eth-connect": "^6.2.2",
+    "gltf-pipeline": "^4.1.0"
+  }
+}

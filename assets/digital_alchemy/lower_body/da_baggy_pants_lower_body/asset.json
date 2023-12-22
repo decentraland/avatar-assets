@@ -1,0 +1,38 @@
+{
+  "name": "da_baggy_pants_lower_body",
+  "i18n": {
+    "en": "Digital Alchemy Baggy Pants",
+    "es": "Pantalón Baggy Alquimia Digital"
+  },
+  "tags": [
+    "accesories",
+    "lower_body",
+    "exclusive",
+    "alchemy",
+    "digital",
+    "decentraland",
+    "community",
+    "wearables",
+	"pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+   ],
+   "hides": [		
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_lBody_daBPants.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", 
+"model": "F_lBody_daBPants.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "Digital Alchemy Collection | Baggy pants | Thirsty for adventures? Willing to do some flips on the way? These pants are what you are looking for."
+}

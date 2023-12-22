@@ -1,0 +1,36 @@
+{
+  "name": "trippy_skull_mask",
+  "i18n": {
+    "en": "Trippy Skull",
+    "es": "Calavera de Lirio"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm03.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm03.glb"
+    }
+  ],
+  "rarity": "mythic",
+  "description": "Just in case the other Day of the Dead masks weren’t trippy enough for you"
+}

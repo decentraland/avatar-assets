@@ -1,0 +1,37 @@
+{
+  "name": "mch_enemy_upper_body",
+  "i18n": {
+    "en": "MCH Rare Enemy T-Shirt",
+    "es": "Remera Enemigo Raro de MCH"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "rare enemy",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_RareEnemy.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_RareEnemy.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

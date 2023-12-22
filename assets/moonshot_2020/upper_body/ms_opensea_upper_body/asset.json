@@ -1,0 +1,34 @@
+{
+  "name": "ms_opensea_upper_body",
+  "i18n": {
+    "en": "OpenSea Soccer T-Shirt",
+    "es": "Remera de fútbol de OpenSea"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "opensea",
+    "upper",
+    "body",
+    "mana"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [],
+  "hides": [],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "M_uBody_OpenSea.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "F_uBody_OpenSea.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "OpenSea Soccer T-Shirt - Moonshot Tournament 2020"
+}

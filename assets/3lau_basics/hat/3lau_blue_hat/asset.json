@@ -1,0 +1,36 @@
+{
+  "name": "3lau_blue_hat",
+  "i18n": {
+    "en": "3LAU Blue Triangle Cap",
+    "es": "Gorra con Triangulo Azul de 3LAU"
+  },
+  "tags": [
+    "3LAU",
+    "cap",
+    "triangle",
+    "hat",
+    "decentraland"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_3LAU_Hat_Blue.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_3LAU_Hat_Blue.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "3LAU's signature triangle on a black and blue cap."
+}

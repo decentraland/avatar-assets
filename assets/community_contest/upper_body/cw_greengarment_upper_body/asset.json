@@ -1,0 +1,37 @@
+{
+  "name": "cw_greengarment_upper_body",
+  "i18n": {
+    "en": "Green Pullover of Garment of Gratitude",
+    "es": "Pullover Verde de Prendas de Gratitud"
+  },
+  "tags": [
+    "accesories",
+    "upper_body",
+    "exclusive",
+    "launch",
+    "20.02.20",
+    "decentraland",
+    "community",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_GreenGarment.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_GreenGarment.glb"}
+  ],
+  "rarity": "legendary",
+  "description": ""
+}

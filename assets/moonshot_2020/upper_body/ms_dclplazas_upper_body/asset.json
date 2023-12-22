@@ -1,0 +1,36 @@
+{
+  "name": "ms_dclplazas_upper_body",
+  "i18n": {
+    "en": "DCL Plazas Soccer T-Shirt",
+    "es": "Remera de fútbol de DCL Plazas"
+  },
+  "tags": [
+    "tshirt",
+    "moonshot",
+    "soccer",
+    "dcl plazas",
+    "upper",
+    "body",
+    "mana"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_DCLPlazas.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_DCLPlazas.glb"}
+  ],
+  "rarity": "legendary",
+  "description": "DCL Plazas Soccer T-Shirt - Moonshot Tournament 2020"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "meme_pants_pineapple",
+  "i18n": {
+    "en": "Fresh Pineapple Pants",
+    "es": "Frescos Pantalones de Piña"
+  },
+  "tags": [
+    "meme",
+	"pineapple",
+	"suit",
+	"wearable",
+	"pants"
+   ],
+  "category": "lower_body",
+  "replaces": [
+    ""
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "lBody_PineappleSuit.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "lBody_PineappleSuit.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Fresh Pineapple Pants from the $Meme collection - Don't wear this"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "hwn_2020_ghostblaster_tiara",
+  "i18n": {
+    "en": "GhostBlaster NightVision Device",
+    "es": "Dispositivo de Vision Noctura de Ghostblaster"
+  },
+
+  "tags": [
+    "ghostblaster",
+    "halloween",
+    "2020",
+    "decentraland",
+    "cult"
+   ],
+  "category": "helmet",
+  "replaces": [
+    "tiara",
+    "hat",
+    "top_head"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+  "type": "BaseMale", 
+  "model": "M_HWN_2020_NightVision_Tiara.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "M_HWN_2020_NightVision_Tiara.glb"}
+    ],
+    "rarity": "epic",
+    "description": "Exclusive Halloween 2020 Collection. Awarded as Treasure Hunt prize."
+}

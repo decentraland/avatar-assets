@@ -1,0 +1,19 @@
+{
+  "name": "retro_sunglasses",
+  "i18n": {
+    "en": "Retro Sunglasses",
+    "es": "Gafas Retro"
+  },
+  "tags": [
+    "accesories",
+    "male",
+    "man",
+    "female",
+    "Woman"
+   ],
+  "category": "eye_wear",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_RetroGlasses.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_RetroGlasses.glb"}
+  ]
+}

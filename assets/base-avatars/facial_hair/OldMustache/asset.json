@@ -1,0 +1,16 @@
+{
+  "name": "old_mustache_beard",
+  "i18n": {
+    "en": "Chevron",
+    "es": "Chevron"
+  },
+  "tags": [
+    "face",
+    "facial_hair"
+   ],
+  "category": "facial_hair",
+  "main": [
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_OldMoustache.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_FacialHair_OldMoustache.glb"}
+  ]
+}

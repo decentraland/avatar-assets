@@ -1,0 +1,38 @@
+{
+  "name": "pm_dreamverse_eminence_boots",
+  "i18n": {
+    "en": "Ethereal Dreamer Boots",
+    "es": "Botas de Soñador Etéreas"
+  },
+  "tags": [
+    "Feet",
+	"boots",
+	"shoes",
+	"mind",
+	"wearable",
+  "dreamverse",
+  "eminence",
+	"polygonal"
+   ],
+  "category": "feet",
+  "replaces": [
+    "feet"
+   ],
+   "hides": [
+    ""
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "Feet_BootsDreamverseEminenceCollection_PM.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "Feet_BootsDreamverseEminenceCollection_PM.glb"}
+  ],
+  "rarity": "mythic",
+  "description": "Expanding the Polygonal Mind Collection adding now the Dreamverse Eminence set"
+}

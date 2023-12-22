@@ -1,0 +1,33 @@
+{
+    "name": "china_flying_clothes_female",
+    "i18n": {
+        "en": "China flying clothes",
+        "es": "Vestimenta Voladora y Colorida China"
+    },
+    "tags": [
+        "china",
+        "upper_body",
+        "exclusive",
+        "clothes",
+        "decentraland",
+        "community",
+        "wearables",
+        "flying"
+    ],
+    "category": "upper_body",
+    "removesDefaultHiding": ["hands"],
+    "replaces": [
+        "upper_body"
+    ],
+    "hides": [
+    ],
+
+    "main": [
+        {
+            "type": "BaseFemale",
+            "model": "F_clothes.glb"
+        }
+    ],
+    "rarity": "legendary",
+    "description": "Chinese Flying clothing is the expression of yearning for the sky and space, which is the most talented creation of Chinese artists."
+}

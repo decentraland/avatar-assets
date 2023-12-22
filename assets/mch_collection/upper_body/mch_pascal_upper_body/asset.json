@@ -1,0 +1,37 @@
+{
+  "name": "mch_pascal_upper_body",
+  "i18n": {
+    "en": "Pascal T-Shirt",
+    "es": "Remera de Pascal"
+  },
+  "tags": [
+    "my",
+    "crypto",
+    "exclusive",
+    "heros",
+    "MCH",
+    "decentraland",
+    "Pascal",
+    "wearables"
+   ],
+  "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
+  "replaces": [
+   ],
+   "hides": [
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_uBody_MCH_Pascal.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_uBody_MCH_Pascal.glb"}
+  ],
+  "rarity": "epic",
+  "description": ""
+}

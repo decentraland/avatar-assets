@@ -1,0 +1,36 @@
+{
+  "name": "floral_skull_mask",
+  "i18n": {
+    "en": "Floral Skull",
+    "es": "Calavera Floral"
+  },
+  "tags": [
+    "accesories",
+    "exclusive",
+    "mask"
+  ],
+  "category": "mask",
+  "replaces": [
+    "helmet",
+    "tiara",
+    "hat",
+    "eyewear"
+  ],
+  "hides": [
+    "facial_hair"
+  ],
+  "main": [
+    {
+      "type": "BaseMale",
+      "model": "Mask_ddm01.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    {
+      "type": "BaseFemale",
+      "model": "Mask_ddm01.glb"
+    }
+  ],
+  "rarity": "legendary",
+  "description": "Ornate Day of the Dead mask with floral pattern"
+}

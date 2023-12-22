@@ -1,0 +1,36 @@
+{
+    "name": "ethermon_upper_body",
+    "i18n": {
+      "en": "Ethermon Jacket",
+      "es": "Chaqueta Ethermon"
+    },
+    "tags": [
+      "jacket",
+      "top",
+      "ethermon",
+      "trainer"
+     ],
+    "category": "upper_body",
+    "removesDefaultHiding": ["hands"],
+    "replaces": [
+      "upper_body"
+  
+     ],
+     "hides": [
+    
+     ],
+  
+    "main": [
+  {
+  "type": "BaseMale", 
+  "model": "M_ethermon_jacket.glb", 
+  "overrideReplaces": [
+     ],
+     "overrideHides": [
+     ]
+  },
+  {"type": "BaseFemale", "model": "F_ethermon_jacket.glb"}
+    ],
+    "rarity": "legendary",
+    "description": "Each piece of the Ethermon Legendary Set provides its own unique buff when battling & capturing Mons. Wearing 4 pieces at once will grant the owner special access."
+  }

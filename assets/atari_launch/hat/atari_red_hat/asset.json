@@ -1,0 +1,38 @@
+{
+  "name": "atari_red_hat",
+  "i18n": {
+    "en": "Red Atari Cap",
+    "es": "Gorra Atari Roja"
+  },
+  "tags": [
+    "atari",
+    "cap",
+    "gamer",
+    "hat",
+    "decentraland",
+    "retro",
+    "red"
+   ],
+  "category": "hat",
+  "replaces": [
+    "helmet"
+
+   ],
+   "hides": [
+    "hair"
+   ],
+
+  "main": [
+{
+"type": "BaseMale", 
+"model": "M_Hat_Atari_Red.glb", 
+"overrideReplaces": [
+   ],
+   "overrideHides": [
+   ]
+},
+{"type": "BaseFemale", "model": "F_Hat_Atari_Red.glb"}
+  ],
+  "rarity": "epic",
+  "description": "Atari's signature logo on a red cap."
+}
