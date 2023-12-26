@@ -9,7 +9,8 @@
   "private": true,
   "scripts": {
     "deploy": "npx ts-node -T src/index.ts",
-    "test": "jest --forceExit --detectOpenHandles --verbose"
+    "test": "jest --forceExit --detectOpenHandles --verbose",
+    "prepare": "npx ts-node -T src/scripts/prepare.ts"
   },
   "devDependencies": {
     "@dcl/eslint-config": "^1.1.13",
