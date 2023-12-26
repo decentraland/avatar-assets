@@ -37,3 +37,8 @@ export type Identity = {
   privateKey: string
   ethAddress: string
 }
+
+export type BuiltAsset = {
+  metadata: any
+  files: Map<string, Uint8Array>
+}
