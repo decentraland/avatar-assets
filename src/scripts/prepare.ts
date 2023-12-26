@@ -111,7 +111,7 @@ async function main() {
   const wearablesAsArguments = updatedAssets.map((asset) => `--id dcl://${asset.collection}/${asset.name}`)
 
   console.log(
-    `COMMAND - npm run deploy -- --identityFilePath <identity-file> --target <catalyst> ${wearablesAsArguments.join(
+    `COMMAND - yarn run deploy -- --identityFilePath <identity-file> --target ${catalystTarget} ${wearablesAsArguments.join(
       ' '
     )}`
   )

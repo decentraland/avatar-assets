@@ -29,7 +29,9 @@ export type Asset = {
 
 export type Arguments = {
   target: string
-  identityFilePath: string
+  identityFilePath: string | undefined
+  privateKey: string | undefined
+  publicKey: string | undefined
   id: string[]
 }
 
