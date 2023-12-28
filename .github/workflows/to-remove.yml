@@ -28,3 +28,7 @@ jobs:
           DEPLOY_COMMAND=$(cat script_output.txt | grep 'COMMAND -' | sed 's/^.*COMMAND - //' | sed 's/--identityFilePath <identity-file> //')
           echo "DEPLOY_COMMAND=$DEPLOY_COMMAND" >> $GITHUB_ENV
           echo "Deployment command: $DEPLOY_COMMAND "
+
+      # - name: Deploy Assets
+      #   run: |
+      #     eval ${{ env.DEPLOY_COMMAND }} --privateKey ${{ secrets.PRIVATE_KEY }} --publicKey ${{ secrets.PUBLIC_KEY }}
