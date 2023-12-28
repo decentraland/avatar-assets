@@ -2,7 +2,7 @@ import { createLogComponent } from '@well-known-components/logger'
 
 import { getArguments, loadIdentity } from './logic/arguments-parser'
 import { getAssetsToDeploy } from './logic/assets-reader'
-import { Arguments, Asset } from './types'
+import { Arguments, Asset, Identity } from './types'
 import { buildMetadata, getRepresentations } from './logic/metadata-builder'
 import { extractAssetTextures } from './logic/glb-optimizer'
 import { DeploymentBuilder } from 'dcl-catalyst-client'
@@ -19,10 +19,21 @@ async function getLogger() {
   return logger
 }
 
+async function parseIdentity(args: Arguments): Promise<Identity> {
+  if (args.identityFilePath) {
+    return await loadIdentity(args.identityFilePath)
+  } else {
+    return {
+      privateKey: args.privateKey!,
+      ethAddress: args.publicKey!
+    }
+  }
+}
+
 async function main() {
   const logger = await getLogger()
   const args: Arguments = getArguments()
-  const identity = await loadIdentity(args.identityFilePath)
+  const identity = await parseIdentity(args)
 
   const assetsToDeploy: Asset[] = await getAssetsToDeploy(args.id)
   logger.info(

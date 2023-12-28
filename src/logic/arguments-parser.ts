@@ -23,8 +23,16 @@ export async function loadIdentity(identityFilePath: string): Promise<Identity> 
 export function getArguments(): Arguments {
   const parser = new ArgumentParser({ add_help: true })
   parser.add_argument('--identityFilePath', {
-    required: true,
+    required: false,
     help: 'The path to the json file where the address and private key are, to use for deployment'
+  })
+  parser.add_argument('--privateKey', {
+    required: false,
+    help: 'The private key to use for deployment'
+  })
+  parser.add_argument('--publicKey', {
+    required: false,
+    help: 'The public key to use for deployment'
   })
   parser.add_argument('--target', {
     required: true,
@@ -38,7 +46,11 @@ export function getArguments(): Arguments {
 
   const args = parser.parse_args()
 
-  if (!fs.existsSync(args.identityFilePath)) {
+  if (!(args.identityFilePath ? !args.privateKey && !args.publicKey : args.privateKey && args.publicKey)) {
+    throw new Error('Either identityFilePath or both privateKey and publicKey must be specified, but not a mix.')
+  }
+
+  if (args.identityFilePath && !fs.existsSync(args.identityFilePath)) {
     throw new Error('Identity file does not exist')
   }
 
@@ -49,6 +61,8 @@ export function getArguments(): Arguments {
   return {
     target: args.target.includes('localhost') ? args.target : `${args.target}/content`,
     identityFilePath: args.identityFilePath,
+    publicKey: args.publicKey,
+    privateKey: args.privateKey,
     id: args.id
   }
 }
