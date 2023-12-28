@@ -10,7 +10,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          ref: test/modify-asset
+
+      - name: Fetch Master Branch
+        run: |
+          git fetch origin master:master
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -24,7 +28,7 @@ jobs:
 
       - name: Prepare Deployment
         run: |
-          yarn run prepare "feat/cicd-to-zone" https://peer.decentraland.zone > script_output.txt
+          yarn run prepare "test/modify-asset" https://peer.decentraland.zone > script_output.txt
           DEPLOY_COMMAND=$(cat script_output.txt | grep 'COMMAND -' | sed 's/^.*COMMAND - //' | sed 's/--identityFilePath <identity-file> //')
           echo "DEPLOY_COMMAND=$DEPLOY_COMMAND" >> $GITHUB_ENV
           echo "Deployment command: $DEPLOY_COMMAND "
