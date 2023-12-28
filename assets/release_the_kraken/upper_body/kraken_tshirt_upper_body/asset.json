@@ -14,7 +14,7 @@
     "body"
    ],
   "category": "upper_body",
-  "removesDefaultHiding": ["hands"],
+  "removesDefaultHiding": [],
   "replaces": [
    ],
    "hides": [
