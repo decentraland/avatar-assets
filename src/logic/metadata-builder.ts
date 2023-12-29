@@ -21,22 +21,35 @@ const defaultHidingsByCategory: { [key: string]: string[] } = {
   helmet: ['eyewear', 'earrings', 'hair', 'facial_hair', 'head']
 }
 
-// TODO: refactor this function, is it needed?
+/**
+ * Retrieves information from a legacy ID.
+ * Parses the legacy ID to extract URN, collection address, and collection name.
+ *
+ * @param {string} legacyId - The legacy ID to be parsed.
+ * @returns {Promise<{ urn: string; collectionAddress?: string; collectionName?: string }>}
+ *          An object containing the parsed URN, collection address, and collection name.
+ * @throws {Error} If the legacy ID cannot be parsed or is of an unsupported type.
+ */
 async function getInfoFromLegacyId(
   legacyId: string
 ): Promise<{ urn: string; collectionAddress?: string; collectionName?: string }> {
   const asset = await parseUrn(legacyId)
   if (!asset) {
-    throw new Error(`Failed to parse the following id '${legacyId}'`)
+    throw new Error(`Failed to parse the legacy ID: '${legacyId}'`)
   }
+
+  // Initialize as undefined for cases where these are not applicable
   let collectionAddress: string | undefined
   let collectionName: string | undefined
+
+  // Handle different asset types
   if (asset.type === 'blockchain-collection-v1-asset') {
-    collectionAddress = asset.contractAddress ?? undefined
-    collectionName = asset.collectionName ?? undefined
+    collectionAddress = asset.contractAddress || undefined
+    collectionName = asset.collectionName || undefined
   } else if (asset.type !== 'off-chain') {
-    throw new Error(`Failed to parse the legacy id '${legacyId}'`)
+    throw new Error(`Unsupported asset type for legacy ID: '${legacyId}'`)
   }
+
   return {
     urn: asset.uri.toString(),
     collectionAddress,

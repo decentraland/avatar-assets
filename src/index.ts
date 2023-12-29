@@ -11,6 +11,7 @@ import { DeploymentPreparationData } from 'dcl-catalyst-client/dist/client/types
 import { deploy } from './logic/deployer'
 import path from 'path'
 import fs from 'fs'
+import { buildAsset } from './logic/asset-builder'
 
 async function getLogger() {
   const logs = await createLogComponent({})
@@ -30,24 +31,13 @@ async function main() {
 
   for (const asset of assetsToDeploy) {
     logger.info(`Deploying asset ${asset.name} from collection ${asset.collection}`)
-    const entityFiles: Map<string, Uint8Array> = new Map<string, Uint8Array>()
-
-    const extractedTextures = await extractAssetTextures(asset)
-
-    extractedTextures.forEach((extractedTexture) => {
-      entityFiles.set(extractedTexture.fileName, new Uint8Array(extractedTexture.buffer))
-    })
-
-    entityFiles.set('thumbnail.png', new Uint8Array(fs.readFileSync(path.join(asset.directoryPath, 'thumbnail.png'))))
-
-    const metadata = await buildMetadata(asset)
-    metadata.data.representations = getRepresentations(asset, extractedTextures)
+    const { metadata, files } = await buildAsset(asset)
 
     logger.info(`Asset prepared: `, { metadata })
     const deploymentPreparationData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
       type: EntityType.WEARABLE,
       pointers: [metadata.id],
-      files: entityFiles,
+      files,
       metadata: { ...metadata }
     })
 
