@@ -40,7 +40,7 @@ jobs:
     - name: Execute script
       if: env.ASSETS_CHANGED == 'true'
       run: |
-        yarn run prepare "${{ github.head_ref }}" https://peer.decentraland.zone > script_output.txt
+        yarn run prepare "${{ github.head_ref }}" https://peer-testing.decentraland.org > script_output.txt
         echo "Script finished"
         echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
         grep 'URL [0-9]*:' script_output.txt >> $GITHUB_ENV
