@@ -9,7 +9,6 @@
     "male",
     "man"
    ],
-  "category": "body_shape",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "BaseMale.glb"}
   ],
