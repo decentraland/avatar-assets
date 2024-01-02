@@ -11,8 +11,7 @@
     "female",
     "woman"
    ],
-  "category": "feet",
-  "main": [
+   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "CrocsSocks.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "CrocsSocks.glb"}
   ]
