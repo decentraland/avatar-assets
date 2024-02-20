@@ -15,6 +15,7 @@ function getUpdatedDirectoriesFrom(branch: string): string[] {
   const fileNames = diffOutput.split('\n')
   const directories = new Set<string>()
 
+  console.log(fileNames)
   for (const fileName of fileNames) {
     const directory = fileName.substring(0, fileName.lastIndexOf('/'))
     directories.add(directory)
@@ -28,20 +29,16 @@ function containsAssetFile(directoryPath: string): boolean {
   return fs.existsSync(assetJsonPath)
 }
 
-function loadUpdatedAssetsFrom(branch: string) {
-  const updatedDirectories = getUpdatedDirectoriesFrom(branch)
-    .map((updatedDirectory) => path.join(rootDirectory, updatedDirectory))
-    .filter((fullUpdatedDirectory) => containsAssetFile(fullUpdatedDirectory))
-  return loadAssets(updatedDirectories)
-}
-
 async function validateAssets(assets: Asset[]): Promise<any[]> {
   const errors: any[] = []
   for (const asset of assets) {
     const builtAsset = await buildAsset(asset)
     const validationResult = validate(builtAsset.metadata)
     if (!!validationResult.length) {
-      errors.push({ asset: `${asset.collection}/${asset.name}`, validationResult })
+      errors.push({
+        asset: `${asset.collection}/${asset.name}`,
+        validationResult
+      })
       console.log(
         `VALIDATION_ERROR - ${asset.collection}/${asset.name} with ${JSON.stringify(
           validationResult.map((result) => result!.message).join(' ')
@@ -99,7 +96,13 @@ async function fetchCollections(): Promise<{
 async function main() {
   const branchName = process.argv[2] ?? ''
   const catalystTarget = process.argv[3] ?? '<CATALYST>'
-  const updatedAssets: Asset[] = loadUpdatedAssetsFrom(branchName)
+
+  const updatedDirectories = getUpdatedDirectoriesFrom(branchName)
+    .map((updatedDirectory) => path.join(rootDirectory, updatedDirectory))
+    .filter((fullUpdatedDirectory) => containsAssetFile(fullUpdatedDirectory))
+
+  const updatedAssets: Asset[] = loadAssets(updatedDirectories)
+
   const errors = await validateAssets(updatedAssets)
 
   if (errors.length) {

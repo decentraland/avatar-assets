@@ -1,0 +1,79 @@
+name: PR Emotes Check
+
+on:
+  pull_request:
+
+jobs:
+  check-emotes:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      run: |
+        yarn
+        yarn global add ts-node
+
+    - name: Check for Changes in /emotes
+      id: check-emotes
+      run: |
+        CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes)
+        if [ -z "$CHANGED_FILES" ]; then
+          echo "::set-output name=emotes_changed::false"
+          echo "::set-output name=comment_body::No changes in /emotes"
+        else
+          echo "Changes detected in /emotes"
+          # Replace newline characters with '|||'
+          CHANGED_FILES="${CHANGED_FILES//$'\n'/'|||'}"
+          echo "COMMENT=**Updated emotes:**||| $CHANGED_FILES" >> $GITHUB_ENV
+          echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
+        fi
+
+    - name: Execute script
+      if: env.EMOTES_CHANGED == 'true'
+      run: |
+        yarn run emotes --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname) > script_output.txt
+        echo "Script finished"
+        echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
+        grep 'URL [0-9]*:' script_output.txt >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+        echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
+        grep 'VALIDATION_ERROR -' script_output.txt >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
+
+    - name: Prepare comment
+      run: |
+        FORMATTED_COMMENT=$(echo "${{ env.COMMENT }}" | sed 's/|||/<br>/g')
+        echo "FORMATTED_COMMENT=$FORMATTED_COMMENT" >> $GITHUB_ENV
+
+    - name: Find Comment
+      uses: peter-evans/find-comment@v2
+      id: fc
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: Emotes Change Log
+
+    - name: Create or update comment
+      uses: peter-evans/create-or-update-comment@v3
+      with:
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          ## Emotes Change Log
+          ${{ env.FORMATTED_COMMENT }}
+
+          ### Link for testing purposes
+          ${{ env.SCRIPT_OUTPUT }}
+
+          ### Validation errors
+          ${{ env.VALIDATION_ERRORS }}
+        edit-mode: replace

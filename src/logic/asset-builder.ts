@@ -7,7 +7,7 @@ import { buildMetadata, getRepresentations } from './metadata-builder'
 
 export async function buildAsset(asset: Asset): Promise<BuiltAsset> {
   const files: Map<string, Uint8Array> = new Map<string, Uint8Array>()
-  const extractedTextures = await extractAssetTextures(asset)
+  const extractedTextures = await extractAssetTextures(asset.glbFilesPaths)
   extractedTextures.forEach((extractedTexture) => {
     files.set(extractedTexture.fileName, new Uint8Array(extractedTexture.buffer))
   })

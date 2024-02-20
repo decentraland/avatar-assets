@@ -2,7 +2,6 @@
 const processGlb: any = require('gltf-pipeline').processGlb
 import { basename, dirname } from 'path'
 import { readFileSync } from 'fs'
-import { Asset } from '../types'
 
 async function extractGLBTextures(originalGLBFilePath: string): Promise<{ fileName: string; buffer: Buffer }[]> {
   const options = {
@@ -33,12 +32,11 @@ async function extractGLBTextures(originalGLBFilePath: string): Promise<{ fileNa
  * Extract all textures from the asset's GLB files
  *
  * @export
- * @param {Asset} asset
  * @return {*}  {Promise<{ fileName: string; buffer: Buffer }[]>}
  */
-export async function extractAssetTextures(asset: Asset): Promise<{ fileName: string; buffer: Buffer }[]> {
+export async function extractAssetTextures(glbFilesPaths: string[]): Promise<{ fileName: string; buffer: Buffer }[]> {
   const extractedTextures = (
-    await Promise.all(asset.glbFilesPaths.map(async (glbFilePath) => await extractGLBTextures(glbFilePath)))
+    await Promise.all(glbFilesPaths.map((glbFilePath) => extractGLBTextures(glbFilePath)))
   ).flat()
 
   // remove duplicated extractedTextures with the same file name
