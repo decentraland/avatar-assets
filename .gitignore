@@ -42,3 +42,4 @@ error.txt
 *.js
 
 validation-errors.json
+output
