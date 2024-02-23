@@ -31,7 +31,11 @@ jobs:
           echo "::set-output name=comment_body::No changes in /emotes"
         else
           echo "Changes detected in /emotes"
-          echo "CHANGED_FILES_MESSAGE=$(echo $CHANGED_FILES | sed 's/ /\n/g')" >> $GITHUB_ENV
+
+          echo "CHANGED_FILES_MESSAGE<<EOF" >> $GITHUB_ENV
+          echo "echo $CHANGED_FILES | sed 's/ /\n/g' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
           echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
         fi
 
