@@ -44,6 +44,7 @@ jobs:
         echo 1
         cat output >> $GITHUB_ENV
         echo 2
+        echo $GITHUB_ENV
         # echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
         # grep 'URL [0-9]*:' script_output.txt >> $GITHUB_ENV
         # echo "EOF" >> $GITHUB_ENV
