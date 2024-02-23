@@ -34,7 +34,6 @@ jobs:
 
           echo "CHANGED_FILES_MESSAGE<<EOF" >> $GITHUB_ENV
           echo $CHANGED_FILES | sed 's/ /\n/g' >> $GITHUB_ENV
-          echo -e "\n" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
           echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
