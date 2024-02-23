@@ -180,12 +180,7 @@ async function main() {
     if (errors.length) {
       fs.writeFileSync('validation_errors.json', JSON.stringify(errors, null, 2))
     }
-    fs.writeFileSync(
-      'output',
-      `COMMAND="yarn emotes --deploy --target ${target} ${args.directories.join(' ')}"
-PREVIEW_URL=${previewUrl}
-      `
-    )
+    fs.writeFileSync('output', `PREVIEW_URL=${previewUrl}`)
   } else {
     console.log(`to deploy: yarn emotes --deploy --target ${target} ${args.directories.join(' ')}`)
   }
