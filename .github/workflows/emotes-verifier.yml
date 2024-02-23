@@ -41,7 +41,7 @@ jobs:
       if: env.EMOTES_CHANGED == 'true'
       run: |
         yarn run emotes --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname) > script_output.txt
-        source .output
+        source output
         echo $HOLA
         echo "Script finished"
         echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
