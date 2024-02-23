@@ -44,8 +44,8 @@ jobs:
         cat output | grep PREVIEW_URL >> $GITHUB_ENV
         if [ -f validation-errors.json ]; then
           echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
-          sed -e '$a\' validation-errors.json >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          cat validation-errors.json >> $GITHUB_ENV
+          echo "--EOF" >> $GITHUB_ENV
         fi
         echo 2
 
