@@ -182,7 +182,7 @@ async function main() {
       'output',
       `VALIDATION_ERRORS=${errors ? 1 : 0}
 COMMAND="yarn emotes --deploy --target ${target} ${args.directories.join(' ')}"
-PREVIEW_URL="${previewUrl.replace('"', '\\"')}"
+PREVIEW_URL=${previewUrl}
       `
     )
   } else {
