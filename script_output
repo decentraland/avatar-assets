@@ -1,6 +1,0 @@
-yarn run v1.22.21
-$ npx ts-node -T src/scripts/emotes.ts --target https://peer-testing.decentraland.org emotes/base-emotes/fistpump/
-VALIDATION_ERROR - none
-COMMAND - yarn emotes --deploy --target https://peer-testing.decentraland.org/content emotes/base-emotes/fistpump/
-URL https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=https://peer-testing.decentraland.org/content&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes
-Done in 1.04s.
