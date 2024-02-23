@@ -44,9 +44,13 @@ jobs:
         source output
         cat output | grep PREVIEW_URL >> $GITHUB_ENV
         cat output | grep COMMAND >> $GITHUB_ENV
-        [ $VALIDATION_ERRORS -eq 1 ] && echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
-        [ $VALIDATION_ERRORS -eq 1 ] && cat validation_errors.json >> $GITHUB_ENV
-        [ $VALIDATION_ERRORS -eq 1 ] && echo "EOF" >> $GITHUB_ENV
+        echo 1
+        if [ $VALIDATION_ERRORS -eq 1 ]; then
+          echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
+          cat validation_errors.json >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+        fi
+        echo 2
 
     - name: Prepare comment
       run: |
