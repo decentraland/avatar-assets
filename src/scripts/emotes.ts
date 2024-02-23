@@ -62,6 +62,13 @@ async function main() {
 
   const args = parser.parse_args()
 
+  let ethAddress = ''
+  let privateKey = ''
+  if (args.deploy) {
+    ethAddress = await config.requireString('ADDRESS')
+    privateKey = await config.requireString('PRIVATE_KEY')
+  }
+
   const target = args.target.includes('localhost') ? args.target : `${args.target}/content`
 
   const contentClient = createContentClient({
@@ -70,9 +77,6 @@ async function main() {
   })
 
   const errors: any[] = []
-
-  let ethAddress: string | undefined = undefined
-  let privateKey: string | undefined = undefined
 
   for (const updatedDirectory of args.directories) {
     const fullpath = path.join(rootDirectory, updatedDirectory)
@@ -133,13 +137,6 @@ async function main() {
 
     if (Emote.validate(metadata)) {
       if (args.deploy) {
-        if (!ethAddress) {
-          ethAddress = await config.requireString('ADDRESS')
-        }
-        if (!privateKey) {
-          privateKey = await config.requireString('PRIVATE_KEY')
-        }
-
         const deploymentData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
           type: EntityType.EMOTE,
           pointers: [metadata.id],
