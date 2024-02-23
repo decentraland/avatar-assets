@@ -43,9 +43,6 @@ async function main() {
 
   const logger = logs.getLogger('avatar-assets')
 
-  const ethAddress = await config.requireString('ADDRESS')
-  const privateKey = await config.requireString('PRIVATE_KEY')
-
   const parser = new ArgumentParser({ add_help: true })
   parser.add_argument('--deploy', {
     required: false,
@@ -73,6 +70,9 @@ async function main() {
   })
 
   const errors: any[] = []
+
+  let ethAddress: string | undefined = undefined
+  let privateKey: string | undefined = undefined
 
   for (const updatedDirectory of args.directories) {
     const fullpath = path.join(rootDirectory, updatedDirectory)
@@ -133,6 +133,13 @@ async function main() {
 
     if (Emote.validate(metadata)) {
       if (args.deploy) {
+        if (!ethAddress) {
+          ethAddress = await config.requireString('ADDRESS')
+        }
+        if (!privateKey) {
+          privateKey = await config.requireString('PRIVATE_KEY')
+        }
+
         const deploymentData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
           type: EntityType.EMOTE,
           pointers: [metadata.id],
