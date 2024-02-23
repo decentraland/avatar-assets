@@ -40,16 +40,22 @@ jobs:
     - name: Execute script
       if: env.EMOTES_CHANGED == 'true'
       run: |
-        yarn run emotes --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname) > script_output.txt
-        source output
-        echo $HOLA
-        echo "Script finished"
-        echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
-        grep 'URL [0-9]*:' script_output.txt >> $GITHUB_ENV
-        echo "EOF" >> $GITHUB_ENV
-        echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
-        grep 'VALIDATION_ERROR -' script_output.txt >> $GITHUB_ENV
-        echo "EOF" >> $GITHUB_ENV
+        yarn run emotes --ci --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname)
+        cat output >> $GITHUB_ENV
+        # echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
+        # grep 'URL [0-9]*:' script_output.txt >> $GITHUB_ENV
+        # echo "EOF" >> $GITHUB_ENV
+        # echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
+        # grep 'VALIDATION_ERROR -' script_output.txt >> $GITHUB_ENV
+        # echo "EOF" >> $GITHUB_ENV
+
+    - name: Upload validation errors
+      id: upload
+      if: env.VALIDATION_ERRORS == '1'
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-errors
+        path: validation_errors.json
 
     - name: Prepare comment
       run: |
@@ -74,8 +80,9 @@ jobs:
           ${{ env.FORMATTED_COMMENT }}
 
           ### Link for testing purposes
-          ${{ env.SCRIPT_OUTPUT }}
+          ${{ env.PREVIEW_URL }}
 
           ### Validation errors
-          ${{ env.VALIDATION_ERRORS }}
+          Validation errors: ${{ steps.upload.outputs.artifact-url }}'
+
         edit-mode: replace

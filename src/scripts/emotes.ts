@@ -49,6 +49,11 @@ async function main() {
     action: 'store_true',
     help: 'If not provided, only prepare the assets'
   })
+  parser.add_argument('--ci', {
+    required: false,
+    action: 'store_true',
+    help: 'Run for CI'
+  })
   parser.add_argument('--target', {
     required: true,
     help: 'The address of the catalyst server where the wearables will be deployed'
@@ -162,25 +167,26 @@ async function main() {
         validationResult: Emote.validate.errors
       })
       console.log(
-        `VALIDATION_ERROR - ${collection}/${name} with ${JSON.stringify(
+        `validation error (${collection}/${name}): ${JSON.stringify(
           Emote.validate.errors.map((result) => result!.message).join(' ')
         )}`
       )
     }
   }
 
-  if (errors.length) {
-    fs.writeFileSync(`${rootDirectory}/validation-errors.json`, JSON.stringify(errors, null, 2))
-    return
-  }
-
-  console.log('VALIDATION_ERROR - none')
-  if (!args.deploy) {
-    console.log(`COMMAND - yarn emotes --deploy --target ${target} ${args.directories.join(' ')}`)
-
-    const baseURL = `https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=`
-
-    console.log(`URL ${baseURL + 'urn:decentraland:off-chain:base-emotes'}`)
+  fs.writeFileSync('validation_errors.json', JSON.stringify(errors, null, 2))
+  if (args.ci) {
+    const previewUrl =
+      'https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes'
+    fs.writeFileSync(
+      'output',
+      `VALIDATION_ERRORS=${errors ? 1 : 0}
+COMMAND="yarn emotes --deploy --target ${target} ${args.directories.join(' ')}"
+PREVIEW_URL="${previewUrl.replace('"', '\\"')}"
+      `
+    )
+  } else {
+    console.log(`to deploy: yarn emotes --deploy --target ${target} ${args.directories.join(' ')}`)
   }
 }
 

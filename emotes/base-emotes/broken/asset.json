@@ -1,0 +1,14 @@
+{
+  "description": "fistpum",
+  "i18n": {
+    "en": "Fist pump"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "fistpump.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "fistpump.glb"}
+  ]
+}
