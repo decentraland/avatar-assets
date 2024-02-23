@@ -31,9 +31,7 @@ jobs:
           echo "::set-output name=comment_body::No changes in /emotes"
         else
           echo "Changes detected in /emotes"
-          # Replace newline characters with '|||'
-          CHANGED_FILES="${CHANGED_FILES//$'\n'/'|||'}"
-          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
+          echo "CHANGED_FILES_MESSAGE=$(echo $CHANGED_FILES | sed 's/ /<br>/g')"
           echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
         fi
 
@@ -48,12 +46,6 @@ jobs:
           echo -e "\n" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
         fi
-        echo 2
-
-    - name: Prepare comment
-      run: |
-        FORMATTED_COMMENT=$(echo "${{ env.COMMENT }}" | sed 's/|||/<br>/g')
-        echo "FORMATTED_COMMENT=$FORMATTED_COMMENT" >> $GITHUB_ENV
 
     - name: Find Comment
       uses: peter-evans/find-comment@v2
@@ -73,7 +65,7 @@ jobs:
 
           ### Updated emotes:
           ```
-          ${{ env.CHANGED_FILES }}
+          ${{ env.CHANGED_FILES_MESSAGE }}
           ```
 
           ### Link for testing purposes
