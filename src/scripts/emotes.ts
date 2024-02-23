@@ -175,8 +175,7 @@ async function main() {
   }
 
   if (args.ci) {
-    const previewUrl =
-      'https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes'
+    const previewUrl = `https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes`
     if (errors.length) {
       fs.writeFileSync('validation-errors.json', JSON.stringify(errors, null, 2))
     }
