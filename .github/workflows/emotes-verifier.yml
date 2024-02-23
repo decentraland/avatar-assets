@@ -33,7 +33,7 @@ jobs:
           echo "Changes detected in /emotes"
           # Replace newline characters with '|||'
           CHANGED_FILES="${CHANGED_FILES//$'\n'/'|||'}"
-          echo "COMMENT=** ```Updated emotes:**||| $CHANGED_FILES```" >> $GITHUB_ENV
+          echo "COMMENT=** Updated emotes:**||| ```$CHANGED_FILES```" >> $GITHUB_ENV
           echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
         fi
 
