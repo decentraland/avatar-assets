@@ -55,7 +55,7 @@ async function main() {
   })
   parser.add_argument('directories', {
     metavar: 'directories',
-    type: 'string',
+    type: 'str',
     nargs: '+',
     help: 'directories with asset.json to upload'
   })
