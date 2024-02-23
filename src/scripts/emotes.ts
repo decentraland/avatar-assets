@@ -174,14 +174,15 @@ async function main() {
     }
   }
 
-  fs.writeFileSync('validation_errors.json', JSON.stringify(errors, null, 2))
   if (args.ci) {
     const previewUrl =
       'https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes'
+    if (errors.length) {
+      fs.writeFileSync('validation_errors.json', JSON.stringify(errors, null, 2))
+    }
     fs.writeFileSync(
       'output',
-      `VALIDATION_ERRORS=${errors ? 1 : 0}
-COMMAND="yarn emotes --deploy --target ${target} ${args.directories.join(' ')}"
+      `COMMAND="yarn emotes --deploy --target ${target} ${args.directories.join(' ')}"
 PREVIEW_URL=${previewUrl}
       `
     )

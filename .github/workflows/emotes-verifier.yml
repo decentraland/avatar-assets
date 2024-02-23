@@ -41,11 +41,10 @@ jobs:
       if: env.EMOTES_CHANGED == 'true'
       run: |
         yarn run emotes --ci --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname)
-        source output
         cat output | grep PREVIEW_URL >> $GITHUB_ENV
         cat output | grep COMMAND >> $GITHUB_ENV
-        echo 1
-        if [ $VALIDATION_ERRORS -eq 1 ]; then
+        cat validation_errors.json
+        if [ -f validation_errors ]; then
           echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
           cat validation_errors.json >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
