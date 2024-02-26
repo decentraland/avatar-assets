@@ -1,0 +1,15 @@
+{
+  "name": "headexplode",
+  "description": "headexplode",
+  "i18n": {
+    "en": "Head Explode"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "headexplode.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "headexplode.glb"}
+  ]
+}

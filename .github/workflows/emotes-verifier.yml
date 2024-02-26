@@ -1,0 +1,83 @@
+name: PR Emotes Check
+
+on:
+  pull_request:
+
+jobs:
+  check-emotes:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install Dependencies
+      run: |
+        yarn
+        yarn global add ts-node
+
+    - name: Check for Changes in /emotes
+      id: check-emotes
+      run: |
+        CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes)
+        if [ -z "$CHANGED_FILES" ]; then
+          echo "::set-output name=emotes_changed::false"
+          echo "::set-output name=comment_body::No changes in /emotes"
+        else
+          echo "Changes detected in /emotes"
+
+          echo "CHANGED_FILES_MESSAGE<<EOF" >> $GITHUB_ENV
+          echo $CHANGED_FILES | sed 's/ /\n/g' >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+          echo "EMOTES_CHANGED=true" >> $GITHUB_ENV
+        fi
+
+    - name: Execute script
+      if: env.EMOTES_CHANGED == 'true'
+      run: |
+        yarn run emotes --ci --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname)
+        cat output | grep PREVIEW_URL >> $GITHUB_ENV
+        if [ -f validation-errors.json ]; then
+          echo "VALIDATION_ERRORS<<EOF" >> $GITHUB_ENV
+          cat validation-errors.json >> $GITHUB_ENV
+          echo -e "\n" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+        fi
+
+    - name: Find Comment
+      uses: peter-evans/find-comment@v2
+      id: fc
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: Emotes Change Log
+
+    - name: Create or update comment
+      uses: peter-evans/create-or-update-comment@v3
+      with:
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body: |
+          ## Emotes Change Log
+
+          ### Updated emotes:
+          ```
+          ${{ env.CHANGED_FILES_MESSAGE }}
+          ```
+
+          ### Link for testing purposes
+          ${{ env.PREVIEW_URL }}
+
+          ### Validation errors
+          ```json
+          ${{ env.VALIDATION_ERRORS }}'
+          ```
+
+        edit-mode: replace
