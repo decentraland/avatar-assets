@@ -12,6 +12,7 @@
     "coat"
    ],
   "category": "upper_body",
+  "removesDefaultHiding": ["hands"],
   "replaces": [
     "upper_body"
    ],
