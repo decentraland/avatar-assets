@@ -4,11 +4,7 @@
     "en": "Blue Elegant Shirt",
     "es": "Camisa Azul Elegante"
   },
-  "tags": [
-    "top",
-    "female",
-    "woman"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_BlueElegantShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_BlueElegantShirt.glb"
     }
   ]
 }

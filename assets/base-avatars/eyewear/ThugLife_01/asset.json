@@ -11,6 +11,8 @@
    ],
   "category": "eye_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "ThugLife_01.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "ThugLife_01.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "ThugLife_01.glb"}
+
   ]
 }

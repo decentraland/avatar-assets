@@ -11,6 +11,8 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_ComfortSportSandals.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_ComfortSportSandals.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_ComfortSportSandals.glb"}
+
   ]
 }
