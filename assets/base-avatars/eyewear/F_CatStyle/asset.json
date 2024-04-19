@@ -10,6 +10,7 @@
     "women"
    ],
   "category": "eye_wear",
+  "removesDefaultHiding": [],
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_CatStyle.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_CatStyle.glb"}
