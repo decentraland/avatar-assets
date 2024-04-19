@@ -6,8 +6,7 @@
   },
   "tags": [
     "top",
-    "female",
-    "woman"
+    "black"
   ],
   "removesDefaultHiding": [
     "hands"
@@ -17,6 +16,10 @@
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_BlackTop.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_BlackTop.glb"
     }
   ]
 }

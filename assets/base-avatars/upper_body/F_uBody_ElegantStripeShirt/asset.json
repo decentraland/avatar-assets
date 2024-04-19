@@ -4,11 +4,7 @@
     "en": "Elegant Striped Shirt",
     "es": "Remera Elegante a Rayas"
   },
-  "tags": [
-    "top",
-    "female",
-    "woman"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_ElegantStripeShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_ElegantStripeShirt.glb"
     }
   ]
 }

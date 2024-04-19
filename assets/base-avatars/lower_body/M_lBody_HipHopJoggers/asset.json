@@ -11,6 +11,8 @@
    ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_HipHopJoggers.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_hip_hop_joggers.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_hip_hop_joggers.glb"}
+
   ]
 }

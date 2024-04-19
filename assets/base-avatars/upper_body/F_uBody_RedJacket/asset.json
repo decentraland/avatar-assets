@@ -4,11 +4,7 @@
     "en": "Red Topcoat",
     "es": "Top Negro"
   },
-  "tags": [
-    "top",
-    "female",
-    "woman"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -16,6 +12,10 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_RedJacket.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
       "model": "F_uBody_RedJacket.glb"
     }
   ]

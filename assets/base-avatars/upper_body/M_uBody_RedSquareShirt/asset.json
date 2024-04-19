@@ -4,11 +4,7 @@
     "en": "Red Square Shirt",
     "es": "Camisa a Cuadros roja"
   },
-  "tags": [
-    "top",
-    "male",
-    "man"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseMale",
       "model": "M_uBody_RedSquareShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_RedSquareShirt.glb"
     }
   ]
 }

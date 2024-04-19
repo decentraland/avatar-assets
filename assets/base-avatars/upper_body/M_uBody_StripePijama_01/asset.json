@@ -4,11 +4,7 @@
     "en": "Striped Pajama Shirt",
     "es": "Remera de Pijama Rayada"
   },
-  "tags": [
-    "top",
-    "male",
-    "man"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseMale",
       "model": "M_uBody_StripePijama_01.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_StripePijama_01.glb"
     }
   ]
 }

@@ -4,11 +4,7 @@
     "en": "Red Elegant Jacket",
     "es": "Chaqueta Elegante Roja"
   },
-  "tags": [
-    "top",
-    "female",
-    "woman"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_RedElgantJacket.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_RedElgantJacket.glb"
     }
   ]
 }
