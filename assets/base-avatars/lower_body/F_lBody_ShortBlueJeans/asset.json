@@ -11,6 +11,8 @@
    ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_ShortBlueJeans.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_ShortBlueJeans.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "M_lBody_ShortBlueJeans.glb"}
+
   ]
 }
