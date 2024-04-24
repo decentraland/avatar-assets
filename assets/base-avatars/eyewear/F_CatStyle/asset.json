@@ -9,7 +9,7 @@
     "woman",
     "women"
    ],
-  "category": "eye_wear",
+  "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_CatStyle.glb"}
   ]
