@@ -15,11 +15,11 @@
   "main": [
     {
       "type": "dcl://base-avatars/BaseFemale",
-      "model": "F_uBody_OrangeBasicTShirt"
+      "model": "F_uBody_OrangeBasicTShirt.glb"
     },
     {
       "type": "dcl://base-avatars/BaseMale",
-      "model": "M_uBody_OrangeBasicTShirt"
+      "model": "M_uBody_OrangeBasicTShirt.glb"
     }
   ]
 }
