@@ -1,18 +1,16 @@
 import fs from 'fs'
 import path from 'path'
 import { createDotEnvConfigComponent } from '@well-known-components/env-config-provider'
-import { BodyShape, EmoteCategory, EmoteRepresentationADR74, EntityType, I18N, Locale } from '@dcl/schemas'
+import { BodyShape, Emote, EmoteCategory, EmoteRepresentationADR74, EntityType, I18N, Locale } from '@dcl/schemas'
 import { hexToBytes } from 'eth-connect'
 import { Authenticator } from '@dcl/crypto'
 import { ethSign } from '@dcl/crypto/dist/crypto'
-
-import { Emote } from '@dcl/schemas'
-import { readFilesFrom } from '../adapters/file-system'
+import { readFile, readFilesFrom } from '../adapters/file-system'
 import { parseUrn } from '@dcl/urn-resolver'
 import { extractAssetTextures } from '../logic/glb-optimizer'
 import { ArgumentParser } from 'argparse'
 import { DeploymentPreparationData } from 'dcl-catalyst-client/dist/client/types'
-import { DeploymentBuilder, createContentClient } from 'dcl-catalyst-client'
+import { createContentClient, DeploymentBuilder } from 'dcl-catalyst-client'
 import { createFetchComponent } from '@well-known-components/fetch-component'
 import { createLogComponent } from '@well-known-components/logger'
 
@@ -90,7 +88,7 @@ async function main() {
       continue
     }
 
-    const json: JSONData = require(assetJsonPath)
+    const json: JSONData = readFile<JSONData>(assetJsonPath)
     json.tags = json.tags || []
 
     const legacyId = `dcl://base-emotes/` + json.name

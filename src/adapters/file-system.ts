@@ -1,4 +1,4 @@
-import { Dirent, PathLike, readdirSync } from 'fs'
+import { Dirent, PathLike, readdirSync, readFileSync } from 'fs'
 import path from 'path'
 
 /**
@@ -28,4 +28,10 @@ export function readFilesFrom(directoryPath: string, expectedExtensions: string[
   return files
     .filter((file) => expectedExtensions.length === 0 || expectedExtensions.includes(path.extname(file)))
     .map((file) => path.join(directoryPath, file))
+}
+
+export function readFile<T>(file: string): T {
+  const buffer = readFileSync(file)
+  const data = buffer.toString()
+  return JSON.parse(data) as T
 }
