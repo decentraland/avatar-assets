@@ -27,11 +27,6 @@ jobs:
           yarn install --frozen-lockfile
           yarn global add ts-node
 
-      - name: Install Dependencies
-        run: |
-          yarn install --frozen-lockfile
-          yarn global add ts-node
-
       - name: Prepare Deployment
         run: |
           yarn run prepare ${{ github.event.inputs.branch_name }} https://peer-testing.decentraland.org > script_output.txt
