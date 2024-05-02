@@ -12,19 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: test/modify-asset
           fetch-depth: 0
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Install Dependencies
         run: |
-          yarn
+          yarn install --frozen-lockfile
           yarn global add ts-node
 
       - name: Deploy

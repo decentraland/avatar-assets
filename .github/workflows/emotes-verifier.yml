@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: '18'
 
     - name: Install Dependencies
       run: |
-        yarn
+        yarn install --frozen-lockfile
         yarn global add ts-node
 
     - name: Check for Changes in /emotes
@@ -52,7 +52,7 @@ jobs:
         fi
 
     - name: Find Comment
-      uses: peter-evans/find-comment@v2
+      uses: peter-evans/find-comment@v3
       id: fc
       with:
         issue-number: ${{ github.event.pull_request.number }}
@@ -60,7 +60,7 @@ jobs:
         body-includes: Emotes Change Log
 
     - name: Create or update comment
-      uses: peter-evans/create-or-update-comment@v3
+      uses: peter-evans/create-or-update-comment@v4
       with:
         comment-id: ${{ steps.fc.outputs.comment-id }}
         issue-number: ${{ github.event.pull_request.number }}
