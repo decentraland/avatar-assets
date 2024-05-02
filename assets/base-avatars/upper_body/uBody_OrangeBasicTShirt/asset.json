@@ -1,0 +1,25 @@
+{
+  "name": "orangebasictshirt",
+  "i18n": {
+    "en": "Orange T-Shirt",
+    "es": "Remera Naranja"
+  },
+  "tags": [
+    "upper",
+    "body"
+  ],
+  "category": "upper_body",
+  "removesDefaultHiding": [
+    "hands"
+  ],
+  "main": [
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_OrangeBasicTShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_OrangeBasicTShirt.glb"
+    }
+  ]
+}

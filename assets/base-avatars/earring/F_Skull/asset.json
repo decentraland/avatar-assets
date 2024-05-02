@@ -11,6 +11,8 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_Skull.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_Skull.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_Skull.glb"}
+
   ]
 }

@@ -4,11 +4,7 @@
     "en": "Croupier Shirt",
     "es": "Camisa de croupier"
   },
-  "tags": [
-    "top",
-    "female",
-    "woman"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_CasinoShirt.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseMale",
+      "model": "M_uBody_CasinoShirt.glb"
     }
   ]
 }

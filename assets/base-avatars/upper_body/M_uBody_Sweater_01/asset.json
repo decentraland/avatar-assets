@@ -4,11 +4,7 @@
     "en": "Blue and Red Sweater",
     "es": "Suéter Azul y Rojo"
   },
-  "tags": [
-    "top",
-    "male",
-    "man"
-  ],
+  "tags": [  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -17,6 +13,10 @@
     {
       "type": "dcl://base-avatars/BaseMale",
       "model": "M_uBody_Sweater_01.glb"
+    },
+    {
+      "type": "dcl://base-avatars/BaseFemale",
+      "model": "F_uBody_Sweater_01.glb"
     }
   ]
 }

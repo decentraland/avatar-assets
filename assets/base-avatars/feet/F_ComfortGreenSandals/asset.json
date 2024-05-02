@@ -11,6 +11,8 @@
    ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_ComfortGreenSandals.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_ComfortGreenSandals.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_ComfortGreenSandals.glb"}
+
   ]
 }
