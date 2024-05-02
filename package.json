@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@dcl/crypto": "^3.4.5",
-    "@dcl/schemas": "^10.3.0",
+    "@dcl/schemas": "^11.7.0",
     "@dcl/urn-resolver": "^3.3.0",
     "@well-known-components/env-config-provider": "^1.2.0",
     "@well-known-components/fetch-component": "^2.0.2",
