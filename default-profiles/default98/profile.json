@@ -1,0 +1,48 @@
+{
+  "avatars": [
+    {
+      "name": "",
+      "description": "",
+      "avatar": {
+        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseMale",
+        "skin": {
+          "color": {
+            "r": 0.32156863808631897,
+            "g": 0.1725490242242813,
+            "b": 0.10980392247438431,
+            "a": 1
+          }
+        },
+        "hair": {
+          "color": {
+            "r": 0.5960784554481506,
+            "g": 0.37254902720451355,
+            "b": 0.21568627655506134,
+            "a": 1
+          }
+        },
+        "eyes": {
+          "color": {
+            "r": 0.686274528503418,
+            "g": 0.772549033164978,
+            "b": 0.7803921699523926,
+            "a": 1
+          }
+        },
+        "wearables": [
+          "dcl://base-avatars/yellow_tshirt",
+          "dcl://base-avatars/soccer_pants",
+          "dcl://base-avatars/comfy_sport_sandals",
+          "dcl://base-avatars/keanu_hair",
+          "dcl://base-avatars/granpa_beard"
+        ],
+        "snapshots": {
+          "face": "QmSTAzcyrvWCujvsXh7TfE5h94psehYdbjjW6tJU7RcyeC",
+          "body": "https://peer.decentraland.org/content/contents/QmSfF5hs3rbm99ubPmhC85xkTYeKS8ERrkehsmPSD4YgYV",
+          "face256": "https://peer.decentraland.org/content/contents/undefined"
+        }
+      },
+      "hasClaimedName": false
+    }
+  ]
+}

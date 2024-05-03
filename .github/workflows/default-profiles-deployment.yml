@@ -1,0 +1,32 @@
+name: Deploy Default Profiles to Peer Testing
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch_name:
+        description: 'Branch name containing the assets to test'
+        required: true
+
+jobs:
+  deploy-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: test/modify-asset
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn global add ts-node
+
+      - name: Deploy
+        run: |
+          yarn run default-profiles --target https://peer-testing.decentraland.org --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} --deploy $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- default-profiles | grep "profile.json" | xargs dirname)
