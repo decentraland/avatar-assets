@@ -108,7 +108,7 @@ async function main() {
           entityId: deploymentData.entityId,
           files: deploymentData.files
         })
-        logger.info(`Default Profile ${pointer} from default-profiles deployed`)
+        logger.info(`Default Profile ${pointer} from deployed`)
       }
     } else if (Profile.validate.errors) {
       errors.push({
