@@ -1,0 +1,49 @@
+{
+  "avatars": [
+    {
+      "name": "",
+      "description": "",
+      "avatar": {
+        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseMale",
+        "skin": {
+          "color": {
+            "r": 0.4901960790157318,
+            "g": 0.364705890417099,
+            "b": 0.27843138575553894,
+            "a": 1
+          }
+        },
+        "hair": {
+          "color": {
+            "r": 0.5490196347236633,
+            "g": 0.125490203499794,
+            "b": 0.0784313753247261,
+            "a": 1
+          }
+        },
+        "eyes": {
+          "color": {
+            "r": 0.7490196228027344,
+            "g": 0.6196078658103943,
+            "b": 0.3529411852359772,
+            "a": 1
+          }
+        },
+        "wearables": [
+          "dcl://base-avatars/red_tshirt",
+          "dcl://base-avatars/striped_swim_suit",
+          "dcl://base-avatars/m_greenflipflops",
+          "dcl://base-avatars/casual_hair_02",
+          "dcl://base-avatars/handlebar",
+          "dcl://base-avatars/toruspiercing"
+        ],
+        "snapshots": {
+          "face": "Qmapa3vn9WzeJ3fq2YTNdJA4d9MqE1xGeDcrzAGtvDcBdR",
+          "body": "https://peer.decentraland.org/content/contents/QmbUTf78Z44ND4hjvWCMuR47mC7wjX2HdEHQuem5DoyqvH",
+          "face256": "https://peer.decentraland.org/content/contents/undefined"
+        }
+      },
+      "hasClaimedName": false
+    }
+  ]
+}

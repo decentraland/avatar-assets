@@ -1,0 +1,71 @@
+name: PR Default Profiles Check
+
+on:
+  pull_request:
+
+jobs:
+  check-default-profiles:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'yarn'
+
+    - name: Install Dependencies
+      run: |
+        yarn install --frozen-lockfile
+        yarn global add ts-node
+
+    - name: lint
+      run: yarn lint:check
+
+    - name: Check for Changes in /default-profiles
+      id: check-default-profiles
+      run: |
+        CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- default-profiles)
+        if [ -z "$CHANGED_FILES" ]; then
+          echo "DEFAULT_PROFILES_CHANGED=false" >> $GITHUB_ENV
+          echo "No changes in /default-profiles" > changed_files.md
+        else
+          echo "DEFAULT_PROFILES_CHANGED=true" >> $GITHUB_ENV
+          echo "Changes detected in /default-profiles" > changed_files.md
+          echo "$(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- default-profiles | grep "profile.json" | xargs dirname | awk '{print "* " $0}')" >> changed_files.md
+        fi
+
+    - name: Execute script
+      id: execute-script
+      if: env.DEFAULT_PROFILES_CHANGED == 'true'
+      run: |
+        yarn run default-profiles --ci --target https://peer-testing.decentraland.org $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- default-profiles | grep "profile.json" | xargs dirname)
+
+    - name: Prepare comment
+      id: prepare-comment
+      run: |
+        echo "## Default Profiles Change Log" > formatted_comment.md
+        cat changed_files.md >> formatted_comment.md
+        echo "" >> formatted_comment.md
+        echo "### Validation errors" >> formatted_comment.md
+        cat validation-errors.md >> formatted_comment.md
+
+    - name: Find Comment
+      uses: peter-evans/find-comment@v3
+      id: fc
+      with:
+        issue-number: ${{ github.event.pull_request.number }}
+        comment-author: 'github-actions[bot]'
+        body-includes: Default Profiles Change Log
+
+    - name: Create or update comment
+      uses: peter-evans/create-or-update-comment@v4
+      with:
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        issue-number: ${{ github.event.pull_request.number }}
+        body-path: formatted_comment.md
+        edit-mode: replace

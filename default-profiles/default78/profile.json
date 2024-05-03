@@ -1,0 +1,49 @@
+{
+  "avatars": [
+    {
+      "name": "",
+      "description": "",
+      "avatar": {
+        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
+        "skin": {
+          "color": {
+            "r": 1,
+            "g": 0.8941176533699036,
+            "b": 0.7764706015586853,
+            "a": 1
+          }
+        },
+        "hair": {
+          "color": {
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1
+          }
+        },
+        "eyes": {
+          "color": {
+            "r": 0.2823529541492462,
+            "g": 0.8627451062202454,
+            "b": 0.4588235318660736,
+            "a": 1
+          }
+        },
+        "wearables": [
+          "dcl://base-avatars/school_shirt",
+          "dcl://base-avatars/f_school_skirt",
+          "dcl://base-avatars/Moccasin",
+          "dcl://base-avatars/hair_anime_01",
+          "dcl://base-avatars/f_eyes_08",
+          "dcl://base-avatars/blue_star_earring"
+        ],
+        "snapshots": {
+          "face": "QmPiUsGWvYY1Cn5vdDpYYfBE4Nr1X8F9hPPoeh1rugyXok",
+          "body": "https://peer.decentraland.org/content/contents/QmWUb54YR3pavyqktAag9nVBRudGPrpnsY1z8ftk45VMDP",
+          "face256": "https://peer.decentraland.org/content/contents/undefined"
+        }
+      },
+      "hasClaimedName": false
+    }
+  ]
+}
