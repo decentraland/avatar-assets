@@ -89,40 +89,32 @@ async function main() {
       body: ipfsHashes[1].hash
     }
 
-    if (!Profile.validate(metadata) && Profile.validate.errors) {
-      const filtered = Profile.validate.errors.filter(
-        (error) =>
-          error.params?.missingProperty !== 'ethAddress' &&
-          error.params?.missingProperty !== 'version' &&
-          error.params?.missingProperty !== 'tutorialStep'
-      )
-      if (filtered.length > 0) {
-        errors.push({
-          pointer,
-          validationResult: filtered.map((result) => result!.message).join(' ')
+    if (Profile.validate(metadata)) {
+      if (args.deploy) {
+        const deploymentData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
+          type: EntityType.PROFILE,
+          pointers: [pointer],
+          files,
+          metadata: { ...metadata }
         })
+
+        const { entityId } = deploymentData
+
+        const signature = ethSign(hexToBytes(privateKey), entityId)
+        const authChain = Authenticator.createSimpleAuthChain(entityId, ethAddress, signature)
+
+        await contentClient.deploy({
+          authChain,
+          entityId: deploymentData.entityId,
+          files: deploymentData.files
+        })
+        logger.info(`Default Profile ${pointer} from default-profiles deployed`)
       }
-    }
-
-    if (args.deploy) {
-      const deploymentData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
-        type: EntityType.PROFILE,
-        pointers: [pointer],
-        files,
-        metadata: { ...metadata }
+    } else if (Profile.validate.errors) {
+      errors.push({
+        pointer,
+        validationResult: Profile.validate.errors.map((result) => result!.message).join(' ')
       })
-
-      const { entityId } = deploymentData
-
-      const signature = ethSign(hexToBytes(privateKey), entityId)
-      const authChain = Authenticator.createSimpleAuthChain(entityId, ethAddress, signature)
-
-      await contentClient.deploy({
-        authChain,
-        entityId: deploymentData.entityId,
-        files: deploymentData.files
-      })
-      logger.info(`Default Profile ${pointer} from default-profiles deployed`)
     }
   }
 
