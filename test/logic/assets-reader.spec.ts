@@ -1,6 +1,6 @@
-import path, { join, resolve } from 'path'
+import { join, resolve } from 'path'
 import { getDirectoryNamesFrom } from '../../src/adapters/file-system'
-import { getAllAssetsDirectories, getAssetsToDeploy } from './../../src/logic/assets-reader'
+import { getAllAssetsDirectories, getAssetsToDeploy } from '../../src/logic/assets-reader'
 
 describe('assets-reader should', () => {
   it('read all collections from assets directory', () => {

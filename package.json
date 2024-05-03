@@ -10,6 +10,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "deploy": "npx ts-node -T src/index.ts",
+    "lint:check": "eslint '**/*.{js,ts}'",
+    "lint:fix": "eslint '**/*.{js,ts}' --fix",
     "test": "jest --forceExit --detectOpenHandles --verbose",
     "prepare": "npx ts-node -T src/scripts/prepare.ts",
     "emotes": "npx ts-node -T src/scripts/emotes.ts"
@@ -22,15 +24,15 @@
     "tabWidth": 2
   },
   "devDependencies": {
-    "@dcl/eslint-config": "^1.1.13",
+    "@dcl/eslint-config": "^2.0.0",
     "@types/argparse": "^2.0.14",
     "@types/node": "^20.10.4",
     "@well-known-components/test-helpers": "^1.5.5",
-    "typescript": "^5.3.3"
+    "typescript": "<=5.3.3"
   },
   "dependencies": {
     "@dcl/crypto": "^3.4.5",
-    "@dcl/schemas": "^10.3.0",
+    "@dcl/schemas": "^11.7.0",
     "@dcl/urn-resolver": "^3.3.0",
     "@well-known-components/env-config-provider": "^1.2.0",
     "@well-known-components/fetch-component": "^2.0.2",

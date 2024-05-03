@@ -7,7 +7,6 @@ old
 **/node_modules/**
 
 tsconfig.tsbuildinfo
-yarn.lock
 
 # dependencies
 /node_modules
