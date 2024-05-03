@@ -77,6 +77,7 @@ async function main() {
     if (!fs.existsSync(profileJsonPath)) {
       continue
     }
+    console.log(profileJsonPath)
 
     const metadata = readFile<any>(profileJsonPath)
     const files = new Map<string, Uint8Array>()
@@ -90,6 +91,7 @@ async function main() {
     }
 
     if (Profile.validate(metadata)) {
+      console.log('validated ok')
       if (args.deploy) {
         const deploymentData: DeploymentPreparationData = await DeploymentBuilder.buildEntity({
           type: EntityType.PROFILE,
@@ -111,6 +113,7 @@ async function main() {
         logger.info(`Default Profile ${pointer} from deployed`)
       }
     } else if (Profile.validate.errors) {
+      console.log('there are errors', Profile.validate.errors)
       errors.push({
         pointer,
         validationResult: Profile.validate.errors.map((result) => result!.message).join(' ')
