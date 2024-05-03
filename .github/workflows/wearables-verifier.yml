@@ -23,7 +23,7 @@ jobs:
         yarn install --frozen-lockfile
         yarn global add ts-node
 
-    - name: lint
+    - name: Run ESLint
       run: yarn lint:check
 
     - name: Check for Changes in /assets
