@@ -41,9 +41,13 @@
           "face": "Qmapa3vn9WzeJ3fq2YTNdJA4d9MqE1xGeDcrzAGtvDcBdR",
           "body": "https://peer.decentraland.org/content/contents/QmbUTf78Z44ND4hjvWCMuR47mC7wjX2HdEHQuem5DoyqvH",
           "face256": "https://peer.decentraland.org/content/contents/undefined"
-        }
+        },
+        "emotes": []
       },
-      "hasClaimedName": false
+      "hasClaimedName": false,
+      "ethAddress": "0x1337e0507EB4aB47E08a179573ED4533d9E22a7b",
+      "tutorialStep": 1,
+      "version": 1
     }
   ]
 }
