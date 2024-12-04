@@ -4,30 +4,19 @@
     "en": "DG Tracksuit Top",
     "es": "Chandal Top DG"
   },
-  "tags": [
-    "tracksuit",
-    "top",
-    "decentral games",
-    "coat"
-   ],
+  "tags": ["tracksuit", "top", "decentral games", "coat"],
   "category": "upper_body",
-  "replaces": [
-    "upper_body"
-   ],
-   "hides": [
-    
-   ],
-
+  "replaces": ["upper_body"],
+  "hides": [],
+  "removesDefaultHiding": ["hands"],
   "main": [
-{
-"type":"BaseMale" , 
-"model":"tracksuit_top_m.glb" , 
-"overrideReplaces": [
-   ],
-   "overrideHides": [
-   ]
-},
-{"type": "BaseFemale", "model": "tracksuit_top_f.glb"}
+    {
+      "type": "BaseMale",
+      "model": "tracksuit_top_m.glb",
+      "overrideReplaces": [],
+      "overrideHides": []
+    },
+    { "type": "BaseFemale", "model": "tracksuit_top_f.glb" }
   ],
   "rarity": "legendary",
   "description": "The jacket of the decadent and elegant DG tracksuit #drip"
