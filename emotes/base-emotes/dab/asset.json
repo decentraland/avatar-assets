@@ -1,0 +1,15 @@
+{
+  "name": "dab",
+  "description": "dab",
+  "i18n": {
+    "en": "Dab"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Dab.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Dab.glb"}
+  ]
+}
