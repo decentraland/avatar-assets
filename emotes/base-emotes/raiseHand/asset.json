@@ -1,0 +1,15 @@
+{
+  "name": "raiseHand",
+  "description": "raiseHand",
+  "i18n": {
+    "en": "Raise hand"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Raise_Hand.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Raise_Hand.glb"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dontsee",
+  "description": "dontsee",
+  "i18n": {
+    "en": "Don't see"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Dont_See.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Dont_See.glb"}
+  ]
+}

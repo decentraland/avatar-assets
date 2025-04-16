@@ -1,0 +1,15 @@
+{
+  "name": "tik",
+  "description": "tik",
+  "i18n": {
+    "en": "Tik"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Tik.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Tik.glb"}
+  ]
+}

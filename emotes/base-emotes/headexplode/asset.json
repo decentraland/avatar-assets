@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "headexplode.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "headexplode.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Head_Explode.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Head_Explode.glb"}
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "name": "robot",
+  "description": "robot",
+  "i18n": {
+    "en": "Robot"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Robot.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Robot.glb"}
+  ]
+}

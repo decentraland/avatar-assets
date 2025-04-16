@@ -1,0 +1,15 @@
+{
+  "name": "shrug",
+  "description": "shrug",
+  "i18n": {
+    "en": "Shrug"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Shrug.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Shrug.glb"}
+  ]
+}

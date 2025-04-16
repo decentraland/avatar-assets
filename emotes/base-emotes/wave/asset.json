@@ -1,0 +1,15 @@
+{
+  "name": "wave",
+  "description": "wave",
+  "i18n": {
+    "en": "Tik"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Wave.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Wave.glb"}
+  ]
+}

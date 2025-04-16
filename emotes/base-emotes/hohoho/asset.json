@@ -1,0 +1,15 @@
+{
+  "name": "hohoho",
+  "description": "hohoho",
+  "i18n": {
+    "en": "Ho Ho Ho"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "HoHoHo_Particles.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "HoHoHo_Particles.glb"}
+  ]
+}

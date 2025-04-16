@@ -1,0 +1,15 @@
+{
+  "name": "clap",
+  "description": "clap",
+  "i18n": {
+    "en": "Clap"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Clap_Particles.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Clap_Particles.glb"}
+  ]
+}

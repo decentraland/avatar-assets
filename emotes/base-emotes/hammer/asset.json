@@ -1,0 +1,15 @@
+{
+  "name": "hammer",
+  "description": "hammer",
+  "i18n": {
+    "en": "Hammer"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Hammer.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Hammer.glb"}
+  ]
+}

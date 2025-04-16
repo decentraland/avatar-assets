@@ -1,0 +1,15 @@
+{
+  "name": "dance",
+  "description": "dance",
+  "i18n": {
+    "en": "Dance"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Dance.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Dance.glb"}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tektonik",
+  "description": "tektonik",
+  "i18n": {
+    "en": "Tektonik"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+   ],
+  "main": [
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Tektonik.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Tektonik.glb"}
+  ]
+}

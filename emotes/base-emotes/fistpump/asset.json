@@ -1,6 +1,6 @@
 {
   "name": "fistpump",
-  "description": "fistpum",
+  "description": "fistpump",
   "i18n": {
     "en": "Fist pump"
   },
@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "fistpump.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "fistpump.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_FistPump.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_Fist_Pump.glb"}
   ]
 }
