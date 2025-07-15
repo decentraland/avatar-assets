@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_blue_jacket",
-          "dcl://base-avatars/f_capris",
-          "dcl://base-avatars/ruby_blue_loafer",
-          "dcl://base-avatars/pony_tail",
-          "dcl://base-avatars/pearls_earring",
-          "dcl://base-avatars/f_mouth_05"
+          "urn:decentraland:off-chain:base-avatars:f_blue_jacket",
+          "urn:decentraland:off-chain:base-avatars:f_capris",
+          "urn:decentraland:off-chain:base-avatars:ruby_blue_loafer",
+          "urn:decentraland:off-chain:base-avatars:pony_tail",
+          "urn:decentraland:off-chain:base-avatars:pearls_earring",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_05"
         ],
         "snapshots": {
           "face": "QmQEGLeiLQSvJd6wD3sMPcVKYdLRWYuh6GfftaA92NybNp",

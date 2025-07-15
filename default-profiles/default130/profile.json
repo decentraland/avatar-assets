@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/yellow_tshirt",
-          "dcl://base-avatars/soccer_pants",
-          "dcl://base-avatars/comfy_sport_sandals",
-          "dcl://base-avatars/keanu_hair",
-          "dcl://base-avatars/granpa_beard"
+          "urn:decentraland:off-chain:base-avatars:yellow_tshirt",
+          "urn:decentraland:off-chain:base-avatars:soccer_pants",
+          "urn:decentraland:off-chain:base-avatars:comfy_sport_sandals",
+          "urn:decentraland:off-chain:base-avatars:keanu_hair",
+          "urn:decentraland:off-chain:base-avatars:granpa_beard"
         ],
         "snapshots": {
           "face": "QmYYTiE6Jita1bPnrZ7QyX84TsB3DhquCBjYc3L4KJ5fPH",

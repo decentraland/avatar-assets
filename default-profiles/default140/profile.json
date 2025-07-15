@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/m_sweater_02",
-          "dcl://base-avatars/comfortablepants",
-          "dcl://base-avatars/Espadrilles",
-          "dcl://base-avatars/00_bald",
-          "dcl://base-avatars/beard",
-          "dcl://base-avatars/blue_bandana"
+          "urn:decentraland:off-chain:base-avatars:m_sweater_02",
+          "urn:decentraland:off-chain:base-avatars:comfortablepants",
+          "urn:decentraland:off-chain:base-avatars:Espadrilles",
+          "urn:decentraland:off-chain:base-avatars:00_bald",
+          "urn:decentraland:off-chain:base-avatars:beard",
+          "urn:decentraland:off-chain:base-avatars:blue_bandana"
         ],
         "snapshots": {
           "face": "QmbrJ7aFPAmLTiccsC7fkV3MXCQGa3skatMgiQ1jL5zQAo",

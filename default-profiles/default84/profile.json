@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/sleeveless_punk_shirt",
-          "dcl://base-avatars/trash_jean",
-          "dcl://base-avatars/citycomfortableshoes",
-          "dcl://base-avatars/punk",
-          "dcl://base-avatars/horseshoe_beard",
-          "dcl://base-avatars/Thunder_earring"
+          "urn:decentraland:off-chain:base-avatars:sleeveless_punk_shirt",
+          "urn:decentraland:off-chain:base-avatars:trash_jean",
+          "urn:decentraland:off-chain:base-avatars:citycomfortableshoes",
+          "urn:decentraland:off-chain:base-avatars:punk",
+          "urn:decentraland:off-chain:base-avatars:horseshoe_beard",
+          "urn:decentraland:off-chain:base-avatars:Thunder_earring"
         ],
         "snapshots": {
           "face": "QmSqQTccoxmQKzb5xpYkzb2P965X5GA2mEkZSEWfCSTsDn",

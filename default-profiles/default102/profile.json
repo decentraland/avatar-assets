@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/red_square_shirt",
-          "dcl://base-avatars/brown_pants",
-          "dcl://base-avatars/sneakers",
-          "dcl://base-avatars/slicked_hair",
-          "dcl://base-avatars/eyes_08",
-          "dcl://base-avatars/punk_piercing"
+          "urn:decentraland:off-chain:base-avatars:red_square_shirt",
+          "urn:decentraland:off-chain:base-avatars:brown_pants",
+          "urn:decentraland:off-chain:base-avatars:sneakers",
+          "urn:decentraland:off-chain:base-avatars:slicked_hair",
+          "urn:decentraland:off-chain:base-avatars:eyes_08",
+          "urn:decentraland:off-chain:base-avatars:punk_piercing"
         ],
         "snapshots": {
           "face": "QmZsq73GapurYQA3QskiqYPRj1PSbbUUtWMVYD9hWhboW1",

@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/roller_outfit",
-          "dcl://base-avatars/f_short_colored_leggins",
-          "dcl://base-avatars/sport_colored_shoes",
-          "dcl://base-avatars/hair_stylish_hair",
-          "dcl://base-avatars/pink_gem_earring",
-          "dcl://base-avatars/f_eyebrows_04"
+          "urn:decentraland:off-chain:base-avatars:roller_outfit",
+          "urn:decentraland:off-chain:base-avatars:f_short_colored_leggins",
+          "urn:decentraland:off-chain:base-avatars:sport_colored_shoes",
+          "urn:decentraland:off-chain:base-avatars:hair_stylish_hair",
+          "urn:decentraland:off-chain:base-avatars:pink_gem_earring",
+          "urn:decentraland:off-chain:base-avatars:f_eyebrows_04"
         ],
         "snapshots": {
           "face": "QmPYs2JUnmhxxgqY5TaUpW6AUDcRRRWGqW8B8euArRxBsZ",

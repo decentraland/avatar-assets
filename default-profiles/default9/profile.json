@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_simple_yellow_tshirt",
-          "dcl://base-avatars/f_short_blue_jeans",
-          "dcl://base-avatars/pink_sleepers",
-          "dcl://base-avatars/cornrows",
-          "dcl://base-avatars/green_stone_tiara",
-          "dcl://base-avatars/f_mouth_04"
+          "urn:decentraland:off-chain:base-avatars:f_simple_yellow_tshirt",
+          "urn:decentraland:off-chain:base-avatars:f_short_blue_jeans",
+          "urn:decentraland:off-chain:base-avatars:pink_sleepers",
+          "urn:decentraland:off-chain:base-avatars:cornrows",
+          "urn:decentraland:off-chain:base-avatars:green_stone_tiara",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_04"
         ],
         "snapshots": {
           "face": "QmZ3HbVnuefHJST1crtPXp6zpM7vRAh2XPnJDVondAKGNw",

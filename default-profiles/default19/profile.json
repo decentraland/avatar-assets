@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/elegant_striped_shirt",
-          "dcl://base-avatars/elegant_blue_trousers",
-          "dcl://base-avatars/f_m_sandals",
-          "dcl://base-avatars/modern_hair",
-          "dcl://base-avatars/f_mouth_04"
+          "urn:decentraland:off-chain:base-avatars:elegant_striped_shirt",
+          "urn:decentraland:off-chain:base-avatars:elegant_blue_trousers",
+          "urn:decentraland:off-chain:base-avatars:f_m_sandals",
+          "urn:decentraland:off-chain:base-avatars:modern_hair",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_04"
         ],
         "snapshots": {
           "face": "QmPNgECVpXBG5BkSeYNeWQ1kUJEpAVtsTc21WYYyiAHKaK",

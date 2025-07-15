@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/turtle_neck_sweater",
-          "dcl://base-avatars/brown_pants_02",
-          "dcl://base-avatars/moccasin",
-          "dcl://base-avatars/semi_afro",
-          "dcl://base-avatars/mouth_05",
-          "dcl://base-avatars/golden_earring"
+          "urn:decentraland:off-chain:base-avatars:turtle_neck_sweater",
+          "urn:decentraland:off-chain:base-avatars:brown_pants_02",
+          "urn:decentraland:off-chain:base-avatars:moccasin",
+          "urn:decentraland:off-chain:base-avatars:semi_afro",
+          "urn:decentraland:off-chain:base-avatars:mouth_05",
+          "urn:decentraland:off-chain:base-avatars:golden_earring"
         ],
         "snapshots": {
           "face": "QmXADVFHhHXMjGoP21zKmbJ6icwthSGVrHjqYzat7Kazm4",

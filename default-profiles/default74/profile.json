@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_red_elegant_jacket",
-          "dcl://base-avatars/f_country_pants",
-          "dcl://base-avatars/ruby_red_loafer",
-          "dcl://base-avatars/curly_hair",
-          "dcl://base-avatars/black_sun_glasses",
-          "dcl://base-avatars/f_eyebrows_02"
+          "urn:decentraland:off-chain:base-avatars:f_red_elegant_jacket",
+          "urn:decentraland:off-chain:base-avatars:f_country_pants",
+          "urn:decentraland:off-chain:base-avatars:ruby_red_loafer",
+          "urn:decentraland:off-chain:base-avatars:curly_hair",
+          "urn:decentraland:off-chain:base-avatars:black_sun_glasses",
+          "urn:decentraland:off-chain:base-avatars:f_eyebrows_02"
         ],
         "snapshots": {
           "face": "Qme3e1eQhyE6ZazvKBWHgAJXdUTbKusQ36LsJqCS4sdUAc",

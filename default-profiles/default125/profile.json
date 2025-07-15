@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/m_sweater",
-          "dcl://base-avatars/swim_short",
-          "dcl://base-avatars/crocs",
-          "dcl://base-avatars/cool_hair",
-          "dcl://base-avatars/old_mustache_beard",
-          "dcl://base-avatars/black_sun_glasses"
+          "urn:decentraland:off-chain:base-avatars:m_sweater",
+          "urn:decentraland:off-chain:base-avatars:swim_short",
+          "urn:decentraland:off-chain:base-avatars:crocs",
+          "urn:decentraland:off-chain:base-avatars:cool_hair",
+          "urn:decentraland:off-chain:base-avatars:old_mustache_beard",
+          "urn:decentraland:off-chain:base-avatars:black_sun_glasses"
         ],
         "snapshots": {
           "face": "QmV4eYRh61LUyuLQm1DNUKcb5pU2qwPbDEvTr9bR7rvMiG",

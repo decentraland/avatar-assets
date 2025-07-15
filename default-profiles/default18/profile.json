@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_sport_purple_tshirt",
-          "dcl://base-avatars/f_roller_leggings",
-          "dcl://base-avatars/sport_black_shoes",
-          "dcl://base-avatars/hair_coolshortstyle",
-          "dcl://base-avatars/f_mouth_08"
+          "urn:decentraland:off-chain:base-avatars:f_sport_purple_tshirt",
+          "urn:decentraland:off-chain:base-avatars:f_roller_leggings",
+          "urn:decentraland:off-chain:base-avatars:sport_black_shoes",
+          "urn:decentraland:off-chain:base-avatars:hair_coolshortstyle",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_08"
         ],
         "snapshots": {
           "face": "QmesGWGXXnAA1XsNjYwGavRThHjdHkGSPS1fgPzo2HJH66",

@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/red_tshirt",
-          "dcl://base-avatars/striped_swim_suit",
-          "dcl://base-avatars/m_greenflipflops",
-          "dcl://base-avatars/casual_hair_02",
-          "dcl://base-avatars/handlebar",
-          "dcl://base-avatars/toruspiercing"
+          "urn:decentraland:off-chain:base-avatars:red_tshirt",
+          "urn:decentraland:off-chain:base-avatars:striped_swim_suit",
+          "urn:decentraland:off-chain:base-avatars:m_greenflipflops",
+          "urn:decentraland:off-chain:base-avatars:casual_hair_02",
+          "urn:decentraland:off-chain:base-avatars:handlebar",
+          "urn:decentraland:off-chain:base-avatars:toruspiercing"
         ],
         "snapshots": {
           "face": "Qmapa3vn9WzeJ3fq2YTNdJA4d9MqE1xGeDcrzAGtvDcBdR",

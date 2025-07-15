@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/puffer_jacket_hoodie",
-          "dcl://base-avatars/hip_hop_joggers",
-          "dcl://base-avatars/citycomfortableshoes",
-          "dcl://base-avatars/tall_front_01",
-          "dcl://base-avatars/eyes_11",
-          "dcl://base-avatars/black_sun_glasses"
+          "urn:decentraland:off-chain:base-avatars:puffer_jacket_hoodie",
+          "urn:decentraland:off-chain:base-avatars:hip_hop_joggers",
+          "urn:decentraland:off-chain:base-avatars:citycomfortableshoes",
+          "urn:decentraland:off-chain:base-avatars:tall_front_01",
+          "urn:decentraland:off-chain:base-avatars:eyes_11",
+          "urn:decentraland:off-chain:base-avatars:black_sun_glasses"
         ],
         "snapshots": {
           "face": "QmQpvVbT2PHy9a85XDnwWM5y7KUaMwZkvV9pn1MtWXEgxW",

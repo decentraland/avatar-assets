@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/striped_shirt_01",
-          "dcl://base-avatars/cargo_shorts",
-          "dcl://base-avatars/comfy_sport_sandals",
-          "dcl://base-avatars/hair_oldie",
-          "dcl://base-avatars/chin_beard"
+          "urn:decentraland:off-chain:base-avatars:striped_shirt_01",
+          "urn:decentraland:off-chain:base-avatars:cargo_shorts",
+          "urn:decentraland:off-chain:base-avatars:comfy_sport_sandals",
+          "urn:decentraland:off-chain:base-avatars:hair_oldie",
+          "urn:decentraland:off-chain:base-avatars:chin_beard"
         ],
         "snapshots": {
           "face": "QmctLSTHwh3ay7fgSw73xw9VAahiiVR4225wPDyHfRixht",

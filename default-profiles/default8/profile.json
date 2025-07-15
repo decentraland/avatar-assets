@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/light_green_shirt",
-          "dcl://base-avatars/f_red_modern_pants",
-          "dcl://base-avatars/pink_blue_socks",
-          "dcl://base-avatars/double_bun",
-          "dcl://base-avatars/thunder_02_earring",
-          "dcl://base-avatars/f_eyes_06"
+          "urn:decentraland:off-chain:base-avatars:light_green_shirt",
+          "urn:decentraland:off-chain:base-avatars:f_red_modern_pants",
+          "urn:decentraland:off-chain:base-avatars:pink_blue_socks",
+          "urn:decentraland:off-chain:base-avatars:double_bun",
+          "urn:decentraland:off-chain:base-avatars:thunder_02_earring",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_06"
         ],
         "snapshots": {
           "face": "QmUZ8mczjrJbFHtUiiFQvkhbFzZrSxaYkF6Dr7qUkdGxwQ",
