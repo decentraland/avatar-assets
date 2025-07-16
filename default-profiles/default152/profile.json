@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/green_square_shirt",
-          "dcl://base-avatars/oxford_pants",
-          "dcl://base-avatars/sport_blue_shoes",
-          "dcl://base-avatars/casual_hair_02",
-          "dcl://base-avatars/mouth_03",
-          "dcl://base-avatars/toruspiercing"
+          "urn:decentraland:off-chain:base-avatars:green_square_shirt",
+          "urn:decentraland:off-chain:base-avatars:oxford_pants",
+          "urn:decentraland:off-chain:base-avatars:sport_blue_shoes",
+          "urn:decentraland:off-chain:base-avatars:casual_hair_02",
+          "urn:decentraland:off-chain:base-avatars:mouth_03",
+          "urn:decentraland:off-chain:base-avatars:toruspiercing"
         ],
         "snapshots": {
           "face": "QmSrDfSuzHXhE6XsYKoHqzHJDjnoSggw7Q275RgTiQfhma",

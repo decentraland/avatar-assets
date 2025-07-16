@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/green_hoodie",
-          "dcl://base-avatars/brown_pants",
-          "dcl://base-avatars/sneakers",
-          "dcl://base-avatars/casual_hair_01",
-          "dcl://base-avatars/beard"
+          "urn:decentraland:off-chain:base-avatars:green_hoodie",
+          "urn:decentraland:off-chain:base-avatars:brown_pants",
+          "urn:decentraland:off-chain:base-avatars:sneakers",
+          "urn:decentraland:off-chain:base-avatars:casual_hair_01",
+          "urn:decentraland:off-chain:base-avatars:beard"
         ],
         "snapshots": {
           "face": "QmPGErFMTjgjEmyuR9TPeifuaQSLiTSSkdaCkCMwUvcMX2",

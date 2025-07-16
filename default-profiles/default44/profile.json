@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/baggy_pullover",
-          "dcl://base-avatars/f_stripe_white_pants",
-          "dcl://base-avatars/bun_shoes",
-          "dcl://base-avatars/hair_undere",
-          "dcl://base-avatars/green_feather_earring",
-          "dcl://base-avatars/f_eyes_10"
+          "urn:decentraland:off-chain:base-avatars:baggy_pullover",
+          "urn:decentraland:off-chain:base-avatars:f_stripe_white_pants",
+          "urn:decentraland:off-chain:base-avatars:bun_shoes",
+          "urn:decentraland:off-chain:base-avatars:hair_undere",
+          "urn:decentraland:off-chain:base-avatars:green_feather_earring",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_10"
         ],
         "snapshots": {
           "face": "QmW6zc8oguAifU9XpEpuj6oN7SCmaJ4Dupk7KJWvJe8rvs",

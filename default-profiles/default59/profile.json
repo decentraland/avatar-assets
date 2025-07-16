@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/simple_blue_tshirt",
-          "dcl://base-avatars/f_african_leggins",
-          "dcl://base-avatars/sport_colored_shoes",
-          "dcl://base-avatars/shoulder_hair",
-          "dcl://base-avatars/f_mouth_07"
+          "urn:decentraland:off-chain:base-avatars:simple_blue_tshirt",
+          "urn:decentraland:off-chain:base-avatars:f_african_leggins",
+          "urn:decentraland:off-chain:base-avatars:sport_colored_shoes",
+          "urn:decentraland:off-chain:base-avatars:shoulder_hair",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_07"
         ],
         "snapshots": {
           "face": "Qmd6BjEp1c5F51i8CTyaFF93Fb2qjKnFRBQpRWg7r5eMf4",

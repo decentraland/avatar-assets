@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_pink_simple_tshirt",
-          "dcl://base-avatars/f_diamond_leggings",
-          "dcl://base-avatars/Espadrilles",
-          "dcl://base-avatars/standard_hair",
-          "dcl://base-avatars/Thunder_earring",
-          "dcl://base-avatars/f_mouth_07"
+          "urn:decentraland:off-chain:base-avatars:f_pink_simple_tshirt",
+          "urn:decentraland:off-chain:base-avatars:f_diamond_leggings",
+          "urn:decentraland:off-chain:base-avatars:espadrilles",
+          "urn:decentraland:off-chain:base-avatars:standard_hair",
+          "urn:decentraland:off-chain:base-avatars:thunder_earring",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_07"
         ],
         "snapshots": {
           "face": "QmcEcs4XTamHQVfeiJSJr84jKsV7rkYpA1XsbNCFWM65Ns",

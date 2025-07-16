@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/turtle_neck_sweater",
-          "dcl://base-avatars/kilt",
-          "dcl://base-avatars/m_mountainshoes.glb",
-          "dcl://base-avatars/keanu_hair",
-          "dcl://base-avatars/full_beard"
+          "urn:decentraland:off-chain:base-avatars:turtle_neck_sweater",
+          "urn:decentraland:off-chain:base-avatars:kilt",
+          "urn:decentraland:off-chain:base-avatars:m_mountainshoes.glb",
+          "urn:decentraland:off-chain:base-avatars:keanu_hair",
+          "urn:decentraland:off-chain:base-avatars:full_beard"
         ],
         "snapshots": {
           "face": "QmSSjraMoaoUERp87tZcMyad7RAZPZ5D9w5oRuMCqXVhxz",

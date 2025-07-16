@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/pride_tshirt",
-          "dcl://base-avatars/basketball_shorts",
-          "dcl://base-avatars/moccasin",
-          "dcl://base-avatars/hair_oldie",
-          "dcl://base-avatars/french_beard"
+          "urn:decentraland:off-chain:base-avatars:pride_tshirt",
+          "urn:decentraland:off-chain:base-avatars:basketball_shorts",
+          "urn:decentraland:off-chain:base-avatars:moccasin",
+          "urn:decentraland:off-chain:base-avatars:hair_oldie",
+          "urn:decentraland:off-chain:base-avatars:french_beard"
         ],
         "snapshots": {
           "face": "QmbtEyLyfTSNVhV7kA3auLK5fukdof5Xgzmcp1Dg83fKsd",

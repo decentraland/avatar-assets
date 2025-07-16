@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/colored_sweater",
-          "dcl://base-avatars/f_brown_trousers",
-          "dcl://base-avatars/crocs",
-          "dcl://base-avatars/two_tails",
-          "dcl://base-avatars/square_earring",
-          "dcl://base-avatars/f_mouth_08"
+          "urn:decentraland:off-chain:base-avatars:colored_sweater",
+          "urn:decentraland:off-chain:base-avatars:f_brown_trousers",
+          "urn:decentraland:off-chain:base-avatars:crocs",
+          "urn:decentraland:off-chain:base-avatars:two_tails",
+          "urn:decentraland:off-chain:base-avatars:square_earring",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_08"
         ],
         "snapshots": {
           "face": "QmXVQ9EdCtpPVme3dNxRiygVcgZts6k1nyBiKfdSxj3Ewv",

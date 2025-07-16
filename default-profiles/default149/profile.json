@@ -30,11 +30,11 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/striped_pijama",
-          "dcl://base-avatars/pijama_pants",
-          "dcl://base-avatars/bear_slippers",
-          "dcl://base-avatars/semi_bold",
-          "dcl://base-avatars/mouth_04"
+          "urn:decentraland:off-chain:base-avatars:striped_pijama",
+          "urn:decentraland:off-chain:base-avatars:pijama_pants",
+          "urn:decentraland:off-chain:base-avatars:bear_slippers",
+          "urn:decentraland:off-chain:base-avatars:semi_bold",
+          "urn:decentraland:off-chain:base-avatars:mouth_04"
         ],
         "snapshots": {
           "face": "QmVQeRJSa83aUHGQy3uTx3EtSfPHq3q5vgsjA5WiVEgBkM",

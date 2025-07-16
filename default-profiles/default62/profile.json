@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/school_shirt",
-          "dcl://base-avatars/f_school_skirt",
-          "dcl://base-avatars/Moccasin",
-          "dcl://base-avatars/hair_anime_01",
-          "dcl://base-avatars/f_eyes_08",
-          "dcl://base-avatars/blue_star_earring"
+          "urn:decentraland:off-chain:base-avatars:school_shirt",
+          "urn:decentraland:off-chain:base-avatars:f_school_skirt",
+          "urn:decentraland:off-chain:base-avatars:moccasin",
+          "urn:decentraland:off-chain:base-avatars:hair_anime_01",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_08",
+          "urn:decentraland:off-chain:base-avatars:blue_star_earring"
         ],
         "snapshots": {
           "face": "QmR7xicJxa4Aoqr7AjbD2TzKKsnwVLYoWS4MgfM6SWNGWX",

@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/soccer_shirt",
-          "dcl://base-avatars/jean_shorts",
-          "dcl://base-avatars/m_feet_soccershoes",
-          "dcl://base-avatars/rasta",
-          "dcl://base-avatars/short_boxed_beard",
-          "dcl://base-avatars/golden_earring"
+          "urn:decentraland:off-chain:base-avatars:soccer_shirt",
+          "urn:decentraland:off-chain:base-avatars:jean_shorts",
+          "urn:decentraland:off-chain:base-avatars:m_feet_soccershoes",
+          "urn:decentraland:off-chain:base-avatars:rasta",
+          "urn:decentraland:off-chain:base-avatars:short_boxed_beard",
+          "urn:decentraland:off-chain:base-avatars:golden_earring"
         ],
         "snapshots": {
           "face": "QmSUJtKFpoFtCQ4ssJtbwBE8edjHJTzDAKY3ew7ZRKBuTG",

@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/elegant_sweater",
-          "dcl://base-avatars/brown_pants_02",
-          "dcl://base-avatars/classic_shoes",
-          "dcl://base-avatars/moptop",
-          "dcl://base-avatars/lincoln_beard",
-          "dcl://base-avatars/matrix_sunglasses"
+          "urn:decentraland:off-chain:base-avatars:elegant_sweater",
+          "urn:decentraland:off-chain:base-avatars:brown_pants_02",
+          "urn:decentraland:off-chain:base-avatars:classic_shoes",
+          "urn:decentraland:off-chain:base-avatars:moptop",
+          "urn:decentraland:off-chain:base-avatars:lincoln_beard",
+          "urn:decentraland:off-chain:base-avatars:matrix_sunglasses"
         ],
         "snapshots": {
           "face": "QmX1scbudZxcdXfc8e8nLpe4QFtfu7MHXf8pwuST1LyPt6",

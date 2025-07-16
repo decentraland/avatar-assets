@@ -30,12 +30,12 @@
           }
         },
         "wearables": [
-          "dcl://base-avatars/f_pride_t_shirt",
-          "dcl://base-avatars/f_red_comfy_pants",
-          "dcl://base-avatars/citycomfortableshoes",
-          "dcl://base-avatars/shoulder_hair",
-          "dcl://base-avatars/f_glasses_fashion",
-          "dcl://base-avatars/f_mouth_05"
+          "urn:decentraland:off-chain:base-avatars:f_pride_t_shirt",
+          "urn:decentraland:off-chain:base-avatars:f_red_comfy_pants",
+          "urn:decentraland:off-chain:base-avatars:citycomfortableshoes",
+          "urn:decentraland:off-chain:base-avatars:shoulder_hair",
+          "urn:decentraland:off-chain:base-avatars:f_glasses_fashion",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_05"
         ],
         "snapshots": {
           "face": "QmabMEHPTaor5KqyJ92SBQA8YzzB2s2kXCFp9QoXd7mWMu",
