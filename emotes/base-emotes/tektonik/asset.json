@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Tektonik.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Tektonik.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Tektonik.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Tektonik.glb"}
   ]
 }
