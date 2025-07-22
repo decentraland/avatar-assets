@@ -5,37 +5,40 @@
       "description": "",
       "avatar": {
         "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.35686275362968445,
-            "g": 0.1921568661928177,
-            "b": 0.05882352963089943,
-            "a": 1
+            "r": 0.5490196347236633,
+            "g": 0.13333334028720857,
+            "b": 0.08627451211214066,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.2235294133424759,
-            "g": 0.48627451062202454,
-            "b": 0.6901960968971252,
-            "a": 1
+            "r": 0.9490196108818054,
+            "g": 0.7607843279838562,
+            "b": 0.6470588445663452,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:f_simple_yellow_tshirt",
-          "urn:decentraland:off-chain:base-avatars:f_short_blue_jeans",
-          "urn:decentraland:off-chain:base-avatars:pink_sleepers",
-          "urn:decentraland:off-chain:base-avatars:cornrows",
-          "urn:decentraland:off-chain:base-avatars:green_stone_tiara",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_04"
+          "urn:decentraland:off-chain:base-avatars:keanu_hair",
+          "urn:decentraland:off-chain:base-avatars:eyes_15",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_12",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_02",
+          "urn:decentraland:off-chain:base-avatars:handlebar",
+          "urn:decentraland:off-chain:base-avatars:f_pride_t_shirt",
+          "urn:decentraland:off-chain:base-avatars:basketball_shorts",
+          "urn:decentraland:off-chain:base-avatars:ruby_red_loafer",
+          "urn:decentraland:off-chain:base-avatars:emerald_ring"
         ],
         "snapshots": {
           "face": "QmZ3HbVnuefHJST1crtPXp6zpM7vRAh2XPnJDVondAKGNw",

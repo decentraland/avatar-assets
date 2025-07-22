@@ -4,37 +4,40 @@
       "name": "",
       "description": "",
       "avatar": {
-        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseMale",
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.23529411852359772,
-            "g": 0.12941177189350128,
-            "b": 0.04313725605607033,
-            "a": 1
+            "r": 0.5960784554481506,
+            "g": 0.37254902720451357,
+            "b": 0.21960784494876862,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.37254902720451355,
-            "g": 0.2235294133424759,
-            "b": 0.19607843458652496,
-            "a": 1
+            "r": 0.8666666746139526,
+            "g": 0.6941176652908325,
+            "b": 0.5607843399047852,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:f_sport_purple_tshirt",
-          "urn:decentraland:off-chain:base-avatars:f_roller_leggings",
-          "urn:decentraland:off-chain:base-avatars:sport_black_shoes",
-          "urn:decentraland:off-chain:base-avatars:hair_coolshortstyle",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_08"
+          "urn:decentraland:off-chain:base-avatars:casual_hair_01",
+          "urn:decentraland:off-chain:base-avatars:eyes_00",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_00",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_04",
+          "urn:decentraland:off-chain:base-avatars:beard",
+          "urn:decentraland:off-chain:base-avatars:green_hoodie",
+          "urn:decentraland:off-chain:base-avatars:f_brown_trousers",
+          "urn:decentraland:off-chain:base-avatars:sneakers"
         ],
         "snapshots": {
           "face": "Qmc3FbXg9BEH6H71TuELn9qVvsU86EaneMqYbeojE8ZdG3",
