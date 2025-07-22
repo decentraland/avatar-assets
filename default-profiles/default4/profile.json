@@ -5,37 +5,38 @@
       "description": "",
       "avatar": {
         "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 1.0,
+            "g": 0.0,
+            "b": 0.772549033164978,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.10980392247438431,
-            "g": 0.10980392247438431,
-            "b": 0.10980392247438431,
-            "a": 1
+            "r": 1.0,
+            "g": 0.0,
+            "b": 0.772549033164978,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.2235294133424759,
-            "g": 0.48627451062202454,
-            "b": 0.6901960968971252,
-            "a": 1
+            "r": 0.6745098233222961,
+            "g": 1.0,
+            "b": 0.9882352948188782,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:colored_sweater",
-          "urn:decentraland:off-chain:base-avatars:f_brown_trousers",
-          "urn:decentraland:off-chain:base-avatars:crocs",
-          "urn:decentraland:off-chain:base-avatars:two_tails",
-          "urn:decentraland:off-chain:base-avatars:square_earring",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_08"
+          "urn:decentraland:off-chain:base-avatars:tall_front_01",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_04",
+          "urn:decentraland:off-chain:base-avatars:f_eyebrows_06",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_00",
+          "urn:decentraland:off-chain:base-avatars:brown_sleveless_dress",
+          "urn:decentraland:off-chain:base-avatars:f_brown_skirt",
+          "urn:decentraland:off-chain:base-avatars:citycomfortableshoes"
         ],
         "snapshots": {
           "face": "Qme7PhmJuHEh5sQDzC8xHEpN7h8jKoQNN86ZacY3pfScz3",

@@ -4,38 +4,40 @@
       "name": "",
       "description": "",
       "avatar": {
-        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseMale",
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.9254902005195618,
-            "g": 0.9098039269447327,
-            "b": 0.886274516582489,
-            "a": 1
+            "r": 0.10980392247438431,
+            "g": 0.10980392247438431,
+            "b": 0.10980392247438431,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.7490196228027344,
-            "g": 0.6196078658103943,
-            "b": 0.3529411852359772,
-            "a": 1
+            "r": 1.0,
+            "g": 0.8666666746139526,
+            "b": 0.7372549176216126,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:f_white_shirt",
-          "urn:decentraland:off-chain:base-avatars:distressed_black_jeans",
-          "urn:decentraland:off-chain:base-avatars:classic_shoes",
-          "urn:decentraland:off-chain:base-avatars:hair_punk",
-          "urn:decentraland:off-chain:base-avatars:punk_piercing",
-          "urn:decentraland:off-chain:base-avatars:f_eyebrows_02"
+          "urn:decentraland:off-chain:base-avatars:curtained_hair",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_05",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_05",
+          "urn:decentraland:off-chain:base-avatars:mouth_06",
+          "urn:decentraland:off-chain:base-avatars:red_square_shirt",
+          "urn:decentraland:off-chain:base-avatars:hip_hop_joggers",
+          "urn:decentraland:off-chain:base-avatars:bear_slippers",
+          "urn:decentraland:off-chain:base-avatars:black_glove"
         ],
         "snapshots": {
           "face": "QmYGZqA2Ny23BNHCs4iyVThaLF7HYXTZvFXqt1usLKbyBT",

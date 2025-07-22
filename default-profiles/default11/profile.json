@@ -5,36 +5,39 @@
       "description": "",
       "avatar": {
         "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.21960784494876862,
+            "g": 0.48627451062202456,
+            "b": 0.6901960968971252,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.9137254953384399,
-            "g": 0.5098039507865906,
-            "b": 0.20392157137393951,
-            "a": 1
+            "r": 0.48627451062202456,
+            "g": 0.2862745225429535,
+            "b": 0.08627451211214066,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.125490203499794,
-            "g": 0.7019608020782471,
-            "b": 0.9647058844566345,
-            "a": 1
+            "r": 1.0,
+            "g": 0.8666666746139526,
+            "b": 0.7372549176216126,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:simple_blue_tshirt",
-          "urn:decentraland:off-chain:base-avatars:f_african_leggins",
-          "urn:decentraland:off-chain:base-avatars:sport_colored_shoes",
-          "urn:decentraland:off-chain:base-avatars:shoulder_hair",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_07"
+          "urn:decentraland:off-chain:base-avatars:modern_hair",
+          "urn:decentraland:off-chain:base-avatars:eyes_11",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_01",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_01",
+          "urn:decentraland:off-chain:base-avatars:striped_shirt_01",
+          "urn:decentraland:off-chain:base-avatars:trash_jean",
+          "urn:decentraland:off-chain:base-avatars:m_mountainshoes.glb",
+          "urn:decentraland:off-chain:base-avatars:cord_bracelet"
         ],
         "snapshots": {
           "face": "QmfJvMmPHm2YEak58fCQfThCVBydrF35gzbW5YtYaN2XYw",

@@ -5,37 +5,40 @@
       "description": "",
       "avatar": {
         "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.5254902243614197,
+            "g": 0.3764705955982208,
+            "b": 0.25882354378700259,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.48235294222831726,
-            "g": 0.2823529541492462,
-            "b": 0.0941176488995552,
-            "a": 1
+            "r": 1.0,
+            "g": 0.7450980544090271,
+            "b": 0.14901961386203767,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.125490203499794,
-            "g": 0.7019608020782471,
-            "b": 0.9647058844566345,
-            "a": 1
+            "r": 0.9490196108818054,
+            "g": 0.7607843279838562,
+            "b": 0.6470588445663452,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:f_blue_jacket",
-          "urn:decentraland:off-chain:base-avatars:f_capris",
-          "urn:decentraland:off-chain:base-avatars:ruby_blue_loafer",
-          "urn:decentraland:off-chain:base-avatars:pony_tail",
-          "urn:decentraland:off-chain:base-avatars:pearls_earring",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_05"
+          "urn:decentraland:off-chain:base-avatars:curly_hair",
+          "urn:decentraland:off-chain:base-avatars:eyes_03",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_00",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_03",
+          "urn:decentraland:off-chain:base-avatars:f_body_swimsuit",
+          "urn:decentraland:off-chain:base-avatars:f_yoga_trousers",
+          "urn:decentraland:off-chain:base-avatars:espadrilles",
+          "urn:decentraland:off-chain:base-avatars:dcl_watch",
+          "urn:decentraland:off-chain:base-avatars:pink_gem_earring"
         ],
         "snapshots": {
           "face": "QmVZ5KBsikcPyccf55Fn2BPeReGBPqB4WDmrPsyaFAefbb",
