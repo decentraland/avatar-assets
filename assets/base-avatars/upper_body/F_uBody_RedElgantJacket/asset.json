@@ -4,7 +4,14 @@
     "en": "Red Elegant Jacket",
     "es": "Chaqueta Elegante Roja"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Red",
+    "Elegant",
+    "Jacket"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

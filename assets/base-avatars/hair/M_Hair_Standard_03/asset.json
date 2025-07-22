@@ -5,8 +5,11 @@
     "es": "Corte Sencillo"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Simple",
+    "Hairstyle"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Standard_03.glb"},

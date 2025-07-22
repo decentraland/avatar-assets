@@ -5,10 +5,12 @@
     "es": "Pantalones Cortos Deportivos"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Sport",
+    "Shorts"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_SportShorts.glb"},

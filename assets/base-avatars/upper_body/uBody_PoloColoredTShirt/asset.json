@@ -5,8 +5,13 @@
     "es": "Remera de Polo de Colores"
   },
   "tags": [
+    "unisex",
     "upper",
-    "body"
+    "body",
+    "Colored",
+    "Polo",
+    "T",
+    "Shirt"
   ],
   "removesDefaultHiding": [
     "hands"

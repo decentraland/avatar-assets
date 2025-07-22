@@ -5,9 +5,11 @@
     "es": "Ancla"
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Anchor",
+    "Beard"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_MoustacheShortBeard.glb"},

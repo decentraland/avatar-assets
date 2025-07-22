@@ -4,7 +4,13 @@
     "en": "Colored Sweater",
     "es": "Sweater de Colores"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Colored",
+    "Sweater"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,12 +5,11 @@
     "es": "Gafas de Matrix"
   },
   "tags": [
-    "accesories",
-    "men",
-    "man",
-    "woman",
-    "women"
-   ],
+    "unisex",
+    "eyewear",
+    "Matrix",
+    "Sunglasses"
+  ],
   "category": "eye_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyewear_MatrixSunGlasses.glb"},

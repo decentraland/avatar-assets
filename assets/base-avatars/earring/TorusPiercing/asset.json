@@ -5,12 +5,11 @@
     "es": "Torus Piercing"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "earring",
+    "torus",
+    "piercing"
+  ],
   "category": "earring",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "TorusPiercing.glb"},

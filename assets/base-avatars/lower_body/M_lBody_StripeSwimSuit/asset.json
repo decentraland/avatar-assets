@@ -5,14 +5,14 @@
     "es": "Traje de baño rayado"
   },
   "tags": [
-    "bottom",
-    "Male",
-    "Man"
-   ],
+    "unisex",
+    "lower_body",
+    "Striped",
+    "Swimsuit"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_StripeSwimSuit.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_StripeSwimSuit.glb"}
-
   ]
 }

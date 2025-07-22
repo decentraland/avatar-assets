@@ -5,14 +5,15 @@
     "es": "Pantalones Marrones"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Brown",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_BrownPants.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_BrownPants.glb"}
-
   ]
 }

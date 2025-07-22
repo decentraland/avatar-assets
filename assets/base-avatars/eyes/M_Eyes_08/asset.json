@@ -5,9 +5,10 @@
     "es": "Eyes_08"
   },
   "tags": [
-    "face",
-    "eyes"
-   ],
+    "unisex",
+    "eyes",
+    "08"
+  ],
   "category": "eyes",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyes_08.png"},

@@ -4,7 +4,13 @@
     "en": "Safari Shirt",
     "es": "Camisa de Safari"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Safari",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

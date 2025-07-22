@@ -5,9 +5,12 @@
     "es": "Pantalones de Corderoy Violeta"
   },
   "tags": [
-    "lower",
-    "body"
-   ],
+    "unisex",
+    "lower_body",
+    "Corduroy",
+    "Purple",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_CorduroyPurplePants.glb"},

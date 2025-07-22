@@ -4,7 +4,13 @@
     "en": "White Top",
     "es": "Top Blanco"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "White",
+    "Top"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

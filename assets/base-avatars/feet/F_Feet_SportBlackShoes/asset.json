@@ -5,12 +5,12 @@
     "es": "Zapatos Deportivos Negros"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Sport",
+    "Black",
+    "Shoes"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_SportBlackShoes.glb"},

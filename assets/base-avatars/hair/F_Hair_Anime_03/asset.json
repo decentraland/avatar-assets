@@ -5,8 +5,12 @@
     "es": "Estilo de pelo Undere"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Undere",
+    "Hair",
+    "Style"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Anime_Long.glb"},

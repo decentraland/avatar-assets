@@ -4,7 +4,14 @@
     "en": "Striped Pajama Shirt",
     "es": "Remera de Pijama Rayada"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Striped",
+    "Pajama",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

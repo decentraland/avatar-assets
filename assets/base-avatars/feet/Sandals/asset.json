@@ -5,12 +5,10 @@
     "es": "Sandalias"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Sandals"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_Sandals.glb"},

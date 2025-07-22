@@ -5,12 +5,11 @@
     "es": "Zapatos cómodos"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Comfortable",
+    "Shoes"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "CityComfortableShoes.glb"},

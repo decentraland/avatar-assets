@@ -4,7 +4,14 @@
     "en": "Blue Elegant Shirt",
     "es": "Camisa Azul Elegante"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Blue",
+    "Elegant",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,9 +5,10 @@
     "es": "EyeBrows_03"
   },
   "tags": [
-    "face",
-    "eyebrows"
-   ],
+    "unisex",
+    "eyebrows",
+    "03"
+  ],
   "category": "eyebrows",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_EyeBrows_03.png"},

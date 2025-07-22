@@ -5,9 +5,12 @@
     "es": "Pantalones de Corderoy Arena"
   },
   "tags": [
-    "lower",
-    "body"
-   ],
+    "unisex",
+    "lower_body",
+    "Corduroy",
+    "Sandy",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_CorduroySandyPants.glb"},

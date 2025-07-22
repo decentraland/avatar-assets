@@ -4,7 +4,14 @@
     "en": "Purple Sport T-shirt",
     "es": "Camiseta Deportiva Violeta"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Purple",
+    "Sport",
+    "T-shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

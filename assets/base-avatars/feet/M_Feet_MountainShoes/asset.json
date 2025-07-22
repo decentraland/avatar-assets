@@ -5,14 +5,14 @@
     "es": "Botas de Montaña"
   },
   "tags": [
-    "shoes",
-    "man",
-    "men"
-   ],
+    "unisex",
+    "feet",
+    "Mountain",
+    "Boots"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_MountainShoes.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_MountainShoes.glb"}
-
   ]
 }

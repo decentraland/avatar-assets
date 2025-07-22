@@ -5,8 +5,11 @@
     "es": "Peinado Moderno"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Modern",
+    "Style"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ModernHair.glb"},

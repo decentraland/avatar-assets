@@ -4,7 +4,13 @@
     "en": "Red T-Shirt",
     "es": "Remera Roja"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Red",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

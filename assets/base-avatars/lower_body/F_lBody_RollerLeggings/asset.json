@@ -5,10 +5,12 @@
     "es": "Roller leggings"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Roller",
+    "leggings"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_RollerLeggings.glb"},

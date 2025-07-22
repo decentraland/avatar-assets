@@ -4,7 +4,13 @@
     "en": "Striped Top",
     "es": "Top a Rayas"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Striped",
+    "Top"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

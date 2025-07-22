@@ -4,7 +4,14 @@
     "en": "Puffer Jacket Hoodie",
     "es": "Chaqueta Mullida con Capucha"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Puffer",
+    "Jacket",
+    "Hoodie"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

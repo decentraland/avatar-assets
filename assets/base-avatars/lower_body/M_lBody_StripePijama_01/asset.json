@@ -5,14 +5,15 @@
     "es": "Pantalón de Pijama Rayado"
   },
   "tags": [
-    "bottom",
-    "Male",
-    "Man"
-   ],
+    "unisex",
+    "lower_body",
+    "Striped",
+    "Pajama",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_StripePijama_01.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_StripePijama_01.glb"}
-
   ]
 }

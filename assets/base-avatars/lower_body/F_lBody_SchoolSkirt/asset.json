@@ -5,10 +5,12 @@
     "es": "Falda Escolar"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "School",
+    "Skirt"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_SchoolSkirt.glb"},

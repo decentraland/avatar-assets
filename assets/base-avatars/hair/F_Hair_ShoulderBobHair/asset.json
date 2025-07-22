@@ -5,8 +5,12 @@
     "es": "Corte Carré"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Shoulder",
+    "Bob",
+    "Hair"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShoulderBobHair.glb"},

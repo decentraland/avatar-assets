@@ -5,8 +5,11 @@
     "es": "Cresta Punk"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Punk",
+    "Mohawk"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Mohawk.glb"},

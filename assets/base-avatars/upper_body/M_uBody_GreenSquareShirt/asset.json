@@ -4,7 +4,14 @@
     "en": "Green Square Shirt",
     "es": "Camisa a Cuadros Verde"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Green",
+    "Square",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

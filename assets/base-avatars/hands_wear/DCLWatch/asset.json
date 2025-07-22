@@ -5,10 +5,12 @@
     "es": "Reloj Clásico de Decentraland"
   },
   "tags": [
-    "decentraland",
-    "hands",
-    "watch"
-   ],
+    "unisex",
+    "hands_wear",
+    "Decentraland",
+    "Classic",
+    "Watch"
+  ],
   "category": "hands_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "DCLWatch.glb"},

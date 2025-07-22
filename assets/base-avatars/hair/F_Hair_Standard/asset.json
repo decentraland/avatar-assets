@@ -5,8 +5,11 @@
     "es": "Peinado Clásico"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Classic",
+    "Style"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Standard.glb"},

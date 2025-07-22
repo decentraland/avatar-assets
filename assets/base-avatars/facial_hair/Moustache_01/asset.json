@@ -5,9 +5,10 @@
     "es": "Bigote Inglés"
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Handlebar"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Moustache.glb"},

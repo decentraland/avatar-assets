@@ -5,8 +5,10 @@
     "es": "Rodete"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "Hair",
+    "Bun"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Bun.glb"},

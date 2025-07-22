@@ -5,10 +5,11 @@
     "es": "Anillo de Esmeralda"
   },
   "tags": [
-    "anillo",
-    "hands",
-    "esmeralda"
-   ],
+    "unisex",
+    "hands_wear",
+    "Emerald",
+    "Ring"
+  ],
   "category": "hands_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "EmeraldRing.glb"},

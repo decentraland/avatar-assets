@@ -5,10 +5,12 @@
     "es": "Pantalones de Yoga"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Yoga",
+    "Trousers"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_YogaTrousers.glb"},

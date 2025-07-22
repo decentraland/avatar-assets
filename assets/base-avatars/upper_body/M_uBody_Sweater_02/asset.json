@@ -4,7 +4,13 @@
     "en": "Christmas Sweater",
     "es": "Suéter de Navidad"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Christmas",
+    "Sweater"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

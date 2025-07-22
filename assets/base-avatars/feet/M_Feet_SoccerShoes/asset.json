@@ -5,14 +5,14 @@
     "es": "Botines"
   },
   "tags": [
-    "shoes",
-    "man",
-    "men"
-   ],
+    "unisex",
+    "feet",
+    "Soccer",
+    "Cleats"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_SoccerShoes.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_SoccerShoes.glb"}
-
   ]
 }

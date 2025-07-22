@@ -4,7 +4,13 @@
     "en": "Baggy Pullover",
     "es": "Suéter de Lana Holgado"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Baggy",
+    "Pullover"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

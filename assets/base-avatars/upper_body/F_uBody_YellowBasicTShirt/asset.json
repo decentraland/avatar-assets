@@ -4,7 +4,14 @@
     "en": "Simple Yellow T-shirt",
     "es": "Camiseta Amarilla"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Simple",
+    "Yellow",
+    "T-shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,12 +5,16 @@
     "es": "Leggins Cortos de Colores"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Short",
+    "Colored",
+    "Leggins"
+  ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_ShortColoredLeggings.glb"},{"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_ShortColoredLeggings.glb"}
+    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_ShortColoredLeggings.glb"},
+    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_ShortColoredLeggings.glb"}
   ]
 }

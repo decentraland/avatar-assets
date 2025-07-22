@@ -5,14 +5,14 @@
     "es": "Corona de laureles"
   },
   "tags": [
-    "accesories",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "tiara",
+    "Laurel",
+    "Wreath"
+  ],
   "category": "tiara",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Tiara_LaurelWreath.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Tiara_LaurelWreath.glb"}
-
   ]
 }

@@ -4,7 +4,13 @@
     "en": "Black Jacket",
     "es": "Chaqueta Negra"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Black",
+    "Jacket"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

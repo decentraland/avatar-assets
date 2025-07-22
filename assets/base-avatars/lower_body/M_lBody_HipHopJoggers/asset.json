@@ -5,12 +5,14 @@
     "es": "Pantalones de Hip Hp"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Hip",
+    "Hop",
+    "Joggers"
+  ],
   "category": "lower_body",
-  
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_hip_hop_joggers.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_hip_hop_joggers.glb"}

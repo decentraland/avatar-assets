@@ -5,10 +5,12 @@
     "es": "Leggins Africanos"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "African",
+    "Leggins"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_AfricanLeggings.glb"},

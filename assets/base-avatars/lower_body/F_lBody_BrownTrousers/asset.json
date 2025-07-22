@@ -5,10 +5,13 @@
     "es": "Pantalones Marrones Nuevos"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "New",
+    "Brown",
+    "Trousers"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_BrownTrousers.glb"},

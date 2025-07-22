@@ -4,7 +4,13 @@
     "en": "White Shirt",
     "es": "Camisa Blanca"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "White",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,8 +5,13 @@
     "es": "Remera de Polo Negra"
   },
   "tags": [
+    "unisex",
     "upper",
-    "body"
+    "body",
+    "Black",
+    "Polo",
+    "T",
+    "Shirt"
   ],
   "removesDefaultHiding": [
     "hands"

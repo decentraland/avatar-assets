@@ -5,12 +5,11 @@
     "es": "Aro Dorado"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "earring",
+    "gold",
+    "right"
+  ],
   "category": "earring",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "RightGoldEarring_01.glb"},

@@ -5,14 +5,16 @@
     "es": "Medias Rosadas y Azules"
   },
   "tags": [
-    "shoes",
-    "woman",
-    "women"
-   ],
+    "unisex",
+    "feet",
+    "Pink",
+    "and",
+    "Blue",
+    "Socks"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_PinkBlueSocks.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_PinkBlueSocks.glb"}
-
   ]
 }

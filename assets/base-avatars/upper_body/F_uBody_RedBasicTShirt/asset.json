@@ -4,7 +4,14 @@
     "en": "Red Simple T-Shirt",
     "es": "Camiseta Roja Simple"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Red",
+    "Simple",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

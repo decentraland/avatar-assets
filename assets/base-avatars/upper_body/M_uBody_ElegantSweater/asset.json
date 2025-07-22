@@ -4,7 +4,13 @@
     "en": "Elegant Sweater",
     "es": "Sweater Elegante"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Elegant",
+    "Sweater"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

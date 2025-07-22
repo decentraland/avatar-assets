@@ -5,14 +5,15 @@
     "es": "Pantalones de Chándal"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Grey",
+    "Joggers"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_GreyJoggers.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_GreyJoggers.glb"}
-
   ]
 }

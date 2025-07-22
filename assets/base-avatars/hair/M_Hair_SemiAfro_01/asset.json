@@ -5,8 +5,11 @@
     "es": "Pequeño Afro"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Small",
+    "Afro"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_SemiAfro_01.glb"},

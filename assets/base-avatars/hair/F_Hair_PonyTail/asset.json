@@ -5,8 +5,10 @@
     "es": "Cola de caballo"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Ponytail"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_PonyTail.glb"},

@@ -5,8 +5,13 @@
     "es": "Remera larga Colorida de Skater"
   },
   "tags": [
+    "unisex",
     "upper",
-    "body"
+    "body",
+    "Colored",
+    "Skater",
+    "Long",
+    "Sleeve"
   ],
   "removesDefaultHiding": [
     "hands"

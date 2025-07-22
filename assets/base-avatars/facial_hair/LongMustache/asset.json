@@ -5,9 +5,10 @@
     "es": "Horseshoe"
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Horseshoe"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_LongMoustache.glb"},

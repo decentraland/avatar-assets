@@ -5,14 +5,14 @@
     "es": "Sandalias Rojas"
   },
   "tags": [
-    "shoes",
-    "woman",
-    "women"
-   ],
+    "unisex",
+    "feet",
+    "Red",
+    "Sandals"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_RedSandals.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_RedSandals.glb"}
-
   ]
 }

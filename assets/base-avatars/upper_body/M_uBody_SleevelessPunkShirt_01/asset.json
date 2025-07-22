@@ -4,7 +4,14 @@
     "en": "Sleeveless Punk shirt",
     "es": "Musculosa Punk"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Sleeveless",
+    "Punk",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

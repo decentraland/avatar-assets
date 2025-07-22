@@ -5,12 +5,10 @@
     "es": "Alpargatas"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Espadrilles"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_Espadrilles.glb"},

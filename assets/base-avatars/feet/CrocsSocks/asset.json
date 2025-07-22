@@ -5,12 +5,11 @@
     "es": "Medias Croc"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Croc",
+    "Socks"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "CrocsSocks.glb"},

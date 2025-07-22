@@ -4,7 +4,13 @@
     "en": "Croupier Shirt",
     "es": "Camisa de croupier"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Croupier",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

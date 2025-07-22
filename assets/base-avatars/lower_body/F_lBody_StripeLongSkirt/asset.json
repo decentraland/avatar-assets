@@ -5,10 +5,13 @@
     "es": "Falda Larga a Rayas"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Long",
+    "Striped",
+    "Skirt"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_StripeLongSkirt.glb"},

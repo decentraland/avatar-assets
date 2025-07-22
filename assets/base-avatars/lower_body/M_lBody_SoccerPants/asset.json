@@ -5,14 +5,14 @@
     "es": "Pantalón Corto de Fútbol"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower_body",
+    "Soccer",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_SoccerPants.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_SoccerPants.glb"}
-
   ]
 }

@@ -5,8 +5,10 @@
     "es": "Punk"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Punk"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Punk.glb"},

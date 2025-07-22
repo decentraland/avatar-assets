@@ -4,7 +4,14 @@
     "en": "Simple Pink T-Shirt",
     "es": "Camiseta Rosa Simple"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Simple",
+    "Pink",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

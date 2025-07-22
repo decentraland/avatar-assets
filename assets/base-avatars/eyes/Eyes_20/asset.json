@@ -5,9 +5,9 @@
     "es": "Eyes_20"
   },
   "tags": [
-    "face",
+    "unisex",
     "eyes"
-   ],
+  ],
   "category": "eyes",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Eyes_20.png"},

@@ -5,12 +5,11 @@
     "es": "Aro con Forma de Rayo"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "earring",
+    "thunder",
+    "right"
+  ],
   "category": "earring",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_ThunderRight.glb"},

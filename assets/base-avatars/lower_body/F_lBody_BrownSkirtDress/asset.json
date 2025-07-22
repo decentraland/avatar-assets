@@ -5,10 +5,12 @@
     "es": "Falda Marrón"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Brown",
+    "Skirt"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_BrownSkirtDress.glb"},

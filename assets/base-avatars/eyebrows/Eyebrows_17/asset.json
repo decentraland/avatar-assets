@@ -5,9 +5,9 @@
     "es": "Eyebrows_17"
   },
   "tags": [
-    "face",
+    "unisex",
     "eyebrows"
-   ],
+  ],
   "category": "eyebrows",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Eyebrows_17.png"},

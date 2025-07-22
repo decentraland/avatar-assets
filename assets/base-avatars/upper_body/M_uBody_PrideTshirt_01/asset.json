@@ -4,7 +4,13 @@
     "en": "Gay Pride T-Shirts",
     "es": "Remera del Orgullo Gay"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Pride",
+    "T-Shirts"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

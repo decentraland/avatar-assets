@@ -5,8 +5,12 @@
     "es": "Pelo Corto de Abuela"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Short",
+    "Grandma",
+    "Style"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Oldie_01.glb"},

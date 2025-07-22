@@ -4,7 +4,13 @@
     "en": "Green Hoodie",
     "es": "Sudadera Verde con Capucha"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Green",
+    "Hoodie"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

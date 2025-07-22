@@ -4,7 +4,14 @@
     "en": "Roller Skate Outfit",
     "es": "Remera de Roller Skate"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Roller",
+    "Skate",
+    "Outfit"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

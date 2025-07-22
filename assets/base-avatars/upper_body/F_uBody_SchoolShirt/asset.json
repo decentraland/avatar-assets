@@ -4,7 +4,13 @@
     "en": "School Shirt",
     "es": "Camisa Escolar"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "School",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

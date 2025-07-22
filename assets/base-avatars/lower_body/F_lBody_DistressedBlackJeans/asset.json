@@ -5,10 +5,14 @@
     "es": "Jeans Gastados Negros"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Worn",
+    "out",
+    "black",
+    "Jeans"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_DistressedBlackJeans.glb"},

@@ -5,10 +5,13 @@
     "es": "Pantalones Modernos Rojos"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Red",
+    "Modern",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_RedModernPant.glb"},

@@ -4,7 +4,13 @@
     "en": "Blue Jacket",
     "es": "Chaqueta Azul"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Blue",
+    "Jacket"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

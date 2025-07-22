@@ -5,8 +5,11 @@
     "es": "Pelo al hombro"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Shoulder",
+    "Hair"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShoulderHair.glb"},

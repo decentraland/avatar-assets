@@ -5,10 +5,12 @@
     "es": "Bracelete de Cuerda Espiralado"
   },
   "tags": [
-    "bracelet",
-    "hands",
-    "cord"
-   ],
+    "unisex",
+    "hands_wear",
+    "Cord",
+    "Wiggly",
+    "Bracelet"
+  ],
   "category": "hands_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "CordBracelet.glb"},

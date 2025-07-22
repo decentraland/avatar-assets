@@ -5,12 +5,11 @@
     "es": "Pantuflas de Oso"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Bear",
+    "Slippers"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "BearSlippers_01.glb"},

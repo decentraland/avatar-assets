@@ -4,7 +4,13 @@
     "en": "Blue T-Shirt",
     "es": "Remera Azul"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Blue",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,12 +5,11 @@
     "es": "Anteojos Negros"
   },
   "tags": [
-    "accesories",
-    "woman",
-    "women",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "eyewear",
+    "Black",
+    "Sunglasses"
+  ],
   "category": "eye_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_BlackSunglasses.glb"},

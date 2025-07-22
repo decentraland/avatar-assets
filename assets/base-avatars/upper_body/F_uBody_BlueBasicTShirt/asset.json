@@ -4,7 +4,14 @@
     "en": "Simple Blue T-shirt",
     "es": "Camiseta Azul"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Simple",
+    "Blue",
+    "T-shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],
@@ -14,7 +21,7 @@
       "type": "dcl://base-avatars/BaseFemale",
       "model": "F_uBody_BlueBasicTShirt.glb"
     },
-        {
+    {
       "type": "dcl://base-avatars/BaseMale",
       "model": "M_uBody_BlueBasicTShirt.glb"
     }

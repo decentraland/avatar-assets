@@ -4,7 +4,13 @@
     "en": "Yellow Sweater",
     "es": "Suéter Amarillo"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Yellow",
+    "Sweater"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

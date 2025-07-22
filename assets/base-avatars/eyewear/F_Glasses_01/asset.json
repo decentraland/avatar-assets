@@ -5,14 +5,14 @@
     "es": "Gafas Rojas"
   },
   "tags": [
-    "accesories",
-    "woman",
-    "women"
-   ],
+    "unisex",
+    "eyewear",
+    "Red",
+    "Glasses"
+  ],
   "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Glasses_01.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Glasses_01.glb"}
-
   ]
 }

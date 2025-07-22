@@ -5,8 +5,11 @@
     "es": "Pelo Pomposo"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Pompous",
+    "Hair"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_PompousHair.glb"},

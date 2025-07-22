@@ -4,7 +4,14 @@
     "en": "Light Green Shirt",
     "es": "Camisa Verde Claro"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Light",
+    "Green",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

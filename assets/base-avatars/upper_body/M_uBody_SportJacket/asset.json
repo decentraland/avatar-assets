@@ -4,7 +4,13 @@
     "en": "Sport Jacket",
     "es": "Chaqueta Deportiva"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Sport",
+    "Jacket"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

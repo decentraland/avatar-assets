@@ -4,7 +4,14 @@
     "en": "Red Square Shirt",
     "es": "Camisa a Cuadros roja"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Red",
+    "Square",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

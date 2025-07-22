@@ -4,7 +4,14 @@
     "en": "Simple Green T-Shirt",
     "es": "Camiseta Verde"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Simple",
+    "Green",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

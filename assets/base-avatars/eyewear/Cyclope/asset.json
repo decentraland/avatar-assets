@@ -5,12 +5,11 @@
     "es": "Gafa de Cíclope"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "female",
-    "Woman"
-   ],
+    "unisex",
+    "eyewear",
+    "Cyclope",
+    "Glasses"
+  ],
   "category": "eye_wear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_Cyclope.glb"},

@@ -5,8 +5,13 @@
     "es": "Remera de Polo Azul"
   },
   "tags": [
+    "unisex",
     "upper",
-    "body"
+    "body",
+    "Blue",
+    "Polo",
+    "T",
+    "Shirt"
   ],
   "removesDefaultHiding": [
     "hands"

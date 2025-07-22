@@ -5,12 +5,11 @@
     "es": "Bandana Azul"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "tiara",
+    "Blue",
+    "Bandana"
+  ],
   "category": "tiara",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "BlueBandana.glb"},

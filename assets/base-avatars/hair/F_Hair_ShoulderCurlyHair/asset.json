@@ -5,8 +5,11 @@
     "es": "Pelo Rizado"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Curly",
+    "Hair"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShoulderCurlyHair.glb"},

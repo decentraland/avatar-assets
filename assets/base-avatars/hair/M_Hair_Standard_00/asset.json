@@ -5,8 +5,12 @@
     "es": "Corte Relajado"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Relaxed",
+    "Hair",
+    "Style"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_relaxed_hair.glb"},

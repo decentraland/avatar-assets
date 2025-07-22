@@ -5,8 +5,13 @@
     "es": "Remera larga a Cuadros de Skater"
   },
   "tags": [
+    "unisex",
     "upper",
-    "body"
+    "body",
+    "Quad",
+    "Skater",
+    "Long",
+    "Sleeve"
   ],
   "removesDefaultHiding": [
     "hands"

@@ -5,12 +5,11 @@
     "es": "Zapatos Clásicos"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Classic",
+    "Shoes"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_ClassicShoes.glb"},

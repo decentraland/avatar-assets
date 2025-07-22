@@ -4,7 +4,14 @@
     "en": "Green Striped Shirt",
     "es": "Remera Rayada Verde"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Green",
+    "Striped",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

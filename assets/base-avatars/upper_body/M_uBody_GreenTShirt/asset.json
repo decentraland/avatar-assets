@@ -4,7 +4,13 @@
     "en": "Green T-Shirt",
     "es": "Remera Verde"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Green",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -5,14 +5,13 @@
     "es": "Pendientes con Forma de Rayos"
   },
   "tags": [
-    "accesories",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "earring",
+    "thunder"
+  ],
   "category": "earring",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_Thunder.glb"},
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_Thunder.glb"}
-
   ]
 }

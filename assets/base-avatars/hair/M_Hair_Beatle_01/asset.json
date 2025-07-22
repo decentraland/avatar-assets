@@ -5,8 +5,10 @@
     "es": "Moptop"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Moptop"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Beatle.glb"},

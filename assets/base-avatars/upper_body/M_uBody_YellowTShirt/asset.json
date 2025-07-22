@@ -4,7 +4,13 @@
     "en": "YellowT-Shirt",
     "es": "Remera Amarilla"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Yellow",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

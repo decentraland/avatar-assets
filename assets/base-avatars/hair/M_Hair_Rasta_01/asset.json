@@ -5,8 +5,10 @@
     "es": "Rasta"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Dreads"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Rasta_01.glb"},

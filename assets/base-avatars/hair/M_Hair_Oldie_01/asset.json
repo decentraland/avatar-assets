@@ -5,12 +5,13 @@
     "es": "Peinado Antiguo"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Oldie"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Oldie_01.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Oldie_01.glb"}
-
   ]
 }

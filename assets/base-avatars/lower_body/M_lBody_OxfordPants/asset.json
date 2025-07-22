@@ -5,14 +5,15 @@
     "es": "Pantalón Oxford"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Oxford",
+    "Pants"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_OxfordPants.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_OxfordPants.glb"}
-
   ]
 }

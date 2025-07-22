@@ -4,7 +4,14 @@
     "en": "Elegant Striped Shirt",
     "es": "Remera Elegante a Rayas"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Elegant",
+    "Striped",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

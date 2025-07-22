@@ -4,7 +4,13 @@
     "en": "Soccer T-Shirt",
     "es": "Remera de Fútbol"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Soccer",
+    "T-Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

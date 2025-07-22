@@ -5,13 +5,13 @@
     "es": "Walrus"
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Walrus"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_GrandPaMoustache.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_FacialHair_GrandPaMoustache.glb"}
-    
   ]
 }

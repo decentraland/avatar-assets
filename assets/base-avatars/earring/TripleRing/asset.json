@@ -5,12 +5,11 @@
     "es": "Tres Pendientes"
   },
   "tags": [
-    "accesories",
-    "male",
-    "man",
-    "woman",
-    "women"
-   ],
+    "unisex",
+    "earring",
+    "triple",
+    "ring"
+  ],
   "category": "earring",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Earrings_TripleRing.glb"},

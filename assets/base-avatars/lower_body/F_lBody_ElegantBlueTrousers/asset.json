@@ -5,10 +5,13 @@
     "es": "Pantalones Elegantes Azules"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Elegant",
+    "Blue",
+    "Trousers"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_ElegantBlueTrousers.glb"},

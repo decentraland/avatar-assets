@@ -5,8 +5,10 @@
     "es": "Trenzas"
   },
   "tags": [
-    "hair"
-   ],
+    "unisex",
+    "hair",
+    "Cornrow"
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Cornrows.glb"},

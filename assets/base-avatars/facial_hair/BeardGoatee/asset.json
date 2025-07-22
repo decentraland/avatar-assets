@@ -5,9 +5,10 @@
     "es": "Barba en Collar "
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Lincoln"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_BeardGoatee.glb"},

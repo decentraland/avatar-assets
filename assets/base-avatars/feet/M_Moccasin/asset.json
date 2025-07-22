@@ -5,14 +5,13 @@
     "es": "Mocasines"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "feet",
+    "Moccasins"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_Moccasin.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_Moccasin.glb"}
-
   ]
 }

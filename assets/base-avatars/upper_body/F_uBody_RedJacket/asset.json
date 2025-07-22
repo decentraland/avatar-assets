@@ -4,7 +4,13 @@
     "en": "Red Topcoat",
     "es": "Top Negro"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Red",
+    "Topcoat"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

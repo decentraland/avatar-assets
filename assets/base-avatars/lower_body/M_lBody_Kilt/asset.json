@@ -5,14 +5,14 @@
     "es": "Falda escocesa"
   },
   "tags": [
-    "bottom",
-    "male",
-    "man"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Kilt"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_Kilt.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_Kilt.glb"}
-
   ]
 }

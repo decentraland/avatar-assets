@@ -5,12 +5,12 @@
     "es": "Zapatillas Deportivas Azules"
   },
   "tags": [
-    "shoes",
-    "male",
-    "man",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "feet",
+    "Sport",
+    "Blue",
+    "Shoes"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_SportBlueShoes.glb"},

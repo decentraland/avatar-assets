@@ -5,8 +5,11 @@
     "es": "Peinado con Jopo"
   },
   "tags": [
+    "unisex",
+    "hair",
+    "Pompadour",
     "hair"
-   ],
+  ],
   "category": "hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "Hair_TallFront.glb"},

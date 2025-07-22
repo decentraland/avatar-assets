@@ -4,7 +4,13 @@
     "en": "Puffer Jacket",
     "es": "Chaqueta Mullida"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Puffer",
+    "Jacket"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

@@ -4,7 +4,14 @@
     "en": "Lovely Yellow Shirt",
     "es": "Adorable Camisa Amarilla"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Lovely",
+    "Yellow",
+    "Shirt"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

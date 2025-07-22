@@ -5,14 +5,15 @@
     "es": "Chancletas Verdes"
   },
   "tags": [
-    "shoes",
-    "man",
-    "men"
-   ],
+    "unisex",
+    "feet",
+    "Green",
+    "Flip",
+    "Flops"
+  ],
   "category": "feet",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_GreenFlipFlops.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_GreenFlipFlops.glb"}
-
   ]
 }

@@ -4,7 +4,14 @@
     "en": "Brown Sleeveless Dress",
     "es": "Vestido Marrón Sin Mangas"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Brown",
+    "Sleeveless",
+    "Dress"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],

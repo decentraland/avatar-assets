@@ -5,10 +5,12 @@
     "es": "Capris Marrones"
   },
   "tags": [
-    "bottom",
-    "female",
-    "woman"
-   ],
+    "unisex",
+    "lower",
+    "body",
+    "Brown",
+    "Capris"
+  ],
   "category": "lower_body",
   "main": [
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_BrownKneesTrousers.glb"},

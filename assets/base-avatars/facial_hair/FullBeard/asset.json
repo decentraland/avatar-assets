@@ -5,9 +5,11 @@
     "es": "Barba Completa"
   },
   "tags": [
-    "face",
-    "facial_hair"
-   ],
+    "unisex",
+    "facial_hair",
+    "Full",
+    "Beard"
+  ],
   "category": "facial_hair",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_FacialHair_FullBeard.glb"},

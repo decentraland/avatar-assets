@@ -4,7 +4,15 @@
     "en": "Blue and Red Sweater",
     "es": "Suéter Azul y Rojo"
   },
-  "tags": [  ],
+  "tags": [
+    "unisex",
+    "upper",
+    "body",
+    "Blue",
+    "and",
+    "Red",
+    "Sweater"
+  ],
   "removesDefaultHiding": [
     "hands"
   ],
