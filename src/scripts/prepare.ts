@@ -97,7 +97,7 @@ async function fetchCollections(): Promise<{
 }
 
 async function main() {
-  const branchName = process.argv[2] ?? ''
+  const branchName = process.argv[2] ?? 'master'
   const catalystTarget = process.argv[3] ?? '<CATALYST>'
   const updatedAssets: Asset[] = loadUpdatedAssetsFrom(branchName)
   const errors = await validateAssets(updatedAssets)
