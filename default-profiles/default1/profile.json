@@ -30,14 +30,13 @@
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:casual_hair_01",
-          "urn:decentraland:off-chain:base-avatars:eyes_00",
-          "urn:decentraland:off-chain:base-avatars:eyebrows_00",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_04",
-          "urn:decentraland:off-chain:base-avatars:beard",
-          "urn:decentraland:off-chain:base-avatars:green_hoodie",
-          "urn:decentraland:off-chain:base-avatars:f_brown_trousers",
-          "urn:decentraland:off-chain:base-avatars:sneakers"
+          "urn:decentraland:off-chain:base-avatars:standard_hair",
+          "urn:decentraland:off-chain:base-avatars:f_eyes_00",
+          "urn:decentraland:off-chain:base-avatars:f_eyebrows_00",
+          "urn:decentraland:off-chain:base-avatars:f_mouth_02",
+          "urn:decentraland:off-chain:base-avatars:f_sweater",
+          "urn:decentraland:off-chain:base-avatars:f_jeans",
+          "urn:decentraland:off-chain:base-avatars:bun_shoes"
         ],
         "snapshots": {
           "face": "QmZbyGxDnZ4PaMVX7kpA2NuGTrmnpwTJ8heKKTSCk4GRJL",
