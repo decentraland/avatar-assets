@@ -11,7 +11,7 @@
   ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Feet_SchoolShoes.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Feet_SchoolShoes.glb"}
+    {"type": "dcl://base-avatars/BaseFemale", "model": "Feet_SchoolShoes.glb"},
+    {"type": "dcl://base-avatars/BaseMale", "model": "Feet_SchoolShoes.glb"}
   ]
 }
