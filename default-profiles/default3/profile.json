@@ -5,36 +5,38 @@
       "description": "",
       "avatar": {
         "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
-        "skin": {
+        "eyes": {
           "color": {
-            "r": 0.4901960790157318,
-            "g": 0.364705890417099,
-            "b": 0.27843138575553894,
-            "a": 1
+            "r": 0.7490196228027344,
+            "g": 0.6196078658103943,
+            "b": 0.3529411852359772,
+            "a": 1.0
           }
         },
         "hair": {
           "color": {
-            "r": 0.9803921580314636,
-            "g": 0.8235294222831726,
-            "b": 0.5058823823928833,
-            "a": 1
+            "r": 0.48627451062202456,
+            "g": 0.2862745225429535,
+            "b": 0.08627451211214066,
+            "a": 1.0
           }
         },
-        "eyes": {
+        "skin": {
           "color": {
-            "r": 0.125490203499794,
-            "g": 0.7019608020782471,
-            "b": 0.9647058844566345,
-            "a": 1
+            "r": 0.239215686917305,
+            "g": 0.13333334028720857,
+            "b": 0.08627451211214066,
+            "a": 1.0
           }
         },
         "wearables": [
-          "urn:decentraland:off-chain:base-avatars:elegant_striped_shirt",
-          "urn:decentraland:off-chain:base-avatars:elegant_blue_trousers",
-          "urn:decentraland:off-chain:base-avatars:f_m_sandals",
-          "urn:decentraland:off-chain:base-avatars:modern_hair",
-          "urn:decentraland:off-chain:base-avatars:f_mouth_04"
+          "urn:decentraland:off-chain:base-avatars:rasta",
+          "urn:decentraland:off-chain:base-avatars:eyes_08",
+          "urn:decentraland:off-chain:base-avatars:eyebrows_09",
+          "urn:decentraland:off-chain:base-avatars:mouth_01",
+          "urn:decentraland:off-chain:base-avatars:m_sweater_02",
+          "urn:decentraland:off-chain:base-avatars:swim_short",
+          "urn:decentraland:off-chain:base-avatars:m_greenflipflops"
         ],
         "snapshots": {
           "face": "QmX2QCMjitWGhGmkgiqtA1tHz69zK44xAHkWz5bjNwkhHT",
