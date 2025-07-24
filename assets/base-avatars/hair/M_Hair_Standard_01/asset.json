@@ -13,7 +13,13 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Hair_Standard_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Hair_Standard_01.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_Hair_Standard_01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "F_Hair_Standard_01.glb"
+    }
   ]
 }

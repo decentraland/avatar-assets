@@ -12,7 +12,13 @@
   ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "CrocsSocks.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "CrocsSocks.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "CrocsSocks.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "CrocsSocks.glb"
+    }
   ]
 }

@@ -13,7 +13,13 @@
   ],
   "category": "lower_body",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_lBody_LongPants_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_lBody_LongPants_01.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_lBody_LongPants_01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "F_lBody_LongPants_01.glb"
+    }
   ]
 }

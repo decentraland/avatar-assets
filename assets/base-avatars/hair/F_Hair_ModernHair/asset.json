@@ -12,7 +12,13 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ModernHair.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_ModernHair.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Hair_ModernHair.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Hair_ModernHair.glb"
+    }
   ]
 }

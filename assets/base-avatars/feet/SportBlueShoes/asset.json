@@ -13,7 +13,13 @@
   ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_SportBlueShoes.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_SportBlueShoes.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_Feet_SportBlueShoes.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "M_Feet_SportBlueShoes.glb"
+    }
   ]
 }

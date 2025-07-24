@@ -13,7 +13,13 @@
   ],
   "category": "hands_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "CordBracelet.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "CordBracelet.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "CordBracelet.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "CordBracelet.glb"
+    }
   ]
 }

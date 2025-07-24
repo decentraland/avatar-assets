@@ -8,9 +8,12 @@
     "body",
     "male",
     "man"
-   ],
+  ],
   "category": "body_shape",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "BaseFemale.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "BaseFemale.glb"
+    }
   ]
 }

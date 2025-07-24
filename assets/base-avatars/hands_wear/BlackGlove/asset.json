@@ -16,7 +16,13 @@
     "hands"
   ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "BlackGlove.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "BlackGlove.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "BlackGlove.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "BlackGlove.glb"
+    }
   ]
 }

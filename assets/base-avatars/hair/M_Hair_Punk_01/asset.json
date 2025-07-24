@@ -12,7 +12,13 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "Mohawk.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Mohawk.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Mohawk.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Mohawk.glb"
+    }
   ]
 }

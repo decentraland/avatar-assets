@@ -12,7 +12,13 @@
   ],
   "category": "hands_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "EmeraldRing.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "EmeraldRing.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "EmeraldRing.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "EmeraldRing.glb"
+    }
   ]
 }

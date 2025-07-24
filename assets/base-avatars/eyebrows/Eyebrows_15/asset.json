@@ -10,7 +10,13 @@
   ],
   "category": "eyebrows",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Eyebrows_15.png"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Eyebrows_15.png"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Eyebrows_15.png"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Eyebrows_15.png"
+    }
   ]
 }
