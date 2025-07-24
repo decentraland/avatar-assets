@@ -11,7 +11,13 @@
   ],
   "category": "facial_hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Beard.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Beard.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_Beard.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "F_Beard.glb"
+    }
   ]
 }

@@ -10,10 +10,16 @@
     "men",
     "woman",
     "women"
-   ],
+  ],
   "category": "eye_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "PiratePatch.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "PiratePatch.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "PiratePatch.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "PiratePatch.glb"
+    }
   ]
 }

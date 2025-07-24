@@ -11,7 +11,13 @@
   ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Feet_Espadrilles.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Feet_Espadrilles.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_Feet_Espadrilles.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "M_Feet_Espadrilles.glb"
+    }
   ]
 }

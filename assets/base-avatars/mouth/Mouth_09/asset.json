@@ -7,10 +7,16 @@
   "tags": [
     "face",
     "mouth"
-   ],
+  ],
   "category": "mouth",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Mouth_09.png"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Mouth_09.png"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Mouth_09.png"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Mouth_09.png"
+    }
   ]
 }

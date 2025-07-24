@@ -8,11 +8,16 @@
     "accesories",
     "male",
     "man"
-   ],
+  ],
   "category": "eyewear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "ThugLife_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "ThugLife_01.glb"}
-
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "ThugLife_01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "ThugLife_01.glb"
+    }
   ]
 }

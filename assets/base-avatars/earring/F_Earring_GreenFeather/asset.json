@@ -8,11 +8,16 @@
     "accesories",
     "female",
     "woman"
-   ],
+  ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Earring_GreenFeather.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Earring_GreenFeather.glb"}
-
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Earring_GreenFeather.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Earring_GreenFeather.glb"
+    }
   ]
 }

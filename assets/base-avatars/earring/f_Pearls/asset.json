@@ -11,7 +11,13 @@
   ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_Pearls.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_Pearls.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "F_Earrings_Pearls.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "F_Earrings_Pearls.glb"
+    }
   ]
 }

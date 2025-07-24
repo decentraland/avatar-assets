@@ -10,10 +10,16 @@
     "man",
     "female",
     "woman"
-   ],
+  ],
   "category": "eye_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "RoundSunglasses_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "RoundSunglasses_01.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "RoundSunglasses_01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "RoundSunglasses_01.glb"
+    }
   ]
 }

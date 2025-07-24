@@ -12,7 +12,13 @@
   ],
   "category": "eye_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_Cyclope.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_Cyclope.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "F_Eyewear_Cyclope.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "F_Eyewear_Cyclope.glb"
+    }
   ]
 }

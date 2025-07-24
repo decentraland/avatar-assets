@@ -12,7 +12,13 @@
   ],
   "category": "feet",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "CityComfortableShoes.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "CityComfortableShoes.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "CityComfortableShoes.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "CityComfortableShoes.glb"
+    }
   ]
 }

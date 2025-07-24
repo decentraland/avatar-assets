@@ -10,7 +10,13 @@
   ],
   "category": "eyes",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Eyes_19.png"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Eyes_19.png"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Eyes_19.png"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Eyes_19.png"
+    }
   ]
 }

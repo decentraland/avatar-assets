@@ -11,7 +11,13 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_Beatle.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_Beatle.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Hair_Beatle.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Hair_Beatle.glb"
+    }
   ]
 }

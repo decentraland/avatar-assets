@@ -13,7 +13,13 @@
   ],
   "category": "hands_wear",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "DCLWatch.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "DCLWatch.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "DCLWatch.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "DCLWatch.glb"
+    }
   ]
 }

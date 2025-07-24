@@ -12,7 +12,13 @@
   ],
   "category": "eyewear",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyewear_AviatorStyle.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Eyewear_AviatorStyle.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "M_Eyewear_AviatorStyle.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "M_Eyewear_AviatorStyle.glb"
+    }
   ]
 }

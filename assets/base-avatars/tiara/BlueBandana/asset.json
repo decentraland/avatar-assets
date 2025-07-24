@@ -12,7 +12,13 @@
   ],
   "category": "tiara",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "BlueBandana.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "BlueBandana.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "BlueBandana.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "BlueBandana.glb"
+    }
   ]
 }

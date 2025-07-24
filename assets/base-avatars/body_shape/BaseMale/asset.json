@@ -8,10 +8,13 @@
     "body",
     "male",
     "man"
-   ],
+  ],
   "category": "body_shape",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "BaseMale.glb"}
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "BaseMale.glb"
+    }
   ],
   "replaces": [],
   "hides": []
