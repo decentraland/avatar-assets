@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Dance.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Dance.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "F_Dance.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "M_Dance.glb"}
   ]
 }

@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Hands_In_Air_Particles.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Hands_In_Air_Particles.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Hands_In_Air_Particles.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Hands_In_Air_Particles.glb"}
   ]
 }
