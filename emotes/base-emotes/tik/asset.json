@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Tik.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Tik.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Tik.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Tik.glb"}
   ]
 }
