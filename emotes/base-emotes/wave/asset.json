@@ -2,14 +2,14 @@
   "name": "wave",
   "description": "wave",
   "i18n": {
-    "en": "Tik"
+    "en": "Wave"
   },
   "loop": false,
   "tags": [
     "emote"
    ],
   "main": [
-    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "F_Wave.glb"},
-    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "M_Wave.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Wave_Female.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Wave_Male.glb"}
   ]
 }
