@@ -14,7 +14,7 @@
     "lint:check": "eslint '**/*.{js,ts}'",
     "lint:fix": "eslint '**/*.{js,ts}' --fix",
     "test": "jest --forceExit --detectOpenHandles --verbose",
-    "prepare": "npx ts-node -T src/scripts/prepare.ts",
+    "prepublishOnly": "npx ts-node -T src/scripts/prepare.ts",
     "emotes": "npx ts-node -T src/scripts/emotes.ts",
     "default-profiles": "npx ts-node -T src/scripts/default-profiles.ts"
   },
