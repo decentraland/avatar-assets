@@ -52,7 +52,11 @@ jobs:
         cat changed_files.md >> formatted_comment.md
         echo "" >> formatted_comment.md
         echo "### Validation errors" >> formatted_comment.md
-        cat validation-errors.md >> formatted_comment.md
+        if [ -f validation-errors.md ]; then
+          cat validation-errors.md >> formatted_comment.md
+        else
+          echo "No validation errors found." >> formatted_comment.md
+        fi
 
     - name: Find Comment
       uses: peter-evans/find-comment@v3
