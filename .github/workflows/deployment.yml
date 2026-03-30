@@ -50,7 +50,7 @@ jobs:
 
       - name: Deploy All Wearables
         run: |
-          for collection_dir in assets/*/; do
+          for collection_dir in assets/base-avatars/; do
             collection=$(basename "$collection_dir")
             while IFS= read -r asset_dir; do
               asset_json="$asset_dir/asset.json"
