@@ -72,3 +72,7 @@ jobs:
                 --id "dcl://$collection/$asset_name"
             done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)
           done
+
+      - name: Cleanup identity.json
+        if: always()
+        run: rm -f identity.json
