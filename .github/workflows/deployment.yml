@@ -1,4 +1,4 @@
-name: Deploy Wearables to Peer
+name: Deploy All Base Wearables
 
 on:
   workflow_dispatch:

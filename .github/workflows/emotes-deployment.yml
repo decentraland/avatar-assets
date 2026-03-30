@@ -1,4 +1,4 @@
-name: Deploy Emotes to Peer
+name: Deploy All Base Emotes
 
 on:
   workflow_dispatch:
