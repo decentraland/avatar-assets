@@ -1,20 +1,28 @@
-name: Deploy Assets to Peer Testing
+name: Deploy Wearables to Peer
 
 on:
   workflow_dispatch:
     inputs:
       branch_name:
-        description: 'Branch name containing the assets to test'
+        description: 'Branch to deploy from'
         required: true
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'zone'
+        type: choice
+        options:
+          - zone
+          - peer-testing
 
 jobs:
-  deploy-assets:
+  deploy-wearables:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: test/modify-asset
+          ref: ${{ github.event.inputs.branch_name }}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -23,17 +31,34 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: |
-          yarn install --frozen-lockfile
-          yarn global add ts-node
+        run: yarn install --frozen-lockfile
 
-      - name: Prepare Deployment
+      - name: Set target URL
         run: |
-          yarn run prepare ${{ github.event.inputs.branch_name }} https://peer-testing.decentraland.org > script_output.txt
-          DEPLOY_COMMAND=$(cat script_output.txt | grep 'COMMAND -' | sed 's/^.*COMMAND - //' | sed 's/--identityFilePath <identity-file> //')
-          DEPLOY_COMMAND="${DEPLOY_COMMAND} --privateKey \${{ secrets.ZONE_PRIVATE_KEY }} --publicKey \${{ secrets.ZONE_PUBLIC_KEY }}"
-          echo "DEPLOY_COMMAND=$DEPLOY_COMMAND" >> $GITHUB_ENV
+          if [ "${{ github.event.inputs.environment }}" = "zone" ]; then
+            echo "TARGET_URL=https://peer.decentraland.zone" >> $GITHUB_ENV
+          else
+            echo "TARGET_URL=https://peer-testing.decentraland.org" >> $GITHUB_ENV
+          fi
 
-      - name: Deploy Assets
+      - name: Deploy All Wearables
         run: |
-          bash -c "${{ env.DEPLOY_COMMAND }}"
+          for collection_dir in assets/*/; do
+            collection=$(basename "$collection_dir")
+            while IFS= read -r asset_dir; do
+              asset_json="$asset_dir/asset.json"
+              asset_name=""
+              if [ -f "$asset_json" ]; then
+                asset_name=$(grep -o '"name": "[^"]*"' "$asset_json" | head -1 | sed 's/"name": "//g' | sed 's/"//g')
+              fi
+              if [ -z "$asset_name" ]; then
+                asset_name=$(basename "$asset_dir")
+              fi
+              echo "Deploying dcl://$collection/$asset_name"
+              yarn run deploy -- \
+                --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} \
+                --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} \
+                --target $TARGET_URL \
+                --id "dcl://$collection/$asset_name"
+            done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)
+          done

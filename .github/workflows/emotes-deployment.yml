@@ -1,20 +1,28 @@
-name: Deploy Emotes to Peer Testing
+name: Deploy Emotes to Peer
 
 on:
   workflow_dispatch:
     inputs:
       branch_name:
-        description: 'Branch name containing the assets to test'
+        description: 'Branch to deploy from'
         required: true
+      environment:
+        description: 'Target environment'
+        required: true
+        default: 'zone'
+        type: choice
+        options:
+          - zone
+          - peer-testing
 
 jobs:
-  deploy-assets:
+  deploy-emotes:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
         with:
-          ref: test/modify-asset
+          ref: ${{ github.event.inputs.branch_name }}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -23,10 +31,20 @@ jobs:
           node-version: '20'
 
       - name: Install Dependencies
-        run: |
-          yarn install --frozen-lockfile
-          yarn global add ts-node
+        run: yarn install --frozen-lockfile
 
-      - name: Deploy
+      - name: Set target URL
         run: |
-          yarn run emotes --target https://peer-testing.decentraland.org --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} --deploy $(git diff --name-only origin/${{ github.base_ref }} origin/${{ github.head_ref }} -- emotes | grep "asset.json" | xargs dirname)
+          if [ "${{ github.event.inputs.environment }}" = "zone" ]; then
+            echo "TARGET_URL=https://peer.decentraland.zone" >> $GITHUB_ENV
+          else
+            echo "TARGET_URL=https://peer-testing.decentraland.org" >> $GITHUB_ENV
+          fi
+
+      - name: Deploy All Emotes
+        run: |
+          EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+          yarn run emotes --deploy --target $TARGET_URL \
+            --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} \
+            --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} \
+            $EMOTE_DIRS
