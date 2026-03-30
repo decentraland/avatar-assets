@@ -56,3 +56,7 @@ jobs:
         run: |
           EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
           yarn run emotes --deploy --target $TARGET_URL --identityFilePath identity.json $EMOTE_DIRS
+
+      - name: Cleanup identity.json
+        if: always()
+        run: rm -f identity.json
