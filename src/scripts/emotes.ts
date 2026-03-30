@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import { createDotEnvConfigComponent } from '@well-known-components/env-config-provider'
 import { BodyShape, Emote, EmoteCategory, EmoteRepresentationADR74, EntityType, I18N, Locale } from '@dcl/schemas'
 import { hexToBytes } from 'eth-connect'
 import { Authenticator } from '@dcl/crypto'
@@ -13,6 +12,7 @@ import { DeploymentPreparationData } from 'dcl-catalyst-client/dist/client/types
 import { createContentClient, DeploymentBuilder } from 'dcl-catalyst-client'
 import { createFetchComponent } from '@well-known-components/fetch-component'
 import { createLogComponent } from '@well-known-components/logger'
+import { loadIdentity } from '../logic/arguments-parser'
 
 const rootDirectory = path.resolve(__dirname, '../..')
 
@@ -36,7 +36,6 @@ export function getBodyShapeByType(type: string): BodyShape {
 
 async function main() {
   const logs = await createLogComponent({})
-  const config = await createDotEnvConfigComponent({ path: ['.env'] })
   const fetchComponent = createFetchComponent()
 
   const logger = logs.getLogger('avatar-assets')
@@ -56,6 +55,10 @@ async function main() {
     required: true,
     help: 'The address of the catalyst server where the wearables will be deployed'
   })
+  parser.add_argument('--identityFilePath', {
+    required: false,
+    help: 'The path to the json file where the address and private key are, to use for deployment'
+  })
   parser.add_argument('directories', {
     metavar: 'directories',
     type: 'str',
@@ -68,8 +71,12 @@ async function main() {
   let ethAddress = ''
   let privateKey = ''
   if (args.deploy) {
-    ethAddress = await config.requireString('ADDRESS')
-    privateKey = await config.requireString('PRIVATE_KEY')
+    if (!args.identityFilePath) {
+      throw new Error('--identityFilePath is required when using --deploy')
+    }
+    const identity = await loadIdentity(args.identityFilePath)
+    ethAddress = identity.ethAddress
+    privateKey = identity.privateKey
   }
 
   const target = args.target.includes('localhost') ? args.target : `${args.target}/content`

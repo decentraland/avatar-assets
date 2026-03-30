@@ -41,6 +41,13 @@ jobs:
             echo "TARGET_URL=https://peer-testing.decentraland.org" >> $GITHUB_ENV
           fi
 
+      - name: Generate identity.json
+        env:
+          PRIVATE_KEY: ${{ secrets.ZONE_PRIVATE_KEY }}
+          ETH_ADDRESS: ${{ secrets.ZONE_PUBLIC_KEY }}
+        run: |
+          echo "{\"privateKey\": \"$PRIVATE_KEY\", \"ethAddress\": \"$ETH_ADDRESS\"}" > identity.json
+
       - name: Deploy All Wearables
         run: |
           for collection_dir in assets/*/; do
@@ -56,8 +63,7 @@ jobs:
               fi
               echo "Deploying dcl://$collection/$asset_name"
               yarn run deploy -- \
-                --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} \
-                --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} \
+                --identityFilePath identity.json \
                 --target $TARGET_URL \
                 --id "dcl://$collection/$asset_name"
             done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)

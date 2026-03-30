@@ -41,10 +41,14 @@ jobs:
             echo "TARGET_URL=https://peer-testing.decentraland.org" >> $GITHUB_ENV
           fi
 
+      - name: Generate identity.json
+        env:
+          PRIVATE_KEY: ${{ secrets.ZONE_PRIVATE_KEY }}
+          ETH_ADDRESS: ${{ secrets.ZONE_PUBLIC_KEY }}
+        run: |
+          echo "{\"privateKey\": \"$PRIVATE_KEY\", \"ethAddress\": \"$ETH_ADDRESS\"}" > identity.json
+
       - name: Deploy All Emotes
         run: |
           EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
-          yarn run emotes --deploy --target $TARGET_URL \
-            --privateKey ${{ secrets.ZONE_PRIVATE_KEY }} \
-            --publicKey ${{ secrets.ZONE_PUBLIC_KEY }} \
-            $EMOTE_DIRS
+          yarn run emotes --deploy --target $TARGET_URL --identityFilePath identity.json $EMOTE_DIRS
