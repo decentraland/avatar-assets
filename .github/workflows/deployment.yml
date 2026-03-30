@@ -14,10 +14,12 @@ on:
         options:
           - zone
           - peer-testing
+          - production
 
 jobs:
   deploy-wearables:
     runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -35,7 +37,9 @@ jobs:
 
       - name: Set target URL
         run: |
-          if [ "${{ github.event.inputs.environment }}" = "zone" ]; then
+          if [ "${{ github.event.inputs.environment }}" = "production" ]; then
+            echo "TARGET_URL=https://peer.decentraland.org" >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment }}" = "zone" ]; then
             echo "TARGET_URL=https://peer.decentraland.zone" >> $GITHUB_ENV
           else
             echo "TARGET_URL=https://peer-testing.decentraland.org" >> $GITHUB_ENV
