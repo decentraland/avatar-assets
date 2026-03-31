@@ -1,10 +1,9 @@
 stages:
-  - approve
   - deploy
 
 # Shared config inherited by all deploy jobs:
 # - installs node deps
-# - writes identity.json from CI variables
+# - writes identity.json from CI variables KEY + ADDRESS
 # - deletes identity.json after the job finishes (even on failure)
 # - all jobs are manual (click-to-run in the GitLab pipeline UI)
 .deploy_common:
@@ -16,19 +15,6 @@ stages:
     - printf '{"privateKey":"%s","ethAddress":"%s"}\n' "$KEY" "$ADDRESS" > identity.json
   after_script:
     - rm -f identity.json
-
-# ── Production gate ───────────────────────────────────────────────────────────
-# Must be manually approved before any production deploy job runs.
-# Restrict who can click this in GitLab: Settings → Protected environments → production
-
-approve:production:
-  stage: approve
-  environment: production
-  when: manual
-  allow_failure: false
-  manual_confirmation: 'Are you sure you want to deploy to production? This will affect peer.decentraland.org.'
-  script:
-    - echo "Production deployment approved."
 
 # ── Emotes ────────────────────────────────────────────────────────────────────
 
@@ -49,7 +35,6 @@ deploy:emotes:staging:
 deploy:emotes:production:
   extends: .deploy_common
   environment: production
-  needs: [approve:production]
   script:
     - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run emotes --deploy --target https://peer.decentraland.org --identityFilePath identity.json $EMOTE_DIRS
@@ -96,7 +81,6 @@ deploy:wearables:staging:
 deploy:wearables:production:
   extends: .deploy_common
   environment: production
-  needs: [approve:production]
   variables:
     TARGET_URL: https://peer.decentraland.org
   script:
@@ -121,7 +105,6 @@ deploy:profiles:staging:
 deploy:profiles:production:
   extends: .deploy_common
   environment: production
-  needs: [approve:production]
   script:
     - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run default-profiles --deploy --target https://peer.decentraland.org --identityFilePath identity.json $PROFILE_DIRS
