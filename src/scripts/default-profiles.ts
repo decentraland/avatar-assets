@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import { createDotEnvConfigComponent } from '@well-known-components/env-config-provider'
 import { EntityType, Profile } from '@dcl/schemas'
 import { hexToBytes } from 'eth-connect'
 import { Authenticator } from '@dcl/crypto'
@@ -12,6 +11,7 @@ import { createContentClient, DeploymentBuilder } from 'dcl-catalyst-client'
 import { createFetchComponent } from '@well-known-components/fetch-component'
 import { createLogComponent } from '@well-known-components/logger'
 import { hashV1 } from '@dcl/hashing'
+import { loadIdentity } from '../logic/arguments-parser'
 
 const rootDirectory = path.resolve(__dirname, '../..')
 
@@ -25,7 +25,6 @@ export async function calculateIPFSHashes<T extends Uint8Array>(files: T[]): Pro
 
 async function main() {
   const logs = await createLogComponent({})
-  const config = await createDotEnvConfigComponent({})
   const fetchComponent = createFetchComponent()
 
   const logger = logs.getLogger('avatar-assets')
@@ -45,6 +44,10 @@ async function main() {
     required: true,
     help: 'The address of the catalyst server where the default profiles will be deployed'
   })
+  parser.add_argument('--identityFilePath', {
+    required: false,
+    help: 'The path to the json file where the address and private key are, to use for deployment'
+  })
   parser.add_argument('directories', {
     metavar: 'directories',
     type: 'str',
@@ -57,8 +60,12 @@ async function main() {
   let ethAddress = ''
   let privateKey = ''
   if (args.deploy) {
-    ethAddress = await config.requireString('ADDRESS')
-    privateKey = await config.requireString('PRIVATE_KEY')
+    if (!args.identityFilePath) {
+      throw new Error('--identityFilePath is required when using --deploy')
+    }
+    const identity = await loadIdentity(args.identityFilePath)
+    ethAddress = identity.ethAddress
+    privateKey = identity.privateKey
   }
 
   const target = args.target.includes('localhost') ? args.target : `${args.target}/content`
@@ -80,8 +87,8 @@ async function main() {
 
     const metadata = readFile<any>(profileJsonPath)
     const files = new Map<string, Uint8Array>()
-    files.set('face256.png', fs.readFileSync(path.join(fullpath, 'face256.png')))
-    files.set('body.png', fs.readFileSync(path.join(fullpath, 'body.png')))
+    files.set('face256.png', new Uint8Array(fs.readFileSync(path.join(fullpath, 'face256.png'))))
+    files.set('body.png', new Uint8Array(fs.readFileSync(path.join(fullpath, 'body.png'))))
 
     const ipfsHashes = await calculateIPFSHashes([files.get('face256.png')!, files.get('body.png')!])
     metadata.avatars[0].avatar.snapshots = {
