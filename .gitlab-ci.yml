@@ -4,7 +4,7 @@ stages:
 
 # Shared config inherited by all deploy jobs:
 # - installs node deps
-# - writes identity.json from CI variables KEY + ADDRESS
+# - writes identity.json from CI variables
 # - deletes identity.json after the job finishes (even on failure)
 # - all jobs are manual (click-to-run in the GitLab pipeline UI)
 .deploy_common:
