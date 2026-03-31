@@ -102,6 +102,6 @@ export function getRepresentations(asset: Asset, extractedTextures: { fileName: 
     mainFile: element.model,
     overrideReplaces: element.overrideReplaces || [],
     overrideHides: element.overrideHides || [],
-    contents: extractTexturesFilesNames
+    contents: element.model.endsWith('.png') ? [element.model] : extractTexturesFilesNames
   }))
 }

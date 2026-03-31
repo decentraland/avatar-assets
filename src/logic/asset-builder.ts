@@ -12,6 +12,16 @@ export async function buildAsset(asset: Asset): Promise<BuiltAsset> {
     files.set(extractedTexture.fileName, new Uint8Array(extractedTexture.buffer))
   })
 
+  // For PNG-based wearables (eyebrows, eyes, mouth), add the PNG files directly
+  for (const element of asset.json.main) {
+    if (element.model.endsWith('.png')) {
+      const pngPath = path.join(asset.directoryPath, element.model)
+      if (fs.existsSync(pngPath)) {
+        files.set(element.model, new Uint8Array(fs.readFileSync(pngPath)))
+      }
+    }
+  }
+
   files.set('thumbnail.png', new Uint8Array(fs.readFileSync(path.join(asset.directoryPath, 'thumbnail.png'))))
 
   const metadata = await buildMetadata(asset)
