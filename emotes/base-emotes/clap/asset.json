@@ -9,7 +9,7 @@
     "emote"
    ],
   "main": [
-    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Clap_Particles.glb"},
-    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Clap_Particles.glb"}
+    {"type": "urn:decentraland:off-chain:base-avatars:basefemale", "model": "Clapping_Particles.glb"},
+    {"type": "urn:decentraland:off-chain:base-avatars:basemale", "model": "Clapping_Particles.glb"}
   ]
 }

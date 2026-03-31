@@ -1,0 +1,127 @@
+stages:
+  - approve
+  - deploy
+
+# Shared config inherited by all deploy jobs:
+# - installs node deps
+# - writes identity.json from CI variables KEY + ADDRESS
+# - deletes identity.json after the job finishes (even on failure)
+# - all jobs are manual (click-to-run in the GitLab pipeline UI)
+.deploy_common:
+  stage: deploy
+  image: node:20
+  when: manual
+  before_script:
+    - yarn install --frozen-lockfile
+    - printf '{"privateKey":"%s","ethAddress":"%s"}\n' "$KEY" "$ADDRESS" > identity.json
+  after_script:
+    - rm -f identity.json
+
+# ── Production gate ───────────────────────────────────────────────────────────
+# Must be manually approved before any production deploy job runs.
+# Restrict who can click this in GitLab: Settings → Protected environments → production
+
+approve:production:
+  stage: approve
+  environment: production
+  when: manual
+  allow_failure: false
+  manual_confirmation: 'Are you sure you want to deploy to production? This will affect peer.decentraland.org.'
+  script:
+    - echo "Production deployment approved."
+
+# ── Emotes ────────────────────────────────────────────────────────────────────
+
+deploy:emotes:dev:
+  extends: .deploy_common
+  environment: dev
+  script:
+    - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run emotes --deploy --target https://peer.decentraland.zone --identityFilePath identity.json $EMOTE_DIRS
+
+deploy:emotes:staging:
+  extends: .deploy_common
+  environment: staging
+  script:
+    - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run emotes --deploy --target https://peer-testing.decentraland.org --identityFilePath identity.json $EMOTE_DIRS
+
+deploy:emotes:production:
+  extends: .deploy_common
+  environment: production
+  needs: [approve:production]
+  script:
+    - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run emotes --deploy --target https://peer.decentraland.org --identityFilePath identity.json $EMOTE_DIRS
+
+# ── Wearables ─────────────────────────────────────────────────────────────────
+
+.deploy_wearables_script: &deploy_wearables_script
+  - |
+    for collection_dir in assets/base-avatars/; do
+      collection=$(basename "$collection_dir")
+      while IFS= read -r asset_dir; do
+        asset_json="$asset_dir/asset.json"
+        asset_name=""
+        if [ -f "$asset_json" ]; then
+          asset_name=$(grep -o '"name": "[^"]*"' "$asset_json" | head -1 | sed 's/"name": "//g' | sed 's/"//g')
+        fi
+        if [ -z "$asset_name" ]; then
+          asset_name=$(basename "$asset_dir")
+        fi
+        echo "Deploying dcl://$collection/$asset_name"
+        yarn run deploy -- \
+          --identityFilePath identity.json \
+          --target $TARGET_URL \
+          --id "dcl://$collection/$asset_name"
+      done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)
+    done
+
+deploy:wearables:dev:
+  extends: .deploy_common
+  environment: dev
+  variables:
+    TARGET_URL: https://peer.decentraland.zone
+  script:
+    - *deploy_wearables_script
+
+deploy:wearables:staging:
+  extends: .deploy_common
+  environment: staging
+  variables:
+    TARGET_URL: https://peer-testing.decentraland.org
+  script:
+    - *deploy_wearables_script
+
+deploy:wearables:production:
+  extends: .deploy_common
+  environment: production
+  needs: [approve:production]
+  variables:
+    TARGET_URL: https://peer.decentraland.org
+  script:
+    - *deploy_wearables_script
+
+# ── Default Profiles ──────────────────────────────────────────────────────────
+
+deploy:profiles:dev:
+  extends: .deploy_common
+  environment: dev
+  script:
+    - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run default-profiles --deploy --target https://peer.decentraland.zone --identityFilePath identity.json $PROFILE_DIRS
+
+deploy:profiles:staging:
+  extends: .deploy_common
+  environment: staging
+  script:
+    - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run default-profiles --deploy --target https://peer-testing.decentraland.org --identityFilePath identity.json $PROFILE_DIRS
+
+deploy:profiles:production:
+  extends: .deploy_common
+  environment: production
+  needs: [approve:production]
+  script:
+    - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+    - yarn run default-profiles --deploy --target https://peer.decentraland.org --identityFilePath identity.json $PROFILE_DIRS
