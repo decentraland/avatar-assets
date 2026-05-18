@@ -13,7 +13,42 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShoulderBobHair.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_ShoulderBobHair.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseFemale", "model": "Hair_ShoulderBobHair.glb" },
+    { "type": "dcl://base-avatars/BaseMale", "model": "Hair_ShoulderBobHair.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "Hair_ShoulderBobHair.glb": {
+        "Hair_springBone_A_1": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.5,
+          "isRoot": true
+        },
+        "Hair_springBone_B.L": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.3,
+          "isRoot": true
+        },
+        "Hair_springBone_B": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.3,
+          "isRoot": true
+        },
+        "Hair_springBone_B.R": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.3,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }
