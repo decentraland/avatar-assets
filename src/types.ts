@@ -1,3 +1,5 @@
+import { SpringBonesData } from '@dcl/schemas'
+
 export type AssetJSON = {
   name: string
   i18n: {
@@ -16,17 +18,7 @@ export type AssetJSON = {
     type: string
     model: string
   }[]
-  springBones?: {
-    version: number
-    models: Record<string, Record<string, {
-      stiffness: number
-      gravityPower: number
-      gravityDir: [number, number, number]
-      drag: number
-      isRoot: boolean
-      center?: string
-    }>>
-  }
+  springBones?: SpringBonesData
 }
 
 export type Asset = {
