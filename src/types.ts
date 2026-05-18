@@ -16,6 +16,17 @@ export type AssetJSON = {
     type: string
     model: string
   }[]
+  springBones?: {
+    version: number
+    models: Record<string, Record<string, {
+      stiffness: number
+      gravityPower: number
+      gravityDir: [number, number, number]
+      drag: number
+      isRoot: boolean
+      center?: string
+    }>>
+  }
 }
 
 export type Asset = {
