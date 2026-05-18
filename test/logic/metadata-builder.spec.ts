@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+import { hashV1 } from '@dcl/hashing'
 import { BodyShape, Locale, Rarity, SpringBonesData, Wearable, WearableCategory } from '@dcl/schemas'
 import { buildMetadata, getRepresentations } from './../../src/logic/metadata-builder'
+import { buildAsset } from '../../src/logic/asset-builder'
 import { getAssetsToDeploy } from '../../src/logic/assets-reader'
 import { Asset } from '../../src/types'
 import { extractAssetTextures } from '../../src/logic/glb-optimizer'
@@ -188,7 +190,7 @@ describe('metadata builder should', () => {
     expect(representations).toEqual(expectedRepresentations)
   })
 
-  it('omit springBones from metadata when the asset.json does not declare it', async () => {
+  it('omit springBones from buildMetadata output regardless of asset.json', async () => {
     const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
 
     const generatedMetadata = await buildMetadata(assets[0])
@@ -196,7 +198,15 @@ describe('metadata builder should', () => {
     expect(generatedMetadata.data).not.toHaveProperty('springBones')
   })
 
-  it('propagate springBones into metadata when the asset.json declares it', async () => {
+  it('omit springBones from built asset when the asset.json does not declare it', async () => {
+    const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
+
+    const { metadata } = await buildAsset(assets[0])
+
+    expect(metadata.data).not.toHaveProperty('springBones')
+  })
+
+  it('propagate hash-keyed springBones into built asset metadata unchanged', async () => {
     const springBones: SpringBonesData = {
       version: 1,
       models: {
@@ -215,8 +225,31 @@ describe('metadata builder should', () => {
     const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
     assets[0].json.springBones = springBones
 
-    const generatedMetadata = await buildMetadata(assets[0])
+    const { metadata } = await buildAsset(assets[0])
 
-    expect(generatedMetadata.data.springBones).toEqual(springBones)
+    expect(metadata.data.springBones).toEqual(springBones)
+  })
+
+  it('rewrite filename-keyed springBones to content-hash keys at build time', async () => {
+    const bone = {
+      Hair_springBone_L: {
+        stiffness: 2,
+        gravityPower: 0,
+        gravityDir: [0, -1, 0] as [number, number, number],
+        drag: 0.3,
+        isRoot: true
+      }
+    }
+    const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/hair_anime_01'])
+    const mainFile = assets[0].json.main[0].model
+    assets[0].json.springBones = {
+      version: 1,
+      models: { [mainFile]: bone }
+    }
+
+    const { metadata, files } = await buildAsset(assets[0])
+
+    const expectedHash = await hashV1(files.get(mainFile)!)
+    expect(metadata.data.springBones).toEqual({ version: 1, models: { [expectedHash]: bone } })
   })
 })

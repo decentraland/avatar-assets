@@ -1,4 +1,14 @@
-import { SpringBonesData } from '@dcl/schemas'
+import { SpringBonesData, SpringBoneParams } from '@dcl/schemas'
+
+/**
+ * Authoring shape for `springBones` in `asset.json`. Outer keys may be GLB filenames
+ * (e.g. "Hair_Keanu.glb") or pre-resolved CIDv1 content hashes; `buildAsset` resolves
+ * filename keys to hashes before the entity is deployed.
+ */
+export type AuthoredSpringBones = {
+  version: SpringBonesData['version']
+  models: Record<string, Record<string, SpringBoneParams>>
+}
 
 export type AssetJSON = {
   name: string
@@ -18,7 +28,7 @@ export type AssetJSON = {
     type: string
     model: string
   }[]
-  springBones?: SpringBonesData
+  springBones?: AuthoredSpringBones
 }
 
 export type Asset = {

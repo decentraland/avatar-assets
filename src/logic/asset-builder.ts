@@ -4,6 +4,7 @@ import fs from 'fs'
 import { Asset, BuiltAsset } from '../types'
 import { extractAssetTextures } from './glb-optimizer'
 import { buildMetadata, getRepresentations } from './metadata-builder'
+import { resolveSpringBonesHashes } from './spring-bones-resolver'
 
 export async function buildAsset(asset: Asset): Promise<BuiltAsset> {
   const files: Map<string, Uint8Array> = new Map<string, Uint8Array>()
@@ -26,6 +27,10 @@ export async function buildAsset(asset: Asset): Promise<BuiltAsset> {
 
   const metadata = await buildMetadata(asset)
   metadata.data.representations = getRepresentations(asset, extractedTextures)
+
+  if (asset.json.springBones) {
+    metadata.data.springBones = await resolveSpringBonesHashes(asset.json.springBones, files)
+  }
 
   return {
     metadata,

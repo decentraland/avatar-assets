@@ -70,8 +70,7 @@ export async function buildMetadata(asset: Asset) {
     removesDefaultHiding: asset.json.removesDefaultHiding || [],
     tags: [...asset.json.tags, ...extraTags],
     category: asset.json.category,
-    representations: [],
-    ...(asset.json.springBones ? { springBones: asset.json.springBones } : {})
+    representations: []
   }
 
   return {
