@@ -18,7 +18,8 @@ function isGlbFileName(key: string): boolean {
  * (i.e. the post-`processGlb` output, not the source file on disk), so the hashes
  * match the `content` map produced by `DeploymentBuilder.buildEntity`.
  *
- * When multiple authored entries resolve to the same hash, the last one wins.
+ * When multiple authored entries resolve to the same hash, the last one wins and a
+ * warning is logged so authors can catch accidental duplicates in `asset.json`.
  */
 export async function resolveSpringBonesHashes(
   authored: AuthoredSpringBones,
@@ -26,6 +27,7 @@ export async function resolveSpringBonesHashes(
 ): Promise<SpringBonesData> {
   const models: SpringBonesData['models'] = {}
   const hashByFileName = new Map<string, string>()
+  const sourceKeyByHash = new Map<string, string>()
 
   for (const [key, bones] of Object.entries(authored.models)) {
     let hash: string
@@ -46,6 +48,13 @@ export async function resolveSpringBonesHashes(
       hash = key
     }
 
+    const previousKey = sourceKeyByHash.get(hash)
+    if (previousKey !== undefined) {
+      console.warn(
+        `Spring bones collision: "${previousKey}" and "${key}" both resolve to ${hash}; "${key}" overrides "${previousKey}".`
+      )
+    }
+    sourceKeyByHash.set(hash, key)
     models[hash] = bones
   }
 

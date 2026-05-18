@@ -77,6 +77,7 @@ describe('resolveSpringBonesHashes should', () => {
   it('let the last entry win when two filenames with disjoint bones hash to the same content', async () => {
     const buffer = loadFixtureBuffer()
     const expectedHash = await hashV1(buffer)
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => undefined)
 
     const authored: AuthoredSpringBones = {
       version: 1,
@@ -96,11 +97,15 @@ describe('resolveSpringBonesHashes should', () => {
 
     expect(Object.keys(result.models)).toHaveLength(1)
     expect(result.models[expectedHash]).toEqual({ Hair_springBone_R: { ...baseParams } })
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining('male/Hair.glb'))
+    expect(warnSpy).toHaveBeenCalledWith(expect.stringContaining('female/Hair.glb'))
+    warnSpy.mockRestore()
   })
 
   it('let the last entry win when two filenames hashing to the same content define the same bone differently', async () => {
     const buffer = loadFixtureBuffer()
     const expectedHash = await hashV1(buffer)
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => undefined)
 
     const authored: AuthoredSpringBones = {
       version: 1,
@@ -119,6 +124,25 @@ describe('resolveSpringBonesHashes should', () => {
     )
 
     expect(result.models[expectedHash]).toEqual({ Hair_springBone_L: { ...baseParams, stiffness: 1 } })
+    expect(warnSpy).toHaveBeenCalledTimes(1)
+    warnSpy.mockRestore()
+  })
+
+  it('not warn when there are no collisions', async () => {
+    const buffer = loadFixtureBuffer()
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation(() => undefined)
+
+    const authored: AuthoredSpringBones = {
+      version: 1,
+      models: {
+        'Hair_Anime_Fringe.glb': { Hair_springBone_L: { ...baseParams } }
+      }
+    }
+
+    await resolveSpringBonesHashes(authored, new Map([['Hair_Anime_Fringe.glb', buffer]]))
+
+    expect(warnSpy).not.toHaveBeenCalled()
+    warnSpy.mockRestore()
   })
 
   it('throw when a filename key has no corresponding buffer', async () => {
