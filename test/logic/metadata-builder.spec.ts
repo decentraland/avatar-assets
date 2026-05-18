@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { BodyShape, Locale, Rarity, Wearable, WearableCategory } from '@dcl/schemas'
+import { BodyShape, Locale, Rarity, SpringBonesData, Wearable, WearableCategory } from '@dcl/schemas'
 import { buildMetadata, getRepresentations } from './../../src/logic/metadata-builder'
 import { getAssetsToDeploy } from '../../src/logic/assets-reader'
 import { Asset } from '../../src/types'
@@ -76,7 +76,7 @@ describe('metadata builder should', () => {
     ]
 
     const assets = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
-    const extractedTextures = await extractAssetTextures(assets[0])
+    const extractedTextures = await extractAssetTextures(assets[0].glbFilesPaths)
 
     const representations = getRepresentations(assets[0], extractedTextures)
 
@@ -181,10 +181,42 @@ describe('metadata builder should', () => {
     ]
 
     const assets = await getAssetsToDeploy(['dcl://3lau_basics/3lau_blue_hat'])
-    const extractedTexturesFemale = await extractAssetTextures(assets[0])
+    const extractedTexturesFemale = await extractAssetTextures(assets[0].glbFilesPaths)
 
     const representations = getRepresentations(assets[0], extractedTexturesFemale)
 
     expect(representations).toEqual(expectedRepresentations)
+  })
+
+  it('omit springBones from metadata when the asset.json does not declare it', async () => {
+    const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
+
+    const generatedMetadata = await buildMetadata(assets[0])
+
+    expect(generatedMetadata.data).not.toHaveProperty('springBones')
+  })
+
+  it('propagate springBones into metadata when the asset.json declares it', async () => {
+    const springBones: SpringBonesData = {
+      version: 1,
+      models: {
+        bafkreialsvt77jvpy673cnugp5ggnxfaalfncufweayuk3jbxskh3pelkm: {
+          Hair_springBone_L: {
+            stiffness: 2,
+            gravityPower: 0.8,
+            gravityDir: [0, -1, 0],
+            drag: 0.3,
+            center: 'Avatar_Hips',
+            isRoot: true
+          }
+        }
+      }
+    }
+    const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
+    assets[0].json.springBones = springBones
+
+    const generatedMetadata = await buildMetadata(assets[0])
+
+    expect(generatedMetadata.data.springBones).toEqual(springBones)
   })
 })

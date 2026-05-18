@@ -5,7 +5,7 @@ describe('glb-optimizer should', () => {
   it('extract textures from Asset correctly', async () => {
     const asset = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
 
-    const extractedFiles = await extractAssetTextures(asset[0])
+    const extractedFiles = await extractAssetTextures(asset[0].glbFilesPaths)
 
     expect(extractedFiles.map((extractedFile) => extractedFile.fileName)).toEqual([
       'BaseFemale.glb',

@@ -8,7 +8,7 @@ describe('asset validator should', () => {
   it('do not return errors when metadata of base wearable is complete', async () => {
     const assets: Asset[] = await getAssetsToDeploy(['dcl://base-avatars/BaseFemale'])
     const generatedMetadata = await buildMetadata(assets[0])
-    const extractedTextures = await extractAssetTextures(assets[0])
+    const extractedTextures = await extractAssetTextures(assets[0].glbFilesPaths)
     generatedMetadata.data.representations = getRepresentations(assets[0], extractedTextures)
 
     const errors = validate(generatedMetadata)
@@ -19,7 +19,7 @@ describe('asset validator should', () => {
   it('do not return errors when metadata of an L1 wearable is complete', async () => {
     const assets: Asset[] = await getAssetsToDeploy(['dcl://3lau_basics/3lau_blue_hat'])
     const generatedMetadata = await buildMetadata(assets[0])
-    const extractedTextures = await extractAssetTextures(assets[0])
+    const extractedTextures = await extractAssetTextures(assets[0].glbFilesPaths)
     generatedMetadata.data.representations = getRepresentations(assets[0], extractedTextures)
 
     const errors = validate(generatedMetadata)
