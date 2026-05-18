@@ -35,7 +35,7 @@
   "dependencies": {
     "@dcl/catalyst-api-specs": "^3.2.6",
     "@dcl/crypto": "^3.4.5",
-    "@dcl/hashing": "^1.2.0",
+    "@dcl/hashing": "1.1.3",
     "@dcl/schemas": "^26.2.0",
     "@dcl/urn-resolver": "^3.3.0",
     "@well-known-components/env-config-provider": "^1.2.0",
