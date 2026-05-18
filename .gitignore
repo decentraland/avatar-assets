@@ -39,6 +39,7 @@ error.txt
 .vscode
 
 *.js
+!jest.config.js
 
 validation-errors.json
 output
