@@ -12,7 +12,21 @@
   ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "RightGoldEarring_01.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "RightGoldEarring_01.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseMale", "model": "RightGoldEarring_01.glb" },
+    { "type": "dcl://base-avatars/BaseFemale", "model": "RightGoldEarring_01.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "RightGoldEarring_01.glb": {
+        "Earring_springBone.R": {
+          "stiffness": 0.5,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }

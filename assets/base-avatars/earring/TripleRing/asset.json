@@ -12,7 +12,35 @@
   ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "M_Earrings_TripleRing.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "M_Earrings_TripleRing.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseMale", "model": "M_Earrings_TripleRing.glb" },
+    { "type": "dcl://base-avatars/BaseFemale", "model": "M_Earrings_TripleRing.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "M_Earrings_TripleRing.glb": {
+        "Earring_springBone_3.R": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        },
+        "Earring_springBone_2.R": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        },
+        "Earring_springBone_1.R": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }
