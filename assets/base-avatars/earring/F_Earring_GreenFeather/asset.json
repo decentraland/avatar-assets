@@ -11,8 +11,28 @@
    ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Earring_GreenFeather.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Earring_GreenFeather.glb"}
-
-  ]
+    { "type": "dcl://base-avatars/BaseFemale", "model": "Earring_GreenFeather.glb" },
+    { "type": "dcl://base-avatars/BaseMale", "model": "Earring_GreenFeather.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "Earring_GreenFeather.glb": {
+        "Earring_springBone.L": {
+          "stiffness": 0.2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.1,
+          "isRoot": true
+        },
+        "Earring_springBone.R": {
+          "stiffness": 0.2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.1,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }

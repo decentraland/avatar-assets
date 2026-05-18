@@ -11,7 +11,28 @@
   ],
   "category": "hair",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Hair_TwoTails.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Hair_TwoTails.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseFemale", "model": "Hair_TwoTails.glb" },
+    { "type": "dcl://base-avatars/BaseMale", "model": "Hair_TwoTails.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "Hair_TwoTails.glb": {
+        "Hair_springBone_1.L": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.4,
+          "isRoot": true
+        },
+        "Hair_springBone_1.R": {
+          "stiffness": 2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0.4,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }

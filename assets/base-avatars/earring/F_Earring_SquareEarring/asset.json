@@ -11,7 +11,28 @@
   ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseFemale", "model": "Earring_SquareEarring.glb"},
-    {"type": "dcl://base-avatars/BaseMale", "model": "Earring_SquareEarring.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseFemale", "model": "Earring_SquareEarring.glb" },
+    { "type": "dcl://base-avatars/BaseMale", "model": "Earring_SquareEarring.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "Earring_SquareEarring.glb": {
+        "Earring_springBone.L": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        },
+        "Earring_springBone.R": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }

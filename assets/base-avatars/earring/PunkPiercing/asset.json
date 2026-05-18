@@ -12,7 +12,28 @@
   ],
   "category": "earring",
   "main": [
-    {"type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_PunkPiercing.glb"},
-    {"type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_PunkPiercing.glb"}
-  ]
+    { "type": "dcl://base-avatars/BaseMale", "model": "F_Earrings_PunkPiercing.glb" },
+    { "type": "dcl://base-avatars/BaseFemale", "model": "F_Earrings_PunkPiercing.glb" }
+  ],
+  "springBones": {
+    "version": 1,
+    "models": {
+      "F_Earrings_PunkPiercing.glb": {
+        "Earring_springBone_2.R": {
+          "stiffness": 0.2,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        },
+        "Earring_springBone_1.R": {
+          "stiffness": 0.4,
+          "gravityPower": 0,
+          "gravityDir": [0, -1, 0],
+          "drag": 0,
+          "isRoot": true
+        }
+      }
+    }
+  }
 }
