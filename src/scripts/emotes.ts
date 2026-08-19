@@ -13,6 +13,7 @@ import { createContentClient, DeploymentBuilder } from 'dcl-catalyst-client'
 import { createFetchComponent } from '@well-known-components/fetch-component'
 import { createLogComponent } from '@well-known-components/logger'
 import { loadIdentity } from '../logic/arguments-parser'
+import { deployWithRateLimit } from '../logic/deployment-rate-limit'
 
 const rootDirectory = path.resolve(__dirname, '../..')
 
@@ -159,11 +160,13 @@ async function main() {
         const signature = ethSign(hexToBytes(privateKey), entityId)
         const authChain = Authenticator.createSimpleAuthChain(entityId, ethAddress, signature)
 
-        await contentClient.deploy({
-          authChain,
-          entityId: deploymentData.entityId,
-          files: deploymentData.files
-        })
+        await deployWithRateLimit(() =>
+          contentClient.deploy({
+            authChain,
+            entityId: deploymentData.entityId,
+            files: deploymentData.files
+          })
+        )
         logger.info(`Emote ${name} from base-avatars deployed`)
       }
     } else if (Emote.validate.errors) {
@@ -190,4 +193,7 @@ async function main() {
   }
 }
 
-main().catch(console.error)
+main().catch((error) => {
+  console.error(error)
+  process.exitCode = 1
+})

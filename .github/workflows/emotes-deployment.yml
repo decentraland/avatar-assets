@@ -1,5 +1,9 @@
 name: Deploy All Base Emotes
 
+concurrency:
+  group: avatar-assets-catalyst-${{ github.event.inputs.environment }}
+  cancel-in-progress: false
+
 on:
   workflow_dispatch:
     inputs:
@@ -50,6 +54,8 @@ jobs:
           PRIVATE_KEY: ${{ secrets.ZONE_PRIVATE_KEY }}
           ETH_ADDRESS: ${{ secrets.ZONE_PUBLIC_KEY }}
         run: |
+          test -n "$PRIVATE_KEY" || { echo "Missing ZONE_PRIVATE_KEY secret"; exit 1; }
+          test -n "$ETH_ADDRESS" || { echo "Missing ZONE_PUBLIC_KEY secret"; exit 1; }
           echo "{\"privateKey\": \"$PRIVATE_KEY\", \"ethAddress\": \"$ETH_ADDRESS\"}" > identity.json
 
       - name: Deploy All Emotes
