@@ -4,4 +4,4 @@
 # @decentraland/platform owns any files in the src
 # directory at the root of the repository and any of its
 # subdirectories.
-/src/ @decentraland/platform
+/src/ @decentraland/platform @pentreathm
