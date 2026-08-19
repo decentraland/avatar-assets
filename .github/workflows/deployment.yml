@@ -1,5 +1,9 @@
 name: Deploy All Base Wearables
 
+concurrency:
+  group: avatar-assets-catalyst-${{ github.event.inputs.environment }}
+  cancel-in-progress: false
+
 on:
   workflow_dispatch:
     inputs:
@@ -50,10 +54,14 @@ jobs:
           PRIVATE_KEY: ${{ secrets.ZONE_PRIVATE_KEY }}
           ETH_ADDRESS: ${{ secrets.ZONE_PUBLIC_KEY }}
         run: |
+          test -n "$PRIVATE_KEY" || { echo "Missing ZONE_PRIVATE_KEY secret"; exit 1; }
+          test -n "$ETH_ADDRESS" || { echo "Missing ZONE_PUBLIC_KEY secret"; exit 1; }
           echo "{\"privateKey\": \"$PRIVATE_KEY\", \"ethAddress\": \"$ETH_ADDRESS\"}" > identity.json
 
       - name: Deploy All Wearables
         run: |
+          set -euo pipefail
+          DEPLOY_ARGS=()
           for collection_dir in assets/base-avatars/; do
             collection=$(basename "$collection_dir")
             while IFS= read -r asset_dir; do
@@ -66,12 +74,19 @@ jobs:
                 asset_name=$(basename "$asset_dir")
               fi
               echo "Deploying dcl://$collection/$asset_name"
-              yarn run deploy -- \
-                --identityFilePath identity.json \
-                --target $TARGET_URL \
-                --id "dcl://$collection/$asset_name"
+              DEPLOY_ARGS+=(--id "dcl://$collection/$asset_name")
             done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)
           done
+
+          if [ "${#DEPLOY_ARGS[@]}" -eq 0 ]; then
+            echo "No wearable entities found"
+            exit 1
+          fi
+
+          yarn run deploy -- \
+            --identityFilePath identity.json \
+            --target "$TARGET_URL" \
+            "${DEPLOY_ARGS[@]}"
 
       - name: Cleanup identity.json
         if: always()

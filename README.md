@@ -28,3 +28,9 @@ The `category` property must contain one of the following values:
 - tiara
 - top_head
 - upper_body
+
+## Deployment rate limit
+
+Catalyst deployments are serialized and wait 13 seconds between entity submissions by default, keeping the rate below five entities per minute. HTTP 429 responses are retried after one minute, up to two times.
+
+The interval can be overridden for controlled testing with `DCL_DEPLOYMENT_INTERVAL_MS`. Production CI should keep the default value.

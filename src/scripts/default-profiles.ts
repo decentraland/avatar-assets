@@ -12,6 +12,7 @@ import { createFetchComponent } from '@well-known-components/fetch-component'
 import { createLogComponent } from '@well-known-components/logger'
 import { hashV1 } from '@dcl/hashing'
 import { loadIdentity } from '../logic/arguments-parser'
+import { deployWithRateLimit } from '../logic/deployment-rate-limit'
 
 const rootDirectory = path.resolve(__dirname, '../..')
 
@@ -110,11 +111,13 @@ async function main() {
         const signature = ethSign(hexToBytes(privateKey), entityId)
         const authChain = Authenticator.createSimpleAuthChain(entityId, ethAddress, signature)
 
-        await contentClient.deploy({
-          authChain,
-          entityId: deploymentData.entityId,
-          files: deploymentData.files
-        })
+        await deployWithRateLimit(() =>
+          contentClient.deploy({
+            authChain,
+            entityId: deploymentData.entityId,
+            files: deploymentData.files
+          })
+        )
         logger.info(`Default Profile ${pointer} from deployed`)
       }
     } else if (Profile.validate.errors) {
@@ -140,4 +143,7 @@ async function main() {
   console.log(`to deploy: yarn default-profiles --deploy --target ${target} ${args.directories.join(' ')}`)
 }
 
-main().catch(console.error)
+main().catch((error) => {
+  console.error(error)
+  process.exitCode = 1
+})

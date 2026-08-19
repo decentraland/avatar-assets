@@ -8,6 +8,7 @@ import { EntityType } from '@dcl/schemas'
 import { DeploymentPreparationData } from 'dcl-catalyst-client/dist/client/types'
 import { deploy } from './logic/deployer'
 import { buildAsset } from './logic/asset-builder'
+import { deployWithRateLimit } from './logic/deployment-rate-limit'
 
 async function getLogger() {
   const logs = await createLogComponent({})
@@ -48,7 +49,9 @@ async function main() {
       metadata: { ...metadata }
     })
 
-    const result: Response = (await deploy(deploymentPreparationData, identity, args.target)) as Response
+    const result: Response = (await deployWithRateLimit(() =>
+      deploy(deploymentPreparationData, identity, args.target)
+    )) as Response
     const { creationTimestamp } = await result.json()
     logger.info(`Asset ${asset.name} from ${asset.collection} deployed: `, { creationTimestamp })
   }
@@ -56,4 +59,7 @@ async function main() {
 
 main()
   .then(() => console.log('done'))
-  .catch((error) => console.error(error))
+  .catch((error) => {
+    console.error(error)
+    process.exitCode = 1
+  })

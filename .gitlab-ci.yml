@@ -12,6 +12,8 @@ stages:
   when: manual
   before_script:
     - yarn install --frozen-lockfile
+    - test -n "${KEY:-}" || { echo "Missing GitLab CI/CD variable KEY"; exit 1; }
+    - test -n "${ADDRESS:-}" || { echo "Missing GitLab CI/CD variable ADDRESS"; exit 1; }
     - printf '{"privateKey":"%s","ethAddress":"%s"}\n' "$KEY" "$ADDRESS" > identity.json
   after_script:
     - rm -f identity.json
@@ -21,6 +23,7 @@ stages:
 deploy:emotes:dev:
   extends: .deploy_common
   environment: dev
+  resource_group: avatar-assets-dev
   script:
     - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run emotes --deploy --target https://peer.decentraland.zone --identityFilePath identity.json $EMOTE_DIRS
@@ -28,6 +31,7 @@ deploy:emotes:dev:
 deploy:emotes:staging:
   extends: .deploy_common
   environment: staging
+  resource_group: avatar-assets-staging
   script:
     - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run emotes --deploy --target https://peer-testing.decentraland.org --identityFilePath identity.json $EMOTE_DIRS
@@ -35,6 +39,7 @@ deploy:emotes:staging:
 deploy:emotes:production:
   extends: .deploy_common
   environment: production
+  resource_group: avatar-assets-production
   script:
     - EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run emotes --deploy --target https://peer.decentraland.org --identityFilePath identity.json $EMOTE_DIRS
@@ -43,6 +48,8 @@ deploy:emotes:production:
 
 .deploy_wearables_script: &deploy_wearables_script
   - |
+    set -euo pipefail
+    DEPLOY_ARGS=()
     for collection_dir in assets/base-avatars/; do
       collection=$(basename "$collection_dir")
       while IFS= read -r asset_dir; do
@@ -55,16 +62,24 @@ deploy:emotes:production:
           asset_name=$(basename "$asset_dir")
         fi
         echo "Deploying dcl://$collection/$asset_name"
-        yarn run deploy -- \
-          --identityFilePath identity.json \
-          --target $TARGET_URL \
-          --id "dcl://$collection/$asset_name"
+        DEPLOY_ARGS+=(--id "dcl://$collection/$asset_name")
       done < <(find "$collection_dir" -type d -mindepth 2 -maxdepth 2 | sort)
     done
+
+    if [ "${#DEPLOY_ARGS[@]}" -eq 0 ]; then
+      echo "No wearable entities found"
+      exit 1
+    fi
+
+    yarn run deploy -- \
+      --identityFilePath identity.json \
+      --target "$TARGET_URL" \
+      "${DEPLOY_ARGS[@]}"
 
 deploy:wearables:dev:
   extends: .deploy_common
   environment: dev
+  resource_group: avatar-assets-dev
   variables:
     TARGET_URL: https://peer.decentraland.zone
   script:
@@ -73,6 +88,7 @@ deploy:wearables:dev:
 deploy:wearables:staging:
   extends: .deploy_common
   environment: staging
+  resource_group: avatar-assets-staging
   variables:
     TARGET_URL: https://peer-testing.decentraland.org
   script:
@@ -81,6 +97,7 @@ deploy:wearables:staging:
 deploy:wearables:production:
   extends: .deploy_common
   environment: production
+  resource_group: avatar-assets-production
   variables:
     TARGET_URL: https://peer.decentraland.org
   script:
@@ -91,6 +108,7 @@ deploy:wearables:production:
 deploy:profiles:dev:
   extends: .deploy_common
   environment: dev
+  resource_group: avatar-assets-dev
   script:
     - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run default-profiles --deploy --target https://peer.decentraland.zone --identityFilePath identity.json $PROFILE_DIRS
@@ -98,6 +116,7 @@ deploy:profiles:dev:
 deploy:profiles:staging:
   extends: .deploy_common
   environment: staging
+  resource_group: avatar-assets-staging
   script:
     - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run default-profiles --deploy --target https://peer-testing.decentraland.org --identityFilePath identity.json $PROFILE_DIRS
@@ -105,6 +124,7 @@ deploy:profiles:staging:
 deploy:profiles:production:
   extends: .deploy_common
   environment: production
+  resource_group: avatar-assets-production
   script:
     - PROFILE_DIRS=$(find default-profiles -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
     - yarn run default-profiles --deploy --target https://peer.decentraland.org --identityFilePath identity.json $PROFILE_DIRS
