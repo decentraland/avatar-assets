@@ -11,7 +11,7 @@
     "female",
     "woman"
    ],
-  "category": "eye_wear",
+  "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "RoundSunglasses_01.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "RoundSunglasses_01.glb"}
