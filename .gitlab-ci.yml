@@ -78,6 +78,7 @@ deploy:emotes:production:
 
 deploy:wearables:dev:
   extends: .deploy_common
+  timeout: 3h
   environment: dev
   resource_group: avatar-assets-dev
   variables:
@@ -87,6 +88,7 @@ deploy:wearables:dev:
 
 deploy:wearables:staging:
   extends: .deploy_common
+  timeout: 3h
   environment: staging
   resource_group: avatar-assets-staging
   variables:
@@ -96,6 +98,7 @@ deploy:wearables:staging:
 
 deploy:wearables:production:
   extends: .deploy_common
+  timeout: 3h
   environment: production
   resource_group: avatar-assets-production
   variables:
