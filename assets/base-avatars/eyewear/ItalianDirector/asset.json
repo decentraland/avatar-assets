@@ -11,7 +11,7 @@
     "Director",
     "Sunglasses"
   ],
-  "category": "eye_wear",
+  "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "F_Eyewear_ItalianDirector.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "F_Eyewear_ItalianDirector.glb"}

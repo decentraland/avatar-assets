@@ -10,7 +10,7 @@
     "Matrix",
     "Sunglasses"
   ],
-  "category": "eye_wear",
+  "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "M_Eyewear_MatrixSunGlasses.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "M_Eyewear_MatrixSunGlasses.glb"}

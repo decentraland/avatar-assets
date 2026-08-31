@@ -11,7 +11,7 @@
     "woman",
     "women"
    ],
-  "category": "eye_wear",
+  "category": "eyewear",
   "main": [
     {"type": "dcl://base-avatars/BaseMale", "model": "PiratePatch.glb"},
     {"type": "dcl://base-avatars/BaseFemale", "model": "PiratePatch.glb"}
