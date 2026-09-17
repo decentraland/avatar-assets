@@ -398,10 +398,10 @@
     ajv-keywords "^5.1.0"
     mitt "^3.0.1"
 
-"@dcl/schemas@^26.2.0":
-  version "26.2.0"
-  resolved "https://registry.yarnpkg.com/@dcl/schemas/-/schemas-26.2.0.tgz#7207d1e99953d8019123e59cc79fbe653685e1fd"
-  integrity sha512-DZ6xzcEjDnE+mVlzz1iTLi3jXcpVxWsjeL+ipTl+5C3ml5FLL55F60PJcKjrgIWYdtvs3e+w8q6eOjDu+IIJrA==
+"@dcl/schemas@^27.2.0":
+  version "27.2.0"
+  resolved "https://registry.yarnpkg.com/@dcl/schemas/-/schemas-27.2.0.tgz#451b2483159b1dc1676643953b03fd13efd42f75"
+  integrity sha512-VoiwWqskTa9bXAp4X64yyYhZCfVcE77NyHP/1C746DA5IhA1OkCDn6JSrDzgRfkxmFcWOU7j3VVNtGBllYCYlw==
   dependencies:
     ajv "^8.11.0"
     ajv-errors "^3.0.0"
