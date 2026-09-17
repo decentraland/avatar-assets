@@ -1,0 +1,21 @@
+{
+  "name": "sittingChair1",
+  "description": "Sitting Chair 1",
+  "i18n": {
+    "en": "Sitting Chair 1"
+  },
+  "loop": true,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "SittingChair_v01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "SittingChair_v01.glb"
+    }
+  ]
+}

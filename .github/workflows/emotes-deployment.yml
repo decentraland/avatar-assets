@@ -1,4 +1,4 @@
-name: Deploy All Base Emotes
+name: Deploy All Emotes
 
 concurrency:
   group: avatar-assets-catalyst-${{ github.event.inputs.environment }}
@@ -19,6 +19,14 @@ on:
           - zone
           - peer-testing
           - production
+      collection:
+        description: 'Emote collection to deploy'
+        required: true
+        default: 'base-emotes'
+        type: choice
+        options:
+          - base-emotes
+          - base-scene-emotes
 
 jobs:
   deploy-emotes:
@@ -60,7 +68,7 @@ jobs:
 
       - name: Deploy All Emotes
         run: |
-          EMOTE_DIRS=$(find emotes/base-emotes -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
+          EMOTE_DIRS=$(find emotes/${{ github.event.inputs.collection }} -maxdepth 1 -mindepth 1 -type d | sort | tr '\n' ' ')
           yarn run emotes --deploy --target $TARGET_URL --identityFilePath identity.json $EMOTE_DIRS
 
       - name: Cleanup identity.json

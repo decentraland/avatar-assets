@@ -1,0 +1,21 @@
+{
+  "name": "buttonDown",
+  "description": "Button Down",
+  "i18n": {
+    "en": "Button Down"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Button_45.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Button_45.glb"
+    }
+  ]
+}

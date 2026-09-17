@@ -1,0 +1,21 @@
+{
+  "name": "lever",
+  "description": "Lever",
+  "i18n": {
+    "en": "Lever"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Lever.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Lever.glb"
+    }
+  ]
+}

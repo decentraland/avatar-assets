@@ -1,0 +1,21 @@
+{
+  "name": "throw",
+  "description": "Throw",
+  "i18n": {
+    "en": "Throw"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Throw.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Throw.glb"
+    }
+  ]
+}

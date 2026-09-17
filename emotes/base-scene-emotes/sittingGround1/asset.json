@@ -1,0 +1,21 @@
+{
+  "name": "sittingGround1",
+  "description": "Sitting Ground 1",
+  "i18n": {
+    "en": "Sitting Ground 1"
+  },
+  "loop": true,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "SittingGround_v01.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "SittingGround_v01.glb"
+    }
+  ]
+}

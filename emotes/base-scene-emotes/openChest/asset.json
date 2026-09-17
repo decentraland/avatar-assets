@@ -1,0 +1,21 @@
+{
+  "name": "openChest",
+  "description": "Open Chest",
+  "i18n": {
+    "en": "Open Chest"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "OpenChest.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "OpenChest.glb"
+    }
+  ]
+}

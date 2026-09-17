@@ -1,0 +1,21 @@
+{
+  "name": "getHit",
+  "description": "Get Hit",
+  "i18n": {
+    "en": "Get Hit"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Get_Hit.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Get_Hit.glb"
+    }
+  ]
+}

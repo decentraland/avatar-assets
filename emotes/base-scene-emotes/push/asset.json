@@ -1,0 +1,21 @@
+{
+  "name": "push",
+  "description": "Push",
+  "i18n": {
+    "en": "Push"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Push.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Push.glb"
+    }
+  ]
+}

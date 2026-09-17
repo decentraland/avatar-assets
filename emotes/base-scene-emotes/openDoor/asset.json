@@ -1,0 +1,21 @@
+{
+  "name": "openDoor",
+  "description": "Open Door",
+  "i18n": {
+    "en": "Open Door"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "OpenDoor.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "OpenDoor.glb"
+    }
+  ]
+}
