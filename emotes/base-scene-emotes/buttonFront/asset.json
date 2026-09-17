@@ -1,0 +1,21 @@
+{
+  "name": "buttonFront",
+  "description": "Button Front",
+  "i18n": {
+    "en": "Button Front"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Button_Front.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Button_Front.glb"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "punch",
+  "description": "Punch",
+  "i18n": {
+    "en": "Punch"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Punch.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Punch.glb"
+    }
+  ]
+}

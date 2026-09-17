@@ -1,0 +1,21 @@
+{
+  "name": "knockOut",
+  "description": "Knock Out",
+  "i18n": {
+    "en": "Knock Out"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "KO.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "KO.glb"
+    }
+  ]
+}

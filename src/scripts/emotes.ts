@@ -88,6 +88,7 @@ async function main() {
   })
 
   const errors: any[] = []
+  const collections = new Set<string>()
 
   for (const updatedDirectory of args.directories) {
     const fullpath = path.join(rootDirectory, updatedDirectory)
@@ -99,13 +100,17 @@ async function main() {
     const json: JSONData = readFile<JSONData>(assetJsonPath)
     json.tags = json.tags || []
 
-    const legacyId = `dcl://base-emotes/` + json.name
+    // emotes/<collection>/<name>/asset.json -> urn:decentraland:off-chain:<collection>:<name>
+    const collection = path.basename(path.dirname(fullpath))
+    const name = json.name
+    const urnString = `urn:decentraland:off-chain:${collection}:${name}`
 
-    const urn = await parseUrn(legacyId)
-    if (!urn) {
-      console.error(`Failed to parse the legacy ID: '${legacyId}'`)
+    const urn = await parseUrn(urnString)
+    if (!urn || urn.type !== 'off-chain') {
+      console.error(`Failed to parse the urn: '${urnString}'`)
       continue
     }
+    collections.add(`urn:decentraland:off-chain:${collection}`)
 
     const glbFilesPaths = readFilesFrom(fullpath, ['.glb'])
     const extractedTextures = await extractAssetTextures(glbFilesPaths)
@@ -139,12 +144,9 @@ async function main() {
           })
         ),
         loop: json.loop,
-        tags: [...json.tags, 'base-emote']
+        tags: [...json.tags, collection.replace(/s$/, '')]
       }
     }
-
-    const collection = 'base-emotes'
-    const name = json.name
 
     if (Emote.validate(metadata)) {
       if (args.deploy) {
@@ -167,7 +169,7 @@ async function main() {
             files: deploymentData.files
           })
         )
-        logger.info(`Emote ${name} from base-avatars deployed`)
+        logger.info(`Emote ${name} from ${collection} deployed`)
       }
     } else if (Emote.validate.errors) {
       errors.push({
@@ -183,7 +185,7 @@ async function main() {
   }
 
   if (args.ci) {
-    const previewUrl = `https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=urn:decentraland:off-chain:base-emotes`
+    const previewUrl = `https://play.decentraland.org/?BUILDER_SERVER_URL=https://builder-api.decentraland.org&DEBUG_MODE=true&DISABLE_backpack_editor_v2=&ENABLE_backpack_editor_v1=&CATALYST=${target}&WITH_COLLECTIONS=${[...collections].join(',')}`
     if (errors.length) {
       fs.writeFileSync('validation-errors.json', JSON.stringify(errors, null, 2))
     }

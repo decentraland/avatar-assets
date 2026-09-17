@@ -1,0 +1,21 @@
+{
+  "name": "swingWeaponTwoHands",
+  "description": "Swing Weapon Two Hands",
+  "i18n": {
+    "en": "Swing Weapon Two Hands"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Swing_DoubleHanded.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Swing_DoubleHanded.glb"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "swingWeaponOneHand",
+  "description": "Swing Weapon One Hand",
+  "i18n": {
+    "en": "Swing Weapon One Hand"
+  },
+  "loop": false,
+  "tags": [
+    "emote"
+  ],
+  "main": [
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basefemale",
+      "model": "Swing_OneHand.glb"
+    },
+    {
+      "type": "urn:decentraland:off-chain:base-avatars:basemale",
+      "model": "Swing_OneHand.glb"
+    }
+  ]
+}
